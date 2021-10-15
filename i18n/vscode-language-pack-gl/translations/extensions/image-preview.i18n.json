@@ -13,27 +13,27 @@
 			"sizeGB": "{0} GB",
 			"sizeKB": "{0} KB",
 			"sizeMB": "{0} MB",
-			"sizeStatusBar.name": "Tamaño binario de la imagen",
+			"sizeStatusBar.name": "Tamaño binario da imaxe",
 			"sizeTB": "{0} TB"
 		},
 		"dist/preview": {
-			"preview.imageLoadError": "Se ha producido un error al cargar la imagen.",
-			"preview.imageLoadErrorLink": "¿Abrir archivo con el editor de texto/binario estándar de VS Code?"
+			"preview.imageLoadError": "Produceuse un erro ao cargar a imaxe.",
+			"preview.imageLoadErrorLink": "Abrir arquivo co editor de texto/binario estándar de VS Code?"
 		},
 		"dist/sizeStatusBarEntry": {
-			"sizeStatusBar.name": "Tamaño de la imagen"
+			"sizeStatusBar.name": "Tamaño da imaxe"
 		},
 		"dist/zoomStatusBarEntry": {
-			"zoomStatusBar.name": "Zoom de imagen",
+			"zoomStatusBar.name": "Zoom de imaxe",
 			"zoomStatusBar.placeholder": "Seleccionar nivel de zoom",
-			"zoomStatusBar.wholeImageLabel": "Imagen completa"
+			"zoomStatusBar.wholeImageLabel": "imaxe completa"
 		},
 		"package": {
 			"command.zoomIn": "Acercar",
-			"command.zoomOut": "Alejar",
-			"customEditors.displayName": "Vista previa de la imagen",
-			"description": "Proporciona la vista previa de imagen integrada de VS Code",
-			"displayName": "Vista previa de la imagen"
+			"command.zoomOut": "Alexar",
+			"customEditors.displayName": "Vista previa da imaxe",
+			"description": "Proporciona a vista previa de imaxe integrada de VS Code",
+			"displayName": "Vista previa da imaxe"
 		}
 	}
 }

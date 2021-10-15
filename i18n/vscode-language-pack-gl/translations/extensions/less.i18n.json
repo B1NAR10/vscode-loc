@@ -9,8 +9,8 @@
 	"version": "1.0.0",
 	"contents": {
 		"package": {
-			"description": "Proporciona resaltado de sintaxis, correspondencia de corchetes y plegado en archivos Less.",
-			"displayName": "Conceptos básicos del lenguaje Less"
+			"description": "Proporciona resaltado de sintaxis, correspondencia de corchetes e pregado en arquivos Less.",
+			"displayName": "Conceptos básicos da linguaxe Less"
 		}
 	}
 }

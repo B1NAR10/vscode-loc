@@ -9,17 +9,17 @@
 	"version": "1.0.0",
 	"contents": {
 		"dist/main": {
-			"execFailed": "La detección automática de Grunt para la carpeta {0} falló con el error: {1}",
-			"gruntShowOutput": "Ir a la salida",
-			"gruntTaskDetectError": "Problema para encontrar tareas grunt. Consulte la salida para obtener más información."
+			"execFailed": "A detección automática de Grunt para a cartfol {0} fallou co erro: {1}",
+			"gruntShowOutput": "Ir a saída",
+			"gruntTaskDetectError": "Problema para atopar tarefas grunt. Consulte a saída para obter máis información."
 		},
 		"package": {
-			"config.grunt.autoDetect": "Controla la habilitación de la detección de tareas de Gulp. La detección de tareas de Gulp puede hacer que se ejecuten archivos en cualquier espacio de trabajo abierto.",
-			"description": "Extensión que agrega funcionalidad de Grunt a VS Code.",
-			"displayName": "Funcionalidad de Grunt para VS Code",
-			"grunt.taskDefinition.args.description": "Argumentos de línea de comandos para pasar a la tarea de Grunt",
-			"grunt.taskDefinition.file.description": "El archivo de Grunt que proporciona la tarea. Se puede omitir.",
-			"grunt.taskDefinition.type.description": "La tarea de Grunt que se va a personalizar."
+			"config.grunt.autoDetect": "Controla a habilitación da detección de tarefas de Gulp. A detección de tarefas de Gulp pode facer que se executen arquivos en calquera espazo de traballo aberto.",
+			"description": "Extensión que agrega funcionalidade de Grunt a VS Code.",
+			"displayName": "Funcionalidade de Grunt para VS Code",
+			"grunt.taskDefinition.args.description": "Argumentos de líña de comandos para pasar a tarefa de Grunt",
+			"grunt.taskDefinition.file.description": "O arquivo de Grunt que proporciona a tarefa. Podese omitir.",
+			"grunt.taskDefinition.type.description": "A tarefa de Grunt que se vai a personalizar."
 		}
 	}
 }

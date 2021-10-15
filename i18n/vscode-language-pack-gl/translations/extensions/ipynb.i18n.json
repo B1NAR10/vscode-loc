@@ -9,8 +9,8 @@
 	"version": "1.0.0",
 	"contents": {
 		"package": {
-			"description": "Proporciona compatibilidad básica para abrir y leer los archivos .ipynb del bloc de notas de Jupyter.",
-			"displayName": "Compatibilidad con .ipynb"
+			"description": "Proporciona compatibilidade básica para abrir e ler os arquivos .ipynb do bloc de notas de Jupyter.",
+			"displayName": "Compatibilidade con .ipynb"
 		}
 	}
 }

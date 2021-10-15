@@ -10,7 +10,7 @@
 	"contents": {
 		"package": {
 			"displayName": "Interfaz de usuario de Git",
-			"description": "Integración de la UI de Git SCM"
+			"description": "Integración da UI de Git SCM"
 		}
 	}
 }

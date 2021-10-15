@@ -9,35 +9,35 @@
 	"version": "1.0.0",
 	"contents": {
 		"dist/publish": {
-			"ignore": "Seleccione los archivos que se deben incluir en el repositorio.",
+			"ignore": "Seleccione os arquivos que se deben incluir no repositorio.",
 			"openingithub": "Abrir en GitHub",
-			"pick folder": "Seleccionar una carpeta para publicar en GitHub",
-			"publishing_done": "El repositorio \"{0}\" se ha publicado correctamente en GitHub.",
-			"publishing_firstcommit": "Creando el primer \"commit\"",
-			"publishing_private": "Publicando en un repositorio de GitHub privado",
-			"publishing_public": "Publicando en un repositorio de GitHub público",
-			"publishing_uploading": "Cargando archivos"
+			"pick folder": "Seleccionar un cartafol para publicar en GitHub",
+			"publishing_done": "O repositorio \"{0}\" publicouse correctamente en GitHub.",
+			"publishing_firstcommit": "Creando o primeiro \"commit\"",
+			"publishing_private": "Publicando nun repositorio de GitHub privado",
+			"publishing_public": "Publicando nun repositorio de GitHub público",
+			"publishing_uploading": "Cargando arquivos"
 		},
 		"dist/pushErrorHandler": {
 			"create a fork": "Crear bifurcación",
 			"create fork": "Crear bifurcación de GitHub",
-			"createghpr": "Creando solicitud de incorporación de cambios de GitHub...",
+			"createghpr": "Creando solicitude de incorporación de cambios de GitHub...",
 			"createpr": "Crear PR",
-			"donepr": "La PR \"{0}/{1}#{2}\" se creó correctamente en GitHub.",
-			"fork": "No tiene permisos para realizar la inserción en \"{0}/{1}\" en GitHub. ¿Desea crear una bifurcación y realizar mejor en ella la inserción?",
+			"donepr": "A PR \"{0}/{1}#{2}\" creouse correctamente en GitHub.",
+			"fork": "Non ten permisos para realizar a inserción en \"{0}/{1}\" en GitHub. Desexa crear unha bifurcación ou realizar mellor nela a inserción?",
 			"forking": "Bifurcando \"{0}/{1}\"...",
-			"forking_done": "La bifurcación \"{0}\" se creó correctamente en GitHub.",
+			"forking_done": "A bifurcación \"{0}\" creouse correctamente en GitHub.",
 			"forking_pushing": "Insertando cambios...",
 			"no": "No",
 			"openingithub": "Abrir en GitHub",
 			"openpr": "Abrir PR"
 		},
 		"package": {
-			"config.gitAuthentication": "Controla si se debe habilitar la autenticación automática de GitHub para los comandos GIT dentro de VS Code.",
+			"config.gitAuthentication": "Controla se se habilita a autenticación GitHub automática para comandos GIT dentro do VS Code.",
 			"description": "Características de GitHub para VS Code",
 			"displayName": "GitHub",
-			"welcome.publishFolder": "También puede publicar directamente esta carpeta en un repositorio de GitHub. Una vez publicada, tendrá acceso a las características de control de código fuente con tecnología de git y GitHub.\r\n[$(github) Publicar en GitHub](command:github.publish)",
-			"welcome.publishWorkspaceFolder": "También puede publicar directamente una carpeta del área de trabajo en un repositorio de GitHub. Una vez publicada, tendrá acceso a las características de control de código fuente con tecnología de git y GitHub.\r\n[$(github) Publicar en GitHub](command:github.publish)"
+			"welcome.publishFolder": "Tamén pode publicar directamente este cartafol nun repositorio de GitHub. Unha vez publicado, terá acceso as características de control do código fonte coa tecnoloxía de git e GitHub.\r\n[$(github) Publicar en GitHub](command:github.publish)",
+			"welcome.publishWorkspaceFolder": "Tamén pode publicar directamente un cartafol da área de traballo nun repositorio de GitHub. Unha vez publicado, terá acceso as características de control do código fonte coa tecnoloxía de git e GitHub.\r\n[$(github) Publicar en GitHub](command:github.publish)"
 		}
 	}
 }

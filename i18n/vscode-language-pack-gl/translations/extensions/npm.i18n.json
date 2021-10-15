@@ -9,18 +9,18 @@
 	"version": "1.0.0",
 	"contents": {
 		"dist/commands": {
-			"noScriptFound": "No se pudo encontrar un script npm válido en la selección."
+			"noScriptFound": "Non se puido atopar un script npm válido na selección."
 		},
 		"dist/features/bowerJSONContribution": {
 			"json.bower.default": "bower.json predeterminado",
-			"json.bower.error.repoaccess": "No se pudo ejecutar la solicitud del repositorio de Bower: {0}",
-			"json.bower.latest.version": "Más reciente"
+			"json.bower.error.repoaccess": "Non se puido executar a solicitude do repositorio de Bower: {0}",
+			"json.bower.latest.version": "Mái recente"
 		},
 		"dist/features/packageJSONContribution": {
-			"json.npm.error.repoaccess": "No se pudo ejecutar la solicitud del repositorio de NPM: {0}",
-			"json.npm.latestversion": "Última versión del paquete en este momento",
-			"json.npm.majorversion": "Coincide con la versión principal más reciente (1.x.x)",
-			"json.npm.minorversion": "Coincide con la versión secundaria más reciente (1.2.x)",
+			"json.npm.error.repoaccess": "Non se puido executar a solicitude d repositorio de NPM: {0}",
+			"json.npm.latestversion": "Última versión do paquete neste momento",
+			"json.npm.majorversion": "Coincide coa versión principal mási recente (1.x.x)",
+			"json.npm.minorversion": "Coincide coa versión secundaria máis reciente (1.2.x)",
 			"json.npm.version.hover": "Última versión: {0}",
 			"json.package.default": "package.json predeterminado"
 		},
@@ -28,49 +28,49 @@
 			"codelens.debug": "Depuración de {0}"
 		},
 		"dist/npmView": {
-			"autoDetectIsOff": "El ajuste \"npm.autoDetect\" está desactivado.",
-			"noScripts": "No se han encontrado scripts."
+			"autoDetectIsOff": "O axuste \"npm.autoDetect\" está desactivado.",
+			"noScripts": "Non se atoparon scripts."
 		},
 		"dist/scriptHover": {
 			"debugScript": "Script de depuración",
-			"debugScript.tooltip": "Ejecuta el script en el depurador.",
-			"runScript": "Ejecutar script",
-			"runScript.tooltip": "Ejecutar el script como una tarea"
+			"debugScript.tooltip": "Executar o script no depurador.",
+			"runScript": "Executar script",
+			"runScript.tooltip": "Executar o script coma unha tarefa"
 		},
 		"dist/tasks": {
-			"npm.multiplePMWarning": "Se usa {0} como administrador de paquetes preferido. Se encontraron varios archivos de bloqueo para {1}.",
-			"npm.multiplePMWarning.doNotShow": "No volver a mostrar",
-			"npm.multiplePMWarning.learnMore": "Más información",
-			"npm.parseError": "Detección de tareas de npm: no se pudo analizar el archivo {0}"
+			"npm.multiplePMWarning": "Usase {0} como administrador de paquetes preferido. Atopáronse varios arquiivos de bloqueo para {1}.",
+			"npm.multiplePMWarning.doNotShow": "Non volver a mostrar",
+			"npm.multiplePMWarning.learnMore": "Máis información",
+			"npm.parseError": "Detección de tarefas de npm: non se puido analizar eol arquivo {0}"
 		},
 		"package": {
 			"command.debug": "Depurar",
 			"command.openScript": "Abrir",
-			"command.packageManager": "Obtener el administrador de paquetes configurado",
+			"command.packageManager": "Obter o administrador de paquetes configurado",
 			"command.refresh": "Actualizar",
-			"command.run": "Ejecutar",
-			"command.runInstall": "Ejecutar instalación",
-			"command.runScriptFromFolder": "Ejecutar el script de NPM en la carpeta...",
-			"command.runSelectedScript": "Ejecutar script",
-			"config.npm.autoDetect": "Controla si los scripts npm deben detectarse automáticamente.",
-			"config.npm.enableRunFromFolder": "Habilite la ejecución de scripts NPM contenidos en una carpeta desde el menú contextual del Explorador.",
-			"config.npm.enableScriptExplorer": "Habilite una vista de explorador para scripts npm cuando no haya ningún archivo \"package.json\" de nivel superior.",
-			"config.npm.exclude": "Configura patrones globales para carpetas que deben excluirse de la detección automática de scripts. ",
-			"config.npm.fetchOnlinePackageInfo": "Recupere datos de https://registry.npmjs.org y https://registry.bower.io para proporcionar la finalización automática y la información sobre las características de desplazamiento de puntero en las dependencias de npm.",
-			"config.npm.packageManager": "El administrador de paquetes utilizado para ejecutar secuencias de comandos. ",
-			"config.npm.packageManager.auto": "Detecta automáticamente el administrador de paquetes que se va a usar para ejecutar los scripts en función de los archivos de bloqueo y los administradores de paquetes instalados.",
-			"config.npm.packageManager.npm": "Use npm como administrador de paquetes para ejecutar los scripts.",
-			"config.npm.packageManager.pnpm": "Use pnpm como administrador de paquetes para ejecutar los scripts.",
-			"config.npm.packageManager.yarn": "Use Yarn como administrador de paquetes para ejecutar los scripts.",
-			"config.npm.runSilent": "Ejecutar comandos de npm con la opción '--silent'",
-			"config.npm.scriptExplorerAction": "La acción de clic predeterminada utilizada en el explorador de scripts npm: \"open\" o \"run\", el valor predeterminado es \"open\".",
-			"description": "Extensión para agregar soporte a las tareas de secuencias de comandos NPM.",
-			"displayName": "Funcionalidad de Npm para VS Code",
-			"npm.parseError": "Detección de tareas de npm: no se pudo analizar el archivo {0}",
-			"taskdef.path": "La ruta de la carpeta del archivo package.json que proporciona la secuencia de comandos. Se puede omitir.",
+			"command.run": "Executar",
+			"command.runInstall": "Executar instalación",
+			"command.runScriptFromFolder": "Executar o script de NPM no cartafol...",
+			"command.runSelectedScript": "Executar script",
+			"config.npm.autoDetect": "Controla se os scripts npm deben detectarse automáticamente.",
+			"config.npm.enableRunFromFolder": "Habilite a execución de scripts NPM contidos en una cartafol dende o menú contextual do Explorador.",
+			"config.npm.enableScriptExplorer": "Habilite unha vista de explorador para scripts npm cando non hai ningún arquivo \"package.json\" de nivel superior.",
+			"config.npm.exclude": "Configura patróns globais para cartafoles que deben excluirse da detección automática de scripts. ",
+			"config.npm.fetchOnlinePackageInfo": "Recupere datos de https://registry.npmjs.org e https://registry.bower.io para proporcionar a finalización automática e a información sobre as características de desprazamento de punteiro nas dependencias de npm.",
+			"config.npm.packageManager": "O administrador de paquetes utilizado para executar secuenzas de comandos. ",
+			"config.npm.packageManager.auto": "Detecta automáticamente o administrador de paquetes que se vai a usar para Executar os scripts en función dos arquivos de bloqueo e os administradores de paquetes instalados.",
+			"config.npm.packageManager.npm": "Use npm como administrador de paquetes para executar os scripts.",
+			"config.npm.packageManager.pnpm": "Use pnpm como administrador de paquetes para executar os scripts.",
+			"config.npm.packageManager.yarn": "Use Yarn como administrador de paquetes para executar os scripts.",
+			"config.npm.runSilent": "Executar comandos de npm coa opción '--silent'",
+			"config.npm.scriptExplorerAction": "A acción de clic predeterminada utilizada no explorador de scripts npm: \"open\" o \"run\", o valor predeterminado é \"open\".",
+			"description": "Extensión para engadir soporte as tarefas de secuencias de comandos NPM.",
+			"displayName": "Funcionalidade de Npm para VS Code",
+			"npm.parseError": "Detección de tarefas de npm: non se puido analizar o arquivo {0}",
+			"taskdef.path": "A ruta do cartafol do arquivo package.json que proporciona a secuencia de comandos. Pódese omitir.",
 			"taskdef.script": "Script npm que debe personalizarse.",
 			"view.name": "Scripts Npm ",
-			"workspaceTrust": "Esta extensión ejecuta tareas que requieren confianza para ser ejecutadas."
+			"workspaceTrust": "Esta extensión executa tarefas que requiren confianza para ser executadas."
 		}
 	}
 }
