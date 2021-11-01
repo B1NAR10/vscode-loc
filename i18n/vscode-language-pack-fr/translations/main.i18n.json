@@ -202,6 +202,9 @@
 			"unchangedLine": "{0} ligne inchangée {1}"
 		},
 		"vs/editor/browser/widget/inlineDiffMargin": {
+			"diff.clipboard.copyChangedLineContent.label": "Copier la ligne modifiée ({0})",
+			"diff.clipboard.copyChangedLinesContent.label": "Copier les lignes modifiées",
+			"diff.clipboard.copyChangedLinesContent.single.label": "Copier la ligne modifiée",
 			"diff.clipboard.copyDeletedLineContent.label": "Copier la ligne supprimée ({0})",
 			"diff.clipboard.copyDeletedLinesContent.label": "Copier les lignes supprimées",
 			"diff.clipboard.copyDeletedLinesContent.single.label": "Copier la ligne supprimée",
@@ -218,6 +221,10 @@
 			"maxFileSize": "Taille de fichier maximale en Mo pour laquelle calculer les différences. Utilisez 0 pour ne pas avoir de limite.",
 			"maxTokenizationLineLength": "Les lignes plus longues que cette valeur ne sont pas tokenisées pour des raisons de performances",
 			"renderIndicators": "Contrôle si l'éditeur de différences affiche les indicateurs +/- pour les changements ajoutés/supprimés .",
+			"schema.brackets": "Définit les symboles de type crochet qui augmentent ou diminuent le retrait.",
+			"schema.closeBracket": "Séquence de chaînes ou de caractères de crochets fermants.",
+			"schema.colorizedBracketPairs": "Définit les paires de crochets qui sont colorisées par leur niveau d’imbrication si la colorisation des paires de crochets est activée.",
+			"schema.openBracket": "Séquence de chaînes ou de caractères de crochets ouvrants.",
 			"semanticHighlighting.configuredByTheme": "La coloration sémantique est configurée par le paramètre 'semanticHighlighting' du thème de couleur actuel.",
 			"semanticHighlighting.enabled": "Contrôle si semanticHighlighting est affiché pour les langages qui le prennent en charge.",
 			"semanticHighlighting.false": "Coloration sémantique désactivée pour tous les thèmes de couleur.",
@@ -306,6 +313,14 @@
 			"editor.gotoLocation.multiple.gotoAndPeek": "Accéder au résultat principal et montrer un aperçu",
 			"editor.gotoLocation.multiple.peek": "Montrer l'aperçu des résultats (par défaut)",
 			"editor.guides.bracketPairs": "Contrôle si les guides de la paire de crochets sont activés ou non.",
+			"editor.guides.bracketPairs.active": "Active les repères de paire de crochets uniquement pour la paire de crochets actifs.",
+			"editor.guides.bracketPairs.false": "Désactive les repères de paire de crochets.",
+			"editor.guides.bracketPairs.true": "Désactive les repères de paire de crochets.",
+			"editor.guides.bracketPairsHorizontal": "Contrôle si les guides de la paire de crochets horizontaux sont activés ou non.",
+			"editor.guides.bracketPairsHorizontal.active": "Active les repères horizontaux uniquement pour la paire de crochets actifs.",
+			"editor.guides.bracketPairsHorizontal.false": "Désactive les repères de paire de crochets horizontaux.",
+			"editor.guides.bracketPairsHorizontal.true": "Active les repères horizontaux en plus des repères de paire de crochets verticaux.",
+			"editor.guides.highlightActiveBracketPair": "Contrôle si les guides de la paire de crochets sont activés ou non.",
 			"editor.guides.highlightActiveIndentation": "Contrôle si l’éditeur doit mettre en surbrillance le guide de mise en retrait actif.",
 			"editor.guides.indentation": "Contrôle si l’éditeur doit afficher les guides de mise en retrait.",
 			"editor.suggest.showClasss": "Si activé, IntelliSense montre des suggestions de type 'class'.",
@@ -363,6 +378,7 @@
 			"formatOnType": "Contrôle si l’éditeur doit mettre automatiquement en forme la ligne après la saisie.",
 			"glyphMargin": "Contrôle si l'éditeur doit afficher la marge de glyphes verticale. La marge de glyphes sert principalement au débogage.",
 			"hideCursorInOverviewRuler": "Contrôle si le curseur doit être masqué dans la règle de la vue d’ensemble.",
+			"hover.above": "Préférez afficher les points au-dessus de la ligne, s’il y a de l’espace.",
 			"hover.delay": "Contrôle le délai en millisecondes, après lequel le survol est affiché.",
 			"hover.enabled": "Contrôle si le pointage est affiché.",
 			"hover.sticky": "Contrôle si le pointage doit rester visible quand la souris est déplacée au-dessus.",
@@ -590,6 +606,18 @@
 			"editorBracketHighlightUnexpectedBracketForeground": "Couleur de premier plan des parenthèses inattendues",
 			"editorBracketMatchBackground": "Couleur d'arrière-plan pour les accolades associées",
 			"editorBracketMatchBorder": "Couleur pour le contour des accolades associées",
+			"editorBracketPairGuide.activeBackground1": "Couleur d’arrière-plan des repères de paire de crochets actifs (1). Nécessite l’activation des repères de paire de crochets.",
+			"editorBracketPairGuide.activeBackground2": "Couleur d’arrière-plan des repères de paire de crochets actifs (2). Nécessite l’activation des repères de paire de crochets.",
+			"editorBracketPairGuide.activeBackground3": "Couleur d’arrière-plan des repères de paire de crochets actifs (3). Nécessite l’activation des repères de paire de crochets.",
+			"editorBracketPairGuide.activeBackground4": "Couleur d’arrière-plan des repères de paire de crochets actifs (4). Nécessite l’activation des repères de paire de crochets.",
+			"editorBracketPairGuide.activeBackground5": "Couleur d’arrière-plan des repères de paire de crochets actifs (5). Nécessite l’activation des repères de paire de crochets.",
+			"editorBracketPairGuide.activeBackground6": "Couleur d’arrière-plan des repères de paire de crochets actifs (6). Nécessite l’activation des repères de paire de crochets.",
+			"editorBracketPairGuide.background1": "Couleur d’arrière-plan des repères de paire de crochets inactifs (1). Nécessite l’activation des repères de paire de crochets.",
+			"editorBracketPairGuide.background2": "Couleur d’arrière-plan des repères de paire de crochets inactifs (2). Nécessite l’activation des repères de paire de crochets.",
+			"editorBracketPairGuide.background3": "Couleur d’arrière-plan des repères de paire de crochets inactifs (3). Nécessite l’activation des repères de paire de crochets.",
+			"editorBracketPairGuide.background4": "Couleur d’arrière-plan des repères de paire de crochets inactifs (4). Nécessite l’activation des repères de paire de crochets.",
+			"editorBracketPairGuide.background5": "Couleur d’arrière-plan des repères de paire de crochets inactifs (5). Nécessite l’activation des repères de paire de crochets.",
+			"editorBracketPairGuide.background6": "Couleur d’arrière-plan des repères de paire de crochets inactifs (6). Nécessite l’activation des repères de paire de crochets.",
 			"editorCodeLensForeground": "Couleur pour les indicateurs CodeLens",
 			"editorCursorBackground": "La couleur de fond du curseur de l'éditeur. Permet de personnaliser la couleur d'un caractère survolé par un curseur de bloc.",
 			"editorGhostTextBorder": "Couleur de bordure du texte fantôme dans l’éditeur.",
@@ -683,6 +711,9 @@
 		},
 		"vs/editor/contrib/codelens/codelensController": {
 			"showLensOnLine": "Afficher les commandes Code Lens de la ligne actuelle"
+		},
+		"vs/editor/contrib/colorPicker/colorPickerWidget": {
+			"clickToToggleColorOptions": "Cliquez pour activer/désactiver les options de couleur (rgb/hsl/hexadécimal)."
 		},
 		"vs/editor/contrib/comment/comment": {
 			"comment.block": "Activer/désactiver le commentaire de bloc",
@@ -907,6 +938,7 @@
 			"action.inlineSuggest.showPrevious": "Afficher la suggestion en ligne précédente",
 			"action.inlineSuggest.trigger": "Déclencher la suggestion en ligne",
 			"inlineSuggestionHasIndentation": "Indique si la suggestion en ligne commence par un espace blanc",
+			"inlineSuggestionHasIndentationLessThanTabSize": "Indique si la suggestion incluse commence par un espace blanc inférieur à ce qui serait inséré par l’onglet.",
 			"inlineSuggestionVisible": "Indique si une suggestion en ligne est visible"
 		},
 		"vs/editor/contrib/inlineCompletions/inlineCompletionsHoverParticipant": {
@@ -927,6 +959,7 @@
 			"lines.delete": "Supprimer la ligne",
 			"lines.deleteAllLeft": "Supprimer tout ce qui est à gauche",
 			"lines.deleteAllRight": "Supprimer tout ce qui est à droite",
+			"lines.deleteDuplicates": "Supprimer les lignes dupliquées",
 			"lines.indent": "Mettre en retrait la ligne",
 			"lines.insertAfter": "Insérer une ligne sous",
 			"lines.insertBefore": "Insérer une ligne au-dessus",
@@ -988,6 +1021,7 @@
 			"parameterHints.trigger.label": "Indicateurs des paramètres Trigger"
 		},
 		"vs/editor/contrib/parameterHints/parameterHintsWidget": {
+			"editorHoverWidgetHighlightForeground": "Couleur de premier plan de l’élément actif dans l’indicateur de paramètre.",
 			"hint": "{0}, conseil",
 			"parameterHintsNextIcon": "Icône d'affichage du prochain conseil de paramètre.",
 			"parameterHintsPreviousIcon": "Icône d'affichage du précédent conseil de paramètre."
@@ -1319,7 +1353,7 @@
 			"malicious extension": "Impossible d’installer l'extension '{0}' car elle a été signalée comme problématique.",
 			"multipleDependentsError": "Impossible de désinstaller l'extension '{0}'. '{1}', '{2}' et d'autres extensions en dépendent.",
 			"multipleIndirectDependentsError": "Impossible de désinstaller l'extension '{0}'. Cela inclut la désinstallation de l'extension '{1}' mais '{2}', '{3}' et d'autres extensions en dépendent.",
-			"notFoundCompatibleDependency": "Impossible d'installer l'extension '{0}', car elle n'est pas compatible avec la version actuelle de VS Code (version {1}).",
+			"notFoundCompatibleDependency": "Impossible d'installer l'extension '{0}' car elle n'est pas compatible avec la version actuelle de {1} (version {2}).",
 			"singleDependentError": "Impossible de désinstaller l'extension '{0}'. L'extension '{1}' en dépend.",
 			"singleIndirectDependentError": "Impossible de désinstaller l'extension '{0}'. Cela inclut la désinstallation de l'extension '{1}' mais l'extension '{2}' en dépend.",
 			"twoDependentsError": "Impossible de désinstaller l'extension '{0}'. Les extensions '{1}' et '{2}' en dépendent.",
@@ -1423,9 +1457,9 @@
 		},
 		"vs/platform/files/common/io": {
 			"fileTooLargeError": "Le fichier est trop volumineux pour être ouvert",
-			"fileTooLargeForHeapError": "Pour ouvrir un fichier de cette taille, vous devez redémarrer et permettre à {0} d’utiliser plus de mémoire"
+			"fileTooLargeForHeapError": "Pour ouvrir un fichier de cette taille, vous devez redémarrer et autoriser à utiliser plus de mémoire"
 		},
-		"vs/platform/files/electron-browser/diskFileSystemProvider": {
+		"vs/platform/files/electron-main/diskFileSystemProviderIpc": {
 			"binFailed": "Échec du déplacement de '{0}' vers la corbeille",
 			"trashFailed": "Échec du déplacement de '{0}' vers la corbeille"
 		},
@@ -1548,27 +1582,37 @@
 			"systemCertificates": "Contrôle si les certificats d'autorité de certification doivent être chargés à partir de l'OS. (Sur Windows et macOS, vous devez recharger la fenêtre après la désactivation de ce paramètre.)"
 		},
 		"vs/platform/telemetry/common/telemetryService": {
-			"enableTelemetryDeprecated": "Déconseillé en faveur du paramètre {0}.",
+			"enableTelemetryDeprecated": "Si ce paramètre est faux, aucune télémétrie ne sera envoyée quelle que soit la valeur du nouveau paramètre. Déconseillé au profit du {0} cadre.",
+			"telemetry.crashReports": "Rapports d’incidents",
+			"telemetry.docsAndPrivacyStatement": "En savoir plus sur les [données que nous collectons]({0}) et notre [déclaration de confidentialité]({1}).",
+			"telemetry.docsStatement": "En savoir plus sur les [données que nous collectons]({0}).",
 			"telemetry.enableTelemetry": "Activez la collecte des données de diagnostic. Cela nous permet de mieux comprendre comment {0} fonctionne et où des améliorations doivent être apportées.",
-			"telemetry.enableTelemetry.default": "Permet la collecte de toutes les données de télémétrie.",
-			"telemetry.enableTelemetry.error": "Active uniquement les données de télémétrie d’erreur et non les données d’utilisation générales.",
-			"telemetry.enableTelemetry.off": "Désactive toutes les données de télémétrie du produit.",
 			"telemetry.enableTelemetryMd": "Activez la collecte des données de diagnostic. Cela nous permet de mieux comprendre comment {0} fonctionne et où des améliorations doivent être apportées. [En savoir plus] ({1}) sur ce que nous recueillons et notre déclaration de confidentialité.",
-			"telemetry.restart": "Certaines fonctionnalités peuvent nécessiter un redémarrage pour prendre effet.",
+			"telemetry.errors": "Télémétrie d'erreur",
+			"telemetry.restart": "Un redémarrage complet de l'application est nécessaire pour que les modifications apportées aux rapports d'incident prennent effet.",
+			"telemetry.telemetryLevel.crash": "Envoie des rapports de plantage au niveau du système d'exploitation.",
+			"telemetry.telemetryLevel.default": "Envoie les données d'utilisation, les erreurs et les rapports d'erreur.",
+			"telemetry.telemetryLevel.deprecated": "****Remarque :*** Si ce paramètre est désactivé, aucune télémétrie ne sera envoyée quels que soient les autres paramètres de télémétrie. Si ce paramètre est défini sur autre chose que « off » et que la télémétrie est désactivée avec des paramètres obsolètes, aucune télémétrie ne sera envoyée.*",
+			"telemetry.telemetryLevel.error": "Envoie la télémétrie d'erreur générale et les rapports de plantage.",
+			"telemetry.telemetryLevel.off": "Désactive toutes les données de télémétrie du produit.",
+			"telemetry.telemetryLevel.tableDescription": "Le tableau suivant présente les données envoyées avec chaque paramètre :",
+			"telemetry.telemetryLevelMd": "Contrôle toutes les télémétries des extensions principales et propriétaires. Cela nous aide à mieux comprendre comment {0} fonctionne, où des améliorations doivent être apportées et comment les fonctionnalités sont utilisées.",
+			"telemetry.usage": "Données d'utilisation",
 			"telemetryConfigurationTitle": "Télémétrie"
 		},
 		"vs/platform/terminal/common/terminalPlatformConfiguration": {
 			"terminal.integrated.automationShell.linux": "Chemin qui, une fois défini, substitue {0} et ignore les valeurs de {1} pour permettre une utilisation du terminal basée sur l'automatisation, par exemple dans le cas des tâches et du débogage.",
 			"terminal.integrated.automationShell.osx": "Chemin qui, une fois défini, substitue {0} et ignore les valeurs de {1} pour permettre une utilisation du terminal basée sur l'automatisation, par exemple dans le cas des tâches et du débogage.",
 			"terminal.integrated.automationShell.windows": "Chemin qui, une fois défini, substitue {0} et ignore les valeurs de {1} pour permettre une utilisation du terminal basée sur l'automatisation, par exemple dans le cas des tâches et du débogage.",
+			"terminal.integrated.confirmIgnoreProcesses": "Configurable pour fournir un paramètre personnalisé pour ignorer les processus",
 			"terminal.integrated.defaultProfile.linux": "Profil par défaut à utiliser sur Linux. Ce paramètre est ignoré si {0} ou {1} sont définis.",
 			"terminal.integrated.defaultProfile.osx": "Profil par défaut à utiliser sur macOS. Ce paramètre est ignoré si {0} ou {1} sont définis.",
 			"terminal.integrated.defaultProfile.windows": "Profil par défaut à utiliser sur Windows. Ce paramètre est ignoré si {0} ou {1} sont définis.",
 			"terminal.integrated.inheritEnv": "Indique si les nouveaux interpréteurs de commandes doivent hériter leur environnement de VS Code, qui peut sourcer un interpréteur de connexion pour garantir l’initialisation de $PATH et d’autres variables de développement. Cela n’a aucun effet sur Windows.",
 			"terminal.integrated.persistentSessionScrollback": "Contrôle le nombre maximal de lignes qui seront restaurées lors de la reconnexion à une session terminale persistante. L’augmentation de cette opération permet de restaurer plus de lignes de scrollback au prix d’une mémoire supérieure et d’augmenter le temps nécessaire pour se connecter aux terminaux lors du démarrage. Ce paramètre nécessite un redémarrage pour prendre effet et doit être défini sur une valeur inférieure ou égale à' #terminal. Integrated. scrollback # '.",
-			"terminal.integrated.profile.linux": "Profils Linux à présenter au moment de la création d'un terminal via la liste déroulante du terminal. Quand ils sont définis, ces profils remplacent les profils détectés par défaut. Ils sont composés de {0} et éventuellement de {1}",
-			"terminal.integrated.profile.osx": "Profils macOS à présenter au moment de la création d'un terminal via la liste déroulante du terminal. Quand ils sont définis, ces profils remplacent les profils détectés par défaut. Ils sont composés de {0} et éventuellement de {1}",
-			"terminal.integrated.profiles.windows": "Profils Windows à présenter au moment de la création d'un terminal via la liste déroulante du terminal. Pour les exclure, affectez-leur une valeur null. Pour vous servir de la configuration détectée par défaut, utilisez la propriété {0}. Sinon, définissez {1} et éventuellement {2}",
+			"terminal.integrated.profile.linux": "Profils Linux à présenter lors de la création d’un terminal via la liste déroulante du terminal. Définissez manuellement la propriété {0} avec une {1} facultative.\r\n\r\nDéfinissez un profil existant sur {2} pour masquer le profil dans la liste, par exemple : {3}.",
+			"terminal.integrated.profile.osx": "Profils macOS à présenter lors de la création d’un terminal via la liste déroulante du terminal. Définissez manuellement la propriété {0} avec une {1} facultative.\r\n\r\nDéfinissez un profil existant sur {2} pour masquer le profil dans la liste, par exemple : {3}.",
+			"terminal.integrated.profiles.windows": "Les profils Windows à présenter lors de la création d'un nouveau terminal via la liste déroulante des terminaux. Utilisez cette propriété pour détecter {0}automatiquement l'emplacement du shell. Vous pouvez également définir la {1}propriété manuellement avec un paramètre facultatif {2}. \r\n\r\nDéfinissez un profil existant sur {3} pour masquer le profil de la liste, par exemple : {4}.",
 			"terminal.integrated.shell.linux": "Chemin de l'interpréteur de commandes utilisé par le terminal sur Linux. [En savoir plus sur la configuration de l'interpréteur de commandes](https://code.visualstudio.com/docs/editor/integrated-terminal#_profil de terminal).",
 			"terminal.integrated.shell.linux.deprecation": "Déprécié, la nouvelle méthode recommandée pour configurer votre interpréteur de commandes par défaut consiste à créer un profil de terminal dans {0} et à définir son nom de profil comme valeur par défaut dans {1}. Cela prend la priorité sur les nouveaux paramètres de profil, mais ce comportement sera sujet à changement dans le futur.",
 			"terminal.integrated.shell.osx": "Chemin de l'interpréteur de commandes utilisé par le terminal sur macOS. [En savoir plus sur la configuration de l'interpréteur de commandes](https://code.visualstudio.com/docs/editor/integrated-terminal#_profil de terminal).",
@@ -1817,6 +1861,7 @@
 			"class": "Style des classes.",
 			"comment": "Style des commentaires.",
 			"declaration": "Style de toutes les déclarations de symbole.",
+			"decorator": "Style des éléments décoratifs et annotations",
 			"deprecated": "Style à utiliser pour les symboles dépréciés.",
 			"documentation": "Style à utiliser pour les références dans la documentation.",
 			"enum": "Style des énumérations.",
@@ -2560,6 +2605,7 @@
 			"missing.submenu": "L'élément de menu référence un sous-menu '{0}' qui n'est pas défini dans la section 'submenus'.",
 			"nonempty": "valeur non vide attendue.",
 			"notebook.cell.execute": "Menu de l’exécution de cellule de notebook ajouté",
+			"notebook.cell.executePrimary": "Le bouton d'exécution de la cellule principale du bloc-notes contribué",
 			"notebook.cell.title": "Menu du titre de cellule de notebook ajouté",
 			"notebook.toolbar": "Menu de barre d'outils de notebook faisant l'objet d'une contribution",
 			"opticon": "la propriété 'icon' peut être omise, ou doit être une chaîne ou un littéral de type '{dark, light}'",
@@ -2782,7 +2828,7 @@
 			"openWorkspace": "Ouvrir un espace de travail"
 		},
 		"vs/workbench/browser/contextkeys": {
-			"dirtyWorkingCopies": "Indique s’il existe des copies de travail dont l’intégrité est compromise",
+			"dirtyWorkingCopies": "Indique s’il existe des copies de travail avec des modifications non enregistrées.",
 			"isFullscreen": "Indique si la fenêtre est en mode plein écran",
 			"remoteName": "Nom du dépôt distant auquel la fenêtre est connectée ou chaîne vide en l'absence de connexion à un dépôt distant",
 			"virtualWorkspace": "Schéma de l’espace de travail actif s’il provient d’un système de fichiers virtuel, sinon une chaîne vide.",
@@ -3159,9 +3205,9 @@
 		},
 		"vs/workbench/browser/parts/editor/editorQuickAccess": {
 			"closeEditor": "Fermer l'éditeur",
-			"entryAriaLabelDirty": "{0}, intégrité compromise",
+			"entryAriaLabelDirty": "{0}, ayant des changements non enregistrés",
 			"entryAriaLabelWithGroup": "{0}, {1}",
-			"entryAriaLabelWithGroupDirty": "{0}, à l'intégrité compromise, {1}",
+			"entryAriaLabelWithGroupDirty": "{0}, ayant des changements non enregistrés, {1}",
 			"noViewResults": "Aucun éditeur correspondant"
 		},
 		"vs/workbench/browser/parts/editor/editorStatus": {
@@ -3264,6 +3310,7 @@
 		},
 		"vs/workbench/browser/parts/notifications/notificationsCenter": {
 			"notifications": "Notifications",
+			"notificationsCenterWidgetAriaLabel": "Centre de notifications",
 			"notificationsEmpty": "Aucune nouvelle notification",
 			"notificationsToolbar": "Actions du centre de notifications"
 		},
@@ -3293,6 +3340,10 @@
 			"status.message": "Message d'état",
 			"status.notifications": "Notifications",
 			"zeroNotifications": "Aucune notification"
+		},
+		"vs/workbench/browser/parts/notifications/notificationsToasts": {
+			"notificationAriaLabel": "{0}, notification",
+			"notificationWithSourceAriaLabel": "{0}, source : {1}, notification"
 		},
 		"vs/workbench/browser/parts/notifications/notificationsViewer": {
 			"executeCommand": "Cliquer pour exécuter la commande '{0}'",
@@ -3407,14 +3458,14 @@
 			"auxiliaryBarEnabled": "Contrôle si le panneau latéral situé en face de la barre latérale est activé.",
 			"centeredLayoutAutoResize": "Détermine si la disposition centrée doit être redimensionnée automatiquement sur la largeur maximale quand plusieurs groupes sont ouverts. Quand il ne reste plus qu'un groupe ouvert, il est redimensionné sur la largeur centrée d'origine.",
 			"closeEmptyGroups": "Contrôle le comportement des groupes d'éditeurs vides quand le dernier onglet du groupe est fermé. Quand ce paramètre est activé, les groupes vides se ferment automatiquement. Quand le paramètre est désactivé, les groupes vides restent dans la grille.",
-			"closeOnFileDelete": "Contrôle si les éditeurs affichant un fichier qui a été ouvert au cours de la session doivent se fermer automatiquement lors de la suppression ou le renommage par un autre processus. Cette désactivation gardera l’éditeur ouvert sur un tel événement. Notez que la suppression de l’application fermera toujours l’éditeur et que les fichiers modifiés ne se fermeront jamais pour préserver vos données.",
+			"closeOnFileDelete": "Contrôle si les éditeurs montrant un fichier qui a été ouvert pendant la session doivent se fermer automatiquement lorsqu'ils sont supprimés ou renommés par un autre processus. Si vous désactivez cette option, l'éditeur restera ouvert lors d'un tel événement. Notez que la suppression à partir de l'application fermera toujours l'éditeur et que les éditeurs avec des changements non sauvegardés ne seront jamais fermés pour préserver vos données.",
 			"closeOnFocusLost": "Contrôles si le menu Quick Open doit se fermer automatiquement dès qu'il perd le focus.",
 			"commandHistory": "Contrôle le nombre de commandes récemment utilisées à retenir dans l’historique de la palette de commande. Spécifier la valeur 0 pour désactiver l’historique des commandes.",
 			"confirmBeforeCloseWeb": "Contrôle s'il faut afficher une boîte de dialogue de confirmation avant la fermeture de l'onglet ou la fenêtre du navigateur. Notez que même si l'option est activée, les navigateurs peuvent toujours décider de fermer un onglet ou une fenêtre sans confirmation, et que ce paramètre n'est qu’un indicateur qui peut ne pas fonctionner dans tous les cas.",
 			"customMenuBarAltFocus": "Contrôle si la barre de menus obtient le focus en appuyant sur la touche Alt. Ce paramètre n'a pas d'effet sur l'activation/la désactivation de la barre de menus avec la touche Alt.",
 			"decorations.badges": "Détermine si les éléments décoratifs de fichiers de l'éditeur doivent utiliser des badges.",
 			"decorations.colors": "Détermine si les éléments décoratifs de fichiers de l'éditeur doivent utiliser des couleurs.",
-			"dirty": "'${dirty}' : indicateur erroné si l'éditeur actif est erroné.",
+			"dirty": "`${dirty}`: un indicateur pour quand l’éditeur actif a des modifications non enregistrées.",
 			"editorOpenPositioning": "Permet de définir où s'ouvrent les éditeurs. Sélectionnez `left` ou `right` pour ouvrir les éditeurs à gauche ou à droite de celui actuellement actif. Sélectionnez `first` ou `last` pour ouvrir les éditeurs indépendamment de celui actuellement actif.",
 			"editorTabCloseButton": "Contrôle la position des boutons de fermeture des onglets de l'éditeur, ou les désactive quand le paramètre a la valeur 'off'. Cette valeur est ignorée quand '#workbench.editor.showTabs#' est désactivé.",
 			"enableMenuBarMnemonics": "Contrôle si les menus principaux peuvent être ouverts avec les raccourcis de la touche Alt. La désactivation des mnémoniques permet d'associer à la place ces raccourcis de la touche Alt aux commandes de l'éditeur.",
@@ -3425,8 +3476,8 @@
 			"folderName": "'${folderName} : nom du dossier d'espace de travail contenant le fichier (par ex., myFolder).",
 			"folderPath": "'${folderPath}' : chemin de fichier du dossier d'espace de travail contenant le fichier (par ex., /Users/Development/myFolder).",
 			"fontAliasing": "Contrôle la méthode d'aliasing de polices dans le banc d'essai.",
-			"highlightModifiedTabs": "Détermine si une bordure supérieure doit être dessinée ou non sur les onglets d'éditeur modifiés. Cette valeur est ignorée quand '#workbench.editor.showTabs#' est désactivé.",
-			"limitEditorsEnablement": "Contrôle s'il faut limiter le nombre d'éditeurs ouverts. Quand ce paramètre est activé, les éditeurs les plus anciens utilisés dont l'intégrité n'est pas compromise sont fermés pour permettre l'ouverture des nouveaux éditeurs.",
+			"highlightModifiedTabs": "Contrôle si une bordure supérieure est dessinée sur les onglets pour les éditeurs qui ont des modifications non sauvegardées. Cette valeur est ignorée lorsque `#workbench.editor.showTabs#` est désactivé.",
+			"limitEditorsEnablement": "Contrôle si le nombre d'éditeurs ouverts doit être limité ou non. Lorsque cette option est activée, les éditeurs les moins récemment utilisés seront fermés pour faire de la place aux éditeurs nouvellement ouverts.",
 			"limitEditorsMaximum": "Contrôle le nombre maximum d'éditeurs ouverts. Utilisez le paramètre '#workbench.editor.limit.perEditorGroup' pour contrôler cette limite par groupe d'éditeurs ou pour tous les groupes.",
 			"menuBarVisibility": "Contrôle la visibilité de la barre de menus. Le paramètre 'toggle' signifie que la barre de menus est masquée, et qu'une seule pression sur la touche Alt permet de l'afficher. Le paramètre 'compact' permet de déplacer le menu dans la barre latérale.",
 			"menuBarVisibility.mac": "Contrôle la visibilité de la barre de menus. Le paramètre 'toggle' signifie que la barre de menus est masquée, et que la commande Focus sur le menu d'application permet de l'afficher. Le paramètre 'compact' permet de déplacer le menu dans la barre latérale.",
@@ -3496,6 +3547,8 @@
 			"workbench.editor.pinnedTabSizing.compact": "Un onglet épinglé s'affiche de manière compacte avec uniquement une icône ou la première lettre du nom de l'éditeur.",
 			"workbench.editor.pinnedTabSizing.normal": "Un onglet épinglé hérite de l'apparence des onglets non épinglés.",
 			"workbench.editor.pinnedTabSizing.shrink": "Un onglet épinglé se réduit à une taille fixe compacte affichant des parties du nom de l'éditeur.",
+			"workbench.editor.splitInGroupLayoutHorizontal": "Les éditeurs sont positionnés de gauche à droite.",
+			"workbench.editor.splitInGroupLayoutVertical": "Les éditeurs sont positionnés de haut en bas.",
 			"workbench.editor.splitSizingDistribute": "Divise tous les groupes d'éditeurs à parts égales.",
 			"workbench.editor.splitSizingSplit": "Divise le groupe d'éditeurs actif en parts égales.",
 			"workbench.editor.tabSizing.fit": "Toujours garder les onglets assez grands pour afficher l’étiquette de l’éditeur complet.",
@@ -3547,7 +3600,7 @@
 			"activeEditorGroupIndex": "Index du groupe d'éditeurs actifs",
 			"activeEditorGroupLast": "Indique si le groupe d'éditeurs actifs est le dernier groupe",
 			"activeEditorGroupLocked": "Indiquez si le groupe d'éditeurs actifs est vide",
-			"activeEditorIsDirty": "Indique si l'intégrité de l'éditeur actif est compromise",
+			"activeEditorIsDirty": "Indique si l’éditeur actif a des modifications non enregistrées.",
 			"activeEditorIsNotPreview": "Indique si l'éditeur actif n'est pas en mode Aperçu",
 			"activeEditorIsPinned": "Indique si l'éditeur actif est épinglé",
 			"activeEditorIsReadonly": "Indique si l'éditeur actif est en lecture seule",
@@ -3649,7 +3702,8 @@
 			"sideBarSectionHeaderBorder": "Couleur de bordure de l'en-tête de section de barre latérale. La barre latérale est le conteneur des vues telles que celles de l'exploration et de la recherche. Les sections de la barre latérale sont des vues imbriquées dans la barre latérale.",
 			"sideBarSectionHeaderForeground": "Couleur de premier plan de l'en-tête de section de barre latérale. La barre latérale est le conteneur des vues telles que celles de l'exploration et de la recherche. Les sections de la barre latérale sont des vues imbriquées dans la barre latérale.",
 			"sideBarTitleForeground": "Couleur de premier plan du titre de la barre latérale. La barre latérale est le conteneur des affichages tels que ceux de l'exploration et la recherche.",
-			"sideBySideEditor.border": "Couleur permettant de séparer deux éditeurs les uns des autres lorsqu’ils sont affichés côte à côte dans un groupe d’éditeurs.",
+			"sideBySideEditor.horizontalBorder": "Couleur pour séparer deux éditeurs l'un de l'autre lorsqu'ils sont affichés côte à côte dans un groupe d'éditeurs de haut en bas.",
+			"sideBySideEditor.verticalBorder": "Couleur pour séparer deux éditeurs l'un de l'autre lorsqu'ils sont affichés côte à côte dans un groupe d'éditeurs de gauche à droite.",
 			"statusBarBackground": "Couleur d'arrière-plan de la barre d'état quand un espace de travail ou un dossier est ouvert. La barre d'état est affichée en bas de la fenêtre.",
 			"statusBarBorder": "Couleur de bordure de la barre d'état faisant la séparation avec la barre latérale et l'éditeur. La barre d'état est affichée en bas de la fenêtre.",
 			"statusBarErrorItemBackground": "Couleur d'arrière-plan des éléments d'erreur de la barre d'état. Les éléments d'erreur se distinguent des autres entrées de la barre d'état pour indiquer les conditions d'erreur. La barre d'état est affichée en bas de la fenêtre.",
@@ -3671,7 +3725,7 @@
 			"tabActiveBorder": "Bordure en bas d'un onglet actif. Les onglets sont les conteneurs des éditeurs dans la zone d'édition. Vous pouvez ouvrir plusieurs onglets dans un groupe d'éditeurs. Il peut exister plusieurs groupes d'éditeurs.",
 			"tabActiveBorderTop": "Bordure en haut d'un onglet actif. Les onglets sont les conteneurs des éditeurs dans la zone d'édition. Vous pouvez ouvrir plusieurs onglets dans un groupe d'éditeurs. Il peut exister plusieurs groupes d'éditeurs.",
 			"tabActiveForeground": "Couleur de premier plan de l'onglet actif dans un groupe actif. Les onglets sont les conteneurs des éditeurs dans la zone d'éditeurs. Vous pouvez ouvrir plusieurs onglets dans un groupe d'éditeurs. Il peut exister plusieurs groupes d'éditeurs.",
-			"tabActiveModifiedBorder": "Bordure en haut des onglets actifs modifiés dans un groupe actif. Les onglets sont les conteneurs des éditeurs dans la zone d'édition. Vous pouvez ouvrir plusieurs onglets dans un groupe d'éditeurs. Il peut exister plusieurs groupes d'éditeurs.",
+			"tabActiveModifiedBorder": "Bordure en haut des onglets inactifs modifiés dans un groupe actif. Les onglets sont les conteneurs des éditeurs dans la zone d'édition. Plusieurs onglets peuvent être ouverts dans un groupe d'éditeurs. Il peut y avoir plusieurs groupes d'éditeurs.",
 			"tabActiveUnfocusedBorder": "Bordure en bas d'un onglet actif dans un groupe n'ayant pas le focus. Les onglets sont les conteneurs des éditeurs dans la zone d'édition. Vous pouvez ouvrir plusieurs onglets dans un groupe d'éditeurs. Il peut exister plusieurs groupes d'éditeurs.",
 			"tabActiveUnfocusedBorderTop": "Bordure en haut d'un onglet actif dans un groupe n'ayant pas le focus. Les onglets sont les conteneurs des éditeurs dans la zone d'édition. Vous pouvez ouvrir plusieurs onglets dans un groupe d'éditeurs. Il peut exister plusieurs groupes d'éditeurs.",
 			"tabBorder": "Bordure séparant les onglets les uns des autres. Les onglets sont les conteneurs des éditeurs dans la zone d'éditeurs. Vous pouvez ouvrir plusieurs onglets dans un groupe d'éditeurs. Il peut exister plusieurs groupes d'éditeurs.",
@@ -3680,7 +3734,7 @@
 			"tabHoverForeground": "Couleur de premier plan de l'onglet quand un utilisateur pointe dessus. Les onglets sont les conteneurs des éditeurs dans la zone d'éditeurs. Vous pouvez ouvrir plusieurs onglets dans un groupe d'éditeurs. Il peut exister plusieurs groupes d'éditeurs.",
 			"tabInactiveBackground": "Couleur d'arrière-plan de l'onglet inactif. Les onglets sont les conteneurs des éditeurs dans la zone d'éditeurs. Vous pouvez ouvrir plusieurs onglets dans un groupe d'éditeurs. Il peut exister plusieurs groupes d'éditeurs.",
 			"tabInactiveForeground": "Couleur de premier plan de l'onglet inactif dans un groupe actif. Les onglets sont les conteneurs des éditeurs dans la zone d'éditeurs. Vous pouvez ouvrir plusieurs onglets dans un groupe d'éditeurs. Il peut exister plusieurs groupes d'éditeurs.",
-			"tabInactiveModifiedBorder": "Bordure en haut des onglets inactifs modifiés dans un groupe actif. Les onglets sont les conteneurs des éditeurs dans la zone d'édition. Vous pouvez ouvrir plusieurs onglets dans un groupe d'éditeurs. Il peut exister plusieurs groupes d'éditeurs.",
+			"tabInactiveModifiedBorder": "Bordure en haut des onglets inactifs modifiés dans un groupe actif. Les onglets sont les conteneurs des éditeurs dans la zone d'édition. Plusieurs onglets peuvent être ouverts dans un groupe d'éditeurs. Il peut y avoir plusieurs groupes d'éditeurs.",
 			"tabUnfocusedActiveBackground": "Couleur d'arrière-plan de l'onglet actif dans un groupe sans le focus. Les onglets sont les conteneurs des éditeurs dans la zone d'éditeur. Vous pouvez ouvrir plusieurs onglets dans un même groupe d'éditeurs. Vous pouvez avoir plusieurs groupes d'éditeurs.",
 			"tabUnfocusedActiveForeground": "Couleur de premier plan de l'onglet actif dans un groupe inactif. Les onglets sont les conteneurs des éditeurs dans la zone d'éditeurs. Vous pouvez ouvrir plusieurs onglets dans un groupe d'éditeurs. Il peut exister plusieurs groupes d'éditeurs.",
 			"tabUnfocusedHoverBackground": "Couleur de l'onglet d’arrière-plan dans un groupe n'ayant pas le focus lors du survol. Les onglets sont les conteneurs pour les éditeurs dans la zone de l’éditeur. Plusieurs onglets peuvent être ouverts dans un groupe d'éditeur. Il peut y avoir plusieurs groupes d’éditeur.",
@@ -3734,7 +3788,7 @@
 			"quickSwitchWindow": "Changement rapide de fenêtre...",
 			"switchWindow": "Changer de fenêtre...",
 			"switchWindowPlaceHolder": "Sélectionner une fenêtre vers laquelle basculer",
-			"windowDirtyAriaLabel": "{0}, fenêtre à l'intégrité compromise",
+			"windowDirtyAriaLabel": "{0}, fenêtre contenant des changements non enregistrés",
 			"zoomIn": "Zoom avant",
 			"zoomOut": "Zoom arrière",
 			"zoomReset": "Réinitialiser le zoom"
@@ -3751,7 +3805,7 @@
 			"argv.logLevel": "Niveau de journalisation à utiliser. La valeur par défaut est 'info'. Les valeurs autorisées sont 'critical', 'error', 'warn', 'info', 'debug', 'trace', 'off.",
 			"closeWhenEmpty": "Contrôle si la fermeture du dernier éditeur doit également fermer la fenêtre. Ce paramètre s’applique uniquement pour les fenêtres qui n'affichent pas de dossiers.",
 			"dialogStyle": "Ajustez l'apparence des fenêtres de dialogue.",
-			"enableCrashReporterDeprecated": "Déconseillé en raison d’une combinaison dans le paramètre {0}.",
+			"enableCrashReporterDeprecated": "Si ce paramètre a la valeur false, aucune télémétrie n’est envoyée, quelle que soit la valeur du nouveau paramètre. Déprécié en raison d’une combinaison dans le paramètre {0}.",
 			"keyboardConfigurationTitle": "Clavier",
 			"mergeAllWindowTabs": "Fusionner toutes les fenêtres",
 			"miExit": "&&Quitter",
@@ -4143,6 +4197,7 @@
 		},
 		"vs/workbench/contrib/codeEditor/browser/untitledTextEditorHint": {
 			"dontshow": "ne plus",
+			"keyboardBindingTooltip": "{0}",
 			"selectAlanguage2": "Sélectionnez un langage",
 			"thisAgain": " afficher ceci.",
 			"toGetStarted": " pour démarrer. Commencez à taper pour ignorer, ou "
@@ -4353,6 +4408,7 @@
 			"debug.console.historySuggestions": "Contrôle si la console de débogage doit suggérer une entrée déjà tapée.",
 			"debug.console.lineHeight": "Contrôle la hauteur de ligne en pixels dans la console de débogage. Utilisez 0 pour calculer la hauteur de ligne à partir de la taille de police.",
 			"debug.console.wordWrap": "Contrôle si le retour automatique à la ligne est activé dans la console de débogage.",
+			"debug.disassemblyView.showSourceCode": "Afficher le code source en mode Désassemblage",
 			"debug.focusWindowOnBreak": "Contrôle si la fenêtre Workbench doit être ciblée lorsque le débogueur s'arrête.",
 			"debug.onTaskErrors": "Contrôle ce qu'il faut faire en cas d'erreurs après l'exécution d'une tâche de prélancement.",
 			"debug.saveBeforeStart": "Contrôle les éditeurs à enregistrer avant le démarrage d'une session de débogage.",
@@ -4485,11 +4541,13 @@
 			"miDisassemblyView": "&&DisassemblyView",
 			"miLogPoint": "&&Logpoint...",
 			"miToggleBreakpoint": "Activer/désactiver le &&point d'arrêt",
+			"mitogglesource": "&&ToggleSource",
 			"openDisassemblyView": "Ouvrir la vue désassemblage",
 			"runToCursor": "Exécuter jusqu'au curseur",
 			"showDebugHover": "Déboguer : afficher par pointage",
 			"stepIntoTargets": "Effectuer un pas à pas détaillé dans les cibles...",
-			"toggleBreakpointAction": "Déboguer : activer/désactiver un point d'arrêt"
+			"toggleBreakpointAction": "Déboguer : activer/désactiver un point d'arrêt",
+			"toggleDisassemblyViewSourceCode": "Activer/désactiver le code source en mode Désassemblage"
 		},
 		"vs/workbench/contrib/debug/browser/debugEditorContribution": {
 			"addConfiguration": "Ajouter une configuration...",
@@ -4576,7 +4634,6 @@
 			"debugTrust": "Le débogage exécute des tâches de compilation du code de programme à partir de votre espace de travail.",
 			"debugTypeMissing": "Propriété 'type' manquante pour la configuration de lancement choisie.",
 			"debugTypeNotSupported": "Le type de débogage '{0}' configuré n'est pas pris en charge.",
-			"debuggerDisabled": "Le type de débogage configuré « {0} » est installé mais n’est pas pris en charge dans cet environnement.",
 			"debuggingPaused": "{0}:{1}, débogage interrompu {2}, {3}",
 			"installAdditionalDebuggers": "Installer l'extension {0}",
 			"launchJsonDoesNotExist": "'launch.json' n'existe pas pour le dossier d'espace de travail passé.",
@@ -4744,6 +4801,7 @@
 			"debugState": "État dans lequel se trouve la session de débogage ayant le focus. Il s'agit de l'une des valeurs suivantes : 'inactive', 'initializing', 'stopped' ou 'running'.",
 			"debugType": "Type de débogage de la session de débogage active. Exemple : 'python'.",
 			"debugUX": "État de l'expérience utilisateur de débogage. Quand il n'existe aucune configuration de débogage, la valeur est 'simple', sinon 'default'. Permet de déterminer le moment où les vues de bienvenue doivent être affichées dans le viewlet de débogage.",
+			"debuggerDisabled": "Le type de débogage configuré « {0} » est installé mais n’est pas pris en charge dans cet environnement.",
 			"debuggersAvailable": "La valeur est true quand il existe au moins une extension de débogage active.",
 			"disassembleRequestSupported": "La valeur est true lorsque les sessions ayant le focus prend en charge la demande de désassemblage.",
 			"disassemblyViewFocus": "La valeur est true lorsque la vue du désassemblage est focus.",
@@ -4978,7 +5036,8 @@
 			"not yet activated": "Pas encore activé.",
 			"preview": "Aperçu",
 			"productThemes": "Thèmes d'icône de produit ({0})",
-			"publisher": "Nom de l'éditeur",
+			"publisher": "Éditeur",
+			"publisher verified tooltip": "Cet éditeur a vérifié la propriété de {0}.",
 			"rating": "Évaluation",
 			"recommendationHasBeenIgnored": "Vous avez choisi de ne pas recevoir de recommandations pour cette extension.",
 			"release date": "Publié le",
@@ -5128,6 +5187,7 @@
 			"workbench.extensions.action.undoIgnoredRecommendation": "Annuler la recommandation ignorée",
 			"workbench.extensions.installExtension.arg.decription": "ID d'extension ou URI de ressource VSIX",
 			"workbench.extensions.installExtension.description": "Installer l'extension spécifiée",
+			"workbench.extensions.installExtension.option.donotSync": "Lorsque cette option est activée, VS Code ne synchronisez pas cette extension lorsque la synchronisation des paramètres est activée.",
 			"workbench.extensions.installExtension.option.installOnlyNewlyAddedFromExtensionPackVSIX": "Quand cette option est activée, VS Code installe uniquement les extensions récemment ajoutées à partir du pack d’extensions VSIX. Cette option est uniquement prise en compte lors de l’installation d’un VSIX.",
 			"workbench.extensions.search.arg.name": "Requête à utiliser dans la recherche",
 			"workbench.extensions.search.description": "Recherche d'une extension spécifique",
@@ -5298,6 +5358,7 @@
 			"syncEnabledIcon": "Icône permettant d'indiquer qu'une extension est synchronisée.",
 			"syncIgnoredIcon": "Icône permettant d'indiquer qu'une extension est ignorée au moment de la synchronisation.",
 			"trustIcon": "Icône affichée avec un message sur la fiabilité de l'espace de travail dans l'éditeur d'extensions.",
+			"verifiedPublisher": "Icône utilisée pour l’éditeur d’extension vérifié dans la vue et l’éditeur d’extensions.",
 			"warningIcon": "Icône affichée avec un message d'avertissement dans l'éditeur d'extensions."
 		},
 		"vs/workbench/contrib/extensions/browser/extensionsQuickAccess": {
@@ -5360,8 +5421,10 @@
 			"activation": "Heure de l'activation",
 			"dependencies": "Afficher les dépendances",
 			"extensionIconStarForeground": "Couleur de l'icône des évaluations des extensions.",
+			"extensionIconVerifiedForeground": "La couleur de l'icône de l'éditeur vérifié de l'extension.",
 			"message": "1 message",
 			"messages": "{0} messages",
+			"publisher verified tooltip": "Cet éditeur a vérifié la propriété de {0}.",
 			"remote extension title": "Extension dans {0}",
 			"startup": "Démarrage",
 			"syncingore.label": "Cette extension est ignorée pendant la synchronisation.",
@@ -5492,7 +5555,6 @@
 			"patchedVersion1": "Votre installation est endommagée.",
 			"patchedVersion2": "Spécifiez cela, si vous soumettez un bogue.",
 			"request a missing feature": "Demander une fonctionnalité manquante",
-			"sendFeedback": "Tweeter des commentaires",
 			"sentiment": "Quelles sont vos impressions ?",
 			"showFeedback": "Afficher l'icône de commentaires dans la barre d'état",
 			"smileCaption": "Sentiment de retour satisfaisant",
@@ -5711,8 +5773,8 @@
 			"autoReveal.focusNoScroll": "Les fichiers ne défilent pas dans la vue, mais ils ont toujours le focus.",
 			"autoReveal.off": "Les fichiers ne sont pas révélés et sélectionnés.",
 			"autoReveal.on": "Les fichiers sont révélés et sélectionnés.",
-			"autoSave": "Contrôle l'enregistrement automatique des éditeurs dont l'intégrité est compromise. Plus d'informations sur l'enregistrement automatique [ici](https://code.visualstudio.com/docs/editor/codebasics#_save-auto-save).",
-			"autoSaveDelay": "Contrôle le délai en ms avant l'enregistrement automatique de l'éditeur dont l'intégrité est compromise. S'applique uniquement quand '#files.autoSave#' est défini sur '{0}'.",
+			"autoSave": "Contrôle la sauvegarde automatique des éditeurs dont les modifications n'ont pas été sauvegardées. En savoir plus sur l'enregistrement automatique [ici] (https://code.visualstudio.com/docs/editor/codebasics#_save-auto-save).",
+			"autoSaveDelay": "Contrôle le délai en millisecondes après lequel un éditeur avec des modifications non sauvegardées est enregistré automatiquement. S'applique uniquement lorsque `#files.autoSave#` est défini sur `{0}`.",
 			"binaryFileEditor": "Éditeur de fichiers binaires",
 			"compressSingleChildFolders": "Contrôle si l'explorateur doit afficher les dossiers de manière compacte. Sous cette forme, les dossiers enfant sont compressés individuellement dans un élément d'arborescence combiné. Utile pour les structures de package Java, par exemple.",
 			"confirmDelete": "Contrôle si l’Explorateur devrait demander confirmation lorsque vous supprimez un fichier via la corbeille.",
@@ -5730,16 +5792,21 @@
 			"eol.auto": "Utilise le caractère de fin de ligne spécifique du système d'exploitation.",
 			"everything": "Met en forme la totalité du fichier.",
 			"exclude": "Configurez les modèles Glob pour l'exclusion des fichiers et des dossiers. Par exemple, l'Explorateur de fichiers affiche ou masque les fichiers et dossiers en fonction de ce paramètre. Consultez le paramètre '#search.exclude#' pour définir des exclusions spécifiques à la recherche. Vous trouverez plus d'informations sur les modèles Glob [ici](https://code.visualstudio.com/docs/editor/codebasics#_advanced-search-options).",
+			"expandSingleFolderWorkspaces": "Contrôle si l'explorateur doit développer les espaces de travail multi-racines contenant un seul dossier lors de l'initialisation",
 			"explorer.decorations.badges": "Contrôle si les décorations de fichier devraient utiliser des badges.",
 			"explorer.decorations.colors": "Contrôle si les décorations de fichier devraient utiliser des couleurs.",
 			"explorer.incrementalNaming": "Contrôle la stratégie de nommage à utiliser lorsque vous donnez un nouveau nom à un élément dupliqué d'Explorer à coller.",
 			"explorerConfigurationTitle": "Explorateur de fichiers",
-			"files.autoSave.afterDelay": "Un éditeur dont l'intégrité est compromise est automatiquement enregistré après le '#files.autoSaveDelay#' configuré.",
-			"files.autoSave.off": "Un éditeur dont l'intégrité est compromise n'est jamais enregistré automatiquement.",
-			"files.autoSave.onFocusChange": "Un éditeur dont l'intégrité est compromise est automatiquement enregistré quand il perd le focus.",
-			"files.autoSave.onWindowChange": "Un éditeur dont l'intégrité est compromise est automatiquement enregistré quand la fenêtre perd le focus.",
+			"files.autoSave.afterDelay": "Un éditeur avec des modifications est automatiquement enregistré après le `#files.autoSaveDelay#` configuré.",
+			"files.autoSave.off": "Un éditeur avec des modifications n’est jamais enregistré automatiquement.",
+			"files.autoSave.onFocusChange": "Un éditeur avec des modifications est automatiquement sauvegardé lorsque l'éditeur perd le focus.",
+			"files.autoSave.onWindowChange": "Un éditeur avec des modifications est automatiquement sauvegardé lorsque la fenêtre perd le focus.",
 			"files.exclude.boolean": "Modèle Glob auquel les chemins de fichiers doivent correspondre. Affectez la valeur true ou false pour activer ou désactiver le modèle.",
 			"files.exclude.when": "Vérification supplémentaire des frères d'un fichier correspondant. Utilisez $(basename) comme variable pour le nom de fichier correspondant.",
+			"files.experimentalSandboxedFileService": "Expérimental : modifie le service de fichiers pour qu’il soit en mode bac à sable. Ne modifiez pas ce paramètre, sauf si vous y êtes invité!",
+			"files.legacyWatcher.default": "Le nouvel observateur de fichiers sera activé si vous utilisez la version insiders ou lorsque vous ouvrez des espaces de travail multi-root.",
+			"files.legacyWatcher.off": "Désactivez l’observateur de fichiers hérité et activez le nouvel observateur de fichiers pour bénéficier de ses fonctionnalités.",
+			"files.legacyWatcher.on": "Activez l’observateur de fichiers hérité si vous rencontrez des problèmes avec le nouvel observateur de fichiers.",
 			"files.restoreUndoStack": "Restaurez la pile des opérations d'annulation à la réouverture d'un fichier.",
 			"files.saveConflictResolution": "Un conflit d'enregistrement peut se produire quand un fichier est enregistré sur un disque qui a été modifié par un autre programme dans l'intervalle. Pour éviter une perte de données, l'utilisateur est invité à comparer les changements dans l'éditeur avec la version sur disque. Changez ce paramètre seulement si vous rencontrez fréquemment des erreurs de conflit d'enregistrement, car il peut entraîner une perte de données s'il est utilisé sans précaution.",
 			"files.simpleDialog.enable": "Active la boîte de dialogue de fichier simple, qui remplace alors la boîte de dialogue de fichier système.",
@@ -5747,7 +5814,7 @@
 			"formatOnSave": "Met en forme un fichier à l'enregistrement. Un formateur doit être disponible, le fichier ne doit pas être enregistré après un délai et l'éditeur ne doit pas être en cours d'arrêt.",
 			"formatOnSaveMode": "Permet de contrôler si la mise en forme au moment de l'enregistrement met en forme la totalité du fichier ou seulement les modifications apportées. S'applique uniquement quand '#editor.formatOnSave#' est activé.",
 			"hotExit": "Contrôle si les fichiers non enregistrés sont mémorisés entre les sessions, ce qui permet d'ignorer la demande d'enregistrement à la sortie de l'éditeur.",
-			"hotExit.off": "Désactivez la sortie à chaud. Une invite s'affiche quand vous tentez de fermer une fenêtre avec des fichiers dont l'intégrité est compromise.",
+			"hotExit.off": "Désactiver la sortie à chaud. Une invite s'affiche lors de la tentative de fermeture d'une fenêtre contenant des éditeurs dont les modifications n'ont pas été sauvegardées.",
 			"hotExit.onExit": "La sortie à chaud se déclenche quand la dernière fenêtre est fermée dans Windows/Linux, ou quand la commande 'workbench.action.quit' se déclenche (palette de commandes, combinaison de touches, menu). Toutes les fenêtres qui n'ont pas de dossiers ouverts sont restaurées au prochain lancement. Une liste des fenêtres ouvertes avec des fichiers non enregistrés est accessible via Fichier > Ouvrir les éléments récents > Plus...",
 			"hotExit.onExitAndWindowClose": "La sortie à chaud se déclenche quand la dernière fenêtre est fermée dans Windows/Linux, ou quand la commande 'workbench.action.quit' se déclenche (palette de commandes, combinaison de touches, menu) ainsi que pour toute fenêtre comportant un dossier ouvert, qu'il s'agisse ou non de la dernière fenêtre. Toutes les fenêtres qui n'ont pas de dossiers ouverts sont restaurées au prochain lancement. Une liste des fenêtres ouvertes avec des fichiers non enregistrés est accessible via Fichier > Ouvrir les éléments récents > Plus...",
 			"hotExit.onExitAndWindowCloseBrowser": "La fermeture du navigateur, de la fenêtre ou de l'onglet provoquera une sortie à chaud.",
@@ -5777,8 +5844,8 @@
 			"trimFinalNewlines": "Si l'option est activée, va supprimer toutes les nouvelles lignes après la dernière ligne à la fin du fichier lors de l’enregistrement.",
 			"trimTrailingWhitespace": "Si l'option est activée, l'espace blanc de fin est supprimé au moment de l'enregistrement d'un fichier.",
 			"useTrash": "Déplace les fichiers/dossiers dans la corbeille du système d'exploitation (corbeille sous Windows) lors de la suppression. Désactiver ceci supprimera définitivement les fichiers/dossiers.",
-			"watcherExclude": "Configurez les modèles Glob des chemins d’accès aux fichiers à exclure de la surveillance des fichiers. Les modèles doivent correspondre à des chemins absolus, à savoir le préfixe « **/ » ou le chemin complet pour une correspondance appropriée et le suffixe « /** » pour la correspondance avec les fichiers à l’intérieur d’un chemin (par exemple, « /build/output/** » ou « /Users/name/workspaces/project/build/output/** »). Si vous constatez que le code consomme beaucoup de temps processeur au démarrage, vous pouvez exclure les dossiers volumineux pour réduire la charge initiale.",
-			"watcherInclude": "Configurez des chemins supplémentaires pour surveiller les modifications dans l’espace de travail. Par défaut, tous les dossiers d’espace de travail sont observés de manière récursive, à l’exception des dossiers qui sont des liens symboliques. Vous pouvez ajouter explicitement des chemins absolus ou relatifs pour prendre en charge la surveillance des dossiers qui sont des liens symboliques. Les chemins relatifs seront résolus par rapport au dossier de l’espace de travail pour former un chemin d’accès absolu."
+			"watcherExclude": "Configurer les chemins ou les motifs globaux à exclure de la surveillance des fichiers. Les chemins qui sont relatifs (par exemple `build/output`) seront résolus en un chemin absolu en utilisant l'espace de travail actuellement ouvert. Les modèles globaux doivent correspondre aux chemins absolus (c'est-à-dire préfixe avec `**/` ou le chemin complet et suffixe avec `/**` pour correspondre aux fichiers dans un chemin) pour correspondre correctement (par exemple `**/build/output/**` ou `/Users/name/workspaces/project/build/output/**`). Si vous constatez que le processus de surveillance des fichiers consomme beaucoup de CPU, assurez-vous d'exclure les grands dossiers qui présentent moins d'intérêt (comme les dossiers de sortie de compilation).",
+			"watcherInclude": "Configurez des chemins supplémentaires pour surveiller les modifications dans l’espace de travail. Par défaut, tous les dossiers d’espace de travail sont observés de manière récursive, à l’exception des dossiers qui sont des liens symboliques. Vous pouvez ajouter explicitement des chemins absolus ou relatifs pour prendre en charge la surveillance des dossiers qui sont des liens symboliques. Les chemins relatifs seront résolus en un chemin absolu en utilisant l'espace de travail actuellement ouvert."
 		},
 		"vs/workbench/contrib/files/browser/views/emptyView": {
 			"noWorkspace": "Aucun dossier ouvert"
@@ -5892,7 +5959,9 @@
 			"interactive.history.previous": "Valeur précédente dans l’historique",
 			"interactive.inactiveCodeBorder": "La couleur de la bordure de la cellule de code interactive actuelle lorsque l'éditeur n'a pas le focus.",
 			"interactive.input.clear": "Effacer le contenu de l’éditeur d’entrée de la fenêtre interactive",
-			"interactive.open": "Ouvrir une fenêtre interactive"
+			"interactive.open": "Ouvrir une fenêtre interactive",
+			"interactiveScrollToBottom": "Faire défiler jusqu'en bas",
+			"interactiveScrollToTop": "Faire défiler jusqu'en haut"
 		},
 		"vs/workbench/contrib/interactive/browser/interactiveEditor": {
 			"interactiveInputPlaceHolder": "Tapez du code ici et appuyez sur {0} pour exécuter"
@@ -5920,6 +5989,8 @@
 		"vs/workbench/contrib/localizations/browser/localizations.contribution": {
 			"activateLanguagePack": "Pour être utilisé dans {0}, VS Code doit être redémarré.",
 			"changeAndRestart": "Changer de langue et redémarrer",
+			"doNotChangeAndRestart": "Ne changez pas de langue.",
+			"doNotRestart": "Ne pas redémarrer",
 			"neverAgain": "Ne plus afficher",
 			"restart": "Redémarrer",
 			"updateLocale": "Souhaitez-vous changer la langue de l’interface de VS Code en {0} et redémarrer ?",
@@ -6094,7 +6165,8 @@
 			"notebookActions.copy": "Copier la cellule",
 			"notebookActions.cut": "Couper la cellule",
 			"notebookActions.paste": "Coller la cellule",
-			"notebookActions.pasteAbove": "Coller la cellule au-dessus"
+			"notebookActions.pasteAbove": "Coller la cellule au-dessus",
+			"toggleNotebookClipboardLog": "Activer/désactiver la résolution des problèmes liés au Presse-papiers du notebook"
 		},
 		"vs/workbench/contrib/notebook/browser/contrib/editorStatusBar/editorStatusBar": {
 			"current1": "Actuellement sélectionnés",
@@ -6109,8 +6181,10 @@
 			"notebook.singleActiveCellIndicator": "Cellule {0} sur {1}",
 			"notebookActions.selectKernel": "Sélectionner un noyau de Notebook",
 			"notebookActions.selectKernel.args": "Arguments du noyau de Notebook",
+			"otherKernelKinds": "Autre",
 			"prompt.placeholder.change": "Modifier le noyau pour « {0} »",
 			"prompt.placeholder.select": "Sélectionnez le noyau pour « {0} »",
+			"suggestedKernels": "Suggestions",
 			"tooltop": "{0} (suggestion)"
 		},
 		"vs/workbench/contrib/notebook/browser/contrib/find/findController": {
@@ -6204,10 +6278,14 @@
 		"vs/workbench/contrib/notebook/browser/controller/layoutActions": {
 			"cmd.toggle": "Basculer les barres de navigation",
 			"customizeNotebook": "Personnalisez le bloc-notes...",
+			"notebook.placeholder": "Fichier de paramètres dans lequel enregistrer",
+			"notebook.saveMimeTypeOrder": "Enregistrer l’ordre d’affichage mimetype",
 			"notebook.showLineNumbers": "Afficher les numéros de ligne du bloc-notes",
 			"notebook.toggleBreadcrumb": "Basculer les barres de navigation",
 			"notebook.toggleCellToolbarPosition": "Changer la position de la barre d’outils des cellules",
 			"notebook.toggleLineNumbers": "Activer/désactiver les numéros de ligne du bloc-notes",
+			"saveTarget.machine": "Paramètres utilisateur",
+			"saveTarget.workspace": "Paramètres de l'espace de travail",
 			"workbench.notebook.layout.configure.label": "Personnaliser la disposition du bloc-notes",
 			"workbench.notebook.layout.select.label": "Sélectionner une des dispositions de bloc-notes"
 		},
@@ -6359,6 +6437,7 @@
 			"notebook.error.rendererNotFound": "Renderer introuvable pour « $0 » a"
 		},
 		"vs/workbench/contrib/notebook/browser/view/renderers/cellEditorOptions": {
+			"notebook.cell.toggleLineNumbers.title": "Afficher les numéros de ligne de cellule",
 			"notebook.lineNumbers": "Contrôle l’affichage des numéros de ligne dans l’éditeur de cellule.",
 			"notebook.showLineNumbers": "Afficher les numéros de ligne du bloc-notes",
 			"notebook.toggleLineNumbers": "Activer/désactiver les numéros de ligne du bloc-notes"
@@ -6373,6 +6452,7 @@
 			"unavailableRenderInfo": "renderer non disponible"
 		},
 		"vs/workbench/contrib/notebook/browser/view/renderers/cellRenderer": {
+			"cellExecutionOrderCountLabel": "Ordre d’exécution",
 			"cellExpandOutputButtonLabel": "Développer la sortie de cellule ({0})",
 			"cellExpandOutputButtonLabelWithDoubleClick": "Double-cliquez pour développer la sortie de cellule ({0}).",
 			"notebook.moreRunActionsLabel": "Plus..."
@@ -6906,11 +6986,11 @@
 			"tunnel.originColumn.tooltip": "Source à l'origine du réacheminement d'un port. Il peut s'agir d'une extension, d'un réacheminement effectué par l'utilisateur, d'un réacheminement statique ou d'un réacheminement automatique.",
 			"tunnel.portColumn.label": "Port",
 			"tunnel.portColumn.tooltip": "Étiquette et numéro de port distant du port réacheminé.",
-			"tunnel.privacyColumn.label": "Confidentialité",
+			"tunnel.privacyColumn.label": "Visibilité",
 			"tunnel.privacyColumn.tooltip": "Disponibilité du port réacheminé.",
 			"tunnel.processColumn.label": "Processus en cours d'exécution",
 			"tunnel.processColumn.tooltip": "Ligne de commande du processus qui utilise le port.",
-			"tunnelContext.privacyMenu": "Confidentialité du port",
+			"tunnelContext.privacyMenu": "Visibilité du port",
 			"tunnelContext.protocolMenu": "Modifier le protocole de port",
 			"tunnelPrivacy.private": "Privé",
 			"tunnelPrivacy.unknown": "Inconnu",
@@ -6918,6 +6998,10 @@
 			"tunnelView.runningProcess.inacessable": "Informations de processus indisponibles"
 		},
 		"vs/workbench/contrib/remote/common/remote.contribution": {
+			"invalidWorkspaceCancel": "&&Annuler",
+			"invalidWorkspaceDetail": "L’espace de travail n’existe pas. Sélectionnez un autre espace de travail à ouvrir.",
+			"invalidWorkspaceMessage": "L’espace de travail n'existe pas.",
+			"invalidWorkspacePrimary": "&&Ouvrir un espace de travail...",
 			"remote": "Distant",
 			"remote.autoForwardPorts": "Quand cette option est activée, les nouveaux processus qui s'exécutent sont détectés, et les ports qu'ils écoutent sont réacheminés automatiquement. La désactivation de ce paramètre n’empêchera pas le transfert de tous les ports. Même lorsqu’elles sont désactivées, les extensions peuvent toujours faire en sorte que les ports soient transférés, et l’ouverture de certaines URL entraîne toujours le transfert des ports.",
 			"remote.autoForwardPortsSource": "Définit la source à partir de laquelle les ports sont automatiquement réacheminés quand 'remote.autoForwardPorts' a la valeur true. Sur les machines Windows et Mac distantes, l'option 'process' n'a aucun effet, et 'output' est utilisé. Nécessite un rechargement pour prendre effet.",
@@ -7048,7 +7132,7 @@
 		"vs/workbench/contrib/search/browser/anythingQuickAccess": {
 			"closeEditor": "Supprimer des récemment ouverts",
 			"fileAndSymbolResultsSeparator": "Résultats des fichiers et des symboles",
-			"filePickAriaLabelDirty": "{0}, à l'intégrité compromise",
+			"filePickAriaLabelDirty": "{0} ayant des changements non enregistrés",
 			"fileResultsSeparator": "fichier de résultats",
 			"noAnythingResults": "Aucun résultat correspondant",
 			"openToBottom": "Ouvrir en bas",
@@ -7137,7 +7221,7 @@
 			"showTriggerActions": "Atteindre le symbole dans l'espace de travail...",
 			"symbolsQuickAccess": "Atteindre le symbole dans l'espace de travail",
 			"symbolsQuickAccessPlaceholder": "Tapez le nom d'un symbole à ouvrir.",
-			"useGlobalIgnoreFiles": "Détermine s'il faut utiliser les fichiers généraux '.gitignore' et '.ignore' pendant la recherche de fichiers.",
+			"useGlobalIgnoreFiles": "Contrôle l'utilisation des fichiers globaux `.gitignore` et `.ignore` lors de la recherche de fichiers. Il faut que `#search.useIgnoreFiles#` soit activé.",
 			"useIgnoreFiles": "Contrôle s'il faut utiliser les fichiers `.gitignore` et `.ignore` par défaut pendant la recherche de fichiers.",
 			"usePCRE2Deprecated": "Déprécié. PCRE2 est utilisé automatiquement lors de l'utilisation de fonctionnalités regex qui ne sont prises en charge que par PCRE2.",
 			"useRipgrep": "Ce paramètre est déprécié et remplacé par \"search.usePCRE2\".",
@@ -7949,6 +8033,7 @@
 			"terminal.integrated.a11yTooMuchOutput": "Trop de sorties à annoncer, naviguer dans les lignes manuellement pour lire",
 			"terminal.integrated.copySelection.noSelection": "Le terminal n'a aucune sélection à copier",
 			"terminal.slowRendering": "L'accélération GPU du terminal semble lente sur votre ordinateur. Voulez-vous la désactiver, ce qui peut améliorer les performances ? [En savoir plus sur les paramètres de terminal](https://code.visualstudio.com/docs/editor/integrated-terminal#_changing-how-the-terminal-is-rendered).",
+			"terminalNavigationMode": "Utiliser {0} et {1} pour parcourir la mémoire tampon du terminal",
 			"terminalProfileMigration": "Le terminal utilise des paramètres shell/shellArgs dépréciés, voulez-vous le migrer vers un profil ?",
 			"terminalStaleTextBoxAriaLabel": "L'environnement {0} du terminal est obsolète. Pour plus d'informations, exécutez la commande Afficher les informations sur l'environnement",
 			"terminalTextBoxAriaLabel": "Terminal {0}",
@@ -7964,6 +8049,7 @@
 			"miRunActiveFile": "Exécuter le fichier &&actif",
 			"miRunSelectedText": "Exécuter le texte &&sélectionné",
 			"miSplitTerminal": "Terminal divi&&sé",
+			"splitTerminal": "Terminal divisé",
 			"terminal.new": "Nouveau terminal",
 			"workbench.action.terminal.changeColor": "Modifier la couleur...",
 			"workbench.action.terminal.changeIcon": "Changer l’icône...",
@@ -8065,7 +8151,7 @@
 			"terminal.integrated.confirmOnExit.always": "Confirmez toujours l’existence de terminaux.",
 			"terminal.integrated.confirmOnExit.hasChildProcesses": "Confirmez s’il existe des terminaux qui ont des processus enfants.",
 			"terminal.integrated.confirmOnExit.never": "Ne jamais confirmer.",
-			"terminal.integrated.confirmOnKill": "Contrôle s’il faut confirmer la suppression des terminaux lorsqu’ils ont des processus enfants. Lorsqu’il est défini sur Éditeur, les terminaux de la zone d’éditeur sont marqués comme modifiés lorsqu’ils ont des processus enfants. Notez que la détection des processus enfants peut ne pas fonctionner correctement pour les interpréteurs de commandes tels que Git Bash qui n’exécutent pas leurs processus en tant que processus enfants de l’interpréteur de commandes.",
+			"terminal.integrated.confirmOnKill": "Contrôle la confirmation ou non de la mise à mort des terminaux lorsqu'ils ont des processus enfants. Lorsqu'il est défini sur éditeur, les terminaux dans la zone de l'éditeur seront marqués comme modifiés lorsqu'ils ont des processus enfants. Notez que la détection des processus enfants peut ne pas fonctionner correctement pour les shells comme Git Bash qui n'exécutent pas leurs processus en tant que processus enfants du shell.",
 			"terminal.integrated.confirmOnKill.always": "Confirmez si le terminal est se trouve dans l’éditeur ou le panneau.",
 			"terminal.integrated.confirmOnKill.editor": "Confirmez si le terminal se trouve dans l’éditeur.",
 			"terminal.integrated.confirmOnKill.never": "Ne jamais confirmer.",
@@ -8163,7 +8249,7 @@
 			"terminalDescription": "Contrôle la description du terminal, qui apparaît à droite du titre. Les variables sont remplacées en fonction du contexte :",
 			"terminalIntegratedConfigurationTitle": "Terminal intégré",
 			"terminalTitle": "Contrôle le titre du terminal. Les variables sont remplacées en fonction du contexte :",
-			"workspaceFolder": "l’espace de travail dans lequel le terminal a été lancé"
+			"workspaceFolder": "l’espace de travail dans lequel le terminal a été lancé."
 		},
 		"vs/workbench/contrib/terminal/common/terminalContextKey": {
 			"isSplitTerminalContextKey": "Indique si le terminal de l’onglet associé est un terminal scindé.",
@@ -8181,7 +8267,6 @@
 			"killTerminal": "Tuer le terminal",
 			"killTerminal.short": "Tuer",
 			"moveToEditor": "Déplacer le terminal dans la zone de l’éditeur",
-			"moveToEditorShort": "Accéder à la zone Éditeur",
 			"splitTerminal": "Diviser le terminal",
 			"splitTerminal.short": "Fractionner",
 			"terminal": "Terminal",
@@ -8250,6 +8335,7 @@
 			"testing.searchForTestExtension": "Rechercher une extension de test",
 			"testing.selectDefaultTestProfiles": "Sélectionner le profil par défaut",
 			"testing.showMostRecentOutput": "Afficher la sortie",
+			"testing.sortByDuration": "Trier par durée",
 			"testing.sortByLocation": "Trier par emplacement",
 			"testing.sortByStatus": "Trier par état",
 			"testing.toggleInlineTestOutput": "Activer/désactiver la sortie de test Inline",
@@ -8496,8 +8582,8 @@
 			"later": "Plus tard",
 			"noUpdatesAvailable": "Aucune mise à jour n'est disponible actuellement.",
 			"read the release notes": "Bienvenue dans {0} v{1} ! Voulez-vous lire les notes de publication ?",
-			"relaunchDetailInsiders": "Appuyez sur le bouton de rechargement pour passer à la version de préproduction nocturne de VSCode.",
-			"relaunchDetailStable": "Appuyez sur le bouton de rechargement pour passer à la version stable publiée mensuellement de VSCode.",
+			"relaunchDetailInsiders": "Appuyez sur le bouton de rechargement pour passer à la version Insiders de VS Code.",
+			"relaunchDetailStable": "Appuyez sur le bouton de rechargement pour passer à la version stable de VS Code.",
 			"relaunchMessage": "Le changement de version nécessite un rechargement pour être pris en compte",
 			"releaseNotes": "Notes de publication",
 			"reload": "&&Recharger",
@@ -8712,7 +8798,9 @@
 			"watermark.openRecent": "Ouvrir les éléments récents",
 			"watermark.quickAccess": "Accéder au fichier",
 			"watermark.showCommands": "Afficher toutes les commandes",
+			"watermark.showSettings": "Afficher les paramètres",
 			"watermark.startDebugging": "Démarrer le débogage",
+			"watermark.toggleFullscreen": "Plein écran",
 			"watermark.toggleTerminal": "Activer/désactiver le terminal"
 		},
 		"vs/workbench/contrib/webview/browser/webview.contribution": {
@@ -8761,6 +8849,7 @@
 		},
 		"vs/workbench/contrib/welcome/gettingStarted/browser/gettingStarted": {
 			"allDone": "Marquer comme terminé",
+			"checkboxTitle": "Lorsque cette option est cochée, cette page s’affiche au démarrage.",
 			"close": "Masquer",
 			"footer": "{0} collecte les données d’utilisation. Lisez notre {1} et apprenez à {2}.",
 			"getStarted": "Prise en main",
@@ -8769,7 +8858,7 @@
 			"gettingStarted.someStepsComplete": "{0} étapes complétées sur {1}",
 			"imageShowing": "Image montrant {0}",
 			"new": "Nouveau",
-			"newItems": "Nouveaux éléments",
+			"newItems": "Mise à jour terminée",
 			"nextOne": "Section suivante",
 			"optOut": "Annuler l'adhésion",
 			"pickWalkthroughs": "Ouvrir la procédure pas à pas...",
@@ -8798,8 +8887,6 @@
 		},
 		"vs/workbench/contrib/welcome/gettingStarted/browser/gettingStartedColors": {
 			"welcomePage.background": "Couleur d'arrière-plan de la page d'accueil.",
-			"welcomePage.buttonBackground": "Couleur d'arrière-plan des boutons de la page d'accueil.",
-			"welcomePage.buttonHoverBackground": "Couleur d'arrière-plan du pointage des boutons de la page d'accueil.",
 			"welcomePage.progress.background": "Couleur de premier plan des barres de progression de la page d'accueil.",
 			"welcomePage.progress.foreground": "Couleur d'arrière-plan des barres de progression de la page d'accueil.",
 			"welcomePage.tileBackground": "Couleur d'arrière-plan des vignettes de la page Prise en main.",
@@ -8877,6 +8964,8 @@
 			"gettingStarted.installGit.title": "Installer Git",
 			"gettingStarted.intermediate.description": "Optimisez votre flux de travail de développement avec ces trucs et astuces.",
 			"gettingStarted.intermediate.title": "Dynamiser votre productivité",
+			"gettingStarted.menuBar.description.interpolated": "La barre de menu complète est disponible dans le menu déroulant pour faire de la place à votre code. Basculez son apparition pour un accès plus rapide. \r\n{0}",
+			"gettingStarted.menuBar.title": "Juste la bonne quantité d’interface utilisateur",
 			"gettingStarted.newFile.description": "Ouvrez un nouveau fichier, bloc-notes ou éditeur personnalisé sans titre.",
 			"gettingStarted.newFile.title": "Nouveau fichier...",
 			"gettingStarted.notebook.title": "Personnalisez les blocs-notes",
@@ -8907,6 +8996,8 @@
 			"gettingStarted.setup.OpenFolderWeb.description.interpolated": "Vous êtes prêt à commencer le codage. Vous pouvez ouvrir un projet local ou un dépôt distant pour obtenir vos fichiers dans VS Code.\r\n{0}\r\n{1}",
 			"gettingStarted.setup.description": "Découvrez les meilleures personnalisations pour rendre VS Code plus proche de vous.",
 			"gettingStarted.setup.title": "Prise en main de VS Code",
+			"gettingStarted.setupWeb.description": "Découvrez les meilleures personnalisations pour rendre VS Code plus proche dans votre Web.",
+			"gettingStarted.setupWeb.title": "Démarrer avec VS Code sur le web",
 			"gettingStarted.shortcuts.description.interpolated": "Une fois que vous avez découvert vos commandes favorites, créez des raccourcis clavier personnalisés pour un accès instantané.\r\n{0}",
 			"gettingStarted.shortcuts.title": "Personnalisez vos raccourcis",
 			"gettingStarted.splitview.description.interpolated": "Tirer le meilleur parti de l’espace de votre écran en ouvrant des fichiers côte à côte, verticalement ou horizontalement.\r\n{0}",
@@ -8939,6 +9030,7 @@
 			"showTerminal": "Afficher le panneau Terminal",
 			"splitEditor": "Fractionner l'éditeur",
 			"titleID": "Parcourir les thèmes de couleur",
+			"toggleMenuBar": "Activer/désactiver la barre de menus",
 			"tweakSettings": "Adapter mes paramètres",
 			"watch": "Regarder le tutoriel",
 			"workspaceTrust": "Approbation d’espace de travail"
@@ -9147,9 +9239,9 @@
 			"nothing": "Aucune modification effectuée"
 		},
 		"vs/workbench/services/configuration/common/configurationEditingService": {
-			"errorConfigurationFileDirty": "Impossible d’écrire dans les paramètres de l'utilisateur car le fichier a été modifié. Veuillez s’il vous plaît enregistrer le fichier des paramètres de l'utilisateur et réessayez.",
-			"errorConfigurationFileDirtyFolder": "Impossible d’écrire dans les paramètres de dossier, car le fichier est en attente de sauvegarde. Veuillez s’il vous plaît enregistrer le fichier des paramètres du dossier '{0}' et essayez à nouveau.",
-			"errorConfigurationFileDirtyWorkspace": "Impossible d’écrire dans les paramètres de l’espace de travail, car le fichier est en attente de sauvegarde. Veuillez s’il vous plaît enregistrer le fichier des paramètres de l’espace de travail et essayez à nouveau.",
+			"errorConfigurationFileDirty": "Impossible d'écrire dans les paramètres utilisateur car le fichier contient des modifications non sauvegardées. Veuillez d'abord enregistrer le fichier des paramètres utilisateur, puis réessayer.",
+			"errorConfigurationFileDirtyFolder": "Impossible d'écrire dans les paramètres du dossier car le fichier contient des modifications non enregistrées. Veuillez d'abord enregistrer le fichier '{0}' des paramètres du dossier, puis réessayer.",
+			"errorConfigurationFileDirtyWorkspace": "Impossible d'écrire dans les paramètres de l'espace de travail car le fichier contient des modifications non sauvegardées. Veuillez d'abord enregistrer le fichier des paramètres de l'espace de travail, puis réessayer.",
 			"errorConfigurationFileModifiedSince": "Impossible d'écrire dans les paramètres utilisateur parce que le contenu du fichier est plus récent.",
 			"errorConfigurationFileModifiedSinceFolder": "Impossible d'écrire dans les paramètres de dossier parce que le contenu du fichier est plus récent.",
 			"errorConfigurationFileModifiedSinceWorkspace": "Impossible d'écrire dans les paramètres d'espace de travail parce que le contenu du fichier est plus récent.",
@@ -9166,12 +9258,12 @@
 			"errorInvalidWorkspaceConfigurationApplication": "Impossible d’écrire {0} dans les paramètres de l’espace de travail. Ce paramètre peut être écrit uniquement dans les paramètres de l’utilisateur.",
 			"errorInvalidWorkspaceConfigurationMachine": "Impossible d’écrire {0} dans les paramètres de l’espace de travail. Ce paramètre peut être écrit uniquement dans les paramètres de l’utilisateur.",
 			"errorInvalidWorkspaceTarget": "Impossible d’écrire dans les paramètres de l’espace de travail car {0} ne supporte pas de portée d’espace de travail dans un espace de travail multi dossiers.",
-			"errorLaunchConfigurationFileDirty": "Impossible d’écrire dans le fichier de configuration de lancement car le fichier a été modifié. Veuillez l'enregistrer et réessayez.",
+			"errorLaunchConfigurationFileDirty": "Impossible d'écrire dans le fichier de configuration de lancement car le fichier contient des modifications non sauvegardées. Veuillez le sauvegarder d'abord et réessayer ensuite.",
 			"errorLaunchConfigurationFileModifiedSince": "Impossible d'écrire dans le fichier de configuration de lancement parce que le contenu du fichier est plus récent.",
 			"errorNoWorkspaceOpened": "Impossible d’écrire dans {0} car aucun espace de travail n’est ouvert. Veuillez ouvrir un espace de travail et essayer à nouveau.",
-			"errorRemoteConfigurationFileDirty": "Impossible d'écrire dans les paramètres de l'utilisateur distant, car le fichier est erroné. Enregistrez d'abord le fichier de paramètres de l'utilisateur distant, puis réessayez.",
+			"errorRemoteConfigurationFileDirty": "Impossible d'écrire dans les paramètres de l'utilisateur distant car le fichier contient des modifications non sauvegardées. Veuillez d'abord enregistrer le fichier des paramètres de l'utilisateur distant, puis réessayer.",
 			"errorRemoteConfigurationFileModifiedSince": "Impossible d'écrire dans les paramètres utilisateur distants parce que le contenu du fichier est plus récent.",
-			"errorTasksConfigurationFileDirty": "Impossible d’écrire dans le fichier de configuration des tâches car le fichier a été modifié. Veuillez, s’il vous plaît, l'enregistrez et réessayez.",
+			"errorTasksConfigurationFileDirty": "Impossible d'écrire dans le fichier de configuration des tâches car le fichier contient des modifications non sauvegardées. Veuillez le sauvegarder d'abord et réessayer ensuite.",
 			"errorTasksConfigurationFileModifiedSince": "Impossible d'écrire dans le fichier de configuration des tâches parce que le contenu du fichier est plus récent.",
 			"errorUnknownKey": "Impossible d'écrire dans {0}, car {1} n'est pas une configuration inscrite.",
 			"folderTarget": "Paramètres de dossier",
@@ -9184,7 +9276,7 @@
 			"workspaceTarget": "Paramètres de l'espace de travail"
 		},
 		"vs/workbench/services/configuration/common/jsonEditingService": {
-			"errorFileDirty": "Impossible d’écrire dans le fichier parce que le fichier a été modifié. Veuillez enregistrer le fichier et réessayer.",
+			"errorFileDirty": "Impossible d'écrire dans le fichier car celui-ci contient des modifications non sauvegardées. Veuillez enregistrer le fichier et réessayer.",
 			"errorInvalidFile": "Impossible d’écrire dans le fichier. Veuillez ouvrir le fichier pour corriger les erreurs/avertissements dans le fichier et réessayer."
 		},
 		"vs/workbench/services/configurationResolver/browser/configurationResolverService": {
@@ -9327,12 +9419,16 @@
 			"extensionInstallWorkspaceTrustMessage": "L’activation de cette extension nécessite un espace de travail approuvé.",
 			"install": "Installer",
 			"install and do no sync": "Installer (ne pas synchroniser)",
+			"install anyways": "Installer quand même",
 			"install extension": "Installer l'extension",
 			"install extensions": "Installer les extensions",
 			"install multiple extensions": "Voulez-vous installer et synchroniser des extensions sur vos appareils ?",
 			"install single extension": "Voulez-vous installer et synchroniser l'extension '{0}' sur vos appareils ?",
+			"limited support": "'{0}' a une fonctionnalité limitée dans {1}.",
 			"multipleDependentsError": "Impossible de désinstaller l'extension '{0}'. Les extensions '{1}', '{2}' et d'autres extensions en dépendent.",
-			"non web extensions": "« {0} » contient des extensions qui ne sont pas disponibles dans {1}. Voulez-vous quand même l’installer ?",
+			"non web extensions": "'{0}' contient des extensions qui ne sont pas prises en charge par {1}.",
+			"non web extensions detail": "Contient des extensions qui ne sont pas prises en charge par.",
+			"showExtensions": "Afficher les extensions",
 			"singleDependentError": "Impossible de désinstaller l'extension '{0}'. L'extension '{1}' en dépend.",
 			"twoDependentsError": "Impossible de désinstaller l'extension '{0}'. Les extensions '{1}' et '{2}' en dépendent."
 		},
@@ -9506,6 +9602,10 @@
 			"missingNLSKey": "Le message est introuvable pour la clé {0}.",
 			"notSemver": "La version de l'extension n'est pas compatible avec SemVer."
 		},
+		"vs/workbench/services/files/electron-browser/diskFileSystemProvider": {
+			"binFailed": "Échec du déplacement de '{0}' vers la corbeille",
+			"trashFailed": "Échec du déplacement de '{0}' vers la corbeille"
+		},
 		"vs/workbench/services/gettingStarted/common/gettingStartedContent": {
 			"getting-started-setup-icon": "Icône utilisée pour la catégorie configuration de la prise en main",
 			"getting-started-beginner-icon": "Icône utilisée pour la catégorie Débutant de la prise en main",
@@ -9608,7 +9708,7 @@
 		"vs/workbench/services/keybinding/common/keybindingEditing": {
 			"emptyKeybindingsHeader": "Placer vos combinaisons de touches dans ce fichier pour remplacer les valeurs par défaut",
 			"errorInvalidConfiguration": "Impossible d’écrire dans le fichier de configuration des combinaisons de touches. Il y a un objet qui n'est pas de type Array. Veuillez ouvrir le fichier pour nettoyer et réessayer.",
-			"errorKeybindingsFileDirty": "Impossible d’écrire parce que la configuration des combinaisons de touches a été modifiée. Veuillez enregistrer le fichier et réessayer.",
+			"errorKeybindingsFileDirty": "Impossible d'écrire car le fichier de configuration des raccourcis clavier n'a pas été sauvegardé. Veuillez le sauvegarder d'abord et réessayer ensuite.",
 			"parseErrors": "Impossible d’écrire dans le fichier de configuration des combinaisons de touches. Veuillez l'ouvrir pour corriger les erreurs/avertissements dans le fichier et réessayer."
 		},
 		"vs/workbench/services/label/common/labelService": {
@@ -10049,17 +10149,17 @@
 			"saveParticipants": "Enregistrement de '{0}'"
 		},
 		"vs/workbench/services/workingCopy/electron-sandbox/workingCopyBackupTracker": {
-			"backupBeforeShutdownDetail": "Cliquez sur « Annuler » pour arrêter l’attente et enregistrer ou restaurer les éditeurs incorrects.",
-			"backupBeforeShutdownMessage": "La sauvegarde des éditeurs incorrects prend plus de temps que prévu...",
-			"backupErrorDetails": "Essayez d'abord d'enregistrer ou de réinitialiser les éditeurs dont l'intégrité est compromise, puis réessayez.",
-			"backupTrackerBackupFailed": "Les éditeurs suivants dont l'intégrité est compromise n'ont pas pu être enregistrés dans l'emplacement de sauvegarde.",
-			"backupTrackerConfirmFailed": "Les éditeurs suivants dont l'intégrité est compromise n'ont pas pu être enregistrés ou restaurés.",
-			"revertBeforeShutdown": "La restauration des éditeurs incorrects prend plus de temps que prévu...",
-			"saveBeforeShutdown": "L’enregistrement des éditeurs incorrects prend plus de temps que prévu..."
+			"backupBeforeShutdownDetail": "Cliquez sur « Annuler » pour mettre fin à l'attente et pour sauvegarder ou rétablir les éditeurs avec les modifications non sauvegardées.",
+			"backupBeforeShutdownMessage": "La sauvegarde des éditeurs avec des modifications non enregistrées prend plus de temps que prévu...",
+			"backupErrorDetails": "Essayez d'abord de sauvegarder ou de rétablir les éditeurs avec les modifications non sauvegardées, puis réessayez.",
+			"backupTrackerBackupFailed": "Les éditeurs suivants, dont les modifications n'ont pas été sauvegardées, n'ont pas pu être enregistrés dans l'emplacement de sauvegarde.",
+			"backupTrackerConfirmFailed": "Les éditeurs suivants dont les modifications n'ont pas été sauvegardées n'ont pas pu être sauvegardés ou annulés.",
+			"revertBeforeShutdown": "La restauration des éditeurs avec des modifications non enregistrées prend plus de temps que prévu...",
+			"saveBeforeShutdown": "L’enregistrement des éditeurs avec des modifications non enregistrées prend plus de temps que prévu..."
 		},
 		"vs/workbench/services/workspaces/browser/abstractWorkspaceEditingService": {
 			"errorInvalidTaskConfiguration": "Impossible d’écrire dans le fichier de configuration de l’espace de travail. Veuillez ouvrir le fichier pour y corriger les erreurs/avertissements et essayez à nouveau.",
-			"errorWorkspaceConfigurationFileDirty": "Impossible d’écrire dans le fichier de configuration de l’espace de travail, car le fichier a été modifié. Veuillez, s’il vous plaît, l'enregistrez et réessayez.",
+			"errorWorkspaceConfigurationFileDirty": "Impossible d'écrire dans le fichier de configuration de l'espace de travail car le fichier contient des modifications non sauvegardées. Veuillez l'enregistrer et réessayer.",
 			"openWorkspaceConfigurationFile": "Ouvrir la Configuration de l’espace de travail",
 			"save": "Enregistrer",
 			"saveWorkspace": "Enregistrer l'espace de travail"

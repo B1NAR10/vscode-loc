@@ -202,6 +202,9 @@
 			"unchangedLine": "{0} 변경되지 않은 줄 {1}"
 		},
 		"vs/editor/browser/widget/inlineDiffMargin": {
+			"diff.clipboard.copyChangedLineContent.label": "변경된 줄({0}) 복사",
+			"diff.clipboard.copyChangedLinesContent.label": "변경된 줄 복사",
+			"diff.clipboard.copyChangedLinesContent.single.label": "변경된 줄 복사",
 			"diff.clipboard.copyDeletedLineContent.label": "삭제된 줄 복사({0})",
 			"diff.clipboard.copyDeletedLinesContent.label": "삭제된 줄 복사",
 			"diff.clipboard.copyDeletedLinesContent.single.label": "삭제된 줄 복사",
@@ -218,6 +221,10 @@
 			"maxFileSize": "차이를 계산할 최대 파일 크기(MB)입니다. 제한이 없으면 0을 사용합니다.",
 			"maxTokenizationLineLength": "이 길이를 초과하는 줄은 성능상의 이유로 토큰화되지 않습니다.",
 			"renderIndicators": "diff 편집기에서 추가/제거된 변경 내용에 대해 +/- 표시기를 표시하는지 여부를 제어합니다.",
+			"schema.brackets": "들여쓰기를 늘리거나 줄이는 대괄호 기호를 정의합니다.",
+			"schema.closeBracket": "닫는 대괄호 문자 또는 문자열 시퀀스입니다.",
+			"schema.colorizedBracketPairs": "대괄호 쌍 색 지정을 사용하는 경우 중첩 수준에 따라 색이 지정된 대괄호 쌍을 정의합니다.",
+			"schema.openBracket": "여는 대괄호 문자 또는 문자열 시퀀스입니다.",
 			"semanticHighlighting.configuredByTheme": "의미 체계 강조 표시는 현재 색 테마의 `semanticHighlighting` 설정에 따라 구성됩니다.",
 			"semanticHighlighting.enabled": "semanticHighlighting이 지원하는 언어에 대해 표시되는지 여부를 제어합니다.",
 			"semanticHighlighting.false": "모든 색 테마에 대해 의미 체계 강조 표시를 사용하지 않습니다.",
@@ -306,6 +313,14 @@
 			"editor.gotoLocation.multiple.gotoAndPeek": "기본 결과로 이동하여 Peek 보기를 표시합니다.",
 			"editor.gotoLocation.multiple.peek": "결과 Peek 뷰 표시(기본)",
 			"editor.guides.bracketPairs": "대괄호 쌍 안내션의 사용 여부를 제어합니다.",
+			"editor.guides.bracketPairs.active": "활성 대괄호 쌍에 대해서만 대괄호 쌍 가이드를 사용하도록 설정합니다.",
+			"editor.guides.bracketPairs.false": "대괄호 쌍 가이드를 비활성화합니다.",
+			"editor.guides.bracketPairs.true": "대괄호 쌍 가이드를 사용하도록 설정합니다.",
+			"editor.guides.bracketPairsHorizontal": "가로 대괄호 쌍 안내선의 사용 여부를 제어합니다.",
+			"editor.guides.bracketPairsHorizontal.active": "활성 대괄호 쌍에 대해서만 수평 가이드를 사용하도록 설정합니다.",
+			"editor.guides.bracketPairsHorizontal.false": "수평 대괄호 쌍 가이드를 비활성화합니다.",
+			"editor.guides.bracketPairsHorizontal.true": "수직 대괄호 쌍 가이드에 추가하여 수평 가이드를 사용하도록 설정합니다.",
+			"editor.guides.highlightActiveBracketPair": "대괄호 쌍 안내션의 사용 여부를 제어합니다.",
 			"editor.guides.highlightActiveIndentation": "편집기에서 활성 들여쓰기 가이드를 강조 표시할지 여부를 제어합니다.",
 			"editor.guides.indentation": "편집기에서 들여쓰기 가이드를 렌더링할지를 제어합니다.",
 			"editor.suggest.showClasss": "사용하도록 설정되면 IntelliSense에 '클래스' 제안이 표시됩니다.",
@@ -363,6 +378,7 @@
 			"formatOnType": "입력 후 편집기에서 자동으로 줄의 서식을 지정할지 여부를 제어합니다.",
 			"glyphMargin": "편집기에서 세로 문자 모양 여백을 렌더링할지 여부를 제어합니다. 문자 모양 여백은 주로 디버깅에 사용됩니다.",
 			"hideCursorInOverviewRuler": "커서가 개요 눈금자에서 가려져야 하는지 여부를 제어합니다.",
+			"hover.above": "공백이 있는 경우 선 위에 마우스를 가져가는 것을 표시하는 것을 선호합니다.",
 			"hover.delay": "호버가 표시되기 전까지의 지연 시간(밀리초)을 제어합니다.",
 			"hover.enabled": "호버 표시 여부를 제어합니다.",
 			"hover.sticky": "마우스를 해당 항목 위로 이동할 때 호버를 계속 표시할지 여부를 제어합니다.",
@@ -590,6 +606,18 @@
 			"editorBracketHighlightUnexpectedBracketForeground": "예기치 않은 대괄호의 전경색입니다.",
 			"editorBracketMatchBackground": "일치하는 괄호 뒤의 배경색",
 			"editorBracketMatchBorder": "일치하는 브래킷 박스의 색상",
+			"editorBracketPairGuide.activeBackground1": "활성 대괄호 쌍 안내선의 배경색입니다(1). 대괄호 쌍 안내선을 사용하도록 설정해야 합니다.",
+			"editorBracketPairGuide.activeBackground2": "활성 대괄호 쌍 안내선의 배경색입니다(2). 대괄호 쌍 안내선을 사용하도록 설정해야 합니다.",
+			"editorBracketPairGuide.activeBackground3": "활성 대괄호 쌍 안내선의 배경색입니다(3). 대괄호 쌍 안내선을 사용하도록 설정해야 합니다.",
+			"editorBracketPairGuide.activeBackground4": "활성 대괄호 쌍 안내선의 배경색입니다(4). 대괄호 쌍 안내선을 사용하도록 설정해야 합니다.",
+			"editorBracketPairGuide.activeBackground5": "활성 대괄호 쌍 안내선의 배경색입니다(5). 대괄호 쌍 안내선을 사용하도록 설정해야 합니다.",
+			"editorBracketPairGuide.activeBackground6": "활성 대괄호 쌍 안내선의 배경색입니다(6). 대괄호 쌍 안내선을 사용하도록 설정해야 합니다.",
+			"editorBracketPairGuide.background1": "비활성 대괄호 쌍 안내선의 배경색입니다(1). 대괄호 쌍 안내선을 사용하도록 설정해야 합니다.",
+			"editorBracketPairGuide.background2": "비활성 대괄호 쌍 안내선의 배경색입니다(2). 대괄호 쌍 안내선을 사용하도록 설정해야 합니다.",
+			"editorBracketPairGuide.background3": "비활성 대괄호 쌍 안내선의 배경색입니다(3). 대괄호 쌍 안내선을 사용하도록 설정해야 합니다.",
+			"editorBracketPairGuide.background4": "비활성 대괄호 쌍 안내선의 배경색입니다(4). 대괄호 쌍 안내선을 사용하도록 설정해야 합니다.",
+			"editorBracketPairGuide.background5": "비활성 대괄호 쌍 안내선의 배경색입니다(5). 대괄호 쌍 안내선을 사용하도록 설정해야 합니다.",
+			"editorBracketPairGuide.background6": "비활성 대괄호 쌍 안내선의 배경색입니다(6). 대괄호 쌍 안내선을 사용하도록 설정해야 합니다.",
 			"editorCodeLensForeground": "편집기 코드 렌즈의 전경색입니다.",
 			"editorCursorBackground": "편집기 커서의 배경색입니다. 블록 커서와 겹치는 글자의 색상을 사용자 정의할 수 있습니다.",
 			"editorGhostTextBorder": "편집기에서 고스트 텍스트의 테두리 색입니다.",
@@ -683,6 +711,9 @@
 		},
 		"vs/editor/contrib/codelens/codelensController": {
 			"showLensOnLine": "현재 줄에 대한 코드 렌즈 명령 표시"
+		},
+		"vs/editor/contrib/colorPicker/colorPickerWidget": {
+			"clickToToggleColorOptions": "색 옵션을 토글하려면 클릭하세요(rgb/hsl/hex)."
 		},
 		"vs/editor/contrib/comment/comment": {
 			"comment.block": "블록 주석 설정/해제",
@@ -826,7 +857,7 @@
 			"goToTypeDefinition.generic.noResults": "형식 정의를 찾을 수 없습니다.",
 			"goToTypeDefinition.noResultWord": "'{0}'에 대한 형식 정의를 찾을 수 없습니다.",
 			"impl.title": "구현",
-			"label.generic": "기호로 이동",
+			"label.generic": "임의의 기호로 이동",
 			"miGotoDeclaration": "선언으로 이동(&&D)",
 			"miGotoDefinition": "정의로 이동(&&D)",
 			"miGotoImplementation": "구현으로 이동(&&I)",
@@ -907,6 +938,7 @@
 			"action.inlineSuggest.showPrevious": "이전 인라인 제안 표시",
 			"action.inlineSuggest.trigger": "인라인 제안 트리거",
 			"inlineSuggestionHasIndentation": "인라인 제안이 공백으로 시작하는지 여부",
+			"inlineSuggestionHasIndentationLessThanTabSize": "인라인 제안이 탭에 의해 삽입되는 것보다 작은 공백으로 시작하는지 여부",
 			"inlineSuggestionVisible": "인라인 제안 표시 여부"
 		},
 		"vs/editor/contrib/inlineCompletions/inlineCompletionsHoverParticipant": {
@@ -927,6 +959,7 @@
 			"lines.delete": "줄 삭제",
 			"lines.deleteAllLeft": "왼쪽 모두 삭제",
 			"lines.deleteAllRight": "우측에 있는 항목 삭제",
+			"lines.deleteDuplicates": "중복 라인 삭제",
 			"lines.indent": "줄 들여쓰기",
 			"lines.insertAfter": "아래에 줄 삽입",
 			"lines.insertBefore": "위에 줄 삽입",
@@ -988,6 +1021,7 @@
 			"parameterHints.trigger.label": "매개 변수 힌트 트리거"
 		},
 		"vs/editor/contrib/parameterHints/parameterHintsWidget": {
+			"editorHoverWidgetHighlightForeground": "매개 변수 힌트에 있는 활성 항목의 전경색입니다.",
 			"hint": "{0}, 힌트",
 			"parameterHintsNextIcon": "다음 매개 변수 힌트 표시의 아이콘입니다.",
 			"parameterHintsPreviousIcon": "이전 매개 변수 힌트 표시의 아이콘입니다."
@@ -1319,7 +1353,7 @@
 			"malicious extension": "문제가 있다고 보고되었으므로 '{0}' 확장을 설치할 수 없습니다.",
 			"multipleDependentsError": "'{0}' 확장을 제거할 수 없습니다. '{1}', '{2}' 및 기타 확장이 이 확장에 종속됩니다.",
 			"multipleIndirectDependentsError": "'{0}' 확장을 제거할 수 없습니다. '{1}' 확장 제거를 포함하며 '{2}', '{3}' 및 기타 확장이 이 확장에 종속됩니다.",
-			"notFoundCompatibleDependency": "'{0}' 확장은 현재 버전의 VS Code(버전 {1})와 호환되지 않기 때문에 설치할 수 없습니다.",
+			"notFoundCompatibleDependency": "'{0}' 확장은 현재 버전의 {1}(버전 {2})와 호환되지 않기 때문에 설치할 수 없습니다.",
 			"singleDependentError": "'{0}' 확장을 제거할 수 없습니다. '{1}' 확장이 이 확장에 종속됩니다.",
 			"singleIndirectDependentError": "'{0}' 확장을 제거할 수 없습니다. '{1}' 확장 제거를 포함하며 '{2}' 확장이 이 확장에 종속됩니다.",
 			"twoDependentsError": "'{0}' 확장을 제거할 수 없습니다. '{1}' 및 '{2}' 확장이 이 확장에 종속됩니다.",
@@ -1423,9 +1457,9 @@
 		},
 		"vs/platform/files/common/io": {
 			"fileTooLargeError": "파일이 너무 커서 열 수 없음",
-			"fileTooLargeForHeapError": "이 크기의 파일을 열려면 다시 시작하여 {0}에서 더 많은 메모리를 사용하도록 허용해야 합니다"
+			"fileTooLargeForHeapError": "이 크기의 파일을 열려면 다시 시작하여 더 많은 메모리를 사용하도록 허용해야 합니다"
 		},
-		"vs/platform/files/electron-browser/diskFileSystemProvider": {
+		"vs/platform/files/electron-main/diskFileSystemProviderIpc": {
 			"binFailed": "'{0}'을(를) 휴지통으로 이동하지 못함",
 			"trashFailed": "'{0}'을(를) 휴지통으로 이동하지 못함"
 		},
@@ -1548,27 +1582,37 @@
 			"systemCertificates": "OS에서 CA 인증서를 로드해야 하는지 여부를 제어합니다(Windows 및 macOS에서는 이 기능을 끈 후 창을 다시 로드해야 함)."
 		},
 		"vs/platform/telemetry/common/telemetryService": {
-			"enableTelemetryDeprecated": "{0} 설정을 위해 사용되지 않습니다.",
+			"enableTelemetryDeprecated": "이 설정이 false이면 새 설정 값에 관계없이 원격 분석이 전송되지 않습니다. {0} 설정으로 인해 더 이상 사용되지 않습니다.",
+			"telemetry.crashReports": "크래시 보고서",
+			"telemetry.docsAndPrivacyStatement": "[Microsoft가 수집하는 데이터]({0}) 및 [개인정보처리방침]({1})에 대해 자세히 알아보세요.",
+			"telemetry.docsStatement": "[Microsoft가 수집하는 데이터]({0})에 대해 자세히 알아보세요.",
 			"telemetry.enableTelemetry": "수집할 진단 데이터를 사용하도록 설정합니다. 이는 {0}의 성능과 개선이 필요한 부분을 더 잘 이해하는 데 도움이 됩니다.",
-			"telemetry.enableTelemetry.default": "모든 원격 분석 데이터를 수집할 수 있도록 합니다.",
-			"telemetry.enableTelemetry.error": "오류 원격 분석 데이터만 사용하고 일반 사용량 현황 데이터는 사용하지 않습니다.",
-			"telemetry.enableTelemetry.off": "모든 제품 원격 분석을 사용하지 않도록 설정합니다.",
 			"telemetry.enableTelemetryMd": "수집할 진단 데이터를 사용하도록 설정합니다. 이는 {0}의 수행 방식과 당사의 수집 항목 및 개인 정보 보호 정책에 대해 개선이 필요한 부분[자세히 알아보기]({1})을 더 잘 이해하는 데 도움이 됩니다.",
-			"telemetry.restart": "일부 기능을 적용하려면 다시 시작해야 할 수 있습니다.",
+			"telemetry.errors": "오류 원격 분석",
+			"telemetry.restart": "크래시 보고 변경 사항을 적용하려면 응용 프로그램을 완전히 다시 시작해야 합니다.",
+			"telemetry.telemetryLevel.crash": "OS 수준 크래시 보고서를 보냅니다.",
+			"telemetry.telemetryLevel.default": "사용 데이터, 오류 및 크래시 보고서를 보냅니다.",
+			"telemetry.telemetryLevel.deprecated": "****참고:*** 이 설정이 '꺼짐'이면 다른 원격 분석 설정에 관계없이 원격 분석이 전송되지 않습니다. 이 설정이 '해제'를 제외한 다른 것으로 설정되고 더 이상 사용되지 않는 설정으로 원격 분석이 비활성화된 경우 원격 분석이 전송되지 않습니다.*",
+			"telemetry.telemetryLevel.error": "일반 오류 원격 분석 및 크래시 보고서를 보냅니다.",
+			"telemetry.telemetryLevel.off": "모든 제품 원격 분석을 사용하지 않도록 설정합니다.",
+			"telemetry.telemetryLevel.tableDescription": "다음 표에는 각 설정과 함께 전송되는 데이터가 요약되어 있습니다.",
+			"telemetry.telemetryLevelMd": "모든 핵심 및 자사 확장 원격 분석을 제어합니다. 이를 통해 {0}의 성능, 개선이 필요한 부분 및 기능이 사용되는 방식을 더 잘 이해할 수 있습니다.",
+			"telemetry.usage": "사용 데이터",
 			"telemetryConfigurationTitle": "원격 분석"
 		},
 		"vs/platform/terminal/common/terminalPlatformConfiguration": {
 			"terminal.integrated.automationShell.linux": "설정 시 작업 및 디버그와 같은 자동화 관련 터미널 사용의 {0}을(를) 재정의하고 {1} 값을 무시하는 경로입니다.",
 			"terminal.integrated.automationShell.osx": "설정 시 작업 및 디버그와 같은 자동화 관련 터미널 사용의 {0}을(를) 재정의하고 {1} 값을 무시하는 경로입니다.",
 			"terminal.integrated.automationShell.windows": "설정 시 작업 및 디버그와 같은 자동화 관련 터미널 사용의 {0}을(를) 재정의하고 {1} 값을 무시하는 경로입니다.",
+			"terminal.integrated.confirmIgnoreProcesses": "프로세스를 무시하는 사용자 지정 설정을 제공하도록 구성 가능",
 			"terminal.integrated.defaultProfile.linux": "Linux에서 사용되는 기본 프로필입니다. 현재 {0} 또는 {1}(으)로 설정된 경우 이 설정은 무시됩니다.",
 			"terminal.integrated.defaultProfile.osx": "macOS에서 사용되는 기본 프로필입니다. 현재 {0} 또는 {1}(으)로 설정된 경우 이 설정은 무시됩니다.",
 			"terminal.integrated.defaultProfile.windows": "Windows에서 사용되는 기본 프로필입니다. 현재 {0} 또는 {1}(으)로 설정된 경우 이 설정은 무시됩니다.",
 			"terminal.integrated.inheritEnv": "새 셸에서 $PATH 및 기타 개발 변수가 초기화되도록 로그인 셸을 제공할 수 있는 VS Code에서 환경을 상속해야 하는지 여부입니다. 이는 Windows에는 영향을 주지 않습니다.",
 			"terminal.integrated.persistentSessionScrollback": "영구 터미널 세션에 다시 연결할 때 복원될 최대 라인 수를 제어합니다. 이 값을 늘리면 더 많은 메모리를 사용하여 더 많은 스크롤백 라인을 복원하고 시작 시 터미널에 연결하는 데 걸리는 시간이 늘어납니다. 이 설정을 적용하려면 다시 시작해야 하며 `#terminal.integrated.scrollback#`보다 작거나 같은 값으로 설정해야 합니다.",
-			"terminal.integrated.profile.linux": "터미널 드롭다운을 통해 새 터미널을 만들 때 표시할 Linux 프로필입니다. 설정하면 감지되는 기본 프로필이 재정의됩니다. {0} 및 선택적 {1}(으)로 구성됩니다.",
-			"terminal.integrated.profile.osx": "터미널 드롭다운을 통해 새 터미널을 만들 때 표시할 macOS 프로필입니다. 설정하면 감지되는 기본 프로필이 재정의됩니다. {0} 및 선택적 {1}(으)로 구성됩니다.",
-			"terminal.integrated.profiles.windows": "터미널 드롭다운을 통해 새 터미널을 만들 때 표시할 Windows 프로필입니다. 해당 프로필을 제외하려면 null로 설정하고, 감지되는 기본 구성을 사용하려면 {0} 속성을 사용합니다. 또는 {1} 및 선택적 {2}을(를) 설정합니다.",
+			"terminal.integrated.profile.linux": "터미널 드롭다운을 통해 새 터미널을 생성할 때 표시할 Linux 프로필입니다. 선택적 {1}을(를) 사용하여 {0} 속성을 수동으로 설정합니다.\r\n\r\n목록에서 프로필을 숨기려면 기존 프로필을 {2}(으)로 설정합니다(예: {3}).",
+			"terminal.integrated.profile.osx": "터미널 드롭다운을 통해 새 터미널을 생성할 때 표시할 macOS 프로필입니다. 선택적 {1}을(를) 사용하여 {0} 속성을 수동으로 설정합니다.\r\n\r\n목록에서 프로필을 숨기려면 기존 프로필을 {2}(으)로 설정합니다(예: {3}).",
+			"terminal.integrated.profiles.windows": "터미널 드롭다운을 통해 새 터미널을 만들 때 표시할 Windows 프로필입니다. {0} 속성을 사용하여 셸의 위치를 자동으로 감지합니다. 또는 선택적 {2}을(를) 사용하여 {1} 속성을 수동으로 설정합니다.\r\n\r\n목록에서 프로필을 숨기려면 기존 프로필을 {3}(으)로 설정합니다(예: {4}).",
 			"terminal.integrated.shell.linux": "터미널이 Linux에서 사용하는 셸의 경로입니다. [셸 구성 방법을 자세히 알아보세요](https://code.visualstudio.com/docs/editor/integrated-terminal#_terminal-profiles).",
 			"terminal.integrated.shell.linux.deprecation": "이 기능은 더 이상 사용되지 않습니다. 기본 셸을 구성하는 새로운 권장 방법은 {0}에서 터미널 프로필을 만들고 프로필 이름을 {1}에서 기본값으로 설정하는 것입니다. 이는 현재 새 프로필 설정보다 우선하지만, 나중에 변경될 예정입니다.",
 			"terminal.integrated.shell.osx": "터미널이 macOS에서 사용하는 셸의 경로입니다. [셸 구성 방법을 자세히 알아보세요](https://code.visualstudio.com/docs/editor/integrated-terminal#_terminal-profiles).",
@@ -1817,6 +1861,7 @@
 			"class": "클래스의 스타일입니다.",
 			"comment": "주석의 스타일입니다.",
 			"declaration": "모든 기호 선언의 스타일입니다.",
+			"decorator": "데코레이터 및 주석 스타일.",
 			"deprecated": "사용되지 않는 기호에 사용할 스타일입니다.",
 			"documentation": "문서의 참조에 사용할 스타일입니다.",
 			"enum": "열거형의 스타일입니다.",
@@ -2560,6 +2605,7 @@
 			"missing.submenu": "메뉴 항목이 '하위 메뉴' 섹션에 정의되지 않은 `{0}` 하위 메뉴를 참조합니다.",
 			"nonempty": "비어 있지 않은 값이 필요합니다.",
 			"notebook.cell.execute": "제공된 전자 필기장 셀 실행 메뉴",
+			"notebook.cell.executePrimary": "제공된 기본 Notebook 셀 실행 단추",
 			"notebook.cell.title": "제공된 Notebook 셀 제목 메뉴",
 			"notebook.toolbar": "제공된 Notebook 도구 모음 메뉴",
 			"opticon": "'icon' 속성은 생략하거나, '{dark, light}' 같은 문자열 또는 리터럴이어야 합니다.",
@@ -2782,7 +2828,7 @@
 			"openWorkspace": "작업 영역 열기"
 		},
 		"vs/workbench/browser/contextkeys": {
-			"dirtyWorkingCopies": "더티 작업 복사본이 있는지 여부",
+			"dirtyWorkingCopies": "저장되지 않은 변경 내용이 있는 작업 복사본이 있는지 여부",
 			"isFullscreen": "창이 전체 화면 모드인지 여부",
 			"remoteName": "창이 연결된 원격의 이름 또는 원격에 연결되어 있지 않은 경우 빈 문자열",
 			"virtualWorkspace": "가상 파일 시스템 또는 빈 문자열에서 가져온 경우 현재 작업 영역의 시스템입니다.",
@@ -3159,9 +3205,9 @@
 		},
 		"vs/workbench/browser/parts/editor/editorQuickAccess": {
 			"closeEditor": "편집기 닫기",
-			"entryAriaLabelDirty": "{0}, 더티",
+			"entryAriaLabelDirty": "{0}, 저장되지 않은 변경 내용",
 			"entryAriaLabelWithGroup": "{0}, {1}",
-			"entryAriaLabelWithGroupDirty": "{0}, 더티, {1}",
+			"entryAriaLabelWithGroupDirty": "{0}, 저장되지 않은 변경 내용, {1}",
 			"noViewResults": "일치하는 편집기 없음"
 		},
 		"vs/workbench/browser/parts/editor/editorStatus": {
@@ -3264,6 +3310,7 @@
 		},
 		"vs/workbench/browser/parts/notifications/notificationsCenter": {
 			"notifications": "알림",
+			"notificationsCenterWidgetAriaLabel": "알림 센터",
 			"notificationsEmpty": "새 알림 없음",
 			"notificationsToolbar": "알림 센터 작업"
 		},
@@ -3293,6 +3340,10 @@
 			"status.message": "상태 메시지",
 			"status.notifications": "알림",
 			"zeroNotifications": "알림 없음"
+		},
+		"vs/workbench/browser/parts/notifications/notificationsToasts": {
+			"notificationAriaLabel": "{0}, 알림",
+			"notificationWithSourceAriaLabel": "{0}, 소스: {1}, 알림"
 		},
 		"vs/workbench/browser/parts/notifications/notificationsViewer": {
 			"executeCommand": "'{0}' 명령을 실행하려면 클릭",
@@ -3407,14 +3458,14 @@
 			"auxiliaryBarEnabled": "사이드바 반대편 왼쪽 창의 사용 여부를 제어합니다.",
 			"centeredLayoutAutoResize": "가운데 맞춤 레이아웃에서 둘 이상의 그룹을 열 때 최대 너비에 맞게 자동으로 크기를 조정할지 여부를 제어합니다. 하나의 그룹만 열면 원래 가운데 맞춤 너비로 되돌아옵니다.",
 			"closeEmptyGroups": "그룹의 마지막 탭을 닫을 때 빈 편집기 그룹의 동작을 제어합니다. 사용하도록 설정하면 그룹이 자동으로 닫히고 사용하지 않도록 설정하면 빈 그룹이 그리드의 일부로 남습니다.",
-			"closeOnFileDelete": "세션 동안 열린 파일을 표시하는 편집기가 다른 프로세스에서 삭제하거나 이름을 바꾸는 경우 자동으로 닫혀야 하는지 여부를 제어합니다. 이 기능을 사용하지 않으면 해당 이벤트에서 편집기가 계속 열려 있습니다. 애플리케이션 내에서 삭제하는 경우 항상 편집기를 닫으며 더티 파일은 데이터가 보존되도록 닫히지 않습니다.",
+			"closeOnFileDelete": "세션 동안 열린 파일을 표시하는 편집기가 다른 프로세스에서 삭제하거나 이름을 바꾸는 경우 자동으로 닫혀야 하는지 여부를 제어합니다. 이 기능을 사용하지 않으면 해당 이벤트에서 편집기가 계속 열려 있습니다. 애플리케이션 내에서 삭제하는 경우 항상 편집기를 닫으며 저장되지 않은 변경 내용이 있는 편집기는 데이터가 보존되도록 닫히지 않습니다.",
 			"closeOnFocusLost": "Quick Open이 포커스를 잃으면 해당 Quick Open을 자동으로 닫을지 여부를 제어합니다.",
 			"commandHistory": "명령 팔레트 기록을 유지하기 위해 최근 사용한 명령 개수를 제어합니다. 0으로 설정하면 명령 기록을 사용하지 않습니다.",
 			"confirmBeforeCloseWeb": "브라우저 탭 또는 창을 닫기 전에 확인 대화 상자를 표시할지를 제어합니다. 사용하도록 설정된 경우에도 브라우저가 확인 없이 탭 또는 창을 닫으려고 할 수 있으며, 이 설정은 모든 경우에 제대로 작동하지 않을 수도 있는 힌트일 뿐입니다.",
 			"customMenuBarAltFocus": "<Alt> 키를 눌러 메뉴 모음이 포커스되는지 여부를 제어합니다. 이 설정은 <Alt> 키로 메뉴 모음을 토글하는 데는 영향을 주지 않습니다.",
 			"decorations.badges": "편집기 파일 장식에 배지를 사용할지 여부를 제어합니다.",
 			"decorations.colors": "편집기 파일 장식에 색을 사용할지 여부를 제어합니다.",
-			"dirty": "`${dirty}`: 활성 편집기가 더러울 경우 더티 표시기.",
+			"dirty": "`${dirty}`: 활성 편집기에 저장되지 않은 변경 내용이 있는 경우에 대한 표시기입니다.",
 			"editorOpenPositioning": "편집기가 열리는 위치를 제어합니다. 현재 활성 편집기의 왼쪽 또는 오른쪽에서 편집기를 열려면 'left' 또는 'right'를 선택합니다. 현재 활성 편집기와 독립적으로 편집기를 열려면 'first' 또는 'last'를 선택합니다.",
 			"editorTabCloseButton": "편집기의 탭 닫기 단추 위치를 제어하거나, 'off'로 설정된 경우 사용하지 않도록 설정합니다. `#workbench.editor.showTabs#`를 사용할 수 없는 경우 이 값은 무시됩니다.",
 			"enableMenuBarMnemonics": "<Alt> 키 바로 가기를 통해 주 메뉴를 열 수 있는지 여부를 제어합니다. 대신 니모닉을 사용하지 않도록 설정하면 이러한 <Alt> 키 바로 가기를 편집기 명령에 바인딩할 수 있습니다.",
@@ -3425,8 +3476,8 @@
 			"folderName": "`${folderName}`: 파일이 포함된 작업 영역 폴더의 이름(예 : myFolder).",
 			"folderPath": "`${folderPath}`: 파일이 포함된 작업 영역 폴더의 파일 경도(예: /Users/Development/myFolder).",
 			"fontAliasing": "워크벤치에서 글꼴 앨리어싱 메서드를 제어합니다.",
-			"highlightModifiedTabs": "수정된(더티) 편집기 탭에 상단 테두리를 그릴지를 제어합니다. `#workbench.editor.showTabs#`를 사용할 수 없는 경우 이 값은 무시됩니다.",
-			"limitEditorsEnablement": "열린 편집기의 수를 제한할지 여부를 제어합니다. 사용하도록 설정하면 편집기를 새로 열기 위한 공간을 만들기 위해 변경되지 않은 가장 오래 전에 사용한 편집기가 닫힙니다.",
+			"highlightModifiedTabs": "저장되지 않은 변경 내용이 있는 편집기의 탭에 위쪽 테두리를 그릴지 여부를 제어합니다. '#workbench.editor.showTabs#'을(를) 사용하지 않도록 설정하면 이 값이 무시됩니다.",
+			"limitEditorsEnablement": "열린 편집기의 수를 제한할지 여부를 제어합니다. 사용하도록 설정하면 편집기를 새로 열기 위한 공간을 만들기 위해 가장 오래 전에 사용한 편집기가 닫힙니다.",
 			"limitEditorsMaximum": "열린 편집기의 최대 수를 제어합니다. '#workbench.editor.limit.perEditorGroup#' 설정을 사용하여 편집기 그룹별로 제어하거나 모든 그룹에서 제어합니다.",
 			"menuBarVisibility": "메뉴 모음의 표시 여부를 제어합니다. '토글' 설정은 메뉴 모음이 숨겨지고 <Alt> 키를 한 번 누르면 메뉴 모음이 표시됨을 의미합니다. '컴팩트' 설정은 메뉴를 사이드바로 이동시킵니다.",
 			"menuBarVisibility.mac": "메뉴 모음의 표시 여부를 제어합니다. '토글' 설정은 메뉴 모음이 숨겨지고 `애플리케이션 메뉴에 포커스`를 실행하면 메뉴 모음이 표시됨을 의미합니다. '컴팩트' 설정은 메뉴를 사이드바로 이동시킵니다.",
@@ -3496,6 +3547,8 @@
 			"workbench.editor.pinnedTabSizing.compact": "고정된 탭이 아이콘 또는 편집기 이름의 첫 문자만 있는 컴팩트 형식으로 표시됩니다.",
 			"workbench.editor.pinnedTabSizing.normal": "고정된 탭이 고정되지 않은 탭의 모양을 상속합니다.",
 			"workbench.editor.pinnedTabSizing.shrink": "고정된 탭이 편집기 이름의 일부를 표시하는 컴팩트 고정 크기로 축소됩니다.",
+			"workbench.editor.splitInGroupLayoutHorizontal": "편집기는 왼쪽에서 오른쪽으로 배치됩니다.",
+			"workbench.editor.splitInGroupLayoutVertical": "편집기는 위에서 아래로 배치됩니다.",
 			"workbench.editor.splitSizingDistribute": "모든 편집기 그룹을 동일한 부분으로 분할합니다.",
 			"workbench.editor.splitSizingSplit": "활성 편집기 그룹을 동일한 부분으로 분할합니다.",
 			"workbench.editor.tabSizing.fit": "항상 전체 편집기 레이블을 표시할 만큼 큰 탭을 유지합니다.",
@@ -3547,7 +3600,7 @@
 			"activeEditorGroupIndex": "활성 편집기 그룹의 인덱스",
 			"activeEditorGroupLast": "활성 편집기 그룹이 마지막 그룹인지 여부",
 			"activeEditorGroupLocked": "활성 편집기 그룹이 잠겨 있는지 여부",
-			"activeEditorIsDirty": "활성 편집기가 더티인지 여부",
+			"activeEditorIsDirty": "활성 편집기에 저장되지 않은 변경 내용이 있는지 여부",
 			"activeEditorIsNotPreview": "활성 편집기가 미리 보기 모드가 아닌지 여부",
 			"activeEditorIsPinned": "활성 편집기가 고정되어 있는지 여부",
 			"activeEditorIsReadonly": "활성 편집기가 읽기 전용인지 여부",
@@ -3649,7 +3702,8 @@
 			"sideBarSectionHeaderBorder": "사이드바 섹션 헤더 테두리 색입니다. 사이드바는 탐색기와 검색 같은 보기의 컨테이너입니다. 사이드바 섹션은 사이드바 내에 중첩된 보기입니다.",
 			"sideBarSectionHeaderForeground": "사이드바 섹션 헤더 전경색입니다. 사이드바는 탐색기와 검색 같은 보기의 컨테이너입니다. 사이드바 섹션은 사이드바 내에 중첩된 보기입니다.",
 			"sideBarTitleForeground": "사이드바 제목 전경색입니다. 사이드바는 탐색기 및 검색과 같은 뷰의 컨테이너입니다.",
-			"sideBySideEditor.border": "편집기 그룹에서 나란히 표시되는 경우 두 편집기를 서로 구분하는 색입니다.",
+			"sideBySideEditor.horizontalBorder": "편집기 그룹에서 위쪽에서 아래쪽으로 나란히 표시되면 두 편집기를 서로 구분하는 색입니다.",
+			"sideBySideEditor.verticalBorder": "편집기 그룹에서 왼쪽에서 오른쪽으로 나란히 표시되면 두 편집기를 서로 구분하는 색입니다.",
 			"statusBarBackground": "작업 영역 또는 폴더가 열려 있을 때의 상태 표시줄 배경색입니다. 상태 표시줄은 창의 맨 아래에 표시됩니다.",
 			"statusBarBorder": "사이드바 및 편집기와 구분하는 상태 표시줄 테두리 색입니다. 상태 표시줄은 창의 맨 아래에 표시됩니다.",
 			"statusBarErrorItemBackground": "상태 표시줄 오류 항목 배경색입니다. 오류 항목은 오류 상태를 나타내기 위해 다른 상태 표시줄 항목보다 눈에 띕니다. 창 아래쪽에 상태 표시줄이 표시됩니다.",
@@ -3671,7 +3725,7 @@
 			"tabActiveBorder": "활성 탭 맨 아래의 테두리입니다. 탭은 편집기 영역에서 편집기의 컨테이너입니다. 한 편집기 그룹에 여러 탭을 열 수 있습니다. 여러 편집기 그룹이 있을 수 있습니다.",
 			"tabActiveBorderTop": "활성 탭 맨 위의 위한 테두리입니다. 탭은 편집기 영역에서 편집기의 컨테이너입니다. 한 편집기 그룹에 여러 탭을 열 수 있습니다. 여러 편집기 그룹이 있을 수 있습니다.",
 			"tabActiveForeground": "활성 그룹의 활성 탭 전경색입니다. 탭은 편집기 영역에서 편집기의 컨테이너입니다. 한 편집기 그룹에서 여러 탭을 열 수 있습니다. 여러 편집기 그룹이 있을 수 있습니다.",
-			"tabActiveModifiedBorder": "활성 그룹에서 수정된(더티) 활성 탭 맨 위의 테두리입니다. 탭은 편집기 영역에서 편집기의 컨테이너입니다. 한 편집기 그룹에 여러 탭을 열 수 있습니다. 여러 편집기 그룹이 있을 수 있습니다.",
+			"tabActiveModifiedBorder": "활성 그룹에서 수정된 활성 탭 맨 위의 테두리입니다. 탭은 편집기 영역에서 편집기의 컨테이너입니다. 한 편집기 그룹에 여러 탭을 열 수 있습니다. 여러 편집기 그룹이 있을 수 있습니다.",
 			"tabActiveUnfocusedBorder": "포커스가 없는 그룹에서 활성 탭 맨 아래의 테두리입니다. 탭은 편집기 영역에서 편집기의 컨테이너입니다. 한 편집기 그룹에 여러 탭을 열 수 있습니다. 여러 편집기 그룹이 있을 수 있습니다.",
 			"tabActiveUnfocusedBorderTop": "포커스가 없는 그룹에서 활성 탭 맨 위의 테두리입니다. 탭은 편집기 영역에서 편집기의 컨테이너입니다. 한 편집기 그룹에 여러 탭을 열 수 있습니다. 여러 편집기 그룹이 있을 수 있습니다.",
 			"tabBorder": "탭을 서로 구분하기 위한 테두리입니다. 탭은 편집기 영역에서 편집기의 컨테이너입니다. 한 편집기 그룹에 여러 탭을 열 수 있습니다. 여러 편집기 그룹이 있을 수 있습니다.",
@@ -3680,7 +3734,7 @@
 			"tabHoverForeground": "마우스로 가리킬 때의 탭 전경색입니다. 탭은 편집기 영역의 편집기 컨테이너입니다. 하나의 편집기 그룹에서 여러 탭을 열 수 있습니다. 편집기 그룹이 여러 개 있을 수 있습니다.",
 			"tabInactiveBackground": "비활성 탭 배경색입니다. 탭은 편집기 영역에서 편집기의 컨테이너입니다. 한 편집기 그룹에서 여러 탭을 열 수 있습니다. 여러 편집기 그룹이 있을 수 있습니다.",
 			"tabInactiveForeground": "활성 그룹의 비활성 탭 전경색입니다. 탭은 편집기 영역에서 편집기의 컨테이너입니다. 한 편집기 그룹에서 여러 탭을 열 수 있습니다. 여러 편집기 그룹이 있을 수 있습니다.",
-			"tabInactiveModifiedBorder": "활성 그룹에서 수정된(더티) 비활성 탭 맨 위의 테두리입니다. 탭은 편집기 영역에서 편집기의 컨테이너입니다. 한 편집기 그룹에 여러 탭을 열 수 있습니다. 여러 편집기 그룹이 있을 수 있습니다.",
+			"tabInactiveModifiedBorder": "활성 그룹에서 수정된 비활성 탭 맨 위의 테두리입니다. 탭은 편집기 영역에서 편집기의 컨테이너입니다. 한 편집기 그룹에 여러 탭을 열 수 있습니다. 여러 편집기 그룹이 있을 수 있습니다.",
 			"tabUnfocusedActiveBackground": "포커스가 없는 그룹의 활성 탭 배경색입니다. 탭은 편집기 영역에서 편집기의 컨테이너입니다. 한 편집기 그룹에서 여러 탭을 열 수 있습니다. 여러 편집기 그룹이 있을 수 있습니다.",
 			"tabUnfocusedActiveForeground": "포커스가 없는 그룹의 활성 탭 전경색입니다. 탭은 편집기 영역에서 편집기의 컨테이너입니다. 한 편집기 그룹에서 여러 탭을 열 수 있습니다. 여러 편집기 그룹이 있을 수 있습니다.",
 			"tabUnfocusedHoverBackground": "마우스 커서를 올려놓았을 때 포커스를 받지 못한 탭 배경색. 탭은 편집기 영역에서 편집기의 컨테이너입니다. 한 편집기 그룹에서 여러 탭을 열 수 있습니다. 편집기 그룹이 여러 개일 수 있습니다.",
@@ -3695,8 +3749,8 @@
 			"titleBarBorder": "제목 표시줄 테두리 색입니다.",
 			"titleBarInactiveBackground": "창이 비활성화된 경우 제목 표시줄 배경입니다.",
 			"titleBarInactiveForeground": "창이 비활성화된 경우 제목 표시줄 전경입니다.",
-			"unfocusedActiveModifiedBorder": "포커스가 없는 그룹에서 수정된(더티) 활성 탭 맨 위의 테두리입니다. 탭은 편집기 영역에서 편집기의 컨테이너입니다. 한 편집기 그룹에 여러 탭을 열 수 있습니다. 여러 편집기 그룹이 있을 수 있습니다.",
-			"unfocusedINactiveModifiedBorder": "포커스가 없는 그룹에서 수정된(더티) 비활성 탭 맨 위의 테두리입니다. 탭은 편집기 영역에서 편집기의 컨테이너입니다. 한 편집기 그룹에 여러 탭을 열 수 있습니다. 여러 편집기 그룹이 있을 수 있습니다.",
+			"unfocusedActiveModifiedBorder": "포커스가 없는 그룹에서 수정된 활성 탭 맨 위의 테두리입니다. 탭은 편집기 영역에서 편집기의 컨테이너입니다. 한 편집기 그룹에 여러 탭을 열 수 있습니다. 여러 편집기 그룹이 있을 수 있습니다.",
+			"unfocusedINactiveModifiedBorder": "포커스가 없는 그룹에서 수정된 비활성 탭 맨 위의 테두리입니다. 탭은 편집기 영역에서 편집기의 컨테이너입니다. 한 편집기 그룹에 여러 탭을 열 수 있습니다. 여러 편집기 그룹이 있을 수 있습니다.",
 			"windowActiveBorder": "창이 활성화되어 있을 때 창 테두리에 사용되는 색상입니다. 사용자 지정 제목 표시줄을 사용할 때만 데스크톱 클라이언트에서 지원됩니다.",
 			"windowInactiveBorder": "비활성 상태일 때 창의 테두리에 사용되는 색상입니다. 사용자 지정 제목 표시줄을 사용할 때만 데스크톱 클라이언트에서 지원됩니다."
 		},
@@ -3734,7 +3788,7 @@
 			"quickSwitchWindow": "빠른 창 전환...",
 			"switchWindow": "창 전환...",
 			"switchWindowPlaceHolder": "전환할 창 선택",
-			"windowDirtyAriaLabel": "{0}, 더티 창, 창 선택기",
+			"windowDirtyAriaLabel": "{0}, 저장되지 않은 변경 내용이 있는 창",
 			"zoomIn": "확대",
 			"zoomOut": "축소",
 			"zoomReset": "확대/축소 다시 설정"
@@ -3751,7 +3805,7 @@
 			"argv.logLevel": "사용할 로그 수준이며 기본값은 'info'입니다. 허용되는 값은 'critical', 'error', 'warn', 'info', 'debug', 'trace', 'off'입니다.",
 			"closeWhenEmpty": "마지막 편집기를 닫을 때 창도 닫을지 여부를 제어합니다. 이 설정은 폴더를 표시하지 않는 창에만 적용됩니다.",
 			"dialogStyle": "대화 상자 창의 모양을 조정합니다.",
-			"enableCrashReporterDeprecated": "{0} 설정으로 결합되었기 때문에 사용되지 않습니다.",
+			"enableCrashReporterDeprecated": "이 설정이 false이면 새 설정 값에 관계없이 원격 분석이 전송되지 않습니다. {0} 설정에 결합되어 더 이상 사용되지 않습니다.",
 			"keyboardConfigurationTitle": "키보드",
 			"mergeAllWindowTabs": "모든 창 병합",
 			"miExit": "끝내기(&&X)",
@@ -4143,6 +4197,7 @@
 		},
 		"vs/workbench/contrib/codeEditor/browser/untitledTextEditorHint": {
 			"dontshow": "표시 안 함",
+			"keyboardBindingTooltip": "{0}",
 			"selectAlanguage2": "언어 선택",
 			"thisAgain": " 이 항목을 다시",
 			"toGetStarted": " 입력을 시작하여 해제하거나 "
@@ -4353,6 +4408,7 @@
 			"debug.console.historySuggestions": "디버그 콘솔이 이전에 입력한 입력을 제안할지 여부를 제어합니다.",
 			"debug.console.lineHeight": "디버그 콘솔에서 줄 높이(픽셀)를 제어합니다. 글꼴 크기에서 줄 높이를 계산하려면 0을 사용합니다.",
 			"debug.console.wordWrap": "디버그 콘솔에서 줄이 자동으로 바뀌는지 여부를 제어합니다.",
+			"debug.disassemblyView.showSourceCode": "디스어셈블리 뷰에서 소스 코드를 표시합니다.",
 			"debug.focusWindowOnBreak": "디버거가 중단될 때 워크벤치 창이 포커스를 받을지 여부를 제어합니다.",
 			"debug.onTaskErrors": "preLaunchTask를 실행한 후 오류가 발생할 때 수행할 작업을 제어합니다.",
 			"debug.saveBeforeStart": "디버그 세션을 시작하기 전에 저장할 편집기를 제어합니다.",
@@ -4478,18 +4534,20 @@
 			"closeExceptionWidget": "예외 위젯 닫기",
 			"conditionalBreakpointEditorAction": "디버그: 조건부 중단점 추가...",
 			"evaluateInDebugConsole": "디버그 콘솔에서 평가",
-			"goToNextBreakpoint": "디버그 : 다음 중단점으로 이동",
-			"goToPreviousBreakpoint": "디버그 : 이전 중단점으로 이동",
+			"goToNextBreakpoint": "디버그: 다음 중단점으로 이동",
+			"goToPreviousBreakpoint": "디버그: 이전 중단점으로 이동",
 			"logPointEditorAction": "디버그 : Logpoint 추가...",
 			"miConditionalBreakpoint": "조건부 중단점(&&C)...",
 			"miDisassemblyView": "&&DisassemblyView",
 			"miLogPoint": "&&Logpoint...",
 			"miToggleBreakpoint": "중단점 설정/해제(&&B)",
+			"mitogglesource": "ToggleSource(&&T)",
 			"openDisassemblyView": "디스어셈블리 보기 열기",
 			"runToCursor": "커서까지 실행",
 			"showDebugHover": "디버그: 가리키기 표시",
 			"stepIntoTargets": "대상을 한 단계씩 코드 실행...",
-			"toggleBreakpointAction": "디버그: 중단점 설정/해제"
+			"toggleBreakpointAction": "디버그: 중단점 설정/해제",
+			"toggleDisassemblyViewSourceCode": "디스어셈블리 보기에서 소스 코드 토글"
 		},
 		"vs/workbench/contrib/debug/browser/debugEditorContribution": {
 			"addConfiguration": "구성 추가...",
@@ -4576,7 +4634,6 @@
 			"debugTrust": "디버깅은 작업 영역에서 빌드 작업 및 프로그램 코드를 실행합니다.",
 			"debugTypeMissing": "선택한 시작 구성에 대한 'type' 속성이 없습니다.",
 			"debugTypeNotSupported": "구성된 디버그 형식 '{0}'은(는) 지원되지 않습니다.",
-			"debuggerDisabled": "구성된 디버그 유형 '{0}'이(가) 설치되었지만 이 환경에서 지원되지 않습니다.",
 			"debuggingPaused": "{0}:{1}, 디버깅이 일시 중지됨(이유: {2}), {3}",
 			"installAdditionalDebuggers": "{0} 확장 설치",
 			"launchJsonDoesNotExist": "전달된 작업 영역 폴더에 'launch.json'이 없습니다.",
@@ -4744,6 +4801,7 @@
 			"debugState": "포커스가 있는 디버그 세션의 상태입니다. 'inactive', 'initializing', 'stopped', 'running' 중 하나입니다.",
 			"debugType": "활성 디버그 세션의 디버그 형식입니다. 예: 'python'.",
 			"debugUX": "UX 상태를 디버그합니다. 디버그 구성이 없으면 'simple'이고, 그렇지 않으면 'default'입니다. 디버그 뷰렛에 시작 뷰를 표시할 시기를 결정하는 데 사용됩니다.",
+			"debuggerDisabled": "구성된 디버그 유형 '{0}'이(가) 설치되었지만 이 환경에서 지원되지 않습니다.",
 			"debuggersAvailable": "하나 이상의 디버그 확장이 활성화되어 있는 경우 true입니다.",
 			"disassembleRequestSupported": "포커스된 세션이 디스어셈블 요청을 지원하는 경우 True입니다.",
 			"disassemblyViewFocus": "디스어셈블리 뷰가 포커스된 경우 True입니다.",
@@ -4978,7 +5036,8 @@
 			"not yet activated": "아직 활성화되지 않았습니다.",
 			"preview": "미리 보기",
 			"productThemes": "제품 아이콘 테마({0})",
-			"publisher": "게시자 이름",
+			"publisher": "게시자",
+			"publisher verified tooltip": "이 게시자는 {0}의 소유권을 확인했습니다.",
 			"rating": "등급",
 			"recommendationHasBeenIgnored": "이 확장에 대한 권장을 수신하지 않도록 선택했습니다.",
 			"release date": "릴리스된 날짜",
@@ -5128,6 +5187,7 @@
 			"workbench.extensions.action.undoIgnoredRecommendation": "무시되는 권장 사항 실행 취소",
 			"workbench.extensions.installExtension.arg.decription": "확장 ID 또는 VSIX 리소스 URI",
 			"workbench.extensions.installExtension.description": "지정된 확장 설치",
+			"workbench.extensions.installExtension.option.donotSync": "사용하도록 설정하면 VS Code는 설정 동기화가 켜져 있을 때 이 확장을 동기화하지 않습니다.",
 			"workbench.extensions.installExtension.option.installOnlyNewlyAddedFromExtensionPackVSIX": "확장을 사용하면 VS Code가 확장 팩 VSIX에서 새로 추가한 확장을 설치합니다. 이 옵션은 VSIX를 설치하는 동안에만 고려됩니다.",
 			"workbench.extensions.search.arg.name": "검색에 사용할 쿼리",
 			"workbench.extensions.search.description": "특정 확장 검색",
@@ -5298,6 +5358,7 @@
 			"syncEnabledIcon": "확장이 동기화되었음을 나타내는 아이콘입니다.",
 			"syncIgnoredIcon": "동기화할 때 확장이 무시됨을 나타내는 아이콘입니다.",
 			"trustIcon": "확장 편집기에 메시지와 함께 표시되는 아이콘입니다.",
+			"verifiedPublisher": "확장 보기 및 편집기에서 확인된 확장 게시자에 사용되는 아이콘입니다.",
 			"warningIcon": "확장 편집기에 경고 메시지와 함께 표시되는 아이콘입니다."
 		},
 		"vs/workbench/contrib/extensions/browser/extensionsQuickAccess": {
@@ -5360,8 +5421,10 @@
 			"activation": "활성화 시간",
 			"dependencies": "종속성 표시",
 			"extensionIconStarForeground": "확장 등급의 아이콘 색입니다.",
+			"extensionIconVerifiedForeground": "확장 확인 게시자의 아이콘 색입니다.",
 			"message": "메시지 1개",
 			"messages": "메시지 {0}개",
+			"publisher verified tooltip": "이 게시자는 {0}의 소유권을 확인했습니다.",
 			"remote extension title": "{0}에 확장",
 			"startup": "시작",
 			"syncingore.label": "이 확장은 동기화하는 동안 무시됩니다.",
@@ -5492,7 +5555,6 @@
 			"patchedVersion1": "설치가 손상되었습니다.",
 			"patchedVersion2": "버그를 제출하는 경우 지정하세요.",
 			"request a missing feature": "누락된 기능 요청",
-			"sendFeedback": "Tweet 피드백",
 			"sentiment": "사용 소감을 알려주세요.",
 			"showFeedback": "상태 표시줄에 피드백 아이콘 표시",
 			"smileCaption": "행복 피드백 감정",
@@ -5711,8 +5773,8 @@
 			"autoReveal.focusNoScroll": "파일을 스크롤하여 볼 수 없지만 포커스는 계속 있습니다.",
 			"autoReveal.off": "파일이 표시되지 않고 선택되지 않습니다.",
 			"autoReveal.on": "파일이 표시되고 선택됩니다.",
-			"autoSave": "변경된 편집기의 자동 저장을 제어합니다. 자동 저장에 대한 자세한 내용은 [여기](https://code.visualstudio.com/docs/editor/codebasics#_save-auto-save)를 참조하세요.",
-			"autoSaveDelay": "변경된 편집기가 자동으로 저장되기까지의 지연(ms)을 제어합니다. '#files.autoSave#'가 '{0}'(으)로 설정된 경우에만 적용됩니다.",
+			"autoSave": "저장되지 않은 변경 내용이 있는 편집기의 자동 저장을 제어합니다. 자동 저장에 대한 자세한 내용은 [여기](https://code.visualstudio.com/docs/editor/codebasics#_save-auto-save)를 참조하세요.",
+			"autoSaveDelay": "저장되지 않은 변경 내용이 있는 편집기가 자동으로 저장되기까지의 지연(밀리초)을 제어합니다. '#files.autoSave#'가 '{0}'(으)로 설정된 경우에만 적용됩니다.",
 			"binaryFileEditor": "이진 파일 편집기",
 			"compressSingleChildFolders": "탐색기가 폴더를 압축 형식으로 렌더링할지 여부를 제어합니다. 이러한 양식에서 단일 하위 폴더는 결합된 트리 요소로 압축됩니다. 예를 들어 Java 패키지 구조에 유용합니다.",
 			"confirmDelete": "파일을 휴지통에서 삭제할 때 탐색기에서 확인을 요청해야 하는지 여부를 제어합니다.",
@@ -5730,16 +5792,21 @@
 			"eol.auto": "운영 체제별 줄 바꿈 문자를 사용합니다.",
 			"everything": "전체 파일을 포맷합니다.",
 			"exclude": "파일 및 폴더를 제외하기 위한 glob 패턴을 구성합니다. 예를 들어 파일 탐색기는 이 설정을 기반으로 표시하거나 숨길 파일 및 폴더를 결정합니다. 검색 특정 제외 항목을 정의하려면 `#search.exclude#` 설정을 참조합니다. [여기](https://code.visualstudio.com/docs/editor/codebasics#_advanced-search-options)에서 glob 패턴에 대해 자세히 알아보세요.",
+			"expandSingleFolderWorkspaces": "탐색기가 초기화 중에 폴더를 하나만 포함하는 다중 루트 작업 영역을 확장해야 하는지 여부를 제어합니다.",
 			"explorer.decorations.badges": "파일 장식에 배지를 사용할지 여부를 제어합니다.",
 			"explorer.decorations.colors": "파일 장식에 색을 사용할지 여부를 제어합니다.",
 			"explorer.incrementalNaming": "붙여넣기에서 중복된 탐색기 항목에 새 이름을 지정할 때 사용할 명명 규칙을 제어합니다.",
 			"explorerConfigurationTitle": "파일 탐색기",
-			"files.autoSave.afterDelay": "변경된 편집기는 구성된 '#files.autoSaveDelay#' 후에 자동으로 저장됩니다.",
-			"files.autoSave.off": "변경된 편집기는 자동으로 저장되지 않습니다.",
-			"files.autoSave.onFocusChange": "편집기의 포커스가 손실되면 변경된 편집기는 자동으로 저장됩니다.",
-			"files.autoSave.onWindowChange": "창에서 포커스가 손실되면 변경된 편집기가 자동으로 저장됩니다.",
+			"files.autoSave.afterDelay": "변경 내용이 있는 편집기는 구성된 '#files.autoSaveDelay#' 후에 자동으로 저장됩니다.",
+			"files.autoSave.off": "변경 내용이 있는 편집기는 자동으로 저장되지 않습니다.",
+			"files.autoSave.onFocusChange": "편집기에서 포커스가 손실되면 변경 내용이 있는 편집기가 자동으로 저장됩니다.",
+			"files.autoSave.onWindowChange": "창에서 포커스가 손실되면 변경 내용이 있는 편집기가 자동으로 저장됩니다.",
 			"files.exclude.boolean": "파일 경로를 일치시킬 GLOB 패턴입니다. 패턴을 사용하거나 사용하지 않도록 설정하려면 true 또는 false로 설정하세요.",
 			"files.exclude.when": "일치하는 파일의 형제에 대한 추가 검사입니다. $(basename)을 일치하는 파일 이름에 대한 변수로 사용하세요.",
+			"files.experimentalSandboxedFileService": "실험적: 샌드박스로 파일 서비스를 변경합니다. 지시가 없으면 변경하지 마세요!",
+			"files.legacyWatcher.default": "참가자 버전을 사용하거나 다중 루트 작업 영역을 열 때마다 새 파일 감시자를 사용할 수 있습니다.",
+			"files.legacyWatcher.off": "레거시 파일 감시자를 사용하지 않도록 설정하고 새 파일 감시자가 해당 기능을 활용할 수 있도록 합니다.",
+			"files.legacyWatcher.on": "새 파일 감시자에 문제가 있는 경우 레거시 파일 감시자를 사용하도록 설정합니다.",
 			"files.restoreUndoStack": "파일을 다시 열 때 실행 취소 스택을 복원합니다.",
 			"files.saveConflictResolution": "그동안 다른 프로그램에 의해 변경된 디스크에 파일을 저장할 경우 저장 충돌이 발생할 수 있습니다. 데이터 손실을 방지하기 위해 편집기의 변경 내용과 디스크의 버전을 비교하라는 메시지가 사용자에게 표시됩니다. 이 설정은 충돌 오류가 자주 발생하는 경우에만 변경해야 하며, 부주의한 사용은 데이터 손실을 초래할 수 있습니다.",
 			"files.simpleDialog.enable": "단순 파일 대화 상자를 사용합니다. 사용하도록 설정하면 단순 파일 대화 상자가 시스템 파일 대화 상자를 대체합니다.",
@@ -5747,7 +5814,7 @@
 			"formatOnSave": "파일 저장 시 서식을 지정합니다. 포맷터를 사용할 수 있어야 하며, 파일이 지연 후에 자동으로 저장되지 않아야 하고, 편집기가 종료되지 않아야 합니다.",
 			"formatOnSaveMode": "저장 시 포맷이 전체 파일을 포맷하는지 또는 수정 내용만 포맷하는지를 제어합니다. '#editor.formatOnSave#'를 사용하도록 설정한 경우에만 적용됩니다.",
 			"hotExit": "저장하지 않은 파일을 세션 간에 기억하여, 편집기를 종료할 때 저장할지 묻는 메시지를 건너뛸지 여부를 제어합니다.",
-			"hotExit.off": "Hot Exit를 사용하지 않도록 설정합니다. 더티 파일이 있는 창을 닫으려고 시도할 때 메시지가 표시됩니다.",
+			"hotExit.off": "핫 종료를 사용하지 않도록 설정합니다. 저장하지 않은 변경 내용이 있는 편집기가 있는 창을 닫을 때 프롬프트가 표시됩니다.",
 			"hotExit.onExit": "Windows/Linux에서 마지막 창이 닫히거나 `workbench.action.quit` 명령이 트리거될 때(명령 팔레트, 키 바인딩, 메뉴) Hot Exit가 트리거됩니다. 열린 폴더가 없는 모든 창은 다음 실행 시 복원됩니다. 저장되지 않은 파일이 있는 이전에 연 창 목록은 `파일 > 최근 파일 열기 > 더 보기...`에서 액세스할 수 있습니다.",
 			"hotExit.onExitAndWindowClose": "Windows/Linux에서 마지막 창이 닫히거나 `workbench.action.quit` 명령이 트리거될 때(명령 팔레트, 키 바인딩, 메뉴) 또는 마지막 창인지 여부와 관계 없이 폴더가 열린 모든 창에 대해 Hot Exit가 트리거됩니다. 열린 폴더가 없는 모든 창은 다음 실행 시 복원됩니다. 저장되지 않은 파일이 있는 이전에 연 창 목록은 `파일 > 최근 파일 열기 > 더 보기...`에서 액세스할 수 있습니다.",
 			"hotExit.onExitAndWindowCloseBrowser": "브라우저가 종료되거나 창이나 탭이 닫히면 Hot Exit이 트리거됩니다.",
@@ -5777,8 +5844,8 @@
 			"trimFinalNewlines": "사용하도록 설정되면 저장할 때 파일 끝에 마지막 줄 바꿈 이후의 모든 줄 바꿈이 잘립니다.",
 			"trimTrailingWhitespace": "사용하도록 설정되면 파일을 저장할 때 후행 공백이 잘립니다.",
 			"useTrash": "파일/폴더를 삭제하면 OS 휴지통(Windows의 휴지통)으로 이동합니다. 사용하지 않도록 설정하면 파일/폴더를 영구적으로 삭제합니다.",
-			"watcherExclude": "파일 감시에서 제외할 파일 경로의 glob 패턴을 구성합니다. 패턴은 절대 경로에서 일치해야 합니다. 예를 들어 접두사 `**/` 또는 전체 경로가 적절하게 일치하고 접미사 `/**`를 사용하여 경로 내의 파일과 일치해야 합니다(예: `**/build/output/**` 또는 `/Users/name/workspaces/project/build/output/**`). 코드 시작 시 많은 CPU 시간을 소비하는 경우 큰 폴더를 제외하여 초기 로드를 줄일 수 있습니다.",
-			"watcherInclude": "작업 영역 내부의 변경 내용을 감시할 추가 경로를 구성합니다. 기본적으로 기호 링크인 폴더를 제외한 모든 작업 영역 폴더는 재귀적으로 감시됩니다. 기호 링크인 감시 폴더를 지원하기 위해 절대 또는 상대 경로를 명시적으로 추가할 수 있습니다. 상대 경로는 절대 경로를 형성하기 위해 작업 영역 폴더에 대해 확인됩니다."
+			"watcherExclude": "파일 감시에서 제외할 경로 또는 Glob 패턴을 구성합니다. 상대적인 경로(예: '빌드/출력')는 현재 열려 있는 작업 영역을 사용하여 절대 경로로 확인됩니다. Glob 패턴이 제대로 일치하려면(예: `**/build/output/**` 또는 `/Users/name/workspaces/project/build/output/**`) 절대 경로에서 일치해야 합니다(즉, 접두사 `**/` 또는 전체 경로 및 접미사 `/**`를 사용하여 경로 내의 파일과 일치). 파일 감시자 프로세스가 CPU를 많이 사용하는 경우 중요도가 적은 대용량 폴더(예: 빌드 출력 폴더)를 제외해야 합니다.",
+			"watcherInclude": "작업 영역 내부의 변경 내용을 감시할 추가 경로를 구성합니다. 기본적으로 기호 링크인 폴더를 제외한 모든 작업 영역 폴더는 재귀적으로 감시됩니다. 기호 링크인 감시 폴더를 지원하기 위해 절대 또는 상대 경로를 명시적으로 추가할 수 있습니다. 상대 경로는 현재 열려 있는 작업 영역을 사용하여 절대 경로로 해석됩니다."
 		},
 		"vs/workbench/contrib/files/browser/views/emptyView": {
 			"noWorkspace": "열린 폴더 없음"
@@ -5892,7 +5959,9 @@
 			"interactive.history.previous": "기록의 이전 값",
 			"interactive.inactiveCodeBorder": "편집기에 포커스가 없을 때 현재 대화형 코드 셀의 테두리 색입니다.",
 			"interactive.input.clear": "대화형 창 입력 편집기 내용 지우기",
-			"interactive.open": "대화형 창 열기"
+			"interactive.open": "대화형 창 열기",
+			"interactiveScrollToBottom": "맨 아래로 스크롤",
+			"interactiveScrollToTop": "맨 위로 스크롤"
 		},
 		"vs/workbench/contrib/interactive/browser/interactiveEditor": {
 			"interactiveInputPlaceHolder": "여기에 코드를 입력하고 {0}을(를) 눌러 실행합니다."
@@ -5920,6 +5989,8 @@
 		"vs/workbench/contrib/localizations/browser/localizations.contribution": {
 			"activateLanguagePack": "{0}에서 VS Code를 사용하려면 VS Code를 다시 시작해야 합니다.",
 			"changeAndRestart": "언어 변경 후 다시 시작",
+			"doNotChangeAndRestart": "언어를 변경하지 마세요.",
+			"doNotRestart": "다시 시작하지 마세요.",
 			"neverAgain": "다시 표시 안 함",
 			"restart": "다시 시작",
 			"updateLocale": "VS Code의 UI 언어를 {0}(으)로 변경하고 다시 시작하시겠습니까?",
@@ -6094,7 +6165,8 @@
 			"notebookActions.copy": "셀 복사",
 			"notebookActions.cut": "셀 잘라내기",
 			"notebookActions.paste": "셀 붙여넣기",
-			"notebookActions.pasteAbove": "위에 셀 붙여넣기"
+			"notebookActions.pasteAbove": "위에 셀 붙여넣기",
+			"toggleNotebookClipboardLog": "전자 필기장 클립보드 문제 해결 토글"
 		},
 		"vs/workbench/contrib/notebook/browser/contrib/editorStatusBar/editorStatusBar": {
 			"current1": "현재 선택되어 있음",
@@ -6109,8 +6181,10 @@
 			"notebook.singleActiveCellIndicator": "셀 {0}/{1}",
 			"notebookActions.selectKernel": "Notebook 커널 선택",
 			"notebookActions.selectKernel.args": "Notebook 커널 인수",
+			"otherKernelKinds": "기타",
 			"prompt.placeholder.change": "'{0}'에 대한 커널 변경",
 			"prompt.placeholder.select": "'{0}'에 대한 커널 선택",
+			"suggestedKernels": "제안됨",
 			"tooltop": "{0}(제안)"
 		},
 		"vs/workbench/contrib/notebook/browser/contrib/find/findController": {
@@ -6204,10 +6278,14 @@
 		"vs/workbench/contrib/notebook/browser/controller/layoutActions": {
 			"cmd.toggle": "이동 경로 설정/해제",
 			"customizeNotebook": "Notebook 사용자 지정...",
+			"notebook.placeholder": "다음에 저장할 설정 파일",
+			"notebook.saveMimeTypeOrder": "Mimetype 표시 순서 저장",
 			"notebook.showLineNumbers": "전자 필기장 줄 번호 표시",
 			"notebook.toggleBreadcrumb": "이동 경로 설정/해제",
 			"notebook.toggleCellToolbarPosition": "셀 도구 모음 위치 설정/해제",
 			"notebook.toggleLineNumbers": "전자 필기장 줄 번호 설정/해제",
+			"saveTarget.machine": "사용자 설정",
+			"saveTarget.workspace": "작업 영역 설정",
 			"workbench.notebook.layout.configure.label": "노트북 레이아웃 사용자 지정",
 			"workbench.notebook.layout.select.label": "노트북 레이아웃 중에서 선택"
 		},
@@ -6359,6 +6437,7 @@
 			"notebook.error.rendererNotFound": "'$0'에 대한 렌더러를 찾을 수 없습니다."
 		},
 		"vs/workbench/contrib/notebook/browser/view/renderers/cellEditorOptions": {
+			"notebook.cell.toggleLineNumbers.title": "셀 줄 번호 표시",
 			"notebook.lineNumbers": "셀 편집기에서 줄 번호 표시를 제어합니다.",
 			"notebook.showLineNumbers": "전자 필기장 줄 번호 표시",
 			"notebook.toggleLineNumbers": "전자 필기장 줄 번호 설정/해제"
@@ -6373,6 +6452,7 @@
 			"unavailableRenderInfo": "렌더러를 사용할 수 없음"
 		},
 		"vs/workbench/contrib/notebook/browser/view/renderers/cellRenderer": {
+			"cellExecutionOrderCountLabel": "실행 순서",
 			"cellExpandOutputButtonLabel": "셀 출력 확장(${0})",
 			"cellExpandOutputButtonLabelWithDoubleClick": "두 번 클릭하여 셀 출력 확장({0})",
 			"notebook.moreRunActionsLabel": "자세히..."
@@ -6906,11 +6986,11 @@
 			"tunnel.originColumn.tooltip": "전달된 포트가 시작된 출처입니다. 확장, 사용자가 전달함, 정적으로 전달됨 또는 자동으로 전달됨일 수 있습니다.",
 			"tunnel.portColumn.label": "포트",
 			"tunnel.portColumn.tooltip": "전달된 포트의 레이블 및 원격 포트 번호입니다.",
-			"tunnel.privacyColumn.label": "개인 정보",
+			"tunnel.privacyColumn.label": "표시 여부",
 			"tunnel.privacyColumn.tooltip": "전달된 포트의 가용성입니다.",
 			"tunnel.processColumn.label": "실행 중인 프로세스",
 			"tunnel.processColumn.tooltip": "포트를 사용하고 있는 프로세스의 명령줄입니다.",
-			"tunnelContext.privacyMenu": "개인 정보 포팅",
+			"tunnelContext.privacyMenu": "포트 가시성",
 			"tunnelContext.protocolMenu": "포트 프로토콜 변경",
 			"tunnelPrivacy.private": "프라이빗",
 			"tunnelPrivacy.unknown": "알 수 없음",
@@ -6918,6 +6998,10 @@
 			"tunnelView.runningProcess.inacessable": "프로세스 정보를 사용할 수 없습니다."
 		},
 		"vs/workbench/contrib/remote/common/remote.contribution": {
+			"invalidWorkspaceCancel": "취소(&&C)",
+			"invalidWorkspaceDetail": "작업 영역이 없습니다. 열려는 다른 작업 영역을 선택하세요.",
+			"invalidWorkspaceMessage": "작업 영역이 없습니다.",
+			"invalidWorkspacePrimary": "작업 영역 열기(&&O)",
 			"remote": "원격",
 			"remote.autoForwardPorts": "사용하도록 설정하면 새 실행 중인 프로세스가 감지되고 수신하는 포트가 자동으로 전달됩니다. 이 설정을 사용하지 않도록 설정해도 모든 포트가 전달되는 것을 방지할 수 없습니다. 사용하지 않도록 설정하더라도 확장은 여전히 포트를 전달하도록 할 수 있으며 일부 URL을 열면 포트가 계속 전달됩니다.",
 			"remote.autoForwardPortsSource": "'remote.autoForwardPorts'가 true이면 포트가 자동으로 전달되는 소스를 설정합니다. Windows 및 Mac 원격에서 'process' 옵션은 아무런 영향을 주지 않으며 'output'이 사용됩니다. 적용하려면 다시 로드해야 합니다.",
@@ -7048,7 +7132,7 @@
 		"vs/workbench/contrib/search/browser/anythingQuickAccess": {
 			"closeEditor": "최근에 사용한 항목에서 제거",
 			"fileAndSymbolResultsSeparator": "파일 및 기호 결과",
-			"filePickAriaLabelDirty": "{0}, 더티",
+			"filePickAriaLabelDirty": "{0} 저장되지 않은 변경 내용",
 			"fileResultsSeparator": "파일 결과",
 			"noAnythingResults": "일치하는 결과 없음",
 			"openToBottom": "아래쪽으로 열기",
@@ -7137,7 +7221,7 @@
 			"showTriggerActions": "작업 영역에서 기호로 이동...",
 			"symbolsQuickAccess": "작업 영역에서 기호로 이동",
 			"symbolsQuickAccessPlaceholder": "열 기호의 이름을 입력합니다.",
-			"useGlobalIgnoreFiles": "파일을 검색할 때 전역 '.gitignore' 및 '.ignore' 파일을 사용할지 여부를 제어합니다.",
+			"useGlobalIgnoreFiles": "파일을 검색할 때 전역 '.gitignore' 및 '.ignore' 파일을 사용할지 여부를 제어합니다. '#search.useIgnoreFiles#'를 사용하도록 설정해야 합니다.",
 			"useIgnoreFiles": "파일을 검색할 때 '.gitignore' 파일 및 '.ignore' 파일을 사용할지 여부를 제어합니다.",
 			"usePCRE2Deprecated": "사용되지 않습니다. PCRE2는 PCRE2에서만 지원하는 regex 기능을 사용할 경우 자동으로 사용됩니다.",
 			"useRipgrep": "이 설정은 사용되지 않으며 이제 \"search.usePCRE2\"로 대체됩니다.",
@@ -7949,6 +8033,7 @@
 			"terminal.integrated.a11yTooMuchOutput": "발표할 출력이 너무 많음, 읽을 행으로 수동 이동",
 			"terminal.integrated.copySelection.noSelection": "터미널에 복사할 선택 항목이 없음",
 			"terminal.slowRendering": "터미널 GPU 가속이 컴퓨터에서 느린 것 같습니다. 성능을 향상할 수 있도록 사용 안 함으로 전환하시겠습니까? [터미널 설정에 대한 자세한 정보](https://code.visualstudio.com/docs/editor/integrated-terminal#_changing-how-the-terminal-is-rendered)",
+			"terminalNavigationMode": "터미널 버퍼를 탐색하려면 {0} 및 {1}을(를) 사용합니다.",
 			"terminalProfileMigration": "터미널에서 더 이상 사용되지 않는 shell/shellArgs 설정을 사용하고 있습니다. 프로필로 마이그레이션하시겠습니까?",
 			"terminalStaleTextBoxAriaLabel": "터미널 {0} 환경이 부실합니다. 자세한 정보를 보려면 '환경 정보 표시' 명령을 실행하세요.",
 			"terminalTextBoxAriaLabel": "터미널 {0}",
@@ -7964,6 +8049,7 @@
 			"miRunActiveFile": "활성 파일 실행(&&A)",
 			"miRunSelectedText": "선택한 텍스트 실행(&&S)",
 			"miSplitTerminal": "분할 터미널(&&S)",
+			"splitTerminal": "터미널 분할",
 			"terminal.new": "새 터미널",
 			"workbench.action.terminal.changeColor": "색 변경...",
 			"workbench.action.terminal.changeIcon": "아이콘 변경...",
@@ -8065,7 +8151,7 @@
 			"terminal.integrated.confirmOnExit.always": "터미널이 있는지 항상 확인합니다.",
 			"terminal.integrated.confirmOnExit.hasChildProcesses": "자식 프로세스가 있는 터미널이 있는지 확인합니다.",
 			"terminal.integrated.confirmOnExit.never": "확인하지 마세요.",
-			"terminal.integrated.confirmOnKill": "자식 프로세스가 있을 때 종료 터미널을 확인할지 여부를 제어합니다. 편집기로 설정하면 편집기 영역의 터미널에 자식 프로세스가 있을 때 오염된 상태로 표시됩니다. 자식 프로세스 감지는 셸의 자식 프로세스로 프로세스를 실행하지 않는 Git Bash와 같은 셸에서는 제대로 작동하지 않을 수 있습니다.",
+			"terminal.integrated.confirmOnKill": "자식 프로세스가 있을 때 종료 터미널을 확인할지 여부를 제어합니다. 편집기로 설정하면 편집기 영역의 터미널에 자식 프로세스가 있을 때 변경된 상태로 표시됩니다. 자식 프로세스 감지는 셸의 자식 프로세스로 프로세스를 실행하지 않는 Git Bash와 같은 셸에서는 제대로 작동하지 않을 수 있습니다.",
 			"terminal.integrated.confirmOnKill.always": "터미널이 편집기 또는 패널에 있는지 확인합니다.",
 			"terminal.integrated.confirmOnKill.editor": "터미널이 편집기에 있는지 확인합니다.",
 			"terminal.integrated.confirmOnKill.never": "확인하지 마세요.",
@@ -8181,7 +8267,6 @@
 			"killTerminal": "터미널 종료",
 			"killTerminal.short": "종료",
 			"moveToEditor": "터미널을 편집기 영역으로 이동",
-			"moveToEditorShort": "편집기 영역으로 이동",
 			"splitTerminal": "터미널 분할",
 			"splitTerminal.short": "Split",
 			"terminal": "터미널",
@@ -8250,6 +8335,7 @@
 			"testing.searchForTestExtension": "테스트 확장 검색",
 			"testing.selectDefaultTestProfiles": "기본 프로필 선택",
 			"testing.showMostRecentOutput": "출력 표시",
+			"testing.sortByDuration": "기간별 정렬",
 			"testing.sortByLocation": "위치별 정렬",
 			"testing.sortByStatus": "상태별 정렬",
 			"testing.toggleInlineTestOutput": "인라인 테스트 출력 토글",
@@ -8496,8 +8582,8 @@
 			"later": "나중에",
 			"noUpdatesAvailable": "현재 사용할 수 있는 업데이트가 없습니다.",
 			"read the release notes": "{0} v{1}을(를) 시작합니다. 릴리스 정보를 확인하시겠습니까?",
-			"relaunchDetailInsiders": "VSCode의 야간 사전 프로덕션 버전으로 전환하려면 [다시 로드] 단추를 누르세요.",
-			"relaunchDetailStable": "VSCode의 릴리스된 월별 안정적인 버전으로 전환하려면 [다시 로드] 단추를 누르세요.",
+			"relaunchDetailInsiders": "다시 로드 단추를 눌러 참가자 버전의 VS Code로 전환합니다.",
+			"relaunchDetailStable": "다시 로드 단추를 눌러 안정적인 버전의 VS Code로 전환합니다.",
 			"relaunchMessage": "버전을 변경하려면 적용하기 위한 다시 로드가 필요합니다.",
 			"releaseNotes": "릴리스 정보",
 			"reload": "다시 로드(&&R)",
@@ -8712,7 +8798,9 @@
 			"watermark.openRecent": "최근 파일 열기",
 			"watermark.quickAccess": "파일로 이동",
 			"watermark.showCommands": "모든 명령 표시",
+			"watermark.showSettings": "설정 표시",
 			"watermark.startDebugging": "디버깅 시작",
+			"watermark.toggleFullscreen": "전체 화면 설정/해제",
 			"watermark.toggleTerminal": "터미널 설정/해제"
 		},
 		"vs/workbench/contrib/webview/browser/webview.contribution": {
@@ -8761,6 +8849,7 @@
 		},
 		"vs/workbench/contrib/welcome/gettingStarted/browser/gettingStarted": {
 			"allDone": "완료로 표시",
+			"checkboxTitle": "선택하면 시작 시 이 페이지가 표시됩니다.",
 			"close": "숨기기",
 			"footer": "{0}은(는) 사용량 현황 데이터를 수집합니다. {1}을(를) 읽고 {2} 방법을 알아봅니다.",
 			"getStarted": "시작하기",
@@ -8769,7 +8858,7 @@
 			"gettingStarted.someStepsComplete": "{0}/{1} 단계 완료",
 			"imageShowing": "{0}을(를) 보여 주는 이미지",
 			"new": "새로 만들기",
-			"newItems": "새 항목",
+			"newItems": "업데이트됨",
 			"nextOne": "다음 섹션",
 			"optOut": "옵트아웃",
 			"pickWalkthroughs": "연습 열기...",
@@ -8798,8 +8887,6 @@
 		},
 		"vs/workbench/contrib/welcome/gettingStarted/browser/gettingStartedColors": {
 			"welcomePage.background": "시작 페이지 배경색입니다.",
-			"welcomePage.buttonBackground": "시작 페이지에서 단추의 배경색입니다.",
-			"welcomePage.buttonHoverBackground": "시작 페이지에서 단추의 커서 올리기 배경색입니다.",
 			"welcomePage.progress.background": "시작 페이지 진행률 표시줄의 전경색입니다.",
 			"welcomePage.progress.foreground": "시작 페이지 진행률 표시줄의 배경색입니다.",
 			"welcomePage.tileBackground": "시작 페이지의 타일 배경색입니다.",
@@ -8853,7 +8940,7 @@
 		},
 		"vs/workbench/contrib/welcome/gettingStarted/common/gettingStartedContent": {
 			"browseLangExts": "언어 확장 찾아보기",
-			"browsePopular": "인기 있는 확장 찾아보기",
+			"browsePopular": "인기 웹 확장 찾아보기",
 			"browseRecommended": "권장 확장 찾아보기",
 			"cloneRepo": "리포지토리 복제",
 			"commandPalette": "명령 팔레트 열기",
@@ -8877,6 +8964,8 @@
 			"gettingStarted.installGit.title": "Git 설치",
 			"gettingStarted.intermediate.description": "이러한 팁과 요령을 사용하여 개발 워크플로를 최적화합니다.",
 			"gettingStarted.intermediate.title": "생산성 향상",
+			"gettingStarted.menuBar.description.interpolated": "전체 메뉴 모음은 드롭다운 메뉴에서 코드 공간을 확보할 수 있습니다. 더 빠른 액세스를 위해 해당 형태를 전환합니다. \r\n{0}",
+			"gettingStarted.menuBar.title": "적절한 양의 UI만",
 			"gettingStarted.newFile.description": "제목 없는 새 파일, Notebook 또는 사용자 지정 편집기를 엽니다.",
 			"gettingStarted.newFile.title": "새 파일...",
 			"gettingStarted.notebook.title": "Notebook 사용자 지정",
@@ -8907,6 +8996,8 @@
 			"gettingStarted.setup.OpenFolderWeb.description.interpolated": "코딩을 시작할 준비가 되었습니다. 로컬 프로젝트 또는 원격 리포지토리를 열어 파일을 VS Code로 가져올 수 있습니다.\r\n{0}\r\n{1}",
 			"gettingStarted.setup.description": "VS Code를 자신의 것으로 만들기 위한 가장 적합한 사용자 지정을 발견하세요.",
 			"gettingStarted.setup.title": "VS Code 시작",
+			"gettingStarted.setupWeb.description": "웹에서 VS Code에 대한 가장 적합한 사용자 지정을 확인해 보세요.",
+			"gettingStarted.setupWeb.title": "웹에서 VS Code 시작",
 			"gettingStarted.shortcuts.description.interpolated": "즐겨 찾는 명령을 검색한 후에는 즉시 액세스할 수 있는 사용자 지정 바로 가기 키를 만드세요.\r\n{0}",
 			"gettingStarted.shortcuts.title": "바로 가기 사용자 지정",
 			"gettingStarted.splitview.description.interpolated": "파일을 세로 및 가로 방향으로 나란히 열어 화면 공간을 최대한 활용합니다.\r\n{0}",
@@ -8939,6 +9030,7 @@
 			"showTerminal": "터미널 패널 표시",
 			"splitEditor": "편집기 분할",
 			"titleID": "색 테마 찾아보기",
+			"toggleMenuBar": "메뉴 모음 설정/해제",
 			"tweakSettings": "내 설정 조정",
 			"watch": "자습서 보기",
 			"workspaceTrust": "작업 영역 신뢰"
@@ -9147,9 +9239,9 @@
 			"nothing": "편집하지 않음"
 		},
 		"vs/workbench/services/configuration/common/configurationEditingService": {
-			"errorConfigurationFileDirty": "사용자 설정 파일이 변경되어 사용자 설정에 쓸 수 없습니다. 먼저 사용자 설정 파일을 저장하고 다시 시도하세요.",
-			"errorConfigurationFileDirtyFolder": "폴더 설정 파일이 변경되어 폴더 설정에 쓸 수 없습니다. 먼저 '{0}' 폴더 설정 파일을 저장하고 다시 시도하세요.",
-			"errorConfigurationFileDirtyWorkspace": "작업 영역 설정 파일이 변경되어 작업 영역 설정에 쓸 수 없습니다. 먼저 작업 영역 설정 파일을 저장하고 다시 시도하세요.",
+			"errorConfigurationFileDirty": "파일에 저장되지 않은 변경 내용이 있으므로 사용자 설정에 쓸 수 없습니다. 먼저 사용자 설정 파일을 저장한 후 다시 시도하세요.",
+			"errorConfigurationFileDirtyFolder": "파일에 저장되지 않은 변경 내용이 있으므로 폴더 설정에 쓸 수 없습니다. 먼저 ‘{0}’ 폴더 설정 파일을 저장한 후 다시 시도하세요.",
+			"errorConfigurationFileDirtyWorkspace": "파일에 저장되지 않은 변경 내용이 있으므로 작업 영역 설정에 쓸 수 없습니다. 먼저 작업 영역 설정 파일을 저장한 후 다시 시도하세요.",
 			"errorConfigurationFileModifiedSince": "파일 내용이 최신이므로 사용자 설정에 쓸 수 없습니다.",
 			"errorConfigurationFileModifiedSinceFolder": "파일 내용이 최신이므로 폴더 설정에 쓸 수 없습니다.",
 			"errorConfigurationFileModifiedSinceWorkspace": "파일 내용이 최신이므로 작업 영역 설정에 쓸 수 없습니다.",
@@ -9166,12 +9258,12 @@
 			"errorInvalidWorkspaceConfigurationApplication": "{0}을(를) [작업 영역] 설정에 쓸 수 없습니다. 이 설정은 [사용자] 설정에만 쓸 수 있습니다.",
 			"errorInvalidWorkspaceConfigurationMachine": "{0}을(를) [작업 영역] 설정에 쓸 수 없습니다. 이 설정은 [사용자] 설정에만 쓸 수 있습니다.",
 			"errorInvalidWorkspaceTarget": "{0}이(가) 여러 폴더 작업 영역에서 작업 영역 범위를 지원하지 않으므로 작업 영역 설정에 쓸 수 없습니다.",
-			"errorLaunchConfigurationFileDirty": "시작 구성 파일이 변경되어 이 파일에 쓸 수 없습니다. 먼저 파일을 저장하고 다시 시도하세요.",
+			"errorLaunchConfigurationFileDirty": "파일에 저장되지 않은 변경 내용이 있으므로 시작 구성 파일에 쓸 수 없습니다. 먼저 저장한 후 다시 시도하세요.",
 			"errorLaunchConfigurationFileModifiedSince": "파일 내용이 최신이므로 시작 구성 파일에 쓸 수 없습니다.",
 			"errorNoWorkspaceOpened": "작업 영역이 열려 있지 않으므로 {0}에 쓸 수 없습니다. 먼저 작업 영역을 열고 다시 시도하세요.",
-			"errorRemoteConfigurationFileDirty": "파일이 더티이므로 원격 사용자 설정에 쓸 수 없습니다. 먼저 원격 사용자 설정 파일을 저장한 다음 다시 시도하세요.",
+			"errorRemoteConfigurationFileDirty": "파일에 저장되지 않은 변경 내용이 있으므로 원격 사용자 설정에 쓸 수 없습니다. 먼저 원격 사용자 설정 파일을 저장한 후 다시 시도하세요.",
 			"errorRemoteConfigurationFileModifiedSince": "파일 내용이 최신이므로 원격 사용자 설정에 쓸 수 없습니다.",
-			"errorTasksConfigurationFileDirty": "작업 구성 파일이 변경되어 이 파일에 쓸 수 없습니다. 먼저 파일을 저장하고 다시 시도하세요.",
+			"errorTasksConfigurationFileDirty": "파일에 저장되지 않은 변경 내용이 있으므로 작업 구성 파일에 쓸 수 없습니다. 먼저 저장한 후 다시 시도하세요.",
 			"errorTasksConfigurationFileModifiedSince": "파일 내용이 최신이므로 작업 구성 파일에 쓸 수 없습니다.",
 			"errorUnknownKey": "{1}은(는) 등록된 구성이 아니므로 {0}에 쓸 수 없습니다.",
 			"folderTarget": "폴더 설정",
@@ -9184,7 +9276,7 @@
 			"workspaceTarget": "작업 영역 설정"
 		},
 		"vs/workbench/services/configuration/common/jsonEditingService": {
-			"errorFileDirty": "파일이 오염되어 파일에 쓸 수 없습니다. 파일을 저장하고 다시 시도하세요.",
+			"errorFileDirty": "파일에 저장되지 않은 변경 내용이 있으므로 파일에 쓸 수 없습니다. 파일을 저장하고 다시 시도하세요.",
 			"errorInvalidFile": "파일에 쓸 수 없습니다. 파일을 열어 오류/경고를 수정한 후 다시 시도하세요."
 		},
 		"vs/workbench/services/configurationResolver/browser/configurationResolverService": {
@@ -9327,12 +9419,16 @@
 			"extensionInstallWorkspaceTrustMessage": "이 확장을 사용하려면 신뢰할 수 있는 작업 영역이 필요합니다.",
 			"install": "설치",
 			"install and do no sync": "설치(동기화 안 함)",
+			"install anyways": "그래도 설치",
 			"install extension": "확장 설치",
 			"install extensions": "확장 설치",
 			"install multiple extensions": "확장을 설치하고 디바이스 간에 동기화하시겠습니까?",
 			"install single extension": "'{0}' 확장을 설치하고 디바이스 간에 동기화하시겠습니까?",
+			"limited support": "'{0}'에서는 {1}의 기능이 제한됩니다.",
 			"multipleDependentsError": "확장 '{0}'을(를) 제거할 수 없습니다. 확장 '{1}', '{2}' 등이 이 확장에 종속됩니다.",
-			"non web extensions": "'{0}'에는 {1}에서 사용할 수 없는 확장이 포함되어 있습니다. 그래도 설치하시겠습니까?",
+			"non web extensions": "'{0}'에는 {1}에서 지원되지 않는 확장이 포함되어 있습니다.",
+			"non web extensions detail": "지원되지 않는 확장을 포함합니다.",
+			"showExtensions": "확장 표시",
 			"singleDependentError": "확장 '{0}'을(를) 제거할 수 없습니다. 확장 '{1}'이(가) 이 확장에 종속됩니다.",
 			"twoDependentsError": "확장 '{0}'을(를) 제거할 수 없습니다. 확장 '{1}' 및 '{2}'이(가) 이 확장에 종속됩니다."
 		},
@@ -9506,6 +9602,10 @@
 			"missingNLSKey": "키 {0}에 대한 메시지를 찾을 수 없습니다.",
 			"notSemver": "확장 버전이 semver와 호환되지 않습니다."
 		},
+		"vs/workbench/services/files/electron-browser/diskFileSystemProvider": {
+			"binFailed": "'{0}'을(를) 휴지통으로 이동하지 못함",
+			"trashFailed": "'{0}'을(를) 휴지통으로 이동하지 못함"
+		},
 		"vs/workbench/services/gettingStarted/common/gettingStartedContent": {
 			"getting-started-setup-icon": "시작의 설정 범주에 사용되는 아이콘",
 			"getting-started-beginner-icon": "시작의 초보자 범주에 사용되는 아이콘",
@@ -9608,7 +9708,7 @@
 		"vs/workbench/services/keybinding/common/keybindingEditing": {
 			"emptyKeybindingsHeader": "키 바인딩을 이 파일에 넣어서 기본값 재정의",
 			"errorInvalidConfiguration": "키 바인딩 구성 파일에 쓸 수 없습니다. 이 파일에 배열 형식이 아닌 개체가 있습니다. 파일을 열어 정리하고 다시 시도하세요.",
-			"errorKeybindingsFileDirty": "키 바인딩 구성 파일이 변경되었으므로 쓸 수 없습니다. 먼저 파일을 저장하고 다시 시도하세요.",
+			"errorKeybindingsFileDirty": "키 바인딩 구성 파일에 저장되지 않은 변경 내용이 있으므로 쓸 수 없습니다. 먼저 파일을 저장하고 다시 시도하세요.",
 			"parseErrors": "키 바인딩 구성 파일에 쓸 수 없습니다. 파일을 열고 오류/경고를 수정한 다음 다시 시도하세요."
 		},
 		"vs/workbench/services/label/common/labelService": {
@@ -10049,17 +10149,17 @@
 			"saveParticipants": "'{0}' 저장 중"
 		},
 		"vs/workbench/services/workingCopy/electron-sandbox/workingCopyBackupTracker": {
-			"backupBeforeShutdownDetail": "‘취소’를 클릭하여 대기를 중지하고 더티 편집기를 되돌립니다.",
-			"backupBeforeShutdownMessage": "더티 편집기를 백업하는 데 시간이 예상보다 오래 걸리고 있습니다...",
-			"backupErrorDetails": "먼저 변경된 편집기를 저장하거나 되돌린 후 다시 시도하세요.",
-			"backupTrackerBackupFailed": "다음 더티 편집기를 백업 위치에 저장할 수 없습니다.",
-			"backupTrackerConfirmFailed": "다음 더티 편집기 저장하거나 되돌릴 수 없습니다.",
-			"revertBeforeShutdown": "더티 편집기를 되돌리는 데 시간이 예상보다 오래 걸리고 있습니다...",
-			"saveBeforeShutdown": "더티 편집기를 저장하는 데 시간이 예상보다 오래 걸리고 있습니다..."
+			"backupBeforeShutdownDetail": "대기를 중지하고 저장되지 않은 변경 내용으로 편집기를 저장하거나 되돌리려면 '취소'를 클릭합니다.",
+			"backupBeforeShutdownMessage": "저장되지 않은 변경 내용으로 편집기를 백업하는 데 예상보다 시간이 오래 걸리고 있습니다...",
+			"backupErrorDetails": "저장되지 않은 변경 내용이 있는 편집기를 저장하거나 되돌려본 후 다시 시도하세요.",
+			"backupTrackerBackupFailed": "저장되지 않은 변경 내용이 있는 다음 편집기를 백업 위치에 저장할 수 없습니다.",
+			"backupTrackerConfirmFailed": "저장되지 않은 변경 내용이 있는 다음 편집기를 저장하거나 되돌릴 수 없습니다.",
+			"revertBeforeShutdown": "저장되지 않은 변경 내용으로 편집기를 되돌리는 데 예상보다 시간이 오래 걸리고 있습니다...",
+			"saveBeforeShutdown": "저장되지 않은 변경 내용으로 편집기를 저장하는 데 예상보다 시간이 오래 걸리고 있습니다..."
 		},
 		"vs/workbench/services/workspaces/browser/abstractWorkspaceEditingService": {
 			"errorInvalidTaskConfiguration": "작업 영역 구성 파일에 쓸 수 없습니다. 파일을 열고 오류/경고를 수정한 다음 다시 시도하세요.",
-			"errorWorkspaceConfigurationFileDirty": "파일이 변경되어 작업 영역 구성 파일에 쓸 수 없습니다. 저장하고 다시 시도하세요.",
+			"errorWorkspaceConfigurationFileDirty": "파일에 저장되지 않은 변경 내용이 있어 작업 영역 구성 파일에 쓸 수 없습니다. 저장하고 다시 시도하세요.",
 			"openWorkspaceConfigurationFile": "작업 영역 구성 열기",
 			"save": "저장",
 			"saveWorkspace": "작업 영역 저장"

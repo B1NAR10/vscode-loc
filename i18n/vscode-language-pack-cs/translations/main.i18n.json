@@ -202,6 +202,9 @@
 			"unchangedLine": "{0} nezměněný řádek {1}"
 		},
 		"vs/editor/browser/widget/inlineDiffMargin": {
+			"diff.clipboard.copyChangedLineContent.label": "Kopírovat změněný řádek ({0})",
+			"diff.clipboard.copyChangedLinesContent.label": "Kopírovat změněné řádky",
+			"diff.clipboard.copyChangedLinesContent.single.label": "Kopírovat změněný řádek",
 			"diff.clipboard.copyDeletedLineContent.label": "Kopírovat odstraněný řádek ({0})",
 			"diff.clipboard.copyDeletedLinesContent.label": "Kopírovat odstraněné řádky",
 			"diff.clipboard.copyDeletedLinesContent.single.label": "Kopírovat odstraněný řádek",
@@ -218,6 +221,10 @@
 			"maxFileSize": "Maximální velikost souboru v MB, pro který se mají vypočítat rozdíly. Pro zrušení omezení použijte 0.",
 			"maxTokenizationLineLength": "Řádky s větší délkou se nebudou z důvodu výkonu tokenizovat.",
 			"renderIndicators": "Určuje, jestli má editor rozdílů zobrazovat indikátory +/- pro přidané/odebrané změny.",
+			"schema.brackets": "Definuje symboly hranatých závorek, které zvyšují nebo snižují úroveň odsazení.",
+			"schema.closeBracket": "Znak pravé hranaté závorky nebo řetězcová sekvence",
+			"schema.colorizedBracketPairs": "Definuje dvojice závorek, které jsou zabarvené podle jejich úrovně vnoření, pokud je zabarvení dvojice závorek povoleno.",
+			"schema.openBracket": "Znak levé hranaté závorky nebo řetězcová sekvence",
 			"semanticHighlighting.configuredByTheme": "Sémantické zvýrazňování je konfigurováno nastavením semanticHighlighting aktuálního barevného motivu.",
 			"semanticHighlighting.enabled": "Určuje, jestli se bude zobrazovat nastavení semanticHighlighting pro jazyky, které ho podporují.",
 			"semanticHighlighting.false": "Sémantické zvýrazňování je u všech barevných motivů zakázané.",
@@ -306,6 +313,14 @@
 			"editor.gotoLocation.multiple.gotoAndPeek": "Přejít na primární výsledek a zobrazit náhled",
 			"editor.gotoLocation.multiple.peek": "Zobrazit náhled výsledků (výchozí)",
 			"editor.guides.bracketPairs": "Určuje, zda je nebo není povolena vizualizace spojení párů závorek.",
+			"editor.guides.bracketPairs.active": "Povolí vodítka párů závorek pouze pro aktivní pár hranatých závorek.",
+			"editor.guides.bracketPairs.false": "Zakáže vodítka párů závorek.",
+			"editor.guides.bracketPairs.true": "Povolí vodítka párů závorek.",
+			"editor.guides.bracketPairsHorizontal": "Určuje, zda je nebo není povolena vodorovná vizualizace spojení párů závorek.",
+			"editor.guides.bracketPairsHorizontal.active": "Povolí vodorovná vodítka pouze pro aktivní pár hranatých závorek.",
+			"editor.guides.bracketPairsHorizontal.false": "Zakáže vodítka párů vodorovných závorek.",
+			"editor.guides.bracketPairsHorizontal.true": "Povolí vodorovná vodítka jako vodítka pro párování se svislou závorkou.",
+			"editor.guides.highlightActiveBracketPair": "Určuje, zda je nebo není povolena vizualizace spojení párů závorek.",
 			"editor.guides.highlightActiveIndentation": "Určuje, jestli má editor zvýraznit aktivní vodítko odsazení.",
 			"editor.guides.indentation": "Určuje, jestli má editor vykreslovat vodítka odsazení.",
 			"editor.suggest.showClasss": "Pokud je povoleno, technologie IntelliSense zobrazí návrhy pro „class“.",
@@ -363,6 +378,7 @@
 			"formatOnType": "Určuje, jestli má editor automaticky naformátovat napsaný řádek.",
 			"glyphMargin": "Určuje, jestli má editor vykreslovat svislý okraj pro piktogramy. Okraje pro piktogramy se používají převážně pro ladění.",
 			"hideCursorInOverviewRuler": "Určuje, jestli má být na přehledovém pravítku skrytý kurzor.",
+			"hover.above": "Pokud je místo, upřednostňujte zobrazení ukazatele myši nad řádkem.",
 			"hover.delay": "Určuje dobu prodlevy (v milisekundách), po jejímž uplynutí se zobrazí popisek při umístění ukazatele myši na prvek.",
 			"hover.enabled": "Určuje, jestli se má zobrazit popisek po umístění ukazatele myši na prvek.",
 			"hover.sticky": "Určuje, jestli má popisek zobrazený při umístění ukazatele myši na prvek zůstat viditelný.",
@@ -590,6 +606,18 @@
 			"editorBracketHighlightUnexpectedBracketForeground": "Barva popředí neočekávaných závorek.",
 			"editorBracketMatchBackground": "Barva pozadí za odpovídajícími hranatými závorkami",
 			"editorBracketMatchBorder": "Barva polí odpovídajících hranatých závorek",
+			"editorBracketPairGuide.activeBackground1": "Barva pozadí aktivních vodítek párů závorek (1). Vyžaduje povolení párování závorek.",
+			"editorBracketPairGuide.activeBackground2": "Barva pozadí aktivních vodítek párů závorek (2). Vyžaduje povolení párování závorek.",
+			"editorBracketPairGuide.activeBackground3": "Barva pozadí aktivních vodítek párů závorek (3). Vyžaduje povolení párování závorek.",
+			"editorBracketPairGuide.activeBackground4": "Barva pozadí aktivních vodítek párů závorek (4). Vyžaduje povolení párování závorek.",
+			"editorBracketPairGuide.activeBackground5": "Barva pozadí aktivních vodítek párů závorek (5). Vyžaduje povolení párování závorek.",
+			"editorBracketPairGuide.activeBackground6": "Barva pozadí aktivních vodítek párů závorek (6). Vyžaduje povolení párování závorek.",
+			"editorBracketPairGuide.background1": "Barva pozadí neaktivních vodítek párů závorek (1). Vyžaduje povolení párování závorek.",
+			"editorBracketPairGuide.background2": "Barva pozadí neaktivních vodítek párů závorek (2). Vyžaduje povolení párování závorek.",
+			"editorBracketPairGuide.background3": "Barva pozadí neaktivních vodítek párů závorek (3). Vyžaduje povolení párování závorek.",
+			"editorBracketPairGuide.background4": "Barva pozadí neaktivních vodítek párů závorek (4). Vyžaduje povolení párování závorek.",
+			"editorBracketPairGuide.background5": "Barva pozadí neaktivních vodítek párů závorek (5). Vyžaduje povolení párování závorek.",
+			"editorBracketPairGuide.background6": "Barva pozadí neaktivních vodítek párů závorek (6). Vyžaduje povolení párování závorek.",
 			"editorCodeLensForeground": "Barva popředí pro CodeLens v editoru",
 			"editorCursorBackground": "Barva pozadí kurzoru v editoru. Umožňuje přizpůsobit barvu znaku překrytého kurzorem bloku.",
 			"editorGhostTextBorder": "Barva ohraničení stínového textu v editoru",
@@ -683,6 +711,9 @@
 		},
 		"vs/editor/contrib/codelens/codelensController": {
 			"showLensOnLine": "Zobrazit příkazy CodeLens pro aktuální řádek"
+		},
+		"vs/editor/contrib/colorPicker/colorPickerWidget": {
+			"clickToToggleColorOptions": "Kliknutím přepnete možnosti barev (rgb/hsl/hex)."
 		},
 		"vs/editor/contrib/comment/comment": {
 			"comment.block": "Přepnout komentář k bloku",
@@ -907,6 +938,7 @@
 			"action.inlineSuggest.showPrevious": "Zobrazit předchozí vložený návrh",
 			"action.inlineSuggest.trigger": "Aktivovat vložený návrh",
 			"inlineSuggestionHasIndentation": "Určuje, jestli vložený návrh začíná prázdným znakem.",
+			"inlineSuggestionHasIndentationLessThanTabSize": "Určuje, zda vložený návrh začíná mezerou, která je menší, než jaká by byla vložena tabulátorem",
 			"inlineSuggestionVisible": "Určuje, jestli je vložený návrh viditelný."
 		},
 		"vs/editor/contrib/inlineCompletions/inlineCompletionsHoverParticipant": {
@@ -927,6 +959,7 @@
 			"lines.delete": "Odstranit řádek",
 			"lines.deleteAllLeft": "Odstranit vše nalevo",
 			"lines.deleteAllRight": "Odstranit vše napravo",
+			"lines.deleteDuplicates": "Odstranit duplicitní řádky",
 			"lines.indent": "Odsadit řádek",
 			"lines.insertAfter": "Vložit řádek pod",
 			"lines.insertBefore": "Vložit řádek nad",
@@ -988,6 +1021,7 @@
 			"parameterHints.trigger.label": "Aktivovat tipy k parametrům"
 		},
 		"vs/editor/contrib/parameterHints/parameterHintsWidget": {
+			"editorHoverWidgetHighlightForeground": "Barva popředí aktivní položky v upozornění na parametr",
 			"hint": "{0}, tip",
 			"parameterHintsNextIcon": "Ikona pro zobrazení další nápovědy k parametru",
 			"parameterHintsPreviousIcon": "Ikona pro zobrazení předchozí nápovědy k parametru"
@@ -1319,7 +1353,7 @@
 			"malicious extension": "Rozšíření nelze nainstalovat, protože bylo nahlášeno jako problematické.",
 			"multipleDependentsError": "Rozšíření {0} není možné odinstalovat. Závisí na něm rozšíření {1}, {2} a jedno další.",
 			"multipleIndirectDependentsError": "Rozšíření {0} není možné odinstalovat. Vedlo by to i k odinstalaci rozšíření {1}, na němž závisí rozšíření {2}, {3} a některá další.",
-			"notFoundCompatibleDependency": "Rozšíření {0} nelze nainstalovat, protože není kompatibilní s aktuální verzí VS Code (verze {1}).",
+			"notFoundCompatibleDependency": "Rozšíření {0} nelze nainstalovat, protože není kompatibilní s aktuální verzí {1} (verze {2}).",
 			"singleDependentError": "Rozšíření {0} není možné odinstalovat. Závisí na něm rozšíření {1}.",
 			"singleIndirectDependentError": "Rozšíření {0} není možné odinstalovat. Vedlo by to i k odinstalaci rozšíření {1}, na němž závisí rozšíření {2}.",
 			"twoDependentsError": "Rozšíření {0} není možné odinstalovat. Závisí na něm rozšíření {1} a {2}.",
@@ -1423,9 +1457,9 @@
 		},
 		"vs/platform/files/common/io": {
 			"fileTooLargeError": "Soubor je pro otevření příliš velký.",
-			"fileTooLargeForHeapError": "Pokud chcete otevřít soubor této velikosti, musíte provést restartování a povolit použití většího množství paměti pro {0}."
+			"fileTooLargeForHeapError": "Pokud chcete otevřít soubor této velikosti, musíte provést restartování a povolit použití většího množství paměti."
 		},
-		"vs/platform/files/electron-browser/diskFileSystemProvider": {
+		"vs/platform/files/electron-main/diskFileSystemProviderIpc": {
 			"binFailed": "{0} se nepovedlo přesunout do koše.",
 			"trashFailed": "{0} se nepovedlo přesunout do koše."
 		},
@@ -1548,27 +1582,37 @@
 			"systemCertificates": "Určuje, jestli mají být certifikáty certifikační autority načítány z operačního systému. (V systému Windows a macOS se po vypnutí tohoto nastavení vyžaduje opětovné načtení okna.)"
 		},
 		"vs/platform/telemetry/common/telemetryService": {
-			"enableTelemetryDeprecated": "Zastaralé ve prospěch nastavení {0}.",
+			"enableTelemetryDeprecated": "Pokud má toto nastavení hodnotu false, nebude se odesílat žádná telemetrie bez ohledu na hodnotu nového nastavení. Zastaralé ve prospěch nastavení {0}.",
+			"telemetry.crashReports": "Hlášení o selhání",
+			"telemetry.docsAndPrivacyStatement": "Přečtěte si další informace o [datech, která shromažďujeme]({0}) a našem [prohlášení o zásadách ochrany osobních údajů]({1}).",
+			"telemetry.docsStatement": "Další informace o [datech, která shromažďujeme]({0})",
 			"telemetry.enableTelemetry": "Povolte shromažďování diagnostických dat. To nám pomáhá lépe pochopit, jak probíhá {0} a kde je třeba provést vylepšení.",
-			"telemetry.enableTelemetry.default": "Povolí shromažďování všech telemetrických dat.",
-			"telemetry.enableTelemetry.error": "Povoluje pouze data telemetrie chyb a ne obecná data o využití.",
-			"telemetry.enableTelemetry.off": "Zakáže veškerou telemetrii produktu.",
 			"telemetry.enableTelemetryMd": "Povolte shromažďování diagnostických dat. To nám pomáhá lépe pochopit, jak probíhá {0} a kde je třeba provést vylepšení. [Další informace]({1}) o tom, co shromažďujeme, a naše prohlášení o zásadách ochrany osobních údajů.",
-			"telemetry.restart": "Některé funkce mohou vyžadovat restart, aby se projevily.",
+			"telemetry.errors": "Telemetrie chyb",
+			"telemetry.restart": "Aby se změny hlášení o chybách projevily, musí se provést úplné restartování aplikace.",
+			"telemetry.telemetryLevel.crash": "Odesílá hlášení o selhání na úrovni operačního systému.",
+			"telemetry.telemetryLevel.default": "Odesílá data o využití, chyby a hlášení o selhání.",
+			"telemetry.telemetryLevel.deprecated": "****Poznámka:*** Pokud je toto nastavení off, nebude se odesílat žádná telemetrie bez ohledu na jiná nastavení telemetrie. Pokud je toto nastavení cokoli jiného než off a telemetrie je zakázaná zastaralými nastaveními, nebude se odesílat žádná telemetrie.*",
+			"telemetry.telemetryLevel.error": "Odesílá obecné hlášení o selhání a telemetrii chyb.",
+			"telemetry.telemetryLevel.off": "Zakáže veškerou telemetrii produktu.",
+			"telemetry.telemetryLevel.tableDescription": "Následující tabulka uvádí data odeslaná s jednotlivými nastaveními:",
+			"telemetry.telemetryLevelMd": "Řídí veškerou základní a vlastní telemetrii rozšíření. To nám pomůže lépe pochopit, jak si vede {0}, kde je potřeba něco vylepšit a jak se používají funkce.",
+			"telemetry.usage": "Data o využití",
 			"telemetryConfigurationTitle": "Telemetrie"
 		},
 		"vs/platform/terminal/common/terminalPlatformConfiguration": {
 			"terminal.integrated.automationShell.linux": "Cesta, která (pokud je nastavena) přepíše {0} a ignoruje hodnoty {1} pro použití terminálu souvisejícího s automatizací, jako jsou úlohy a ladění.",
 			"terminal.integrated.automationShell.osx": "Cesta, která (pokud je nastavena) přepíše {0} a ignoruje hodnoty {1} pro použití terminálu souvisejícího s automatizací, jako jsou úlohy a ladění.",
 			"terminal.integrated.automationShell.windows": "Cesta, která (pokud je nastavena) přepíše {0} a ignoruje hodnoty {1} pro použití terminálu souvisejícího s automatizací, jako jsou úlohy a ladění.",
+			"terminal.integrated.confirmIgnoreProcesses": "Dá se nakonfigurovat tak, aby bylo k dispozici vlastní nastavení pro ignorování procesů.",
 			"terminal.integrated.defaultProfile.linux": "Výchozí profil používaný v systému Linux. Toto nastavení bude v této chvíli ignorováno, pokud je nastavena hodnota {0} nebo {1}.",
 			"terminal.integrated.defaultProfile.osx": "Výchozí profil používaný v systému macOS. Toto nastavení bude v této chvíli ignorováno, pokud je nastavena hodnota {0} nebo {1}.",
 			"terminal.integrated.defaultProfile.windows": "Výchozí profil používaný v systému Windows. Toto nastavení bude v této chvíli ignorováno, pokud je nastavena hodnota {0} nebo {1}.",
 			"terminal.integrated.inheritEnv": "Určuje, jestli mají nová prostředí dědit prostředí z nástroje VS Code, který může poskytnout prostředí pro přihlášení a zajistit inicializaci proměnné $PATH a dalších vývojových proměnných. Toto nemá žádný vliv na systém Windows.",
 			"terminal.integrated.persistentSessionScrollback": "Určuje maximální počet řádků, které budou obnoveny při opětovném připojení k trvalé relaci terminálu. Zvýšením této možnosti obnovíte více řádků posuvníku za cenu větší paměti a zvýšíte dobu potřebnou k připojení k terminálům při spuštění. Toto nastavení vyžaduje restartování, aby se projevilo a mělo by být nastaveno na hodnotu menší nebo rovnou #terminal.integrated.scrollback#.",
-			"terminal.integrated.profile.linux": "Profily v Linuxu, které se mají nabídnout při vytváření nového terminálu pomocí rozevírací nabídky terminálu. Když se nastaví, přepíší se výchozí zjištěné profily. Skládají se z {0} a volitelných {1}.",
-			"terminal.integrated.profile.osx": "Profily v macOS, které se mají nabídnout při vytváření nového terminálu pomocí rozevírací nabídky terminálu. Když se nastaví, přepíší se výchozí zjištěné profily. Skládají se z {0} a volitelných {1}.",
-			"terminal.integrated.profiles.windows": "Profily ve Windows, které se mají nabídnout při vytváření nového terminálu pomocí rozevírací nabídky terminálu. Pokud je chcete vyloučit, nastavte hodnotu null, a pokud chcete použít výchozí zjištěnou konfiguraci, použijte vlastnost {0}. Nebo nastavte {1} a volitelné {2}.",
+			"terminal.integrated.profile.linux": "Profily Linuxu, které se mají zobrazit při vytváření nového terminálu prostřednictvím rozevíracího seznamu terminálu. Nastavte vlastnost {0} ručně s volitelným {1}.\r\n\r\nPokud ze seznamu chcete skrýt existující profil, nastavte ho na {2}, například: {3}.",
+			"terminal.integrated.profile.osx": "Profily macOS, které se mají zobrazit při vytváření nového terminálu prostřednictvím rozevíracího seznamu terminálu. Nastavte vlastnost {0} ručně s volitelným {1}.\r\n\r\nPokud ze seznamu chcete skrýt existující profil, nastavte ho na {2}, například: {3}.",
+			"terminal.integrated.profiles.windows": "Profily systému Windows, které se mají zobrazit při vytváření nového terminálu prostřednictvím rozevíracího seznamu terminálu. K automatickému zjištění umístění prostředí použijte vlastnost {0}. Nebo můžete nastavit vlastnost {1} ručně s volitelnou třídou {2}.\r\n\r\nPokud ze seznamu chcete skrýt existující profil, nastavte ho na {3}, například: {4}.",
 			"terminal.integrated.shell.linux": "Cesta k prostředí, které terminál používá v Linuxu. [Přečtěte si další informace o konfigurování prostředí](https://code.visualstudio.com/docs/editor/integrated-terminal#_terminal-profiles).",
 			"terminal.integrated.shell.linux.deprecation": "Toto je zastaralé. Nový doporučený způsob konfigurace výchozího prostředí je vytvoření profilu terminálu v {0} a nastavení názvu tohoto profilu jako výchozího v {1}. To bude mít momentálně přednost před novými nastaveními profilů, ale v budoucnu se to změní.",
 			"terminal.integrated.shell.osx": "Cesta k prostředí, které terminál používá v macOS. [Přečtěte si další informace o konfigurování prostředí](https://code.visualstudio.com/docs/editor/integrated-terminal#_terminal-profiles).",
@@ -1817,6 +1861,7 @@
 			"class": "Styl pro třídy",
 			"comment": "Styl pro komentáře",
 			"declaration": "Styl pro všechny deklarace symbolů",
+			"decorator": "Styl pro dekoratéry a poznámky.",
 			"deprecated": "Styl, který se má použít pro zastaralé symboly",
 			"documentation": "Styl, který se má použít pro odkazy v dokumentaci",
 			"enum": "Styl pro výčty",
@@ -2560,6 +2605,7 @@
 			"missing.submenu": "Položka nabídky odkazuje na podnabídku {0}, která není definovaná v oddílu submenus.",
 			"nonempty": "byla očekávána neprázdná hodnota.",
 			"notebook.cell.execute": "Přidaná nabídka spuštění buňky poznámkového bloku",
+			"notebook.cell.executePrimary": "Tlačítko pro spuštění buňky primárního poznámkového bloku, do kterého přispíváte",
 			"notebook.cell.title": "Přidaná nabídka názvů buněk poznámkových bloků",
 			"notebook.toolbar": "Přidaná nabídka panelu nástrojů poznámkových bloků",
 			"opticon": "vlastnost icon může být vynechána, případně musí být buď řetězec nebo literál, například {dark, light}",
@@ -2782,7 +2828,7 @@
 			"openWorkspace": "Otevřít pracovní prostor"
 		},
 		"vs/workbench/browser/contextkeys": {
-			"dirtyWorkingCopies": "Určuje, jestli existují nějaké neaktualizované pracovní kopie.",
+			"dirtyWorkingCopies": "Určuje, jestli existují nějaké pracovní kopie s neuloženými změnami.",
 			"isFullscreen": "Určuje, jestli je okno v režimu na celou obrazovku.",
 			"remoteName": "Název vzdáleného prostředku, ke kterému je okno připojené, nebo prázdný řetězec, pokud okno k žádnému vzdálenému prostředku připojené není.",
 			"virtualWorkspace": "Schéma aktuálního pracovního prostoru, pokud pochází z virtuálního systému souborů nebo z prázdného řetězce.",
@@ -3264,6 +3310,7 @@
 		},
 		"vs/workbench/browser/parts/notifications/notificationsCenter": {
 			"notifications": "Oznámení",
+			"notificationsCenterWidgetAriaLabel": "Centrum oznámení",
 			"notificationsEmpty": "Žádná nová oznámení",
 			"notificationsToolbar": "Akce centra oznámení"
 		},
@@ -3293,6 +3340,10 @@
 			"status.message": "Stavová zpráva",
 			"status.notifications": "Oznámení",
 			"zeroNotifications": "Žádná oznámení"
+		},
+		"vs/workbench/browser/parts/notifications/notificationsToasts": {
+			"notificationAriaLabel": "{0}, oznámení",
+			"notificationWithSourceAriaLabel": "{0}, zdroj: {1}, oznámení"
 		},
 		"vs/workbench/browser/parts/notifications/notificationsViewer": {
 			"executeCommand": "Kliknutím provedete příkaz {0}.",
@@ -3407,14 +3458,14 @@
 			"auxiliaryBarEnabled": "Určuje, jestli je povolen boční panel naproti bočnímu panelu.",
 			"centeredLayoutAutoResize": "Určuje, jestli se má velikost středového rozložení automaticky přizpůsobit na maximální šířku, když je otevřena více než jedna skupina. Jakmile bude otevřena pouze jedna skupina, změní se velikost středového zobrazení zpět na původní šířku.",
 			"closeEmptyGroups": "Určuje chování prázdných skupin editorů, když je zavřena poslední karta ve skupině. Pokud je povoleno, prázdné skupiny se budou automaticky zavírat. Pokud je zakázáno, prázdné skupiny zůstanou součástí mřížky.",
-			"closeOnFileDelete": "Určuje, jestli se mají editory automaticky zavřít, když je soubor, který byl otevřen během relace, odstraněn nebo přejmenován jiným procesem. Při zakázání této možnosti zůstane editor v případě takové události otevřený. Poznámka: Při odstranění z aplikace se editor vždy zavře a soubory s neuloženými změnami se nezavřou nikdy, abyste nepřišli o svá data.",
+			"closeOnFileDelete": "Určuje, jestli se mají editory automaticky zavřít, když je soubor, který byl otevřen během relace, odstraněn nebo přejmenován jiným procesem. Při zakázání této možnosti zůstane editor v případě takové události otevřený. Poznámka: Při odstranění z aplikace se editor vždy zavře a editory s neuloženými změnami se nezavřou nikdy, abyste nepřišli o svá data.",
 			"closeOnFocusLost": "Určuje, jestli se má zobrazení rychlého otevření automaticky zavřít, jakmile ztratí fokus.",
 			"commandHistory": "Určuje počet naposledy použitých příkazů, které se mají uchovávat v historii pro paletu příkazů. Pokud chcete historii příkazů zakázat, nastavte hodnotu 0.",
 			"confirmBeforeCloseWeb": "Určuje, jestli se před zavřením karty nebo okna prohlížeče má zobrazovat dialog pro potvrzení. Poznámka: I když se tato možnost povolí, prohlížeče stále budou mít možnost zavřít kartu nebo okno bez potvrzení a toto nastavení je pouze náznak, který nemusí fungovat ve všech případech.",
 			"customMenuBarAltFocus": "Určuje, jestli bude mít řádek nabídek při stisknutí klávesy Alt fokus. Toto nastavení nemá žádný vliv na přepínání řádku nabídek pomocí klávesy Alt.",
 			"decorations.badges": "Určuje, jestli dekorace souborů v editoru mají používat odznáčky.",
 			"decorations.colors": "Určuje, jestli dekorace souborů v editoru mají používat barvy.",
-			"dirty": "${dirty}: indikátor neuložených změn, pokud aktivní editor obsahuje neuložené změny",
+			"dirty": "${dirty}: indikuje, jestli aktivní editor obsahuje neuložené změny.",
 			"editorOpenPositioning": "Určuje, kde se editory otevírají. Výběrem možnosti left nebo right otevřete editory nalevo nebo napravo od aktuálně aktivního editoru. Výběrem možnosti first nebo last otevřete editory nezávisle na aktuálně aktivním editoru.",
 			"editorTabCloseButton": "Určuje pozici tlačítek pro zavření karet editoru (v případě nastavení off je zakáže). Pokud je zakázaná položka #workbench.editor.showTabs#, tato hodnota se ignoruje.",
 			"enableMenuBarMnemonics": "Určuje, jestli má být možné otevírat hlavní nabídky pomocí klávesových zkratek obsahujících klávesu Alt. Zakázání klávesových zkratek umožňuje místo toho tyto klávesové zkratky obsahující klávesu Alt svázat s příkazy editoru.",
@@ -3425,8 +3476,8 @@
 			"folderName": "${folderName}: název složky pracovního prostoru, ve které je soubor obsažen (například myFolder)",
 			"folderPath": "${folderPath}: cesta ke složce pracovního prostoru, ve které je soubor obsažen (například /Users/Development/myFolder)",
 			"fontAliasing": "Určuje metodu vyhlazování písem na pracovní ploše.",
-			"highlightModifiedTabs": "Určuje, jestli se na upravených (neuložených) kartách editorů vykreslí horní ohraničení. Když je zakázaná položka #workbench.editor.showTabs#, tato hodnota se ignoruje.",
-			"limitEditorsEnablement": "Určuje, jestli má být omezen počet otevřených editorů. Pokud je povoleno, zavřou se méně používané editory, které neobsahují neuložené změny, aby se uvolnil prostor pro nově otevírané editory.",
+			"highlightModifiedTabs": "Určuje, jestli se na kartách pro editory, které mají neuložené změny, vykreslí horní ohraničení. Tato hodnota se ignoruje, když je zakázaná #workbench.editor.showTabs#.",
+			"limitEditorsEnablement": "Určuje, jestli má být omezen počet otevřených editorů. Pokud je povoleno, zavřou se v poslední době méně používané editory, aby se uvolnil prostor pro nově otevírané editory.",
 			"limitEditorsMaximum": "Řídí maximální počet otevřených editorů. Pomocí nastavení #workbench.editor.limit.perEditorGroup# můžete toto omezení aplikovat na jednu skupinu editorů nebo na všechny skupiny.",
 			"menuBarVisibility": "Určuje viditelnost řádku nabídek. Nastavení toggle znamená, že řádek nabídek je skrytý a zobrazí se jedním stisknutím klávesy Alt. Nastavení compact přesune nabídku na boční panel.",
 			"menuBarVisibility.mac": "Určuje viditelnost řádku nabídek. Nastavení toggle znamená, že řádek nabídek je skrytý a zobrazí se spuštěním příkazu Nastavit fokus na nabídku aplikace. Nastavení compact přesune nabídku na boční panel.",
@@ -3496,6 +3547,8 @@
 			"workbench.editor.pinnedTabSizing.compact": "Připnutá karta se zobrazí v kompaktní podobě jen s ikonou nebo prvním písmenem názvu editoru.",
 			"workbench.editor.pinnedTabSizing.normal": "Připnutá karta zdědí vzhled nepřipnutých karet.",
 			"workbench.editor.pinnedTabSizing.shrink": "Připnutá karta se zmenší na kompaktní pevnou velikost s částmi názvu editoru.",
+			"workbench.editor.splitInGroupLayoutHorizontal": "Editory jsou umístěné zleva doprava.",
+			"workbench.editor.splitInGroupLayoutVertical": "Editory jsou umístěné shora dolů.",
 			"workbench.editor.splitSizingDistribute": "Rozdělí všechny skupiny editorů na stejné části.",
 			"workbench.editor.splitSizingSplit": "Rozdělí aktivní skupinu editorů na stejné části.",
 			"workbench.editor.tabSizing.fit": "Vždy udržovat karty dostatečně velké, aby se zobrazil celý popisek editoru",
@@ -3547,7 +3600,7 @@
 			"activeEditorGroupIndex": "Index aktivní skupiny editorů",
 			"activeEditorGroupLast": "Určuje, jestli je aktivní skupina editorů poslední skupina.",
 			"activeEditorGroupLocked": "Určuje, jestli je aktivní skupina editorů uzamčená.",
-			"activeEditorIsDirty": "Určuje, jestli je aktivní editor neaktualizovaný.",
+			"activeEditorIsDirty": "Určuje, jestli aktivní editor obsahuje neuložené změny.",
 			"activeEditorIsNotPreview": "Určuje, jestli aktivní editor není v režimu náhledu.",
 			"activeEditorIsPinned": "Určuje, jestli je aktivní editor připnutý.",
 			"activeEditorIsReadonly": "Určuje, jestli je aktivní editor jen pro čtení.",
@@ -3649,7 +3702,8 @@
 			"sideBarSectionHeaderBorder": "Barva ohraničení záhlaví oddílu postranního panelu. Postranní panel je kontejner pro zobrazení, jako jsou průzkumník a vyhledávání. Části postranního panelu jsou zobrazení, která jsou do postranního panelu vnořená.",
 			"sideBarSectionHeaderForeground": "Barva popředí záhlaví oddílu postranního panelu. Postranní panel je kontejner pro zobrazení, jako jsou průzkumník a vyhledávání. Části postranního panelu jsou zobrazení, která jsou do postranního panelu vnořená.",
 			"sideBarTitleForeground": "Barva popředí názvu postranního panelu. Postranní panel je kontejner pro zobrazení, jako je průzkumník a vyhledávání.",
-			"sideBySideEditor.border": "Barva, která oddělí dva editory od sebe, když se zobrazí vedle sebe ve skupině editorů.",
+			"sideBySideEditor.horizontalBorder": "Barva, která oddělí dva editory od sebe, když se zobrazí vedle sebe ve skupině editorů shora dolů.",
+			"sideBySideEditor.verticalBorder": "Barva, která oddělí dva editory od sebe, když se zobrazí vedle sebe ve skupině editorů zleva doprava.",
 			"statusBarBackground": "Barva pozadí stavového řádku, když jsou otevřené pracovní prostor nebo složka. Stavový řádek se zobrazuje v dolní části okna.",
 			"statusBarBorder": "Barva ohraničení stavového řádku, které odděluje stavový řádek od postranního panelu a editoru. Stavový řádek se zobrazuje v dolní části okna.",
 			"statusBarErrorItemBackground": "Barva pozadí chybových položek na stavovém řádku. Chybové položky jsou zvýrazněné oproti ostatním položkám stavového řádku, aby se zdůraznily chybové stavy. Stavový řádek se zobrazuje v dolní části okna.",
@@ -3671,7 +3725,7 @@
 			"tabActiveBorder": "Ohraničení v dolní části aktivní karty. Karty jsou kontejnery pro editory v oblasti editorů. V jedné skupině editorů můžete otevřít více karet. Může existovat více skupin editorů.",
 			"tabActiveBorderTop": "Ohraničení v horní části aktivní karty. Karty jsou kontejnery pro editory v oblasti editorů. V jedné skupině editorů můžete otevřít více karet. Může existovat více skupin editorů.",
 			"tabActiveForeground": "Barva popředí aktivní karty v aktivní skupině. Karty jsou kontejnery pro editory v oblasti editorů. V jedné skupině editorů můžete otevřít více karet. Může existovat více skupin editorů.",
-			"tabActiveModifiedBorder": "Ohraničení v horní části upravených aktivních karet (s neuloženými změnami) v aktivní skupině. Karty jsou kontejnery pro editory v oblasti editorů. V jedné skupině editorů můžete otevřít více karet. Může existovat více skupin editorů.",
+			"tabActiveModifiedBorder": "Ohraničení v horní části upravených aktivních karet v aktivní skupině. Karty jsou kontejnery pro editory v oblasti editorů. V jedné skupině editorů můžete otevřít více karet. Může existovat více skupin editorů.",
 			"tabActiveUnfocusedBorder": "Ohraničení v dolní části aktivní karty ve skupině bez fokusu. Karty jsou kontejnery pro editory v oblasti editorů. V jedné skupině editorů můžete otevřít více karet. Může existovat více skupin editorů.",
 			"tabActiveUnfocusedBorderTop": "Ohraničení v horní části aktivní karty ve skupině bez fokusu. Karty jsou kontejnery pro editory v oblasti editorů. V jedné skupině editorů můžete otevřít více karet. Může existovat více skupin editorů.",
 			"tabBorder": "Ohraničení pro oddělení jednotlivých karet. Karty jsou kontejnery pro editory v oblasti editorů. V jedné skupině editorů můžete otevřít více karet. Může existovat více skupin editorů.",
@@ -3680,7 +3734,7 @@
 			"tabHoverForeground": "Barva popředí karty, když je na ni umístěn ukazatel myši. Karty jsou kontejnery pro editory v oblasti editorů. V jedné skupině editorů můžete otevřít více karet. Může existovat více skupin editorů.",
 			"tabInactiveBackground": "Barva pozadí neaktivní karty v aktivní skupině. Karty jsou kontejnery pro editory v oblasti editorů. V jedné skupině editorů můžete otevřít více karet. Může existovat více skupin editorů.",
 			"tabInactiveForeground": "Barva popředí neaktivní karty v aktivní skupině. Karty jsou kontejnery pro editory v oblasti editorů. V jedné skupině editorů můžete otevřít více karet. Může existovat více skupin editorů.",
-			"tabInactiveModifiedBorder": "Ohraničení v horní části upravených neaktivních karet (s neuloženými změnami) v aktivní skupině. Karty jsou kontejnery pro editory v oblasti editorů. V jedné skupině editorů můžete otevřít více karet. Může existovat více skupin editorů.",
+			"tabInactiveModifiedBorder": "Ohraničení v horní části upravených neaktivních karet v aktivní skupině. Karty jsou kontejnery pro editory v oblasti editorů. V jedné skupině editorů můžete otevřít více karet. Může existovat více skupin editorů.",
 			"tabUnfocusedActiveBackground": "Barva pozadí aktivní karty ve skupině bez fokusu. Karty jsou kontejnery pro editory v oblasti editorů. V jedné skupině editorů můžete otevřít více karet. Může existovat více skupin editorů.",
 			"tabUnfocusedActiveForeground": "Barva popředí aktivní karty ve skupině bez fokusu. Karty jsou kontejnery pro editory v oblasti editorů. V jedné skupině editorů můžete otevřít více karet. Může existovat více skupin editorů.",
 			"tabUnfocusedHoverBackground": "Barva pozadí karty ve skupině bez fokusu, když je na ni umístěn ukazatel myši. Karty jsou kontejnery pro editory v oblasti editorů. V jedné skupině editorů můžete otevřít více karet. Může existovat více skupin editorů.",
@@ -3695,8 +3749,8 @@
 			"titleBarBorder": "Barva ohraničení záhlaví okna",
 			"titleBarInactiveBackground": "Pozadí záhlaví okna, když je okno neaktivní",
 			"titleBarInactiveForeground": "Popředí záhlaví okna, když je okno neaktivní",
-			"unfocusedActiveModifiedBorder": "Ohraničení v horní části upravených aktivních karet (s neuloženými změnami) ve skupině bez fokusu. Karty jsou kontejnery pro editory v oblasti editorů. V jedné skupině editorů můžete otevřít více karet. Může existovat více skupin editorů.",
-			"unfocusedINactiveModifiedBorder": "Ohraničení v horní části upravených neaktivních karet (s neuloženými změnami) ve skupině bez fokusu. Karty jsou kontejnery pro editory v oblasti editorů. V jedné skupině editorů můžete otevřít více karet. Může existovat více skupin editorů.",
+			"unfocusedActiveModifiedBorder": "Ohraničení v horní části upravených aktivních karet ve skupině bez fokusu. Karty jsou kontejnery pro editory v oblasti editorů. V jedné skupině editorů můžete otevřít více karet. Může existovat více skupin editorů.",
+			"unfocusedINactiveModifiedBorder": "Ohraničení v horní části upravených neaktivních karet ve skupině bez fokusu. Karty jsou kontejnery pro editory v oblasti editorů. V jedné skupině editorů můžete otevřít více karet. Může existovat více skupin editorů.",
 			"windowActiveBorder": "Barva použitá pro ohraničení okna, když je okno aktivní. Podporuje se pouze v desktopových klientech při používání vlastního záhlaví okna.",
 			"windowInactiveBorder": "Barva použitá pro ohraničení okna, když je okno neaktivní. Podporuje se pouze v desktopových klientech při používání vlastního záhlaví okna."
 		},
@@ -3751,7 +3805,7 @@
 			"argv.logLevel": "Úroveň protokolu, která se má použít. Výchozí hodnota je info. Povolené hodnoty jsou critical, error, warn, info, debug, trace a off.",
 			"closeWhenEmpty": "Určuje, jestli se má při zavření posledního editoru zavřít i okno. Toto nastavení platí pouze pro okna, ve kterých se nezobrazují složky.",
 			"dialogStyle": "Upravte vzhled dialogových oken.",
-			"enableCrashReporterDeprecated": "Zastaralé z důvodu sloučení do nastavení {0}.",
+			"enableCrashReporterDeprecated": "Pokud má toto nastavení hodnotu false, nebude se odesílat žádná telemetrie bez ohledu na hodnotu nového nastavení. Zastaralé z důvodu začlenění do nastavení {0}.",
 			"keyboardConfigurationTitle": "Klávesnice",
 			"mergeAllWindowTabs": "Sloučit všechna okna",
 			"miExit": "&&Konec",
@@ -4143,6 +4197,7 @@
 		},
 		"vs/workbench/contrib/codeEditor/browser/untitledTextEditorHint": {
 			"dontshow": "nezobrazovat",
+			"keyboardBindingTooltip": "{0}",
 			"selectAlanguage2": "Vyberte jazyk.",
 			"thisAgain": " příště už nezobrazovat",
 			"toGetStarted": " abyste mohli začít pracovat. Pokud to chcete zavřít, začněte psát text, nebo "
@@ -4353,6 +4408,7 @@
 			"debug.console.historySuggestions": "Určuje, jestli by konzola ladění měla navrhnout dříve zadaný vstup.",
 			"debug.console.lineHeight": "Určuje výšku řádku v pixelech v konzole ladění. Pokud chcete, aby se výška řádku vypočítala z velikosti písma, použijte hodnotu 0.",
 			"debug.console.wordWrap": "Určuje, jestli se mají v konzole ladění zalamovat řádky.",
+			"debug.disassemblyView.showSourceCode": "Zobrazit zdrojový kód v zobrazení zpětného překladu.",
 			"debug.focusWindowOnBreak": "Určuje, jestli má mít okno pracovní plochy fokus při přerušení ladicího programu.",
 			"debug.onTaskErrors": "Určuje, co se má provést, když se po spuštění preLaunchTask vyskytnou chyby.",
 			"debug.saveBeforeStart": "Určuje, které editory se mají před spuštěním ladicí relace uložit.",
@@ -4485,11 +4541,13 @@
 			"miDisassemblyView": "&&DisassemblyView",
 			"miLogPoint": "&&Protokolovací bod...",
 			"miToggleBreakpoint": "Přepnout &&zarážku",
+			"mitogglesource": "&&ToggleSource",
 			"openDisassemblyView": "Otevřít zobrazení zpětného překladu",
 			"runToCursor": "Spustit ke kurzoru",
 			"showDebugHover": "Ladit: zobrazit informace po umístění ukazatele myši",
 			"stepIntoTargets": "Krokovat s vnořením do cílů...",
-			"toggleBreakpointAction": "Ladit: přepnout zarážku"
+			"toggleBreakpointAction": "Ladit: přepnout zarážku",
+			"toggleDisassemblyViewSourceCode": "Přepnout zdrojový kód v zobrazení zpětného překladu"
 		},
 		"vs/workbench/contrib/debug/browser/debugEditorContribution": {
 			"addConfiguration": "Přidat konfiguraci...",
@@ -4576,7 +4634,6 @@
 			"debugTrust": "Ladění spustí úlohy buildu a kód programu z vašeho pracovního prostoru.",
 			"debugTypeMissing": "Chybí vlastnost type pro zvolenou konfiguraci spuštění.",
 			"debugTypeNotSupported": "Nakonfigurovaný typ ladění {0} se nepodporuje.",
-			"debuggerDisabled": "Nakonfigurovaný typ ladění „{0}“ je nainstalovaný, ale v tomto prostředí není podporovaný.",
 			"debuggingPaused": "{0}:{1}, ladění se pozastavilo {2}, {3}",
 			"installAdditionalDebuggers": "Nainstalovat rozšíření {0}",
 			"launchJsonDoesNotExist": "Pro předanou složku pracovního prostoru neexistuje soubor launch.json.",
@@ -4744,6 +4801,7 @@
 			"debugState": "Stav, ve kterém je ladicí relace s fokusem. Je to jeden z těchto: inactive, initializing, stopped nebo running",
 			"debugType": "Typ ladění aktivní ladicí relace. Příklad: python",
 			"debugUX": "Stav ladění uživatelského prostředí. Pokud neexistují žádné konfigurace ladění, je stav simple, jinak default. Používá se k rozhodování, kdy zobrazit úvodní zobrazení ve viewletu ladění.",
+			"debuggerDisabled": "Nakonfigurovaný typ ladění „{0}“ je nainstalovaný, ale v tomto prostředí není podporovaný.",
 			"debuggersAvailable": "True, když je aktivní alespoň jedno rozšíření ladění",
 			"disassembleRequestSupported": "True, pokud relace s fokusem podporují požadavek na zpětný překlad",
 			"disassemblyViewFocus": "True, pokud má zobrazení zpětného překladu fokus",
@@ -4978,7 +5036,8 @@
 			"not yet activated": "Ještě není aktivováno.",
 			"preview": "Preview",
 			"productThemes": "Motivy ikon produktu ({0})",
-			"publisher": "Název vydavatele",
+			"publisher": "Vydavatel",
+			"publisher verified tooltip": "Tento vydavatel ověřil vlastnictví u: {0}",
 			"rating": "Hodnocení",
 			"recommendationHasBeenIgnored": "Rozhodli jste, že nechcete dostávat doporučení pro toto rozšíření.",
 			"release date": "Uvolněno na",
@@ -5128,6 +5187,7 @@
 			"workbench.extensions.action.undoIgnoredRecommendation": "Zrušit ignorování doporučení",
 			"workbench.extensions.installExtension.arg.decription": "ID rozšíření nebo identifikátor URI prostředku VSIX",
 			"workbench.extensions.installExtension.description": "Nainstalovat dané rozšíření",
+			"workbench.extensions.installExtension.option.donotSync": "Pokud je tato možnost povolená, VS Code nebude toto rozšíření synchronizovat, když je zapnutá Synchronizace nastavení.",
 			"workbench.extensions.installExtension.option.installOnlyNewlyAddedFromExtensionPackVSIX": "Pokud je tato možnost povolena, VS Code nainstaluje pouze nově přidaná rozšíření z balíčku rozšíření VSIX. Tato možnost je posouzená pouze při instalaci VSIX.",
 			"workbench.extensions.search.arg.name": "Dotaz, který se má použít ve vyhledávání",
 			"workbench.extensions.search.description": "Vyhledat konkrétní řešení",
@@ -5298,6 +5358,7 @@
 			"syncEnabledIcon": "Ikona označující, že rozšíření je synchronizované",
 			"syncIgnoredIcon": "Ikona označující, že rozšíření se při synchronizaci ignoruje",
 			"trustIcon": "Ikona zobrazovaná se zprávou o vztahu důvěryhodnosti pracovního prostoru v editoru rozšíření",
+			"verifiedPublisher": "Ikona používaná pro ověřeného vydavatele rozšíření v zobrazení a editoru rozšíření",
 			"warningIcon": "Ikona zobrazovaná s upozorňující zprávou v editoru rozšíření"
 		},
 		"vs/workbench/contrib/extensions/browser/extensionsQuickAccess": {
@@ -5360,8 +5421,10 @@
 			"activation": "Čas aktivace",
 			"dependencies": "Zobrazit závislosti",
 			"extensionIconStarForeground": "Barva ikony pro hodnocení rozšíření",
+			"extensionIconVerifiedForeground": "Barva ikony pro ověřeného vydavatele rozšíření",
 			"message": "Počet zpráv: 1",
 			"messages": "Počet zpráv: {0}",
+			"publisher verified tooltip": "Tento vydavatel ověřil vlastnictví u: {0}",
 			"remote extension title": "Rozšíření v {0}",
 			"startup": "Spuštění",
 			"syncingore.label": "Toto rozšíření se během synchronizace ignoruje.",
@@ -5492,7 +5555,6 @@
 			"patchedVersion1": "Instalace je poškozená.",
 			"patchedVersion2": "Toto prosím uveďte, pokud odesíláte zprávu o chybě.",
 			"request a missing feature": "Žádost o chybějící funkci",
-			"sendFeedback": "Poslat tweet s názorem",
 			"sentiment": "Jaké jsou vaše dojmy?",
 			"showFeedback": "Zobrazovat ikonu zpětné vazby na stavovém řádku",
 			"smileCaption": "Pozitivní názor",
@@ -5730,16 +5792,21 @@
 			"eol.auto": "Používá znak konce řádku specifický pro operační systém.",
 			"everything": "Formátovat celý soubor",
 			"exclude": "Umožňuje nakonfigurovat vzory glob pro vyloučení souborů a složek. Na základě tohoto nastavení například Průzkumník souborů rozhodne, které soubory a složky se mají zobrazit nebo skrýt. Pokud chcete definovat vyloučení specifické pro konkrétní hledání, podívejte se na nastavení #search.exclude#. Další informace o vzorech glob najdete [tady](https://code.visualstudio.com/docs/editor/codebasics#_advanced-search-options).",
+			"expandSingleFolderWorkspaces": "Určuje, jestli má průzkumník během inicializace rozbalit pracovních prostory s více kořeny, které obsahují jenom jednu složku.",
 			"explorer.decorations.badges": "Určuje, jestli se mají pro dekorace souborů používat odznáčky.",
 			"explorer.decorations.colors": "Určuje, jestli se mají pro dekorace souborů používat barvy.",
 			"explorer.incrementalNaming": "Určuje, jakou strategii pojmenování použít při zadávání nového názvu pro duplicitní položku průzkumníka při vložení.",
 			"explorerConfigurationTitle": "Průzkumník souborů",
 			"files.autoSave.afterDelay": "Editor s neuloženými změnami se automaticky uloží po nakonfigurované prodlevě (#files.autoSaveDelay#).",
-			"files.autoSave.off": "Editor s neuloženými změnami se nikdy automaticky neuloží.",
-			"files.autoSave.onFocusChange": "Editor s neuloženými změnami se automaticky uloží, když editor ztratí fokus.",
-			"files.autoSave.onWindowChange": "Editor s neuloženými změnami se automaticky uloží, když okno ztratí fokus.",
+			"files.autoSave.off": "Editor se změnami se nikdy automaticky neuloží.",
+			"files.autoSave.onFocusChange": "Editor se změnami se automaticky uloží, když editor ztratí fokus.",
+			"files.autoSave.onWindowChange": "Editor se změnami se automaticky uloží, když okno ztratí fokus.",
 			"files.exclude.boolean": "Vzor glob pro hledání shod s cestami k souborům. Pokud chcete vzor povolit, nastavte hodnotu true, pokud ho chcete zakázat, nastavte hodnotu false.",
 			"files.exclude.when": "Další kontrola položek na stejné úrovni u odpovídajícího souboru. Jako proměnnou názvu odpovídajícího souboru použijte $(basename).",
+			"files.experimentalSandboxedFileService": "Experimentální: změní souborovou službu tak, aby byla izolovaná. Toto neměňte, pokud k tomu nedostanete pokyn!",
+			"files.legacyWatcher.default": "Nový prohlížeč souborů bude povolen, pokud používáte verzi insiderů nebo kdykoli otevřete pracovní prostory s více kořeny.",
+			"files.legacyWatcher.off": "Zakažte starší verzi sledovacího procesu souborů a povolte novému sledovacímu procesu souborů, aby využíval jeho schopnosti.",
+			"files.legacyWatcher.on": "Pokud máte problémy s novým sledovacím procesem souborů, povolte starší verzi sledovacího programu souborů.",
 			"files.restoreUndoStack": "Umožňuje při opětovném otevření souboru obnovit zásobník akcí Zpět.",
 			"files.saveConflictResolution": "Ke konfliktu uložení může dojít, když se na disk uloží soubor, který byl mezitím změněn jiným programem. Aby se zabránilo ztrátě dat, uživatel je požádán, aby porovnal změny v editoru s verzí na disku. Toto nastavení byste měli měnit pouze v případě, že dochází k častým chybám týkajícím se konfliktů uložení, protože neopatrné použití tohoto nastavení může vést ke ztrátě dat.",
 			"files.simpleDialog.enable": "Umožňuje povolit jednoduché dialogového okno souboru. Pokud je povoleno, jednoduché dialogové okno souboru nahradí systémové dialogové okno souboru.",
@@ -5747,7 +5814,7 @@
 			"formatOnSave": "Umožňuje naformátovat soubor při uložení. Musí být k dispozici formátovací modul, soubor nesmí být ukládán až po uplynutí definované doby prodlevy a editor se nesmí právě vypínat.",
 			"formatOnSaveMode": "Určuje, jestli formátování při uložení naformátuje celý soubor, nebo pouze úpravy. Platí pouze v případě, že je povoleno nastavení #editor.formatOnSave#.",
 			"hotExit": "Určuje, jestli se mají zapamatovávat neuložené soubory mezi relacemi. Díky tomu pak nebudete při ukončování editoru vyzýváni k jejich uložení.",
-			"hotExit.off": "Zakázat ukončení za běhu. Při pokusu o zavření okna obsahujícího soubory s neuloženými změnami se zobrazí výzva.",
+			"hotExit.off": "Zakažte aktivní ukončení. Při pokusu o zavření okna s editory, které mají neuložené změny, se zobrazí výzva.",
 			"hotExit.onExit": "Ukončení za běhu se aktivuje, když se v systému Windows/Linux zavře poslední okno nebo když je aktivován příkaz workbench.action.quit (paleta příkazů, klávesová zkratka, nabídka). Všechna okna bez otevřených složek se při příštím spuštění obnoví. Seznam dříve otevřených oken s neuloženými soubory je možné zobrazit pomocí příkazů Soubor > Otevřít nedávné > Více...",
 			"hotExit.onExitAndWindowClose": "Ukončení za běhu se aktivuje, když se v systému Windows/Linux zavře poslední okno nebo když je aktivován příkaz workbench.action.quit (paleta příkazů, klávesová zkratka, nabídka) a také pro jakékoli okno s otevřenou složkou bez ohledu na to, jestli je to poslední okno. Všechna okna bez otevřených složek se při příštím spuštění obnoví. Seznam dříve otevřených oken s neuloženými soubory je možné zobrazit pomocí příkazů Soubor > Otevřít nedávné > Více...",
 			"hotExit.onExitAndWindowCloseBrowser": "Ukončení za běhu se aktivuje při vypnutí prohlížeče a při zavření okna nebo karty.",
@@ -5777,8 +5844,8 @@
 			"trimFinalNewlines": "Pokud je tato možnost povolena, odstraní se při uložení souboru všechny nové řádky za posledním novým řádkem na konci souboru.",
 			"trimTrailingWhitespace": "Pokud je povoleno, budou při uložení souboru odstraněny koncové prázdné znaky.",
 			"useTrash": "Při odstraňování přesune soubory/složky do koše operačního systému (koš v systému Windows). Při zakázání této možnosti budou soubory/složky odstraněny trvale.",
-			"watcherExclude": "Umožňuje nakonfigurovat vzory glob cest k souborům, které se mají vyloučit ze sledování souborů. Vzory se musí shodovat v absolutních cestách, tj. aby byla zajištěna správná shoda, je potřeba použít předponu **/ nebo úplnou cestu a příponu /** pro shodu souborů v cestě (například **/build/output/** nebo /Users/name/workspaces/project/build/output/**). Pokud Code při spuštění spotřebovává hodně času procesoru, můžete vyloučit velké složky, abyste snížili počáteční zatížení.",
-			"watcherInclude": "Nakonfigurujte další cesty pro sledování změn v pracovním prostoru. Ve výchozím nastavení se všechny složky pracovního prostoru budou sledovat rekurzivně s výjimkou složek, které jsou symbolickými odkazy. Můžete explicitně přidat absolutní nebo relativní cesty pro podporu sledování složek, které jsou symbolickými odkazy. Relativní cesty se budou vztahovat ke složce pracovního prostoru, aby vytvořily absolutní cestu."
+			"watcherExclude": "Nakonfigurujte cesty nebo vzory globů, které se mají vyloučit ze sledování souborů. Cesty, které jsou relativní (například sestava/výstup), se pomocí aktuálně otevřeného pracovního prostoru přeloží na absolutní cestu. Vzory glob se musí shodovat s absolutními cestami (tj. předpona s **/ nebo úplná cesta a přípona s /**, aby odpovídala souborům v cestě), aby se správně shodovaly (například **/build/output/* *nebo /Users/name/workspaces/project/build/output/** ). Pokud proces sledování souborů spotřebovává velké množství CPU, nezapomeňte vyloučit velké složky, o které je menší zájem (například výstupní složky sestavení).",
+			"watcherInclude": "Nakonfigurujte další cesty pro sledování změn v pracovním prostoru. Ve výchozím nastavení se všechny složky pracovního prostoru budou sledovat rekurzivně s výjimkou složek, které jsou symbolickými odkazy. Můžete explicitně přidat absolutní nebo relativní cesty pro podporu sledování složek, které jsou symbolickými odkazy. Relativní cesty se budou vztahovat na absolutní cestu pomocí aktuálně otevřeného pracovního prostoru."
 		},
 		"vs/workbench/contrib/files/browser/views/emptyView": {
 			"noWorkspace": "Neotevřena žádná složka"
@@ -5892,7 +5959,9 @@
 			"interactive.history.previous": "Předchozí hodnota v historii",
 			"interactive.inactiveCodeBorder": "Barva ohraničení pro aktuální buňku interaktivního kódu, pokud nemá fokus editor",
 			"interactive.input.clear": "Vymazat obsah editora vstupů interaktivního okna",
-			"interactive.open": "Otevřít interaktivní okno"
+			"interactive.open": "Otevřít interaktivní okno",
+			"interactiveScrollToBottom": "Posunout na konec",
+			"interactiveScrollToTop": "Posunout na začátek"
 		},
 		"vs/workbench/contrib/interactive/browser/interactiveEditor": {
 			"interactiveInputPlaceHolder": "Sem napište kód a stisknutím {0} ho spusťte."
@@ -5920,6 +5989,8 @@
 		"vs/workbench/contrib/localizations/browser/localizations.contribution": {
 			"activateLanguagePack": "Aby bylo možné použít VS Code v {0}, je nutné VS Code restartovat.",
 			"changeAndRestart": "Změnit jazyk a restartovat",
+			"doNotChangeAndRestart": "Neměnit jazyk",
+			"doNotRestart": "Nerestartovat",
 			"neverAgain": "Znovu nezobrazovat",
 			"restart": "Restartovat",
 			"updateLocale": "Chcete změnit jazyk uživatelského rozhraní VS Code na {0} a restartovat VS Code?",
@@ -6094,7 +6165,8 @@
 			"notebookActions.copy": "Kopírovat buňku",
 			"notebookActions.cut": "Vyjmout buňku",
 			"notebookActions.paste": "Vložit buňku",
-			"notebookActions.pasteAbove": "Vložit buňku nad"
+			"notebookActions.pasteAbove": "Vložit buňku nad",
+			"toggleNotebookClipboardLog": "Řešení potíží s přepnutím schránky poznámkového bloku"
 		},
 		"vs/workbench/contrib/notebook/browser/contrib/editorStatusBar/editorStatusBar": {
 			"current1": "Aktuálně vybráno",
@@ -6109,8 +6181,10 @@
 			"notebook.singleActiveCellIndicator": "Buňka {0} z {1}",
 			"notebookActions.selectKernel": "Vybrat jádro poznámkového bloku",
 			"notebookActions.selectKernel.args": "Argumenty jádra poznámkového bloku",
+			"otherKernelKinds": "Jiné",
 			"prompt.placeholder.change": "Změnit jádro pro {0}",
 			"prompt.placeholder.select": "Vyberte jádro pro {0}.",
+			"suggestedKernels": "Navrhováno",
 			"tooltop": "{0} (návrh)"
 		},
 		"vs/workbench/contrib/notebook/browser/contrib/find/findController": {
@@ -6204,10 +6278,14 @@
 		"vs/workbench/contrib/notebook/browser/controller/layoutActions": {
 			"cmd.toggle": "Přepnout popis cesty",
 			"customizeNotebook": "Přizpůsobit poznámkové bloky...",
+			"notebook.placeholder": "Soubor nastavení, do kterého se má uložit",
+			"notebook.saveMimeTypeOrder": "Uložit pořadí zobrazení mimetype",
 			"notebook.showLineNumbers": "Zobrazit čísla řádků poznámkového bloku",
 			"notebook.toggleBreadcrumb": "Přepnout popis cesty",
 			"notebook.toggleCellToolbarPosition": "Přepnout pozici panelu nástrojů buňky",
 			"notebook.toggleLineNumbers": "Přepnout čísla řádků poznámkového bloku",
+			"saveTarget.machine": "Uživatelská nastavení",
+			"saveTarget.workspace": "Nastavení pracovního prostoru",
 			"workbench.notebook.layout.configure.label": "Přizpůsobit rozložení poznámkového bloku",
 			"workbench.notebook.layout.select.label": "Vybrat rozložení poznámkového bloku"
 		},
@@ -6359,6 +6437,7 @@
 			"notebook.error.rendererNotFound": "Pro $0 a se nenašel žádný renderer."
 		},
 		"vs/workbench/contrib/notebook/browser/view/renderers/cellEditorOptions": {
+			"notebook.cell.toggleLineNumbers.title": "Zobrazit čísla řádků buněk",
 			"notebook.lineNumbers": "Určuje zobrazení čísel řádků v editoru buněk.",
 			"notebook.showLineNumbers": "Zobrazit čísla řádků poznámkového bloku",
 			"notebook.toggleLineNumbers": "Přepnout čísla řádků poznámkového bloku"
@@ -6373,6 +6452,7 @@
 			"unavailableRenderInfo": "renderer není k dispozici"
 		},
 		"vs/workbench/contrib/notebook/browser/view/renderers/cellRenderer": {
+			"cellExecutionOrderCountLabel": "Pořadí provádění",
 			"cellExpandOutputButtonLabel": "Rozbalit výstup buňky (${0})",
 			"cellExpandOutputButtonLabelWithDoubleClick": "Dvojitým kliknutím rozbalíte výstup buňky ({0}).",
 			"notebook.moreRunActionsLabel": "Více..."
@@ -6906,11 +6986,11 @@
 			"tunnel.originColumn.tooltip": "Zdroj, ze kterého pochází přesměrovaný port. Může to být rozšíření nebo přesměrováno uživatelem, staticky nebo automaticky.",
 			"tunnel.portColumn.label": "Port",
 			"tunnel.portColumn.tooltip": "Popisek a číslo vzdáleného portu pro přesměrovaný port",
-			"tunnel.privacyColumn.label": "Ochrana osobních údajů",
+			"tunnel.privacyColumn.label": "Viditelnost",
 			"tunnel.privacyColumn.tooltip": "Dostupnost přesměrovaného portu",
 			"tunnel.processColumn.label": "Spuštěný proces",
 			"tunnel.processColumn.tooltip": "Příkazový řádek procesu, který používá port",
-			"tunnelContext.privacyMenu": "Soukromí portu",
+			"tunnelContext.privacyMenu": "Viditelnost portů",
 			"tunnelContext.protocolMenu": "Změnit protokol portu",
 			"tunnelPrivacy.private": "Privátní",
 			"tunnelPrivacy.unknown": "Neznámý",
@@ -6918,6 +6998,10 @@
 			"tunnelView.runningProcess.inacessable": "Informace o procesu nejsou k dispozici."
 		},
 		"vs/workbench/contrib/remote/common/remote.contribution": {
+			"invalidWorkspaceCancel": "&&Zrušit",
+			"invalidWorkspaceDetail": "Pracovní prostor neexistuje. Vyberte prosím jiný pracovní prostor, který chcete otevřít.",
+			"invalidWorkspaceMessage": "Pracovní prostor neexistuje.",
+			"invalidWorkspacePrimary": "&&Otevřít pracovní prostor...",
 			"remote": "Vzdálené",
 			"remote.autoForwardPorts": "Pokud je tato možnost povolena, jsou zjištěny nové spuštěné procesy a porty, na kterých naslouchá, jsou automaticky předávány. Zakázání tohoto nastavení nezabrání přeposílání všech portů. I když je zakázané, rozšíření i nadále budou moci způsobit přesměrování portů a otevření některých adres URL bude přesto způsobovat přesměrování portů.",
 			"remote.autoForwardPortsSource": "Nastaví zdroj, ze kterého se automaticky přesměrovávají porty, když je možnost remote.autoForwardPorts nastavená na true. Na vzdálených počítačích s Windows a Macích nemá možnost process žádný účinek a použije se možnost output. Aby se toto nastavení projevilo, vyžaduje restart.",
@@ -7048,7 +7132,7 @@
 		"vs/workbench/contrib/search/browser/anythingQuickAccess": {
 			"closeEditor": "Odebrat z naposledy otevřených",
 			"fileAndSymbolResultsSeparator": "výsledky pro soubory a symboly",
-			"filePickAriaLabelDirty": "{0} (neuložené změny)",
+			"filePickAriaLabelDirty": "Neuložené změny: {0}",
 			"fileResultsSeparator": "výsledky pro soubory",
 			"noAnythingResults": "Žádné odpovídající výsledky",
 			"openToBottom": "Otevřít dole",
@@ -7137,7 +7221,7 @@
 			"showTriggerActions": "Přejít na symbol v pracovním prostoru...",
 			"symbolsQuickAccess": "Přejít na symbol v pracovním prostoru",
 			"symbolsQuickAccessPlaceholder": "Zadejte název symbolu, který chcete otevřít.",
-			"useGlobalIgnoreFiles": "Určuje, jestli se mají při vyhledávání souborů používat globální soubory .gitignore a .ignore.",
+			"useGlobalIgnoreFiles": "Určuje, jestli se mají při vyhledávání souborů používat globální soubory .gitignore a .ignore. Vyžaduje, aby bylo povoleno #search.useIgnoreFiles.",
 			"useIgnoreFiles": "Určuje, jestli se mají při vyhledávání souborů používat soubory .gitignore a .ignore.",
 			"usePCRE2Deprecated": "Zastaralé. Při použití funkcí regulárních výrazů, které podporuje pouze PCRE2, se automaticky použije PCRE2.",
 			"useRipgrep": "Toto nastavení je zastaralé. Náhradní nastavení: search.usePCRE2",
@@ -7949,6 +8033,7 @@
 			"terminal.integrated.a11yTooMuchOutput": "Výstup je pro oznamování příliš dlouhý. Přejděte na řádky ručně a přečtěte si tyto informace sami.",
 			"terminal.integrated.copySelection.noSelection": "Terminál neobsahuje žádný výběr, který by bylo možné kopírovat.",
 			"terminal.slowRendering": "Vypadá to, že urychlení terminálu pomocí GPU běží na vašem počítači pomalu. Chcete ji zakázat s tím, že by to mohlo zvýšit výkon? [Přečtěte si další informace o nastavení terminálu.](https://code.visualstudio.com/docs/editor/integrated-terminal#_changing-how-the-terminal-is-rendered)",
+			"terminalNavigationMode": "K navigaci ve vyrovnávací paměti terminálu použijte {0} a {1}.",
 			"terminalProfileMigration": "Terminál používá zastaralé nastavení prostředí shell/shellArgs. Chcete ho migrovat do profilu?",
 			"terminalStaleTextBoxAriaLabel": "Prostředí terminálu {0} je zastaralé. Pokud chcete zobrazit další informace, spusťte příkaz Zobrazit informace o prostředí.",
 			"terminalTextBoxAriaLabel": "Terminál {0}",
@@ -7964,6 +8049,7 @@
 			"miRunActiveFile": "Spustit &&aktivní soubor",
 			"miRunSelectedText": "Spustit &&vybraný text",
 			"miSplitTerminal": "&&Rozdělit terminál",
+			"splitTerminal": "Rozdělit terminál",
 			"terminal.new": "Nový terminál",
 			"workbench.action.terminal.changeColor": "Změnit barvu...",
 			"workbench.action.terminal.changeIcon": "Změnit ikonu...",
@@ -8181,7 +8267,6 @@
 			"killTerminal": "Ukončit terminál",
 			"killTerminal.short": "Ukončit",
 			"moveToEditor": "Přesunout terminál do oblasti editoru",
-			"moveToEditorShort": "Přechod do oblasti editoru",
 			"splitTerminal": "Rozdělit terminál",
 			"splitTerminal.short": "Rozdělit",
 			"terminal": "Terminál",
@@ -8250,6 +8335,7 @@
 			"testing.searchForTestExtension": "Hledat podle rozšíření testu",
 			"testing.selectDefaultTestProfiles": "Vybrat výchozí profil",
 			"testing.showMostRecentOutput": "Zobrazit výstup",
+			"testing.sortByDuration": "Seřadit podle doby trvání",
 			"testing.sortByLocation": "Seřadit podle umístění",
 			"testing.sortByStatus": "Seřadit podle stavu",
 			"testing.toggleInlineTestOutput": "Přepnout výstup vloženého testu",
@@ -8496,8 +8582,8 @@
 			"later": "Později",
 			"noUpdatesAvailable": "Momentálně nejsou k dispozici žádné aktualizace.",
 			"read the release notes": "Vítá vás {0} verze {1}! Chcete si přečíst zprávu k vydání verze?",
-			"relaunchDetailInsiders": "Stisknutím tlačítka Znovu načíst přepnete na noční build předprodukční verze VSCode.",
-			"relaunchDetailStable": "Stisknutím tlačítka Znovu načíst přepnete na měsíčně vydávanou stabilní verzi VSCode.",
+			"relaunchDetailInsiders": "Stisknutím tlačítka Znovu načíst přepnete na verzi VS Code pro účastníky programu Insider.",
+			"relaunchDetailStable": "Stisknutím tlačítka Znovu načíst přepnete na stabilní verzi VS Code.",
 			"relaunchMessage": "Aby se změna verze projevila, je vyžadováno opětovné načtení.",
 			"releaseNotes": "Zpráva k vydání verze",
 			"reload": "&&Načíst znovu",
@@ -8712,7 +8798,9 @@
 			"watermark.openRecent": "Otevřít nedávné",
 			"watermark.quickAccess": "Přejít na soubor",
 			"watermark.showCommands": "Zobrazit všechny příkazy",
+			"watermark.showSettings": "Zobrazit nastavení",
 			"watermark.startDebugging": "Spustit ladění",
+			"watermark.toggleFullscreen": "Přepnout režim zobrazení na celou obrazovku",
 			"watermark.toggleTerminal": "Přepnout terminál"
 		},
 		"vs/workbench/contrib/webview/browser/webview.contribution": {
@@ -8761,6 +8849,7 @@
 		},
 		"vs/workbench/contrib/welcome/gettingStarted/browser/gettingStarted": {
 			"allDone": "Označit jako hotové",
+			"checkboxTitle": "Pokud je tato možnost zaškrtnutá, zobrazí se tato stránka při spuštění.",
 			"close": "Skrýt",
 			"footer": "{0} shromažďuje data o využití. Přečtěte si naše {1} a podívejte se, jak {2}.",
 			"getStarted": "Začínáme",
@@ -8769,7 +8858,7 @@
 			"gettingStarted.someStepsComplete": "Dokončené kroky: {0} z {1}",
 			"imageShowing": "Obrázek zobrazující {0}",
 			"new": "Nové",
-			"newItems": "Nové položky",
+			"newItems": "Aktualizováno",
 			"nextOne": "Další oddíl",
 			"optOut": "Odhlásit",
 			"pickWalkthroughs": "Otevřít podrobný návod...",
@@ -8798,8 +8887,6 @@
 		},
 		"vs/workbench/contrib/welcome/gettingStarted/browser/gettingStartedColors": {
 			"welcomePage.background": "Barva pozadí uvítací stránky",
-			"welcomePage.buttonBackground": "Barva pozadí tlačítek na uvítací stránce",
-			"welcomePage.buttonHoverBackground": "Barva pozadí tlačítek, když je na ně na uvítací stránce umístěn ukazatel myši",
 			"welcomePage.progress.background": "Barva popředí indikátorů průběhu uvítací stránky",
 			"welcomePage.progress.foreground": "Barva pozadí indikátorů průběhu uvítací stránky",
 			"welcomePage.tileBackground": "Barva pozadí dlaždic na stránce Začínáme",
@@ -8853,7 +8940,7 @@
 		},
 		"vs/workbench/contrib/welcome/gettingStarted/common/gettingStartedContent": {
 			"browseLangExts": "Procházet rozšíření jazyků",
-			"browsePopular": "Procházet oblíbená rozšíření",
+			"browsePopular": "Procházet oblíbená webová rozšíření",
 			"browseRecommended": "Procházet doporučená rozšíření",
 			"cloneRepo": "Naklonovat úložiště",
 			"commandPalette": "Otevřít paletu příkazů",
@@ -8877,6 +8964,8 @@
 			"gettingStarted.installGit.title": "Nainstalovat Git",
 			"gettingStarted.intermediate.description": "Optimalizujte svůj pracovní postup vývoje pomocí těchto tipů a rad.",
 			"gettingStarted.intermediate.title": "Zvyšte svoji produktivitu",
+			"gettingStarted.menuBar.description.interpolated": "V rozbalovací nabídce je k dispozici úplný panel nabídek, který uvolní místo pro váš kód. Přepněte jeho vzhled pro rychlejší přístup. \r\n{0}",
+			"gettingStarted.menuBar.title": "Správné množství uživatelského rozhraní",
 			"gettingStarted.newFile.description": "Otevře nový soubor bez názvu, poznámkový blok nebo vlastní editor.",
 			"gettingStarted.newFile.title": "Nový soubor…",
 			"gettingStarted.notebook.title": "Přizpůsobit poznámkové bloky",
@@ -8907,6 +8996,8 @@
 			"gettingStarted.setup.OpenFolderWeb.description.interpolated": "Všechno máte nastavené, abyste mohli začít kódovat. Pokud chcete své soubory dostat do VS Code, můžete otevřít místní projekt nebo vzdálené úložiště.\r\n{0}\r\n{1}",
 			"gettingStarted.setup.description": "Podívejte se na nejlepší přizpůsobení, aby vám aplikace VS Code vyhovovala.",
 			"gettingStarted.setup.title": "Začínáme s VS Code",
+			"gettingStarted.setupWeb.description": "Seznamte se s nejlepšími možnostmi přizpůsobení, aby vám aplikace VS Code vyhovovala.",
+			"gettingStarted.setupWeb.title": "Začínáme s VS Code na webu",
 			"gettingStarted.shortcuts.description.interpolated": "Jakmile objevíte své oblíbené příkazy, vytvořte si vlastní klávesové zkratky pro okamžitý přístup.\r\n{0}",
 			"gettingStarted.shortcuts.title": "Přizpůsobte si zástupce",
 			"gettingStarted.splitview.description.interpolated": "Využívejte co nejlépe místo na obrazovce a otevírejte soubory vedle sebe, vertikálně nebo horizontálně.\r\n{0}",
@@ -8939,6 +9030,7 @@
 			"showTerminal": "Zobrazit panel terminálu",
 			"splitEditor": "Rozdělit editor",
 			"titleID": "Procházet barevné motivy",
+			"toggleMenuBar": "Přepnout řádek nabídek",
 			"tweakSettings": "Vylepšit moje nastavení",
 			"watch": "Zhlédnout kurz",
 			"workspaceTrust": "Vztah důvěryhodnosti pracovního prostoru"
@@ -9327,12 +9419,16 @@
 			"extensionInstallWorkspaceTrustMessage": "Povolení tohoto rozšíření vyžaduje důvěryhodný pracovní prostor.",
 			"install": "Nainstalovat",
 			"install and do no sync": "Nainstalovat (nesynchronizovat)",
+			"install anyways": "Přesto nainstalovat",
 			"install extension": "Nainstalovat rozšíření",
 			"install extensions": "Nainstalovat rozšíření",
 			"install multiple extensions": "Chcete nainstalovat a synchronizovat rozšíření mezi zařízeními?",
 			"install single extension": "Chcete nainstalovat a synchronizovat rozšíření {0} mezi zařízeními?",
+			"limited support": "{0} má v {1} omezenou funkčnost.",
 			"multipleDependentsError": "Rozšíření {0} nelze odinstalovat. Závisí na něm rozšíření {1}, {2} a další rozšíření.",
-			"non web extensions": "„{0}“ obsahuje rozšíření, která nejsou v {1} k dispozici. Chcete jej přesto nainstalovat?",
+			"non web extensions": "{0}obsahuje rozšíření, která nejsou v {1} podporována.",
+			"non web extensions detail": "Obsahuje nepodporovaná rozšíření.",
+			"showExtensions": "Zobrazit rozšíření",
 			"singleDependentError": "Rozšíření {0} nelze odinstalovat. Závisí na něm rozšíření {1}.",
 			"twoDependentsError": "Rozšíření {0} nelze odinstalovat. Závisí na něm rozšíření {1} a {2}."
 		},
@@ -9505,6 +9601,10 @@
 			"jsonsParseReportErrors": "Nepovedlo se parsovat {0}: {1}.",
 			"missingNLSKey": "Nepovedlo se najít zprávu pro klíč {0}.",
 			"notSemver": "Verze rozšíření není kompatibilní se sémantickým verzováním (semver)."
+		},
+		"vs/workbench/services/files/electron-browser/diskFileSystemProvider": {
+			"binFailed": "{0} se nepovedlo přesunout do koše.",
+			"trashFailed": "{0} se nepovedlo přesunout do koše."
 		},
 		"vs/workbench/services/gettingStarted/common/gettingStartedContent": {
 			"getting-started-setup-icon": "Ikona, která se používá pro kategorii nastavení v příručce Začínáme",
@@ -10049,12 +10149,12 @@
 			"saveParticipants": "Ukládá se: {0}"
 		},
 		"vs/workbench/services/workingCopy/electron-sandbox/workingCopyBackupTracker": {
-			"backupBeforeShutdownDetail": "Kliknutím na tlačítko Storno ukončíte čekání a uložíte nebo vrátíte zpátky změny editorů s neuloženými změnami.",
+			"backupBeforeShutdownDetail": "Kliknutím na Zrušit zastavíte čekání a uložíte nebo vrátíte editory s neuloženými změnami.",
 			"backupBeforeShutdownMessage": "Zálohování editorů s neuloženými změnami trvá déle, než se čekalo...",
-			"backupErrorDetails": "Zkuste nejdříve uložit editory obsahující neuložené změny (nebo tyto změny v editorech vrátit zpět) a potom to zkuste znovu.",
-			"backupTrackerBackupFailed": "Následující editory, které obsahují neuložené změny, se nepovedlo uložit na umístění zálohy.",
-			"backupTrackerConfirmFailed": "Následující editory, které obsahují neuložené změny, se nepovedlo uložit nebo vrátit na uložená data.",
-			"revertBeforeShutdown": "Vracení zpátky změn editorů s neuloženými změnami trvá déle, než se čekalo...",
+			"backupErrorDetails": "Nejdříve zkuste editory uložit nebo vrátit zpět s neuloženými změnami a pak to zkuste znovu.",
+			"backupTrackerBackupFailed": "Následující editory s neuloženými změnami nebylo možné uložit do záložního umístění.",
+			"backupTrackerConfirmFailed": "Následující editory s neuloženými změnami nebylo možné uložit ani vrátit zpět.",
+			"revertBeforeShutdown": "Vrácení editorů s neuloženými změnami trvá déle, než se čekalo...",
 			"saveBeforeShutdown": "Ukládání editorů s neuloženými změnami trvá déle, než se čekalo..."
 		},
 		"vs/workbench/services/workspaces/browser/abstractWorkspaceEditingService": {
