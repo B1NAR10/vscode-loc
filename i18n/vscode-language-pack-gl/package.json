@@ -1,8 +1,8 @@
 {
-	"name": "vscode-language-pack-es",
-	"displayName": "Spanish Language Pack for Visual Studio Code",
-	"description": "Language pack extension for Spanish",
-	"version": "1.60.1",
+	"name": "vscode-language-pack-gl",
+	"displayName": "Galician Language Pack for Visual Studio Code",
+	"description": "Language pack extension for Galician",
+	"version": "1.64.4",
 	"publisher": "MS-CEINTL",
 	"repository": {
 		"type": "git",
@@ -10,7 +10,7 @@
 	},
 	"license": "SEE MIT LICENSE IN LICENSE.md",
 	"engines": {
-		"vscode": "^1.60.0"
+		"vscode": "^1.64.0"
 	},
 	"icon": "languagepack.png",
 	"categories": [
@@ -19,9 +19,9 @@
 	"contributes": {
 		"localizations": [
 			{
-				"languageId": "es",
-				"languageName": "Spanish",
-				"localizedLanguageName": "español",
+				"languageId": "gl",
+				"languageName": "Galician",
+				"localizedLanguageName": "Galego",
 				"translations": [
 					{
 						"id": "vscode",
