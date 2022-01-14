@@ -4,12 +4,12 @@ O paquete de idioma Galego ofrece unha experiencia UI localizada para o VS Code.
 
 ## Uso
 
-Pode invalidar o idioma por defecto da interface de usuario, se definir explicitamente a lingua vs código co comando "Configurar o idioma de visualización".
+Pode invalidar o idioma por defecto da interface de usuario, se definir explicitamente a lingua do VS Code co comando "Configurar o Idioma de Visualización".
 Prema "CTRL + SHIFT + P" para que apareza a "Paleta de comandos" e comeza a escribir "display" para filtrar e mostrar o comando "Configurar o idioma de visualización".
-Prema "Enter" e será unha lista dos idiomas instalados por Configuracións rexionais, coa actual resaltada. Seleccione outra "configuración rexional" para cambiar o idioma da interface de usuario.
+Prema "Enter" e será unha lista dos idiomas instalados por localidade, coa localidade actual resaltada. Selecione outra "localidade" para mudar o idioma da interface de usuario.
 Vexa [Docs] (https://go.microsoft.com/fwlink/?linkid=761051) para máis información.
 
-## Como contribuír.
+## Como contribuír
 
 Para obter información sobre a mellora de tradución, cree unha incidencia no repositorio [vscode-loc] (https://github.com/microsoft/vscode-loc).
 As cadeas de tradución son mantidos na plataforma local Microsoft. Só se poden facer cambios na referida plataforma, e, a continuación, exportalos para o repositorio vscode-loc, polo que hai solicitudes de incorporación de mudanzas "pull request" non serán aceptados nese repositorio.
@@ -27,42 +27,13 @@ Un agradecemento especial para os que contribúen á comunidade para facelo disp
 
 ** Principais colaboradores: **
 
-* Andy Gonzalez.
-* Alberto poboación.
-* Raúl Rama
-* Alejandro M.
-* Jorge Serrano Pérez
-
+* Alberto J. Méndez
 
 ** Os contribuíntes: **
 
-* José M. Aguilar
-* Roberto Fonseca.
-* Carlos Mendible.
-* Eickhel Mendoza.
-* David Triana.
-* David Silva
-* Alanthinks
-* Julián Martínez.
-* Lukáš CHALOUPKA.
-* Alemán Sak.
-* Santiago Porras Rodríguez
-* Cadros Lafuente
-* Carlos Longarela
-* Thierry Deman-Barcelo
-* Jago.
-* Christian Eduardo Palomares Peralta
-* Sergio Uziel Tovar Lemus
-* Juan Ramón Rodríguez
-* Pedro Sánchez.
-* Pablo Jiménez Pascual
-* Juan Carlos González Martín
-* Alfonso Xesús Flores Alvarado
-* Javier Moreno.
-* Matias Menich.
+* Alberto J. Méndez
 
 **Desfrútao!**
-
 
 # Galician Language Pack for VS Code
 
@@ -94,37 +65,10 @@ Galician Language Pack had received contribution through "By the community, for 
 
 **Top Contributors:**
 
-* Andy Gonzalez
-* Alberto Poblacion
-* Raul Rama
-* Alejandro M
-* Jorge Serrano Pérez
+* Alberto J. Méndez
 
 **Contributors:**
 
-* José M. Aguilar
-* Roberto Fonseca
-* Carlos Mendible
-* Eickhel Mendoza
-* David Triana
-* David Silva
-* AlanThinks
-* Julián Martínez
-* Lukáš Chaloupka
-* German Sak
-* Santiago Porras Rodríguez
-* Marcos de Lafuente
-* Carlos Longarela
-* Thierry DEMAN-BARCELO
-* Jago
-* Christian Eduardo Palomares Peralta
-* Sergio Uziel Tovar Lemus
-* Juan Ramón Rodríguez
-* Pedro Sanchez
-* Pablo Jiménez Pascual
-* Juan Carlos Gonzalez Martin
-* Alfonso Jesus Flores Alvarado
-* Javier Moreno
-* Matias Menich
+* Alberto J. Méndez
 
 **Enjoy!**
