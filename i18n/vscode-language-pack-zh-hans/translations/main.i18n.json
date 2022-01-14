@@ -79,30 +79,54 @@
 			"date.fromNow.days.singular.ago": "{0} 天前",
 			"date.fromNow.hours.plural": "{0} 小时",
 			"date.fromNow.hours.plural.ago": "{0} 小时前",
+			"date.fromNow.hours.plural.ago.fullWord": "{0} hours ago",
+			"date.fromNow.hours.plural.fullWord": "{0} hours",
 			"date.fromNow.hours.singular": "{0} 小时",
 			"date.fromNow.hours.singular.ago": "{0} 小时前",
+			"date.fromNow.hours.singular.ago.fullWord": "{0} hour ago",
+			"date.fromNow.hours.singular.fullWord": "{0} hour",
 			"date.fromNow.in": "{0} 后",
 			"date.fromNow.minutes.plural": "{0} 分钟",
 			"date.fromNow.minutes.plural.ago": "{0} 分钟前",
+			"date.fromNow.minutes.plural.ago.fullWord": "{0} minutes ago",
+			"date.fromNow.minutes.plural.fullWord": "{0} minutes",
 			"date.fromNow.minutes.singular": "{0} 分钟",
 			"date.fromNow.minutes.singular.ago": "{0} 分钟前",
+			"date.fromNow.minutes.singular.ago.fullWord": "{0} minute ago",
+			"date.fromNow.minutes.singular.fullWord": "{0} minute",
 			"date.fromNow.months.plural": "{0} 个月",
 			"date.fromNow.months.plural.ago": "{0} 个月前",
+			"date.fromNow.months.plural.ago.fullWord": "{0} months ago",
+			"date.fromNow.months.plural.fullWord": "{0} months",
 			"date.fromNow.months.singular": "{0} 个月",
 			"date.fromNow.months.singular.ago": "{0} 个月前",
+			"date.fromNow.months.singular.ago.fullWord": "{0} month ago",
+			"date.fromNow.months.singular.fullWord": "{0} month",
 			"date.fromNow.now": "现在",
 			"date.fromNow.seconds.plural": "{0} 秒",
 			"date.fromNow.seconds.plural.ago": "{0} 秒前",
+			"date.fromNow.seconds.plural.ago.fullWord": "{0} seconds ago",
+			"date.fromNow.seconds.plural.fullWord": "{0} seconds",
 			"date.fromNow.seconds.singular": "{0} 秒",
 			"date.fromNow.seconds.singular.ago": "{0} 秒前",
+			"date.fromNow.seconds.singular.ago.fullWord": "{0} second ago",
+			"date.fromNow.seconds.singular.fullWord": "{0} second",
 			"date.fromNow.weeks.plural": "{0} 周",
 			"date.fromNow.weeks.plural.ago": "{0} 周前",
+			"date.fromNow.weeks.plural.ago.fullWord": "{0} weeks ago",
+			"date.fromNow.weeks.plural.fullWord": "{0} weeks",
 			"date.fromNow.weeks.singular": "{0} 周",
 			"date.fromNow.weeks.singular.ago": "{0} 周前",
+			"date.fromNow.weeks.singular.ago.fullWord": "{0} week ago",
+			"date.fromNow.weeks.singular.fullWord": "{0} week",
 			"date.fromNow.years.plural": "{0} 年",
 			"date.fromNow.years.plural.ago": "{0} 年前",
+			"date.fromNow.years.plural.ago.fullWord": "{0} years ago",
+			"date.fromNow.years.plural.fullWord": "{0} years",
 			"date.fromNow.years.singular": "{0} 年",
-			"date.fromNow.years.singular.ago": "{0} 年前"
+			"date.fromNow.years.singular.ago": "{0} 年前",
+			"date.fromNow.years.singular.ago.fullWord": "{0} year ago",
+			"date.fromNow.years.singular.fullWord": "{0} year"
 		},
 		"vs/base/common/errorMessage": {
 			"error.defaultMessage": "出现未知错误。有关详细信息，请参阅日志。",
@@ -127,6 +151,7 @@
 			"cmdKey.long": "Command",
 			"ctrlKey": "Ctrl",
 			"ctrlKey.long": "Control",
+			"optKey.long": "选项",
 			"shiftKey": "Shift",
 			"shiftKey.long": "Shift",
 			"superKey": "超键",
@@ -210,7 +235,7 @@
 			"diff.clipboard.copyDeletedLinesContent.single.label": "复制已删除的行",
 			"diff.inline.revertChange.label": "还原此更改"
 		},
-		"vs/editor/common/config/commonEditorConfig": {
+		"vs/editor/common/config/editorConfigurationSchema": {
 			"codeLens": "控制是否在编辑器中显示 CodeLens。",
 			"detectIndentation": "控制是否在打开文件时，基于文件内容自动检测 `#editor.tabSize#` 和 `#editor.insertSpaces#`。",
 			"editorConfigurationTitle": "编辑器",
@@ -266,7 +291,7 @@
 			"codeActions": "在编辑器中启用代码操作小灯泡提示。",
 			"codeLens": "控制是否在编辑器中显示 CodeLens。",
 			"codeLensFontFamily": "控制 CodeLens 的字体系列。",
-			"codeLensFontSize": "控制 CodeLens 的字体大小(像素)。设置为 `0` 时，将使用 `#editor.fontSize#` 的 90%。",
+			"codeLensFontSize": "控制 CodeLens 的字号(以像素为单位)。设置为 `0` 时，将使用 90% 的 `#editor.fontSize#`。",
 			"colorDecorators": "控制编辑器是否显示内联颜色修饰器和颜色选取器。",
 			"columnSelection": "启用使用鼠标和键进行列选择。",
 			"comments.ignoreEmptyLines": "控制在对行注释执行切换、添加或删除操作时，是否应忽略空行。",
@@ -364,6 +389,7 @@
 			"folding": "控制编辑器是否启用了代码折叠。",
 			"foldingHighlight": "控制编辑器是否应突出显示折叠范围。",
 			"foldingImportsByDefault": "控制编辑器是否自动折叠导入范围。",
+			"foldingMaximumRegions": "可折叠区域的最大数量。如果当前源具有大量可折叠区域，那么增加此值可能会导致编辑器的响应速度变慢。",
 			"foldingStrategy": "控制计算折叠范围的策略。",
 			"foldingStrategy.auto": "使用特定于语言的折叠策略(如果可用)，否则使用基于缩进的策略。",
 			"foldingStrategy.indentation": "使用基于缩进的折叠策略。",
@@ -497,6 +523,13 @@
 			"tabCompletion.on": "在按下 Tab 键时进行 Tab 补全，将插入最佳匹配建议。",
 			"tabCompletion.onlySnippets": "在前缀匹配时进行 Tab 补全。在 \"quickSuggestions\" 未启用时体验最好。",
 			"unfoldOnClickAfterEndOfLine": "控制单击已折叠的行后面的空内容是否会展开该行。",
+			"unicodeHighlight.allowedCharacters": "定义未突出显示的允许字符。",
+			"unicodeHighlight.allowedLocales": "未突出显示在允许区域设置中常见的 Unicode 字符。",
+			"unicodeHighlight.ambiguousCharacters": "控制是否突出显示可能与基本 ASCII 字符混淆的字符，但当前用户区域设置中常见的字符除外。",
+			"unicodeHighlight.includeComments": "控制注释中的字符是否也应进行 Unicode 突出显示。",
+			"unicodeHighlight.includeStrings": "控制字符串中的字符是否也应进行 unicode 突出显示。",
+			"unicodeHighlight.invisibleCharacters": "控制是否突出显示仅保留空格或完全没有宽度的字符。",
+			"unicodeHighlight.nonBasicASCII": "控制是否突出显示所有非基本 ASCII 字符。只有介于 U+0020 到 U+007E 之间的字符、制表符、换行符和回车符才被视为基本 ASCII。",
 			"unusualLineTerminators": "删除可能导致问题的异常行终止符。",
 			"unusualLineTerminators.auto": "自动删除异常的行终止符。",
 			"unusualLineTerminators.off": "忽略异常的行终止符。",
@@ -550,11 +583,11 @@
 			"inDiffEditor": "上下文是否为差异编辑器",
 			"textInputFocus": "编辑器或 RTF 输入是否有焦点(光标是否闪烁)"
 		},
+		"vs/editor/common/languages/modesRegistry": {
+			"plainText.alias": "纯文本"
+		},
 		"vs/editor/common/model/editStack": {
 			"edit": "输入"
-		},
-		"vs/editor/common/modes/modesRegistry": {
-			"plainText.alias": "纯文本"
 		},
 		"vs/editor/common/standaloneStrings": {
 			"accessibilityHelpMessage": "按 Alt+F1 可打开辅助功能选项。",
@@ -620,6 +653,7 @@
 			"editorBracketPairGuide.background6": "非活动括号对指南的背景色(6)。需要启用括号对指南。",
 			"editorCodeLensForeground": "编辑器 CodeLens 的前景色",
 			"editorCursorBackground": "编辑器光标的背景色。可以自定义块型光标覆盖字符的颜色。",
+			"editorGhostTextBackground": "编辑器中虚影文本的背景色。",
 			"editorGhostTextBorder": "编辑器中虚影文本的边框颜色。",
 			"editorGhostTextForeground": "编辑器中虚影文本的前景色。",
 			"editorGutter": "编辑器导航线的背景色。导航线包括边缘符号和行号。",
@@ -628,6 +662,7 @@
 			"editorOverviewRulerBackground": "编辑器概述标尺的背景色。仅当缩略图已启用且置于编辑器右侧时才使用。",
 			"editorOverviewRulerBorder": "概览标尺边框的颜色。",
 			"editorRuler": "编辑器标尺的颜色。",
+			"editorUnicodeHighlight.border": "用于突出显示 Unicode 字符的边框颜色。",
 			"editorWhitespaces": "编辑器中空白字符的颜色。",
 			"lineHighlight": "光标所在行高亮内容的背景颜色。",
 			"lineHighlightBorderBox": "光标所在行四周边框的背景颜色。",
@@ -731,6 +766,10 @@
 			"cursor.undo": "光标撤消"
 		},
 		"vs/editor/contrib/find/findController": {
+			"actions.find.isRegexOverride": "重写“使用正则表达式”标记。\r\n将不会保留该标记供将来使用。\r\n0: 不执行任何操作\r\n1: True\r\n2: False",
+			"actions.find.matchCaseOverride": "重写“数学案例”标记。\r\n将不会保留该标记供将来使用。\r\n0: 不执行任何操作\r\n1: True\r\n2: False",
+			"actions.find.preserveCaseOverride": "重写“保留服务案例”标记。\r\n将不会保留该标记供将来使用。\r\n0: 不执行任何操作\r\n1: True\r\n2: False",
+			"actions.find.wholeWordOverride": "重写“匹配整个字词”标记。\r\n将不会保留该标记供将来使用。\r\n0: 不执行任何操作\r\n1: True\r\n2: False",
 			"findNextMatchAction": "查找下一个",
 			"findPreviousMatchAction": "查找上一个",
 			"miFind": "查找(&&F)",
@@ -738,6 +777,7 @@
 			"nextSelectionMatchFindAction": "查找下一个选择",
 			"previousSelectionMatchFindAction": "查找上一个选择",
 			"startFindAction": "查找",
+			"startFindWithArgsAction": "使用参数查找",
 			"startFindWithSelectionAction": "查找选定内容",
 			"startReplace": "替换"
 		},
@@ -782,6 +822,7 @@
 			"gotoNextFold.label": "转到下一个折叠范围",
 			"gotoParentFold.label": "跳转到父级折叠",
 			"gotoPreviousFold.label": "转到上一个折叠范围",
+			"maximum fold ranges": "可折叠区域的数量限制为最多 {0} 个。增加配置选项[“最大折叠区域数”](command:workbench.action.openSettings?[\"editor.foldingMaximumRegions\"])以启用更多功能。",
 			"toggleFoldAction.label": "切换折叠",
 			"unFoldRecursivelyAction.label": "以递归方式展开",
 			"unfoldAction.label": "展开",
@@ -946,6 +987,9 @@
 			"inlineSuggestionFollows": "建议:",
 			"showNextInlineSuggestion": "下一个",
 			"showPreviousInlineSuggestion": "上一个"
+		},
+		"vs/editor/contrib/lineSelection/lineSelection": {
+			"expandLineSelection": "展开行选择"
 		},
 		"vs/editor/contrib/linesOperations/linesOperations": {
 			"duplicateSelection": "重复选择",
@@ -1181,6 +1225,7 @@
 			"editorSuggestWidgetSelectedBackground": "建议小组件中所选条目的背景色。",
 			"editorSuggestWidgetSelectedForeground": "建议小组件中所选条目的前景色。",
 			"editorSuggestWidgetSelectedIconForeground": "建议小组件中所选条目的图标前景色。",
+			"editorSuggestWidgetStatusForeground": "建议小组件状态的前景色。",
 			"suggest": "建议",
 			"suggestWidget.loading": "正在加载...",
 			"suggestWidget.noSuggestions": "无建议。"
@@ -1238,6 +1283,31 @@
 		},
 		"vs/editor/contrib/tokenization/tokenization": {
 			"forceRetokenize": "开发人员: 强制重新进行标记"
+		},
+		"vs/editor/contrib/unicodeHighlighter/unicodeHighlighter": {
+			"action.unicodeHighlight.disableHighlightingInComments": "禁用批注中字符的突出显示",
+			"action.unicodeHighlight.disableHighlightingInStrings": "禁用字符串中字符的突出显示",
+			"action.unicodeHighlight.disableHighlightingOfAmbiguousCharacters": "禁止突出显示歧义字符",
+			"action.unicodeHighlight.disableHighlightingOfInvisibleCharacters": "禁止突出显示不可见字符",
+			"action.unicodeHighlight.disableHighlightingOfNonBasicAsciiCharacters": "禁止突出显示非基本 ASCII 字符",
+			"action.unicodeHighlight.showExcludeOptions": "显示排除选项",
+			"unicodeHighlight.adjustSettings": "调整设置",
+			"unicodeHighlight.allowCommonCharactersInLanguage": "允许语言“{0}”中更常见的 unicode 字符。",
+			"unicodeHighlight.characterIsAmbiguous": "字符 {0} 可能会与字符 {1} 混淆，后者在源代码中更为常见。",
+			"unicodeHighlight.characterIsInvisible": "字符 {0} 不可见。",
+			"unicodeHighlight.characterIsNonBasicAscii": "字符 {0} 不是基本 ASCII 字符。",
+			"unicodeHighlight.configureUnicodeHighlightOptions": "配置 Unicode 突出显示选项",
+			"unicodeHighlight.disableHighlightingInComments.shortLabel": "禁用批注中的突出显示",
+			"unicodeHighlight.disableHighlightingInStrings.shortLabel": "禁用字符串中的突出显示",
+			"unicodeHighlight.disableHighlightingOfAmbiguousCharacters.shortLabel": "禁用不明确的突出显示",
+			"unicodeHighlight.disableHighlightingOfInvisibleCharacters.shortLabel": "禁用不可见突出显示",
+			"unicodeHighlight.disableHighlightingOfNonBasicAsciiCharacters.shortLabel": "禁用非 ASCII 突出显示",
+			"unicodeHighlight.excludeCharFromBeingHighlighted": "在突出显示内容中排除{0}",
+			"unicodeHighlight.excludeInvisibleCharFromBeingHighlighted": "不突出显示 {0} (不可见字符)",
+			"unicodeHighlighting.thisDocumentHasManyAmbiguousUnicodeCharacters": "本文档包含许多不明确的 unicode 字符",
+			"unicodeHighlighting.thisDocumentHasManyInvisibleUnicodeCharacters": "本文档包含许多不可见的 unicode 字符",
+			"unicodeHighlighting.thisDocumentHasManyNonBasicAsciiUnicodeCharacters": "本文档包含许多非基本 ASCII unicode 字符",
+			"warningIcon": "扩展编辑器中随警告消息一同显示的图标。"
 		},
 		"vs/editor/contrib/unusualLineTerminators/unusualLineTerminators": {
 			"unusualLineTerminators.detail": "文件“{0}”包含一个或多个异常的行终止符，例如行分隔符(LS)或段落分隔符(PS)。\r\n\r\n建议从文件中删除它们。可通过“editor.unusualLineTerminators”进行配置。",
@@ -1298,6 +1368,7 @@
 		"vs/platform/environment/node/argv": {
 			"add": "将文件夹添加到上一个活动窗口。",
 			"category": "使用 --list-extensions 时，按提供的类别筛选已安装的扩展。",
+			"deprecated.useInstead": "请改用 {0}。",
 			"diff": "将两个文件相互比较。",
 			"disableExtension": "禁用一个扩展。",
 			"disableExtensions": "禁用所有已安装的扩展。",
@@ -1309,6 +1380,7 @@
 			"help": "打印使用情况。",
 			"inspect-brk-extensions": "允许扩展宿主在启动后暂停时进行扩展的调试和分析。您可以在开发人员工具中找到连接 URI。",
 			"inspect-extensions": "允许调试和分析扩展。您可以在开发人员工具中找到连接 URI。",
+			"install prerelease": "使用 --install-extension 时安装扩展的预发行版本",
 			"installExtension": "安装或更新扩展。扩展的标识符始终为 `${publisher}.${name}`。使用 `--force` 参数更新到最新版本。要安装特定版本，请提供 `@${version}`，例如 \"vscode.csharp@1.2.3\"。",
 			"listExtensions": "列出已安装的扩展。",
 			"locale": "要使用的区域设置(例如 en-US 或 zh-TW)。",
@@ -1337,8 +1409,9 @@
 			"wait": "等文件关闭后再返回。"
 		},
 		"vs/platform/environment/node/argvHelper": {
+			"deprecatedArgument": "已弃用选项“{0}”: {1}",
 			"gotoValidation": "\"--goto\" 模式中的参数格式应为 \"FILE(:LINE(:CHARACTER))\"。",
-			"multipleValues": "选项\"{0}\"定义多次。使用值\"{1}\"。",
+			"multipleValues": "对选项“{0}”进行了多次定义。使用值“{1}”。",
 			"unknownOption": "警告: \"{0}\"不在已知选项列表中，但仍传递给 Electron/Chromium。"
 		},
 		"vs/platform/environment/node/shellEnv": {
@@ -1354,10 +1427,12 @@
 			"multipleDependentsError": "无法卸载扩展“{0}”。“{1}”、“{2}”以及其他扩展都依赖于它。",
 			"multipleIndirectDependentsError": "无法卸载扩展“{0}”。该操作会一并卸载依赖于它的扩展“{1}”、“{2}”、“{3}”和其他扩展。",
 			"notFoundCompatibleDependency": "无法安装“{0}”扩展，因为它与当前 {1} 版本不兼容(版本 {2})。",
+			"notFoundCompatiblePrereleaseDependency": "无法安装“{0}”扩展的预发布版本，因为它与当前 {1} 版本(版本 {2})不兼容。",
 			"singleDependentError": "无法卸载扩展“{0}”。扩展“{1}”依赖于它。",
 			"singleIndirectDependentError": "无法卸载扩展“{0}”。该操作会一并卸载依赖于它的扩展“{1}”和“{2}”。",
 			"twoDependentsError": "无法卸载扩展“{0}”。扩展“{1}”和“{2}”依赖于它。",
-			"twoIndirectDependentsError": "无法卸载扩展“{0}”。该操作会一并卸载依赖于它的扩展“{1}”、“{2}”和“{3}”。"
+			"twoIndirectDependentsError": "无法卸载扩展“{0}”。该操作会一并卸载依赖于它的扩展“{1}”、“{2}”和“{3}”。",
+			"unsupported prerelease extension": "无法安装 \"{0}\" 扩展，因为它不再受支持。它现在是预发行版本的 \"{1}\" 扩展的一部分。"
 		},
 		"vs/platform/extensionManagement/common/extensionManagement": {
 			"extensions": "扩展",
@@ -1459,7 +1534,7 @@
 			"fileTooLargeError": "文件太大，无法打开",
 			"fileTooLargeForHeapError": "要打开此大小的文件，需要重启并允许使用更多内存"
 		},
-		"vs/platform/files/electron-main/diskFileSystemProviderIpc": {
+		"vs/platform/files/electron-main/diskFileSystemProviderServer": {
 			"binFailed": "未能将“{0}”移动到回收站",
 			"trashFailed": "未能将“{0}”移动到废纸篓"
 		},
@@ -1601,10 +1676,16 @@
 			"telemetryConfigurationTitle": "遥测"
 		},
 		"vs/platform/terminal/common/terminalPlatformConfiguration": {
+			"terminal.integrated.automationProfile.linux": "要在 Linux 上用于自动化相关终端使用(如任务和调试)的终端配置文件。如果设置了 {0}，则当前将忽略此设置。",
+			"terminal.integrated.automationProfile.osx": "要在 macOS 上用于自动化相关终端使用(如任务和调试)的终端配置文件。如果设置了 {0}，则当前将忽略此设置。",
+			"terminal.integrated.automationProfile.windows": "用于自动化相关终端使用(如任务和调试)的终端配置文件。如果设置了 {0}，则当前将忽略此设置。",
 			"terminal.integrated.automationShell.linux": "一个路径，设置后将替代 {0}，并忽略与自动化相关的终端使用情况(例如任务和调试)的 {1} 个值。",
+			"terminal.integrated.automationShell.linux.deprecation": "已弃用此方法，新的配置自动化 shell 的建议方法是使用 {0} 创建终端自动化配置文件。此方法目前优先于新的自动化配置文件设置，但将来会发生更改。",
 			"terminal.integrated.automationShell.osx": "一个路径，设置后将替代 {0}，并忽略与自动化相关的终端使用情况(例如任务和调试)的 {1} 个值。",
+			"terminal.integrated.automationShell.osx.deprecation": "已弃用此方法，新的配置自动化 shell 的建议方法是使用 {0} 创建终端自动化配置文件。此方法目前优先于新的自动化配置文件设置，但将来会发生更改。",
 			"terminal.integrated.automationShell.windows": "一个路径，设置后将替代 {0}，并忽略与自动化相关的终端使用情况(例如任务和调试)的 {1} 值。",
-			"terminal.integrated.confirmIgnoreProcesses": "可配置为提供自定义设置以忽略进程",
+			"terminal.integrated.automationShell.windows.deprecation": "已弃用此方法，新的配置自动化 shell 的建议方法是使用 {0} 创建终端自动化配置文件。此方法目前优先于新的自动化配置文件设置，但将来会发生更改。",
+			"terminal.integrated.confirmIgnoreProcesses": "使用 {0} 设置时要忽略的一组流程名称。",
 			"terminal.integrated.defaultProfile.linux": "在 Linux 上使用的默认配置文件。如果设置了 {0} 或 {1}，则当前将忽略此设置。",
 			"terminal.integrated.defaultProfile.osx": "在 macOS 上使用的默认配置文件。如果设置了 {0} 或 {1}，则当前将忽略此设置。",
 			"terminal.integrated.defaultProfile.windows": "在 Windows 上使用的默认配置文件。如果设置了 {0} 或 {1}，则当前将忽略此设置。",
@@ -1622,9 +1703,10 @@
 			"terminal.integrated.shellArgs.linux": "在 Linux 终端上时要使用的命令行参数。[阅读关于配置 shell 的详细信息](https://code.visualstudio.com/docs/editor/integrated-terminal#_terminal-profiles)。",
 			"terminal.integrated.shellArgs.osx": "在 macOS 终端上时要使用的命令行参数。[阅读关于配置 shell 的详细信息](https://code.visualstudio.com/docs/editor/integrated-terminal#_terminal-profiles)。",
 			"terminal.integrated.shellArgs.windows": "在 Windows 终端上时要使用的命令行参数。[阅读关于配置 shell 的详细信息](https://code.visualstudio.com/docs/editor/integrated-terminal#_terminal-profiles)。",
-			"terminal.integrated.shellArgs.windows.string": "在 Windows 终端上时要使用的命令行参数(采用 [命令行格式])(https://msdn.microsoft.com/en-au/08dfcab2-eb6e-49a4-80eb-87d4076c98c6)。[阅读关于配置 shell 的详细信息](https://code.visualstudio.com/docs/editor/integrated-terminal#_terminal-profiles)。",
+			"terminal.integrated.shellArgs.windows.string": "The command line arguments in [command-line format](https://msdn.microsoft.com/en-au/08dfcab2-eb6e-49a4-80eb-87d4076c98c6) to use when on the Windows terminal. [Read more about configuring the shell](https://code.visualstudio.com/docs/editor/integrated-terminal#_terminal-profiles).",
 			"terminal.integrated.showLinkHover": "是否显示终端输出中链接的悬停。",
 			"terminal.integrated.useWslProfiles": "控制是否在终端下拉列表中显示 WSL 发行版",
+			"terminalAutomationProfile.path": "shell 可执行文件的单个路径。",
 			"terminalIntegratedConfigurationTitle": "集成终端",
 			"terminalProfile.args": "用于运行 shell 可执行文件的可选参数集。",
 			"terminalProfile.color": "要与此终端关联的主题颜色 ID。",
@@ -1644,7 +1726,7 @@
 			"terminalProfile.windowsSource": "将自动检测 shell 路径的配置文件源。"
 		},
 		"vs/platform/terminal/node/ptyService": {
-			"terminal-session-restore": "在 {1} 处从 {0} 还原的会话内容"
+			"terminal-session-restore": "在 {1} 时从 {0} 还原的会话内容"
 		},
 		"vs/platform/terminal/node/terminalProcess": {
 			"launchFail.cwdDoesNotExist": "启动目录(cwd)“{0}”不存在",
@@ -1739,8 +1821,9 @@
 			"inputBoxBackground": "输入框背景色。",
 			"inputBoxBorder": "输入框边框。",
 			"inputBoxForeground": "输入框前景色。",
-			"inputOption.activeBackground": "输入字段中激活选项的背景颜色。",
+			"inputOption.activeBackground": "输入字段中选项的背景悬停颜色。",
 			"inputOption.activeForeground": "输入字段中已激活的选项的前景色。",
+			"inputOption.hoverBackground": "输入字段中激活选项的背景颜色。",
 			"inputPlaceholderForeground": "输入框中占位符的前景色。",
 			"inputValidationErrorBackground": "输入验证结果为错误级别时的背景色。",
 			"inputValidationErrorBorder": "严重性为错误时输入验证的边框颜色。",
@@ -1802,12 +1885,14 @@
 			"minimapSliderActiveBackground": "单击时，迷你地图滑块的背景颜色。",
 			"minimapSliderBackground": "迷你地图滑块背景颜色。",
 			"minimapSliderHoverBackground": "悬停时，迷你地图滑块的背景颜色。",
+			"minimapUnicodeHighlight": "突出显示的 Unicode 字符的缩略图标记颜色。",
 			"overviewRuleWarning": "用于警告的迷你地图标记颜色。",
 			"overviewRulerCommonContentForeground": "内联合并冲突中共同祖先区域的概览标尺前景色。",
 			"overviewRulerCurrentContentForeground": "内联合并冲突中当前版本区域的概览标尺前景色。",
 			"overviewRulerFindMatchForeground": "用于查找匹配项的概述标尺标记颜色。颜色必须透明，以免隐藏下面的修饰效果。",
 			"overviewRulerIncomingContentForeground": "内联合并冲突中传入的版本区域的概览标尺前景色。",
 			"overviewRulerSelectionHighlightForeground": "用于突出显示所选内容的概述标尺标记颜色。颜色必须透明，以免隐藏下面的修饰效果。",
+			"overviewRulerUnicodeForeground": "突出显示的 Unicode 字符的概述标尺标记颜色。颜色必须透明，以免隐藏下层的修饰效果。",
 			"pickerBackground": "背景颜色快速选取器。快速选取器小部件是选取器(如命令调色板)的容器。",
 			"pickerForeground": "前景颜色快速选取器。快速选取器小部件是命令调色板等选取器的容器。",
 			"pickerGroupBorder": "快速选取器分组边框的颜色。",
@@ -1834,6 +1919,8 @@
 			"snippetTabstopHighlightBackground": "代码片段 Tab 位的高亮背景色。",
 			"snippetTabstopHighlightBorder": "代码片段 Tab 位的高亮边框颜色。",
 			"statusBarBackground": "编辑器悬停状态栏的背景色。",
+			"tableColumnsBorder": "列之间的表边框颜色。",
+			"tableOddRowsBackgroundColor": "奇数表行的背景色。",
 			"textBlockQuoteBackground": "文本中块引用的背景颜色。",
 			"textBlockQuoteBorder": "文本中块引用的边框颜色。",
 			"textCodeBlockBackground": "文本中代码块的背景颜色。",
@@ -1882,14 +1969,15 @@
 			"property": "属性的样式。",
 			"readonly": "用于只读符号的样式。",
 			"regexp": "表达式的样式。",
-			"schema.fontStyle.error": "字体样式必须是“斜体”、“粗体”、“下划线”或者它们的组合。 空字符串将取消设置所有样式。",
+			"schema.fontStyle.error": "字形必须为 \"italic\" (斜体)、\"bold\" (粗体)、\"underline\" (下划线)、\"strikethrough\" (删除线) 或是上述的组合。空字符串将取消设置的所有字形。",
 			"schema.token.background.warning": "暂不支持标记背景色。",
 			"schema.token.bold": "将字形设置为粗体或取消粗体设置。请注意，如果存在 \"fontStyle\"，则会替代此设置。",
-			"schema.token.fontStyle": "设置规则的所有字形:“倾斜”、“粗体”、“下划线”或字形组合。所有未列出的样式都取消设置。空字符串将取消设置所有样式。",
+			"schema.token.fontStyle": "设置规则的所有字形: \"italic\" (斜体)、\"bold\" (粗体)、\"underline\" (下划线)、\"strikethrough\" (删除线) 或是上述的组合。所有未列出的字形都将取消设置。空字符串将取消设置的所有字形。",
 			"schema.token.fontStyle.none": "无 (清除继承的设置)",
 			"schema.token.foreground": "标记的前景色。",
 			"schema.token.italic": "将字形设置为倾斜或取消倾斜设置。请注意，如果存在 \"fontStyle\"，则会替代此设置。",
 			"schema.token.settings": "标记的颜色和样式。",
+			"schema.token.strikethrough": "将字形设置为下划线或取消下划线设置。请注意，如果存在 \"fontStyle\"，则会替代此设置。",
 			"schema.token.underline": "将字形设置为下划线或取消下划线设置。请注意，如果存在 \"fontStyle\"，则会替代此设置。",
 			"static": "用于静态符号的样式。",
 			"string": "字符串的样式。",
@@ -2348,7 +2436,7 @@
 		"vs/code/electron-sandbox/processExplorer/processExplorerMain": {
 			"copy": "复制",
 			"copyAll": "全部复制",
-			"cpu": "CPU %",
+			"cpu": "CPU (%)",
 			"debug": "调试",
 			"forceKillProcess": "强制结束进程",
 			"killProcess": "结束进程",
@@ -2450,13 +2538,14 @@
 		},
 		"vs/workbench/api/browser/viewsExtensionPoint": {
 			"ViewContainerDoesnotExist": "视图容器“{0}”不存在。所有注册到其中的视图将被添加到“资源管理器”中。",
-			"ViewContainerRequiresProposedAPI": "查看容器\"{0}\"需要启用\"enableProposedApi\"以添加到\"Remote\"。",
+			"ViewContainerRequiresProposedAPI": "查看容器“{0}”需要将 “enabledApiProposals: [“contribViewsRemote”]” 添加到“远程”。",
 			"duplicateView1": "无法注册具有相同 ID“{0}”的多个视图",
 			"duplicateView2": "已注册 ID 为“{0}”的视图。",
 			"optenum": "属性“{0}”可被省略或必须是 {1} 之一",
 			"optstring": "属性 \"{0}\" 可以省略，或者必须为 \"string\" 类型",
 			"requirearray": "视图必须是一个数组",
-			"requireidstring": "属性“{0}”是必要属性，其类型必须是 \"string\"。仅支持字母、数字、\"_\" 和 \"-\"。",
+			"requireidstring": "属性“{0}”是必需的，并且必须为具有非空值的类型 `string`。只允许使用字母数字字符、 “_” 和 “-”。",
+			"requirenonemptystring": "属性“{0}”是必需的，并且必须为具有非空值的类型 `string`",
 			"requirestring": "属性 \"{0}\" 是必需项并且必须为 \"string\" 类型",
 			"unknownViewType": "未知视图类型“{0}”。",
 			"viewcontainer requirearray": "视图容器必须为数组",
@@ -2489,8 +2578,7 @@
 			"vscode.extension.contributes.viewsContainers": "向编辑器提供视图容器"
 		},
 		"vs/workbench/api/common/configurationExtensionPoint": {
-			"config.property.defaultConfiguration.languageExpected": "所需的语言选择器(例如 [\"java\"])",
-			"config.property.defaultConfiguration.warning": "无法注册“{0}”的配置默认值。仅支持特定于语言的设置的默认值。",
+			"config.property.defaultConfiguration.warning": "无法注册“{0}”的配置默认值。仅支持可重写计算机、窗口、资源和可重写语言范围设置的默认值。",
 			"config.property.duplicate": "无法注册“{0}”。此属性已注册。",
 			"invalid.allOf": "\"configuration.allOf\" 已被弃用且不应被使用。你可以将多个配置单元作为数组传递给 \"configuration\" 参与点。",
 			"invalid.properties": "configuration.properties 必须是对象",
@@ -2508,16 +2596,17 @@
 			"scope.markdownDescription": "Markdown 格式的说明。",
 			"scope.markdownEnumDescriptions": "Markdown 格式的枚举值说明。",
 			"scope.multilineText.description": "该值将显示在文本区域中。",
+			"scope.order": "指定后，提供此设置相对于同一类别中其他设置的顺序。在未设置此属性的设置之前，将放置具有顺序属性的设置。",
 			"scope.resource.description": "可在用户、远程、工作区或文件夹设置中对其进行配置的配置。",
 			"scope.singlelineText.description": "该值将显示在输入框中。",
 			"scope.window.description": "可在用户、远程或工作区设置中对其进行配置的配置。",
 			"unknownWorkspaceProperty": "未知的工作区配置属性",
 			"vscode.extension.contributes.configuration": "用于配置字符串。",
+			"vscode.extension.contributes.configuration.order": "指定后，提供此类别的设置相对于其他类别的顺序。",
 			"vscode.extension.contributes.configuration.properties": "配置属性的描述。",
 			"vscode.extension.contributes.configuration.properties.schema": "配置属性的架构。",
 			"vscode.extension.contributes.configuration.property.empty": "属性不应为空。",
-			"vscode.extension.contributes.configuration.title": "设置摘要。此标签将在设置文件中用作分隔注释。",
-			"vscode.extension.contributes.defaultConfiguration": "按语言提供默认编辑器配置设置。",
+			"vscode.extension.contributes.configuration.title": "当前设置类别的标题。此标签将在“设置”编辑器中以副标题形式呈现。如果标题与扩展显示名称相同，则类别将分组到主扩展标题下。",
 			"workspaceConfig.extensions.description": "工作区扩展",
 			"workspaceConfig.folders.description": "将载入到工作区的文件夹列表。",
 			"workspaceConfig.launch.description": "工作区启动配置",
@@ -2588,7 +2677,6 @@
 			"menus.editorTitleRun": "在编辑器标题菜单内运行子菜单",
 			"menus.explorerContext": "文件资源管理器上下文菜单",
 			"menus.extensionContext": "扩展上下文菜单",
-			"menus.file": "顶级文件菜单",
 			"menus.home": "主指示器上下文菜单(仅限 Web)",
 			"menus.opy": "顶层“编辑”菜单中的“复制为”子菜单",
 			"menus.resourceFolderContext": "源代码管理资源文件夹上下文菜单",
@@ -2597,8 +2685,6 @@
 			"menus.scmSourceControl": "源代码管理菜单",
 			"menus.scmTitle": "源代码管理标题菜单",
 			"menus.statusBarRemoteIndicator": "状态栏中的远程指示器菜单",
-			"menus.statusBarWindowIndicator": "状态栏中的窗口指示器菜单",
-			"menus.statusBarWindowIndicator.deprecated": "改为使用“statusBar/remoteIndicator\" 菜单。",
 			"menus.touchBar": "触控栏 (仅 macOS)",
 			"missing.altCommand": "菜单项引用了未在 \"commands\" 部分定义的替代命令“{0}”。",
 			"missing.command": "菜单项引用未在“命令”部分进行定义的命令“{0}”。",
@@ -2610,8 +2696,8 @@
 			"notebook.toolbar": "贡献的笔记本工具栏菜单",
 			"opticon": "可以省略属性 \"icon\"，若不省略则必须是字符串或文字，例如 \"{dark, light}\"",
 			"optstring": "属性 \"{0}\" 可以省略，或者必须为 \"string\" 类型",
-			"proposed": "建议的 API",
-			"proposedAPI.invalid": "{0} 是建议的菜单标识符, 仅在开发用完或使用以下命令行开关时可用:--enable-proposed-api {1}",
+			"proposed": "建议的 API 需要 `enabledApiProposal: [“{0}”]` - {1}",
+			"proposedAPI.invalid": "{0} 是建议的菜单标识符。它需要 “package.json#enabledApiProposals: [“{1}”]”，并且仅在开发用完或使用以下命令行开关时可用: --enable-proposed-api {2}",
 			"require": "子菜单项必须是对象",
 			"requireStringOrObject": "属性“{0}”是必要属性，其类型必须是 \"string\" 或 \"object\"",
 			"requirearray": "子菜单项必须是数组",
@@ -2662,10 +2748,16 @@
 		},
 		"vs/workbench/browser/actions/developerActions": {
 			"inspect context keys": "检查上下文键值",
+			"keyboardShortcutsFormat.command": "命令标题。",
+			"keyboardShortcutsFormat.commandAndKeys": "命令标题和密钥。",
+			"keyboardShortcutsFormat.commandWithGroup": "以其组为前缀的命令标题。",
+			"keyboardShortcutsFormat.commandWithGroupAndKeys": "命令标题和密钥，其中命令以其组为前缀。",
+			"keyboardShortcutsFormat.keys": "密钥。",
 			"logStorage": "记录存储数据库内容",
 			"logWorkingCopies": "日志工作副本",
 			"screencastMode.fontSize": "控制截屏模式键盘的字体大小(以像素为单位)。",
 			"screencastMode.keyboardOverlayTimeout": "控制截屏模式下键盘覆盖显示的时长(以毫秒为单位)。",
+			"screencastMode.keyboardShortcutsFormat": "控制显示快捷方式时键盘覆盖中显示的内容。",
 			"screencastMode.location.verticalPosition": "控制截屏模式叠加的垂直偏移,从底部作为工作台高度的百分比。",
 			"screencastMode.mouseIndicatorColor": "控制截屏视频模式下鼠标指示器的十六进制(#RGB、#RGBA、#RRGGBB 或 #RRGGBBAA)的颜色。",
 			"screencastMode.mouseIndicatorSize": "控制截屏模式下鼠标光标的大小(以像素为单位)。",
@@ -2682,7 +2774,7 @@
 			"miTipsAndTricks": "贴士和技巧(&&C)",
 			"miTwitter": "Twitter 上和我们互动(&&J)",
 			"miUserVoice": "搜索功能请求(&&S)",
-			"miVideoTutorials": "&&Video Tutorials",
+			"miVideoTutorials": "视频教程(&&V)",
 			"newsletterSignup": "订阅 VS Code 新闻邮件",
 			"openDocumentationUrl": "文档",
 			"openLicenseUrl": "查看许可证",
@@ -2703,11 +2795,14 @@
 			"increaseViewSize": "增加当前视图大小",
 			"miAppearance": "外观(&&A)",
 			"miMoveSidebarLeft": "向左移动侧边栏(&&M)",
+			"miMoveSidebarLeftNoMnemonic": "将侧边栏移动到左侧",
 			"miMoveSidebarRight": "向右移动侧边栏(&&M)",
+			"miMoveSidebarRightNoMnemonic": "将侧边栏移动到右侧",
 			"miShowActivityBar": "显示活动栏(&&A)",
 			"miShowEditorArea": "显示编辑区域(&&E)",
 			"miShowMenuBar": "显示菜单栏(&&B)",
 			"miShowSidebar": "显示侧边栏(&&S)",
+			"miShowSidebarNoMnnemonic": "显示侧边栏",
 			"miShowStatusbar": "显示状态栏(&&T)",
 			"miToggleCenteredLayout": "居中布局(&&C)",
 			"miToggleZenMode": "禅模式",
@@ -2808,7 +2903,7 @@
 			"miOpen": "打开(&&O)...",
 			"miOpenFile": "打开文件(&&O)...",
 			"miOpenFolder": "打开文件夹(&&F)...",
-			"miOpenWorkspace": "Open Wor&&kspace from File...",
+			"miOpenWorkspace": "从文件打开工作区(&&K)...",
 			"miSaveWorkspaceAs": "将工作区另存为...",
 			"openFile": "打开文件...",
 			"openFileFolder": "打开...",
@@ -2865,7 +2960,7 @@
 		"vs/workbench/browser/parts/auxiliarybar/auxiliaryBarActions": {
 			"focusAuxiliaryBar": "专注侧面板",
 			"hideAuxiliaryBar": "隐藏侧面板",
-			"miShowAuxiliaryBar": "Show Si&&de Panel",
+			"miShowAuxiliaryBar": "显示侧面板(&&D)",
 			"toggleAuxiliaryBar": "切换侧面板"
 		},
 		"vs/workbench/browser/parts/auxiliarybar/auxiliaryBarPart": {
@@ -2958,7 +3053,8 @@
 			"cmd.focus": "聚焦到“导航路径”视图",
 			"cmd.toggle": "切换导航路径",
 			"empty": "无元素",
-			"miShowBreadcrumbs": "显示导航痕迹(&&B)"
+			"miShowBreadcrumbs": "显示导航痕迹(&&B)",
+			"separatorIcon": "痕迹导航中分隔符的图标。"
 		},
 		"vs/workbench/browser/parts/editor/breadcrumbsPicker": {
 			"breadcrumbs": "痕迹导航"
@@ -2992,7 +3088,8 @@
 			"miBack": "返回(&&B)",
 			"miClearRecentOpen": "清除最近打开记录(&&C)",
 			"miEditorLayout": "编辑器布局(&&L)",
-			"miFirstSideEditor": "&&First Side in Editor",
+			"miEditorLayoutLayoutControl": "Editor Layout",
+			"miFirstSideEditor": "编辑器中的第一侧(&&F)",
 			"miFocusAboveGroup": "上方组(&&A)",
 			"miFocusBelowGroup": "下方组(&&B)",
 			"miFocusFifthGroup": "第 5 组(&&5)",
@@ -3003,7 +3100,8 @@
 			"miFocusSecondGroup": "第 2 组(&&2)",
 			"miFocusThirdGroup": "第 3 组(&&3)",
 			"miForward": "前进(&&F)",
-			"miJoinEditorInGroup": "Join in &&Group",
+			"miJoinEditorInGroup": "加入组(&&G)",
+			"miJoinEditorInGroupWithoutMnemonic": "Join in Group",
 			"miLastEditLocation": "上次编辑位置(&&L)",
 			"miNextEditor": "下一个编辑器(&&N)",
 			"miNextEditorInGroup": "组中的下一个编辑器(&&N)",
@@ -3016,22 +3114,35 @@
 			"miPreviousRecentlyUsedEditor": "上一个使用过的编辑器(&&P)",
 			"miPreviousUsedEditorInGroup": "组中上一个使用过的编辑器(&&P)",
 			"miReopenClosedEditor": "重新打开已关闭的编辑器(&&R)",
-			"miSecondSideEditor": "&&Second Side in Editor",
+			"miSecondSideEditor": "编辑器中的第二侧(&&S)",
 			"miSingleColumnEditorLayout": "单列(&&S)",
+			"miSingleColumnEditorLayoutWithoutMnemonic": "Single",
 			"miSplitEditorDown": "向下拆分(&&D)",
-			"miSplitEditorInGroup": "Split in &&Group",
+			"miSplitEditorDownWithoutMnemonic": "Split Down",
+			"miSplitEditorInGroup": "在组中拆分(&&G)",
+			"miSplitEditorInGroupWithoutMnemonic": "Split in Group",
 			"miSplitEditorLeft": "向左拆分(&&L)",
+			"miSplitEditorLeftWithoutMnemonic": "Split Left",
 			"miSplitEditorRight": "向右拆分(&&R)",
+			"miSplitEditorRightWithoutMnemonic": "Split Right",
 			"miSplitEditorUp": "向上拆分(&&U)",
+			"miSplitEditorUpWithoutMnemonic": "Split Up",
 			"miSwitchEditor": "切换编辑器(&&E)",
 			"miSwitchGroup": "切换组(&&G)",
 			"miThreeColumnsEditorLayout": "三列(&&H)",
+			"miThreeColumnsEditorLayoutWithoutMnemonic": "Three Columns",
 			"miThreeRowsEditorLayout": "三行(&&R)",
+			"miThreeRowsEditorLayoutWithoutMnemonic": "Three Rows",
 			"miTwoByTwoGridEditorLayout": "2x2 网格(&&G)",
+			"miTwoByTwoGridEditorLayoutWithoutMnemonic": "Grid (2x2)",
 			"miTwoColumnsBottomEditorLayout": "底部双列(&&C)",
+			"miTwoColumnsBottomEditorLayoutWithoutMnemonic": "Two Columns Bottom",
 			"miTwoColumnsEditorLayout": "双列(&&T)",
+			"miTwoColumnsEditorLayoutWithoutMnemonic": "Two Columns",
 			"miTwoRowsEditorLayout": "双行(&&W)",
+			"miTwoRowsEditorLayoutWithoutMnemonic": "Two Rows",
 			"miTwoRowsRightEditorLayout": "右侧双行(&&O)",
+			"miTwoRowsRightEditorLayoutWithoutMnemonic": "Two Rows Right",
 			"navigate.next.label": "下一个更改",
 			"navigate.prev.label": "上一个更改",
 			"nextChangeIcon": "差异编辑器中下一个更改操作的图标",
@@ -3351,18 +3462,31 @@
 			"notificationSource": "来源: {0}"
 		},
 		"vs/workbench/browser/parts/panel/panelActions": {
+			"alignPanelCenter": "Center Panel",
+			"alignPanelCenterShort": "Center",
+			"alignPanelJustify": "Justify Panel",
+			"alignPanelJustifyShort": "Justify",
+			"alignPanelLeft": "Align Panel Left",
+			"alignPanelLeftShort": "Left",
+			"alignPanelRight": "Align Panel Right",
+			"alignPanelRightShort": "Right",
 			"closeIcon": "用于关闭面板的图标。",
 			"closePanel": "关闭面板",
 			"focusPanel": "聚焦到面板中",
 			"hidePanel": "隐藏面板",
 			"maximizeIcon": "用于最大化面板的图标。",
 			"maximizePanel": "最大化面板大小",
+			"miAlignPanel": "Align Panel",
+			"miMovePanel": "Move Panel",
 			"miShowPanel": "显示面板(&&P)",
 			"minimizePanel": "恢复面板大小",
 			"nextPanelView": "下一个面板视图",
 			"positionPanelBottom": "将面板移至底部",
+			"positionPanelBottomShort": "Bottom",
 			"positionPanelLeft": "将面板移至左侧",
+			"positionPanelLeftShort": "Left",
 			"positionPanelRight": "将面板移至右侧",
+			"positionPanelRightShort": "Right",
 			"previousPanelView": "上一个面板视图",
 			"restoreIcon": "用于还原面板的图标。",
 			"toggleMaximizedPanel": "切换最大化面板",
@@ -3407,6 +3531,8 @@
 		},
 		"vs/workbench/browser/parts/titlebar/titlebarPart": {
 			"devExtensionWindowTitlePrefix": "[扩展开发宿主]",
+			"layoutControlIcon": "在标题栏中找到的布局控件菜单图标。",
+			"layoutMenu": "配置布局",
 			"patchedWindowTitle": "[不受支持]",
 			"userIsAdmin": "[管理员]",
 			"userIsSudo": "[超级用户]"
@@ -3469,14 +3595,15 @@
 			"editorOpenPositioning": "控制编辑器打开的位置。选择 `left` 或 `right` 可分别在当前活动编辑器的左侧或右侧打开。选择 `first` (最前) 或 `last` (最后) 打开的位置与当前活动编辑器无关。",
 			"editorTabCloseButton": "控制编辑器的选项卡关闭按钮的位置，或者在设置为 \"off\" 时禁用它们。当 \"#workbench.editor.showTabs#\" 处于禁用状态时，将忽略此值。",
 			"enableMenuBarMnemonics": "控制是否可通过 Alt 键快捷键打开主菜单。如果禁用助记符，则可将这些 Alt 键快捷键绑定到编辑器命令。",
-			"enablePreview": "控制打开的编辑器是否显示为预览。预览编辑器不会保持打开，在将其显式设置为保持打开(例如通过双击或编辑)前将会重用它，其字体样式为斜体。",
-			"enablePreviewFromCodeNavigation": "控制当从编辑器开始进行代码导航时，编辑器是否保持为预览状态。预览编辑器不会保持打开，在将其显式设置为保持打开(例如通过双击或编辑)前将会重用它。当 \"#workbench.editor.enablePreview#\" 处于禁用状态时，将忽略此值。",
-			"enablePreviewFromQuickOpen": "控制通过 Quick Open 打开的编辑器是否显示为预览。预览编辑器不会保持打开，在将其显式设置为保持打开(例如通过双击或编辑)前将会重用它。当 \"#workbench.editor.enablePreview#\" 处于禁用状态时，将忽略此值。",
+			"enablePreview": "控制打开的编辑器是否显示为预览编辑器。预览编辑器不会保持打开状态，在将其显式设置为保持打开(例如通过双击或编辑)前将会重复使用，其文件名显示样式为斜体。",
+			"enablePreviewFromCodeNavigation": "控制当从编辑器开始进行代码导航时，编辑器是否保持为预览状态。预览编辑器不会保持打开状态，在将其显式设置为保持打开(例如通过双击或编辑)前将会重复使用。当 \"#workbench.editor.enablePreview#\" 处于禁用状态时，将忽略此值。",
+			"enablePreviewFromQuickOpen": "控制通过 Quick Open 打开的编辑器是否显示为预览编辑器。预览编辑器不会保持打开状态，在将其显式设置为保持打开(例如通过双击或编辑)前将会重复使用。当 \"#workbench.editor.enablePreview#\" 处于禁用状态时，将忽略此值。",
 			"focusRecentEditorAfterClose": "控制是否按最常使用的顺序或从左到右的顺序关闭选项卡。",
 			"folderName": "\"${folderName}\": 文件所在工作区文件夹的名称 (例如 myFolder)。",
 			"folderPath": "\"${folderpath}\": 文件所在工作区文件夹的路径 (例如 /Users/Development/myFolder)。",
 			"fontAliasing": "控制在工作台中字体的渲染方式。",
 			"highlightModifiedTabs": "控制是否在具有未保存更改的编辑器的选项卡上绘制顶部边框。当禁用 `#workbench.editor.showTabs#` 时，会忽略此值。",
+			"layoutControlEnabled": "控制是否启用自定义标题栏中的布局控制按钮。",
 			"limitEditorsEnablement": "控制打开的编辑器数是否应受限制。启用后，最近使用较少的编辑器将关闭，以为新打开的编辑器腾出空间。",
 			"limitEditorsMaximum": "控制打开编辑器的最大数量。使用 \"#workbench.editor.limit.perEditorGroup#\" 设置控制每个编辑器组或跨所有组的限制。",
 			"menuBarVisibility": "控制菜单栏的可见性。“切换”设置表示隐藏菜单栏，按一次 Alt 键则将显示此菜单栏。“精简”设置会将菜单移入侧边栏。",
@@ -3487,6 +3614,11 @@
 			"openFilesInNewWindow": "控制是否在新窗口中打开文件。\r\n注意，此设置可能会被忽略 (例如，在使用 `--new-window` 或 `--reuse-window` 命令行选项时)。",
 			"openFilesInNewWindowMac": "控制是否在新窗口中打开文件。\r\n注意，此设置可能会被忽略 (例如，在使用 `-new-window` 或 `-reuse-window` 命令行选项时)。",
 			"openFoldersInNewWindow": "控制打开文件夹时是在新窗口打开还是替换上一个活动窗口。\r\n注意，此设置可能会被忽略 (例如，在使用 `--new-window` 或 `--reuse-window` 命令行选项时)。",
+			"panel.alignment.center": "面板跨越编辑器区域下方。",
+			"panel.alignment.justify": "面板跨越窗口的全宽。",
+			"panel.alignment.left": "面板从窗口最左侧跨越到编辑器区域右侧。",
+			"panel.alignment.right": "面板从编辑器区域左侧跨越到窗口最右侧。",
+			"panelAlignment": "控制面板(终端、调试控制台、输出、问题)的对齐方式，以及其是否跨越侧边栏和侧面板下方。请注意，此设置仅在面板位于屏幕底部时生效。",
 			"panelDefaultLocation": "控制面板的默认位置(终端、调试控制台、输出、问题)。它可以显示在工作台的底部、右侧或左侧。",
 			"panelOpensMaximized": "控制面板是否以最大化方式打开。它可以始终以最大化方式打开、永不以最大化方式打开或以关闭前的最后一个状态打开。",
 			"perEditorGroup": "控制最大打开的编辑器的限制是否应应用于每个编辑器组或所有编辑器组。",
@@ -3607,6 +3739,7 @@
 			"builtinProviderDisplayName": "内置",
 			"editorAreaVisible": "编辑器区域是否可见",
 			"editorIsOpen": "编辑器是否打开",
+			"editorTabsVisible": "编辑器选项卡是否可见",
 			"groupEditorsCount": "打开的编辑器组数",
 			"inZenMode": "是否已启用 Zen 模式",
 			"isCenteredLayout": "是否已启用居中布局",
@@ -3710,6 +3843,7 @@
 			"statusBarErrorItemForeground": "状态错误项的前景色。错误项比状态栏中的其他条目更醒目以显示错误条件。状态栏显示在窗口底部。",
 			"statusBarForeground": "工作区或文件夹打开时状态栏的前景色。状态栏显示在窗口底部。",
 			"statusBarItemActiveBackground": "单击时的状态栏项背景色。状态栏显示在窗口底部。",
+			"statusBarItemCompactHoverBackground": "悬停在包含两个悬停的项时的状态栏项背景色。状态栏显示在窗口底部。",
 			"statusBarItemHostBackground": "状态栏上远程指示器的背景色。",
 			"statusBarItemHostForeground": "状态栏上远程指示器的前景色。",
 			"statusBarItemHoverBackground": "悬停时的状态栏项背景色。状态栏显示在窗口底部。",
@@ -3843,7 +3977,7 @@
 			"zoomLevel": "调整窗口的缩放级别。原始大小是 0，每次递增(例如 1)或递减(例如 -1)表示放大或缩小 20%。也可以输入小数以便以更精细的粒度调整缩放级别。"
 		},
 		"vs/workbench/electron-sandbox/parts/dialogs/dialogHandler": {
-			"aboutDetail": "版本: {0}\r\n提交: {1}\r\n日期: {2}\r\nElectron: {3}\r\nChrome: {4}\r\nNode.js: {5}\r\nV8: {6}\r\nOS: {7}",
+			"aboutDetail": "版本: {0}\r\n提交: {1}\r\n日期: {2}\r\nElectron: {3}\r\nChromium: {4}\r\nNode.js: {5}\r\nV8: {6}\r\nOS: {7}",
 			"cancelButton": "取消",
 			"copy": "复制(&&C)",
 			"okButton": "确定",
@@ -3859,7 +3993,22 @@
 			"proxyDetail": "代理 {0} 需要用户名和密码。",
 			"rememberCredentials": "记住我的凭据",
 			"runningAsRoot": "不建议以 root 用户身份运行 {0}。",
+			"shutdownErrorClose": "意外错误导致窗口无法关闭。",
+			"shutdownErrorDetail": "错误: {0}",
+			"shutdownErrorLoad": "意外错误导致无法更改窗口的工作区。",
+			"shutdownErrorQuit": "意外错误导致应用程序退出。",
+			"shutdownErrorReload": "意外错误导致窗口无法重新加载。",
+			"shutdownTitleClose": "关闭窗口所需的时间比预期要长...",
+			"shutdownTitleLoad": "更改工作区所需的时间比预期要长...",
+			"shutdownTitleQuit": "退出应用程序所需的时间比预期要长...",
+			"shutdownTitleReload": "重新加载窗口所需的时间比预期要长...",
 			"username": "用户名"
+		},
+		"vs/workbench/contrib/audioCues/browser/audioCues.contribution": {
+			"audioCues.enabled": "控制是否启用音频提示。",
+			"audioCues.enabled.auto": "附加屏幕阅读器时启用音频提示。",
+			"audioCues.enabled.off": "禁用音频提示。",
+			"audioCues.enabled.on": "启用音频提示。"
 		},
 		"vs/workbench/contrib/backup/electron-sandbox/backupTracker": {
 			"backupTrackerBackupFailed": "以下未保存的编辑器无法保存到备份位置。",
@@ -4016,18 +4165,6 @@
 			"hintWhitespace": "显示空白差异",
 			"removeTimeout": "删除限制"
 		},
-		"vs/workbench/contrib/codeEditor/browser/find/simpleFindReplaceWidget": {
-			"label.closeButton": "关闭",
-			"label.find": "查找",
-			"label.nextMatchButton": "下一个匹配项",
-			"label.previousMatchButton": "上一个匹配项",
-			"label.replace": "替换",
-			"label.replaceAllButton": "全部替换",
-			"label.replaceButton": "替换",
-			"label.toggleReplaceButton": "切换替换",
-			"placeholder.find": "查找",
-			"placeholder.replace": "替换"
-		},
 		"vs/workbench/contrib/codeEditor/browser/find/simpleFindWidget": {
 			"label.closeButton": "关闭",
 			"label.find": "查找",
@@ -4040,7 +4177,7 @@
 			"inspectTMScopesWidget.loading": "正在加载..."
 		},
 		"vs/workbench/contrib/codeEditor/browser/inspectKeybindings": {
-			"workbench.action.inspectKeyMap": "开发人员: 检查按键映射",
+			"workbench.action.inspectKeyMap": "检查密钥映射",
 			"workbench.action.inspectKeyMapJSON": "检查按键映射(JSON)"
 		},
 		"vs/workbench/contrib/codeEditor/browser/languageConfigurationExtensionPoint": {
@@ -4229,7 +4366,8 @@
 		},
 		"vs/workbench/contrib/comments/browser/comments.contribution": {
 			"commentsConfigurationTitle": "评论",
-			"openComments": "控制评论面板应何时打开。"
+			"openComments": "控制评论面板应何时打开。",
+			"useRelativeTime": "Determines if relative time will be used in comment timestamps (ex. '1 day ago')."
 		},
 		"vs/workbench/contrib/comments/browser/commentsEditorContribution": {
 			"nextCommentThreadAction": "转到下一条评论串",
@@ -4466,6 +4604,7 @@
 			"terminateThread": "终止线程",
 			"toolBarLocation": "控制调试工具栏的位置。可在所有视图中“浮动”、在调试视图中“停靠”，也可“隐藏”。",
 			"variables": "变量",
+			"viewMemory": "查看二进制数据",
 			"watch": "监视"
 		},
 		"vs/workbench/contrib/debug/browser/debugActionViewItems": {
@@ -4592,10 +4731,13 @@
 			"debugContinue": "“调试继续”操作的图标。",
 			"debugDisconnect": "“调试断开”操作的图标。",
 			"debugGripper": "调试条控制手柄的图标。",
+			"debugInspectMemory": "检查内存操作的图标。",
 			"debugPause": "“调试暂停”操作的图标。",
+			"debugRemoveConfig": "用于删除调试配置的图标。",
 			"debugRestart": "“调试重启”操作的图标。",
 			"debugRestartFrame": "“调试重启帧”操作的图标。",
 			"debugReverseContinue": "“调试反向继续”操作的图标。",
+			"debugRun": "运行或调试操作的图标。",
 			"debugStackframe": "编辑器字形边距中显示的堆栈帧的图标。",
 			"debugStackframeFocused": "编辑器字形边距中显示的具有焦点的堆栈帧的图标。",
 			"debugStart": "“调试启动”操作的图标。",
@@ -4619,7 +4761,8 @@
 			"contributed": "已提供",
 			"customizeLaunchConfig": "配置启动配置",
 			"noDebugResults": "没有匹配的启动配置",
-			"providerAriaLabel": "{0} 已提供的配置"
+			"providerAriaLabel": "{0} 已提供的配置",
+			"removeLaunchConfig": "删除启动配置"
 		},
 		"vs/workbench/contrib/debug/browser/debugService": {
 			"1activeSession": "1 个活动会话",
@@ -4684,7 +4827,9 @@
 			"startAdditionalSession": "启动其他会话"
 		},
 		"vs/workbench/contrib/debug/browser/disassemblyView": {
+			"disassemblyTableColumnLabel": "说明",
 			"disassemblyView": "反汇编视图",
+			"editorOpenedFromDisassemblyDescription": "从反汇编",
 			"instructionAddress": "地址",
 			"instructionBytes": "字节",
 			"instructionNotAvailable": "反汇编不可用。",
@@ -4751,11 +4896,15 @@
 			"statusBarDebuggingForeground": "调试程序时状态栏的前景色。状态栏显示在窗口底部"
 		},
 		"vs/workbench/contrib/debug/browser/variablesView": {
+			"cancel": "取消",
 			"collapse": "全部折叠",
+			"install": "安装",
 			"variableAriaLabel": "{0}，值 {1}",
 			"variableScopeAriaLabel": "范围 {0}",
 			"variableValueAriaLabel": "键入新的变量值",
-			"variablesAriaTreeLabel": "调试变量"
+			"variablesAriaTreeLabel": "调试变量",
+			"viewMemory.install.progress": "正在安装十六进制编辑器...",
+			"viewMemory.prompt": "要有十六进制编辑器扩展才能检查二进制数据。是否要立即安装?"
 		},
 		"vs/workbench/contrib/debug/browser/watchExpressionsView": {
 			"addWatchExpression": "添加表达式",
@@ -4769,6 +4918,7 @@
 			"watchVariableAriaLabel": "{0}，值 {1}"
 		},
 		"vs/workbench/contrib/debug/browser/welcomeView": {
+			"allDebuggersDisabled": "禁用所有调试扩展。启用调试扩展或从市场安装新的扩展。",
 			"customizeRunAndDebug": "要自定义运行和调试[创建 launch.json 文件](command:{0})。",
 			"customizeRunAndDebugOpenFolder": "要自定义运行和调试，请[打开文件夹](command:{0}) 并创建一个启动.json 文件。",
 			"detectThenRunAndDebug": "[显示所有自动调试配置](command:{0})。",
@@ -4794,7 +4944,9 @@
 			"callStackItemType": "表示“调用堆栈”视图中聚焦元素的项目类型。例如: \"session\"、\"thread\"、\"stackFrame\"",
 			"callStackSessionHasOneThread": "当调用堆栈视图中具有焦点的会话恰好具有一个线程时为 true。在内部用于调用堆栈视图中的内联菜单。",
 			"callStackSessionIsAttach": "当调用堆栈视图中的会话是“附加”状态时为 true，否则为 false。在内部用于调用堆栈视图中的内联菜单。",
+			"canViewMemory": "指示视图中的项是否具有关联的内存引用。",
 			"debugConfigurationType": "所选启动配置的调试类型。例如 \"python\"。",
+			"debugExtensionsAvailable": "如果至少安装并启用了一个调试扩展，则为 True。",
 			"debugProtocolVariableMenuContext": "表示 \"VARIABLES\" 视图中调试适配器针对焦点变量设置的上下文。",
 			"debugSetExpressionSupported": "当焦点会话支持 “setExpression” 请求时为 True。",
 			"debugSetVariableSupported": "焦点会话支持 \"setVariable\" 请求时为 True。",
@@ -4964,6 +5116,12 @@
 		"vs/workbench/contrib/extensions/browser/extensionEditor": {
 			"JSON Validation": "JSON 验证({0})",
 			"Marketplace": "市场",
+			"Notebook id": "ID",
+			"Notebook mimetypes": "Mimetypes",
+			"Notebook name": "名称",
+			"Notebook renderer name": "名称",
+			"NotebookRenderers": "笔记本呈现器({0})",
+			"Notebooks": "Notebooks({0})",
 			"activation": "激活时间",
 			"activation events": "激活事件({0})",
 			"authentication": "身份验证({0})",
@@ -5034,6 +5192,7 @@
 			"noReadme": "无可用自述文件。",
 			"noStatus": "无可用状态。",
 			"not yet activated": "尚未激活。",
+			"preRelease": "预发布",
 			"preview": "预览版",
 			"productThemes": "产品图标主题({0})",
 			"publisher": "发布服务器",
@@ -5144,7 +5303,7 @@
 			"manageExtensionsQuickAccessPlaceholder": "按 Enter 以管理扩展。",
 			"miPreferencesExtensions": "扩展(&&E)",
 			"miViewExtensions": "扩展(&&X)",
-			"miimportKeyboardShortcutsFrom": "&&Migrate Keyboard Shortcuts from...",
+			"miimportKeyboardShortcutsFrom": "从 - 中迁移键盘快捷方式(&&M)...",
 			"most popular filter": "最热门",
 			"most popular recommended": "推荐",
 			"noUpdatesAvailable": "所有扩展都是最新的。",
@@ -5155,6 +5314,8 @@
 			"recently published filter": "最近发布",
 			"recentlyPublishedExtensions": "显示最近发布的扩展",
 			"refreshExtension": "刷新",
+			"show pre-release version": "显示预发布版本",
+			"show released version": "显示发布版本",
 			"showBuiltInExtensions": "显示内置的扩展",
 			"showDisabledExtensions": "显示已禁用的扩展",
 			"showEnabledExtensions": "显示启用的扩展",
@@ -5189,6 +5350,7 @@
 			"workbench.extensions.installExtension.description": "安装给定的扩展",
 			"workbench.extensions.installExtension.option.donotSync": "启用后，VS Code 在启用“设置同步”时不同步此扩展。",
 			"workbench.extensions.installExtension.option.installOnlyNewlyAddedFromExtensionPackVSIX": "启用后，VS Code 仅安装来自扩展包 VSIX 的新添加的扩展。仅在安装 VSIX 时才考虑此选项。",
+			"workbench.extensions.installExtension.option.installPreReleaseVersion": "启用后，VS Code 将安装扩展的预发布版本(如果可用)。",
 			"workbench.extensions.search.arg.name": "要在搜索中使用的查询",
 			"workbench.extensions.search.description": "搜索特定扩展",
 			"workbench.extensions.uninstallExtension.arg.name": "要卸载的扩展的 id",
@@ -5211,7 +5373,6 @@
 			"cannot be installed": "“{0}”扩展在 {1} 中不可用。若要了解详细信息，请单击“详细信息”。",
 			"check logs": "有关更多详细信息，请查看[日志]({0})。",
 			"close": "关闭",
-			"color theme": "设置颜色主题",
 			"configureWorkspaceFolderRecommendedExtensions": "配置建议的扩展(工作区文件夹)",
 			"configureWorkspaceRecommendedExtensions": "配置建议的扩展(工作区)",
 			"current": "当前",
@@ -5223,6 +5384,7 @@
 			"disabled": "已禁用",
 			"disabled because of virtual workspace": "此扩展已禁用，因为它不支持虚拟工作区。",
 			"disabled by environment": "环境已禁用此扩展。",
+			"do no sync": "不同步",
 			"do not sync": "不同步此扩展",
 			"download": "请尝试手动下载…",
 			"enable locally": "请重载 Visual Studio Code 以在本地启用此扩展。",
@@ -5244,7 +5406,6 @@
 			"extensionButtonProminentBackground": "扩展中突出操作的按钮背景色(比如 安装按钮)。",
 			"extensionButtonProminentForeground": "扩展中突出操作的按钮前景色(比如 安装按钮)。",
 			"extensionButtonProminentHoverBackground": "扩展中突出操作的按钮被悬停时的颜色(比如 安装按钮)。",
-			"file icon theme": "设置文件图标主题",
 			"finished installing": "已成功安装扩展。",
 			"globally disabled": "用户已全局禁用此扩展。",
 			"globally enabled": "此扩展已全局启用。",
@@ -5252,17 +5413,22 @@
 			"ignored": "同步时将忽略此扩展",
 			"incompatible platform": "'{0}' 扩展在 {1} 中对于 {2} 不可用。",
 			"install": "安装",
-			"install and do no sync": "安装(不同步)",
 			"install another version": "安装另一个版本…",
 			"install browser": "在浏览器中安装",
 			"install everywhere tooltip": "在所有同步的 {0} 实例中安装此扩展",
+			"install extension in remote": "{0}在{1}中",
+			"install extension in remote and do not sync": "{0}在{1}中({2})",
+			"install extension locally": "本地{0}",
+			"install extension locally and do not sync": "本地{0}({1})",
 			"install in remote": "在 {0} 中安装",
-			"install in remote and do not sync": "在 {0} 中安装(不同步)",
 			"install local extensions title": "在“{0}”中安装本地扩展",
 			"install locally": "本地安装",
-			"install locally and do not sync": "本地安装(不同步)",
 			"install operation": "安装 \"{0}\" 扩展时出错。",
+			"install pre-release": "安装预发布版本",
+			"install pre-release version": "安装预发布版本",
 			"install previous version": "安装特定版本的扩展…",
+			"install release version": "安装发布版本",
+			"install release version message": "是否要安装发布版本?",
 			"install remote extensions": "本地安装远程扩展",
 			"install vsix": "下载后，请手动安装“{0}”的 VSIX。",
 			"installExtensionComplete": "已完成安装扩展 {0}。",
@@ -5273,27 +5439,18 @@
 			"installed": "已安装",
 			"installing": "正在安装",
 			"installing extensions": "正在安装扩展...",
-			"just now": "刚刚",
 			"learn more": "了解详细信息",
 			"learn why": "了解原因",
 			"malicious tooltip": "此扩展被报告存在问题。",
 			"manage": "管理",
 			"more information": "详细信息",
 			"no local extensions": "没有要安装的扩展。",
-			"noOfDaysAgo": "{0} 天前",
-			"noOfHoursAgo": "{0} 小时前",
-			"noOfMonthsAgo": "{0} 个月前",
-			"noOfYearsAgo": "{0} 年前",
 			"not web tooltip": "“{0}”扩展在 {1} 中不可用。",
-			"one day ago": "1天前",
-			"one hour ago": "1小时前",
-			"one month ago": "1个月前",
-			"one year ago": "1年前",
 			"postDisableTooltip": "请重新加载 Visual Studio Code 以禁用此扩展。",
 			"postEnableTooltip": "请重新加载 Visual Studio Code 以启用此扩展。",
 			"postUninstallTooltip": "请重新加载 Visual Studio Code 以完成此扩展的卸载。",
 			"postUpdateTooltip": "请重新启动 Visual Studio Code 以完成对此扩展的更新。",
-			"product icon theme": "设置产品图标主题",
+			"pre-release": "预发布",
 			"reinstall": "重新安装扩展...",
 			"reloadAction": "重新加载",
 			"reloadRequired": "需要重新加载",
@@ -5308,6 +5465,8 @@
 			"selectExtensionToReinstall": "选择要重新安装的扩展",
 			"selectVersion": "选择要安装的版本",
 			"showRecommendedExtension": "显示推荐的扩展",
+			"switch to pre-release version": "切换到预发布版本",
+			"switch to release version": "切换为发布版本",
 			"sync": "同步此扩展",
 			"synced": "已同步此扩展",
 			"undo": "撤消",
@@ -5315,12 +5474,17 @@
 			"uninstallExtensionComplete": "请重新加载 Visual Studio Code 以完成对扩展 {0} 的卸载。",
 			"uninstallExtensionStart": "开始卸载扩展{0}。",
 			"uninstalled": "已卸载",
+			"unsupported prerelease switch tooltip": "此扩展现在作为预发布版本成为 {0} 扩展的一部分。",
+			"unsupported tooltip": "此扩展不再受支持。",
 			"update operation": "更新 \"{0}\" 扩展时出错。",
 			"updateAction": "更新",
 			"updateExtensionComplete": "已完成更新扩展 {0} 到版本 {1}。",
 			"updateExtensionStart": "已启动更新扩展 {0} 到版本 {1}。",
 			"updateTo": "更新到 {0}",
 			"updated": "已更新",
+			"workbench.extensions.action.setColorTheme": "设置颜色主题",
+			"workbench.extensions.action.setFileIconTheme": "设置文件图标主题",
+			"workbench.extensions.action.setProductIconTheme": "设置产品图标主题",
 			"workspace disabled": "用户已为此工作区禁用此扩展。",
 			"workspace enabled": "用户已为此工作区启用此扩展。"
 		},
@@ -5349,6 +5513,7 @@
 			"installLocalInRemoteIcon": "扩展视图中“在远程安装本地扩展”操作的图标。",
 			"installWorkspaceRecommendedIcon": "扩展视图中“安装工作区建议的扩展”操作的图标。",
 			"manageExtensionIcon": "扩展视图中“管理”操作的图标。",
+			"preReleaseIcon": "为具有预发布版本的扩展在扩展视图和编辑器中显示的图标。",
 			"ratingIcon": "扩展视图和编辑器中随评级一起显示的图标。",
 			"refreshIcon": "扩展视图中“刷新”操作的图标。",
 			"remoteIcon": "用于在扩展视图和编辑器中指示扩展是远程内容的图标。",
@@ -5418,12 +5583,16 @@
 			"suggestProxyError": "市场返回了 \"ECONNREFUSED\"。请检查 \"http.proxy\" 设置。"
 		},
 		"vs/workbench/contrib/extensions/browser/extensionsWidgets": {
+			"Show prerelease version": "预发布版本",
 			"activation": "激活时间",
 			"dependencies": "显示依赖关系",
 			"extensionIconStarForeground": "扩展分级的图标颜色。",
 			"extensionIconVerifiedForeground": "已验证扩展的发布服务器图标颜色。",
+			"extensionPreReleaseForeground": "预发布扩展的图标颜色。",
+			"has prerelease": "此扩展具有可用的 {0}",
 			"message": "1 条消息",
 			"messages": "{0} 条消息",
+			"pre-release-label": "预发布",
 			"publisher verified tooltip": "此发布者已验证 {0} 的所有权",
 			"remote extension title": "{0} 中的扩展",
 			"startup": "启动",
@@ -5473,7 +5642,15 @@
 		"vs/workbench/contrib/extensions/common/runtimeExtensionsInput": {
 			"extensionsInputName": "正在运行的扩展"
 		},
-		"vs/workbench/contrib/extensions/electron-browser/extensionProfileService": {
+		"vs/workbench/contrib/extensions/electron-sandbox/debugExtensionHostAction": {
+			"cancel": "取消(&&C)",
+			"debugExtensionHost": "启动调试扩展宿主",
+			"debugExtensionHost.launch.name": "附加扩展主机",
+			"restart1": "分析扩展",
+			"restart2": "需要重启，才能分析扩展。是否要立即重启“{0}”?",
+			"restart3": "重启(&&R)"
+		},
+		"vs/workbench/contrib/extensions/electron-sandbox/extensionProfileService": {
 			"cancel": "取消(&&C)",
 			"profilingExtensionHost": "分析扩展主机",
 			"profilingExtensionHostTime": "分析扩展主机({0} 秒)",
@@ -5483,23 +5660,15 @@
 			"selectAndStartDebug": "单击可停止分析。",
 			"status.profiler": "扩展探查器"
 		},
-		"vs/workbench/contrib/extensions/electron-browser/extensionsAutoProfiler": {
-			"show": "显示扩展程序",
-			"unresponsive-exthost": "扩展“{0}”的上一次操作花费时间较长，阻碍了其他扩展的运行。"
-		},
-		"vs/workbench/contrib/extensions/electron-sandbox/debugExtensionHostAction": {
-			"cancel": "取消(&&C)",
-			"debugExtensionHost": "启动调试扩展宿主",
-			"debugExtensionHost.launch.name": "附加扩展主机",
-			"restart1": "分析扩展",
-			"restart2": "需要重启，才能分析扩展。是否要立即重启“{0}”?",
-			"restart3": "重启(&&R)"
-		},
 		"vs/workbench/contrib/extensions/electron-sandbox/extensions.contribution": {
 			"runtimeExtension": "正在运行的扩展"
 		},
 		"vs/workbench/contrib/extensions/electron-sandbox/extensionsActions": {
 			"openExtensionsFolder": "打开扩展文件夹"
+		},
+		"vs/workbench/contrib/extensions/electron-sandbox/extensionsAutoProfiler": {
+			"show": "显示扩展程序",
+			"unresponsive-exthost": "扩展“{0}”的上一次操作花费时间较长，阻碍了其他扩展的运行。"
 		},
 		"vs/workbench/contrib/extensions/electron-sandbox/extensionsSlowActions": {
 			"attach.msg": "这是一个提醒, 以确保您没有忘记将 \"{0}\" 附加到刚刚创建的问题。",
@@ -5572,6 +5741,7 @@
 		},
 		"vs/workbench/contrib/files/browser/editors/textFileEditor": {
 			"createFile": "创建文件",
+			"fileNotFoundError": "找不到文件",
 			"openFolderError": "文件是目录",
 			"textFileEditor": "文本文件编辑器"
 		},
@@ -5602,6 +5772,7 @@
 			"explorerViewIcon": "查看资源管理器视图的图标。",
 			"folders": "文件夹",
 			"miViewExplorer": "资源管理器(&&E)",
+			"noFolderButEditorsHelp": "尚未打开文件夹。\r\n[打开文件夹](command:{0})\r\n打开文件夹将关闭所有当前打开的编辑器。要使其保持打开状态，请改为 [添加文件夹](command:{1})。",
 			"noFolderHelp": "尚未打开文件夹。\r\n[打开文件夹](command:{0})",
 			"noWorkspaceHelp": "尚未将文件夹添加到工作区。\r\n[添加文件夹](command:{0})",
 			"openEditorsIcon": "查看打开编辑器视图的图标。",
@@ -5622,9 +5793,9 @@
 			"confirmMoveTrashMessageFolder": "是否确实要删除“{0}”及其内容?",
 			"confirmMoveTrashMessageMultiple": "是否确定要删除以下 {0} 个文件?",
 			"confirmMoveTrashMessageMultipleDirectories": "是否确定要删除以下 {0} 个文件夹及其内容?",
-			"copyBulkEdit": "复制 {0} 文件",
+			"copyBulkEdit": "粘贴 {0} 个文件",
 			"copyFile": "复制",
-			"copyFileBulkEdit": "复制 {0}",
+			"copyFileBulkEdit": "粘贴{0}",
 			"copyingBulkEdit": "正在复制 {0} 个文件",
 			"copyingFileBulkEdit": "正在复制 {0}",
 			"createBulkEdit": "创建 {0}",
@@ -5729,7 +5900,7 @@
 			"save": "保存",
 			"saveAll": "全部保存",
 			"saveAs": "另存为...",
-			"saveWithoutFormatting": "保存但不更改格式"
+			"saveWithoutFormatting": "保存但不格式化"
 		},
 		"vs/workbench/contrib/files/browser/fileImportExport": {
 			"addFolder": "将文件夹添加到工作区(&&A)",
@@ -5738,7 +5909,6 @@
 			"chooseWhereToDownload": "选择下载位置",
 			"confirmManyOverwrites": "目标文件夹中已存在以下 {0} 个文件和/或文件夹。是否要替换它们?",
 			"confirmOverwrite": "目标文件夹中已存在名称为\"{0}\"的文件或文件夹。是否要替换它？",
-			"copyFile": "复制 {0}",
 			"copyFolder": "复制文件夹(&&C)",
 			"copyFolders": "复制文件夹(&&C)",
 			"copyfolder": "确定要复制“{0}”吗?",
@@ -5746,7 +5916,6 @@
 			"copyingFile": "正在复制 {0}",
 			"copyingFiles": "正在复制...",
 			"copyingnFile": "正在复制 {0} 资源",
-			"copynFile": "复制 {0} 资源",
 			"downloadBulkEdit": "下载 {0}",
 			"downloadButton": "下载",
 			"downloadProgressLarge": "{0} ({1}/{2}，{3}/秒)",
@@ -5757,6 +5926,8 @@
 			"dropFolders": "是否要复制文件夹或将其添加到工作区?",
 			"fileInaccessible": "无法访问已删除文件以进行导入。",
 			"filesInaccessible": "无法访问部分或所有已删除文件，以进行导入。",
+			"importFile": "导入{0}",
+			"importnFile": "导入 {0} 个资源",
 			"irreversible": "此操作不可逆!",
 			"overwrite": "覆盖 {0}",
 			"overwriting": "正在覆盖 {0}",
@@ -5773,25 +5944,29 @@
 			"autoReveal.focusNoScroll": "文件不会滚动到视图中，但仍会获得焦点。",
 			"autoReveal.off": "不会显示和选择文件。",
 			"autoReveal.on": "将显示和选择文件。",
-			"autoSave": "对自动保存具有未保存更改的编辑器进行控制。阅读有关自动保存的详细信息[此处](https://code.visualstudio.com/docs/editor/codebasics#_save-auto-save)。",
+			"autoSave": "控制具有未保存更改的编辑器的 [自动保存](https://code.visualstudio.com/docs/editor/codebasics#_save-auto-save)。",
 			"autoSaveDelay": "控制自动保存具有未保存更改的编辑器之前的延迟(以毫秒为单位)。只有当 `#files.autoSave#` 设置为 `{0}` 时才适用。",
 			"binaryFileEditor": "二进制文件编辑器",
 			"compressSingleChildFolders": "控制资源管理器是否应以紧凑形式呈现文件夹。在这种形式中，单个子文件夹将被压缩在组合的树元素中。例如，对 Java 包结构很有用。",
 			"confirmDelete": "控制资源管理器是否在把文件删除到废纸篓时进行确认。",
 			"confirmDragAndDrop": "控制在资源管理器内拖放移动文件或文件夹时是否进行确认。",
+			"confirmUndo": "控制资源管理器如何参与撤消文件和文件夹编辑。",
 			"copyRelativePathSeparator": "复制相对文件路径时使用的路径分隔字符。",
 			"copyRelativePathSeparator.auto": "使用操作系统特定路径分隔字符。",
 			"copyRelativePathSeparator.backslash": "使用反斜杠作为路径分隔字符。",
 			"copyRelativePathSeparator.slash": "使用斜杠作为路径分隔字符。",
-			"defaultLanguage": "分配给新文件的默认语言模式。如果配置为\"${activeEditorLanguage}\"，将使用当前活动文本编辑器的语言模式(如果有)。",
+			"defaultLanguage": "分配给新文件的默认语言标识符。如果配置为 \"${activeEditorLanguage}\"，将使用当前活动文本编辑器(如果有)的语言标识符。",
 			"enableDragAndDrop": "控制浏览器是否允许通过拖放移动文件和文件夹。此设置仅影响从浏览器内部拖放。",
+			"enableUndo.allow": "资源管理器将在不提示的情况下撤消文件和文件夹创建事件。",
+			"enableUndo.disable": "资源管理器不参与撤消事件。",
+			"enableUndo.warn": "资源管理器将在撤消所有文件和文件夹创建事件之前提示。",
 			"encoding": "在读取和写入文件时使用的默认字符集编码。可以按语言对此项进行配置。",
 			"eol": "默认行尾字符。",
 			"eol.CRLF": "CRLF",
 			"eol.LF": "LF",
 			"eol.auto": "使用具体操作系统规定的行末字符。",
 			"everything": "设置整个文件的格式。",
-			"exclude": "配置用于排除文件和文件夹的 glob 模式。例如，文件资源管理器根据此设置决定要显示或隐藏的文件和文件夹。请参阅 `#search.exclude#` 设置以定义特定于搜索的排除。在[此处](https://code.visualstudio.com/docs/editor/codebasics#_advanced-search-options)详细了解 glob 模式。",
+			"exclude": "配置 [glob 模式](https://code.visualstudio.com/docs/editor/codebasics#_advanced-search-options)以排除文件和文件夹。例如，文件资源管理器根据此设置决定要显示或隐藏的文件和文件夹。请参阅 \"#search.exclude#\" 设置以定义特定于搜索的排除。",
 			"expandSingleFolderWorkspaces": "控制资源管理器是否应在初始化过程中展开仅包含一个文件夹的多根工作区",
 			"explorer.decorations.badges": "控制文件修饰是否应使用徽章。",
 			"explorer.decorations.colors": "控制文件修饰是否应使用颜色。",
@@ -5803,10 +5978,6 @@
 			"files.autoSave.onWindowChange": "当窗口失去焦点时，会自动保存具有更改的编辑器。",
 			"files.exclude.boolean": "匹配文件路径所依据的 glob 模式。设置为 true 或 false 可启用或禁用该模式。",
 			"files.exclude.when": "对匹配文件的同级文件的其他检查。使用 $(basename) 作为匹配文件名的变量。",
-			"files.experimentalSandboxedFileService": "实验性: 更改文件服务为沙盒化。除非指示，否则不要更改此项!",
-			"files.legacyWatcher.default": "如果使用的是预览体验成员版本，或者每次打开多根工作区时，都将启用新的文件观察程序。",
-			"files.legacyWatcher.off": "禁用旧文件观察程序，并使新文件观察程序能够从其功能中获益。",
-			"files.legacyWatcher.on": "如果新文件观察程序出现问题，请启用旧文件观察程序。",
 			"files.restoreUndoStack": "重新打开文件后，还原撤消堆栈。",
 			"files.saveConflictResolution": "当文件保存到磁盘上并被另一个程序更改时，可能会发生保存冲突。 为了防止数据丢失，要求用户将编辑器中的更改与磁盘上的版本进行比较。 仅当经常遇到保存冲突错误时，才应更改此设置；如果不谨慎使用，可能会导致数据丢失。",
 			"files.simpleDialog.enable": "启用简单文件对话框。启用时，简单文件对话框将替换系统文件对话框。",
@@ -5819,7 +5990,6 @@
 			"hotExit.onExitAndWindowClose": "触发 \"workbench.action.quit\" 命令(命令面板、键绑定、菜单)或在 Windows/Linux 上关闭最后一个窗口时将触发热退出，还将对已打开文件夹的所有窗口触发热退出(无论是否是最后一个窗口)。所有未打开文件夹的窗口将在下次启动时恢复。可通过“文件”>“打开最近使用的文件”>“更多…”，访问之前打开的窗口(包含未保存的文件)列表",
 			"hotExit.onExitAndWindowCloseBrowser": "当浏览器退出或窗口或选项卡关闭时，将触发热退出。",
 			"insertFinalNewline": "启用后，保存文件时在文件末尾插入一个最终新行。",
-			"legacyWatcher": "控制用于文件监视的机制。只有当看到与文件监视相关的问题时才更改此机制。",
 			"maxMemoryForLargeFilesMB": "在打开大型文件时，控制 VS Code 可在重启后使用的内存。在命令行中指定 `--max-memory=新的大小` 参数可达到相同效果。",
 			"modification": "格式修改(需要源代码管理)。",
 			"modificationIfAvailable": "将尝试只对修改进行格式化(需要源代码管理)。如果无法使用源代码管理，则将格式化整个文件。",
@@ -5829,10 +5999,11 @@
 			"simple": "在重复名称的末尾附加单词“copy”，后面可能跟一个数字",
 			"smart": "在重复名称的末尾添加一个数字。如果某个号码已经是名称的一部分，请尝试增加该号码",
 			"sortOrder": "控制文件和文件夹在资源管理器中的基于属性的排列。",
-			"sortOrder.alphabetical": "编辑器按字母顺序在每个编辑器组中进行排序。",
+			"sortOrder.alphabetical": "Editors are ordered alphabetically by tab name inside each editor group.",
 			"sortOrder.default": "按名称排列文件和文件夹。文件夹显示在文件前。",
 			"sortOrder.editorOrder": "编辑器按编辑器标签显示的顺序排列。",
 			"sortOrder.filesFirst": "按名称排列文件和文件夹。文件显示在文件夹前。",
+			"sortOrder.fullPath": "Editors are ordered alphabetically by full path inside each editor group.",
 			"sortOrder.mixed": "按名称排列文件和文件夹。两者穿插显示。",
 			"sortOrder.modified": "按最后修改日期降序排列文件和文件夹。文件夹显示在文件前。",
 			"sortOrder.type": "按拓展类型为文件和文件夹分组，然后按名称排列它们。文件夹显示在文件前。",
@@ -5883,12 +6054,13 @@
 			"dirtyCounter": "{0} 个未保存",
 			"flipLayout": "切换垂直/水平编辑器布局",
 			"miToggleEditorLayout": "翻转布局(&&L)",
+			"miToggleEditorLayoutWithoutMnemonic": "Flip Layout",
 			"newUntitledFile": "新的无标题文件",
 			"openEditors": "打开的编辑器"
 		},
 		"vs/workbench/contrib/files/browser/workspaceWatcher": {
 			"enospcError": "无法在这个大型工作区文件夹中监视文件更改。请按照说明链接来解决此问题。",
-			"eshutdownError": "文件更改观察程序意外停止。请重新加载窗口以再次启用观察程序。",
+			"eshutdownError": "文件更改观察程序意外停止。重新加载窗口可能再次启用观察程序，除非无法监视工作区的文件更改。",
 			"learnMore": "说明",
 			"reload": "重新加载"
 		},
@@ -6120,6 +6292,9 @@
 			"markers.panel.single.warning.label": "1 条警告",
 			"markers.panel.title.problems": "问题",
 			"problems.panel.configuration.autoreveal": "在打开文件时，控制是否在“问题”视图中对其进行定位。",
+			"problems.panel.configuration.compareOrder": "控制问题导航的顺序。",
+			"problems.panel.configuration.compareOrder.position": "导航按位置排序的问题",
+			"problems.panel.configuration.compareOrder.severity": "导航按严重性排序的问题",
 			"problems.panel.configuration.showCurrentInStatus": "启用后，状态栏中将显示当前问题。",
 			"problems.panel.configuration.title": "问题预览",
 			"problems.tree.aria.label.error.marker": "{0} 生成的错误: {2} 行 {3} 列，{1}。{4}",
@@ -6139,10 +6314,14 @@
 		"vs/workbench/contrib/notebook/browser/contrib/cellCommands/cellCommands": {
 			"notebookActions.changeCellToCode": "将单元格更改为代码",
 			"notebookActions.changeCellToMarkdown": "将单元格更改为 Markdown",
+			"notebookActions.collapseAllCellInput": "折叠所有单元格输入",
+			"notebookActions.collapseAllCellOutput": "折叠所有单元格输出",
 			"notebookActions.collapseCellInput": "折叠单元格输入",
 			"notebookActions.collapseCellOutput": "折叠单元格输出",
 			"notebookActions.copyCellDown": "向下复制单元格",
 			"notebookActions.copyCellUp": "向上复制单元格",
+			"notebookActions.expandAllCellInput": "展开所有单元格输入",
+			"notebookActions.expandAllCellOutput": "展开所有单元格输出",
 			"notebookActions.expandCellInput": "展开单元格输入",
 			"notebookActions.expandCellOutput": "展开单元格输出",
 			"notebookActions.joinCellAbove": "加入上一个单元格",
@@ -6191,8 +6370,24 @@
 			"ariaSearchNoResult": "为“{1}”找到 {0}",
 			"ariaSearchNoResultEmpty": "已找到 {0}",
 			"ariaSearchNoResultWithLineNumNoCurrentMatch": "为“{1}”找到 {0}",
+			"notebook.findInMarkdownPreview": "在 Markdown 预览中查找",
+			"notebook.findInOutput": "在单元格输出中查找",
 			"notebookActions.findInNotebook": "在笔记本中查找",
-			"notebookActions.hideFind": "隐藏“在笔记本中查找”"
+			"notebookActions.hideFind": "隐藏“在笔记本中查找”",
+			"notebookMenu.notebookFindFilter": "笔记本查找筛选器"
+		},
+		"vs/workbench/contrib/notebook/browser/contrib/find/notebookFindReplaceWidget": {
+			"findFilterIcon": "查找小组件中的“查找筛选器”图标。",
+			"label.closeButton": "关闭",
+			"label.find": "查找",
+			"label.nextMatchButton": "下一个匹配项",
+			"label.previousMatchButton": "上一个匹配项",
+			"label.replace": "替换",
+			"label.replaceAllButton": "全部替换",
+			"label.replaceButton": "替换",
+			"label.toggleReplaceButton": "切换替换",
+			"placeholder.find": "查找",
+			"placeholder.replace": "替换"
 		},
 		"vs/workbench/contrib/notebook/browser/contrib/fold/folding": {
 			"fold.cell": "折叠单元格",
@@ -6255,7 +6450,8 @@
 			"notebookActions.executeAndSelectBelow": "执行笔记本单元格并在下方选择",
 			"notebookActions.executeBelow": "执行单元格及以下",
 			"notebookActions.executeNotebook": "全部运行",
-			"notebookActions.renderMarkdown": "呈现所有 Markdown 单元格"
+			"notebookActions.renderMarkdown": "呈现所有 Markdown 单元格",
+			"revealRunningCell": "转到正在运行的单元格"
 		},
 		"vs/workbench/contrib/notebook/browser/controller/insertCellActions": {
 			"notebookActions.insertCodeCellAbove": "在上方插入代码单元格",
@@ -6351,6 +6547,8 @@
 			"notebook.globalToolbar.description": "控制是否在笔记本编辑器中呈现全局工具栏。",
 			"notebook.globalToolbarShowLabel": "控制笔记本工具栏上的操作是否应呈现标签。",
 			"notebook.insertToolbarPosition.description": "控制插入单元格操作应出现的位置。",
+			"notebook.interactiveWindow.collapseCodeCells": "Controls whether code cells in the interactive window are collapsed by default.",
+			"notebook.markup.fontSize": "控制笔记本中呈现标记的字号。设置为 `0` 时，将使用 120% 的 `#editor.fontSize#`。",
 			"notebook.showCellStatusbar.description": "是否应显示单元格状态栏。",
 			"notebook.showCellStatusbar.hidden.description": "单元格状态栏始终隐藏。",
 			"notebook.showCellStatusbar.visible.description": "单元格状态栏始终可见。",
@@ -6366,9 +6564,6 @@
 			"fail.noEditor": "无法使用类型为“{0}”的笔记本编辑器打开资源，请检查是否已安装或启用了正确的扩展。",
 			"fail.reOpen": "使用 VS Code 标准文本编辑器重新打开文件"
 		},
-		"vs/workbench/contrib/notebook/browser/notebookEditorKernelManager": {
-			"notebookRunTrust": "执行笔记本单元将从此工作区运行代码。"
-		},
 		"vs/workbench/contrib/notebook/browser/notebookEditorWidget": {
 			"focusedCellBackground": "将焦点放在单元格上时单元格的背景色。",
 			"notebook.cellBorderColor": "笔记本单元格的边框颜色。",
@@ -6377,7 +6572,7 @@
 			"notebook.cellInsertionIndicator": "笔记本单元格插入指示符的颜色。",
 			"notebook.cellStatusBarItemHoverBackground": "笔记本单元格状态栏项的背景色。",
 			"notebook.cellToolbarSeparator": "单元格底部工具栏中分隔符的颜色",
-			"notebook.focusedCellBorder": "将焦点放在单元格上时单元格边框的颜色。",
+			"notebook.focusedCellBorder": "将焦点放在单元格上时单元格焦点指示器边框的颜色。",
 			"notebook.focusedEditorBorder": "笔记本单元格编辑器边框的颜色。",
 			"notebook.inactiveFocusedCellBorder": "当主要焦点在编辑器外时，聚焦单元格时单元格的上下边框的颜色。",
 			"notebook.inactiveSelectedCellBorder": "选定多个单元格时单元格边框的颜色。",
@@ -6393,6 +6588,9 @@
 			"notebookStatusSuccessIcon.foreground": "单元格状态栏中笔记本单元格的错误图标颜色。",
 			"notebookTreeAriaLabel": "笔记本",
 			"selectedCellBackground": "选中某个单元格时该单元格的背景色。"
+		},
+		"vs/workbench/contrib/notebook/browser/notebookExecutionServiceImpl": {
+			"notebookRunTrust": "执行笔记本单元将从此工作区运行代码。"
 		},
 		"vs/workbench/contrib/notebook/browser/notebookIcons": {
 			"clearIcon": "用于在笔记本编辑器中清除单元格输出的图标。",
@@ -6426,6 +6624,28 @@
 			"no": "否",
 			"yes": "是"
 		},
+		"vs/workbench/contrib/notebook/browser/view/cellParts/cellEditorOptions": {
+			"notebook.cell.toggleLineNumbers.title": "显示单元格行号",
+			"notebook.lineNumbers": "控制单元格编辑器中行号的显示。",
+			"notebook.showLineNumbers": "显示笔记本行号",
+			"notebook.toggleLineNumbers": "切换笔记本行号"
+		},
+		"vs/workbench/contrib/notebook/browser/view/cellParts/cellOutput": {
+			"builtinRenderInfo": "内置",
+			"curruentActiveMimeType": "当前处于活动状态",
+			"installJupyterPrompt": "从市场安装其他呈现器",
+			"pickMimeType": "更改演示文稿",
+			"promptChooseMimeType.placeHolder": "为当前项选择要渲染的 mime 类型",
+			"promptChooseMimeTypeInSecure.placeHolder": "为当前项选择要渲染的 mime 类型",
+			"unavailableRenderInfo": "呈现器不可用"
+		},
+		"vs/workbench/contrib/notebook/browser/view/cellParts/codeCell": {
+			"cellExpandInputButtonLabel": "展开单元格输入({0})",
+			"cellExpandInputButtonLabelWithDoubleClick": "双击以展开单元格输入({0})"
+		},
+		"vs/workbench/contrib/notebook/browser/view/cellParts/codeCellRunToolbar": {
+			"notebook.moreRunActionsLabel": "更多..."
+		},
 		"vs/workbench/contrib/notebook/browser/view/output/outputRenderer": {
 			"empty": "单元格没有输出",
 			"noRenderer.1": "找不到 mimetype \"{0}\" 的呈现器，但市场中可能提供了一个呈现器。",
@@ -6436,30 +6656,11 @@
 			"notebook.emptyMarkdownPlaceholder": "空白 Markdown 单元格，请双击或按 Enter 进行编辑。",
 			"notebook.error.rendererNotFound": "找不到“$0”的呈现器"
 		},
-		"vs/workbench/contrib/notebook/browser/view/renderers/cellEditorOptions": {
-			"notebook.cell.toggleLineNumbers.title": "显示单元格行号",
-			"notebook.lineNumbers": "控制单元格编辑器中行号的显示。",
-			"notebook.showLineNumbers": "显示笔记本行号",
-			"notebook.toggleLineNumbers": "切换笔记本行号"
-		},
-		"vs/workbench/contrib/notebook/browser/view/renderers/cellOutput": {
-			"builtinRenderInfo": "内置",
-			"curruentActiveMimeType": "当前处于活动状态",
-			"installJupyterPrompt": "从市场安装其他呈现器",
-			"pickMimeType": "选择输出 Mimetype",
-			"promptChooseMimeType.placeHolder": "为当前项选择要渲染的 mime 类型",
-			"promptChooseMimeTypeInSecure.placeHolder": "为当前项选择要渲染的 mime 类型",
-			"unavailableRenderInfo": "呈现器不可用"
-		},
 		"vs/workbench/contrib/notebook/browser/view/renderers/cellRenderer": {
 			"cellExecutionOrderCountLabel": "执行顺序",
 			"cellExpandOutputButtonLabel": "展开单元格输出(${0})",
 			"cellExpandOutputButtonLabelWithDoubleClick": "双击以展开单元格输出({0})",
-			"notebook.moreRunActionsLabel": "更多..."
-		},
-		"vs/workbench/contrib/notebook/browser/view/renderers/codeCell": {
-			"cellExpandInputButtonLabel": "展开单元格输入({0})",
-			"cellExpandInputButtonLabelWithDoubleClick": "双击以展开单元格输入({0})"
+			"cellOutputsCollapsedMsg": "输出已折叠"
 		},
 		"vs/workbench/contrib/notebook/browser/viewParts/notebookKernelActionViewItem": {
 			"select": "选择内核"
@@ -6701,6 +6902,7 @@
 		"vs/workbench/contrib/preferences/browser/settingsLayout": {
 			"appearance": "外观",
 			"application": "应用程序",
+			"audioCues": "Audio Cues",
 			"breadcrumbs": "导航路径",
 			"comments": "评论",
 			"commonlyUsed": "常用设置",
@@ -6747,6 +6949,8 @@
 			"configuredIn": "修改于",
 			"copySettingAsJSONLabel": "将设置复制为 JSON 文本",
 			"copySettingIdLabel": "复制设置 id",
+			"defaultOverriddenDetails": "Default value overridden by {0}",
+			"defaultOverrideLabelText": "($(wrench) Overridden by: {0})",
 			"editInSettingsJson": "在 settings.json 中编辑",
 			"extensionSyncIgnoredLabel": "同步: 已忽略",
 			"extensions": "扩展",
@@ -6759,6 +6963,7 @@
 			"settings.Modified": "已修改。",
 			"settingsContextMenuTitle": "更多操作...",
 			"stopSyncingSetting": "同步此设置",
+			"syncIgnoredTitle": "设置同步不同步此设置",
 			"trustLabel": "此设置仅可应用于受信任的工作区",
 			"validationError": "验证错误。"
 		},
@@ -6779,7 +6984,7 @@
 			"excludeSiblingInputPlaceholder": "当符合此模式的项目存在时...",
 			"focusedRowBackground": "聚焦时设置行的背景色。",
 			"headerForeground": "节标题或活动标题的前景颜色。",
-			"itemInputPlaceholder": "字符串项...",
+			"itemInputPlaceholder": "项...",
 			"listSiblingHintLabel": "列出与\"${1}\"同级的项目\"{0}\"",
 			"listSiblingInputPlaceholder": "同级...",
 			"listValueHintLabel": "列出项目\"{0}\"",
@@ -7002,6 +7207,7 @@
 			"invalidWorkspaceDetail": "工作区不存在。请选择另一个工作区以打开。",
 			"invalidWorkspaceMessage": "工作区不存在",
 			"invalidWorkspacePrimary": "打开工作区(&&O)...",
+			"pauseSocketWriting": "连接: 暂停套接字写入",
 			"remote": "远程",
 			"remote.autoForwardPorts": "启用后，将检测到新的正在运行的进程，并自动转发其侦听的端口。禁用此设置将不会阻止转发所有端口。即使禁用，扩展将仍然能够导致端口被转发，并且打开某些 URL 仍将导致端口被转发。",
 			"remote.autoForwardPortsSource": "设置当 \"remote.autoForwardPorts\" 为 true 时自动从其转发端口的源。在 Windows 和 Mac 远程设备上，\"process\" 选项不起作用，系统将使用 \"output\"。需要重新加载才能生效。",
@@ -7027,6 +7233,7 @@
 			"remote.portsAttributes.silent": "在自动转发此端口时，不显示任何通知，也不执行任何操作。",
 			"remote.restoreForwardedPorts": "还原您在工作区中转发的端口。",
 			"remoteExtensionLog": "远程服务器",
+			"triggerReconnect": "连接: 触发器重新连接",
 			"ui": "UI 扩展类型。在远程窗口中，只有在本地计算机上可用时，才会启用此类扩展。",
 			"workspace": "工作区扩展类型。在远程窗口中，仅在远程上可用时启用此类扩展。"
 		},
@@ -7058,8 +7265,8 @@
 			"minimapGutterAddedBackground": "添加的线的迷你地图装订线背景颜色。",
 			"minimapGutterDeletedBackground": "删除的线的迷你地图装订线背景颜色。",
 			"minimapGutterModifiedBackground": "修改的线的迷你地图装订线背景颜色。",
-			"move to next change": "移动到下一个更改",
-			"move to previous change": "移动到上一个更改",
+			"move to next change": "转到下一个更改",
+			"move to previous change": "转到上一个更改",
 			"overviewRulerAddedForeground": "概览标尺中已增加内容的颜色。",
 			"overviewRulerDeletedForeground": "概览标尺中已删除内容的颜色。",
 			"overviewRulerModifiedForeground": "概览标尺中已修改内容的颜色。",
@@ -7071,11 +7278,14 @@
 			"alwaysShowRepository": "控制存储库是否应始终在 SCM 视图中可见。",
 			"autoReveal": "控制 SCM 视图在打开文件时是否应自动显示和选择文件。",
 			"diffDecorations": "控制编辑器中差异的显示效果。",
+			"diffDecorationsIgnoreTrimWhitespace": "控制在源代码管理差异装订线修饰中是否忽略前导空格和尾随空格。",
 			"diffGutterWidth": "控制装订线中差异修饰的宽度(px)(已添加或已修改)。",
 			"inputFontFamily": "控制输入消息的字体。将 `default` 用于工作台用户界面字体系列，将 `editor` 用于 `#editor.fontFamily#` 的值，或者使用自定义字体系列。",
 			"inputFontSize": "控制输入消息的字号(以像素为单位)。",
+			"manageWorkspaceTrustAction": "管理工作区信任",
 			"miViewSCM": "SCM(&&C)",
 			"no open repo": "当前没有源代码管理提供程序进行注册。",
+			"no open repo in an untrusted workspace": "所有已注册的源代码管理提供程序都无法在“受限模式”下工作。",
 			"open in terminal": "在终端打开",
 			"providersVisible": "控制在“源代码管理存储库”部分中可见的存储库数。设置为 \"0\", 以便能够手动调整视图的大小。",
 			"scm accept": "源代码管理: 接受输入",
@@ -7088,6 +7298,10 @@
 			"scm.defaultViewMode": "控制默认的源代码管理存储库视图模式。",
 			"scm.defaultViewMode.list": "将存储库更改显示为列表。",
 			"scm.defaultViewMode.tree": "将存储库更改显示为树。",
+			"scm.defaultViewSortKey": "控制默认的源代码管理存储库排序模式。",
+			"scm.defaultViewSortKey.name": "按文件名对存储库更改进行排序。",
+			"scm.defaultViewSortKey.path": "按路径对存储库更改进行排序。",
+			"scm.defaultViewSortKey.status": "按 SCM 状态对存储库更改进行排序。",
 			"scm.diffDecorations.all": "显示所有可用位置中的差异装饰。",
 			"scm.diffDecorations.gutter": "仅在编辑器行号槽中显示差异装饰。",
 			"scm.diffDecorations.minimap": "仅在缩略图中显示差异装饰。",
@@ -7099,6 +7313,9 @@
 			"scm.diffDecorationsGutterVisibility": "控制行号槽中源代码管理差异装饰器的可见性。",
 			"scm.diffDecorationsGutterVisibility.always": "始终显示行号槽中的差异装饰器。",
 			"scm.diffDecorationsGutterVisibility.hover": "仅在悬停时显示行号槽中的差异装饰器。",
+			"scm.diffDecorationsIgnoreTrimWhitespace.false": "不要忽略前导空格和尾随空格。",
+			"scm.diffDecorationsIgnoreTrimWhitespace.inherit": "继承自 `diffEditor.ignoreTrimWhitespace`。",
+			"scm.diffDecorationsIgnoreTrimWhitespace.true": "忽略前导空格和尾随空格。",
 			"scm.providerCountBadge": "控制源代码管理提供程序标头的计数锁屏提醒。仅在有多个提供程序时才显示这些标头。",
 			"scm.providerCountBadge.auto": "仅显示非零时源代码管理提供程序的计数锁屏提醒。",
 			"scm.providerCountBadge.hidden": "隐藏源代码管理提供程序计数锁屏提醒。",
@@ -7159,7 +7376,7 @@
 			"copyAllLabel": "全部复制",
 			"copyMatchLabel": "复制",
 			"copyPathLabel": "复制路径",
-			"exclude": "配置glob模式以在全文本搜索和快速打开中排除文件和文件夹。从“＃files.exclude＃”设置继承所有glob模式。在[此处](https://code.visualstudio.com/docs/editor/codebasics#_advanced-search-options)了解更多关于glob模式的信息",
+			"exclude": "配置 [glob 模式](https://code.visualstudio.com/docs/editor/codebasics#_advanced-search-options)以在全文搜索和快速打开中排除文件和文件夹。从 \"#files.exclude#\" 设置继承所有 glob 模式。",
 			"exclude.boolean": "匹配文件路径所依据的 glob 模式。设置为 true 或 false 可启用或禁用该模式。",
 			"exclude.when": "对匹配文件的同级文件的其他检查。使用 $(basename) 作为匹配文件名的变量。",
 			"filterSortOrder": "控制在快速打开中筛选时编辑器历史记录的排序顺序。",
@@ -7171,6 +7388,7 @@
 			"findInFolder": "在文件夹中查找...",
 			"findInWorkspace": "在工作区中查找...",
 			"focusSearchListCommandLabel": "聚焦到列表",
+			"maintainFileSearchCacheDeprecated": "搜索缓存保留在从不关闭的扩展主机中，因此不再需要此设置。",
 			"miFindInFiles": "在文件中查找(&&I)",
 			"miGotoSymbolInWorkspace": "转到工作区中的符号(&&W)…",
 			"miReplaceInFiles": "在文件中替换(&&I)",
@@ -7184,7 +7402,6 @@
 			"search.collapseAllResults": "控制是折叠还是展开搜索结果。",
 			"search.collapseResults.auto": "结果少于10个的文件将被展开。其他的则被折叠。",
 			"search.followSymlinks": "控制是否在搜索中跟踪符号链接。",
-			"search.forceSearchProcess": "启用后，本地窗口中的搜索会在单独的搜索流程而非扩展主机中运行。",
 			"search.globalFindClipboard": "控制“搜索”视图是否读取或修改 macOS 的共享查找剪贴板。",
 			"search.location": "控制搜索功能是显示在侧边栏，还是显示在水平空间更大的面板区域。",
 			"search.location.deprecationMessage": "此设置已弃用。可以改为将搜索图标拖到新位置。",
@@ -7224,6 +7441,7 @@
 			"useGlobalIgnoreFiles": "控制在搜索文件时是否使用全局 “.gitignore” 和 “.ignore” 文件。需要启用 “#search.useIgnoreFiles#”。",
 			"useIgnoreFiles": "控制在搜索文件时是否使用 `.gitignore` 和 `.ignore` 文件。",
 			"usePCRE2Deprecated": "弃用。当使用仅 PCRE2 支持的正则表达式功能时，将自动使用 PCRE2。",
+			"useParentIgnoreFiles": "控制在搜索文件时是否在父目录中使用 \".gitignore\" 和 \".ignore\" 文件。需要启用 \"#search.useIgnoreFiles#\"。",
 			"useRipgrep": "此设置已被弃用，将回退到 \"search.usePCRE2\"。",
 			"useRipgrepDeprecated": "已弃用。请考虑使用 \"search.usePCRE2\" 获取对高级正则表达式功能的支持。"
 		},
@@ -7415,7 +7633,6 @@
 			"enable.snippet": "在 IntelliSense 中显示",
 			"isDisabled": "(从 IntelliSense 中隐藏)",
 			"pick.placeholder": "选择代码段",
-			"sep.extSnippet": "扩展代码片段",
 			"sep.userSnippet": "用户代码片段",
 			"sep.workspaceSnippet": "工作区代码片段",
 			"snippet.suggestions.label": "插入片段"
@@ -7542,7 +7759,7 @@
 			"saveBeforeRun.save": "保存",
 			"selectProblemMatcher": "选择针对何种错误和警告扫描任务输出",
 			"showOutput": "显示输出",
-			"taskQuickPick.userSettings": "用户设置",
+			"taskQuickPick.userSettings": "用户",
 			"taskService.ignoreingFolder": "忽略工作区文件夹 {0} 的任务配置。多文件夹工作区任务支持要求所有文件夹都使用任务版本 2.0.0\r\n",
 			"taskService.openDiff": "打开差异",
 			"taskService.openDiffs": "打开差异",
@@ -7849,7 +8066,7 @@
 			"ConfigurationParser.noShell": "警告: 仅当在终端中执行任务时支持 shell 配置。",
 			"ConfigurationParser.noTaskName": "错误: 任务必须提供 label 属性。将忽略该任务。\r\n{0}\r\n",
 			"ConfigurationParser.noTaskType": "错误: 任务配置必须具有 type 属性。将忽略此配置。\r\n{0}\r\n",
-			"ConfigurationParser.noTypeDefinition": "错误: 没有注册任务类型“{0}”。你是不是忘记安装含有相应任务提供器的扩展?",
+			"ConfigurationParser.noTypeDefinition": "错误: 不存在已注册的任务类型“{0}”。是否已错过安装提供相应任务提供程序的扩展?",
 			"ConfigurationParser.notCustom": "错误: 任务未声明为自定义任务。将忽略此配置。\r\n{0}\r\n",
 			"ConfigurationParser.unknownMatcherKind": "警告: 定义的问题匹配器未知。支持的类型为 string | ProblemMatcher | Array<string | ProblemMatcher>。\r\n{0}\r\n",
 			"TaskParse.noOsSpecificGlobalTasks": "任务版本 2.0.0 不支持全局操作系统专属任务。请将其转换为具有操作系统特定命令的任务。受影响的任务有:\r\n{0}",
@@ -7860,7 +8077,7 @@
 		"vs/workbench/contrib/tasks/common/taskDefinitionRegistry": {
 			"TaskDefinition.description": "实际任务类型。请注意，以 \"$\" 开头的类型仅保留内部使用。",
 			"TaskDefinition.properties": "任务类型的其他属性",
-			"TaskDefinition.when": "必须为 true 才能启用此类型任务的条件。请考虑使用适合此任务定义的 `shellExecutionSupported`、`processExecutionSupported` 和 `customExecutionSupported`。",
+			"TaskDefinition.when": "启用此类型任务是必需为 true 的条件。请考虑根据此任务定义使用 `shellExecutionSupported`、`processExecutionSupported` 和 `customExecutionSupported`。有关详细信息，请参阅 [API 文档](https://code.visualstudio.com/api/extension-guides/task-provider#when-clause)。",
 			"TaskDefinitionExtPoint": "配置任务种类",
 			"TaskTypeConfiguration.noType": "任务类型配置缺少必需的 \"taskType\" 属性"
 		},
@@ -7886,6 +8103,10 @@
 			"TaskSystem.runningTask": "存在运行中的任务。要终止它吗?",
 			"TaskSystem.terminateTask": "终止任务(&&T)"
 		},
+		"vs/workbench/contrib/terminal/browser/baseTerminalBackend": {
+			"nonResponsivePtyHost": "与终端 pty 主机进程的连接没有响应，终端可能停止工作。",
+			"restartPtyHost": "重启 pty 主机"
+		},
 		"vs/workbench/contrib/terminal/browser/environmentVariableInfo": {
 			"extensionEnvironmentContributionChanges": "扩展要对终端环境进行以下更改:",
 			"extensionEnvironmentContributionInfo": "扩展已对此终端的环境进行更改",
@@ -7906,12 +8127,14 @@
 			"terminalLinkHandler.followLinkCmd": "Cmd + 单击",
 			"terminalLinkHandler.followLinkCtrl": "Ctrl + 单击"
 		},
+		"vs/workbench/contrib/terminal/browser/links/terminalLinkQuickpick": {
+			"terminal.integrated.fileLinks": "文件",
+			"terminal.integrated.openWebLink": "选择要打开的链接",
+			"terminal.integrated.webLinks": "Web",
+			"terminal.integrated.wordLinks": "Word"
+		},
 		"vs/workbench/contrib/terminal/browser/links/terminalWordLinkProvider": {
 			"searchWorkspace": "搜索工作区"
-		},
-		"vs/workbench/contrib/terminal/browser/remoteTerminalService": {
-			"nonResponsivePtyHost": "与终端 pty 主机进程的连接没有响应，终端可能停止工作。",
-			"restartPtyHost": "重启 pty 主机"
 		},
 		"vs/workbench/contrib/terminal/browser/terminal.contribution": {
 			"miToggleIntegratedTerminal": "终端(&&T)",
@@ -7920,7 +8143,7 @@
 			"terminal": "终端"
 		},
 		"vs/workbench/contrib/terminal/browser/terminalActions": {
-			"emptyTerminalNameError": "必须提供名称。",
+			"emptyTerminalNameInfo": "不提供名称会将其重置为默认值",
 			"noUnattachedTerminals": "没有未附加但要附加到的终端",
 			"quickAccessTerminal": "切换活动终端",
 			"showTerminalTabs": "显示选项卡",
@@ -7940,9 +8163,14 @@
 			"workbench.action.terminal.focusNextPane": "在终端组中聚焦下一终端",
 			"workbench.action.terminal.focusPrevious": "聚焦上一终端组",
 			"workbench.action.terminal.focusPreviousPane": "在终端组中聚焦上一终端",
+			"workbench.action.terminal.goToRecentDirectory": "转到“最近使用的目录”",
 			"workbench.action.terminal.hideFind": "隐藏查找",
+			"workbench.action.terminal.join": "联接终端",
+			"workbench.action.terminal.join.insufficientTerminals": "终端不足，无法执行联接操作",
+			"workbench.action.terminal.join.onlySplits": "所有终端已联接",
 			"workbench.action.terminal.joinInstance": "联接终端",
 			"workbench.action.terminal.kill": "终止活动终端实例",
+			"workbench.action.terminal.killAll": "终止所有终端",
 			"workbench.action.terminal.killEditor": "终止编辑器区域中的活动终端",
 			"workbench.action.terminal.navigationModeExit": "退出导航模式",
 			"workbench.action.terminal.navigationModeFocusNext": "聚焦下一行(导航模式)",
@@ -7967,6 +8195,7 @@
 			"workbench.action.terminal.resizePaneUp": "向上重设终端大小",
 			"workbench.action.terminal.runActiveFile": "在活动终端中运行活动文件",
 			"workbench.action.terminal.runActiveFile.noFile": "只有磁盘上的文件可在终端上运行",
+			"workbench.action.terminal.runRecentCommand": "运行最近使用的命令",
 			"workbench.action.terminal.runSelectedText": "在活动终端运行所选文本",
 			"workbench.action.terminal.scrollDown": "向下滚动(行)",
 			"workbench.action.terminal.scrollDownPage": "向下滚动(页)",
@@ -7978,7 +8207,8 @@
 			"workbench.action.terminal.scrollUpPage": "向上滚动(页)",
 			"workbench.action.terminal.searchWorkspace": "搜索工作区",
 			"workbench.action.terminal.selectAll": "选择全部",
-			"workbench.action.terminal.selectDefaultProfile": "选择默认配置文件",
+			"workbench.action.terminal.selectDefaultShell": "选择默认配置文件",
+			"workbench.action.terminal.selectDetectedLink": "选择检测到的链接",
 			"workbench.action.terminal.selectToNextCommand": "选择下一条命令所有内容",
 			"workbench.action.terminal.selectToNextLine": "选择下一行的所有内容",
 			"workbench.action.terminal.selectToPreviousCommand": "选择上一条命令所有内容",
@@ -8020,28 +8250,25 @@
 			"bellStatus": "铃",
 			"configureTerminalSettings": "配置终端设置",
 			"disconnectStatus": "与进程的连接中断",
-			"dontShowAgain": "不再显示",
 			"keybindingHandling": "某些键绑定在默认情况下不会转到终端，而是由 {0} 进行处理。",
 			"launchFailed.errorMessage": "终端进程启动失败: {0}。",
 			"launchFailed.exitCodeAndCommandLine": "终端进程“{0}”启动失败(退出代码: {1})。",
 			"launchFailed.exitCodeOnly": "终端进程启动失败(退出代码: {0})。",
-			"migrateToProfile": "迁移",
-			"no": "否",
 			"setTerminalDimensionsColumn": "设置固定维度: 列",
 			"setTerminalDimensionsRow": "设置固定维度: 行",
 			"terminal.integrated.a11yPromptLabel": "终端输入",
 			"terminal.integrated.a11yTooMuchOutput": "输出太多，无法朗读。请手动转到行内进行阅读",
 			"terminal.integrated.copySelection.noSelection": "没有在终端中选择要复制的内容",
-			"terminal.slowRendering": "终端 GPU 加速在你的计算机上似乎速度很慢。禁用它可提高性能，是否要切换到禁用? [阅读有关终端设置的更多信息](https://code.visualstudio.com/docs/editor/integrated-terminal#_changing-how-the-terminal-is-rendered)。",
+			"terminal.requestTrust": "创建终端流程需要执行代码",
 			"terminalNavigationMode": "使用 {0} 和 {1} 导航终端缓冲区",
-			"terminalProfileMigration": "终端正在使用已弃用的 shell/shellArgs 设置，是否要将其迁移到配置文件?",
 			"terminalStaleTextBoxAriaLabel": "终端 {0} 环境已过时，请运行“显示环境信息”命令以获取详细信息",
 			"terminalTextBoxAriaLabel": "终端 {0}",
 			"terminalTextBoxAriaLabelNumberAndTitle": "终端 {0}，{1}",
 			"terminated.exitCodeAndCommandLine": "终端进程“{0}”已终止，退出代码: {1}。",
 			"terminated.exitCodeOnly": "终端进程已终止，退出代码: {0}。",
+			"viewCommandOutput": "查看命令输出",
 			"workbench.action.terminal.rename.prompt": "输入终端名称",
-			"yes": "是"
+			"workspaceNotTrustedCreateTerminal": "无法在不受信任的工作区中启动终端流程"
 		},
 		"vs/workbench/contrib/terminal/browser/terminalMenus": {
 			"defaultTerminalProfile": "{0} (默认)",
@@ -8070,24 +8297,30 @@
 		"vs/workbench/contrib/terminal/browser/terminalProcessManager": {
 			"ptyHostRelaunch": "到 shell 进程的连接丢失，正在重启终端…"
 		},
+		"vs/workbench/contrib/terminal/browser/terminalProfileQuickpick": {
+			"ICreateContributedTerminalProfileOptions": "已贡献",
+			"createQuickLaunchProfile": "配置终端配置文件",
+			"enterTerminalProfileName": "输入终端配置文件名称",
+			"terminal.integrated.chooseDefaultProfile": "选择默认的终端配置文件",
+			"terminal.integrated.selectProfileToCreate": "选择要创建的终端配置文件",
+			"terminalProfileAlreadyExists": "有终端配置文件已具有此名称",
+			"terminalProfiles": "配置文件",
+			"terminalProfiles.detected": "已检测"
+		},
+		"vs/workbench/contrib/terminal/browser/terminalProfileResolverService": {
+			"migrateToProfile": "迁移",
+			"terminalProfileMigration": "终端正在使用已弃用的 shell/shellArgs 设置，是否要将其迁移到配置文件?"
+		},
 		"vs/workbench/contrib/terminal/browser/terminalQuickAccess": {
 			"renameTerminal": "重命名终端",
 			"workbench.action.terminal.newWithProfilePlus": "新建具有配置文件的终端",
 			"workbench.action.terminal.newplus": "创建新的终端"
 		},
 		"vs/workbench/contrib/terminal/browser/terminalService": {
-			"ICreateContributedTerminalProfileOptions": "已贡献",
-			"createQuickLaunchProfile": "配置终端配置文件",
-			"enterTerminalProfileName": "输入终端配置文件名称",
 			"localTerminalDescription": "本地",
 			"localTerminalRemote": "⚠: 此 shell 正在{0}本地{1}计算机上运行，而不是在连接的远程计算机上运行",
 			"localTerminalVirtualWorkspace": "⚠: 此 shell 对{0}本地{1}文件夹开放，而不是虚拟文件夹",
-			"terminal.integrated.chooseDefaultProfile": "选择默认的终端配置文件",
-			"terminal.integrated.selectProfileToCreate": "选择要创建的终端配置文件",
-			"terminalProfileAlreadyExists": "有终端配置文件已具有此名称",
-			"terminalProfiles": "配置文件",
-			"terminalProfiles.detected": "已检测",
-			"terminalService.terminalCloseConfirmationPlural": "是否要终止 {0} 个活动终端会话?",
+			"terminalService.terminalCloseConfirmationPlural": "是否要终止{0}活动终端会话?",
 			"terminalService.terminalCloseConfirmationSingular": "是否要终止活动终端会话?",
 			"terminate": "终止"
 		},
@@ -8097,6 +8330,10 @@
 			"moveTabsRight": "向右移动选项卡"
 		},
 		"vs/workbench/contrib/terminal/browser/terminalTabsList": {
+			"capability.commandDetection": "命令检测",
+			"capability.cwdDetection": "当前工作目录检测",
+			"capability.partialCommandDetection": "命令检测(部分)",
+			"shellIntegration.enabled": "已启用 shell 集成",
 			"splitTerminalAriaLabel": "终端 {0} {1}，拆分 {2}/{3}",
 			"terminal.tabs": "终端选项卡",
 			"terminalAriaLabel": "终端{0} {1}",
@@ -8107,6 +8344,12 @@
 			"terminal.useMonospace": "使用 \"monospace\"",
 			"terminalConnectingLabel": "正在启动...",
 			"terminals": "打开终端。"
+		},
+		"vs/workbench/contrib/terminal/browser/xterm/xtermTerminal": {
+			"dontShowAgain": "不再显示",
+			"no": "否",
+			"terminal.slowRendering": "终端 GPU 加速在你的计算机上似乎速度很慢。禁用它可提高性能，是否要切换到禁用? [阅读有关终端设置的更多信息](https://code.visualstudio.com/docs/editor/integrated-terminal#_changing-how-the-terminal-is-rendered)。",
+			"yes": "是"
 		},
 		"vs/workbench/contrib/terminal/common/terminal": {
 			"terminalCategory": "终端",
@@ -8145,6 +8388,8 @@
 			"terminal.integrated.allowChords": "是否允许在终端中同时按下键绑定。请注意，如果设置为 true 且击键导致同时按键，则将绕过 `#terminal.integrated.commandsToSkipShell#`；如果想要按 Ctrl+K 转到 shell (而不是 VS Code)，则将此项设置为 false 尤其有用。",
 			"terminal.integrated.allowMnemonics": "是否允许使用菜单栏助记符(如 Alt+F)来触发“打开菜单栏”。请注意，这将导致在设为 true 时，所有 Alt 击键都跳过 shell。此设置在 macOS 不起作用。",
 			"terminal.integrated.altClickMovesCursor": "如果启用，则当 `#editor.multiCursorModifier#` 设置为 `'alt'` (默认值)时，alt/option+单击会将提示光标重置于鼠标下方。此功能的有效性取决于 shell。",
+			"terminal.integrated.autoReplies": "将自动响应终端中遇到的一组消息。如果消息足够具体，则这有助于自动消除常见响应。请注意，该消息包含转义序列，因此可能无法使用带样式的文本进行回复。每秒只能进行一次回复。",
+			"terminal.integrated.autoReplies.reply": "要发送到流程的回复。",
 			"terminal.integrated.bellDuration": "触发时在终端选项卡中显示响铃的毫秒数。",
 			"terminal.integrated.commandsToSkipShell": "一组命令 ID，其键绑定将不发送至 shell，而是始终由 VS Code 进行处理。这样的话，通常由 shell 使用的键绑定的行为可如同焦点未在终端上时的行为一样，例如按 “Ctrl+P” 来启动“快速打开”。\r\n\r\n&nbsp;\r\n\r\n默认跳过多项命令。要替代默认值并转而将相关命令的键绑定传递给 shell，请添加以 “-” 字符为前缀的命令。例如，添加“-workbench.action.quickOpen” 可使 “Ctrl+P”到达 shell。\r\n\r\n&nbsp;\r\n\r\n在设置编辑器中查看时，下面的默认跳过命令列表会被截断。要查看完整列表，请执行 {1}，然后从下面的列表中搜索第一个命令。\r\n\r\n&nbsp;\r\n\r\n默认跳过的命令:\r\n\r\n{0}",
 			"terminal.integrated.confirmOnExit": "如果存在活动终端会话，控制是否确认窗口关闭的时间。",
@@ -8173,6 +8418,7 @@
 			"terminal.integrated.enableBell": "控制是否启用终端铃声，这在终端名称旁边显示为视觉上的铃铛。",
 			"terminal.integrated.enableFileLinks": "是否在终端中启用文件链接。尤其是在处理网络驱动器时，链接会变慢，因为每个文件链接都会根据文件系统进行验证。更改此项将仅在新的终端中生效。",
 			"terminal.integrated.enablePersistentSessions": "跨窗口重新加载保持工作区的终端会话。",
+			"terminal.integrated.enableShellIntegration": "For supported shells, use shell integration (zsh & bash on mac/linux, pwsh on windows)",
 			"terminal.integrated.env.linux": "具有环境变量的对象，这些变量将添加到 Linux 上的终端要使用的 VS Code 进程。如果设置为 \"null\"，则删除环境变量。",
 			"terminal.integrated.env.osx": "具有环境变量的对象，这些变量将添加到 macOS 中的终端要使用的 VS Code 进程。如果设置为 \"null\"，则删除环境变量。",
 			"terminal.integrated.env.windows": "具有环境变量的对象，这些变量将添加到将由 Windows 上的终端使用的 VS Code 进程。设置为 \"null\" 以删除环境变量。",
@@ -8195,14 +8441,18 @@
 			"terminal.integrated.gpuAcceleration.on": "在终端内启用 GPU 加速。",
 			"terminal.integrated.letterSpacing": "控制终端的字母间距，这是一个整数值，表示要在字符之间增加的额外像素量。",
 			"terminal.integrated.lineHeight": "控制终端的行高，此数字乘以终端字号等于实际行高(以像素为单位)。",
-			"terminal.integrated.localEchoExcludePrograms": "实验: 在终端标题中找到这些程序名称中的任意一个时，将禁用本地回显。",
-			"terminal.integrated.localEchoLatencyThreshold": "试验性: 网络延迟的长度(以毫秒为单位)，本地编辑内容会在终端上回显,而不等待服务器确认。如果为 \"0\"，则本地回显将始终处于打开状态，如果为 \"-1\" 将被禁用。",
-			"terminal.integrated.localEchoStyle": "试验性: 本地回显文本的终端样式，可以是字体样式或 RGB 颜色。",
+			"terminal.integrated.localEchoEnabled": "何时应启用本地回响。此操作将替代 `#terminal.integrated.localEchoLatencyThreshold#`",
+			"terminal.integrated.localEchoEnabled.auto": "仅对远程工作区启用",
+			"terminal.integrated.localEchoEnabled.off": "始终禁用",
+			"terminal.integrated.localEchoEnabled.on": "始终启用",
+			"terminal.integrated.localEchoExcludePrograms": "当在终端标题中找到其中一个程序名称时，将禁用本地回显。",
+			"terminal.integrated.localEchoLatencyThreshold": "网络延迟的长度(以毫秒为单位)，其中本地编辑将在终端上回显，无需等待服务器承认。如果为 '0'，则本地回显将始终开启，如果为 '-1'，则将禁用。",
+			"terminal.integrated.localEchoStyle": "本地回显文本的终端样式；字体样式或 RGB 颜色。",
 			"terminal.integrated.macOptionClickForcesSelection": "控制在 macOS 上使用 Option+单击时是否强制选择内容。这将强制进行常规(行)选择并禁止使用列选择模式。这样，可使用常规终端选择进行复制粘贴，例如在 tmux 中启用鼠标模式时。",
 			"terminal.integrated.macOptionIsMeta": "控制是否将选项键视为 macOS 中的终端上的元键。",
 			"terminal.integrated.minimumContrastRatio": "设置每个单元格的前景色时，将改为尝试符合指定的对比度比率。示例值:\r\n\r\n- 1: 默认值，不执行任何操作。\r\n- 4.5: [WCAG AA 符合(最低)](https://www.w3.org/TR/UNDERSTANDING-WCAG20/visual-audio-contrast-contrast.html)。\r\n- 7: [WCAG AAA 符合(增强)](https://www.w3.org/TR/UNDERSTANDING-WCAG20/visual-audio-contrast7.html).\r\n- 21: 黑底白字或白底黑字。",
 			"terminal.integrated.mouseWheelScrollSensitivity": "要在鼠标滚轮滚动事件的 \"deltaY\" 上使用的乘数。",
-			"terminal.integrated.persistentSessionReviveProcess": "当必须关闭终端流程时(例如当窗口或应用程序关闭时)，这会确定应还原之前终端会话内容的时间，并在下次打开工作区时重新创建流程。还原流程当前工作目录取决于其是否受 shell 支持。",
+			"terminal.integrated.persistentSessionReviveProcess": "当必须关闭终端进程(例如当窗口或应用程序关闭时)时，这将确定何时应还原以前的终端会话内容，以及在下次打开工作区时重新创建的进程。\r\n\r\n注意事项:\r\n\r\n- 进程当前工作目录的还原取决于是否受 shell 支持。\r\n- 在关闭期间保留会话的时间有限，因此在使用高延迟远程连接时可能会中止相应会话。",
 			"terminal.integrated.persistentSessionReviveProcess.never": "永远不要还原终端缓冲区或重新创建流程。",
 			"terminal.integrated.persistentSessionReviveProcess.onExit": "在 Windows/Linux 上关闭最后窗口后或当触发 `workbench.action.quit` 命令(命令面板、键绑定、菜单)时，恢复流程。",
 			"terminal.integrated.persistentSessionReviveProcess.onExitAndWindowClose": "在 Windows/Linux 上关闭最后窗口后或当触发 `workbench.action.quit` 命令(命令面板、键绑定、菜单)或关闭窗口时，恢复流程。",
@@ -8261,7 +8511,8 @@
 			"terminalShellTypeContextKey": "活动终端的 shell 类型，当不存在终端时，此值设置为最后已知值。",
 			"terminalTabsFocusContextKey": "是否聚焦终端选项卡小组件。",
 			"terminalTabsSingularSelectedContextKey": "是否在终端选项卡列表中选择终端。",
-			"terminalTextSelectedContextKey": "是否在活动终端中选择文本。"
+			"terminalTextSelectedContextKey": "是否在活动终端中选择文本。",
+			"terminalViewShowing": "终端视图是否显示"
 		},
 		"vs/workbench/contrib/terminal/common/terminalStrings": {
 			"killTerminal": "终止终端",
@@ -8278,10 +8529,6 @@
 			"workbench.action.terminal.rename": "重命名...",
 			"workbench.action.terminal.sizeToContentWidthInstance": "将大小切换为内容宽度"
 		},
-		"vs/workbench/contrib/terminal/electron-sandbox/localTerminalService": {
-			"nonResponsivePtyHost": "与终端 pty 主机进程的连接没有响应，终端可能停止工作。",
-			"restartPtyHost": "重启 pty 主机"
-		},
 		"vs/workbench/contrib/terminal/electron-sandbox/terminalRemote": {
 			"workbench.action.terminal.newLocal": "新建集成终端(本地)"
 		},
@@ -8291,12 +8538,14 @@
 			"hiddenIcon": "在隐藏的测试显示时其旁边出现的图标。",
 			"testViewIcon": "查看测试视图的图标。",
 			"testingCancelIcon": "用于取消正在进行的测试运行的图标。",
+			"testingCancelRefreshTests": "用于取消刷新测试的按钮上的图标。",
 			"testingDebugAllIcon": "“调试所有测试”操作的图标。",
 			"testingDebugIcon": "“调试测试”操作的图标。",
 			"testingErrorIcon": "针对有错误的测试显示的图标。",
 			"testingFailedIcon": "针对失败的测试显示的图标。",
 			"testingPassedIcon": "针对通过的测试显示的图标。",
 			"testingQueuedIcon": "针对排队的测试显示的图标。",
+			"testingRefreshTests": "用于刷新测试的按钮上的图标。",
 			"testingRunAllIcon": "“运行所有测试”操作的图标。",
 			"testingRunIcon": "“运行测试”操作的图标。",
 			"testingShowAsList": "当测试资源管理器(树形式)被禁用时显示的图标。",
@@ -8318,6 +8567,7 @@
 			"runAllTests": "运行所有测试",
 			"runSelectedTests": "运行测试",
 			"testing.cancelRun": "取消测试运行",
+			"testing.cancelTestRefresh": "取消测试刷新",
 			"testing.clearResults": "清除所有结果",
 			"testing.collapseAll": "折叠所有测试",
 			"testing.configureProfile": "配置测试配置文件",
@@ -8329,6 +8579,7 @@
 			"testing.openOutputPeek": "快速查看输出",
 			"testing.reRunFailTests": "重新运行失败的测试",
 			"testing.reRunLastRun": "重新运行上次运行",
+			"testing.refreshTests": "刷新测试",
 			"testing.runAtCursor": "在光标处运行测试",
 			"testing.runCurrentFile": "在当前文件中运行测试",
 			"testing.runUsing": "使用配置文件执行...",
@@ -8348,7 +8599,7 @@
 		"vs/workbench/contrib/testing/browser/testing.contribution": {
 			"miViewTesting": "测试(&E)",
 			"noTestProvidersRegistered": "尚未在此工作区中找到任何测试。",
-			"searchMarketplaceForTestExtensions": "[查找测试扩展](command:{0})",
+			"searchForAdditionalTestExtensions": "Install Additional Text Extensions...",
 			"test": "测试",
 			"testExplorer": "测试资源管理器"
 		},
@@ -8395,6 +8646,8 @@
 		"vs/workbench/contrib/testing/browser/testingOutputPeek": {
 			"close": "关闭",
 			"debug test": "调试测试",
+			"messageMoreLines1": "再 + 1 行",
+			"messageMoreLinesN": "再 + {0} 行",
 			"run test": "运行测试",
 			"testUnnamedTask": "未命名任务",
 			"testing.debugLastRun": "调试测试运行",
@@ -8425,7 +8678,7 @@
 			"testProgressWithSkip.running": "正在运行测试，通过 {0}/{1} ({2}%, {3} 个已跳过)"
 		},
 		"vs/workbench/contrib/testing/browser/testingViewPaneContainer": {
-			"testing": "正在测试"
+			"testing": "测试"
 		},
 		"vs/workbench/contrib/testing/browser/theme": {
 			"testing.iconErrored": "测试资源管理器中“出错”图标的颜色。",
@@ -8457,7 +8710,11 @@
 			"testing.defaultGutterClickAction.debug": "调试测试。",
 			"testing.defaultGutterClickAction.run": "运行测试。",
 			"testing.followRunningTest": "控制在测试资源管理器视图中是否应遵循正在运行的测试",
-			"testing.gutterEnabled": "控制是否在编辑器装订线中显示测试修饰。"
+			"testing.gutterEnabled": "控制是否在编辑器装订线中显示测试修饰。",
+			"testing.openTesting": "控制何时打开“调试”视图。",
+			"testing.openTesting.neverOpen": "Never automatically open the testing view",
+			"testing.openTesting.openOnTestFailure": "Open the testing view on any test failure",
+			"testing.openTesting.openOnTestStart": "Open the testing view when tests start"
 		},
 		"vs/workbench/contrib/testing/common/constants": {
 			"testGroup.coverage": "覆盖率",
@@ -8480,38 +8737,47 @@
 			"testTrust": "运行测试可能会执行工作区中的代码。"
 		},
 		"vs/workbench/contrib/testing/common/testingContextKeys": {
+			"testing.canRefresh": "指示任何测试控制器是否具有附加的刷新处理程序。",
 			"testing.controllerId": "当前测试项的控制器 ID",
 			"testing.hasConfigurableConfig": "指示是否可以配置测试配置",
 			"testing.hasCoverableTests": "指示是否有测试控制器注册了覆盖率配置",
 			"testing.hasDebuggableTests": "指示是否有测试控制器注册了调试配置",
 			"testing.hasNonDefaultConfig": "指示是否有测试控制器注册了非默认配置",
 			"testing.hasRunnableTests": "指示是否有测试控制器注册了运行配置",
+			"testing.isRefreshing": "指示当前是否有任何测试控制器正在刷新测试。",
 			"testing.peekItemType": "输出速览视图中项的类型。类型为“测试”、“消息”、“任务”或“结果”。",
 			"testing.testId": "当前测试项的 ID，在创建或打开测试项的菜单时设置",
 			"testing.testItemHasUri": "指示测试项是否已定义 URI 的布尔值",
 			"testing.testItemIsHidden": "指示测试项是否处于隐藏状态的布尔值"
 		},
 		"vs/workbench/contrib/themes/browser/themes.contribution": {
+			"browseColorThemes": "浏览其他颜色主题...",
+			"browseProductIconThemes": "浏览其他产品图标主题...",
 			"defaultProductIconThemeLabel": "默认值",
+			"fileIconThemeCategory": "图标主题",
 			"generateColorTheme.label": "使用当前设置生成颜色主题",
 			"installColorThemes": "安装其他颜色主题...",
 			"installIconThemes": "安装其他文件图标主题...",
 			"installProductIconThemes": "安装其他产品图标主题...",
+			"installing extensions": "正在安装扩展 {0}...",
+			"manage extension": "管理扩展",
+			"manageExtensionIcon": "主题选择快速选取中“管理”操作的图标。",
 			"miSelectColorTheme": "颜色主题(&&C)",
 			"miSelectIconTheme": "文件图标主题(&&I)",
 			"miSelectProductIconTheme": "产品图标主题(&&P)",
 			"noIconThemeDesc": "禁用文件图标",
 			"noIconThemeLabel": "无",
-			"preferences": "首选项",
+			"productIconThemeCategory": "产品图标主题",
 			"selectIconTheme.label": "文件图标主题",
 			"selectProductIconTheme.label": "产品图标主题",
 			"selectTheme.label": "颜色主题",
 			"themes.category.dark": "深色主题",
 			"themes.category.hc": "高对比度主题",
 			"themes.category.light": "浅色主题",
-			"themes.selectIconTheme": "选择文件图标主题",
+			"themes.selectIconTheme": "选择文件图标主题(向上/向下键以预览)",
 			"themes.selectIconTheme.label": "文件图标主题",
-			"themes.selectProductIconTheme": "选择产品图标主题",
+			"themes.selectMarketplaceTheme": "键入以搜索更多内容。选择以安装。按向上/向下键进行预览",
+			"themes.selectProductIconTheme": "选择产品图标主题(向上/向下键以预览)",
 			"themes.selectProductIconTheme.label": "产品图标主题",
 			"themes.selectTheme": "选择颜色主题 (按上下箭头键预览)"
 		},
@@ -8836,14 +9102,14 @@
 			"welcome.newFile": "新建文件..."
 		},
 		"vs/workbench/contrib/welcome/common/viewsWelcomeContribution": {
-			"ViewsWelcomeExtensionPoint.proposedAPI": "“{0}”中的 viewsWelcome 贡献要求启用 \"enableProposedApi\"。"
+			"ViewsWelcomeExtensionPoint.proposedAPI": "“{0}”中的 viewsWelcome 贡献需要 “enabledApiProposals: [“contribViewsWelcome”]”才能使用“组”建议的属性。"
 		},
 		"vs/workbench/contrib/welcome/common/viewsWelcomeExtensionPoint": {
 			"contributes.viewsWelcome": "提供视图欢迎内容。只要没有有意义的内容可显示，就会在基于树的视图中呈现欢迎内容，例如未打开文件夹时的文件资源管理器。此类内容作为产品内文档非常有用，可促使用户在某些功能可用之前使用它们。文件资源管理器欢迎视图中的“克隆存储库”按钮就是一个很好的示例。",
 			"contributes.viewsWelcome.view": "为特定视图提供的欢迎页面内容。",
 			"contributes.viewsWelcome.view.contents": "要显示的欢迎内容。内容的格式是 Markdown 的子集，仅支持链接。",
 			"contributes.viewsWelcome.view.enablement": "启用欢迎内容按钮和命令链接的条件。",
-			"contributes.viewsWelcome.view.group": "此欢迎内容所属的组。",
+			"contributes.viewsWelcome.view.group": "此欢迎内容所属的组。建议的 API。",
 			"contributes.viewsWelcome.view.view": "此欢迎内容的目标视图标识符。仅支持基于树的视图。",
 			"contributes.viewsWelcome.view.when": "显示欢迎内容的条件。"
 		},
@@ -8882,7 +9148,7 @@
 			"welcome.markStepInomplete": "标记步骤未完成",
 			"welcome.showAllWalkthroughs": "打开演练...",
 			"workbench.welcomePage.preferReducedMotion": "启用后，减少欢迎页中的移动。",
-			"workbench.welcomePage.walkthroughs.openOnInstall": "启用后，将在安装扩展时打开扩展的演练。",
+			"workbench.welcomePage.walkthroughs.openOnInstall": "启用后，扩展的演练将在安装扩展时打开。",
 			"workspacePlatform": "当前工作区的平台，在远程或无服务器上下文中可能不同于 UI 的平台"
 		},
 		"vs/workbench/contrib/welcome/gettingStarted/browser/gettingStartedColors": {
@@ -9010,7 +9276,7 @@
 			"gettingStarted.topLevelGitClone.title": "克隆 Git 存储库...",
 			"gettingStarted.topLevelGitOpen.description": "连接到远程存储库或拉取请求，以进行浏览、搜索、编辑和提交",
 			"gettingStarted.topLevelGitOpen.title": "打开存储库...",
-			"gettingStarted.topLevelShowWalkthroughs.description": "",
+			"gettingStarted.topLevelShowWalkthroughs.description": "查看编辑器或扩展的演练",
 			"gettingStarted.topLevelShowWalkthroughs.title": "打开演练...",
 			"gettingStarted.videoTutorial.description.interpolated": "请观看系列简短实用视频教程中的第一课，了解 VS Code 的主要功能。\r\n{0}",
 			"gettingStarted.videoTutorial.title": "充电学习",
@@ -9072,7 +9338,7 @@
 			"editorWalkThrough.title": "编辑器操场"
 		},
 		"vs/workbench/contrib/welcome/walkThrough/browser/walkThrough.contribution": {
-			"miPlayground": "Editor Playgrou&&nd",
+			"miPlayground": "编辑器操场(&&N)",
 			"walkThrough.editor.label": "操场"
 		},
 		"vs/workbench/contrib/welcome/walkThrough/browser/walkThroughPart": {
@@ -9146,16 +9412,17 @@
 			"workspaceStartupTrustDetails": "{0} 提供可以自动在此工作区中执行文件的功能。",
 			"workspaceTrust": "是否信任此工作区中的文件的作者?",
 			"workspaceTrustEditor": "工作区信任编辑器",
-			"workspaceTrustEnabledCtx": "是否已启用工作区信任功能。",
-			"workspaceTrustedCtx": "用户是否已信任当前工作区。",
 			"workspacesCategory": "工作区",
 			"yes": "是"
 		},
 		"vs/workbench/contrib/workspace/browser/workspaceTrustEditor": {
 			"addButton": "添加文件夹",
+			"checkListIcon": "适用于工作区信任编辑器中复选标记的图标。",
 			"deleteTrustedUri": "删除路径",
 			"dontTrustButton": "不信任",
+			"editIcon": "适用于工作区信任编辑器中编辑文件夹图标的图标。",
 			"editTrustedUri": "编辑路径",
+			"folderPickerIcon": "适用于工作区信任编辑器中选取文件夹图标的图标。",
 			"hostColumnLabel": "主机",
 			"invalidTrust": "不能信任存储库中的单个文件夹。",
 			"localAuthority": "本地",
@@ -9163,8 +9430,10 @@
 			"noTrustedFoldersDescriptions": "尚未信任任何文件夹或工作区文件。",
 			"pathColumnLabel": "路径",
 			"pickerTrustedUri": "打开“文件选取器”",
+			"removeIcon": "适用于工作区信任编辑器中删除文件夹图标的图标。",
 			"root element label": "管理工作区信任",
 			"selectTrustedUri": "选择要信任的文件夹",
+			"shieldIcon": "适用于横幅上工作区信任图标的图标。",
 			"trustAll": "你将信任 {0} 上的所有存储库。",
 			"trustButton": "信任",
 			"trustMessage": "信任当前文件夹或其父级“{0}”中所有文件的作者。",
@@ -9203,7 +9472,12 @@
 			"untrustedWorkspace": "在受限模式下",
 			"untrustedWorkspaceReason": "此工作区通过以下受信任文件夹中的加粗条目得到信任。",
 			"untrustedWorkspaceSubtitle": "你不信任当前工作区中文件的作者。已禁用以下功能:",
-			"workspaceTrustEditorHeaderActions": "[配置设置]({0}) 或 [了解详细信息](https://aka.ms/vscode-workspace-trust)。"
+			"workspaceTrustEditorHeaderActions": "[配置设置]({0}) 或 [了解详细信息](https://aka.ms/vscode-workspace-trust)。",
+			"xListIcon": "工作区信任编辑器中十字形的图标。"
+		},
+		"vs/workbench/contrib/workspace/common/workspace": {
+			"workspaceTrustEnabledCtx": "是否已启用工作区信任功能。",
+			"workspaceTrustedCtx": "用户是否已信任当前工作区。"
 		},
 		"vs/workbench/contrib/workspaces/browser/workspaces.contribution": {
 			"openWorkspace": "打开工作区",
@@ -9237,6 +9511,10 @@
 			"summary.n0": "在 1 个文件中进行了 {0} 次编辑",
 			"workspaceEdit": "工作区编辑",
 			"nothing": "未做编辑"
+		},
+		"vs/workbench/services/configuration/browser/configurationService": {
+			"configurationDefaults.description": "为配置提供默认值",
+			"experimental": "试验"
 		},
 		"vs/workbench/services/configuration/common/configurationEditingService": {
 			"errorConfigurationFileDirty": "由于该文件具有未保存的更改，因此无法写入到用户设置。请先保存该用户设置文件，然后重试。",
@@ -9376,6 +9654,8 @@
 		},
 		"vs/workbench/services/extensionManagement/browser/extensionBisect": {
 			"bisect": "扩展二等分处于活动状态，已禁用 {0} 扩展。请从这些选项中进行选择，检查是否仍可重现问题并继续操作。",
+			"bisect.plural": "扩展二等分处于活动状态，已禁用 {0} 扩展。请从这些选项中进行选择，检查是否仍可重现问题并继续操作。",
+			"bisect.singular": "Extension Bisect 处于活动状态，且已禁用 1 个扩展。请从这些选项中进行选择，以检查是否仍然可以重现问题并继续操作。",
 			"detail.start": "扩展二等分将通过二分查找的方式确认引起问题的扩展。在此过程中，窗口将会不断重新加载(约{0}次)，每次都必须确认是否出现问题",
 			"done": "继续",
 			"done.detail": "扩展二等分已完成，已将 {0} 标识为导致问题的扩展。",
@@ -9441,7 +9721,8 @@
 			"remote": "远程"
 		},
 		"vs/workbench/services/extensionManagement/electron-sandbox/remoteExtensionManagementService": {
-			"notFoundCompatibleDependency": "无法安装 '{0}' 扩展，因为其与当前 VS Code 版本(版本 {1})不兼容。"
+			"notFoundCompatibleDependency": "无法安装“{0}”扩展，因为它与当前 {1} 版本不兼容(版本 {2})。",
+			"notFoundCompatiblePrereleaseDependency": "无法安装“{0}”扩展的预发布版本，因为它与当前 {1} 版本(版本 {2})不兼容。"
 		},
 		"vs/workbench/services/extensionRecommendations/common/workspaceExtensionsConfig": {
 			"select for add": "将扩展建议添加到",
@@ -9483,6 +9764,8 @@
 			"extensionKind.ui-workspace": "定义可在任意一侧运行的扩展，并首选在本地计算机上运行。",
 			"extensionKind.workspace": "定义一个扩展，该扩展只能在连接远程窗口时在远程计算机上运行。",
 			"extensionKind.workspace-ui": "定义可在任意一侧运行的扩展，并首选在远程计算机上运行。",
+			"product.extensionAllowedProposedApi": "请改用 \"extensionEnabledApiProposals\"。",
+			"product.extensionEnabledApiProposals": "相应扩展可以自由使用的 API 建议。",
 			"ui": "UI 扩展类型。在远程窗口中, 仅本地计算机可用时启用此类扩展。",
 			"vscode.extension.activationEvents": "VS Code 扩展的激活事件。",
 			"vscode.extension.activationEvents.onAuthenticationRequest": "每次从指定的身份验证提供程序请求会话时发出的激活事件。",
@@ -9501,6 +9784,7 @@
 			"vscode.extension.activationEvents.onRenderer": "每当使用笔记本输出呈现器时发出激活事件。",
 			"vscode.extension.activationEvents.onSearch": "在开始从给定协议的文件夹中搜索时发出的激活事件。",
 			"vscode.extension.activationEvents.onStartupFinished": "启动完成后(在所有 \"*\" 激活的扩展完成激活后)发出的激活事件。",
+			"vscode.extension.activationEvents.onTaskType": "每当需要列出或解决特定类型的任务时，都会发出激活事件。",
 			"vscode.extension.activationEvents.onTerminalProfile": "启动特定终端配置文件时发出的激活事件。",
 			"vscode.extension.activationEvents.onUri": "在打开系统范围内并指向此扩展的 URI 时发出的激活事件。",
 			"vscode.extension.activationEvents.onView": "在指定视图被展开时发出的激活事件。",
@@ -9530,6 +9814,8 @@
 			"vscode.extension.contributes": "由此包表示的 VS Code 扩展的所有贡献。",
 			"vscode.extension.contributes.extensionPack": "可一起安装的一组扩展。扩展的标识符始终为 ${publisher}.${name}。例如: vscode.csharp。",
 			"vscode.extension.displayName": "VS Code 库中使用的扩展的显示名称。",
+			"vscode.extension.enableProposedApi.deprecated": "请改用 `enabledApiProposals`。",
+			"vscode.extension.enabledApiProposals": "启用 API 建议以试用它们。仅在 **开发期间有效**。**无法使用此属性发布** 扩展。有关更多详细信息，请访问: https://code.visualstudio.com/api/advanced-topics/using-proposed-api",
 			"vscode.extension.engines": "引擎兼容性。",
 			"vscode.extension.engines.vscode": "对于 VS Code 扩展，指定与其兼容的 VS Code 版本。不能为 *。 例如: ^0.10.5 表示最低兼容 VS Code 版本 0.10.5。",
 			"vscode.extension.extensionDependencies": "其他扩展的依赖关系。扩展的标识符始终是 ${publisher}.${name}。例如: vscode.csharp。",
@@ -9725,13 +10011,37 @@
 			"workspaceName": "{0} (工作区)",
 			"workspaceNameVerbose": "{0} (工作区)"
 		},
+		"vs/workbench/services/language/common/languageService": {
+			"invalid": "“contributes.{0}”无效。应为数组。",
+			"invalid.empty": "“contributes.{0}”的值为空",
+			"opt.aliases": "属性“{0}”可以省略，其类型必须是 \"string[]\"",
+			"opt.configuration": "属性“{0}”可以省略，其类型必须是 \"string\"。",
+			"opt.extensions": "属性“{0}”可以省略，其类型必须是 \"string[]\"",
+			"opt.filenames": "属性“{0}”可以省略，其类型必须是 \"string[]\"",
+			"opt.firstLine": "属性“{0}”可以省略，其类型必须是 \"string\"。",
+			"opt.icon": "可以省略属性 \"{0}\"，并且其类型必须为 \"object\"，并带有类型为 \"string\" 的属性 \"{1}\" 和 \"{2}\"",
+			"opt.mimetypes": "属性“{0}”可以省略，其类型必须是 \"string[]\"",
+			"require.id": "属性“{0}”是必需的，其类型必须是 \"string\"",
+			"vscode.extension.contributes.languages": "有助于语言声明。",
+			"vscode.extension.contributes.languages.aliases": "语言的别名。",
+			"vscode.extension.contributes.languages.configuration": "包含语言配置选项的文件的相对路径。",
+			"vscode.extension.contributes.languages.extensions": "与语言关联的文件扩展名。",
+			"vscode.extension.contributes.languages.filenamePatterns": "与语言关联的文件名 glob 模式。",
+			"vscode.extension.contributes.languages.filenames": "与语言关联的文件名。",
+			"vscode.extension.contributes.languages.firstLine": "与语言文件的第一行匹配的正则表达式。",
+			"vscode.extension.contributes.languages.icon": "要用作文件图标的图标，如果没有图标，主题将为相应语言提供一个。",
+			"vscode.extension.contributes.languages.icon.dark": "使用深色主题时的图标路径",
+			"vscode.extension.contributes.languages.icon.light": "使用浅色主题时的图标路径",
+			"vscode.extension.contributes.languages.id": "语言 ID。",
+			"vscode.extension.contributes.languages.mimetypes": "与语言关联的 Mime 类型。"
+		},
 		"vs/workbench/services/lifecycle/electron-sandbox/lifecycleService": {
 			"errorClose": "尝试关闭窗口({0})时引发了意外错误。",
 			"errorLoad": "尝试更改窗口({0})工作区时引发了意外错误。",
 			"errorQuit": "尝试退出应用程序({0})时引发了意外错误。",
 			"errorReload": "尝试重新加载窗口({0})时引发了意外错误。"
 		},
-		"vs/workbench/services/mode/common/workbenchModeService": {
+		"vs/workbench/services/mode/common/workbenchLanguageService": {
 			"invalid": "“contributes.{0}”无效。应为数组。",
 			"invalid.empty": "“contributes.{0}”的值为空",
 			"opt.aliases": "属性“{0}”可以省略，其类型必须是 \"string[]\"",
@@ -9780,6 +10090,7 @@
 		},
 		"vs/workbench/services/preferences/common/preferencesValidation": {
 			"invalidTypeError": "设置的类型无效，应为 {0}。请使用 JSON 格式进行修复。",
+			"validations.arrayIncorrectType": "类型不正确。应为数组。",
 			"validations.booleanIncorrectType": "类型错误，预期为“布尔”。",
 			"validations.colorFormat": "颜色格式无效。请使用 #RGB、#RGBA、#RRGGBB 或 #RRGGBBAA。",
 			"validations.exclusiveMax": "值必须严格小于 {0}。",
@@ -9821,7 +10132,7 @@
 			"tunnel.source.user": "用户转发",
 			"tunnel.staticallyForwarded": "静态转发"
 		},
-		"vs/workbench/services/remote/electron-sandbox/remoteAgentServiceImpl": {
+		"vs/workbench/services/remote/electron-sandbox/remoteAgentService": {
 			"connectionError": "无法连接到远程扩展主机服务器 (错误: {0})",
 			"devTools": "打开开发人员工具",
 			"directUrl": "在浏览器中打开"
@@ -9875,12 +10186,14 @@
 			"defaultTheme": "默认值",
 			"error.cannotparseicontheme": "分析产品图标文件时出现问题: {0}",
 			"error.fontId": "字体 ID“{0}”缺失或无效。将跳过字体定义。",
+			"error.fontSrc": "字体 '{0}' 中的字体源无效。忽略源。",
 			"error.fontStyle": "字体“{0}”中的字体样式无效。将忽略设置。",
 			"error.fontWeight": "字体“{0}”中的字体粗细无效。将忽略设置。",
+			"error.icon.font": "正在跳过图标定义“{0}”。未知的字体。",
 			"error.icon.fontCharacter": "正在跳过图标定义“{0}”。未知的 fontCharacter。",
-			"error.icon.fontId": "正在跳过图标定义“{0}”。未知的字体。",
 			"error.invalidformat": "产品图标主题文件的格式无效: 应为对象。",
 			"error.missingProperties": "产品图标主题文件的格式无效: 必须包含图标定义和字体。",
+			"error.noFontSrc": "字体 '{0}' 中没有有效的字体源。忽略字体定义。",
 			"error.parseicondefs": "处理中的产品图标定义时出现问题{0}:\r\n{1}"
 		},
 		"vs/workbench/services/themes/browser/workbenchThemeService": {
@@ -9913,13 +10226,13 @@
 		},
 		"vs/workbench/services/themes/common/colorThemeSchema": {
 			"schema.colors": "语法突出显示颜色",
-			"schema.fontStyle.error": "字体样式必须为 \"italic\" (斜体)、\"bold\" (粗体)、\"underline\" (下划线) 、上述的组合或是为空字符串。",
+			"schema.fontStyle.error": "字形必须为 \"italic\" (斜体)、\"bold\" (粗体)、\"underline\" (下划线)、\"strikethrough\" (删除线)、上述的组合或是为空字符串。",
 			"schema.properties.name": "规则的描述。",
 			"schema.properties.scope": "此规则适用的范围选择器。",
 			"schema.semanticTokenColors": "语义标记的颜色",
 			"schema.supportsSemanticHighlighting": "是否应为此主题启用语义突出显示。",
 			"schema.token.background.warning": "暂不支持标记背景色。",
-			"schema.token.fontStyle": "这条规则的字体样式: \"italic\" (斜体)、\"bold\" (粗体)、\"underline\" (下划线) 或是上述的组合。空字符串将清除继承的设置。",
+			"schema.token.fontStyle": "这条规则的字形: \"italic\" (斜体)、\"bold\" (粗体)、\"underline\" (下划线)、\"strikethrough\" (删除线) 或是上述的组合。空字符串将取消继承的设置。",
 			"schema.token.fontStyle.none": "无 (清除继承的设置)",
 			"schema.token.foreground": "标记的前景色。",
 			"schema.token.settings": "标记的颜色和样式。",
@@ -9958,6 +10271,7 @@
 			"schema.languageId": "关联的图标定义的 ID。",
 			"schema.languageIds": "将语言与图标相关联。对象键是语言贡献点中定义的语言 ID。",
 			"schema.light": "浅色主题中文件图标的可选关联。",
+			"schema.showLanguageModeIcons": "配置如果主题未为某个语言定义图标，是否应使用默认语言图标。",
 			"schema.src": "字体的位置。"
 		},
 		"vs/workbench/services/themes/common/iconExtensionPoint": {
@@ -9977,7 +10291,7 @@
 			"invalid.iconFonts.configuration": "\"configuration.iconFonts\" 必须是数组",
 			"invalid.iconFonts.id": "必须定义 'configuration.iconFonts.id' 且它不可为空",
 			"invalid.iconFonts.id.format": "'configuration.iconFonts.id' 必须仅包含字母、数字、下划线和减号。",
-			"invalid.iconFonts.proposedAPI": "'configuration.iconFonts 是提议的贡献点，仅在开发用完或使用以下命令行开关时可用: --enable-proposed-api {0}",
+			"invalid.iconFonts.proposedAPI": "“configuration.iconFonts 是建议的贡献点。它需要 “package.json#enabledApiProposals: [“contribIconFonts”]”，并且仅在开发用完或使用以下命令行开关时可用: --enable-proposed-api {0}",
 			"invalid.iconFonts.src": "\"configuration.iconFonts.src\" 必须是含有图标字体位置的数组。",
 			"invalid.iconFonts.src.item": "'configuration.iconFonts.src' 的项必须是具有属性 'path' 和 'format' 的对象",
 			"invalid.iconFonts.src.path": "`contributes.iconFonts.src.path` ({0})应包含在扩展的文件夹({0})内。这可能会使扩展不可移植。",
@@ -9986,7 +10300,7 @@
 			"invalid.icons.description": "必须定义 'configuration.icons.description' 且它不可为空",
 			"invalid.icons.id": "必须定义 'configuration.icons.id' 且它不可为空",
 			"invalid.icons.id.format": "\"configuration.icons.id\" 只能包含字母、数字和减号，且必须按 \"component-iconname\" 格式由至少两段组成。",
-			"invalid.icons.proposedAPI": "'configuration.icons 是提议的贡献点，仅在开发用完或使用以下命令行开关时可用: --enable-proposed-api {0}"
+			"invalid.icons.proposedAPI": "“configuration.icons 是建议的贡献点。它需要 “package.json#enabledApiProposals: [“contribIcons”]”，并且仅在开发用完或使用以下命令行开关时可用: --enable-proposed-api {0}"
 		},
 		"vs/workbench/services/themes/common/productIconThemeSchema": {
 			"schema.font-format": "字体的格式。",
@@ -10154,6 +10468,7 @@
 			"backupErrorDetails": "请先尝试保存或还原具有未保存更改的编辑器，然后重试。",
 			"backupTrackerBackupFailed": "以下具有未保存更改的编辑器无法保存到备份位置。",
 			"backupTrackerConfirmFailed": "无法保存或还原以下具有未保存更改的编辑器。",
+			"discardBackupsBeforeShutdown": "放弃备份所需的时间比预期要长...",
 			"revertBeforeShutdown": "还原具有未保存更改的编辑器所需的时间比预期长...",
 			"saveBeforeShutdown": "保存具有未保存更改的编辑器所需的时间比预期长..."
 		},

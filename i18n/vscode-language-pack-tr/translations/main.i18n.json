@@ -79,30 +79,54 @@
 			"date.fromNow.days.singular.ago": "{0} gün önce",
 			"date.fromNow.hours.plural": "{0} saat",
 			"date.fromNow.hours.plural.ago": "{0} saat önce",
+			"date.fromNow.hours.plural.ago.fullWord": "{0} hours ago",
+			"date.fromNow.hours.plural.fullWord": "{0} hours",
 			"date.fromNow.hours.singular": "{0} saat",
 			"date.fromNow.hours.singular.ago": "{0} saat önce",
+			"date.fromNow.hours.singular.ago.fullWord": "{0} hour ago",
+			"date.fromNow.hours.singular.fullWord": "{0} hour",
 			"date.fromNow.in": "{0} içinde",
 			"date.fromNow.minutes.plural": "{0} dakika",
 			"date.fromNow.minutes.plural.ago": "{0} dakika önce",
+			"date.fromNow.minutes.plural.ago.fullWord": "{0} minutes ago",
+			"date.fromNow.minutes.plural.fullWord": "{0} minutes",
 			"date.fromNow.minutes.singular": "{0} dakika",
 			"date.fromNow.minutes.singular.ago": "{0} dakika önce",
+			"date.fromNow.minutes.singular.ago.fullWord": "{0} minute ago",
+			"date.fromNow.minutes.singular.fullWord": "{0} minute",
 			"date.fromNow.months.plural": "{0} ay",
 			"date.fromNow.months.plural.ago": "{0} ay önce",
+			"date.fromNow.months.plural.ago.fullWord": "{0} months ago",
+			"date.fromNow.months.plural.fullWord": "{0} months",
 			"date.fromNow.months.singular": "{0} ay",
 			"date.fromNow.months.singular.ago": "{0} ay önce",
+			"date.fromNow.months.singular.ago.fullWord": "{0} month ago",
+			"date.fromNow.months.singular.fullWord": "{0} month",
 			"date.fromNow.now": "şimdi",
 			"date.fromNow.seconds.plural": "{0} saniye",
 			"date.fromNow.seconds.plural.ago": "{0} saniye önce",
+			"date.fromNow.seconds.plural.ago.fullWord": "{0} seconds ago",
+			"date.fromNow.seconds.plural.fullWord": "{0} seconds",
 			"date.fromNow.seconds.singular": "{0} saniye",
 			"date.fromNow.seconds.singular.ago": "{0} saniye önce",
+			"date.fromNow.seconds.singular.ago.fullWord": "{0} second ago",
+			"date.fromNow.seconds.singular.fullWord": "{0} second",
 			"date.fromNow.weeks.plural": "{0} hafta",
 			"date.fromNow.weeks.plural.ago": "{0} hafta önce",
+			"date.fromNow.weeks.plural.ago.fullWord": "{0} weeks ago",
+			"date.fromNow.weeks.plural.fullWord": "{0} weeks",
 			"date.fromNow.weeks.singular": "{0} hafta",
 			"date.fromNow.weeks.singular.ago": "{0} hafta önce",
+			"date.fromNow.weeks.singular.ago.fullWord": "{0} week ago",
+			"date.fromNow.weeks.singular.fullWord": "{0} week",
 			"date.fromNow.years.plural": "{0} yıl",
 			"date.fromNow.years.plural.ago": "{0} yıl önce",
+			"date.fromNow.years.plural.ago.fullWord": "{0} years ago",
+			"date.fromNow.years.plural.fullWord": "{0} years",
 			"date.fromNow.years.singular": "{0} yıl",
-			"date.fromNow.years.singular.ago": "{0} yıl önce"
+			"date.fromNow.years.singular.ago": "{0} yıl önce",
+			"date.fromNow.years.singular.ago.fullWord": "{0} year ago",
+			"date.fromNow.years.singular.fullWord": "{0} year"
 		},
 		"vs/base/common/errorMessage": {
 			"error.defaultMessage": "Beklenmeyen bir hata oluştu. Daha fazla ayrıntı için lütfen günlüğe bakın.",
@@ -127,6 +151,7 @@
 			"cmdKey.long": "Command",
 			"ctrlKey": "Ctrl",
 			"ctrlKey.long": "Control",
+			"optKey.long": "Seçenek",
 			"shiftKey": "Shift",
 			"shiftKey.long": "Shift",
 			"superKey": "Super",
@@ -210,7 +235,7 @@
 			"diff.clipboard.copyDeletedLinesContent.single.label": "Silinen satırı kopyala",
 			"diff.inline.revertChange.label": "Bu değişikliği geri al"
 		},
-		"vs/editor/common/config/commonEditorConfig": {
+		"vs/editor/common/config/editorConfigurationSchema": {
 			"codeLens": "Düzenleyicinin CodeLens'i gösterip göstermediğini denetler.",
 			"detectIndentation": "Dosya, içeriğine göre açıldığında `#editor.tabSize#` ve `#editor.insertSpaces#` değerlerinin otomatik algılanıp algılanmayacağını denetler.",
 			"editorConfigurationTitle": "Düzenleyici",
@@ -364,6 +389,7 @@
 			"folding": "Düzenleyicide kod katlamanın etkin olup olmayacağını denetler.",
 			"foldingHighlight": "Düzenleyicinin katlanmış aralıkları vurgulayıp vurgulamayacağını denetler.",
 			"foldingImportsByDefault": "Düzenleyicinin içeri aktarma aralıklarını otomatik olarak daraltıp daraltmayacağını denetler.",
+			"foldingMaximumRegions": "The maximum number of foldable regions. Increasing this value may result in the editor becoming less responsive when the current source has a large number of foldable regions.",
 			"foldingStrategy": "Katlama aralıklarını hesaplama stratejisini denetler.",
 			"foldingStrategy.auto": "Varsa dile özgü bir katlama stratejisi; aksi takdirde girinti tabanlı bir katlama stratejisi kullan.",
 			"foldingStrategy.indentation": "Girinti tabanlı katlama stratejisini kullan.",
@@ -497,6 +523,13 @@
 			"tabCompletion.on": "Sekmeyle tamamlama, sekme tuşuna basıldığında en iyi eşleşen öneriyi ekler.",
 			"tabCompletion.onlySnippets": "Ön eki eşleştiğinde kod parçacığını sekmeyle tamamla. 'quickSuggestions' etkinleştirilmediğinde en iyi sonucu verir.",
 			"unfoldOnClickAfterEndOfLine": "Katlanmış bir satırdan sonraki boş içeriğe tıklamanın katlamayı açıp açmayacağını denetler.",
+			"unicodeHighlight.allowedCharacters": "Vurgulanmamış, izin verilmiş karakterleri tanımlar.",
+			"unicodeHighlight.allowedLocales": "İzin verilen yerel ayarlarda yaygın olan Unicode karakterler vurgulanmıyor.",
+			"unicodeHighlight.ambiguousCharacters": "Geçerli kullanıcı yerel ayarında yaygın olan karakterler dışında, temel ASCII karakterleriyle karıştırılabilecek karakterlerin vurgulanmış olup olmadığını kontrol eder.",
+			"unicodeHighlight.includeComments": "Yorumlardaki karakterlerin unicode vurgusuna da tabi olup olmamasını denetler.",
+			"unicodeHighlight.includeStrings": "Dizelerdeki karakterlerin unicode vurgusuna da tabi olup olmamasını denetler.",
+			"unicodeHighlight.invisibleCharacters": "Yalnızca boşluk tutan veya genişliği olmayan karakterlerin vurgulanmış olup olmadığını kontrol eder.",
+			"unicodeHighlight.nonBasicASCII": "Temel olmayan tüm ASCII karakterlerinin vurgulanmış olup olmadığını kontrol eder. Yalnızca U+0020 ile U+007E arasındaki karakterler, sekme, satır ilerletme ve satır başı karakterleri temel ASCII olarak kabul edilir.",
 			"unusualLineTerminators": "Soruna neden olabilecek olağan dışı satır sonlandırıcıları kaldır.",
 			"unusualLineTerminators.auto": "Olağan dışı satır sonlandırıcılar otomatik olarak kaldırılır.",
 			"unusualLineTerminators.off": "Olağan dışı satır sonlandırıcılar yoksayılır.",
@@ -550,11 +583,11 @@
 			"inDiffEditor": "Bağlamın fark düzenleyicisi olup olmadığını belirtir",
 			"textInputFocus": "Düzenleyici veya zengin metin girişinin odağa sahip olup olmadığını (imlecin yanıp sönmesi) belirtir"
 		},
+		"vs/editor/common/languages/modesRegistry": {
+			"plainText.alias": "Düz Metin"
+		},
 		"vs/editor/common/model/editStack": {
 			"edit": "Yazılıyor"
-		},
-		"vs/editor/common/modes/modesRegistry": {
-			"plainText.alias": "Düz Metin"
 		},
 		"vs/editor/common/standaloneStrings": {
 			"accessibilityHelpMessage": "Erişilebilirlik Seçenekleri için Alt+F1 tuşlarına basın.",
@@ -620,6 +653,7 @@
 			"editorBracketPairGuide.background6": "Etkin olmayan köşeli ayraç çifti kılavuzlarının arka plan rengi (6). Köşeli ayraç çifti kılavuzlarının etkinleştirilmesini gerektirir.",
 			"editorCodeLensForeground": "Düzenleyici CodeLens'inin ön plan rengi",
 			"editorCursorBackground": "Düzenleyici imlecinin arka plan rengi. Bir blok imleç ile örtüşen bir karakterin rengini özelleştirmeye izin verir.",
+			"editorGhostTextBackground": "Düzenleyicideki soluk metnin arka plan rengi.",
 			"editorGhostTextBorder": "Düzenleyicideki soluk metnin kenarlık rengi.",
 			"editorGhostTextForeground": "Düzenleyicideki soluk metnin ön plan rengi.",
 			"editorGutter": "Düzenleyici cilt payının arka plan rengi. Cilt payı, karakter kenar boşluklarını ve satır numaralarını içerir.",
@@ -628,6 +662,7 @@
 			"editorOverviewRulerBackground": "Düzenleyiciye genel bakış cetvelinin arka plan rengi. Yalnızca mini harita etkinleştirilip düzenleyicinin sağ tarafına yerleştirildiğinde kullanılır.",
 			"editorOverviewRulerBorder": "Genel bakış cetveli kenarlığının rengi.",
 			"editorRuler": "Düzenleyici cetvellerinin rengi.",
+			"editorUnicodeHighlight.border": "Unicode karakterleri vurgulamak için kullanılan kenarlık rengi.",
 			"editorWhitespaces": "Boşluk karakterlerinin düzenleyicideki rengi.",
 			"lineHighlight": "İmleç konumunda satırın vurgulanması için arka plan rengi.",
 			"lineHighlightBorderBox": "İmleç konumunda satırın çevresindeki kenarlığın arka plan rengi.",
@@ -731,6 +766,10 @@
 			"cursor.undo": "İmleç Geri Alma"
 		},
 		"vs/editor/contrib/find/findController": {
+			"actions.find.isRegexOverride": "\"Normal İfade Kullan\" bayrağını geçersiz kılar.\r\nBayrak gelecek için kaydedilmez.\r\n0: Hiçbir Şey Yapma\r\n1: True\r\n2: False",
+			"actions.find.matchCaseOverride": "\"Matematik Harfleri\" bayrağını geçersiz kılar.\r\nBayrak gelecek için kaydedilmez.\r\n0: Hiçbir Şey Yapma\r\n1: True\r\n2: Yanlış",
+			"actions.find.preserveCaseOverride": "\"Büyük/Küçük Harf Koru\" bayrağını geçersiz kılar.\r\nBayrak gelecek için kaydedilmez.\r\n0: Hiçbir Şey Yapma\r\n1: True\r\n2: Yanlış",
+			"actions.find.wholeWordOverride": "\"Tüm Sözcüğü Eşleştir\" bayrağını geçersiz kılar.\r\nBayrak gelecek için kaydedilmez.\r\n0: Hiçbir Şey Yapma\r\n1: True\r\n2: False",
 			"findNextMatchAction": "Sonrakini Bul",
 			"findPreviousMatchAction": "Öncekini Bul",
 			"miFind": "&&Bul",
@@ -738,6 +777,7 @@
 			"nextSelectionMatchFindAction": "Sonraki Seçimi Bul",
 			"previousSelectionMatchFindAction": "Önceki Seçimi Bul",
 			"startFindAction": "Bul",
+			"startFindWithArgsAction": "Bağımsız Değişkenlerle Bul",
 			"startFindWithSelectionAction": "Seçimle Bul",
 			"startReplace": "Değiştir"
 		},
@@ -782,6 +822,7 @@
 			"gotoNextFold.label": "Sonraki Katlama Aralığına Git",
 			"gotoParentFold.label": "Üst Katlamaya Git",
 			"gotoPreviousFold.label": "Önceki Katlama Aralığına Git",
+			"maximum fold ranges": "The number of foldable regions is limited to a maximum of {0}. Increase configuration option ['Folding Maximum Regions'](command:workbench.action.openSettings?[\"editor.foldingMaximumRegions\"]) to enable more.",
 			"toggleFoldAction.label": "Katlamayı Aç/Kapat",
 			"unFoldRecursivelyAction.label": "Katlamayı Özyinelemeli Olarak Kaldır",
 			"unfoldAction.label": "Katlamayı Kaldır",
@@ -946,6 +987,9 @@
 			"inlineSuggestionFollows": "Öneri:",
 			"showNextInlineSuggestion": "Sonraki",
 			"showPreviousInlineSuggestion": "Önceki"
+		},
+		"vs/editor/contrib/lineSelection/lineSelection": {
+			"expandLineSelection": "Satır Seçimini Genişlet"
 		},
 		"vs/editor/contrib/linesOperations/linesOperations": {
 			"duplicateSelection": "Seçimi Çoğalt",
@@ -1181,6 +1225,7 @@
 			"editorSuggestWidgetSelectedBackground": "Öneri pencere öğesinde seçilen girişin arka plan rengi.",
 			"editorSuggestWidgetSelectedForeground": "Öneri pencere öğesinde seçilen girdinin ön plan rengi.",
 			"editorSuggestWidgetSelectedIconForeground": "Öneri pencere öğesinde seçilen girişin simge ön plan rengi.",
+			"editorSuggestWidgetStatusForeground": "Öneri pencere öğesi durumunun ön plan rengi.",
 			"suggest": "Öner",
 			"suggestWidget.loading": "Yükleniyor...",
 			"suggestWidget.noSuggestions": "Öneri yok."
@@ -1238,6 +1283,31 @@
 		},
 		"vs/editor/contrib/tokenization/tokenization": {
 			"forceRetokenize": "Geliştirici: Zorla Tekrar Belirteçlere Ayır"
+		},
+		"vs/editor/contrib/unicodeHighlighter/unicodeHighlighter": {
+			"action.unicodeHighlight.disableHighlightingInComments": "Açıklamalardaki karakterlerin vurgulanmasını devre dışı bırak",
+			"action.unicodeHighlight.disableHighlightingInStrings": "Dizelerdeki karakterlerin vurgulanmasını devre dışı bırak",
+			"action.unicodeHighlight.disableHighlightingOfAmbiguousCharacters": "Belirsiz karakterlerin vurgusunu devre dışı bırak",
+			"action.unicodeHighlight.disableHighlightingOfInvisibleCharacters": "Görünmez karakterlerin vurgusunu devre dışı bırak",
+			"action.unicodeHighlight.disableHighlightingOfNonBasicAsciiCharacters": "Temel olmayan ASCII karakterlerin vurgusunu devre dışı bırak",
+			"action.unicodeHighlight.showExcludeOptions": "Hariç Tutma Seçeneklerini Göster",
+			"unicodeHighlight.adjustSettings": "Ayarları yapın",
+			"unicodeHighlight.allowCommonCharactersInLanguage": "“{0}” dilinde daya yaygın olan Unicode karakterlere izin ver.",
+			"unicodeHighlight.characterIsAmbiguous": "{0} karakteri, kaynak kodunda daha yaygın olan {1} karakteriyle karıştırılabiliyor.",
+			"unicodeHighlight.characterIsInvisible": "{0} karakteri görünmezdir.",
+			"unicodeHighlight.characterIsNonBasicAscii": "{0} karakteri, temel bir ASCII karakteri değildir.",
+			"unicodeHighlight.configureUnicodeHighlightOptions": "Unicode Vurgulama Seçeneklerini Yapılandır",
+			"unicodeHighlight.disableHighlightingInComments.shortLabel": "Açıklamalarda Vurgulamayı Devre Dışı Bırak",
+			"unicodeHighlight.disableHighlightingInStrings.shortLabel": "Dizelerde Vurgulamayı Devre Dışı Bırak",
+			"unicodeHighlight.disableHighlightingOfAmbiguousCharacters.shortLabel": "Belirsiz Vurgulamayı Devre Dışı Bırak",
+			"unicodeHighlight.disableHighlightingOfInvisibleCharacters.shortLabel": "Görünmez Vurgulamayı Devre Dışı Bırak",
+			"unicodeHighlight.disableHighlightingOfNonBasicAsciiCharacters.shortLabel": "ASCII Dışı Vurgulamayı Devre Dışı Bırak",
+			"unicodeHighlight.excludeCharFromBeingHighlighted": "{0} vurgulanmaktan hariç tut",
+			"unicodeHighlight.excludeInvisibleCharFromBeingHighlighted": "{0} (görünmez karakter) öğesinin vurgulanmasını hariç tut",
+			"unicodeHighlighting.thisDocumentHasManyAmbiguousUnicodeCharacters": "Bu belge birçok belirsiz unicode karakter içeriyor",
+			"unicodeHighlighting.thisDocumentHasManyInvisibleUnicodeCharacters": "Bu belge birçok görünmez unicode karakter içeriyor",
+			"unicodeHighlighting.thisDocumentHasManyNonBasicAsciiUnicodeCharacters": "Bu belge, çok sayıda temel olmayan ASCII unicode karakteri içeriyor",
+			"warningIcon": "Uzantılar düzenleyicisinde uyarı iletisiyle birlikte gösterilen simge."
 		},
 		"vs/editor/contrib/unusualLineTerminators/unusualLineTerminators": {
 			"unusualLineTerminators.detail": "‘{0}’ dosyası, Satır Ayırıcı (LS) veya Paragraf Ayırıcı (PS) gibi bir veya daha fazla olağan dışı satır sonlandırıcı karakter içeriyor.\r\n\r\nBunların dosyadan kaldırılması önerilir. Bu, `editor.unusualLineTerminators` aracılığıyla yapılandırılabilir.",
@@ -1298,6 +1368,7 @@
 		"vs/platform/environment/node/argv": {
 			"add": "Klasörleri son etkin pencereye ekle.",
 			"category": "--list-extensions kullanılırken sağlanan kategoriye göre yüklü uzantıları filtreler.",
+			"deprecated.useInstead": "Bunun yerine {0} kullanın.",
 			"diff": "İki dosyayı birbiriyle karşılaştır.",
 			"disableExtension": "Uzantıyı devre dışı bırak.",
 			"disableExtensions": "Tüm yüklü uzantıları devre dışı bırak.",
@@ -1309,6 +1380,7 @@
 			"help": "Kullanımı yazdır.",
 			"inspect-brk-extensions": "Uzantı konağını başlattıktan sonra duraklatarak uzantılarda hata ayıklamaya ve profil oluşturmaya izin verin. Bağlantı URI'si için geliştirici araçlarını denetleyin.",
 			"inspect-extensions": "Uzantılarda hata ayıklamaya ve profil oluşturmaya izin ver. Bağlantı URI'si için geliştirici araçlarını denetleyin.",
+			"install prerelease": "--install-extension kullanılırken uzantının yayın öncesi sürümünü yükler",
 			"installExtension": "Uzantıyı yükler veya güncelleştirir. Bir uzantının tanımlayıcısı her zaman `${yayımcı}.${ad}` şeklindedir. En son sürüme güncelleştirmek için `--force` bağımsız değişkenini kullanın. Belirli bir sürümü yüklemek için `@${sürüm}` belirtin. Örneğin: 'vscode.csharp@1.2.3'.",
 			"listExtensions": "Yüklü uzantıları listele.",
 			"locale": "Kullanılacak yerel ayar (örneğin en-US veya zh-TW).",
@@ -1337,8 +1409,9 @@
 			"wait": "Dönmeden önce dosyaların kapatılmasını bekleyin."
 		},
 		"vs/platform/environment/node/argvHelper": {
+			"deprecatedArgument": "'{0}' seçeneği kullanım dışı bırakıldı: {1}",
 			"gotoValidation": "`--goto` modundaki bağımsız değişkenler `DOSYA(:SATIR(:KARAKTER))` biçiminde olmalıdır.",
-			"multipleValues": "'{0}' seçeneği birden çok kez tanımlanmış. '{1}' değeri kullanılıyor.",
+			"multipleValues": "'{0}' seçeneği bir kereden fazla tanımlanmış. '{1}' değeri kullanılıyor.",
 			"unknownOption": "Uyarı: '{0}' bilinen seçenekler listesinde değil, ancak yine de Electron'a/Chromium'a geçirildi."
 		},
 		"vs/platform/environment/node/shellEnv": {
@@ -1354,10 +1427,12 @@
 			"multipleDependentsError": "'{0}' uzantısı kaldırılamıyor. '{1}' ve '{2}' uzantıları ve başka uzantılar bu uzantıya bağımlı.",
 			"multipleIndirectDependentsError": "'{0}' uzantısı kaldırılamıyor. '{1}' uzantısının kaldırılmasını içeriyor ancak '{2}', '{3}' ve diğer uzantılar buna bağlı.",
 			"notFoundCompatibleDependency": "'{0}' uzantısı, geçerli {1} sürümü (sürüm {2}) ile uyumlu olmadığından yüklenemiyor.",
+			"notFoundCompatiblePrereleaseDependency": "'{0}' uzantısının yayın öncesi sürümü, geçerli {1} sürümü (sürüm {2}) ile uyumlu olmadığından yüklenemiyor.",
 			"singleDependentError": "'{0}' uzantısı kaldırılamıyor. '{1}' uzantısı bu uzantıya bağımlı.",
 			"singleIndirectDependentError": "'{0}' uzantısı kaldırılamıyor. '{1}' uzantısının kaldırılmasını içeriyor ancak '{2}' uzantısı buna bağlı.",
 			"twoDependentsError": "'{0}' uzantısı kaldırılamıyor. '{1}' ve '{2}' uzantıları bu uzantıya bağımlı.",
-			"twoIndirectDependentsError": "'{0}' uzantısı kaldırılamıyor. '{1}' uzantısının kaldırılmasını içeriyor ancak '{2}' ve '{3}' uzantıları buna bağlı."
+			"twoIndirectDependentsError": "'{0}' uzantısı kaldırılamıyor. '{1}' uzantısının kaldırılmasını içeriyor ancak '{2}' ve '{3}' uzantıları buna bağlı.",
+			"unsupported prerelease extension": "Artık desteklenmediği için “{0}” uzantısı yüklenemiyor. Artık yayın öncesi sürüm olarak “{1}” uzantısının bir parçası."
 		},
 		"vs/platform/extensionManagement/common/extensionManagement": {
 			"extensions": "Uzantılar",
@@ -1459,7 +1534,7 @@
 			"fileTooLargeError": "Dosya açılamayacak kadar büyük",
 			"fileTooLargeForHeapError": "Bu boyuttaki bir dosyayı açmak için yeniden başlatmanız ve daha fazla bellek kullanılmasına izni vermeniz gerekir"
 		},
-		"vs/platform/files/electron-main/diskFileSystemProviderIpc": {
+		"vs/platform/files/electron-main/diskFileSystemProviderServer": {
 			"binFailed": "'{0}' geri dönüşüm kutusuna taşınamadı",
 			"trashFailed": "'{0}' çöp kutusuna taşınamadı"
 		},
@@ -1601,10 +1676,16 @@
 			"telemetryConfigurationTitle": "Telemetri"
 		},
 		"vs/platform/terminal/common/terminalPlatformConfiguration": {
+			"terminal.integrated.automationProfile.linux": "Linux'ta görevler ve hata ayıklama gibi otomasyonla ilgili terminal kullanımı için kullanılacak terminal profili. Bu ayar {0} ise şu anda yok sayılacak.",
+			"terminal.integrated.automationProfile.osx": "macOS'te görevler ve hata ayıklama gibi otomasyonla ilgili terminal kullanımı için kullanılacak terminal profili. Bu ayar {0} ise şu anda yok sayılacak.",
+			"terminal.integrated.automationProfile.windows": "Görevler ve hata ayıklama gibi otomasyonla ilgili terminal kullanımı için kullanılacak terminal profili. Bu ayar {0} ise şu anda yok sayılacak.",
 			"terminal.integrated.automationShell.linux": "Ayarlandığında, görevler ve hata ayıklama gibi otomasyon ile ilgili terminal kullanımı için {0} değerini geçersiz kılacak ve {1} değerlerini yoksayacak bir yol.",
+			"terminal.integrated.automationShell.linux.deprecation": "Bu, kullanım dışıdır. Otomasyon kabuğunuzu yapılandırmanın önerilen yeni yolu, {0} ile bir terminal otomasyonu profili oluşturmaktır. Bu işlem, şu anda yeni otomasyon profili ayarlarına göre önceliklidir, ancak bu gelecekte değişecektir.",
 			"terminal.integrated.automationShell.osx": "Ayarlandığında, görevler ve hata ayıklama gibi otomasyon ile ilgili terminal kullanımı için {0} değerini geçersiz kılacak ve {1} değerlerini yoksayacak bir yol.",
+			"terminal.integrated.automationShell.osx.deprecation": "Bu, kullanım dışıdır. Otomasyon kabuğunuzu yapılandırmanın önerilen yeni yolu, {0} ile bir terminal otomasyonu profili oluşturmaktır. Bu işlem, şu anda yeni otomasyon profili ayarlarına göre önceliklidir, ancak bu gelecekte değişecektir.",
 			"terminal.integrated.automationShell.windows": "Ayarlandığında, görevler ve hata ayıklama gibi otomasyon ile ilgili terminal kullanımı için {0} değerini geçersiz kılacak ve {1} değerlerini yoksayacak bir yol.",
-			"terminal.integrated.confirmIgnoreProcesses": "İşlemleri yoksaymak için özel bir ayar sağlamak üzere yapılandırılabilir",
+			"terminal.integrated.automationShell.windows.deprecation": "Bu, kullanım dışıdır. Otomasyon kabuğunuzu yapılandırmanın önerilen yeni yolu, {0} ile bir terminal otomasyonu profili oluşturmaktır. Bu işlem, şu anda yeni otomasyon profili ayarlarına göre önceliklidir, ancak bu gelecekte değişecektir.",
+			"terminal.integrated.confirmIgnoreProcesses": "{0} ayarı kullanılırken yoksayılacak işlem adlarının kümesi.",
 			"terminal.integrated.defaultProfile.linux": "macOS'ta kullanılan varsayılan profil. {0} veya {1} ayarlandıysa şu anda bu ayar yok sayılır.",
 			"terminal.integrated.defaultProfile.osx": "macOS'ta kullanılan varsayılan profil. {0} veya {1} ayarlandıysa şu anda bu ayar yok sayılır.",
 			"terminal.integrated.defaultProfile.windows": "Windows'ta kullanılan varsayılan profil. {0} veya {1} ayarlandıysa şu anda bu ayar yok sayılır.",
@@ -1625,6 +1706,7 @@
 			"terminal.integrated.shellArgs.windows.string": "Windows terminalinde çalışırken [komut satırı biçimindeki](https://msdn.microsoft.com/en-au/08dfcab2-eb6e-49a4-80eb-87d4076c98c6) komut satırı bağımsız değişkenleri. [Kabuğu yapılandırma hakkında daha fazla bilgi edinin](https://code.visualstudio.com/docs/editor/integrated-terminal#_terminal-profiles).",
 			"terminal.integrated.showLinkHover": "Terminal çıkışındaki bağlantılar için üzerine gelmelerin gösterilip gösterilmeyeceğini belirtir.",
 			"terminal.integrated.useWslProfiles": "Terminal açılır menüsünde WSL dağıtımlarının gösterilip gösterilmeyeceğini denetler",
+			"terminalAutomationProfile.path": "Kabuk yürütülebilir dosyasının tek yolu.",
 			"terminalIntegratedConfigurationTitle": "Tümleşik Terminal",
 			"terminalProfile.args": "Kabuk yürütülebilir dosyası ile çalıştırılacak isteğe bağlı bağımsız değişkenler kümesi.",
 			"terminalProfile.color": "Bu terminalle ilişkilendirilecek tema renk kimliği.",
@@ -1739,8 +1821,9 @@
 			"inputBoxBackground": "Giriş kutusu arka planı.",
 			"inputBoxBorder": "Giriş kutusu kenarlığı.",
 			"inputBoxForeground": "Giriş kutusu ön planı.",
-			"inputOption.activeBackground": "Giriş alanlarındaki etkinleştirilen seçeneklerin arka plan rengi.",
+			"inputOption.activeBackground": "Giriş alanlarındaki seçeneklerin arka plan vurgulama rengi.",
 			"inputOption.activeForeground": "Giriş alanlarında etkinleştirilmiş seçeneklerin ön plan rengi.",
+			"inputOption.hoverBackground": "Giriş alanlarındaki etkinleştirilen seçeneklerin arka plan rengi.",
 			"inputPlaceholderForeground": "Yer tutucu metnin giriş kutusu ön plan rengi.",
 			"inputValidationErrorBackground": "Hata önem derecesi için giriş doğrulama arka plan rengi.",
 			"inputValidationErrorBorder": "Hata önem derecesi için giriş doğrulama kenarlık rengi.",
@@ -1802,12 +1885,14 @@
 			"minimapSliderActiveBackground": "Tıklandığında mini harita kaydırıcı arka plan rengi.",
 			"minimapSliderBackground": "Mini harita kaydırıcı arka plan rengi.",
 			"minimapSliderHoverBackground": "Üzerinde gezinildiğinde mini harita kaydırıcı arka plan rengi.",
+			"minimapUnicodeHighlight": "Vurgulanan Unicode karakterler için mini harita işaretleyici rengi.",
 			"overviewRuleWarning": "Uyarılar için mini harita işaretçi rengi.",
 			"overviewRulerCommonContentForeground": "Satır içi birleştirme çakışmalarında ortak üst öğe genel bakış cetveli ön planı.",
 			"overviewRulerCurrentContentForeground": "Satır içi birleştirme çakışmalarındaki geçerli genel bakış cetveli ön planı.",
 			"overviewRulerFindMatchForeground": "Bulma eşleşmeleri için genel bakış cetveli işaretleyici rengi. Alttaki süslemeleri gizlememesi için rengin opak olmaması gerekir.",
 			"overviewRulerIncomingContentForeground": "Satır içi birleştirme çakışmalarında gelen genel bakış cetveli ön planı.",
 			"overviewRulerSelectionHighlightForeground": "Seçim vurguları için genel bakış cetveli işaretleme rengi. Alttaki süslemeleri gizlememesi için rengin opak olmaması gerekir.",
+			"overviewRulerUnicodeForeground": "Vurgulanan unicode karakterleri için genel bakış cetveli işaretleyici rengi. Alttaki süslemeleri gizlememesi için rengin opak olmaması gerekir.",
 			"pickerBackground": "Hızlı seçici arka plan rengi. Hızlı seçici pencere öğesi, komut paleti gibi seçicilerin kapsayıcısıdır.",
 			"pickerForeground": "Hızlı seçici ön plan rengi. Hızlı seçici pencere öğesi, komut paleti gibi seçicilerin kapsayıcısıdır.",
 			"pickerGroupBorder": "Kenarlıkları gruplamak için hızlı seçici rengi.",
@@ -1834,6 +1919,8 @@
 			"snippetTabstopHighlightBackground": "Kod parçacığı sekme durağının vurgu arka plan rengi.",
 			"snippetTabstopHighlightBorder": "Kod parçacığı sekme durağı için vurgu kenarlık rengi.",
 			"statusBarBackground": "Düzenleyici üzerinde gezinme durum çubuğunun arka plan rengi.",
+			"tableColumnsBorder": "Sütunlar arasındaki tablo kenarlık rengi.",
+			"tableOddRowsBackgroundColor": "Tek sayılı tablo satırları için arka plan rengi.",
 			"textBlockQuoteBackground": "Metindeki blok alıntılar için arka plan rengi.",
 			"textBlockQuoteBorder": "Metindeki blok alıntılar için kenarlık rengi.",
 			"textCodeBlockBackground": "Metindeki kod blokları için arka plan rengi.",
@@ -1882,14 +1969,15 @@
 			"property": "Özelliklerin stili.",
 			"readonly": "Salt okunur semboller için kullanılacak stil.",
 			"regexp": "İfadelerin stili.",
-			"schema.fontStyle.error": "Yazı tipi stili 'italic', 'bold' veya 'underline' ya da bunların bir bileşimi olmalıdır. Boş dize tüm stillerin ayarlarını kaldırır.",
+			"schema.fontStyle.error": "Kuralın yazı tipi stili: 'italic', 'bold, 'underline', 'strikethrough' veya bunların bir bileşimi. Boş dize tüm stillerin ayarlarını kaldırır.",
 			"schema.token.background.warning": "Belirteç arka plan renkleri şu anda desteklenmiyor.",
 			"schema.token.bold": "Yazı tipi stilini kalın olarak ayarlar veya bu ayarı kaldırır. Not: varsa 'fontStyle' bu ayarı geçersiz kılar.",
-			"schema.token.fontStyle": "Kuralın tüm yazı tipi stillerini ayarlar: 'italic', 'bold' veya 'underline' ya da bunların bir bileşimi. Listelenmeyen tüm stillerin ayarı kaldırılır. Boş dize tüm stillerin ayarını kaldırır.",
+			"schema.token.fontStyle": "Kuralın tüm yazı tipi stillerini ayarlar: 'italic', 'bold', 'underline' veya 'strikethrough' ya da bunların bir bileşimi. Listelenmeyen tüm stillerin ayarı kaldırılır. Boş dize tüm stillerin ayarını kaldırır.",
 			"schema.token.fontStyle.none": "Hiçbiri (devralınan stili temizle)",
 			"schema.token.foreground": "Belirteç için ön plan rengi.",
 			"schema.token.italic": "Yazı tipi stilini eğik olarak ayarlar ya da bu ayarı kaldırır. Not: varsa 'fontStyle' bu ayarı geçersiz kılar.",
 			"schema.token.settings": "Belirteç için renkler ve stiller.",
+			"schema.token.strikethrough": "Yazı tipi stilini üstü çizili olarak ayarlar veya bu ayarı kaldırır. Not: varsa 'fontStyle' bu ayarı geçersiz kılar.",
 			"schema.token.underline": "Yazı tipi stilini altı çizili olarak ayarlar veya bu ayarı kaldırır. Not: varsa 'fontStyle' bu ayarı geçersiz kılar.",
 			"static": "Statik semboller için kullanılacak stil.",
 			"string": "Dizelerin stili.",
@@ -2348,7 +2436,7 @@
 		"vs/code/electron-sandbox/processExplorer/processExplorerMain": {
 			"copy": "Kopyala",
 			"copyAll": "Tümünü Kopyala",
-			"cpu": "İşlemci yüzdesi",
+			"cpu": "CPU (%)",
 			"debug": "Hata Ayıkla",
 			"forceKillProcess": "İşlemi Sonlandırmaya Zorla",
 			"killProcess": "İşlemi Sonlandır",
@@ -2367,7 +2455,7 @@
 			"manageTrustedExtensions.cancel": "İptal",
 			"noTrustedExtensions": "Bu hesap henüz hiçbir uzantı tarafından kullanılmamış.",
 			"notUsed": "Bu hesabı kullanmadı",
-			"signOut": "Oturumu kapat",
+			"signOut": "Oturumu Kapat",
 			"signOutMessageSimple": "'{0}' oturumu kapatılsın mı?",
 			"signOutMessagve": "'{0}' hesabını kullanan: \r\n\r\n{1}\r\n\r\n Bu uzantıların oturumu kapatılsın mı?",
 			"signedOut": "Oturum başarıyla kapatıldı."
@@ -2450,13 +2538,14 @@
 		},
 		"vs/workbench/api/browser/viewsExtensionPoint": {
 			"ViewContainerDoesnotExist": "'{0}' görünüm kapsayıcısı yok ve buna kayıtlı tüm görünümler 'Explorer'a eklenecek.",
-			"ViewContainerRequiresProposedAPI": "'{0}' görünüm kapsayıcısının 'Remote' öğesine eklenebilmesi için 'enableProposedApi' özelliğinin açılması gerekir.",
+			"ViewContainerRequiresProposedAPI": "Görünüm kapsayıcısı '{0}', 'enabledApiProposals: [\"contribViewsRemote\"]' özelliğinin 'Remote'a eklenmesini gerektirir.",
 			"duplicateView1": "Aynı `{0}` kimliğine sahip birden çok görünüm kaydedilemez",
 			"duplicateView2": "`{0}` kimliğine sahip bir görünüm zaten kayıtlı.",
 			"optenum": "`{0}` özelliği atlanabilir veya şundan biri olmalıdır: {1}",
 			"optstring": "`{0}` özelliği atlanabilir veya `string` türünde olmalıdır",
 			"requirearray": "görünümler bir dizi olmalıdır",
-			"requireidstring": "`{0}` özelliği zorunludur ve `string` türünde olmalıdır. Yalnızca alfasayısal karakterler ile '_' ve '-' karakterlerine izin verilir.",
+			"requireidstring": "`{0}` özelliği zorunludur ve boş olmayan değer içeren `string` türünde olmalıdır. Yalnızca alfasayısal karakterler ile '_' ve '-' karakterlerine izin verilir.",
+			"requirenonemptystring": "`{0}` özelliği zorunludur ve boş olmayan değer içeren `string` türünde olmalıdır.",
 			"requirestring": "`{0}` özelliği zorunludur ve `string` türünde olmalıdır",
 			"unknownViewType": "Bilinmeyen `{0}` görünüm türü.",
 			"viewcontainer requirearray": "görünüm kapsayıcıları bir dizi olmalıdır",
@@ -2489,8 +2578,7 @@
 			"vscode.extension.contributes.viewsContainers": "Düzenleyiciye görünüm kapsayıcılarıyla katkıda bulunur"
 		},
 		"vs/workbench/api/common/configurationExtensionPoint": {
-			"config.property.defaultConfiguration.languageExpected": "Dil seçicisi bekleniyor (örneğin [\"java\"])",
-			"config.property.defaultConfiguration.warning": "'{0}' için yapılandırma varsayılanları kaydedilemiyor. Yalnızca dile özgü ayarların varsayılanları desteklenir.",
+			"config.property.defaultConfiguration.warning": "'{0}' için yapılandırma varsayılanları kaydedilemiyor. Yalnızca makine tarafından geçersiz kılınabilen, pencere, kaynak ve dil geçersiz kılınabilen kapsamlı ayarlara yönelik varsayılanlar desteklenir.",
 			"config.property.duplicate": "'{0}' kaydedilemiyor. Bu özellik zaten kayıtlı.",
 			"invalid.allOf": "'configuration.allOf' kullanım dışı olduğundan artık kullanılmamalıdır. Bunun yerine, 'configuration' katkı noktasına bir dizi olarak birden çok yapılandırma bölümü geçirin.",
 			"invalid.properties": "'configuration.properties' bir nesne olmalıdır",
@@ -2508,16 +2596,17 @@
 			"scope.markdownDescription": "Markdown biçimindeki açıklama.",
 			"scope.markdownEnumDescriptions": "Markdown biçimindeki sabit listesi değerleri için açıklamalar.",
 			"scope.multilineText.description": "Değer bir metin alanında gösterilir.",
+			"scope.order": "Belirtildiğinde, aynı kategorideki diğer ayarlara göre bu ayarın sırasını verir. Bir sipariş özelliğine sahip ayarlar, bu özellik ayarlanmamış ayarlardan önce yerleştirilecektir.",
 			"scope.resource.description": "Kullanıcı, uzak depo, çalışma alanı veya klasör ayarlarında yapılandırılabilen yapılandırma.",
 			"scope.singlelineText.description": "Değer bir giriş kutusunda gösterilir.",
 			"scope.window.description": "Kullanıcı, uzak depo veya çalışma alanı ayarlarında yapılandırılabilen yapılandırma.",
 			"unknownWorkspaceProperty": "Bilinmeyen çalışma alanı yapılandırma özelliği",
 			"vscode.extension.contributes.configuration": "Yapılandırma ayarlarına katkıda bulunur.",
+			"vscode.extension.contributes.configuration.order": "Belirtildiğinde, bu ayar kategorisinin diğer kategorilere göre sırasını verir.",
 			"vscode.extension.contributes.configuration.properties": "Yapılandırma özelliklerinin açıklaması.",
 			"vscode.extension.contributes.configuration.properties.schema": "Yapılandırma özelliğinin şeması.",
 			"vscode.extension.contributes.configuration.property.empty": "Özellik boş olmamalıdır.",
-			"vscode.extension.contributes.configuration.title": "Ayarların bir özeti. Bu etiket, ayarlar dosyasında ayırıcı açıklama olarak kullanılır.",
-			"vscode.extension.contributes.defaultConfiguration": "Varsayılan düzenleyici yapılandırma ayarlarına dile göre katkıda bulunur.",
+			"vscode.extension.contributes.configuration.title": "Geçerli ayarlar kategorisi için başlık. Bu etiket, Ayarlar düzenleyicisinde alt başlık olarak işlenir. Başlık uzantı görünen adıyla aynıysa, kategori ana uzantı başlığı altında gruplandırılır.",
 			"workspaceConfig.extensions.description": "Çalışma alanı uzantıları",
 			"workspaceConfig.folders.description": "Çalışma alanına yüklenecek klasörlerin listesi.",
 			"workspaceConfig.launch.description": "Çalışma alanı başlatma yapılandırmaları",
@@ -2588,7 +2677,6 @@
 			"menus.editorTitleRun": "Düzenleyici başlığı menüsü içinde Çalıştır alt menüsü",
 			"menus.explorerContext": "Dosya gezgini bağlam menüsü",
 			"menus.extensionContext": "Uzantı bağlam menüsü",
-			"menus.file": "Üst düzey dosya menüsü",
 			"menus.home": "Giriş göstergesi bağlam menüsü (yalnızca web)",
 			"menus.opy": "En üstteki Düzen menüsünde bulunan 'Farklı kopyala' alt menüsü",
 			"menus.resourceFolderContext": "Kaynak Denetimi kaynak klasörü bağlam menüsü",
@@ -2597,8 +2685,6 @@
 			"menus.scmSourceControl": "Kaynak Denetimi menüsü",
 			"menus.scmTitle": "Kaynak Denetimi başlık menüsü",
 			"menus.statusBarRemoteIndicator": "Durum çubuğundaki uzak göstergesi menüsü",
-			"menus.statusBarWindowIndicator": "Durum çubuğundaki pencere göstergesi menüsü",
-			"menus.statusBarWindowIndicator.deprecated": "Bunun yerine 'statusBar/remoteIndicator' menüsünü kullanın.",
 			"menus.touchBar": "Touch Bar (yalnızca macOS)",
 			"missing.altCommand": "Menü öğesi, 'komutlar' bölümünde tanımlanmamış bir '{0}' alt komutuna başvuruyor.",
 			"missing.command": "Menü öğesi, 'komutlar' bölümünde tanımlanmamış bir '{0}' komutuna başvuruyor.",
@@ -2610,8 +2696,8 @@
 			"notebook.toolbar": "Katkıda bulunulan not defteri araç çubuğu menüsü",
 			"opticon": "`icon` özelliği atlanabilir veya bir dize ya da `{koyu, açık}` gibi bir sabit değer olmalıdır",
 			"optstring": "`{0}` özelliği atlanabilir veya `string` türünde olmalıdır",
-			"proposed": "Önerilen API",
-			"proposedAPI.invalid": "{0} önerilen bir menü tanımlayıcısıdır ve yalnızca geliştirme dışında veya şu komut satırı anahtarı ile çalışırken kullanılabilir: --enable-proposed-api {1}",
+			"proposed": "Önerilen API, `enabledApiProposal: [\"{0}\"]` - {1} özelliğini gerektirir",
+			"proposedAPI.invalid": "{0} önerilen bir menü tanımlayıcısıdır. 'package.json#enabledApiProposals: [\"{1}\"]' özelliğini gerektirir ve yalnızca geliştirme dışında veya --enable-proposed-api {2} komut satırı anahtarıyla çalışırken kullanılabilir",
 			"require": "alt menü öğeleri bir nesne olmalıdır",
 			"requireStringOrObject": "`{0}` özelliği zorunludur ve `string` ya da `object` türünde olmalıdır",
 			"requirearray": "alt menü öğeleri bir dizi olmalıdır",
@@ -2662,10 +2748,16 @@
 		},
 		"vs/workbench/browser/actions/developerActions": {
 			"inspect context keys": "Bağlam Anahtarlarını İncele",
+			"keyboardShortcutsFormat.command": "Komut başlığı.",
+			"keyboardShortcutsFormat.commandAndKeys": "Komut başlığı ve anahtarları.",
+			"keyboardShortcutsFormat.commandWithGroup": "Önünde grubuyla komut başlığı.",
+			"keyboardShortcutsFormat.commandWithGroupAndKeys": "Önünde grubuyla komut başlığı ve anahtarları.",
+			"keyboardShortcutsFormat.keys": "Anahtarlar.",
 			"logStorage": "Depolama Veritabanı İçeriklerini Günlüğe Kaydet",
 			"logWorkingCopies": "Çalışma Kopyalarını Günlüğe Kaydet",
 			"screencastMode.fontSize": "Ekran kaydı modu klavyesinin yazı tipi boyutunu (piksel cinsinden) denetler.",
 			"screencastMode.keyboardOverlayTimeout": "Klavye katmanının ekran kaydı modunda ne kadar süreyle (milisaniye cinsinden) gösterileceğini denetler.",
+			"screencastMode.keyboardShortcutsFormat": "Kısayollar gösterilirken klavye katmanında görüntülenenleri denetler.",
 			"screencastMode.location.verticalPosition": "Ekran kaydı modunun alttan olan dikey uzaklığını, çalışma ekranı yüksekliğinin yüzdesi olarak denetler.",
 			"screencastMode.mouseIndicatorColor": "Ekran kaydı modundaki fare göstergesinin rengini onaltılık (#RGB, #RGBA, #RRGGBB veya #RRGGBBAA) cinsinden denetler.",
 			"screencastMode.mouseIndicatorSize": "Ekran kaydı modundaki fare göstergesinin boyutunu (piksel cinsinden) denetler.",
@@ -2703,11 +2795,14 @@
 			"increaseViewSize": "Geçerli Görünüm Boyutunu Artır",
 			"miAppearance": "&&Görünüm",
 			"miMoveSidebarLeft": "&&Kenar Çubuğunu Sola Taşı",
+			"miMoveSidebarLeftNoMnemonic": "Kenar Çubuğunu Sola Taşı",
 			"miMoveSidebarRight": "&&Kenar Çubuğunu Sağa Taşı",
+			"miMoveSidebarRightNoMnemonic": "Kenar Çubuğunu Sağa Taşı",
 			"miShowActivityBar": "&&Etkinlik Çubuğunu Göster",
 			"miShowEditorArea": "&&Düzenleyici Alanını Göster",
 			"miShowMenuBar": "Menü Çu&&buğunu Göster",
 			"miShowSidebar": "&&Kenar Çubuğunu Göster",
+			"miShowSidebarNoMnnemonic": "Kenar Çubuğunu Göster",
 			"miShowStatusbar": "Durum Ç&&ubuğunu Göster",
 			"miToggleCenteredLayout": "&&Ortalanmış Düzen",
 			"miToggleZenMode": "Zen Modu",
@@ -2958,7 +3053,8 @@
 			"cmd.focus": "İçerik Haritalarına Odaklan",
 			"cmd.toggle": "İçerik Haritalarını Aç/Kapat",
 			"empty": "öğe yok",
-			"miShowBreadcrumbs": "&&İçerik Haritalarını Göster"
+			"miShowBreadcrumbs": "&&İçerik Haritalarını Göster",
+			"separatorIcon": "İçerik haritalarındaki ayırıcının simgesi."
 		},
 		"vs/workbench/browser/parts/editor/breadcrumbsPicker": {
 			"breadcrumbs": "İçerik Haritaları"
@@ -2992,6 +3088,7 @@
 			"miBack": "&&Geri",
 			"miClearRecentOpen": "&&Son Açılanları Temizle",
 			"miEditorLayout": "Düzenleyici &&Düzeni",
+			"miEditorLayoutLayoutControl": "Editor Layout",
 			"miFirstSideEditor": "Düzenleyicide &&Birinci Taraf",
 			"miFocusAboveGroup": "&&Yukarıdaki Grup",
 			"miFocusBelowGroup": "&&Aşağıdaki Grup",
@@ -3004,6 +3101,7 @@
 			"miFocusThirdGroup": "&&3. Grup",
 			"miForward": "&&İleri",
 			"miJoinEditorInGroup": "&&Gruba Katıl",
+			"miJoinEditorInGroupWithoutMnemonic": "Join in Group",
 			"miLastEditLocation": "&&Son Düzenleme Konumu",
 			"miNextEditor": "&&Sonraki Düzenleyici",
 			"miNextEditorInGroup": "&&Gruptaki Sonraki Düzenleyici",
@@ -3018,20 +3116,33 @@
 			"miReopenClosedEditor": "&&Kapatılan Düzenleyiciyi Yeniden Aç",
 			"miSecondSideEditor": "&&Düzenleyicide İkinci Taraf",
 			"miSingleColumnEditorLayout": "&&Tek",
+			"miSingleColumnEditorLayoutWithoutMnemonic": "Single",
 			"miSplitEditorDown": "&&Aşağıya Böl",
+			"miSplitEditorDownWithoutMnemonic": "Split Down",
 			"miSplitEditorInGroup": "&&Gruba Böl",
+			"miSplitEditorInGroupWithoutMnemonic": "Split in Group",
 			"miSplitEditorLeft": "&&Sola Böl",
+			"miSplitEditorLeftWithoutMnemonic": "Split Left",
 			"miSplitEditorRight": "&&Sağa Böl",
+			"miSplitEditorRightWithoutMnemonic": "Split Right",
 			"miSplitEditorUp": "&&Yukarıya Böl",
+			"miSplitEditorUpWithoutMnemonic": "Split Up",
 			"miSwitchEditor": "&&Düzenleyiciyi Değiştir",
 			"miSwitchGroup": "&&Grubu Değiştir",
 			"miThreeColumnsEditorLayout": "Üç &&Sütun",
+			"miThreeColumnsEditorLayoutWithoutMnemonic": "Three Columns",
 			"miThreeRowsEditorLayout": "Üç &&Satır",
+			"miThreeRowsEditorLayoutWithoutMnemonic": "Three Rows",
 			"miTwoByTwoGridEditorLayout": "&&Kılavuz (2x2)",
+			"miTwoByTwoGridEditorLayoutWithoutMnemonic": "Grid (2x2)",
 			"miTwoColumnsBottomEditorLayout": "Altta İki &&Sütun",
+			"miTwoColumnsBottomEditorLayoutWithoutMnemonic": "Two Columns Bottom",
 			"miTwoColumnsEditorLayout": "&&İki Sütun",
+			"miTwoColumnsEditorLayoutWithoutMnemonic": "Two Columns",
 			"miTwoRowsEditorLayout": "İ&&ki Satır",
+			"miTwoRowsEditorLayoutWithoutMnemonic": "Two Rows",
 			"miTwoRowsRightEditorLayout": "Sağda İki S&&atır",
+			"miTwoRowsRightEditorLayoutWithoutMnemonic": "Two Rows Right",
 			"navigate.next.label": "Sonraki Değişiklik",
 			"navigate.prev.label": "Önceki Değişiklik",
 			"nextChangeIcon": "Fark düzenleyicisindeki sonraki değişiklik eylemi simgesi.",
@@ -3351,18 +3462,31 @@
 			"notificationSource": "Kaynak: {0}"
 		},
 		"vs/workbench/browser/parts/panel/panelActions": {
+			"alignPanelCenter": "Center Panel",
+			"alignPanelCenterShort": "Center",
+			"alignPanelJustify": "Justify Panel",
+			"alignPanelJustifyShort": "Justify",
+			"alignPanelLeft": "Align Panel Left",
+			"alignPanelLeftShort": "Left",
+			"alignPanelRight": "Align Panel Right",
+			"alignPanelRightShort": "Right",
 			"closeIcon": "Paneli kapatma simgesi.",
 			"closePanel": "Paneli Kapat",
 			"focusPanel": "Panelin İçine Odaklan",
 			"hidePanel": "Paneli Gizle",
 			"maximizeIcon": "Paneli ekranı kaplayacak şekilde büyütme simgesi.",
 			"maximizePanel": "Panel Boyutunu Büyüt",
+			"miAlignPanel": "Align Panel",
+			"miMovePanel": "Move Panel",
 			"miShowPanel": "&&Paneli Göster",
 			"minimizePanel": "Panel Boyutunu Geri Yükle",
 			"nextPanelView": "Sonraki Panel Görünümü",
 			"positionPanelBottom": "Paneli Alta Taşı",
+			"positionPanelBottomShort": "Bottom",
 			"positionPanelLeft": "Paneli Sola Taşı",
+			"positionPanelLeftShort": "Left",
 			"positionPanelRight": "Paneli Sağa Taşı",
+			"positionPanelRightShort": "Right",
 			"previousPanelView": "Önceki Panel Görünümü",
 			"restoreIcon": "Paneli geri yükleme simgesi.",
 			"toggleMaximizedPanel": "Tam Ekran Paneli Aç/Kapat",
@@ -3407,6 +3531,8 @@
 		},
 		"vs/workbench/browser/parts/titlebar/titlebarPart": {
 			"devExtensionWindowTitlePrefix": "[Uzantı Geliştirme Konağı]",
+			"layoutControlIcon": "Başlık çubuğunda bulunan düzen denetimi menüsü simgesi.",
+			"layoutMenu": "Düzeni Yapılandır",
 			"patchedWindowTitle": "[Desteklenmiyor]",
 			"userIsAdmin": "[Yönetici]",
 			"userIsSudo": "[Süper kullanıcı]"
@@ -3469,14 +3595,15 @@
 			"editorOpenPositioning": "Düzenleyicilerin nerede açılacağını denetler. Düzenleyicileri şu anda etkin olan düzenleyicinin solunda veya sağında açmak için `left` veya `right` seçeneğini belirleyin. Düzenleyicileri şu anda etkin olan düzenleyiciden bağımsız olarak açmak için `first` veya `last` seçeneğini belirleyin.",
 			"editorTabCloseButton": "Düzenleyicideki sekmelerin kapatma düğmelerinin konumunu denetler veya 'off' olarak ayarlandığında bunları devre dışı bırakır. `#workbench.editor.showTabs#` devre dışı bırakıldığında bu değer yoksayılır.",
 			"enableMenuBarMnemonics": "Ana menülerin Alt tuşu kısayolları aracılığıyla açılıp açılamayacağını denetler. Anımsatıcıların devre dışı bırakılması, bunun yerine bu Alt tuşu kısayollarını düzenleyici komutlarına bağlamanıza olanak tanır.",
-			"enablePreview": "Açık düzenleyicilerin önizleme olarak gösterilip gösterilmeyeceğini denetler. Önizleme düzenleyicileri açıkça açık tutulacak şekilde ayarlanmadığı (örneğin, çift tıklama veya düzenleme yoluyla) sürece açık tutulmaz, yeniden kullanılır ve italik yazı tipi stiliyle gösterilir.",
-			"enablePreviewFromCodeNavigation": "Kod gezintisi düzenleyicilerden başlatıldığında bu düzenleyicilerin önizlemede kalıp kalmayacağını denetler. Önizleme düzenleyicileri açık kalacak şekilde açıkça ayarlanmadığı (ör. çift tıklama veya düzenleme yoluyla) sürece açık tutulmaz ve yeniden kullanılır. `#workbench.editor.enablePreview#` devre dışı bırakıldığında bu değer yoksayılır.",
-			"enablePreviewFromQuickOpen": "Hızlı Aç özelliğinden açılan düzenleyicilerin önizleme olarak gösterilip gösterilmeyeceğini denetler. Önizleme düzenleyicileri açık kalacak şekilde açıkça ayarlanmadığı (ör. çift tıklama veya düzenleme yoluyla) sürece açık tutulmaz ve yeniden kullanılır. `#workbench.editor.enablePreview#` devre dışı bırakıldığında bu değer yoksayılır.",
+			"enablePreview": "Açık düzenleyicilerin önizleme düzenleyicileri olarak gösterilip gösterilmeyeceğini denetler. Önizleme düzenleyicileri açıkça açık tutulacak şekilde ayarlanmadığı (örneğin, çift tıklama veya düzenleme yoluyla) sürece açık kalmaz, yeniden kullanılır ve dosya adlarını italik olarak gösterir.",
+			"enablePreviewFromCodeNavigation": "Kod gezintisi düzenleyicilerden başlatıldığında bu düzenleyicilerin önizlemede kalıp kalmayacağını denetler. Önizleme düzenleyicileri açık kalacak şekilde açıkça ayarlanmadığı (ör. çift tıklama veya düzenleme yoluyla) sürece açık kalmaz ve yeniden kullanılır. \"#workbench.editor.enablePreview#\" devre dışı bırakıldığında bu değer yoksayılır.",
+			"enablePreviewFromQuickOpen": "Hızlı Aç özelliğinden açılan düzenleyicilerin önizleme düzenleyicileri olarak gösterilip gösterilmeyeceğini denetler. Önizleme düzenleyicileri açık kalacak şekilde açıkça ayarlanmadığı (ör. çift tıklama veya düzenleme yoluyla) sürece açık kalmaz ve yeniden kullanılır. \"#workbench.editor.enablePreview#\" devre dışı bırakıldığında bu değer yoksayılır.",
 			"focusRecentEditorAfterClose": "Sekmelerin en son kullanılanlar düzeninde veya soldan sağa kapatılıp kapatılmadığını denetler.",
 			"folderName": "`${folderName}`: dosyanın bulunduğu çalışma alanı klasörünün adı (örneğin, klasörüm).",
 			"folderPath": "`${folderPath}`: dosyanın bulunduğu çalışma alanı klasörünün dosya yolu (örneğin, /Users/Development/klasörüm).",
 			"fontAliasing": "Çalışma ekranındaki yazı tipi diğer ad oluşturma yöntemini denetler.",
 			"highlightModifiedTabs": "Kaydedilmemiş değişikliklere sahip düzenleyici sekmelerinde üst kenarlığın çizilip çizilmediğini denetler. `#workbench.editor.showTabs#` devre dışı bırakıldığında bu değer yok sayılır.",
+			"layoutControlEnabled": "Özel başlık çubuğundaki düzen denetim düğmesinin etkin olup olmadığını denetler.",
 			"limitEditorsEnablement": "Açık düzenleyici sayısının sınırlı olup olmadığını denetler. Etkinleştirildiğinde, yeni açılan düzenleyicilere yer açmak için daha az kullanılan düzenleyiciler kapatılır.",
 			"limitEditorsMaximum": "En yüksek açık düzenleyici sayısını denetler. Bu sınırı düzenleyici grubu başına veya tüm gruplarda denetlemek için `#workbench.editor.limit.perEditorGroup#` ayarını kullanın.",
 			"menuBarVisibility": "Menü çubuğunun görünürlüğünü denetleyin. 'toggle' ayarı, menü çubuğunun gizlendiği ve Alt tuşuna bir kez basıldığında gösterileceği anlamına gelir. 'compact' ayarı menüyü kenar çubuğuna taşır.",
@@ -3487,6 +3614,11 @@
 			"openFilesInNewWindow": "Controls whether files should open in a new window.\r\nNote that there can still be cases where this setting is ignored (e.g. when using the `--new-window` or `--reuse-window` command line option).",
 			"openFilesInNewWindowMac": "Controls whether files should open in a new window. \r\nNote that there can still be cases where this setting is ignored (e.g. when using the `--new-window` or `--reuse-window` command line option).",
 			"openFoldersInNewWindow": "Controls whether folders should open in a new window or replace the last active window.\r\nNote that there can still be cases where this setting is ignored (e.g. when using the `--new-window` or `--reuse-window` command line option).",
+			"panel.alignment.center": "Panel, düzenleyici alanı altına yayılır.",
+			"panel.alignment.justify": "Panel pencerenin tam genişliğini kaplar.",
+			"panel.alignment.left": "Panel, pencerenin en sol tarafından düzenleyici alanının sağ tarafına doğru yayılır.",
+			"panel.alignment.right": "Panel, düzenleyici alanının sol tarafından pencerenin en sağ tarafına doğru yayılır.",
+			"panelAlignment": "Panelin hizalamasını (terminal, hata ayıklama konsolu, çıkış, sorunlar) ve yan çubuğun ve yan bölmenin altına yayılıp yayılmayacağını denetler. Bu ayarın yalnızca panel ekranın altına yerleştirildiğinde etkili olduğunu unutmayın.",
 			"panelDefaultLocation": "Panelin varsayılan konumunu denetler (terminal, hata ayıklama konsolu, çıkış, sorunlar). Bu, çalışma ekranının altında, sağında veya solunda gösterilebilir.",
 			"panelOpensMaximized": "Panelin ekranı kaplayacak şekilde açılıp açılmayacağını denetler. Ekranı kaplamış olarak açabilir, hiçbir zaman ekranı kaplayacak şekilde açılmayabilir veya kapatılmadan önceki son durumunda açılabilir.",
 			"perEditorGroup": "Açık düzenleyici sayısı üst sınırının düzenleyici grubu başına veya tüm düzenleyici gruplarına uygulanıp uygulanmayacağını denetler.",
@@ -3607,6 +3739,7 @@
 			"builtinProviderDisplayName": "Yerleşik",
 			"editorAreaVisible": "Düzenleyici alanının görünür olup olmadığını belirtir",
 			"editorIsOpen": "Düzenleyicinin açık olup olmadığını belirtir",
+			"editorTabsVisible": "Düzenleyici sekmelerinin görünür olup olmadığı",
 			"groupEditorsCount": "Açık düzenleyici grubu sayısı",
 			"inZenMode": "Zen modunun etkinleştirilip etkinleştirilmediğini belirtir",
 			"isCenteredLayout": "Ortalanmış düzenin etkinleştirilip etkinleştirilmediğini belirtir",
@@ -3710,6 +3843,7 @@
 			"statusBarErrorItemForeground": "Durum çubuğu hata öğeleri ön plan rengi. Hata öğeleri, hata koşullarını göstermek için diğer durum çubuğu girdileri arasında öne çıkar. Durum çubuğu pencerenin alt kısmında gösterilir.",
 			"statusBarForeground": "Çalışma alanı veya klasör açıldığında durum çubuğu ön plan rengi. Durum çubuğu pencerenin altında gösterilir.",
 			"statusBarItemActiveBackground": "Tıklandığında durum çubuğu öğesi arka plan rengi. Durum çubuğu pencerenin altında gösterilir.",
+			"statusBarItemCompactHoverBackground": "İki vurgu içeren bir öğenin üzerine gelindiğinde durum çubuğu öğesi arka plan rengi. Durum çubuğu pencerenin altında gösterilir.",
 			"statusBarItemHostBackground": "Durum çubuğundaki uzak göstergenin arka plan rengi.",
 			"statusBarItemHostForeground": "Durum çubuğundaki uzak göstergenin ön plan rengi.",
 			"statusBarItemHoverBackground": "Üzerine gelindiğinde durum çubuğu öğesi arka plan rengi. Durum çubuğu pencerenin altında gösterilir.",
@@ -3843,7 +3977,7 @@
 			"zoomLevel": "Pencerenin yakınlaştırma düzeyini ayarlayın. Özgün boyut 0'dır ve yukarı (örneğin, 1) ya da aşağı (örneğin, -1) yönlü her artış %20 daha büyük veya daha küçük yakınlaştırmayı temsil eder. Yakınlaştırma düzeyini daha ayrıntılı şekilde ayarlamak için ondalık sayılar da girebilirsiniz."
 		},
 		"vs/workbench/electron-sandbox/parts/dialogs/dialogHandler": {
-			"aboutDetail": "Sürüm: {0}\r\nCommit: {1}\r\nTarih: {2}\r\nElectron: {3}\r\nGrafik Öğeler: {4}\r\nNode.js: {5}\r\nV8:{6}\r\n İşletim Sistemi: {7}",
+			"aboutDetail": "Sürüm: {0}\r\nCommit: {1}\r\nTarih: {2}\r\nElectron: {3}\r\nChromium: {4}\r\nNode.js: {5}\r\nV8: {6}\r\nİşletim Sistemi: {7}",
 			"cancelButton": "İptal",
 			"copy": "&&Kopyala",
 			"okButton": "Tamam",
@@ -3859,7 +3993,22 @@
 			"proxyDetail": "{0} ara sunucusu bir kullanıcı adı ve parola gerektiriyor.",
 			"rememberCredentials": "Kimlik bilgilerimi hatırla",
 			"runningAsRoot": "{0} uygulamasının kök kullanıcı olarak çalıştırılması önerilmez.",
+			"shutdownErrorClose": "Beklenmeyen bir hata pencerenin kapatılmasını engelledi.",
+			"shutdownErrorDetail": "Hata: {0}",
+			"shutdownErrorLoad": "Beklenmeyen bir hata pencerenin çalışma alanının değiştirilmesini engelledi.",
+			"shutdownErrorQuit": "Beklenmeyen bir hata uygulamanın çıkmasını engelledi.",
+			"shutdownErrorReload": "Beklenmeyen bir hata pencerenin yeniden yüklenmesini engelledi.",
+			"shutdownTitleClose": "Pencerenin kapatılması beklenenden uzun sürüyor...",
+			"shutdownTitleLoad": "Çalışma alanının değiştirilmesi beklenenden uzun sürüyor...",
+			"shutdownTitleQuit": "Uygulamadan çıkma işlemi beklenenden uzun sürüyor...",
+			"shutdownTitleReload": "Pencerenin yeniden yüklenmesi beklenenden uzun sürüyor...",
 			"username": "Kullanıcı adı"
+		},
+		"vs/workbench/contrib/audioCues/browser/audioCues.contribution": {
+			"audioCues.enabled": "Ses ipuçlarının etkinleştirilip etkinleştirilmediğini kontrol eder.",
+			"audioCues.enabled.auto": "Ekran okuyucu eklendiğinde sesli ipuçlarını etkinleştirin.",
+			"audioCues.enabled.off": "Sesli ipuçlarını devre dışı bırakın.",
+			"audioCues.enabled.on": "Sesli ipuçlarını etkinleştirin."
 		},
 		"vs/workbench/contrib/backup/electron-sandbox/backupTracker": {
 			"backupTrackerBackupFailed": "Aşağıdaki değişiklik içeren düzenleyiciler yedekleme konumuna kaydedilemedi.",
@@ -4016,18 +4165,6 @@
 			"hintWhitespace": "Boşluk Farklılıklarını Göster",
 			"removeTimeout": "Sınırı Kaldır"
 		},
-		"vs/workbench/contrib/codeEditor/browser/find/simpleFindReplaceWidget": {
-			"label.closeButton": "Kapat",
-			"label.find": "Bul",
-			"label.nextMatchButton": "Sonraki Eşleşme",
-			"label.previousMatchButton": "Önceki Eşleşme",
-			"label.replace": "Değiştir",
-			"label.replaceAllButton": "Tümünü Değiştir",
-			"label.replaceButton": "Değiştir",
-			"label.toggleReplaceButton": "Değiştirmeyi Aç/Kapat",
-			"placeholder.find": "Bul",
-			"placeholder.replace": "Değiştir"
-		},
 		"vs/workbench/contrib/codeEditor/browser/find/simpleFindWidget": {
 			"label.closeButton": "Kapat",
 			"label.find": "Bul",
@@ -4040,7 +4177,7 @@
 			"inspectTMScopesWidget.loading": "Yükleniyor..."
 		},
 		"vs/workbench/contrib/codeEditor/browser/inspectKeybindings": {
-			"workbench.action.inspectKeyMap": "Geliştirici: Anahtar Eşlemelerini İnceleyin",
+			"workbench.action.inspectKeyMap": "Anahtar Eşlemelerini İncele",
 			"workbench.action.inspectKeyMapJSON": "Anahtar Eşlemelerini İncele (JSON)"
 		},
 		"vs/workbench/contrib/codeEditor/browser/languageConfigurationExtensionPoint": {
@@ -4229,7 +4366,8 @@
 		},
 		"vs/workbench/contrib/comments/browser/comments.contribution": {
 			"commentsConfigurationTitle": "Açıklamalar",
-			"openComments": "Açıklamalar panelinin açılacağı zamanı denetler."
+			"openComments": "Açıklamalar panelinin açılacağı zamanı denetler.",
+			"useRelativeTime": "Determines if relative time will be used in comment timestamps (ex. '1 day ago')."
 		},
 		"vs/workbench/contrib/comments/browser/commentsEditorContribution": {
 			"nextCommentThreadAction": "Sonraki Açıklama Dizisine Git",
@@ -4466,6 +4604,7 @@
 			"terminateThread": "İş Parçacığını Sonlandır",
 			"toolBarLocation": "Hata ayıklama araç çubuğunun konumunu denetler. Tüm görünümlerde `floating`, hata ayıklama görünümünde `docked` veya `hidden` değerleri kullanılabilir.",
 			"variables": "Değişkenler",
+			"viewMemory": "İkili Verileri Görüntüle",
 			"watch": "İzleme"
 		},
 		"vs/workbench/contrib/debug/browser/debugActionViewItems": {
@@ -4592,10 +4731,13 @@
 			"debugContinue": "Hata ayıklamaya devam etme eylemi için simge.",
 			"debugDisconnect": "Hata ayıklama bağlantısını kesme eylemi için simge.",
 			"debugGripper": "Hata ayıklama çubuğu kavrayıcısı için simge.",
+			"debugInspectMemory": "Bellek inceleme eyleminin simgesi.",
 			"debugPause": "Hata ayıklamayı duraklatma eylemi için simge.",
+			"debugRemoveConfig": "Hata ayıklama yapılandırmalarını kaldırma simgesi.",
 			"debugRestart": "Hata ayıklamayı yeniden başlatma eylemi için simge.",
 			"debugRestartFrame": "Hata ayıklama çerçevesini yeniden başlatma eylemi için simge.",
 			"debugReverseContinue": "Hata ayıklamayı tersine çevirmeye devam etme eylemi için simge.",
+			"debugRun": "Çalıştırma veya hata ayıklama eylemi simgesi.",
 			"debugStackframe": "Düzenleyici karakter dış boşluğunda gösterilen stackframe için simge.",
 			"debugStackframeFocused": "Düzenleyici karakter dış boşluğunda gösterilen odaklanmış stackframe için simge.",
 			"debugStart": "Hata ayıklamayı başlatma eylemi için simge.",
@@ -4619,7 +4761,8 @@
 			"contributed": "katkıda bulunuldu",
 			"customizeLaunchConfig": "Başlatma Yapılandırmasını Yapılandır",
 			"noDebugResults": "Eşleşen başlatma yapılandırması yok",
-			"providerAriaLabel": "{0} katkıda bulunulan yapılandırmaları"
+			"providerAriaLabel": "{0} katkıda bulunulan yapılandırmaları",
+			"removeLaunchConfig": "Başlatma Yapılandırmasını Kaldır"
 		},
 		"vs/workbench/contrib/debug/browser/debugService": {
 			"1activeSession": "1 etkin oturum",
@@ -4684,7 +4827,9 @@
 			"startAdditionalSession": "Ek Oturum Başlat"
 		},
 		"vs/workbench/contrib/debug/browser/disassemblyView": {
+			"disassemblyTableColumnLabel": "yönergeler",
 			"disassemblyView": "Ayrıştırma Görünümü",
+			"editorOpenedFromDisassemblyDescription": "ayrıştırmadan",
 			"instructionAddress": "Adres",
 			"instructionBytes": "Bayt",
 			"instructionNotAvailable": "Ayrıştırma kullanılamıyor.",
@@ -4751,11 +4896,15 @@
 			"statusBarDebuggingForeground": "Bir programda hata ayıklanırken durum çubuğu ön plan rengi. Durum çubuğu pencerenin altında görüntülenir"
 		},
 		"vs/workbench/contrib/debug/browser/variablesView": {
+			"cancel": "İptal",
 			"collapse": "Tümünü Daralt",
+			"install": "Yükle",
 			"variableAriaLabel": "{0}, değeri {1}",
 			"variableScopeAriaLabel": "{0} kapsamı",
 			"variableValueAriaLabel": "Yeni değişken değerini yazın",
-			"variablesAriaTreeLabel": "Hata Ayıklama Değişkenleri"
+			"variablesAriaTreeLabel": "Hata Ayıklama Değişkenleri",
+			"viewMemory.install.progress": "Onaltılık Düzenleyici yükleniyor...",
+			"viewMemory.prompt": "İkili verilerin incelenmesi için Onaltılık Düzenleyici uzantısı gerekir. Şimdi yüklemek istiyor musunuz?"
 		},
 		"vs/workbench/contrib/debug/browser/watchExpressionsView": {
 			"addWatchExpression": "İfade Ekle",
@@ -4769,6 +4918,7 @@
 			"watchVariableAriaLabel": "{0}, değeri {1}"
 		},
 		"vs/workbench/contrib/debug/browser/welcomeView": {
+			"allDebuggersDisabled": "Tüm hata ayıklama uzantıları devre dışı. Bir hata ayıklama uzantısını etkinleştirin veya Market'ten yeni bir uzantı yükleyin.",
 			"customizeRunAndDebug": "Çalıştırma ve Hata Ayıklama'yı özelleştirmek için [launch.json dosyası oluşturun](command:{0}).",
 			"customizeRunAndDebugOpenFolder": "Çalıştırma ve Hata Ayıklama'yı özelleştirmek için [klasör açın](command:{0}) ve launch.json dosyası oluşturun.",
 			"detectThenRunAndDebug": "[Tüm otomatik hata ayıklama yapılandırmalarını gösterin](command:{0}).",
@@ -4794,7 +4944,9 @@
 			"callStackItemType": "ÇAĞRI YIĞINI görünümündeki odaklanılan öğenin öğe türünü temsil eder. Örneğin: 'session', 'thread', 'stackFrame'",
 			"callStackSessionHasOneThread": "ÇAĞRI YIĞINI görünümündeki odaklanılan oturum tam olarak bir iş parçacığı içerdiğinde true olur. ÇAĞRI YIĞINI görünümündeki satır içi menüler için dahili olarak kullanılır.",
 			"callStackSessionIsAttach": "ÇAĞRI YIĞINI görünümündeki oturum ekleme olduğunda true, aksi durumda false olur. ÇAĞRI YIĞINI görünümündeki satır içi menüler için dahili olarak kullanılır.",
+			"canViewMemory": "Görünümdeki öğenin ilişkili bir bellek başvurusuna sahip olup olmadığını gösterir.",
 			"debugConfigurationType": "Seçili başlatma yapılandırmasının hata ayıklama türü (ör. 'python').",
+			"debugExtensionsAvailable": "En az bir hata ayıklama uzantısı yüklü ve etkin olduğunda true olur.",
 			"debugProtocolVariableMenuContext": "Hata ayıklama bağdaştırıcısının DEĞİŞKENLER görünümünde odaklanılan değişkende ayarladığı bağlamı temsil eder.",
 			"debugSetExpressionSupported": "Odaklanılan oturum 'setExpression' isteğini destekliyorsa true olur.",
 			"debugSetVariableSupported": "Odaklanılan oturum 'setVariable' isteğini destekliyorsa true olur.",
@@ -4964,6 +5116,12 @@
 		"vs/workbench/contrib/extensions/browser/extensionEditor": {
 			"JSON Validation": "JSON Doğrulaması ({0})",
 			"Marketplace": "Market",
+			"Notebook id": "Kimlik",
+			"Notebook mimetypes": "MIME türleri",
+			"Notebook name": "Ad",
+			"Notebook renderer name": "Ad",
+			"NotebookRenderers": "Not Defteri İşleyicileri ({0})",
+			"Notebooks": "Not Defterleri ({0})",
 			"activation": "Etkinleştirme saati",
 			"activation events": "Etkinleştirme Olayları ({0})",
 			"authentication": "Kimlik doğrulaması ({0})",
@@ -5034,6 +5192,7 @@
 			"noReadme": "BENIOKU yok.",
 			"noStatus": "Durum yok.",
 			"not yet activated": "Henüz etkinleştirilmedi.",
+			"preRelease": "Yayın Öncesi Sürüm",
 			"preview": "Önizleme",
 			"productThemes": "Ürün Simgesi Temaları ({0})",
 			"publisher": "Yayımcı",
@@ -5155,6 +5314,8 @@
 			"recently published filter": "Son Yayımlanan",
 			"recentlyPublishedExtensions": "Son Yayımlanan Uzantıları Göster",
 			"refreshExtension": "Yenile",
+			"show pre-release version": "Yayın Öncesi Sürümü Göster",
+			"show released version": "Yayın Sürümünü Göster",
 			"showBuiltInExtensions": "Yerleşik Uzantıları Göster",
 			"showDisabledExtensions": "Devre Dışı Bırakılmış Uzantıları Göster",
 			"showEnabledExtensions": "Etkinleştirilmiş Uzantıları Göster",
@@ -5189,6 +5350,7 @@
 			"workbench.extensions.installExtension.description": "Verili uzantıyı yükle",
 			"workbench.extensions.installExtension.option.donotSync": "Etkinleştirildiğinde, VS Code, Ayarlar Senkronizasyonu açıkken bu uzantıyı senkronize etmez.",
 			"workbench.extensions.installExtension.option.installOnlyNewlyAddedFromExtensionPackVSIX": "Etkinleştirildiğinde, VS Code yalnızca Extension Pack VSIX'den yeni eklenen uzantıları yükler. Bu seçenek yalnızca bir VSIX yüklenirken dikkate alınır.",
+			"workbench.extensions.installExtension.option.installPreReleaseVersion": "Etkinleştirildiğinde, VS Code, varsa uzantının yayın öncesi sürümünü yükler.",
 			"workbench.extensions.search.arg.name": "Aramada kullanılacak sorgu",
 			"workbench.extensions.search.description": "Belirli bir uzantıyı arayın",
 			"workbench.extensions.uninstallExtension.arg.name": "Kaldırılacak uzantının kimliği",
@@ -5211,10 +5373,9 @@
 			"cannot be installed": "'{0}' uzantısı {1} içinde kullanılamıyor. Daha fazla bilgi için 'Daha fazla bilgi' seçeneğine tıklayın.",
 			"check logs": "Daha fazla ayrıntı için lütfen [günlükleri]({0}) denetleyin.",
 			"close": "Kapat",
-			"color theme": "Renk Temasını Ayarla",
 			"configureWorkspaceFolderRecommendedExtensions": "Önerilen Uzantıları Yapılandır (Çalışma Alanı Klasörü)",
 			"configureWorkspaceRecommendedExtensions": "Önerilen Uzantıları Yapılandır (Çalışma Alanı)",
-			"current": "Geçerli",
+			"current": "geçerli",
 			"disableAction": "Devre Dışı Bırak",
 			"disableForWorkspaceAction": "Devre Dışı Bırak (Çalışma Alanı)",
 			"disableForWorkspaceActionToolTip": "Bu uzantıyı yalnızca bu çalışma alanında devre dışı bırak",
@@ -5223,6 +5384,7 @@
 			"disabled": "Devre Dışı",
 			"disabled because of virtual workspace": "Bu uzantı, sanal çalışma alanlarını desteklemediğinden devre dışı bırakıldı.",
 			"disabled by environment": "Bu uzantı, ortam tarafından devre dışı bırakıldı.",
+			"do no sync": "Senkronize etmeyin",
 			"do not sync": "Bu uzantıyı eşitleme",
 			"download": "Kendiniz İndirmeyi Deneyin...",
 			"enable locally": "Bu uzantıyı yerel olarak etkinleştirmek için lütfen Visual Studio Code'u yeniden yükleyin.",
@@ -5244,7 +5406,6 @@
 			"extensionButtonProminentBackground": "Öne çıkan eylemler uzantısı (örneğin yükleme düğmesi) için düğme arka plan rengi.",
 			"extensionButtonProminentForeground": "Öne çıkan eylemler uzantısı (örneğin yükleme düğmesi) için düğme ön plan rengi.",
 			"extensionButtonProminentHoverBackground": "Öne çıkan eylemler uzantısı (örneğin yükleme düğmesi) için düğme üzerinde gezinme rengi.",
-			"file icon theme": "Dosya Simgesi Temasını Ayarla",
 			"finished installing": "Uzantılar başarıyla yüklendi.",
 			"globally disabled": "Bu uzantı, kullanıcı tarafından genel olarak devre dışı bırakıldı.",
 			"globally enabled": "Bu uzantı, genel olarak etkinleştirildi.",
@@ -5252,17 +5413,22 @@
 			"ignored": "Bu uzantı, eşitleme sırasında yoksayılıyor",
 			"incompatible platform": "'{0}' uzantısı {1} tarayıcısında {2} için kullanılamıyor",
 			"install": "Yükle",
-			"install and do no sync": "Yükle (Eşitleme)",
 			"install another version": "Başka Sürüm Yükle...",
 			"install browser": "Tarayıcıda Yükle",
 			"install everywhere tooltip": "Bu uzantıyı eşitlenen tüm {0} örneklerinizde yükleyin",
+			"install extension in remote": "{1} içinde {0}",
+			"install extension in remote and do not sync": "{1} ({2}) içinde {0}",
+			"install extension locally": "{0} Yerel olarak",
+			"install extension locally and do not sync": "{0} Yerel olarak ({1})",
 			"install in remote": "{0} sunucusuna yükle",
-			"install in remote and do not sync": "{0} sunucusuna yükle (Eşitleme)",
 			"install local extensions title": "Yerel Uzantıları '{0}' İçine Yükle",
 			"install locally": "Yerel Olarak Yükle",
-			"install locally and do not sync": "Yerel Olarak Yükle (Eşitleme)",
 			"install operation": "'{0}' uzantısı yüklenirken hata oluştu.",
+			"install pre-release": "Yayın Öncesi Sürümü Yükle",
+			"install pre-release version": "Yayın Öncesi Sürümü Yükle",
 			"install previous version": "Uzantının Belirli Sürümünü Yükle...",
+			"install release version": "Yayın Sürümünü Yükle",
+			"install release version message": "Yayın sürümü yüklemek ister misiniz?",
 			"install remote extensions": "Uzak Uzantıları Yerel Olarak Yükle",
 			"install vsix": "İndirildikten sonra lütfen VSIX '{0}' öğesini el ile yükleyin.",
 			"installExtensionComplete": "{0} uzantısını yükleme işlemi tamamlandı.",
@@ -5273,27 +5439,18 @@
 			"installed": "Yüklü",
 			"installing": "Yükleniyor",
 			"installing extensions": "Uzantılar Yükleniyor...",
-			"just now": "Hemen şimdi",
 			"learn more": "Daha Fazla Bilgi",
 			"learn why": "Nedenini Öğrenin",
 			"malicious tooltip": "Bu uzantının sorunlu olduğu bildirildi.",
 			"manage": "Yönet",
 			"more information": "Daha Fazla Bilgi",
 			"no local extensions": "Yüklenecek uzantı yok.",
-			"noOfDaysAgo": "{0} gün önce",
-			"noOfHoursAgo": "{0} saat önce",
-			"noOfMonthsAgo": "{0} ay önce",
-			"noOfYearsAgo": "{0} yıl önce",
 			"not web tooltip": "'{0}' uzantısı {1} içinde kullanılamıyor.",
-			"one day ago": "1 gün önce",
-			"one hour ago": "1 saat önce",
-			"one month ago": "1 ay önce",
-			"one year ago": "1 yıl önce",
 			"postDisableTooltip": "Bu uzantıyı devre dışı bırakmak için lütfen Visual Studio Code'u yeniden yükleyin.",
 			"postEnableTooltip": "Bu uzantıyı etkinleştirmek için lütfen Visual Studio Code'u yeniden yükleyin.",
 			"postUninstallTooltip": "Bu uzantının kaldırılmasını tamamlamak için lütfen Visual Studio Code'u yeniden yükleyin.",
 			"postUpdateTooltip": "Güncelleştirilmiş uzantıyı etkinleştirmek için lütfen Visual Studio Code'u yeniden yükleyin.",
-			"product icon theme": "Ürün Simgesi Temasını Ayarla",
+			"pre-release": "yayın öncesi",
 			"reinstall": "Uzantıyı Yeniden Yükle...",
 			"reloadAction": "Yeniden Yükle",
 			"reloadRequired": "Yeniden Yükleme Gerekiyor",
@@ -5308,6 +5465,8 @@
 			"selectExtensionToReinstall": "Yeniden Yüklenecek Uzantıyı Seç",
 			"selectVersion": "Yüklenecek Sürümü Seç",
 			"showRecommendedExtension": "Önerilen Uzantıyı Göster",
+			"switch to pre-release version": "Yayın Öncesi Sürüme Geç",
+			"switch to release version": "Yayın Sürümüne Geç",
 			"sync": "Bu uzantıyı eşitle",
 			"synced": "Bu uzantı eşitlendi",
 			"undo": "Geri Al",
@@ -5315,12 +5474,17 @@
 			"uninstallExtensionComplete": "{0} uzantısını kaldırma işlemini tamamlamak için lütfen Visual Studio Code'u yeniden yükleyin.",
 			"uninstallExtensionStart": "{0} uzantısını kaldırma başladı.",
 			"uninstalled": "Kaldırıldı",
+			"unsupported prerelease switch tooltip": "Bu uzantı artık yayın öncesi sürüm olarak {0} uzantısının bir parçasıdır.",
+			"unsupported tooltip": "Bu uzantı artık desteklenmiyor.",
 			"update operation": "'{0}' uzantısı güncelleştirilirken hata oluştu.",
 			"updateAction": "Güncelleştir",
 			"updateExtensionComplete": "{0} uzantısını {1} sürümüne güncelleştirme tamamlandı.",
 			"updateExtensionStart": "{0} uzantısını {1} sürümüne güncelleştirme başladı.",
 			"updateTo": "{0} sürümüne güncelleştir",
 			"updated": "Güncelleştirildi",
+			"workbench.extensions.action.setColorTheme": "Renk Temasını Ayarla",
+			"workbench.extensions.action.setFileIconTheme": "Dosya Simgesi Temasını Ayarla",
+			"workbench.extensions.action.setProductIconTheme": "Ürün Simgesi Temasını Ayarla",
 			"workspace disabled": "Bu uzantı, kullanıcı tarafından bu çalışma alanında devre dışı bırakıldı.",
 			"workspace enabled": "Bu uzantı, kullanıcı tarafından bu çalışma alanında etkinleştirildi."
 		},
@@ -5349,6 +5513,7 @@
 			"installLocalInRemoteIcon": "Uzantılar görünümündeki 'Yerel Uzantıyı Uzak Depoda Yükle' eyleminin simgesi.",
 			"installWorkspaceRecommendedIcon": "Uzantılar görünümündeki 'Çalışma Alanının Önerilen Uzantılarını Yükle' eyleminin simgesi.",
 			"manageExtensionIcon": "Uzantılar görünümündeki 'Yönet' eyleminin simgesi.",
+			"preReleaseIcon": "Uzantılar görünümünde ve düzenleyicisinde yayın öncesi sürümleri olan uzantılar için gösterilen simge.",
 			"ratingIcon": "Uzantılar görünümünde ve düzenleyicide derecelendirmeyle birlikte gösterilen simge.",
 			"refreshIcon": "Uzantılar görünümündeki 'Yenile' eyleminin simgesi.",
 			"remoteIcon": "Uzantılar görünümünde ve düzenleyicide bir uzantının uzakta olduğunu gösteren simge.",
@@ -5418,12 +5583,16 @@
 			"suggestProxyError": "Market 'ECONNREFUSED' döndürdü. Lütfen 'http.proxy' ayarını denetleyin."
 		},
 		"vs/workbench/contrib/extensions/browser/extensionsWidgets": {
+			"Show prerelease version": "Yayın Öncesi sürüm",
 			"activation": "Etkinleştirme saati",
 			"dependencies": "Bağımlılıkları Göster",
 			"extensionIconStarForeground": "Uzantı derecelendirmelerinin simge rengi.",
 			"extensionIconVerifiedForeground": "Doğrulanmış uzantı yayıncısı için simge rengi.",
+			"extensionPreReleaseForeground": "Yayın öncesi uzantının simge rengi.",
+			"has prerelease": "Bu uzantıda kullanılabilir {0} var",
 			"message": "1 ileti",
 			"messages": "{0} ileti",
+			"pre-release-label": "Yayın Öncesi Sürüm",
 			"publisher verified tooltip": "Bu yayımcı, {0} sahipliğini doğruladı",
 			"remote extension title": "{0} içindeki uzantı",
 			"startup": "Başlangıç",
@@ -5473,20 +5642,6 @@
 		"vs/workbench/contrib/extensions/common/runtimeExtensionsInput": {
 			"extensionsInputName": "Uzantılar Çalıştırılıyor"
 		},
-		"vs/workbench/contrib/extensions/electron-browser/extensionProfileService": {
-			"cancel": "İp&&tal",
-			"profilingExtensionHost": "Uzantı Konağının Profili Oluşturuluyor",
-			"profilingExtensionHostTime": "Uzantı Konağının Profili Oluşturuluyor ({0} sn)",
-			"restart1": "Profil Uzantıları",
-			"restart2": "Uzantıların profilini oluşturmak için yeniden başlatma gerekir. '{0}' uzantısını şimdi yeniden başlatmak istiyor musunuz?",
-			"restart3": "&&Yeniden Başlat",
-			"selectAndStartDebug": "Profil oluşturmayı durdurmak için tıklayın.",
-			"status.profiler": "Uzantı Profil Oluşturucusu"
-		},
-		"vs/workbench/contrib/extensions/electron-browser/extensionsAutoProfiler": {
-			"show": "Uzantıları Göster",
-			"unresponsive-exthost": "'{0}' uzantısının son işlemini tamamlaması çok uzun sürdü ve bu, diğer uzantıların çalışmasını engelledi."
-		},
 		"vs/workbench/contrib/extensions/electron-sandbox/debugExtensionHostAction": {
 			"cancel": "İp&&tal",
 			"debugExtensionHost": "Uzantı Konağında Hata Ayıklamaya Başla",
@@ -5495,11 +5650,25 @@
 			"restart2": "Uzantıların profilini oluşturmak için yeniden başlatma gerekir. '{0}' uzantısını şimdi yeniden başlatmak istiyor musunuz?",
 			"restart3": "&&Yeniden Başlat"
 		},
+		"vs/workbench/contrib/extensions/electron-sandbox/extensionProfileService": {
+			"cancel": "&&İptal",
+			"profilingExtensionHost": "Uzantı Konağının Profili Oluşturuluyor",
+			"profilingExtensionHostTime": "Uzantı Konağının Profili Oluşturuluyor ({0} sn)",
+			"restart1": "Profil Uzantıları",
+			"restart2": "Uzantıların profilini oluşturmak için yeniden başlatma gerekir. '{0}' uzantısını şimdi yeniden başlatmak istiyor musunuz?",
+			"restart3": "&&Yeniden Başlat",
+			"selectAndStartDebug": "Profil oluşturmayı durdurmak için tıklayın.",
+			"status.profiler": "Uzantı Profil Oluşturucusu"
+		},
 		"vs/workbench/contrib/extensions/electron-sandbox/extensions.contribution": {
 			"runtimeExtension": "Uzantılar Çalıştırılıyor"
 		},
 		"vs/workbench/contrib/extensions/electron-sandbox/extensionsActions": {
 			"openExtensionsFolder": "Uzantılar Klasörünü Aç"
+		},
+		"vs/workbench/contrib/extensions/electron-sandbox/extensionsAutoProfiler": {
+			"show": "Uzantıları Göster",
+			"unresponsive-exthost": "'{0}' uzantısının son işlemini tamamlaması çok uzun sürdü ve bu, diğer uzantıların çalışmasını engelledi."
 		},
 		"vs/workbench/contrib/extensions/electron-sandbox/extensionsSlowActions": {
 			"attach.msg": "Bu, '{0}' öğesini az önce oluşturduğunuz soruna eklemeyi unutmadığınızdan emin olmak için gönderilen bir hatırlatmadır.",
@@ -5572,6 +5741,7 @@
 		},
 		"vs/workbench/contrib/files/browser/editors/textFileEditor": {
 			"createFile": "Dosya Oluştur",
+			"fileNotFoundError": "Dosya bulunamadı",
 			"openFolderError": "Dosya bir dizin",
 			"textFileEditor": "Metin Dosyası Düzenleyici"
 		},
@@ -5602,6 +5772,7 @@
 			"explorerViewIcon": "Gezgin görünümünün simgesini görüntüleyin.",
 			"folders": "Klasörler",
 			"miViewExplorer": "&&Gezgin",
+			"noFolderButEditorsHelp": "Henüz bir klasör açmadınız.\r\n[Klasör Aç](command:{0})\r\nBir klasör açıldığında o anda açık olan tüm düzenleyiciler kapatılır. Bunları açık tutmak için [klasör ekle](command:{1}) komutunu kullanın.",
 			"noFolderHelp": "You have not yet opened a folder.\r\n[Open Folder](command:{0})",
 			"noWorkspaceHelp": "Çalışma alanına henüz klasör eklemediniz.\r\n[Klasör Ekle](command:{0})",
 			"openEditorsIcon": "Açık düzenleyiciler görünümünün simgesini görüntüleyin.",
@@ -5622,9 +5793,9 @@
 			"confirmMoveTrashMessageFolder": "'{0}' öğesini ve içindekileri silmek istediğinizden emin misiniz?",
 			"confirmMoveTrashMessageMultiple": "Aşağıdaki {0} dosyayı silmek istediğinizden emin misiniz?",
 			"confirmMoveTrashMessageMultipleDirectories": "Aşağıdaki {0} dizini ve bunların içindekileri silmek istediğinizden emin misiniz?",
-			"copyBulkEdit": "{0} dosyalarını kopyala",
+			"copyBulkEdit": "{0} dosyayı yapıştır",
 			"copyFile": "Kopyala",
-			"copyFileBulkEdit": "{0} dosyalarını kopyala",
+			"copyFileBulkEdit": "{0} öğesini yapıştır",
 			"copyingBulkEdit": "{0} dosya kopyalanıyor",
 			"copyingFileBulkEdit": "{0} kopyalanıyor",
 			"createBulkEdit": "{0} oluştur",
@@ -5738,7 +5909,6 @@
 			"chooseWhereToDownload": "Nereye İndirileceğini Seçin",
 			"confirmManyOverwrites": "Hedef klasörde aşağıdaki {0} dosya ve/veya klasör zaten var. Bunları değiştirmek istiyor musunuz?",
 			"confirmOverwrite": "'{0}' adlı bir dosya veya klasör zaten var. Üzerine yazmak mı istiyorsunuz?",
-			"copyFile": "{0} dosyasını kopyala",
 			"copyFolder": "Klasörü &&Kopyala",
 			"copyFolders": "Klasörleri &&Kopyala",
 			"copyfolder": "'{0}' öğesini kopyalamak istediğinizden emin misiniz?",
@@ -5746,7 +5916,6 @@
 			"copyingFile": "{0} kopyalanıyor",
 			"copyingFiles": "Kopyalanıyor...",
 			"copyingnFile": "{0} kaynak kopyalanıyor",
-			"copynFile": "{0} kaynaklarını kopyala",
 			"downloadBulkEdit": "{0} dosyalarını indir",
 			"downloadButton": "İndir",
 			"downloadProgressLarge": "{0} ({1} / {2}, {3}/s)",
@@ -5757,6 +5926,8 @@
 			"dropFolders": "Klasörleri kopyalamak veya çalışma alanına eklemek istiyor musunuz?",
 			"fileInaccessible": "Bırakılan dosyaya içeri aktarma için erişilemedi.",
 			"filesInaccessible": "İçeri aktarma için bırakılan dosyaların bir veya tümüne erişilemedi.",
+			"importFile": "{0} öğesini içeri aktar",
+			"importnFile": "{0} kaynağı içeri aktar",
 			"irreversible": "Bu eylem geri alınamaz!",
 			"overwrite": "{0} dosyasının üzerine yaz",
 			"overwriting": "{0} üzerine yazılıyor",
@@ -5773,25 +5944,29 @@
 			"autoReveal.focusNoScroll": "Dosyalar görünüme kaydırılmayacak, ancak odak olmaya devam edecek.",
 			"autoReveal.off": "Dosyalar gösterilmez ve seçilmez.",
 			"autoReveal.on": "Dosyalar gösterilir ve seçilir.",
-			"autoSave": "Kaydedilmemiş değişikliklere sahip düzenleyicilerin otomatik kaydedilmesini denetler. Otomatik kaydetme hakkında daha fazla bilgiyi [buradan](https://code.visualstudio.com/docs/editor/codebasics#_save-auto-save) edinebilirsiniz.",
+			"autoSave": "Kaydedilmemiş değişikliklere sahip düzenleyicilerin [otomatik kaydedilmesini](https://code.visualstudio.com/docs/editor/codebasics#_save-auto-save) denetler.",
 			"autoSaveDelay": "Kaydedilmemiş değişikliklere sahip bir düzenleyicinin otomatik olarak kaydedilmesinin ardından milisaniye cinsinden gecikmeyi kontrol eder. Yalnızca '#files.autoSave#' değeri '{0}' olarak ayarlandığında uygulanır.",
 			"binaryFileEditor": "İkili Dosya Düzenleyicisi",
 			"compressSingleChildFolders": "Gezginin klasörleri topluca bir biçimde oluşturup oluşturmayacağını denetler. Bu biçimde, tek alt klasörler birleştirilmiş bir ağaç öğesinde sıkıştırılır. Örneğin, Java paket yapıları için yararlıdır.",
 			"confirmDelete": "Gezginin bir dosya çöp aracılığıyla silinirken onay isteyip istemeyeceğini denetler.",
 			"confirmDragAndDrop": "Gezginin dosya ve klasörleri sürükle bırak ile taşımak için onay isteyip istemeyeceğini denetler.",
+			"confirmUndo": "Gezginin dosya ve klasör düzenlemelerini geri alma işlemine nasıl katıldığını kontrol eder.",
 			"copyRelativePathSeparator": "Görece dosya yolları kopyalanırken kullanılan yol ayırma karakteri.",
 			"copyRelativePathSeparator.auto": "İşletim sistemine özgü yol ayırma karakterini kullanır.",
 			"copyRelativePathSeparator.backslash": "Yol ayırma karakteri olarak ters eğik çizgi kullan.",
 			"copyRelativePathSeparator.slash": "Yol ayırma karakteri olarak eğik çizgi kullan.",
-			"defaultLanguage": "Yeni dosyalara atanan varsayılan dil modu. '${activeEditorLanguage}' olarak yapılandırılırsa, varsa etkin durumda olan metin düzenleyicisinin dil modunu kullanır.",
+			"defaultLanguage": "Yeni dosyalara atanan varsayılan dil kimliği. \"${activeEditorLanguage}\" olarak yapılandırılırsa, varsa etkin durumda olan metin düzenleyicisinin dil kimliğini kullanır.",
 			"enableDragAndDrop": "Gezginin dosya ve klasörleri sürükle bırak ile taşımaya izin verip vermeyeceğini denetler. Bu ayar yalnızca gezginin içinden sürükleyip bırakmayı etkiler.",
+			"enableUndo.allow": "Gezgin, sorulmadan dosya ve klasör oluşturma olaylarını geri alacaktır.",
+			"enableUndo.disable": "Explorer, geri alma olaylarına katılmaz.",
+			"enableUndo.warn": "Gezgin, tüm dosya ve klasör oluşturma olaylarını geri almadan önce soracaktır.",
 			"encoding": "Dosya okuyup yazarken kullanılacak varsayılan karakter kümesi kodlaması. Bu ayar her dili için ayrı olarak da yapılandırılabilir.",
 			"eol": "Varsayılan satır sonu karakteri.",
 			"eol.CRLF": "CRLF",
 			"eol.LF": "LF",
 			"eol.auto": "İşletim sistemine özgü satır sonu karakterini kullanır.",
 			"everything": "Tüm dosyayı biçimlendir.",
-			"exclude": "Dosya ve klasör dışlama glob desenlerini yapılandır. Örneğin, dosya Gezgini, bu ayara göre hangi dosya ve klasörlerin gösterileceğine veya gizleneceğine karar verir. Aramaya özel dışlamalar tanımlamak için '#search.exclude#' ayarına bakın. Glob desenleriyle ilgili daha fazla bilgiyi [burada](https://code.visualstudio.com/docs/editor/codebasics#_advanced-search-options) edinebilirsiniz.",
+			"exclude": "Dosya ve klasör dışlama [glob desenlerini](https://code.visualstudio.com/docs/editor/codebasics#_advanced-search-options) yapılandır. Örneğin, dosya Gezgini, bu ayara göre hangi dosya ve klasörlerin gösterileceğine veya gizleneceğine karar verir. Aramaya özel dışlamalar tanımlamak için \"#search.exclude#\" ayarına bakın.",
 			"expandSingleFolderWorkspaces": "Gezginin başlatma sırasında yalnızca bir klasör içeren çok köklü çalışma alanlarını genişletmesi gerekip gerekmediğini denetler",
 			"explorer.decorations.badges": "Dosya süslemelerinin rozet kullanıp kullanmayacağını denetler.",
 			"explorer.decorations.colors": "Dosya süslemelerinin renk kullanıp kullanmayacağını denetler.",
@@ -5803,10 +5978,6 @@
 			"files.autoSave.onWindowChange": "Pencere odağı kaybettiğinde değişikliklere sahip bir düzenleyici otomatik olarak kaydedilir.",
 			"files.exclude.boolean": "Dosya yollarıyla eşleşecek glob deseni. Deseni etkinleştirmek veya devre dışı bırakmak için true ya da false olarak ayarlayın.",
 			"files.exclude.when": "Eşleşen bir dosyanın eşdüzey öğeleri üzerinde ek denetim. Eşleşen dosya adı için değişken olarak $(basename) kullanın.",
-			"files.experimentalSandboxedFileService": "Deneysel: Korumalı alana alınacak dosya hizmetini değiştirir. Talimat verilmedikçe bunu değiştirmeyin!",
-			"files.legacyWatcher.default": "Insiders sürümünü kullanıyorsanız veya çok köklü çalışma alanlarını her açtığınızda yeni dosya izleyici etkinleştirilecektir.",
-			"files.legacyWatcher.off": "Eski dosya izleyiciyi devre dışı bırakın ve yeni dosya izleyicinin özelliklerinden faydalanmasını sağlayın.",
-			"files.legacyWatcher.on": "Yeni dosya izleyiciyle ilgili sorunlar görmeniz durumunda eski dosya izleyiciyi etkinleştirin.",
 			"files.restoreUndoStack": "Bir dosya yeniden açıldığında geri alma yığınını geri yükle.",
 			"files.saveConflictResolution": "Aynı sırada başka bir program tarafından değiştirilen bir dosya diske kaydedilirse, bir kaydetme çakışması ortaya çıkar. Veri kaybını önlemek için kullanıcının düzenleyicideki değişiklikleri diskteki sürümle karşılaştırması istenir. Bu ayar yalnızca sıkça kaydetme çakışması hatalarıyla karşılaşılıyorsa değiştirilmelidir ve bir uyarı olmadan kullanılırsa veri kaybına neden olabilir.",
 			"files.simpleDialog.enable": "Basit dosya iletişim kutusunu etkinleştirir. Basit dosya iletişim kutusu etkinleştirildiğinde sistem dosyası iletişim kutusunun yerini alır.",
@@ -5819,7 +5990,6 @@
 			"hotExit.onExitAndWindowClose": "Çalışırken çıkış, Windows/Linux'ta son pencere kapatıldığında veya `workbench.action.quit` komutu tetiklendiğinde (komut paleti, tuş bağlama, menü) ve ayrıca son pencere olup olmadığına bakılmaksızın açık bir klasörü olan herhangi bir pencere için tetiklenir. Açık klasörü olmayan tüm pencereler sonraki başlatmada geri yüklenir. Kaydedilmemiş dosyalar içeren, daha önce açılmış pencereler listesine `Dosya > Son Kullanılanları Aç > Diğer...` ile erişilebilir",
 			"hotExit.onExitAndWindowCloseBrowser": "Tarayıcı kapandığında veya pencere ya da sekme kapatıldığında çalışırken çıkış tetiklenir.",
 			"insertFinalNewline": "Etkinleştirildiğinde, kaydederken dosyanın sonuna son yeni bir satır ekle.",
-			"legacyWatcher": "Dosya izleme için kullanılan mekanizmayı kontrol eder. Bunu, yalnızca dosya izlemeyle ilgili sorunlar gördüğünüzde değiştirin.",
 			"maxMemoryForLargeFilesMB": "Büyük dosyaları açmaya çalışırken yeniden başlatmadan sonra VS Code'un kullanılabileceği belleği denetler. Komut satırında '--max-memory=YENIBOYUT' belirtmek ile aynı etkiye sahiptir.",
 			"modification": "Değişiklikleri biçimlendir (kaynak denetimi gerektirir).",
 			"modificationIfAvailable": "Yalnızca değişiklikleri biçimlendirmeyi dener (kaynak denetimi gerektirir). Kaynak denetimi kullanılamıyorsa tüm dosya biçimlendirilir.",
@@ -5829,10 +5999,11 @@
 			"simple": "Yinelenen adın sonuna \"kopya\" sözcüğünü ekler; ardından bir sayı gelebilir",
 			"smart": "Yinelenen adın sonuna bir sayı ekler. Zaten adın parçası olan bir sayı varsa, bu sayıyı artırmaya çalışır",
 			"sortOrder": "Gezginde dosya ve klasörlerin özelliğe göre sıralanmasını denetler.",
-			"sortOrder.alphabetical": "Düzenleyiciler her düzenleyici grubu içinde alfabetik düzende sıralanır.",
+			"sortOrder.alphabetical": "Editors are ordered alphabetically by tab name inside each editor group.",
 			"sortOrder.default": "Dosyalar ve klasörler adlarına göre sıralanır. Klasörler dosyalardan önce görüntülenir.",
 			"sortOrder.editorOrder": "Düzenleyiciler, görüntülenen düzenleyici sekmeleri ile aynı düzende sıralanır.",
 			"sortOrder.filesFirst": "Dosyalar ve klasörler adlarına göre sıralanır. Dosyalar klasörlerden önce görüntülenir.",
+			"sortOrder.fullPath": "Editors are ordered alphabetically by full path inside each editor group.",
 			"sortOrder.mixed": "Dosyalar ve klasörler adlarına göre sıralanır. Dosyalar klasörlerle birlikte görüntülenir.",
 			"sortOrder.modified": "Dosyalar ve klasörler son değiştirilme tarihine göre azalan düzende sıralanır. Klasörler dosyalardan önce görüntülenir.",
 			"sortOrder.type": "Dosyalar ve klasörler uzantı türüne göre gruplanır ve sonra adlarına göre sıralanır. Klasörler dosyalardan önce görüntülenir.",
@@ -5883,12 +6054,13 @@
 			"dirtyCounter": "{0} kaydedilmemiş",
 			"flipLayout": "Dikey/Yatay Düzenleyici Düzenini Aç/Kapat",
 			"miToggleEditorLayout": "&&Düzeni Çevir",
+			"miToggleEditorLayoutWithoutMnemonic": "Flip Layout",
 			"newUntitledFile": "Yeni Adsız Dosya",
 			"openEditors": "Düzenleyicileri Aç"
 		},
 		"vs/workbench/contrib/files/browser/workspaceWatcher": {
 			"enospcError": "Bu büyük çalışma alanı klasöründeki dosya değişiklikleri izlenemiyor. Bu sorunu çözmek için lütfen yönergeler bağlantısını izleyin.",
-			"eshutdownError": "Dosya değişiklikleri izleyicisi beklenmedik şekilde durduruldu. İzleyiciyi yeniden etkinleştirmek için lütfen pencereyi yeniden yükleyin.",
+			"eshutdownError": "Dosya değişiklikleri izleyicisi beklenmedik şekilde durduruldu. Çalışma alanı dosya değişiklikleri için izlenemiyorsa, pencerenin yeniden yüklenmesi izleyiciyi yeniden etkinleştirebilir.",
 			"learnMore": "Yönergeler",
 			"reload": "Yeniden yükle"
 		},
@@ -6120,6 +6292,9 @@
 			"markers.panel.single.warning.label": "1 Uyarı",
 			"markers.panel.title.problems": "Sorunlar",
 			"problems.panel.configuration.autoreveal": "Sorunlar görünümünde açılırken dosyaların otomatik olarak gösterilip gösterilmeyeceğini denetler.",
+			"problems.panel.configuration.compareOrder": "Sorunlarda gezinme sırasını denetler.",
+			"problems.panel.configuration.compareOrder.position": "Konuma göre sıralanmış sorunlarda gezinme",
+			"problems.panel.configuration.compareOrder.severity": "Önem derecesine göre sıralanmış sorunlarda gezinme",
 			"problems.panel.configuration.showCurrentInStatus": "Etkinleştirildiğinde durum çubuğunda geçerli sorunu gösterir.",
 			"problems.panel.configuration.title": "Sorun Görünümü",
 			"problems.tree.aria.label.error.marker": "{0} tarafından oluşturulan hata: {2}. satır {3}. karakterde {1}.{4}",
@@ -6139,10 +6314,14 @@
 		"vs/workbench/contrib/notebook/browser/contrib/cellCommands/cellCommands": {
 			"notebookActions.changeCellToCode": "Hücreyi Koda Dönüştür",
 			"notebookActions.changeCellToMarkdown": "Hücreyi Markdown'a Dönüştür",
+			"notebookActions.collapseAllCellInput": "Tüm Hücre Girdilerini Daralt",
+			"notebookActions.collapseAllCellOutput": "Tüm Hücre Çıktılarını Daralt",
 			"notebookActions.collapseCellInput": "Hücre Girişini Daralt",
 			"notebookActions.collapseCellOutput": "Hücre Çıkışını Daralt",
 			"notebookActions.copyCellDown": "Hücreyi Aşağı Kopyala",
 			"notebookActions.copyCellUp": "Hücreyi Yukarı Kopyala",
+			"notebookActions.expandAllCellInput": "Tüm Hücre Girdilerini Genişlet",
+			"notebookActions.expandAllCellOutput": "Tüm Hücre Çıktılarını Genişlet",
 			"notebookActions.expandCellInput": "Hücre Girişini Genişlet",
 			"notebookActions.expandCellOutput": "Hücre Çıkışını Genişlet",
 			"notebookActions.joinCellAbove": "Önceki Hücreyle Birleştir",
@@ -6191,8 +6370,24 @@
 			"ariaSearchNoResult": "'{1}' için {0} bulundu",
 			"ariaSearchNoResultEmpty": "{0} bulundu",
 			"ariaSearchNoResultWithLineNumNoCurrentMatch": "'{1}' için {0} bulundu",
+			"notebook.findInMarkdownPreview": "Find in Markdown Preview",
+			"notebook.findInOutput": "Find in Cell Outputs",
 			"notebookActions.findInNotebook": "Not Defterinde Bul",
-			"notebookActions.hideFind": "Not Defterinde Bulmayı Gizle"
+			"notebookActions.hideFind": "Not Defterinde Bulmayı Gizle",
+			"notebookMenu.notebookFindFilter": "Notebook Find Filter"
+		},
+		"vs/workbench/contrib/notebook/browser/contrib/find/notebookFindReplaceWidget": {
+			"findFilterIcon": "Bulma pencere öğesinde Filtre Bul simgesi.",
+			"label.closeButton": "Kapat",
+			"label.find": "Bul",
+			"label.nextMatchButton": "Sonraki Eşleşme",
+			"label.previousMatchButton": "Önceki Eşleşme",
+			"label.replace": "Değiştir",
+			"label.replaceAllButton": "Tümünü Değiştir",
+			"label.replaceButton": "Değiştir",
+			"label.toggleReplaceButton": "Değiştirmeyi Aç/Kapat",
+			"placeholder.find": "Bul",
+			"placeholder.replace": "Değiştir"
 		},
 		"vs/workbench/contrib/notebook/browser/contrib/fold/folding": {
 			"fold.cell": "Hücreyi Katla",
@@ -6255,7 +6450,8 @@
 			"notebookActions.executeAndSelectBelow": "Not Defteri hücresini Yürüt ve Aşağıdan Seç",
 			"notebookActions.executeBelow": "Hücreyi ve Altındakileri Yürüt",
 			"notebookActions.executeNotebook": "Tümünü Çalıştır",
-			"notebookActions.renderMarkdown": "Tüm Markdown Hücrelerini İşle"
+			"notebookActions.renderMarkdown": "Tüm Markdown Hücrelerini İşle",
+			"revealRunningCell": "Çalışan Hücreye Git"
 		},
 		"vs/workbench/contrib/notebook/browser/controller/insertCellActions": {
 			"notebookActions.insertCodeCellAbove": "Yukarıya Code Hücresi Ekle",
@@ -6351,6 +6547,8 @@
 			"notebook.globalToolbar.description": "Not defteri düzenleyicisi içinde genel bir araç çubuğunun işlenip işlenmeyeceğini denetleyin.",
 			"notebook.globalToolbarShowLabel": "Not defteri araç çubuğundaki eylemlerin etiket işleyip işlemeyeceğini kontrol edin.",
 			"notebook.insertToolbarPosition.description": "Hücre ekleme eylemlerinin nerede görüneceğini denetleyin.",
+			"notebook.interactiveWindow.collapseCodeCells": "Controls whether code cells in the interactive window are collapsed by default.",
+			"notebook.markup.fontSize": "Not defterleri içinde işlenen işaretlemenin yazı tipi boyutunu denetler. '0' olarak ayarlandığında, '#editor.fontSize#' değerinin %120'si kullanılır.",
 			"notebook.showCellStatusbar.description": "Hücre durum çubuğunun gösterilip gösterilmeyeceğini belirtir.",
 			"notebook.showCellStatusbar.hidden.description": "Hücre Durum çubuğu her zaman gizli durumda.",
 			"notebook.showCellStatusbar.visible.description": "Hücre Durum çubuğu her zaman görünür durumda.",
@@ -6366,9 +6564,6 @@
 			"fail.noEditor": "Kaynak '{0}' not defteri düzenleyicisi türü ile açılamıyor. Lütfen doğru uzantının yüklü veya etkinleştirilmiş durumda olup olmadığını denetleyin.",
 			"fail.reOpen": "Dosyayı VS Code standart metin düzenleyicisiyle yeniden aç"
 		},
-		"vs/workbench/contrib/notebook/browser/notebookEditorKernelManager": {
-			"notebookRunTrust": "Bir not defteri hücresi çalıştırıldığında, kod bu çalışma alanından çalıştırılır."
-		},
 		"vs/workbench/contrib/notebook/browser/notebookEditorWidget": {
 			"focusedCellBackground": "Hücreye odaklanıldığında hücrenin arka plan rengi.",
 			"notebook.cellBorderColor": "Not defteri hücrelerinin kenarlık rengi.",
@@ -6377,7 +6572,7 @@
 			"notebook.cellInsertionIndicator": "Not defteri hücresi ekleme göstergesinin rengi.",
 			"notebook.cellStatusBarItemHoverBackground": "Not defteri hücresi durum çubuğu öğelerinin arka plan rengi.",
 			"notebook.cellToolbarSeparator": "Hücre alt araç çubuğundaki ayırıcı rengi",
-			"notebook.focusedCellBorder": "Hücreye odaklanıldığında hücre kenarlıklarının rengi.",
+			"notebook.focusedCellBorder": "Hücreye odaklanıldığında hücrenin odak göstergesi kenarlıklarının rengi.",
 			"notebook.focusedEditorBorder": "Not defteri hücre düzenleyicisi kenarlığının rengi.",
 			"notebook.inactiveFocusedCellBorder": "Birincil odak düzenleyicinin dışındayken hücreye odaklanıldığında hücrenin üst ve alt kenarlığının rengi.",
 			"notebook.inactiveSelectedCellBorder": "Birden çok hücre seçildiğinde hücre kenarlıklarının rengi.",
@@ -6393,6 +6588,9 @@
 			"notebookStatusSuccessIcon.foreground": "Not defteri hücrelerinin hücre durum çubuğundaki hata simgesi rengi.",
 			"notebookTreeAriaLabel": "Not Defteri",
 			"selectedCellBackground": "Hücre seçildiğinde hücrenin arka plan rengi."
+		},
+		"vs/workbench/contrib/notebook/browser/notebookExecutionServiceImpl": {
+			"notebookRunTrust": "Bir not defteri hücresi çalıştırıldığında, kod bu çalışma alanından çalıştırılır."
 		},
 		"vs/workbench/contrib/notebook/browser/notebookIcons": {
 			"clearIcon": "Not defteri düzenleyicilerindeki hücre çıkışlarını temizleme simgesi.",
@@ -6426,6 +6624,28 @@
 			"no": "Hayır",
 			"yes": "Evet"
 		},
+		"vs/workbench/contrib/notebook/browser/view/cellParts/cellEditorOptions": {
+			"notebook.cell.toggleLineNumbers.title": "Hücre Satır Numaralarını Göster",
+			"notebook.lineNumbers": "Hücre düzenleyicisindeki satır numaralarının görüntülenmesini denetler.",
+			"notebook.showLineNumbers": "Not Defteri Satır Numaralarını Göster",
+			"notebook.toggleLineNumbers": "Not Defteri Satır Numaralarını Aç/Kapat"
+		},
+		"vs/workbench/contrib/notebook/browser/view/cellParts/cellOutput": {
+			"builtinRenderInfo": "yerleşik",
+			"curruentActiveMimeType": "Şu Anda Etkin",
+			"installJupyterPrompt": "Marketten ek işleyiciler yükleyin",
+			"pickMimeType": "Sunuyu Değiştirin",
+			"promptChooseMimeType.placeHolder": "Geçerli çıkış için işlenecek mimetype'ı seçin",
+			"promptChooseMimeTypeInSecure.placeHolder": "Geçerli çıkış için işlenecek mimetype'ı seçin",
+			"unavailableRenderInfo": "işleyici kullanılamıyor"
+		},
+		"vs/workbench/contrib/notebook/browser/view/cellParts/codeCell": {
+			"cellExpandInputButtonLabel": "Hücre Girişini ({0}) Genişlet",
+			"cellExpandInputButtonLabelWithDoubleClick": "Hücre girişini ({0}) genişletmek için çift tıklayın"
+		},
+		"vs/workbench/contrib/notebook/browser/view/cellParts/codeCellRunToolbar": {
+			"notebook.moreRunActionsLabel": "Diğer..."
+		},
 		"vs/workbench/contrib/notebook/browser/view/output/outputRenderer": {
 			"empty": "Hücrede çıktı yok",
 			"noRenderer.1": "\"{0}\" mimetype'ı için işleyici bulunamadı, ancak Market'te bir tane mevcut olabilir.",
@@ -6436,30 +6656,11 @@
 			"notebook.emptyMarkdownPlaceholder": "Boş markdown hücresi; düzenlemek için çift tıklayın veya Enter tuşuna basın.",
 			"notebook.error.rendererNotFound": "'$0' a için bir işleyici bulunamadı"
 		},
-		"vs/workbench/contrib/notebook/browser/view/renderers/cellEditorOptions": {
-			"notebook.cell.toggleLineNumbers.title": "Hücre Satır Numaralarını Göster",
-			"notebook.lineNumbers": "Hücre düzenleyicisindeki satır numaralarının görüntülenmesini denetler.",
-			"notebook.showLineNumbers": "Not Defteri Satır Numaralarını Göster",
-			"notebook.toggleLineNumbers": "Not Defteri Satır Numaralarını Aç/Kapat"
-		},
-		"vs/workbench/contrib/notebook/browser/view/renderers/cellOutput": {
-			"builtinRenderInfo": "yerleşik",
-			"curruentActiveMimeType": "Şu Anda Etkin",
-			"installJupyterPrompt": "Marketten ek işleyiciler yükleyin",
-			"pickMimeType": "Çıkış MIME Türünü Seçin",
-			"promptChooseMimeType.placeHolder": "Geçerli çıkış için işlenecek mimetype'ı seçin",
-			"promptChooseMimeTypeInSecure.placeHolder": "Geçerli çıkış için işlenecek mimetype'ı seçin",
-			"unavailableRenderInfo": "işleyici kullanılamıyor"
-		},
 		"vs/workbench/contrib/notebook/browser/view/renderers/cellRenderer": {
 			"cellExecutionOrderCountLabel": "Yürütme Sırası",
 			"cellExpandOutputButtonLabel": "Hücre Çıkışını (${0}) Genişlet",
 			"cellExpandOutputButtonLabelWithDoubleClick": "Hücre çıkışını ({0}) genişletmek için çift tıklayın",
-			"notebook.moreRunActionsLabel": "Diğer..."
-		},
-		"vs/workbench/contrib/notebook/browser/view/renderers/codeCell": {
-			"cellExpandInputButtonLabel": "Hücre Girişini ({0}) Genişlet",
-			"cellExpandInputButtonLabelWithDoubleClick": "Hücre girişini ({0}) genişletmek için çift tıklayın"
+			"cellOutputsCollapsedMsg": "Çıkışlar daraltıldı"
 		},
 		"vs/workbench/contrib/notebook/browser/viewParts/notebookKernelActionViewItem": {
 			"select": "Çekirdek Seç"
@@ -6701,6 +6902,7 @@
 		"vs/workbench/contrib/preferences/browser/settingsLayout": {
 			"appearance": "Görünüm",
 			"application": "Uygulama",
+			"audioCues": "Audio Cues",
 			"breadcrumbs": "İçerik haritaları",
 			"comments": "Açıklamalar",
 			"commonlyUsed": "Sık Kullanılan",
@@ -6747,6 +6949,8 @@
 			"configuredIn": "Değiştirilme tarihi",
 			"copySettingAsJSONLabel": "Ayarı JSON Olarak Kopyala",
 			"copySettingIdLabel": "Ayar Kimliğini Kopyala",
+			"defaultOverriddenDetails": "Default value overridden by {0}",
+			"defaultOverrideLabelText": "($(wrench) Overridden by: {0})",
 			"editInSettingsJson": "settings.json'da düzenle",
 			"extensionSyncIgnoredLabel": "Eşitleme: Yoksayıldı",
 			"extensions": "Uzantılar",
@@ -6759,6 +6963,7 @@
 			"settings.Modified": "Değiştirildi.",
 			"settingsContextMenuTitle": "Diğer Eylemler... ",
 			"stopSyncingSetting": "Bu Ayarı Eşitle",
+			"syncIgnoredTitle": "Ayar eşitleme bu ayarı eşitlemez",
 			"trustLabel": "Bu ayar, yalnızca güvenilen bir çalışma alanında uygulanabilir.",
 			"validationError": "Doğrulama Hatası."
 		},
@@ -6779,7 +6984,7 @@
 			"excludeSiblingInputPlaceholder": "Desen Mevcutsa...",
 			"focusedRowBackground": "Odaklandığında görünecek ayar satırının arka plan rengi.",
 			"headerForeground": "Bölüm üst bilgisi veya etkin başlık için ön plan rengi.",
-			"itemInputPlaceholder": "Dize Öğesi...",
+			"itemInputPlaceholder": "Öğe...",
 			"listSiblingHintLabel": "eş öğesi `${1}` olan `{0}` liste öğesi",
 			"listSiblingInputPlaceholder": "Eşdüzey...",
 			"listValueHintLabel": "Liste öğesi '{0}'",
@@ -7002,6 +7207,7 @@
 			"invalidWorkspaceDetail": "Çalışma alanı mevcut değil. Lütfen açmak için başka bir çalışma alanı seçin.",
 			"invalidWorkspaceMessage": "Çalışma alanı mevcut değil",
 			"invalidWorkspacePrimary": "&&Çalışma Alanını Aç",
+			"pauseSocketWriting": "Bağlantı: Yuva yazmayı duraklat",
 			"remote": "Uzak",
 			"remote.autoForwardPorts": "Etkinleştirildiğinde, yeni çalışan işlemler saptanır ve dinleyeceği bağlantı noktaları otomatik olarak iletilir. Bu ayarı devre dışı bırakmak, tüm bağlantı noktalarının iletilmesini engellemez. Devre dışı bırakılsa bile, uzantılar yine de bağlantı noktalarının iletilmesine neden olur ve bazı URL'leri açmak yine de bağlantı noktalarının iletilmesine neden olur.",
 			"remote.autoForwardPortsSource": "`remote.autoForwardPorts` true olduğunda bağlantı noktalarının otomatik olarak iletildiği kaynağı ayarlar. Windows ve Mac uzak depolarında, `process` seçeneğinin etkisi yoktur ve `output` kullanılır. Yeniden yüklemenin etkin olması gerekir.",
@@ -7027,6 +7233,7 @@
 			"remote.portsAttributes.silent": "Bu bağlantı noktası otomatik olarak iletildiğinde bildirim göstermez ve işlem yapmaz.",
 			"remote.restoreForwardedPorts": "Restores the ports you forwarded in a workspace.",
 			"remoteExtensionLog": "Uzak Sunucu",
+			"triggerReconnect": "Bağlantı: Yeniden Bağlanmayı Tetikle",
 			"ui": "UI uzantı tipi. Uzak bir pencerede, böyle uzantılar yalnızca yerel makinede kullanılabilir olduğunda etkindir.",
 			"workspace": "Çalışma alanı uzantı tipi. Uzak bir pencerede, böyle uzantılar yalnızca uzaktan kullanılabilir olduğunda etkindir."
 		},
@@ -7058,8 +7265,8 @@
 			"minimapGutterAddedBackground": "Eklenen satırlar için mini harita cilt payı arka plan rengi.",
 			"minimapGutterDeletedBackground": "Silinen satırlar için mini harita cilt payı arka plan rengi.",
 			"minimapGutterModifiedBackground": "Değiştirilen satırlar için mini harita cilt payı arka plan rengi.",
-			"move to next change": "Sonraki Değişikliğe Taşı",
-			"move to previous change": "Önceki Değişikliğe Taşı",
+			"move to next change": "Sonraki Değişikliğe Git",
+			"move to previous change": "Önceki Değişikliğe Git",
 			"overviewRulerAddedForeground": "Eklenen içerik için genel bakış cetveli işaretleyici rengi.",
 			"overviewRulerDeletedForeground": "Silinen içerik için genel bakış cetveli işaretleyici rengi.",
 			"overviewRulerModifiedForeground": "Değiştirilen içerik için genel bakış cetveli işaretleyici rengi.",
@@ -7071,11 +7278,14 @@
 			"alwaysShowRepository": "Depoların SCM görünümünde her zaman görünür mü olacağını denetler.",
 			"autoReveal": "SCM görünümünün açarken dosyaları otomatik olarak göstermesini ve seçmesini denetler.",
 			"diffDecorations": "Düzenleyicide fark süslemelerini denetler.",
+			"diffDecorationsIgnoreTrimWhitespace": "Kaynak Denetimi fark aralık payı süslemeleri içinde baştaki ve sondaki boşluğun yok sayılıp sayılmayacağını denetler.",
 			"diffGutterWidth": "Cilt payında fark süslemelerinin (eklenen ve değiştirilenler) (piksel) genişliğini denetler.",
 			"inputFontFamily": "Giriş iletisinin yazı tipini denetler. Çalışma masası kullanıcı arabirimi yazı tipi ailesi için 'default', '#editor.fontFamily#' için 'editor' kullanın.",
 			"inputFontSize": "Giriş iletisinin yazı tipi boyutunu piksel cinsinden denetler.",
+			"manageWorkspaceTrustAction": "Çalışma Alanına Güveni Yönet",
 			"miViewSCM": "S&&CM",
 			"no open repo": "Kayıtlı kaynak denetim sağlayıcısı yok.",
+			"no open repo in an untrusted workspace": "Kayıtlı kaynak denetimi sağlayıcılarının hiçbiri Kısıtlı Modda çalışmıyor.",
 			"open in terminal": "Terminalde Aç",
 			"providersVisible": "Kaynak Denetim Depoları bölümünde görünen depo sayısını denetler. Görünümü el ile yeniden boyutlandırabilmek için `0` olarak ayarlayın.",
 			"scm accept": "SCM: Girişi kabul et",
@@ -7088,6 +7298,10 @@
 			"scm.defaultViewMode": "Varsayılan Kaynak Denetimi depo görünümü modunu denetler.",
 			"scm.defaultViewMode.list": "Depo değişikliklerini liste olarak göster.",
 			"scm.defaultViewMode.tree": "Depo değişikliklerini ağaç olarak göster.",
+			"scm.defaultViewSortKey": "Varsayılan Kaynak Denetimi deposu sıralama modunu denetler.",
+			"scm.defaultViewSortKey.name": "Depo değişikliklerini dosya adına göre sıralayın.",
+			"scm.defaultViewSortKey.path": "Depo değişikliklerini yola göre sıralayın.",
+			"scm.defaultViewSortKey.status": "Depo değişikliklerini SCM durumuna göre sıralayın.",
 			"scm.diffDecorations.all": "Tüm mevcut konumlardaki fark süslemelerini göster.",
 			"scm.diffDecorations.gutter": "Fark süslemelerini yalnızca düzenleyici cilt payı içinde göster.",
 			"scm.diffDecorations.minimap": "Fark süslemelerini yalnızca mini harita içinde göster.",
@@ -7099,6 +7313,9 @@
 			"scm.diffDecorationsGutterVisibility": "Cilt payında Kaynak Denetimi fark süsleyicisinin görünürlüğünü denetler.",
 			"scm.diffDecorationsGutterVisibility.always": "Fark süsleyicisini her zaman cilt payı içinde göster.",
 			"scm.diffDecorationsGutterVisibility.hover": "Fark süsleyicisini yalnızca üzerinde gezinmede cilt payı içinde göster.",
+			"scm.diffDecorationsIgnoreTrimWhitespace.false": "Öndeki ve sondaki boşlukların hiçbirini yok sayma.",
+			"scm.diffDecorationsIgnoreTrimWhitespace.inherit": "'diffEditor.ignoreTrimWhitespace' öğesinden devral.",
+			"scm.diffDecorationsIgnoreTrimWhitespace.true": "Tüm öndeki ve sondaki boşlukları yok say.",
 			"scm.providerCountBadge": "Kaynak Denetim Sağlayıcısı üst bilgilerindeki sayım rozetlerini denetler. Bu üst bilgiler yalnızca birden fazla sağlayıcı olduğunda görünür.",
 			"scm.providerCountBadge.auto": "Kaynak Denetim Sağlayıcısı için sayım rozetini yalnızca sıfır olmadığında göster.",
 			"scm.providerCountBadge.hidden": "Kaynak Denetim Sağlayıcısı sayım rozetlerini gizle.",
@@ -7159,7 +7376,7 @@
 			"copyAllLabel": "Tümünü Kopyala",
 			"copyMatchLabel": "Kopyala",
 			"copyPathLabel": "Yolu Kopyala",
-			"exclude": "Tam metin aramalarında ve hızlı açmada dosya ve klasörleri dışlamak için glob desenleri yapılandırın. '#files.exclude#' ayarından tüm glob desenlerini devralır. Glob desenleriyle ilgili daha fazla bilgiyi [burada](https://code.visualstudio.com/docs/editor/codebasics#_advanced-search-options) bulabilirsiniz.",
+			"exclude": "Tam metin aramalarında ve hızlı açmada dosya ve klasörleri dışlamak için [glob desenlerini](https://code.visualstudio.com/docs/editor/codebasics#_advanced-search-options) yapılandırın. \"#files.exclude#\" ayarından tüm glob desenlerini devralır.",
 			"exclude.boolean": "Dosya yollarının eşleştirileceği glob deseni. Deseni etkinleştirmek veya devre dışı bırakmak için true ya da false olarak ayarlayın.",
 			"exclude.when": "Eşleşen bir dosyanın eşdüzey öğeleri üzerinde ek denetim. Eşleşen dosya adı için değişken olarak $(basename) kullanın.",
 			"filterSortOrder": "Filtreleme sırasında hızlı açmada düzenleyici geçmişinin sıralama düzenini denetler.",
@@ -7171,6 +7388,7 @@
 			"findInFolder": "Klasörde Bul...",
 			"findInWorkspace": "Çalışma Alanında Bul...",
 			"focusSearchListCommandLabel": "Odak Listesi",
+			"maintainFileSearchCacheDeprecated": "Arama önbelleği, hiçbir zaman kapanmayan uzantı konağında tutulduğundan bu ayara artık gerek yoktur.",
 			"miFindInFiles": "Dosyalarda &&Bul",
 			"miGotoSymbolInWorkspace": "&&Çalışma Alanında Sembole Git...",
 			"miReplaceInFiles": "Dosyalarda &&Değiştir",
@@ -7184,7 +7402,6 @@
 			"search.collapseAllResults": "Arama sonuçlarının daraltılması ya da genişletilmesi tercihini denetler.",
 			"search.collapseResults.auto": "10'dan az sonuç içeren dosyalar genişletilir. Diğerleri daraltılır.",
 			"search.followSymlinks": "Arama sırasında sembolik bağlantıların takip edilip edilmeyeceğini denetler.",
-			"search.forceSearchProcess": "Etkinleştirildiğinde, yerel bir pencerede arama, uzantı ana bilgisayarı yerine ayrı bir arama işlemi içinde çalışır.",
 			"search.globalFindClipboard": "Arama görünümünün macOS'te paylaşılan bulma panosunu okuması ya da değiştirmesi arasındaki tercihi denetler.",
 			"search.location": "Aramanın kenar çubuğunda bir görünüm olarak mı, yoksa panel alanında daha fazla yatay boşluk olması için bir panel olarak mı gösterileceğini denetler.",
 			"search.location.deprecationMessage": "Bu ayar kullanım dışı. Bunun yerine arama simgesini yeni bir konuma sürükleyebilirsiniz.",
@@ -7224,6 +7441,7 @@
 			"useGlobalIgnoreFiles": "Dosya aranırken genel “.gitignore” ve “.ignore” dosyalarının kullanılıp kullanılmayacağını denetler. Etkinleştirilmesi için \"#search.useIgnoreFiles#\" gerekir.",
 			"useIgnoreFiles": "Dosya aranırken `.gitignore` ve `.ignore` dosyalarının kullanılıp kullanılmayacağını denetler.",
 			"usePCRE2Deprecated": "Kullanım dışıdır. Yalnızca PCRE2 tarafından desteklenen normal ifade özellikleri kullanılırken otomatik olarak PCRE2 kullanılacaktır.",
+			"useParentIgnoreFiles": "Dosya aranırken üst dizinlerde \".gitignore\" ve \".ignore\" dosyalarının kullanılıp kullanılmayacağını denetler. Etkinleştirilmesi için \"#search.useIgnoreFiles#\" gerekir.",
 			"useRipgrep": "Bu ayar kullanım dışı ve artık \"search.usePCRE2\" kullanılıyor.",
 			"useRipgrepDeprecated": "Kullanım dışıdır. Gelişmiş normal ifade özelliği desteği için \"search.usePCRE2\" seçeneğini kullanabilirsiniz."
 		},
@@ -7415,7 +7633,6 @@
 			"enable.snippet": "IntelliSense'te göster",
 			"isDisabled": "(IntelliSense'den gizlenmiş)",
 			"pick.placeholder": "Bir kod parçacığı seçin",
-			"sep.extSnippet": "Uzantı Parçacıkları",
 			"sep.userSnippet": "Kullanıcı Parçacıkları",
 			"sep.workspaceSnippet": "Çalışma Alanı Parçacıkları",
 			"snippet.suggestions.label": "Parçacık Ekle"
@@ -7542,7 +7759,7 @@
 			"saveBeforeRun.save": "Kaydet",
 			"selectProblemMatcher": "Görev çıkışının hangi hata ve uyarı türleri için taranacağını seçin",
 			"showOutput": "Çıkışı göster",
-			"taskQuickPick.userSettings": "Kullanıcı Ayarları",
+			"taskQuickPick.userSettings": "Kullanıcı",
 			"taskService.ignoreingFolder": "{0} çalışma alanı klasörü için görev yapılandırmaları yoksayılıyor. Çok klasörlü çalışma alanı görev desteği, tüm klasörlerin 2.0.0 görev sürümünü kullanmasını gerektirir\r\n",
 			"taskService.openDiff": "Farkı aç",
 			"taskService.openDiffs": "Farkları aç",
@@ -7849,7 +8066,7 @@
 			"ConfigurationParser.noShell": "Uyarı: kabuk yapılandırması yalnızca terminalde görevler yürütülürken desteklenir.",
 			"ConfigurationParser.noTaskName": "Hata: bir görev bir etiket özelliği sağlamalıdır. Görev yoksayılacak.\r\n{0}\r\n",
 			"ConfigurationParser.noTaskType": "Hata: görev yapılandırmasının bir tür özelliği olmalıdır. Yapılandırma yoksayılacak.\r\n{0}\r\n",
-			"ConfigurationParser.noTypeDefinition": "Hata: '{0}' adlı kaydettirilmiş bir görev türü yok. İlgili bir görev sağlayıcısı sunan bir uzantıyı yüklemeyi mi atladınız?",
+			"ConfigurationParser.noTypeDefinition": "Hata: kayıtlı bir '{0}' görev türü yok. İlgili görev sağlayıcısını sunan bir uzantıyı yüklemeyi mi atladınız?",
 			"ConfigurationParser.notCustom": "Hata: görevler özel görev olarak bildirilmemiş. Yapılandırma yoksayılacak.\r\n{0}\r\n",
 			"ConfigurationParser.unknownMatcherKind": "Uyarı: tanımlı sorun eşleştirici bilinmiyor. Desteklenen türler: string | ProblemMatcher | Array<string | ProblemMatcher>.\r\n{0}\r\n",
 			"TaskParse.noOsSpecificGlobalTasks": "Görev sürümü 2.0.0, işletim sistemine özgü genel görevleri desteklemiyor. Bunları işletim sistemine özgü bir komutu olan bir göreve dönüştürün. Etkilenen görevler:\r\n{0}",
@@ -7860,7 +8077,7 @@
 		"vs/workbench/contrib/tasks/common/taskDefinitionRegistry": {
 			"TaskDefinition.description": "Gerçek görev türü. Lütfen '$' ile başlayan türlerin iç kullanım için ayrıldığını unutmayın.",
 			"TaskDefinition.properties": "Görev türünün ek özellikleri",
-			"TaskDefinition.when": "Bu tür bir görevi etkinleştirmek için karşılanması gereken koşul. 'shellExecutionSupported', 'processExecutionSupported' ve 'customExecutionSupported' işlevlerinden bu görev tanımına uygun olanı kullanın.",
+			"TaskDefinition.when": "Bu görev türünü etkinleştirmek için true olması gereken koşul. Bu görev tanımı için uygun olan 'shellExecutionSupported', 'processExecutionSupported' veya 'customExecutionSupported' koşulunu kullanmayı düşünün. Daha fazla bilgi için bkz. [API belgeleri](https://code.visualstudio.com/api/extension-guides/task-provider#when-clause).",
 			"TaskDefinitionExtPoint": "Görev türleri katkısında bulunur",
 			"TaskTypeConfiguration.noType": "Görev türü yapılandırmasında gerekli 'taskType' özelliği eksik"
 		},
@@ -7886,6 +8103,10 @@
 			"TaskSystem.runningTask": "Çalışan bir görev var. Sonlandırmak istiyor musunuz?",
 			"TaskSystem.terminateTask": "&&Görevi Sonlandır"
 		},
+		"vs/workbench/contrib/terminal/browser/baseTerminalBackend": {
+			"nonResponsivePtyHost": "Terminalin pty konağı işlemine yönelik bağlantı yanıt vermiyor. Terminalin çalışması durmuş olabilir.",
+			"restartPtyHost": "Pty konağını yeniden başlat"
+		},
 		"vs/workbench/contrib/terminal/browser/environmentVariableInfo": {
 			"extensionEnvironmentContributionChanges": "Uzantılar terminalin ortamında aşağıdaki değişiklikleri yapmak istiyor:",
 			"extensionEnvironmentContributionInfo": "Uzantılar bu terminalin ortamında değişiklikler yaptı",
@@ -7906,12 +8127,14 @@
 			"terminalLinkHandler.followLinkCmd": "cmd + tıklama",
 			"terminalLinkHandler.followLinkCtrl": "ctrl + tıklama"
 		},
+		"vs/workbench/contrib/terminal/browser/links/terminalLinkQuickpick": {
+			"terminal.integrated.fileLinks": "Dosya",
+			"terminal.integrated.openWebLink": "Açılacak bağlantıyı seç",
+			"terminal.integrated.webLinks": "Web",
+			"terminal.integrated.wordLinks": "Word"
+		},
 		"vs/workbench/contrib/terminal/browser/links/terminalWordLinkProvider": {
 			"searchWorkspace": "Çalışma alanında ara"
-		},
-		"vs/workbench/contrib/terminal/browser/remoteTerminalService": {
-			"nonResponsivePtyHost": "Terminalin pty konağı işlemine yönelik bağlantı yanıt vermiyor. Terminalin çalışması durmuş olabilir.",
-			"restartPtyHost": "Pty konağını yeniden başlat"
 		},
 		"vs/workbench/contrib/terminal/browser/terminal.contribution": {
 			"miToggleIntegratedTerminal": "&&Terminal",
@@ -7920,7 +8143,7 @@
 			"terminal": "Terminal"
 		},
 		"vs/workbench/contrib/terminal/browser/terminalActions": {
-			"emptyTerminalNameError": "Bir ad sağlanmalı.",
+			"emptyTerminalNameInfo": "İsim vermemek, onu varsayılan değere sıfırlayacaktır",
 			"noUnattachedTerminals": "Eklenecek kaldırılmış terminal yok",
 			"quickAccessTerminal": "Etkin Terminali Değiştir",
 			"showTerminalTabs": "Sekmeleri Göster",
@@ -7940,9 +8163,14 @@
 			"workbench.action.terminal.focusNextPane": "Terminal Grubunda Sonraki Terminale Odaklan",
 			"workbench.action.terminal.focusPrevious": "Önceki Terminal Grubuna Odaklan",
 			"workbench.action.terminal.focusPreviousPane": "Terminal Grubunda Önceki Terminale Odaklan",
+			"workbench.action.terminal.goToRecentDirectory": "Son Dizine Git",
 			"workbench.action.terminal.hideFind": "Bul Öğesini Gizle",
+			"workbench.action.terminal.join": "Terminallere Katıl",
+			"workbench.action.terminal.join.insufficientTerminals": "Birleştirme eylemi için terminaller yetersiz",
+			"workbench.action.terminal.join.onlySplits": "Tüm terminaller zaten birleştirildi",
 			"workbench.action.terminal.joinInstance": "Terminallere Katıl",
 			"workbench.action.terminal.kill": "Etkin Terminal Örneğini Sonlandır",
+			"workbench.action.terminal.killAll": "Tüm Terminalleri Sonlandır",
 			"workbench.action.terminal.killEditor": "Düzenleyici Alanında Etkin Terminali Sonlandır",
 			"workbench.action.terminal.navigationModeExit": "Gezinme Modundan Çık",
 			"workbench.action.terminal.navigationModeFocusNext": "Sonraki Satıra Odaklan (Gezinme Modu)",
@@ -7967,6 +8195,7 @@
 			"workbench.action.terminal.resizePaneUp": "Terminalin Boyutunu Yukarı Doğru Değiştir",
 			"workbench.action.terminal.runActiveFile": "Etkin Dosyayı Etkin Terminalde Çalıştır",
 			"workbench.action.terminal.runActiveFile.noFile": "Yalnızca diskteki dosyalar terminalde çalıştırılabilir",
+			"workbench.action.terminal.runRecentCommand": "Son Komutu Çalıştır",
 			"workbench.action.terminal.runSelectedText": "Seçili Metni Etkin Terminalde Çalıştır",
 			"workbench.action.terminal.scrollDown": "Aşağı Kaydır (Satır)",
 			"workbench.action.terminal.scrollDownPage": "Aşağı Kaydır (Sayfa)",
@@ -7978,7 +8207,8 @@
 			"workbench.action.terminal.scrollUpPage": "Yukarı Kaydır (Sayfa)",
 			"workbench.action.terminal.searchWorkspace": "Çalışma Alanını Ara",
 			"workbench.action.terminal.selectAll": "Tümünü Seç",
-			"workbench.action.terminal.selectDefaultProfile": "Varsayılan Profili Seçin",
+			"workbench.action.terminal.selectDefaultShell": "Varsayılan Profili Seçin",
+			"workbench.action.terminal.selectDetectedLink": "Algılanan Bağlantıyı Seç",
 			"workbench.action.terminal.selectToNextCommand": "Sonraki Komuta Kadar Seç",
 			"workbench.action.terminal.selectToNextLine": "Sonraki Satıra Kadar Seç",
 			"workbench.action.terminal.selectToPreviousCommand": "Önceki Komuta Kadar Seç",
@@ -8020,28 +8250,25 @@
 			"bellStatus": "Zil",
 			"configureTerminalSettings": "Terminal Ayarlarını Yapılandır",
 			"disconnectStatus": "İşlemle bağlantı kesildi",
-			"dontShowAgain": "Tekrar Gösterme",
 			"keybindingHandling": "Bazı tuş bağlamaları, varsayılan olarak terminale gitmez ve bunun yerine {0} tarafından işlenir.",
 			"launchFailed.errorMessage": "Terminal işlemi başlatılamadı: {0}.",
 			"launchFailed.exitCodeAndCommandLine": "\"{0}\" terminal işlemi başlatılamadı (çıkış kodu: {1}).",
 			"launchFailed.exitCodeOnly": "Terminal işlemi başlatılamadı (çıkış kodu: {0}).",
-			"migrateToProfile": "Geçir",
-			"no": "Hayır",
 			"setTerminalDimensionsColumn": "Sabit Boyutları Ayarla: Sütun",
 			"setTerminalDimensionsRow": "Sabit Boyutları Ayarla: Satır",
 			"terminal.integrated.a11yPromptLabel": "Terminal girişi",
 			"terminal.integrated.a11yTooMuchOutput": "Duyurulacak çok fazla çıkış var, okunacak satırlara kendiniz gidin",
 			"terminal.integrated.copySelection.noSelection": "Terminalin kopyalanacak seçimi yok",
-			"terminal.slowRendering": "Terminal GPU hızlandırması bilgisayarınızda yavaş gibi görünüyor. Devre dışı bırakmak istiyor musunuz? Bu, performansı iyileştirebilir. [Terminal ayarları hakkında daha fazla bilgi edinin](https://code.visualstudio.com/docs/editor/integrated-terminal#_changing-how-the-terminal-is-rendered).",
+			"terminal.requestTrust": "Terminal işlemi oluşturmak için kod yürütülmesi gerekir",
 			"terminalNavigationMode": "Terminal arabelleğinde gezinmek için {0} ve {1} kullanın",
-			"terminalProfileMigration": "Terminal, kullanımdan dışı Shell/shellArgs ayarlarını kullanıyor, onu bir profile taşımak istiyor musunuz?",
 			"terminalStaleTextBoxAriaLabel": "{0} terminal ortamı eski, daha fazla bilgi için 'Ortam Bilgilerini Göster' komutunu çalıştırın",
 			"terminalTextBoxAriaLabel": "{0} terminali",
 			"terminalTextBoxAriaLabelNumberAndTitle": "{0} terminali, {1}",
 			"terminated.exitCodeAndCommandLine": "\"{0}\" terminal işlemi şu çıkış koduyla sonlandırıldı: {1}.",
 			"terminated.exitCodeOnly": "Terminal işlemi şu çıkış koduyla sonlandı: {0}.",
+			"viewCommandOutput": "Komut Çıkışını Görüntüle",
 			"workbench.action.terminal.rename.prompt": "Terminal adını girin",
-			"yes": "Evet"
+			"workspaceNotTrustedCreateTerminal": "Güvenilmeyen bir çalışma alanında terminal işlemi başlatılamıyor"
 		},
 		"vs/workbench/contrib/terminal/browser/terminalMenus": {
 			"defaultTerminalProfile": "{0} (Varsayılan)",
@@ -8070,24 +8297,30 @@
 		"vs/workbench/contrib/terminal/browser/terminalProcessManager": {
 			"ptyHostRelaunch": "Kabuk işlemine yönelik bağlantı kaybolduğundan terminal yeniden başlatılıyor..."
 		},
+		"vs/workbench/contrib/terminal/browser/terminalProfileQuickpick": {
+			"ICreateContributedTerminalProfileOptions": "katkıda bulunuldu",
+			"createQuickLaunchProfile": "Terminal Profilini Yapılandır",
+			"enterTerminalProfileName": "Terminal profili adını girin",
+			"terminal.integrated.chooseDefaultProfile": "Varsayılan terminal profilinizi seçin",
+			"terminal.integrated.selectProfileToCreate": "Oluşturulacak terminal profilini seçin",
+			"terminalProfileAlreadyExists": "Bu ada sahip bir terminal profili zaten var",
+			"terminalProfiles": "profiller",
+			"terminalProfiles.detected": "algılandı"
+		},
+		"vs/workbench/contrib/terminal/browser/terminalProfileResolverService": {
+			"migrateToProfile": "Geçir",
+			"terminalProfileMigration": "Terminal, kullanımdan dışı Shell/shellArgs ayarlarını kullanıyor, onu bir profile taşımak istiyor musunuz?"
+		},
 		"vs/workbench/contrib/terminal/browser/terminalQuickAccess": {
 			"renameTerminal": "Terminali Yeniden Adlandır",
 			"workbench.action.terminal.newWithProfilePlus": "Profille Yeni Terminal Oluştur",
 			"workbench.action.terminal.newplus": "Yeni Terminal Oluşturun"
 		},
 		"vs/workbench/contrib/terminal/browser/terminalService": {
-			"ICreateContributedTerminalProfileOptions": "katkıda bulunuldu",
-			"createQuickLaunchProfile": "Terminal Profilini Yapılandır",
-			"enterTerminalProfileName": "Terminal profili adını girin",
 			"localTerminalDescription": "Yerel",
 			"localTerminalRemote": "⚠ : Bu kabuk, bağlı uzak makinede DEĞİL, {0}yerel{1} makinenizde çalışıyor",
 			"localTerminalVirtualWorkspace": "⚠ : Bu kabuk sanal klasöre DEĞİL, {0}yerel{1} bir klasöre açık",
-			"terminal.integrated.chooseDefaultProfile": "Varsayılan terminal profilinizi seçin",
-			"terminal.integrated.selectProfileToCreate": "Oluşturulacak terminal profilini seçin",
-			"terminalProfileAlreadyExists": "Bu ada sahip bir terminal profili zaten var",
-			"terminalProfiles": "profiller",
-			"terminalProfiles.detected": "algılandı",
-			"terminalService.terminalCloseConfirmationPlural": "{0} etkin terminal oturumunu sonlandırmak istiyor musunuz?",
+			"terminalService.terminalCloseConfirmationPlural": "Etkin terminal oturumunu {0} sonlandırmak istiyor musunuz?",
 			"terminalService.terminalCloseConfirmationSingular": "Etkin terminal oturumunu sonlandırmak istiyor musunuz?",
 			"terminate": "Sonlandır"
 		},
@@ -8097,6 +8330,10 @@
 			"moveTabsRight": "Sekmeleri Sağa Taşı"
 		},
 		"vs/workbench/contrib/terminal/browser/terminalTabsList": {
+			"capability.commandDetection": "Komut algılama",
+			"capability.cwdDetection": "Geçerli çalışma dizini algılama",
+			"capability.partialCommandDetection": "Komut algılama (kısmi)",
+			"shellIntegration.enabled": "Kabuk entegrasyonu etkinleştirildi",
 			"splitTerminalAriaLabel": "Terminal {0} {1}, bölme {2} / {3}",
 			"terminal.tabs": "Terminal sekmeleri",
 			"terminalAriaLabel": "Terminal {0} {1}",
@@ -8107,6 +8344,12 @@
 			"terminal.useMonospace": "'Tek aralıklı' kullanın",
 			"terminalConnectingLabel": "Başlatılıyor...",
 			"terminals": "Terminalleri açın."
+		},
+		"vs/workbench/contrib/terminal/browser/xterm/xtermTerminal": {
+			"dontShowAgain": "Tekrar Gösterme",
+			"no": "Hayır",
+			"terminal.slowRendering": "Terminal GPU hızlandırması bilgisayarınızda yavaş gibi görünüyor. Devre dışı bırakmak istiyor musunuz? Bu, performansı iyileştirebilir. [Terminal ayarları hakkında daha fazla bilgi edinin](https://code.visualstudio.com/docs/editor/integrated-terminal#_changing-how-the-terminal-is-rendered).",
+			"yes": "Evet"
 		},
 		"vs/workbench/contrib/terminal/common/terminal": {
 			"terminalCategory": "Terminal",
@@ -8145,6 +8388,8 @@
 			"terminal.integrated.allowChords": "Terminalde akor tuş bağlamalarına izin verilip verilmeyeceğini belirtir. Bu true olduğunda ve tuş vuruşu bir akorla sonuçlandığında `#terminal.integrated.commandsToSkipShell#` atlanır, bunu false olarak ayarlamak kabuğa (VS Code'a değil) gitmek için Ctrl+k kullanmak istediğinizde özellikle yararlıdır.",
 			"terminal.integrated.allowMnemonics": "Menü çubuğu anımsatıcılarının (ör. alt+f), menü çubuğunu açmayı tetiklemesine izin verilip verilmeyeceğini belirtir. Bunun, true olduğunda tüm alt tuşu vuruşlarının kabuğu atlamasına neden olacağına dikkat edin. Bu, macOS üzerinde hiçbir şey yapmaz.",
 			"terminal.integrated.altClickMovesCursor": "Etkinleştirilirse alt/option + tıklama, `#editor.multiCursorModifier#` seçeneği `'alt'` (varsayılan değer) olarak ayarlandığında istem imlecini farenin altına yeniden konumlandırır. Bu, kabuğunuza bağlı olarak güvenilir şekilde çalışmayabilir.",
+			"terminal.integrated.autoReplies": "Terminalde karşılaşıldığında otomatik olarak yanıtlanan bir ileti kümesi. İleti yeterince özel olarak sağlandı. İleti yeterince belirgin olduğunda bu, genel yanıtları otomatikleştirmeye yardımcı olabilir. İleti, kaçış dizileri içerdiğinden yanıtın biçimlendirilmiş metin ile gerçekleşmeyebileceğine dikkat edin. Her yanıt yalnızca saniyede bir kez gerçekleşebilir.",
+			"terminal.integrated.autoReplies.reply": "İşleme gönderilecek yanıt.",
 			"terminal.integrated.bellDuration": "Tetiklendiğinde bir terminal sekmesi içindeki zili gösteren milisaniye sayısı.",
 			"terminal.integrated.commandsToSkipShell": "Tuş bağlamaları kabuğa gönderilmeyen ancak bunun yerine her zaman VS Code tarafından işlenen bir dizi komut kimliği. Bu, normalde kabuk tarafından tüketilen tuş bağlamalarının (örneğin Quick Open'ı başlatmak için `Ctrl+P`), terminale odaklanılmadığında olduğu gibi hareket etmesini sağlar.\r\n\r\n&nbsp;\r\n\r\nBirçok komut varsayılan olarak atlanır. Varsayılanı geçersiz kılmak ve bu komutun tuş bağlamasını kabuğa geçirmek için başında `-` karakteriyle komutu ekleyin. Örneğin, `Ctrl+P`nin kabuğa ulaşmasına izin vermek için `-workbench.action.quickOpen` komutunu ekleyin.\r\n\r\n&nbsp;\r\n\r\nVarsayılan atlanan komutların aşağıdaki listesi Ayarlar Düzenleyicisi'nde görüntülendiğinde kesilir. Tam listeyi görmek için, {1} ve aşağıdaki listedeki ilk komutu arayın.\r\n\r\n&nbsp;\r\n\r\nVarsayılan Atlanan Komutlar:\r\n\r\n{0}",
 			"terminal.integrated.confirmOnExit": "Etkin terminal oturumları varsa pencere kapatılırken onay istenip istenmeyeceğini denetler.",
@@ -8173,6 +8418,7 @@
 			"terminal.integrated.enableBell": "Terminal zilinin etkin olup olmadığını denetler, bu, terminal adının yanında görsel bir zil olarak görünür.",
 			"terminal.integrated.enableFileLinks": "Terminalde dosya bağlantılarının etkinleştirilip etkinleştirilmeyeceğini belirtir. Her dosya bağlantısı dosya sisteminde doğrulandığından bir ağ sürücüsü üzerinde çalışırken bağlantılar yavaş olabilir. Bunun değiştirilmesi yalnızca yeni terminallerde etkili olur.",
 			"terminal.integrated.enablePersistentSessions": "Pencere yeniden yüklemelerinde çalışma alanı için terminal oturumlarını kalıcı hale getirin.",
+			"terminal.integrated.enableShellIntegration": "For supported shells, use shell integration (zsh & bash on mac/linux, pwsh on windows)",
 			"terminal.integrated.env.linux": "Linux üzerinde terminal tarafından kullanılacak VS Code işlemine eklenecek ortam değişkenlerini içeren nesne. Ortam değişkenini silmek için `null` olarak ayarlayın.",
 			"terminal.integrated.env.osx": "macOS üzerinde terminal tarafından kullanılacak VS Code işlemine eklenecek ortam değişkenlerini içeren nesne. Ortam değişkenini silmek için `null` olarak ayarlayın.",
 			"terminal.integrated.env.windows": "Windows üzerinde terminal tarafından kullanılacak VS Code işlemine eklenecek ortam değişkenlerini içeren nesne. Ortam değişkenini silmek için `null` olarak ayarlayın.",
@@ -8195,14 +8441,18 @@
 			"terminal.integrated.gpuAcceleration.on": "Terminalde GPU hızlandırmayı etkinleştirin.",
 			"terminal.integrated.letterSpacing": "Terminalin harf aralığını denetler; bu, karakterler arasına eklenecek ek piksel miktarını temsil eden bir tamsayı değeridir.",
 			"terminal.integrated.lineHeight": "Terminalin satır yüksekliğini denetler, gerçek satır yüksekliğini piksel cinsinden almak için bu sayı terminal yazı tipi boyutuyla çarpılır.",
-			"terminal.integrated.localEchoExcludePrograms": "Deneysel: Bu program adlarından herhangi biri terminal başlığında bulunduğunda yerel yankı devre dışı bırakılır.",
-			"terminal.integrated.localEchoLatencyThreshold": "Deneysel: Yerel düzenlemelerin sunucu onayı beklemeden terminalde yineleneceği milisaniye cinsinden ağ gecikmesi uzunluğu. '0' ise yerel yankı her zaman etkin olur, '-1 ' ise devre dışı bırakılır.",
-			"terminal.integrated.localEchoStyle": "Deneysel: yerel olarak yinelenen metnin yazı tipi stili veya RGB rengi olan terminal stili.",
+			"terminal.integrated.localEchoEnabled": "Yerel yankının ne zaman etkinleştirileceği. Bu, `#terminal.integrated.localEchoLatencyThreshold#` öğesini geçersiz kılar",
+			"terminal.integrated.localEchoEnabled.auto": "Yalnızca uzak çalışma alanları için etkinleştirildi",
+			"terminal.integrated.localEchoEnabled.off": "Her zaman devre dışı",
+			"terminal.integrated.localEchoEnabled.on": "Her zaman etkin",
+			"terminal.integrated.localEchoExcludePrograms": "Bu program adlarından herhangi biri terminal başlığında bulunduğunda yerel yankı devre dışı bırakılır.",
+			"terminal.integrated.localEchoLatencyThreshold": "Yerel düzenlemelerin sunucu onayı beklemeden terminalde yineleneceği milisaniye cinsinden ağ gecikmesi uzunluğu. '0' ise yerel yankı her zaman etkin olur ve '-1 ' ise devre dışı bırakılır.",
+			"terminal.integrated.localEchoStyle": "Yerel olarak yinelenen metnin yazı tipi stili veya RGB rengi olan terminal stili.",
 			"terminal.integrated.macOptionClickForcesSelection": "macOS üzerinde Option + tıklama kullanılırken seçimin zorlanıp zorlanmayacağını denetler. Bu, normal (satır) seçimi zorlar ve sütun seçimi modunun kullanılmasına izin vermez. Bu, örneğin, tmux içinde fare modu etkinleştirildiğinde, normal terminal seçimini kullanarak kopyalamayı ve yapıştırmayı etkinleştirir.",
 			"terminal.integrated.macOptionIsMeta": "Option tuşunun macOS'deki terminalde meta tuşu olarak kullanılıp kullanılmayacağını denetler.",
 			"terminal.integrated.minimumContrastRatio": "Ayarlandığında, her hücrenin ön plan rengi, belirtilen karşıtlık oranına uyacak şekilde değişir. Örnek değerler:\r\n\r\n- 1: Varsayılan, hiçbir şey yapmaz.\r\n- 4.5: [WCAG AA uyumluluğu (en az)](https://www.w3.org/TR/UNDERSTANDING-WCAG20/visual-audio-contrast-contrast.html).\r\n- 7: [WCAG AAA uyumluluğu (gelişmiş)](https://www.w3.org/TR/UNDERSTANDING-WCAG20/visual-audio-contrast7.html).\r\n- 21: Siyah üzerinde beyaz veya beyaz üzerinde siyah.",
 			"terminal.integrated.mouseWheelScrollSensitivity": "Fare tekerleği kaydırma olaylarının `deltaY` değeri üzerinde kullanılacak çarpan.",
-			"terminal.integrated.persistentSessionReviveProcess": "Terminal işleminin kapatılması gerektiğinde (ör. pencere veya uygulama kapatıldığında), bu, önceki terminal oturumu içeriğinin ne zaman geri yükleneceğini ve çalışma alanının bir sonraki açılışında işlemlerin ne zaman yeniden oluşturulacağını belirler. İşlemin mevcut çalışma dizininin geri yüklenmesi, kabuk tarafından desteklenip desteklenmediğine bağlıdır.\r\n",
+			"terminal.integrated.persistentSessionReviveProcess": "Terminal işleminin kapatılması gerektiğinde (ör. pencere veya uygulama kapatıldığında) bu, önceki terminal oturumu içeriğinin ne zaman geri yükleneceğini ve çalışma alanının bir sonraki açılışında işlemlerin ne zaman yeniden oluşturulacağını belirler.\r\n\r\nUyarılar: \r\n\r\n- İşlemin mevcut çalışma dizininin geri yüklenmesi, kabuk tarafından desteklenip desteklenmediğine bağlıdır.\r\n- Kapatma sırasında oturumu sürdürme süresi sınırlıdır, bu nedenle yüksek gecikme süreli uzak bağlantılar kullanılırken iptal edilebilir.",
 			"terminal.integrated.persistentSessionReviveProcess.never": "Terminal arabelleklerini hiçbir zaman geri yüklemeyin veya işlemi yeniden oluşturmayın.",
 			"terminal.integrated.persistentSessionReviveProcess.onExit": "Windows/Linux'ta son pencere kapatıldıktan sonra veya 'workbench.action.quit' komutu tetiklendiğinde (komut paleti, tuş bağlama, menü) işlemleri yeniden başlatın.",
 			"terminal.integrated.persistentSessionReviveProcess.onExitAndWindowClose": "Windows/Linux'ta son pencere kapatıldıktan sonra veya 'workbench.action.quit' komutu tetiklendiğinde (komut paleti, tuş bağlama, menü) veya pencere kapatıldığında işlemleri yeniden başlatın.",
@@ -8261,7 +8511,8 @@
 			"terminalShellTypeContextKey": "Etkin terminalin kabuk türü. Terminal bulunmadığı zaman bilinen son değere ayarlanır.",
 			"terminalTabsFocusContextKey": "Terminal sekmeleri pencere öğesinin odakta olup olmadığı.",
 			"terminalTabsSingularSelectedContextKey": "Terminal sekmeleri listesinde bir terminalin seçili olup olmadığı.",
-			"terminalTextSelectedContextKey": "Etkin terminalde metnin seçili olup olmadığı."
+			"terminalTextSelectedContextKey": "Etkin terminalde metnin seçili olup olmadığı.",
+			"terminalViewShowing": "Terminal görünümünün gösterilip gösterilmediği"
 		},
 		"vs/workbench/contrib/terminal/common/terminalStrings": {
 			"killTerminal": "Terminali Sonlandır",
@@ -8278,10 +8529,6 @@
 			"workbench.action.terminal.rename": "Yeniden Adlandırın...",
 			"workbench.action.terminal.sizeToContentWidthInstance": "Boyutu İçerik Genişliğine Değiştir"
 		},
-		"vs/workbench/contrib/terminal/electron-sandbox/localTerminalService": {
-			"nonResponsivePtyHost": "Terminalin pty konağı işlemine yönelik bağlantı yanıt vermiyor. Terminalin çalışması durmuş olabilir.",
-			"restartPtyHost": "Pty konağını yeniden başlat"
-		},
 		"vs/workbench/contrib/terminal/electron-sandbox/terminalRemote": {
 			"workbench.action.terminal.newLocal": "Yeni Tümleşik Terminal Oluştur (Yerel)"
 		},
@@ -8291,12 +8538,14 @@
 			"hiddenIcon": "Gizli testler görüntülendiğinde yanlarında görünen simge.",
 			"testViewIcon": "Test görünümünün simgesini görüntüleyin.",
 			"testingCancelIcon": "Devam eden test çalıştırmalarını iptal etmeye yönelik simge.",
+			"testingCancelRefreshTests": "Test yenilemeyi iptal etmeye yarayan düğme üzerindeki simge.",
 			"testingDebugAllIcon": "\"Tüm testlerde hata ayıklama\" eyleminin simgesi.",
 			"testingDebugIcon": "\"Testin hatalarını ayıkla\" eyleminin simgesi.",
 			"testingErrorIcon": "Hata içeren testler için görüntülenen simge.",
 			"testingFailedIcon": "Başarısız testler için görüntülenen simge.",
 			"testingPassedIcon": "Başarılı testler için görüntülenen simge.",
 			"testingQueuedIcon": "Kuyruğa alınmış testler için görüntülenen simge.",
+			"testingRefreshTests": "Testleri yenileme düğmesindeki simge.",
 			"testingRunAllIcon": "\"Tüm testleri çalıştırma\" eyleminin simgesi.",
 			"testingRunIcon": "\"Testi çalıştır\" eyleminin simgesi.",
 			"testingShowAsList": "Test gezgini ağaç olarak devre dışı bırakıldığında görüntülenen simge.",
@@ -8318,6 +8567,7 @@
 			"runAllTests": "Tüm Testleri Çalıştır",
 			"runSelectedTests": "Testleri Çalıştır",
 			"testing.cancelRun": "Test Çalıştırmasını İptal Et",
+			"testing.cancelTestRefresh": "Test Yenilemeyi İptal Et",
 			"testing.clearResults": "Tüm Sonuçları Temizle",
 			"testing.collapseAll": "Tüm Testleri Daralt",
 			"testing.configureProfile": "Test Profillerini Yapılandır",
@@ -8329,6 +8579,7 @@
 			"testing.openOutputPeek": "Çıktı Özeti",
 			"testing.reRunFailTests": "Başarısız Testleri Yeniden Çalıştır",
 			"testing.reRunLastRun": "Son Çalıştırmayı Yeniden Çalıştır",
+			"testing.refreshTests": "Testleri Yenile",
 			"testing.runAtCursor": "İmleçteki Testi Çalıştır",
 			"testing.runCurrentFile": "Geçerli Dosyadaki Testleri Çalıştır",
 			"testing.runUsing": "Profili Kullanarak Yürüt...",
@@ -8348,7 +8599,7 @@
 		"vs/workbench/contrib/testing/browser/testing.contribution": {
 			"miViewTesting": "T&&est etme",
 			"noTestProvidersRegistered": "Bu çalışma alanında henüz test bulunamadı.",
-			"searchMarketplaceForTestExtensions": "[Test Uzantılarını Bul] (command:{0})",
+			"searchForAdditionalTestExtensions": "Install Additional Text Extensions...",
 			"test": "Test",
 			"testExplorer": "Test Gezgini"
 		},
@@ -8395,6 +8646,8 @@
 		"vs/workbench/contrib/testing/browser/testingOutputPeek": {
 			"close": "Kapat",
 			"debug test": "Testin Hatalarını ayıkla",
+			"messageMoreLines1": "+ 1 satır daha",
+			"messageMoreLinesN": "+ {0} satır daha",
 			"run test": "Testi Çalıştır",
 			"testUnnamedTask": "Adlandırılmamış Görev",
 			"testing.debugLastRun": "Test Çalıştırmasındaki hataları ayıkla",
@@ -8425,7 +8678,7 @@
 			"testProgressWithSkip.running": "Testler çalıştırılıyor, {1} test içinden {0} test başarılı oldu (%{2}, {3} test atlandı)"
 		},
 		"vs/workbench/contrib/testing/browser/testingViewPaneContainer": {
-			"testing": "Test ediliyor"
+			"testing": "Test"
 		},
 		"vs/workbench/contrib/testing/browser/theme": {
 			"testing.iconErrored": "Test gezginindeki 'Hatalı' simgesinin rengi.",
@@ -8457,7 +8710,11 @@
 			"testing.defaultGutterClickAction.debug": "Testte hata ayıklayın.",
 			"testing.defaultGutterClickAction.run": "Testi çalıştırın.",
 			"testing.followRunningTest": "Çalıştırılan testin test gezgini görünümünde izlenip izlenmeyeceğini denetler",
-			"testing.gutterEnabled": "Test düzenlemelerinin düzenleyici cilt payında gösterilip gösterilmeyeceğini denetler."
+			"testing.gutterEnabled": "Test düzenlemelerinin düzenleyici cilt payında gösterilip gösterilmeyeceğini denetler.",
+			"testing.openTesting": "Hata ayıklama görünümünün ne zaman açılması gerektiğini denetler.",
+			"testing.openTesting.neverOpen": "Never automatically open the testing view",
+			"testing.openTesting.openOnTestFailure": "Open the testing view on any test failure",
+			"testing.openTesting.openOnTestStart": "Open the testing view when tests start"
 		},
 		"vs/workbench/contrib/testing/common/constants": {
 			"testGroup.coverage": "Kapsam",
@@ -8480,38 +8737,47 @@
 			"testTrust": "Testleri çalıştırmak çalışma alanınızda kod yürütebilir."
 		},
 		"vs/workbench/contrib/testing/common/testingContextKeys": {
+			"testing.canRefresh": "Herhangi bir test denetleyicisinde ekli bir yenileme işleyicisi olup olmadığını belirtir.",
 			"testing.controllerId": "Geçerli sınama öğesinin denetleyici kimliği",
 			"testing.hasConfigurableConfig": "Herhangi bir test yapılandırmasının yapılandırılıp yapılandırılamayacağını gösterir",
 			"testing.hasCoverableTests": "Bir test denetleyicisinin bir kapsam yapılandırması kaydedip kaydetmediğini gösterir",
 			"testing.hasDebuggableTests": "Bir test denetleyicisinin bir hata ayıklama yapılandırması kaydedip kaydetmediğini gösterir",
 			"testing.hasNonDefaultConfig": "Bir test denetleyicisinin bir varsayılan olmayan bir yapılandırma kaydedip kaydetmediğini gösterir",
 			"testing.hasRunnableTests": "Bir test denetleyicisinin bir çalıştırma yapılandırması kaydedip kaydetmediğini gösterir",
+			"testing.isRefreshing": "Herhangi bir test denetleyicisinin şu anda testleri yenileyip yenilemediğini belirtir.",
 			"testing.peekItemType": "Çıktı özeti görünümündeki öğenin türü. \"Test\", \"ileti\", \"görev\" veya \"sonuç\".",
 			"testing.testId": "Test öğelerinde menü oluştururken veya açarken ayarlanan geçerli test öğesinin kimliği",
 			"testing.testItemHasUri": "Test öğesinde tanımlanmış bir URI olup olmadığını gösteren Boolean değeri",
 			"testing.testItemIsHidden": "Test öğesinin gizli olup olmadığını gösteren Boolean değeri"
 		},
 		"vs/workbench/contrib/themes/browser/themes.contribution": {
+			"browseColorThemes": "Ek Renk Temalarına Göz At...",
+			"browseProductIconThemes": "Ek Ürün Simgesi Temalarına Gözat...",
 			"defaultProductIconThemeLabel": "Varsayılan",
+			"fileIconThemeCategory": "dosya simgesi temaları",
 			"generateColorTheme.label": "Geçerli Ayarlardan Renk Teması Oluştur",
 			"installColorThemes": "Ek Renk Temaları Yükle...",
 			"installIconThemes": "Ek Dosya Simgesi Temaları Yükle...",
 			"installProductIconThemes": "Ek Ürün Simgesi Temalarını Yükle...",
+			"installing extensions": "'{0}' Uzantısı Yükleniyor...",
+			"manage extension": "Uzantıyı Yönet",
+			"manageExtensionIcon": "Tema belirlemesi hızlı seçimindeki 'Yönet' eyleminin simgesi.",
 			"miSelectColorTheme": "&&Renk Teması",
 			"miSelectIconTheme": "Dosya &&Simge Teması",
 			"miSelectProductIconTheme": "Ürün &&Simgesi Teması",
 			"noIconThemeDesc": "Dosya Simgelerini Devre Dışı Bırakın",
 			"noIconThemeLabel": "Yok",
-			"preferences": "Tercihler",
+			"productIconThemeCategory": "ürün simgesi temaları",
 			"selectIconTheme.label": "Dosya Simgesi Teması",
 			"selectProductIconTheme.label": "Ürün Simgesi Teması",
 			"selectTheme.label": "Renk Teması",
 			"themes.category.dark": "koyu temalar",
 			"themes.category.hc": "yüksek karşıtlık temaları",
 			"themes.category.light": "açık temalar",
-			"themes.selectIconTheme": "Dosya Simgesi Temasını Seçin",
+			"themes.selectIconTheme": "Dosya Simgesi Temasını Seçin (Önizleme için Yukarı/Aşağı Tuşları)",
 			"themes.selectIconTheme.label": "Dosya Simgesi Teması",
-			"themes.selectProductIconTheme": "Ürün Simgesi Temasını Seçin",
+			"themes.selectMarketplaceTheme": "Daha Fazlasını Aramak için Yazın. Yüklemek için Seçin. Önizlemek için Yukarı/Aşağı Ok Tuşlarını Kullanın.",
+			"themes.selectProductIconTheme": "Ürün Simgesi Temasını Seçin (Önizleme için Yukarı/Aşağı Tuşları)",
 			"themes.selectProductIconTheme.label": "Ürün Simgesi Teması",
 			"themes.selectTheme": "Renk Temasını Seçin (Önizlemesini Görüntülemek İçin Yukarı/Aşağı Tuşları Kullanın)"
 		},
@@ -8836,14 +9102,14 @@
 			"welcome.newFile": "Yeni Dosya..."
 		},
 		"vs/workbench/contrib/welcome/common/viewsWelcomeContribution": {
-			"ViewsWelcomeExtensionPoint.proposedAPI": "'{0}' içindeki viewsWelcome katkısı için 'enableProposedApi' özelliğinin etkinleştirilmesi gerekiyor."
+			"ViewsWelcomeExtensionPoint.proposedAPI": "'{0}' içindeki viewsWelcome katkısı, önerilen 'group' özelliğini kullanmak için 'enabledApiProposals: [\"contribViewsWelcome\"]' özelliğini gerektirir."
 		},
 		"vs/workbench/contrib/welcome/common/viewsWelcomeExtensionPoint": {
 			"contributes.viewsWelcome": "Katkıda bulunulan görünümler karşılama içeriği. Karşılama içeriği, görüntülenecek anlamlı içerik olmadığında (Dosya Gezgini'nde herhangi bir açık klasör olmadığında) ağaç tabanlı görünümler içinde işlenir. Bu tür içerikler, kullanıcıları bazı özellikler kullanılabilir olmadan önce bu özellikleri kullanmaya yönlendirmek için ürün içi belgeler olarak faydalıdır. Dosya Gezgini karşılama görünümündeki `Depoyu Klonla` düğmesi buna iyi bir örnektir.",
 			"contributes.viewsWelcome.view": "Belirli bir görünüm için karşılama içeriğine katkıda bulundu.",
 			"contributes.viewsWelcome.view.contents": "Görüntülenecek karşılama içeriği. İçeriğin biçimi yalnızca bağlantılar için destekle Markdown'ın bir alt kümesidir.",
 			"contributes.viewsWelcome.view.enablement": "Karşılama içeriği düğmelerinin ve komut bağlantılarının ne zaman etkinleştirilmesi gerektiğini belirleyen koşul.",
-			"contributes.viewsWelcome.view.group": "Bu karşılama sayfası içeriğinin ait olduğu grup.",
+			"contributes.viewsWelcome.view.group": "Bu karşılama sayfası içeriğinin ait olduğu grup. Önerilen API.",
 			"contributes.viewsWelcome.view.view": "Bu karşılama içeriği için hedef görünüm tanımlayıcısı. Yalnızca ağaç tabanlı görünümler desteklenir.",
 			"contributes.viewsWelcome.view.when": "Karşılama içeriğinin görüntüleneceği koşul."
 		},
@@ -9010,7 +9276,7 @@
 			"gettingStarted.topLevelGitClone.title": "Git Deposunu Klonlama...",
 			"gettingStarted.topLevelGitOpen.description": "Gözatma, arama, düzenleme ve yürütme için uzak depoya veya çekme isteğine bağlanın",
 			"gettingStarted.topLevelGitOpen.title": "Depoyu Açma...",
-			"gettingStarted.topLevelShowWalkthroughs.description": "",
+			"gettingStarted.topLevelShowWalkthroughs.description": "Düzenleyicide veya bir uzantıda bir kılavuz görüntüleyin",
 			"gettingStarted.topLevelShowWalkthroughs.title": "Bir Kılavuz Açın...",
 			"gettingStarted.videoTutorial.description.interpolated": "VS Code'un önemli özelliklerine yönelik kısa ve pratik video öğreticileri serisinden ilkini izleyin.\r\n{0}",
 			"gettingStarted.videoTutorial.title": "Arkanıza yaslanın ve öğrenmeye başlayın",
@@ -9146,16 +9412,17 @@
 			"workspaceStartupTrustDetails": "{0}, bu çalışma alanındaki dosyaları otomatik olarak yürütebilen özellikler sağlar.",
 			"workspaceTrust": "Bu çalışma alanındaki dosyaları oluşturanlara güveniyor musunuz?",
 			"workspaceTrustEditor": "Çalışma Alanı Güveni Düzenleyicisi",
-			"workspaceTrustEnabledCtx": "Çalışma alanı güven özelliğinin etkin olup olmadığını belirtir.",
-			"workspaceTrustedCtx": "Geçerli çalışma alanına kullanıcı tarafından güvenilip güvenilmediğini belirtir.",
 			"workspacesCategory": "Çalışma Alanları",
 			"yes": "Evet"
 		},
 		"vs/workbench/contrib/workspace/browser/workspaceTrustEditor": {
 			"addButton": "Klasör ekle",
+			"checkListIcon": "Çalışma alanı güven düzenleyicisindeki onay işaretinin simgesi.",
 			"deleteTrustedUri": "Yolu Sil",
 			"dontTrustButton": "Güvenme",
+			"editIcon": "Çalışma alanı güven düzenleyicisindeki klasör düzenleme simgesinin simgesi.",
 			"editTrustedUri": "Yolu Düzenle",
+			"folderPickerIcon": "Çalışma alanı güven düzenleyicisindeki klasör seçme simgesinin simgesi.",
 			"hostColumnLabel": "Konak",
 			"invalidTrust": "Depodaki tek tek klasörlere güvenmezsiniz.",
 			"localAuthority": "Yerel",
@@ -9163,8 +9430,10 @@
 			"noTrustedFoldersDescriptions": "Henüz klasöre veya çalışma alanına dosyasına güvenmediniz.",
 			"pathColumnLabel": "Yol",
 			"pickerTrustedUri": "Dosya Seçiciyi Başlat",
+			"removeIcon": "Çalışma alanı güven düzenleyicisindeki klasör kaldırma simgesinin simgesi.",
 			"root element label": "Çalışma Alanına Güveni Yönet",
 			"selectTrustedUri": "Güvenilecek Klasörü Seç",
+			"shieldIcon": "Başlıktaki çalışma alanı güveni simgesinin simgesi.",
 			"trustAll": "{0} üzerindeki tüm depolara güveneceksiniz.",
 			"trustButton": "Güven",
 			"trustMessage": "Geçerli klasördeki veya '{0}' üst klasöründeki tüm dosyaları oluşturanlara güven.",
@@ -9203,7 +9472,12 @@
 			"untrustedWorkspace": "Kısıtlı Modda",
 			"untrustedWorkspaceReason": "Bu çalışma alanına, aşağıdaki güvenilen klasörlerde kalın yazı tipiyle gösterilen girdiler aracılığıyla güveniliyor.",
 			"untrustedWorkspaceSubtitle": "Geçerli çalışma alanındaki dosyaları oluşturanlara güvenmiyorsunuz. Aşağıdaki özellikler devre dışı:",
-			"workspaceTrustEditorHeaderActions": "[Ayarlarınızı yapılandırın]({0}) veya [daha fazla bilgi edinin](https://aka.ms/vscode-workspace-trust)."
+			"workspaceTrustEditorHeaderActions": "[Ayarlarınızı yapılandırın]({0}) veya [daha fazla bilgi edinin](https://aka.ms/vscode-workspace-trust).",
+			"xListIcon": "Çalışma alanı güven düzenleyicisindeki çarpının simgesi."
+		},
+		"vs/workbench/contrib/workspace/common/workspace": {
+			"workspaceTrustEnabledCtx": "Çalışma alanı güven özelliğinin etkin olup olmadığını belirtir.",
+			"workspaceTrustedCtx": "Geçerli çalışma alanına kullanıcı tarafından güvenilip güvenilmediğini belirtir."
 		},
 		"vs/workbench/contrib/workspaces/browser/workspaces.contribution": {
 			"openWorkspace": "Çalışma Alanını Aç",
@@ -9237,6 +9511,10 @@
 			"summary.n0": "Bir dosyada {0} metin düzenlemesi yapıldı",
 			"workspaceEdit": "Çalışma Alanı Düzenleme",
 			"nothing": "Düzenleme yapılmadı"
+		},
+		"vs/workbench/services/configuration/browser/configurationService": {
+			"configurationDefaults.description": "Yapılandırmalar için varsayılanlara katkıda bulun",
+			"experimental": "Denemeler"
 		},
 		"vs/workbench/services/configuration/common/configurationEditingService": {
 			"errorConfigurationFileDirty": "Dosyada kaydedilmemiş değişiklikler olduğundan kullanıcı ayarlarına yazılamıyor. Lütfen önce kullanıcı ayarları dosyasını kaydedin ve sonra yeniden deneyin.",
@@ -9376,6 +9654,8 @@
 		},
 		"vs/workbench/services/extensionManagement/browser/extensionBisect": {
 			"bisect": "Uzantıyı İkiye Bölme etkin ve {0} uzantıları devre dışı bırakıldı. Sorunu hala yeniden oluşturup oluşturamadığınızı kontrol edin ve bu seçenekler arasından seçim yaparak devam edin.",
+			"bisect.plural": "Uzantıyı İkiye Bölme etkin ve {0} uzantıları devre dışı bırakıldı. Sorunu hala yeniden oluşturup oluşturamadığınızı kontrol edin ve bu seçenekler arasından seçim yaparak devam edin.",
+			"bisect.singular": "Uzantıyı İkiye Bölme etkin ve 1 uzantı devre dışı bırakıldı. Sorunu hala yeniden oluşturup oluşturamadığınızı denetleyin ve bu seçenekler arasından seçim yaparak devam edin.",
 			"detail.start": "Uzantıyı İkiye Bölme, soruna neden olan bir uzantıyı bulmak için ikili arama kullanır. İşlem sırasında, pencere tekrar tekrar yüklenir (~{0} kez). Her seferinde sorun görüp görmediğinizi onaylamanız gerekir.",
 			"done": "Devam",
 			"done.detail": "Uzantıyı İkiye Bölme işlemi yapıldı ve soruna neden olan uzantının {0} olduğu belirlendi.",
@@ -9441,7 +9721,8 @@
 			"remote": "Uzak"
 		},
 		"vs/workbench/services/extensionManagement/electron-sandbox/remoteExtensionManagementService": {
-			"notFoundCompatibleDependency": "'{0}' uzantısı, geçerli VS Code sürümü (sürüm {1}) ile uyumlu olmadığından yüklenemiyor."
+			"notFoundCompatibleDependency": "'{0}' uzantısı, geçerli {1} sürümü (sürüm {2}) ile uyumlu olmadığından yüklenemiyor.",
+			"notFoundCompatiblePrereleaseDependency": "'{0}' uzantısının yayın öncesi sürümü, geçerli {1} sürümü (sürüm {2}) ile uyumlu olmadığından yüklenemiyor."
 		},
 		"vs/workbench/services/extensionRecommendations/common/workspaceExtensionsConfig": {
 			"select for add": "Şuraya uzantı önerisi ekle",
@@ -9483,6 +9764,8 @@
 			"extensionKind.ui-workspace": "Yerel makinede çalışmaya öncelik vererek her iki tarafta da çalışabilecek bir uzantı tanımlayın.",
 			"extensionKind.workspace": "Uzak pencereye bağlıyken yalnızca uzak makinede çalışabilecek bir uzantı tanımlayın.",
 			"extensionKind.workspace-ui": "Uzak makinede çalışmaya öncelik vererek her iki tarafta da çalışabilecek bir uzantı tanımlayın.",
+			"product.extensionAllowedProposedApi": "Bunun yerine \"extensionEnabledApiProposals\" kullanın.",
+			"product.extensionEnabledApiProposals": "İlgili uzantıların serbestçe kullanabileceği API teklifleri.",
 			"ui": "Kullanıcı arabirimi uzantı türü. Uzak bir pencerede bu tür uzantılar yalnızca yerel makinede kullanılabildiğinde etkindir.",
 			"vscode.extension.activationEvents": "VS Code uzantısı için etkinleştirme olayları.",
 			"vscode.extension.activationEvents.onAuthenticationRequest": "Belirtilen kimlik doğrulaması sağlayıcısından her oturum istendiğinde oluşturulan etkinleştirme olayı.",
@@ -9501,6 +9784,7 @@
 			"vscode.extension.activationEvents.onRenderer": "Bir not defteri çıktısı işleyicisi her kullanıldığında, bir etkinleştirme olayı yayınlanır.",
 			"vscode.extension.activationEvents.onSearch": "Klasörde verilen şemaya sahip bir arama başlatıldığında yayınlanan bir etkinleştirme olayı.",
 			"vscode.extension.activationEvents.onStartupFinished": "Başlatma (`*` ile etkinleştirilen uzantıların tümünün etkinleşmesi) tamamlandıktan sonra oluşturulan bir etkinleştirme olayı.",
+			"vscode.extension.activationEvents.onTaskType": "Belirli bir türdeki görevlerin listelenmesi veya çözümlenmesi gerektiğinde yayımlanan bir etkinleştirme olayı.",
 			"vscode.extension.activationEvents.onTerminalProfile": "Belirli bir terminal profili başlatıldığında bir etkinleştirme olayı yayınlanır.",
 			"vscode.extension.activationEvents.onUri": "Bu uzantıya yönelik sistem genelinde bir URI açık olduğunda yayınlanan bir etkinleştirme olayı.",
 			"vscode.extension.activationEvents.onView": "Belirtilen görünüm genişletildiğinde yayınlanan bir etkinleştirme olayı.",
@@ -9530,6 +9814,8 @@
 			"vscode.extension.contributes": "Bu paket tarafından temsil edilen VS Code uzantısının tüm katkıları.",
 			"vscode.extension.contributes.extensionPack": "Birlikte yüklenebilen bir uzantılar kümesi. Bir uzantının tanımlayıcısı her zaman ${publisher}.${name} şeklindedir. Örneğin: vscode.csharp.",
 			"vscode.extension.displayName": "VS Code galerisinde kullanılan uzantının görünen adı.",
+			"vscode.extension.enableProposedApi.deprecated": "Yerine `enabledApiProposals` kullanın.",
+			"vscode.extension.enabledApiProposals": "Denemek için API tekliflerini etkinleştirme. Yalnızca **geliştirme sırasında** geçerlidir. Bu özelliğe sahip uzantılar **yayımlanamaz**. Daha fazla ayrıntı için şu adresi ziyaret edin: https://code.visualstudio.com/api/advanced-topics/using-proposed-api",
 			"vscode.extension.engines": "Altyapı uyumluluğu.",
 			"vscode.extension.engines.vscode": "VS Code uzantılarında, uzantının uyumlu olduğu VS Code sürümünü belirtir. * Olamaz. Örneğin: ^0.10.5, 0.10.5'in en düşük VS Code sürümüyle uyumlu olduğunu gösterir.",
 			"vscode.extension.extensionDependencies": "Diğer uzantılara bağımlılıklar. Bir uzantının tanımlayıcısı her zaman ${publisher}.${name} şeklindedir. Örneğin: vscode.csharp.",
@@ -9725,13 +10011,37 @@
 			"workspaceName": "{0} (Çalışma Alanı)",
 			"workspaceNameVerbose": "{0} (Çalışma Alanı)"
 		},
+		"vs/workbench/services/language/common/languageService": {
+			"invalid": "Geçersiz `contributes.{0}`. Dizi bekleniyordu.",
+			"invalid.empty": "`contributes.{0}` için boş değer",
+			"opt.aliases": "`{0}` özelliği atlanabilir ve `string[]` türünde olmalıdır",
+			"opt.configuration": "`{0}` özelliği atlanabilir ve `string` türünde olmalıdır",
+			"opt.extensions": "`{0}` özelliği atlanabilir ve `string[]` türünde olmalıdır",
+			"opt.filenames": "`{0}` özelliği atlanabilir ve `string[]` türünde olmalıdır",
+			"opt.firstLine": "`{0}` özelliği atlanabilir ve `string` türünde olmalıdır",
+			"opt.icon": "\"{0}\" özelliği atlanabilir ve \"dize\" türündeki \"{1}\" ve \"{2}\" özelliklerine sahip \"nesne\" türünde olmalıdır",
+			"opt.mimetypes": "`{0}` özelliği atlanabilir ve `string[]` türünde olmalıdır",
+			"require.id": "`{0}` özelliği zorunludur ve `string` türünde olmalıdır",
+			"vscode.extension.contributes.languages": "Dil bildirimi katkısında bulunur.",
+			"vscode.extension.contributes.languages.aliases": "Dil için ad diğer adları.",
+			"vscode.extension.contributes.languages.configuration": "Dilin yapılandırma seçeneklerini içeren bir dosyanın görece yolu.",
+			"vscode.extension.contributes.languages.extensions": "Dille ilişkilendirilmiş dosya uzantıları.",
+			"vscode.extension.contributes.languages.filenamePatterns": "Dille ilişkilendirilmiş dosya adı glob desenleri.",
+			"vscode.extension.contributes.languages.filenames": "Dille ilişkilendirilmiş dosya adları.",
+			"vscode.extension.contributes.languages.firstLine": "Dilin bir dosyasının ilk satırıyla eşleşen bir normal ifade.",
+			"vscode.extension.contributes.languages.icon": "Hiçbir simge teması dil için bir simge sağlamıyorsa dosya simgesi olarak kullanılacak simge.",
+			"vscode.extension.contributes.languages.icon.dark": "Koyu bir tema kullanıldığında simge yolu",
+			"vscode.extension.contributes.languages.icon.light": "Açık bir tema kullanıldığında simge yolu",
+			"vscode.extension.contributes.languages.id": "Dilin kimliği.",
+			"vscode.extension.contributes.languages.mimetypes": "Dil ile ilişkilendirilmiş MIME türleri."
+		},
 		"vs/workbench/services/lifecycle/electron-sandbox/lifecycleService": {
 			"errorClose": "Pencere kapatılmaya çalışılırken beklenmeyen bir hata oluştu ({0}).",
 			"errorLoad": "Pencerenin çalışma alanı değiştirilmeye çalışılırken beklenmeyen bir hata oluştu ({0}).",
 			"errorQuit": "Uygulamadan çıkmaya çalışırken beklenmeyen bir hata oluştu ({0}).",
 			"errorReload": "Pencere yeniden yüklenmeye çalışılırken beklenmeyen bir hata oluştu ({0})."
 		},
-		"vs/workbench/services/mode/common/workbenchModeService": {
+		"vs/workbench/services/mode/common/workbenchLanguageService": {
 			"invalid": "Geçersiz `contributes.{0}`. Dizi bekleniyordu.",
 			"invalid.empty": "`contributes.{0}` için boş değer",
 			"opt.aliases": "`{0}` özelliği atlanabilir ve `string[]` türünde olmalıdır",
@@ -9780,6 +10090,7 @@
 		},
 		"vs/workbench/services/preferences/common/preferencesValidation": {
 			"invalidTypeError": "Ayarın türü geçersiz; beklenen {0}. JSON içinde düzeltin.",
+			"validations.arrayIncorrectType": "Yanlış tür. Dizi bekleniyordu.",
 			"validations.booleanIncorrectType": "Yanlış tür. Beklenen: \"boolean\".",
 			"validations.colorFormat": "Geçersiz renk biçimi. #RGB, #RGBA, #RRGGBB veya #RRGGBBAA kullanın.",
 			"validations.exclusiveMax": "Değer kesinlikle {0} değerinden düşük olmalıdır.",
@@ -9821,7 +10132,7 @@
 			"tunnel.source.user": "Kullanıcı Tarafından İletildi",
 			"tunnel.staticallyForwarded": "Statik Olarak İletildi"
 		},
-		"vs/workbench/services/remote/electron-sandbox/remoteAgentServiceImpl": {
+		"vs/workbench/services/remote/electron-sandbox/remoteAgentService": {
 			"connectionError": "Uzak uzantı konak sunucusuyla bağlantı kurulamadı (Hata: {0})",
 			"devTools": "Açık Geliştirici Araçları",
 			"directUrl": "Tarayıcıda aç"
@@ -9875,12 +10186,14 @@
 			"defaultTheme": "Varsayılan",
 			"error.cannotparseicontheme": "Ürün simgeleri dosyası ayrıştırılırken sorunlar oluştu: {0}",
 			"error.fontId": "'{0}' yazı tipi kimliği eksik veya geçersiz. Yazı tipi tanımı atlanıyor.",
+			"error.fontSrc": "'{0}' yazı tipinde geçersiz yazı tipi kaynağı var. Kaynak yoksayılıyor.",
 			"error.fontStyle": "'{0}' yazı tipinde yazı tipi stili geçersiz. Ayar yoksayılıyor.",
 			"error.fontWeight": "'{0}' yazı tipinde yazı tipi kalınlığı geçersiz. Ayar yoksayılıyor.",
+			"error.icon.font": "'{0}' simge tanımı atlanıyor. Yazı tipi bilinmiyor.",
 			"error.icon.fontCharacter": "'{0}' simge tanımı atlanıyor. fontCharacter bilinmiyor.",
-			"error.icon.fontId": "'{0}' simge tanımı atlanıyor. Yazı tipi bilinmiyor.",
 			"error.invalidformat": "Ürün simgeleri tema dosyasının biçimi geçersiz: Nesne bekleniyor.",
 			"error.missingProperties": "Ürün simgeleri tema dosyasının biçimi geçersiz: iconDefinitions ve yazı tipleri içermelidir.",
+			"error.noFontSrc": "'{0}' yazı tipinde geçerli yazı tipi kaynağı yok. Yazı tipi tanımı yoksayılıyor.",
 			"error.parseicondefs": "{0} içindeki ürün simgesi tanımları işlenirken sorunlar oluştu:\r\n{1}"
 		},
 		"vs/workbench/services/themes/browser/workbenchThemeService": {
@@ -9913,13 +10226,13 @@
 		},
 		"vs/workbench/services/themes/common/colorThemeSchema": {
 			"schema.colors": "Söz dizimi vurgulaması için renkler",
-			"schema.fontStyle.error": "Yazı tipi stili 'italic', 'bold', 'underline' veya bunların bir bileşimi ya da boş dize olmalıdır.",
+			"schema.fontStyle.error": "Yazı tipi stili 'italic', 'bold', 'underline', 'strikethrough' veya bunların bir bileşimi ya da boş dize olmalıdır.",
 			"schema.properties.name": "Kuralın açıklaması.",
 			"schema.properties.scope": "Bu kuralın eşleştiği kapsam seçici.",
 			"schema.semanticTokenColors": "Anlamsal belirteçler için renkler",
 			"schema.supportsSemanticHighlighting": "Bu tema için anlamsal vurgulamanın etkinleştirilmesi gerekip gerekmediğini belirtir.",
 			"schema.token.background.warning": "Belirteç arka plan renkleri şu anda desteklenmiyor.",
-			"schema.token.fontStyle": "Kuralın yazı tipi stili: 'italic', 'bold' veya 'underline' veya bunların bir bileşimi. Boş dize devralınan ayarları kaldırır.",
+			"schema.token.fontStyle": "Kuralın yazı tipi stili: 'italic', 'bold, 'underline', 'strikethrough' veya bunların bir bileşimi. Boş dize devralınan ayarları kaldırır.",
 			"schema.token.fontStyle.none": "Hiçbiri (devralınan stili temizle)",
 			"schema.token.foreground": "Belirteç için ön plan rengi.",
 			"schema.token.settings": "Belirteç için renkler ve stiller.",
@@ -9958,6 +10271,7 @@
 			"schema.languageId": "İlişkilendirme için simge tanımının kimliği.",
 			"schema.languageIds": "Dilleri simgelere ilişkilendirir. Nesne anahtarı, dil katkı noktasında tanımlandığı şekliyle dil kimliğidir.",
 			"schema.light": "Açık renk temalarındaki dosya simgeleri için isteğe bağlı ilişkilendirmeler.",
+			"schema.showLanguageModeIcons": "Tema bir dil için bir simge tanımlamıyorsa, varsayılan dil simgelerinin kullanılıp kullanılmayacağını yapılandırır.",
 			"schema.src": "Yazı tipinin konumu."
 		},
 		"vs/workbench/services/themes/common/iconExtensionPoint": {
@@ -9977,7 +10291,7 @@
 			"invalid.iconFonts.configuration": "'configuration.iconFonts' bir dizi olmalıdır",
 			"invalid.iconFonts.id": "'configuration.iconFonts.id' tanımlanmalıdır ve boş olmamalıdır",
 			"invalid.iconFonts.id.format": "'configuration.iconFonts.id' yalnızca harf, rakam, alt çizgi ve eksi işareti içermelidir.",
-			"invalid.iconFonts.proposedAPI": "'configuration.iconFonts önerilen bir katkı noktasıdır ve yalnızca geliştirme dışında veya şu komut satırı anahtarı ile çalışırken kullanılabilir: --enable-proposed-api {0}",
+			"invalid.iconFonts.proposedAPI": "'configuration.iconFonts önerilen bir katkı noktasıdır. 'package.json#enabledApiProposals: [\"contribIconFonts\"]' gerektirir ve yalnızca geliştirme dışında veya --enable-proposed-api {0} komut satırı anahtarıyla çalışırken kullanılabilir",
 			"invalid.iconFonts.src": "'configuration.iconFonts.src' simge yazı tipi konumlarının bulunduğu bir dizi olmalıdır.",
 			"invalid.iconFonts.src.item": "'configuration.iconFonts.src' öğeleri, 'path' ve 'format' özelliklerine sahip nesneler olmalıdır",
 			"invalid.iconFonts.src.path": "`contributes.iconFonts.src.path` ({0}) öğesinin uzantının klasörüne ({0}) eklenmesi bekleniyor. Bu, uzantıyı taşınamaz hale getirebilir.",
@@ -9986,7 +10300,7 @@
 			"invalid.icons.description": "'configuration.icons.description' tanımlanmalıdır ve boş olmamalıdır",
 			"invalid.icons.id": "'configuration.icons.id' tanımlanmalıdır ve boş olmamalıdır",
 			"invalid.icons.id.format": "'configuration.icons.id' yalnızca harf, rakam ve eksi işareti içerebilir, 'bileşen-simgeadı' biçiminde en az iki segmentten oluşmalıdır.",
-			"invalid.icons.proposedAPI": "'configuration.icons önerilen bir katkı noktasıdır ve yalnızca geliştirme dışında veya şu komut satırı anahtarı ile çalışırken kullanılabilir: --enable-proposed-api {0}"
+			"invalid.icons.proposedAPI": "'configuration.icons önerilen bir katkı noktasıdır. 'package.json#enabledApiProposals: [\"contribIcons\"]' gerektirir ve yalnızca geliştirme dışında veya --enable-proposed-api {0} komut satırı anahtarıyla çalışırken kullanılabilir"
 		},
 		"vs/workbench/services/themes/common/productIconThemeSchema": {
 			"schema.font-format": "Yazı tipinin biçimi.",
@@ -10154,6 +10468,7 @@
 			"backupErrorDetails": "Önce kaydedilmemiş değişikliklerle düzenleyicileri kaydetmeyi veya geri döndürmeyi deneyin ve sonra yeniden deneyin.",
 			"backupTrackerBackupFailed": "Kaydedilmemiş değişikliklere sahip aşağıdaki düzenleyiciler yedekleme konumuna kaydedilemedi.",
 			"backupTrackerConfirmFailed": "Kaydedilmemiş değişikliklere sahip aşağıdaki düzenleyiciler kaydedilemedi veya geri döndürülemedi.",
+			"discardBackupsBeforeShutdown": "Yedeklemelerin atılması beklenenden uzun sürüyor...",
 			"revertBeforeShutdown": "Kaydedilmemiş değişikliklere sahip düzenleyicilerin geri döndürülmesi beklenenden uzun sürüyor...",
 			"saveBeforeShutdown": "Kaydedilmemiş değişikliklere sahip düzenleyicilerin kaydedilmesi beklenenden uzun sürüyor..."
 		},

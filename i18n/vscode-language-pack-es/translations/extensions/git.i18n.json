@@ -32,7 +32,7 @@
 			"branch name": "Nombre de rama",
 			"branch name format invalid": "El nombre de la rama debe coincidir con la expresión regular \"{0}\".",
 			"cant push": "No se pueden enviar referencias al remoto. Intenta ejecutar 'Pull' primero para integrar tus cambios.",
-			"changed": "Se ha cambiado el nivel de registro a: {0}",
+			"changed": "{0} Se ha cambiado el nivel de registro a: {1}",
 			"checkout detached": "Extracción del repositorio desasociada...",
 			"choose": "Elegir carpeta...",
 			"clean repo": "Limpie el árbol de trabajo del repositorio antes de la desprotección.",
@@ -54,7 +54,7 @@
 			"confirm force delete branch": "La rama '{0}' no está completamente fusionada. ¿Borrarla de todas formas?",
 			"confirm force push": "Está a punto de forzar el envío de cambios mediante \"push\". Esta acción puede resultar destructiva y sobrescribir involuntariamente los cambios realizados por otros usuarios.\r\n\r\n¿Seguro que quiere continuar?",
 			"confirm no verify commit": "Está a punto de confirmar los cambios sin comprobación, lo que omite los enlaces previos a la confirmación y puede no ser deseable.\r\n\r\n¿Seguro que quiere continuar?",
-			"confirm publish branch": "La rama ' {0} ' no tiene ninguna rama ascendente. ¿desea publicar esta rama?",
+			"confirm publish branch": "La rama '{0}' no tiene ninguna rama remota. ¿Quiere publicar esta rama?",
 			"confirm restore": "¿Está seguro de que desea restaurar {0}?",
 			"confirm restore multiple": "¿Está seguro de que desea restaurar {0} archivos?",
 			"confirm stage file with merge conflicts": "¿Está seguro de que quiere hacer una copia intermedia de {0} con conflictos de fusión mediante combinación?",
@@ -72,6 +72,8 @@
 			"discard": "Descartar cambios",
 			"discardAll": "Descartar todos los archivos ({0})",
 			"discardAll multiple": "Descartar un archivo",
+			"drop all stashes": "¿Está seguro de que quiere quitar TODOS los cambios guardados provisionalmente? Hay {0} cambios guardados provisionalmente que estarán sujetos a eliminación y PUEDEN SER IMPOSIBLES DE RECUPERAR.",
+			"drop one stash": "¿Está seguro de que quiere quitar TODOS los cambios guardados provisionalmente? Hay 1 cambio guardado provisionalmente que estará sujeto a eliminación y PUEDE SER IMPOSIBLES DE RECUPERAR.",
 			"force": "Forzar extracción del repositorio",
 			"force push not allowed": "No está permitido forzar envío de cambios, habilite la opción mediante el control \"git.allowForcePush\".",
 			"git error": "Error de GIT",
@@ -180,27 +182,16 @@
 			"git2526": "La instancia {0} de GIT instalada tiene problemas conocidos. Actualice a GIT >= 2.27 para que las características de este funcionen correctamente.",
 			"neverShowAgain": "No mostrar de nuevo",
 			"notfound": "Git no encontrado. Instálalo o configúralo usando la configuración 'git.path'.",
-			"skipped": "Se omitió git encontrado en: {0}",
+			"skipped": "{0} Se omitió GIT encontrado en: {1}",
 			"updateGit": "Actualizar GIT",
-			"using git": "Usando GIT {0} desde {1}",
-			"validating": "La validación encontró Git en: {0}"
+			"using git": "{0} Usando GIT {1} de {2}",
+			"validating": "{0} La validación encontró GIT en: {1}"
 		},
 		"dist/model": {
 			"no repositories": "No hay repositorios disponibles",
 			"not supported": "Rutas absolutas no admitidas en el parámetro \"git.scanRepositories\".",
 			"pick repo": "Elija un repositorio",
 			"too many submodules": "El repositorio ' {0} ' tiene {1} submódulos que no se abrirán automáticamente. Usted todavía puede abrir cada archivo individualmente."
-		},
-		"dist/remoteSource": {
-			"branch name": "Nombre de rama",
-			"error": "$(error) Error: {0}",
-			"none found": "No se encontraron repositorios remotos.",
-			"pick url": "Elija una dirección URL desde la que se va a clonar.",
-			"provide url": "Proporcionar la dirección URL del repositorio",
-			"provide url or pick": "Proporcione la dirección URL del repositorio o seleccione un origen de repositorio.",
-			"type to filter": "Nombre del repositorio",
-			"type to search": "Nombre del repositorio (escribir para buscar)",
-			"url": "URL"
 		},
 		"dist/repository": {
 			"add known": "¿Desea añadir \"{0}\" a .gitignore?",
@@ -249,9 +240,9 @@
 			"pull push n": "Hacer \"pull\" de {0} y \"push\" de {1} \"commits\" entre {2}/{3}",
 			"push n": "Hacer \"push\" en {0} \"commits\" a {1}/{2}",
 			"push success": "Push realizado con éxito.",
-			"scm button publish title": "$(cloud-upload) Publicar cambios",
-			"scm button publish tooltip": "Publicar cambios",
-			"scm button sync title": " Sincronizar cambios $(sync){0}{1}",
+			"scm button publish title": "$(cloud-upload) Publicar rama",
+			"scm button publish tooltip": "Publicar rama",
+			"scm button sync title": "$(sync) Sincronizar cambios {0}{1}",
 			"staged changes": "Cambios \"staged\"",
 			"sync changes": "Sincronizar cambios",
 			"sync is unpredictable": "Sincronizando. La cancelación puede provocar daños graves en el repositorio.",
@@ -262,7 +253,7 @@
 		},
 		"dist/statusbar": {
 			"checkout": "Extraer del repositorio una rama o etiqueta...",
-			"publish changes": "Publicar cambios",
+			"publish branch": "Publicar rama",
 			"publish to": "Publicar en {0}",
 			"publish to...": "Publicar en...",
 			"rebasing": "Creando una nueva base",
@@ -270,7 +261,7 @@
 		},
 		"dist/timelineProvider": {
 			"git.index": "Índice",
-			"git.timeline.detail": "{0} - {1}\r\n{2}\r\n\r\n{3}",
+			"git.timeline.detail": "{0} \\u2014 {1}\r\n{2}\r\n\r\n{3}",
 			"git.timeline.source": "Historia de Git",
 			"git.timeline.stagedChanges": "Cambios almacenados provisionalmente",
 			"git.timeline.uncommitedChanges": "Cambios pendientes de confirmación",
@@ -289,6 +280,9 @@
 			"colors.submodule": "Color para los recursos de submódulos.",
 			"colors.untracked": "Color para los recursos a los que no se les hace seguimiento.",
 			"command.addRemote": "Agregar remoto...",
+			"command.api.getRemoteSources": "Obtener orígenes remotos",
+			"command.api.getRepositories": "Obtener repositorios",
+			"command.api.getRepositoryState": "Obtener estado del repositorio",
 			"command.branch": "Crear rama...",
 			"command.branchFrom": "Crear rama desde...",
 			"command.checkout": "Desproteger en...",
@@ -365,6 +359,7 @@
 			"command.stashApply": "Aplicar cambio guardados provisionalmente",
 			"command.stashApplyLatest": "Aplicar últimos cambios guardados provisionalmente",
 			"command.stashDrop": "Descartar cambios guardados provisionalmente...",
+			"command.stashDropAll": "Quitar todos los cambios guardados provisionalmente...",
 			"command.stashIncludeUntracked": "Guardar provisionalmente (Incluir sin seguimiento)",
 			"command.stashPop": "Aplicar y quitar cambios guardados provisionalmente...",
 			"command.stashPopLatest": "Aplicar y quitar últimos cambios guardados provisionalmente...",
@@ -450,6 +445,7 @@
 			"config.pruneOnFetch": "Eliminar al hacer \"fetch\".",
 			"config.pullTags": "Recupere todas las etiquetas al insertar.",
 			"config.rebaseWhenSync": "Forzar que GIT utilice la fusión mediante cambio de base cuando se ejecute el comando de sincronización.",
+			"config.repositoryScanMaxDepth": "Controla la profundidad usada al examinar las carpetas del área de trabajo en busca de repositorios Git cuando \"#git.autoRepositoryDetection#\" está establecido en \"true\" o \"subFolders\". Se puede establecer en \"-1\" para que no haya límite.",
 			"config.requireGitUserConfig": "Controla si se va a requerir una configuración de usuario de GIT explícita o se va a permitir a GIT que la adivine si falta.",
 			"config.scanRepositories": "Lista de rutas en las que buscar repositorios de git.",
 			"config.showCommitInput": "Controla si se va a mostrar la entrada de confirmación en el panel de control de código fuente de GIT.",
@@ -496,7 +492,7 @@
 			"view.workbench.scm.emptyWorkspace": "El área de trabajo abierto actualmente no tiene ninguna carpeta que contenga repositorios git.\r\n[Agregue carpeta al espacio de trabajo](command:workbench.action.addRootFolder)\r\nPara obtener más información sobre cómo usar Git y el control de código fuente en VS Code [lea nuestros documentos](https://aka.ms/vscode-scm).",
 			"view.workbench.scm.folder": "La carpeta abierta actualmente no tiene un repositorio git. Puede inicializar un repositorio que habilitará características de control de código fuente con tecnología de git.\r\n[Inicializar repositorio](command:git.init?%5Btrue%5D)\r\n Para obtener más información sobre cómo usar git y el control de código fuente en VS Code [lea nuestra documentación](https://aka.ms/vscode-scm).",
 			"view.workbench.scm.missing": "No se detectó una instalación git válida, se pueden encontrar más detalles en [git output](command:git.showOutput).\r\n[Instale git](https://git-scm.com/) u obtenga más información sobre cómo usar Git y el control de código fuente en VS Code en [nuestros documentos](https://aka.ms/vscode-scm).\r\nSi está utilizando un sistema de control de versiones diferente, puede [buscar en Marketplace](command:workbench.extensions.search?%22%40category%3A%5C%22scm%20providers%5C%22%22) extensiones adicionales.",
-			"view.workbench.scm.workspace": "El área de trabajo abierta actualmente no tiene ninguna carpeta que contenga repositorios de git. Puede inicializar un repositorio en una carpeta, lo que habilitará las características de control de código con tecnología de git.\r\n[Inicializar repositorio](command:git.init)\r\n Para obtener más información sobre cómo usar git y el control de código fuente en VS Code [lea nuestra documentación] (https://aka.ms/vscode-scm)."
+			"view.workbench.scm.workspace": "The workspace currently open doesn't have any folders containing git repositories. You can initialize a repository on a folder which will enable source control features powered by git.\r\n[Initialize Repository](command:git.init)\r\nTo learn more about how to use git and source control in VS Code [read our docs](https://aka.ms/vscode-scm)."
 		}
 	}
 }
