@@ -22,7 +22,6 @@
 		"dist/languageFeatures/completions": {
 			"acquiringTypingsDetail": "Adquiriendo definiciones de typings para IntelliSense.",
 			"acquiringTypingsLabel": "Adquiriendo typings...",
-			"autoImportLabel": "Importar automáticamente desde {0}",
 			"selectCodeAction": "Seleccione acción de código para aplicar"
 		},
 		"dist/languageFeatures/directiveCommentCompletions": {
@@ -63,6 +62,10 @@
 		},
 		"dist/languageFeatures/rename": {
 			"fileRenameFail": "Error al cambiar el nombre del archivo"
+		},
+		"dist/languageFeatures/tsconfig": {
+			"documentLink.tooltip": "Seguir vínculo",
+			"openTsconfigExtendsModuleFail": "Error al resolver {0} como módulo"
 		},
 		"dist/languageFeatures/updatePathsOnRename": {
 			"accept.title": "Sí",
@@ -163,8 +166,10 @@
 			"codeActions.source.organizeImports.title": "Organizar Importaciones",
 			"configuration.implicitProjectConfig.checkJs": "Habilita o deshabilita la comprobación semántica de los archivos de JavaScript. Los archivos \"jsconfig.json\" o \"tsconfig.json\" existentes invalidan esta opción.",
 			"configuration.implicitProjectConfig.experimentalDecorators": "Habilite o deshabilite \"experimentalDecorators\" en los archivos de JavaScript que no forman parte de un proyecto. Los archivos \"jsconfig.json\" o \"tsconfig.json\" existentes invalidan esta opción.",
+			"configuration.implicitProjectConfig.module": "Establece el sistema de módulos para el programa. Más información: https://www.typescriptlang.org/tsconfig#module.",
 			"configuration.implicitProjectConfig.strictFunctionTypes": "Enable/disable [strict function types](https://www.typescriptlang.org/tsconfig#strictFunctionTypes) in JavaScript and TypeScript files that are not part of a project. Existing `jsconfig.json` or `tsconfig.json` files override this setting.",
 			"configuration.implicitProjectConfig.strictNullChecks": "Enable/disable [strict null checks](https://www.typescriptlang.org/tsconfig#strictNullChecks) in JavaScript and TypeScript files that are not part of a project. Existing `jsconfig.json` or `tsconfig.json` files override this setting.",
+			"configuration.implicitProjectConfig.target": "Establezca la versión del lenguaje JavaScript de destino para las declaraciones JavaScript emitidas e incluya las declaraciones de biblioteca. Más información: https://www.typescriptlang.org/tsconfig#target.",
 			"configuration.inlayHints.enumMemberValues.enabled": "Habilitar o deshabilitar las sugerencias de incrustación para los valores de miembro en las declaraciones de enumeración:\r\n' ' ' typescript\r\n\r\nenum valor {\r\n\tA/* = 0 */;\r\n\tB/* = 1 */;\r\n}\r\n \r\n```\r\nRequiere el uso de TypeScript 4.4 + en el área de trabajo.",
 			"configuration.inlayHints.functionLikeReturnTypes.enabled": "Habilitar o deshabilitar las sugerencias de incrustación para tipos de valor devuelto implícitos en firmas de función:\r\n```typescript\r\n\r\nfunction foo() /* :number */ {\r\n\treturn Date.now();\r\n} \r\n \r\n```\r\nRequiere el uso de TypeScript 4.4+ en el área de trabajo.",
 			"configuration.inlayHints.parameterNames.enabled": "Habilitar o deshabilitar las sugerencias de incrustación para los nombres de parámetro:\r\n```typescript\r\n\r\nparseInt(/* str: */ '123', /* radix: */ 8)\r\n \r\n```\r\nRequiere el uso de TypeScript 4.4+ en el área de trabajo.",
@@ -181,7 +186,7 @@
 			"configuration.suggest.includeAutomaticOptionalChainCompletions": "Habilite/deshabilite la visualización de terminaciones en valores potencialmente indefinidos que insertan una llamada en cadena opcional. Requiere TS 3.7+ y que las comprobaciones estrictas de elementos nulos.estén habilitadas.",
 			"configuration.suggest.includeCompletionsForImportStatements": "Habilita o deshabilita las finalizaciones del estilo de importación automática en las instrucciones de importación escritas parcialmente. Requiere el uso de TypeScript 4.3 o versiones posteriores en el área de trabajo.",
 			"configuration.suggest.includeCompletionsWithSnippetText": "Habilita o deshabilita las finalizaciones de fragmentos de código del servidor de TS. Requiere el uso de TypeScript 4.3 o versiones posteriores en el área de trabajo.",
-			"configuration.suggest.jsdoc.generateReturns": "Habilita o deshabilita la generación de anotaciones \"@return\" para las plantillas de JSDoc. Requiere el uso de TypeScript 4.2 y versiones posteriores en el área de trabajo.",
+			"configuration.suggest.jsdoc.generateReturns": "Habilita o deshabilita la generación de anotaciones `@returns` para las plantillas de JSDoc. Requiere el uso de TypeScript 4.2 y versiones posteriores en el área de trabajo.",
 			"configuration.suggest.names": "Habilite/deshabilite la inclusión de nombres únicos del archivo en las sugerencias de JavaScript. Tenga en cuenta que las sugerencias de nombre siempre están deshabilitadas en el código JavaScript que se comprueba semánticamente mediante \"@ts-check\" o \"checkJs\".",
 			"configuration.suggest.paths": "Habilite/deshabilite las sugerencias para rutas de acceso en instrucciones de importación y requiera llamadas.",
 			"configuration.surveys.enabled": "Habilitar/deshabilitar las encuestas ocasionales que nos ayudan a mejorar la compatibilidad de JavaScript y TypeScript en VS Code.",
@@ -239,6 +244,7 @@
 			"inlayHints.parameterNames.literals": "Habilitar las sugerencias de nombre de parámetro solo para los argumentos literales.",
 			"inlayHints.parameterNames.none": "Deshabilitar las sugerencias de nombre de parámetro.",
 			"javascript.format.enable": "Habilita o deshabilita el formateador predeterminado de JavaScript.",
+			"javascript.preferences.jsxAttributeCompletionStyle.auto": "Inserte `={}` o `=\"\"` después de los nombres de atributo según el tipo de propiedad. Consulte `javascript.preferences.quoteStyle` para controlar el tipo de comillas usadas para los atributos de cadena.",
 			"javascript.referencesCodeLens.enabled": "Habilitar/deshabilitar las referencias de CodeLens en los archivos de JavaScript.",
 			"javascript.referencesCodeLens.showOnAllFunctions": "Habilitar o deshabilitar CodeLens de referencias en todas las funciones de los archivos de JavaScript.",
 			"javascript.suggestionActions.enabled": "Habilita o deshabilita el diagnóstico de sugerencias para los archivos de JavaScript en el editor.",
@@ -270,10 +276,13 @@
 			"typescript.preferences.includePackageJsonAutoImports.off": "No busque nunca las dependencias.",
 			"typescript.preferences.includePackageJsonAutoImports.on": "Busque siempre las dependencias.",
 			"typescript.preferences.jsxAttributeCompletionStyle": "Estilo preferido para las finalizaciones de atributos JSX.",
-			"typescript.preferences.jsxAttributeCompletionStyle.auto": "Inserte '={}' o '=\"\"' después de los nombres de atributo según el tipo de propiedad.",
+			"typescript.preferences.jsxAttributeCompletionStyle.auto": "Inserte `={}` o `=\"\"` después de los nombres de atributo según el tipo de propiedad. Consulte `typescript.preferences.quoteStyle` para controlar el tipo de comillas usadas para los atributos de cadena.",
 			"typescript.preferences.jsxAttributeCompletionStyle.braces": "Inserta '={}' después de los nombres de atributo.",
 			"typescript.preferences.jsxAttributeCompletionStyle.none": "Inserte solo nombres de atributo.",
-			"typescript.preferences.quoteStyle": "Estilo de comillas preferido para correcciones rápidas: \"single\" (comillas sencillas), \"double\" (comillas dobles) o \"auto\" (inferir automáticamente el tipo de comillas a partir de las importaciones actuales).",
+			"typescript.preferences.quoteStyle": "Estilo de comillas preferido para las correcciones rápidas.",
+			"typescript.preferences.quoteStyle.auto": "Inferir el tipo de comillas a partir del código existente",
+			"typescript.preferences.quoteStyle.double": "Siempre use comillas dobles: `\"`",
+			"typescript.preferences.quoteStyle.single": "Siempre use comillas simples: `'`",
 			"typescript.preferences.renameShorthandProperties.deprecationMessage": "El valor \"typescript.preferences.renameShorthandProperties\" ha quedado en desuso en favor de \"typescript.preferences.useAliasesForRenames\"",
 			"typescript.preferences.useAliasesForRenames": "Habilite o deshabilite la introducción de alias para propiedades abreviadas de objetos durante los cambios de nombre. Requiere el uso de TypeScript 3.4 o una versión más reciente en el área de trabajo.",
 			"typescript.problemMatchers.tsc.label": "Problemas de TypeScript",

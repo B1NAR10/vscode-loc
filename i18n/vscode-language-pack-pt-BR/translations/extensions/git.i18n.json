@@ -8,6 +8,14 @@
 	],
 	"version": "1.0.0",
 	"contents": {
+		"dist/actionButton": {
+			"scm button publish branch": "Publicar Ramificação",
+			"scm button publish branch running": "Ramificação de Publicação...",
+			"scm button publish title": "$(cloud-upload) Publicar Ramificação",
+			"scm button sync description": "{0} Alterações de Sincronização {1}{2}",
+			"scm button sync title": "{0} {1}{2}",
+			"syncing changes": "Sincronizando Alterações..."
+		},
 		"dist/askpass-main": {
 			"missOrInvalid": "Credenciais ausentes ou inválidas."
 		},
@@ -78,6 +86,7 @@
 			"force push not allowed": "Forçar envio por push não é permitido. Habilite-o com a configuração 'git.allowForcePush'.",
 			"git error": "Erro de git",
 			"git error details": "Git: {0}",
+			"git.timeline.openDiffCommand": "Open Comparison",
 			"git.title.diff": "{0} ⟷ {1}",
 			"git.title.diffRefs": "{0} ({1}) ⟷ {0} ({2})",
 			"git.title.index": "{0} (Índice)",
@@ -240,9 +249,6 @@
 			"pull push n": "Efetuar pull de {0} e efetuar push de {1} commits entre {2}/{3}",
 			"push n": "Efetuar push de {0} commits para {1}/{2}",
 			"push success": "Enviado por push com êxito.",
-			"scm button publish title": "$(cloud-upload) Publicar Ramificação",
-			"scm button publish tooltip": "Publicar Ramificação",
-			"scm button sync title": "$(sync) Sincronizar Alterações {0}{1}",
 			"staged changes": "Alterações Preparadas",
 			"sync changes": "Sincronizar as Alterações",
 			"sync is unpredictable": "Sincronizando. O cancelamento pode causar sérios danos ao repositório",
@@ -260,13 +266,11 @@
 			"syncing changes": "Sincronizando Alterações..."
 		},
 		"dist/timelineProvider": {
-			"git.index": "Índice",
-			"git.timeline.detail": "{0} \\u2014 {1}\r\n{2}\r\n\r\n{3}",
+			"git.timeline.email": "E-mail",
+			"git.timeline.openComparison": "Abrir Comparação",
 			"git.timeline.source": "Histórico de Git",
 			"git.timeline.stagedChanges": "Alterações Preparadas",
-			"git.timeline.uncommitedChanges": "Alterações Não Confirmadas",
-			"git.timeline.you": "Você",
-			"git.workingTree": "Árvore de Trabalho"
+			"git.timeline.you": "Você"
 		},
 		"package": {
 			"colors.added": "Cor dos recursos adicionados.",
@@ -295,6 +299,7 @@
 			"command.clone": "Clonar",
 			"command.cloneRecursive": "Clonar (Recursivo)",
 			"command.close": "Fechar Repositório",
+			"command.closeAllDiffEditors": "Fechar Todos os Editores de Comparação",
 			"command.commit": "Confirmar",
 			"command.commitAll": "Confirmar Tudo",
 			"command.commitAllAmend": "Confirmar Tudo (Corrigir)",
@@ -394,6 +399,8 @@
 			"config.checkoutType.local": "Branches locais",
 			"config.checkoutType.remote": "Branches remotos",
 			"config.checkoutType.tags": "Tags",
+			"config.closeDiffOnOperation": "Controla se o editor de comparação deve ser fechado automaticamente quando as alterações são ocultadas, confirmadas, descartadas, preparadas ou não.",
+			"config.commandsToLog": "Lista de comandos git (por exemplo: commit, push) que teriam seu 'stdout' registrado no [git output](command:git.showOutput). Se o comando git tiver um gancho do lado do cliente configurado, o 'stdout' do gancho do lado do cliente também será registrado no [git output](command:git.showOutput).",
 			"config.confirmEmptyCommits": "Sempre confirmar a criação de confirmações vazias para o comando 'Git: Commit Empty'.",
 			"config.confirmForcePush": "Controla se é necessário solicitar confirmação antes de forçar o envio por push.",
 			"config.confirmNoVerifyCommit": "Controla se deve solicitar confirmação antes de confirmar sem verificação.",
@@ -411,6 +418,7 @@
 			"config.enableSmartCommit": "Confirmar todas as alterações quando não houver alterações preparadas.",
 			"config.enableStatusBarSync": "Controla se o comando de sincronização do Git aparece na barra de status.",
 			"config.enabled": "Se o Git está habilitado.",
+			"config.experimental.installGuide": "Melhorias experimentais para o fluxo de configuração do Git.",
 			"config.fetchOnPull": "Quando habilitado, busque todas as ramificações efetuando pull. Caso contrário, busque apenas a atual.",
 			"config.followTagsWhenSync": "Seguir as marcas de envio de tudo por push ao executar o comando de sincronização.",
 			"config.ignoreLegacyWarning": "Ignora o aviso de Git herdado.",
@@ -445,6 +453,7 @@
 			"config.pruneOnFetch": "Fazer a remoção durante a busca.",
 			"config.pullTags": "Buscar todas as marcas ao efetuar pull.",
 			"config.rebaseWhenSync": "Forçar o git a usar a troca de base ao executar o comando de sincronização.",
+			"config.repositoryScanIgnoredFolders": "Lista de pastas ignoradas durante a verificação de repositórios Git quando '#git.autoRepositoryDetection#' está definido como 'true' ou 'subFolders'.",
 			"config.repositoryScanMaxDepth": "Controla a profundidade usada ao verificar as pastas do workspace para repositórios Git quando `#git.autoRepositoryDetection#` está definido como `true` ou` subFolders`. Pode ser definido como `-1` para nenhum limite.",
 			"config.requireGitUserConfig": "Controla se a configuração explícita do usuário do Git deve ser exigida ou se o Git pode adivinhar a configuração quando ela estiver ausente.",
 			"config.scanRepositories": "Lista de caminhos nos quais pesquisar repositórios git.",
@@ -473,6 +482,7 @@
 			"config.untrackedChanges.separate": "As alterações não controladas são exibidas separadamente no modo de exibição de Controle do Código-fonte. Elas também são excluídas de várias ações.",
 			"config.useCommitInputAsStashMessage": "Controla se a mensagem da caixa de entrada de commit deve ser usada como a mensagem de stash padrão.",
 			"config.useForcePushWithLease": "Controla se o envio por push forçado usa a variante force-with-lease mais segura.",
+			"config.useIntegratedAskPass": "Controla se o GIT_ASKPASS deve ser substituído para usar a versão integrada.",
 			"description": "Integração SCM do Git",
 			"displayName": "Git",
 			"submenu.branch": "Ramificação",
@@ -492,6 +502,10 @@
 			"view.workbench.scm.emptyWorkspace": "The workspace currently open doesn't have any folders containing git repositories.\r\n[Add Folder to Workspace](command:workbench.action.addRootFolder)\r\nTo learn more about how to use git and source control in VS Code [read our docs](https://aka.ms/vscode-scm).",
 			"view.workbench.scm.folder": "The folder currently open doesn't have a git repository. You can initialize a repository which will enable source control features powered by git.\r\n[Initialize Repository](command:git.init?%5Btrue%5D)\r\nTo learn more about how to use git and source control in VS Code [read our docs](https://aka.ms/vscode-scm).",
 			"view.workbench.scm.missing": "A valid git installation was not detected, more details can be found in the [git output](command:git.showOutput).\r\nPlease [install git](https://git-scm.com/), or learn more about how to use git and source control in VS Code in [our docs](https://aka.ms/vscode-scm).\r\nIf you're using a different version control system, you can [search the Marketplace](command:workbench.extensions.search?%22%40category%3A%5C%22scm%20providers%5C%22%22) for additional extensions.",
+			"view.workbench.scm.missing.guide": "Instale o Git, um sistema de controle do código-fonte popular, para acompanhar alterações de código e colaborar com outras pessoas. Saiba mais em nossos [guias do Git](https://aka.ms/vscode-scm).",
+			"view.workbench.scm.missing.guide.linux": "O controle do código-fonte depende da instalação do Git.\r\n[Baixe o Git para Linux](https://git-scm.com/download/mac)\r\nDepois de instalar, [recarregue](command:workbench.action.reloadWindow) (ou [solucione o problema](command:git.showOutput)). Provedores de controle do código-fonte adicionais podem ser instalados [a partir do Marketplace](command:workbench.extensions.search?%22%40category%3A%5C%22scm%20providers%5C%22%22).",
+			"view.workbench.scm.missing.guide.mac": "[Baixe o Git para macOS](https://git-scm.com/download/mac)\r\nDepois de instalar, [recarregue](command:workbench.action.reloadWindow) (ou [solucione o probleme](command:git.showOutput)). Provedores de controle do código-fonte adicionais podem ser instalados [a partir do Marketplace](command:workbench.extensions.search?%22%40category%3A%5C%22scm%20providers%5C%22%22).",
+			"view.workbench.scm.missing.guide.windows": "[Baixar o Git para Windows](https://git-scm.com/download/win)\r\nDepois de instalar, [recarregue](command:workbench.action.reloadWindow) (ou [solucione o problema](command:git.showOutput)). Provedores de controle do código-fonte adicionais podem ser instalados [a partir do Marketplace](command:workbench.extensions.search?%22%40category%3A%5C%22scm%20providers%5C%22%22).",
 			"view.workbench.scm.workspace": "The workspace currently open doesn't have any folders containing git repositories. You can initialize a repository on a folder which will enable source control features powered by git.\r\n[Initialize Repository](command:git.init)\r\nTo learn more about how to use git and source control in VS Code [read our docs](https://aka.ms/vscode-scm)."
 		}
 	}

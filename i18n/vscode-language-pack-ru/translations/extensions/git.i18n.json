@@ -8,6 +8,14 @@
 	],
 	"version": "1.0.0",
 	"contents": {
+		"dist/actionButton": {
+			"scm button publish branch": "Опубликовать ветвь",
+			"scm button publish branch running": "Публикация ветви...",
+			"scm button publish title": "$(cloud-upload) Опубликовать ветвь",
+			"scm button sync description": "{0} Синхронизировать изменения {1}{2}",
+			"scm button sync title": "{0} {1}{2}",
+			"syncing changes": "Синхронизация изменений..."
+		},
 		"dist/askpass-main": {
 			"missOrInvalid": "Учетные данные отсутствуют или недопустимы."
 		},
@@ -78,6 +86,7 @@
 			"force push not allowed": "Принудительная отправка не разрешена. Включите ее, установив параметр \"git.allowForcePush\".",
 			"git error": "Ошибка Git",
 			"git error details": "Git: {0}",
+			"git.timeline.openDiffCommand": "Open Comparison",
 			"git.title.diff": "{0} ⟷ {1}",
 			"git.title.diffRefs": "{0} ({1}) ⟷ {0} ({2})",
 			"git.title.index": "{0} (индекс)",
@@ -240,9 +249,6 @@
 			"pull push n": "Вытягивание ({0}) и отправка ({1}) фиксаций между {2}/{3}",
 			"push n": "Отправка фиксаций ({0}) в {1}/{2}",
 			"push success": "Отправка выполнена успешно.",
-			"scm button publish title": "$(cloud-upload) Опубликовать ветвь",
-			"scm button publish tooltip": "Опубликовать ветвь",
-			"scm button sync title": "$(sync) Синхронизировать изменения {0}{1}",
 			"staged changes": "Промежуточные изменения",
 			"sync changes": "Синхронизация изменений",
 			"sync is unpredictable": "Выполняется синхронизация. Отмена может привести к серьезному повреждению репозитория",
@@ -260,13 +266,11 @@
 			"syncing changes": "Синхронизация изменений..."
 		},
 		"dist/timelineProvider": {
-			"git.index": "Индекс",
-			"git.timeline.detail": "{0}  \\u2014 {1}\r\n{2}\r\n\r\n{3}",
+			"git.timeline.email": "Электронная почта",
+			"git.timeline.openComparison": "Открыть сравнение",
 			"git.timeline.source": "Журнал Git",
 			"git.timeline.stagedChanges": "Промежуточно сохраненные изменения",
-			"git.timeline.uncommitedChanges": "Незафиксированные изменения",
-			"git.timeline.you": "Вы",
-			"git.workingTree": "Рабочее дерево"
+			"git.timeline.you": "Вы"
 		},
 		"package": {
 			"colors.added": "Цвет для добавленных ресурсов.",
@@ -295,6 +299,7 @@
 			"command.clone": "Клонировать",
 			"command.cloneRecursive": "Клонировать (рекурсивно)",
 			"command.close": "Закрыть репозиторий",
+			"command.closeAllDiffEditors": "Закрыть все редакторы несовпадений",
 			"command.commit": "Фиксация",
 			"command.commitAll": "Зафиксировать все",
 			"command.commitAllAmend": "Зафиксировать все (изменение)",
@@ -394,6 +399,8 @@
 			"config.checkoutType.local": "Локальные ветви",
 			"config.checkoutType.remote": "Удаленные ветви",
 			"config.checkoutType.tags": "Теги",
+			"config.closeDiffOnOperation": "Определяет, следует ли автоматически закрывать редактор несовпадений, когда изменения скрыты, зафиксированы, удалены, являются подготовленными или неподготовленными.",
+			"config.commandsToLog": "Список команд Git (например, commit, push), для которых \\\"stdout\\\" записывается в [выходные данные Git](command:git.showOutput). Если для команды Git настроен обработчик на стороне клиента, то \\\"stdout\\\" обработчика на стороне клиента также будет записан в [выходные данные Git](command:git.showOutput).",
 			"config.confirmEmptyCommits": "Всегда подтверждайте создание пустых фиксаций для команды \"Git: Пустая фиксация\".",
 			"config.confirmForcePush": "Определяет, следует ли спрашивать подтверждение перед принудительной отправкой.",
 			"config.confirmNoVerifyCommit": "Определяет, следует ли запрашивать подтверждение перед фиксацией без проверки.",
@@ -411,6 +418,7 @@
 			"config.enableSmartCommit": "Делать коммит из всех изменений, когда нет изменений в индексе.",
 			"config.enableStatusBarSync": "Определяет, отображается ли команда синхронизации Git в строке состояния.",
 			"config.enabled": "Определяет, включен ли git.",
+			"config.experimental.installGuide": "Экспериментальные улучшения для потока настройки Git.",
 			"config.fetchOnPull": "Если параметр включен, то при вытягивании получаются все ветви. В противном случае получается только текущая ветвь.",
 			"config.followTagsWhenSync": "Отправка всех тегов при выполнении команды синхронизации.",
 			"config.ignoreLegacyWarning": "Игнорирует предупреждение об устаревшей версии Git.",
@@ -445,6 +453,7 @@
 			"config.pruneOnFetch": "Урезать при извлечении.",
 			"config.pullTags": "Получить все теги при извлечении.",
 			"config.rebaseWhenSync": "Принудительно использовать перемещение изменений из одной ветви в другую вместо слияния при запуске команды sync в Git.",
+			"config.repositoryScanIgnoredFolders": "Список папок, которые игнорируются при сканировании репозиториев Git, когда для параметра \"#git.autoRepositoryDetection#\" задано значение \"true\" или \"subFolders\".",
 			"config.repositoryScanMaxDepth": "Определяет глубину, используемую при сканировании папок рабочей области для репозиториев Git, если для #git.autoRepositoryDetection# задано значение true или subFolders. Можно задать значение \"-1\" для снятия ограничений.",
 			"config.requireGitUserConfig": "Позволяет определить, требовать ли явной настройки пользователя Git или разрешить Git использовать предположения, если пользователь не указан.",
 			"config.scanRepositories": "Список путей для поиска репозиториев Git.",
@@ -473,6 +482,7 @@
 			"config.untrackedChanges.separate": "Неотслеживаемые изменения отображаются отдельно от представления исходного кода. Они также исключаются из нескольких действий.",
 			"config.useCommitInputAsStashMessage": "Определяет, следует ли использовать сообщение из поля входных данных фиксации в качестве сообщения о спрятанных изменениях по умолчанию.",
 			"config.useForcePushWithLease": "Определяет, используется ли более безопасный вариант принудительной отправки с арендой.",
+			"config.useIntegratedAskPass": "Определяет, следует ли перезаписать GIT_ASKPASS для использования интегрированной версии.",
 			"description": "Интеграция системы контроля версий Git",
 			"displayName": "Git",
 			"submenu.branch": "Ветвь",
@@ -492,6 +502,10 @@
 			"view.workbench.scm.emptyWorkspace": "В открытой сейчас рабочей области нет папок, содержащих репозитории Git.\r\n[Добавить папку в рабочую область](command:workbench.action.addRootFolder)\r\nЧтобы получить дополнительные сведения об использовании Git и системы управления версиями в VS Code, [изучите нашу документацию](https://aka.ms/vscode-scm).",
 			"view.workbench.scm.folder": "В открытой папке нет репозитория Git. Вы можете инициализировать репозиторий, что позволит получить доступ к возможностям системы управления версиями на платформе Git.\r\n[Инициализировать репозиторий](command:git.init?%5Btrue%5D)\r\nЧтобы получить дополнительные сведения об использовании Git и системы управления версиями в VS Code, [изучите нашу документацию](https://aka.ms/vscode-scm).",
 			"view.workbench.scm.missing": "Допустимая установка Git не обнаружена, дополнительные сведения см. в [выходных данных Git](command:git.showOutput).\r\n[Установите Git](https://git-scm.com/) либо получите дополнительные сведения об использовании Git и системы управления версиями в VS Code в [нашей документации](https://aka.ms/vscode-scm).\r\nЕсли вы используете другую систему управления версиями, можете поискать дополнительные расширения [в Marketplace](command:workbench.extensions.search?%22%40category%3A%5C%22scm%20providers%5C%22%22).",
+			"view.workbench.scm.missing.guide": "Установите Git, популярную систему управления версиями, чтобы отслеживать изменения кода и совместно работать с другими пользователями. Дополнительные сведения см. в [Git guides](https://aka.ms/vscode-scm).",
+			"view.workbench.scm.missing.guide.linux": "Система управления версиями зависит от установленного Git.\r\n[Download Git for Linux](https://git-scm.com/download/mac)\r\nПосле установки выполните [reload](command:workbench.action.reloadWindow) (или [troubleshoot](command:git.showOutput)). Можно установить дополнительных поставщиков системы управления версиями [from the Marketplace](command:workbench.extensions.search?%22%40category%3A%5C%22scm%20providers%5C%22%22).",
+			"view.workbench.scm.missing.guide.mac": "[Download Git for macOS](https://git-scm.com/download/mac)\r\nПосле установки выполните [reload](command:workbench.action.reloadWindow) (или [troubleshoot](command:git.showOutput)). Можно установить дополнительных поставщиков системы управления версиями [from the Marketplace](command:workbench.extensions.search?%22%40category%3A%5C%22scm%20providers%5C%22%22).",
+			"view.workbench.scm.missing.guide.windows": "[Download Git for Windows](https://git-scm.com/download/win)\r\nПосле установки выполните [reload](command:workbench.action.reloadWindow) (или [troubleshoot](command:git.showOutput)). Можно установить дополнительных поставщиков системы управления версиями [from the Marketplace](command:workbench.extensions.search?%22%40category%3A%5C%22scm%20providers%5C%22%22).",
 			"view.workbench.scm.workspace": "В открытой рабочей области нет папок, содержащих репозитории Git. Вы можете инициализировать репозиторий в папке, что позволит получить доступ к возможностям системы управления версиями на платформе Git.\r\n[Инициализировать репозиторий](command:git.init)\r\nЧтобы получить дополнительные сведения об использовании Git и системы управления версиями в VS Code, [изучите нашу документацию](https://aka.ms/vscode-scm)."
 		}
 	}

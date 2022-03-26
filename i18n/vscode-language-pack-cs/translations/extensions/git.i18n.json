@@ -8,6 +8,14 @@
 	],
 	"version": "1.0.0",
 	"contents": {
+		"dist/actionButton": {
+			"scm button publish branch": "Publikovat větev",
+			"scm button publish branch running": "Větev se publikuje",
+			"scm button publish title": "$(cloud-upload) Publikovat větev",
+			"scm button sync description": "{0} Synchronizovat změny {1}{2}",
+			"scm button sync title": "{0} {1}{2}",
+			"syncing changes": "Synchronizují se změny"
+		},
 		"dist/askpass-main": {
 			"missOrInvalid": "Chybějící nebo neplatné přihlašovací údaje"
 		},
@@ -78,6 +86,7 @@
 			"force push not allowed": "Vynucení nasdílení změn není povolené. Povolte ho prosím pomocí nastavení git.allowForcePush.",
 			"git error": "Chyba Gitu",
 			"git error details": "Git: {0}",
+			"git.timeline.openDiffCommand": "Open Comparison",
 			"git.title.diff": "{0} ⟷ {1}",
 			"git.title.diffRefs": "{0} ({1}) ⟷ {0} ({2})",
 			"git.title.index": "{0} (index)",
@@ -240,9 +249,6 @@
 			"pull push n": "Přijmout {0} a nasdílet {1} potvrzení mezi {2}/{3}",
 			"push n": "Nasdílet {0} potvrzení do {1}/{2}",
 			"push success": "Změny byly úspěšně nasdíleny.",
-			"scm button publish title": "$(cloud-upload) Publikovat větev",
-			"scm button publish tooltip": "Publikovat větev",
-			"scm button sync title": "$(sync) Synchronizovat změny {0}{1}",
 			"staged changes": "Připravené změny",
 			"sync changes": "Synchronizovat změny",
 			"sync is unpredictable": "Probíhá synchronizace. Zrušení může způsobit vážné škody v úložišti.",
@@ -260,13 +266,11 @@
 			"syncing changes": "Synchronizují se změny..."
 		},
 		"dist/timelineProvider": {
-			"git.index": "Index",
-			"git.timeline.detail": "{0}  \\u2014 {1}\r\n{2}\r\n\r\n{3}",
+			"git.timeline.email": "E-mail",
+			"git.timeline.openComparison": "Otevřít porovnání",
 			"git.timeline.source": "Historie Gitu",
 			"git.timeline.stagedChanges": "Připravené změny",
-			"git.timeline.uncommitedChanges": "Nepotvrzené změny",
-			"git.timeline.you": "Vy",
-			"git.workingTree": "Pracovní strom"
+			"git.timeline.you": "Vy"
 		},
 		"package": {
 			"colors.added": "Barva pro přidané prostředky",
@@ -295,6 +299,7 @@
 			"command.clone": "Klonovat",
 			"command.cloneRecursive": "Klonovat (rekurzivně)",
 			"command.close": "Zavřít úložiště",
+			"command.closeAllDiffEditors": "Zavřít všechny editory rozdílů",
 			"command.commit": "Potvrdit",
 			"command.commitAll": "Potvrdit vše",
 			"command.commitAllAmend": "Potvrdit vše (upravit)",
@@ -394,6 +399,8 @@
 			"config.checkoutType.local": "Místní větve",
 			"config.checkoutType.remote": "Vzdálené větve",
 			"config.checkoutType.tags": "Značky",
+			"config.closeDiffOnOperation": "Určuje, jestli se má editor rozdílů automaticky uzavřít, když se změny dočasně uloží, potvrdí, zahodí, připraví nebo když dojde ke zrušení jejich přípravy.",
+			"config.commandsToLog": "Seznam příkazů Gitu (např. potvrdit, sdílet změny), které by měly jejich stdout zaprotokolované do [git output](command:git.showOutput). Pokud má příkaz git nakonfigurované zavěšení na straně klienta, bude i stdout zavěšení na straně klienta zaprotokolované do [git output](command:git.showOutput).",
 			"config.confirmEmptyCommits": "Vždy potvrzovat vytváření prázdných potvrzení pro příkaz Git: Commit Empty",
 			"config.confirmForcePush": "Určuje, jestli se má žádat o potvrzení před nasdílením změn s vynucením.",
 			"config.confirmNoVerifyCommit": "Určuje, jestli se má před potvrzením bez ověření zobrazit žádost o potvrzení.",
@@ -411,6 +418,7 @@
 			"config.enableSmartCommit": "Potvrdit všechny změny, pokud neexistují žádné připravené změny",
 			"config.enableStatusBarSync": "Určuje, jestli se na stavovém řádku zobrazí příkaz synchronizace Gitu.",
 			"config.enabled": "Určuje, jestli je povolené úložiště Git.",
+			"config.experimental.installGuide": "Experimentální vylepšení toku nastavení Gitu.",
 			"config.fetchOnPull": "Pokud je povoleno, načítají se při přijímání změn všechny větve. V opačném případě se načte pouze aktuální větev.",
 			"config.followTagsWhenSync": "Při spuštění příkazu Synchronizovat také nasdílet změny všech značek",
 			"config.ignoreLegacyWarning": "Ignoruje starší upozornění Gitu.",
@@ -445,6 +453,7 @@
 			"config.pruneOnFetch": "Vyřadit při načítání",
 			"config.pullTags": "Při přijímání změn načíst všechny značky",
 			"config.rebaseWhenSync": "Vynutit, aby Git při spuštění příkazu synchronizace použil přenesení změn",
+			"config.repositoryScanIgnoredFolders": "Seznam složek, které se při vyhledávání úložišť Git ignorují, když je možnost #git.autoRepositoryDetection# nastavená na true nebo subFolders",
 			"config.repositoryScanMaxDepth": "Určuje hloubku použitou při kontrole složek pracovního prostoru pro úložiště Git, když je možnost #git.autoRepositoryDetection# nastavená na true nebo subFolders. Dá se nastavit na -1 aby se odstranily omezení.",
 			"config.requireGitUserConfig": "Určuje, jestli se má vyžadovat explicitní konfigurace uživatele Git, nebo umožnit Gitu ji zkusit určit, pokud chybí.",
 			"config.scanRepositories": "Seznam cest, ve kterých se mají hledat úložiště Git",
@@ -473,6 +482,7 @@
 			"config.untrackedChanges.separate": "Nesledované změny se v zobrazení správy zdrojového kódu zobrazují samostatně. Jsou také vyloučeny z několika akcí.",
 			"config.useCommitInputAsStashMessage": "Určuje, jestli se má zpráva ze vstupního pole pro potvrzení použít jako výchozí zpráva pro dočasné uložení.",
 			"config.useForcePushWithLease": "Určuje, jestli se pro nasdílení změn s vynucením používá bezpečnější varianta vynucení se zapůjčením (force-with-lease).",
+			"config.useIntegratedAskPass": "Určuje, jestli se má GIT_ASKPASS přepsat, aby se používala integrovaná verze.",
 			"description": "Integrace s Git SCM",
 			"displayName": "Git",
 			"submenu.branch": "Větev",
@@ -492,6 +502,10 @@
 			"view.workbench.scm.emptyWorkspace": "The workspace currently open doesn't have any folders containing git repositories.\r\n[Add Folder to Workspace](command:workbench.action.addRootFolder)\r\nTo learn more about how to use git and source control in VS Code [read our docs](https://aka.ms/vscode-scm).",
 			"view.workbench.scm.folder": "Aktuálně otevřená složka nemá úložiště Git. Můžete inicializovat úložiště, v němž budou povolené funkce pro správu zdrojů, které zajišťuje Git.\r\n[Inicializovat úložiště](command:git.init?%5Btrue%5D)\r\nDalší informace o tom, jak používat Git a správu zdrojů v sadě VS Code, najdete v [naší dokumentaci](https://aka.ms/vscode-scm).",
 			"view.workbench.scm.missing": "A valid git installation was not detected, more details can be found in the [git output](command:git.showOutput).\r\nPlease [install git](https://git-scm.com/), or learn more about how to use git and source control in VS Code in [our docs](https://aka.ms/vscode-scm).\r\nIf you're using a different version control system, you can [search the Marketplace](command:workbench.extensions.search?%22%40category%3A%5C%22scm%20providers%5C%22%22) for additional extensions.",
+			"view.workbench.scm.missing.guide": "Nainstalujte si Git, oblíbený systém správy zdrojového kódu, abyste mohli sledovat změny kódu a spolupracovat s ostatními. Další informace najdete v našem [Git guides](https://aka.ms/vscode-scm).",
+			"view.workbench.scm.missing.guide.linux": "Správa zdrojového kódu závisí na nainstalovaném Gitu.\r\n[Download Git for Linux](https://git-scm.com/download/mac)\r\nPo instalaci prosím [reload](command:workbench.action.reloadWindow) (nebo [troubleshoot](command:git.showOutput)). Další poskytovatele správy zdrojového kódu je možné nainstalovat [from the Marketplace](command:workbench.extensions.search?%22%40category%3A%5C%22scm%20providers%5C%22%22).",
+			"view.workbench.scm.missing.guide.mac": "[Download Git for macOS](https://git-scm.com/download/mac)\r\nPo instalaci prosím [reload](command:workbench.action.reloadWindow) (nebo [troubleshoot](command:git.showOutput)). Další poskytovatele správy zdrojů je možné nainstalovat [from the Marketplace](command:workbench.extensions.search?%22%40category%3A%5C%22scm%20providers%5C%22%22).",
+			"view.workbench.scm.missing.guide.windows": "[Download Git for Windows](https://git-scm.com/download/win)\r\nPo instalaci prosím [reload](command:workbench.action.reloadWindow) (nebo [troubleshoot](command:git.showOutput)). Další poskytovatele správy zdrojů je možné nainstalovat [from the Marketplace](command:workbench.extensions.search?%22%40category%3A%5C%22scm%20providers%5C%22%22).",
 			"view.workbench.scm.workspace": "Aktuálně otevřený pracovní prostor nezahrnuje žádné složky obsahující úložiště Git. Můžete inicializovat úložiště ve složce, v níž budou povolené funkce pro správu zdrojů, které zajišťuje Git.\r\n[Inicializovat úložiště](command:git.init)\r\nDalší informace o tom, jak používat Git a správu zdrojů v sadě VS Code, najdete v [naší dokumentaci](https://aka.ms/vscode-scm)."
 		}
 	}

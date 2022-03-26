@@ -55,6 +55,10 @@
 			"profile.cpu.description": "[1FJRH][นั้Gëñërætës æ .çpµprøfïlë fïlë ÿøµ çæñ øpëñ ïñ thë Çhrømë ðëvtøølsẤğ倪İЂҰक्र्तिृまẤğ倪İЂҰक्र्तिृนั้ढूँ]",
 			"profile.cpu.label": "[wGGEf][นั้ÇPÜ PrøfïlëẤğ倪İนั้ढूँ]"
 		},
+		"/src/adapter/profiling/basicHeapProfiler": {
+			"profile.heap.description": "[upJNC][นั้Gëñërætës æ .hëæpprøfïlë fïlë ÿøµ çæñ øpëñ ïñ thë Çhrømë ðëvtøølsẤğ倪İЂҰक्र्तिृまẤğ倪İЂҰक्र्तिृนั้ढूँ]",
+			"profile.heap.label": "[BASvX][นั้Hëæp PrøfïlëẤğ倪İЂนั้ढूँ]"
+		},
 		"/src/adapter/profiling/heapDumpProfiler": {
 			"profile.heap.description": "[5OHMN][นั้Gëñërætës æ .hëæpsñæpshøt fïlë ÿøµ çæñ øpëñ ïñ thë Çhrømë ðëvtøølsẤğ倪İЂҰक्र्तिृまẤğ倪İЂҰक्र्तिृนั้ढूँ]",
 			"profile.heap.label": "[b9276][นั้Hëæp §ñæpshøtẤğ倪İЂนั้ढूँ]"
@@ -102,15 +106,6 @@
 			"pause.xhr": "[1wisk][นั้Pæµsëð øñ XM£HttpRëqµëst ør fëtçhẤğ倪İЂҰक्र्तिृนั้ढूँ]",
 			"reason.description.restart": "[EY72q][นั้Pæµsëð øñ fræmë ëñtrÿẤğ倪İЂҰक्นั้ढूँ]",
 			"warnings.handleSourceMapPause.didNotWait": "[su63T][นั้WÆRÑÏÑG: Prøçëssïñg søµrçë-mæps øf {0} tøøk løñgër thæñ {1} ms sø wë çøñtïñµëð ëxëçµtïøñ wïthøµt wæïtïñg før æll thë þrëækpøïñts før thë sçrïpt tø þë sët.Ấğ倪İЂҰक्र्तिृまẤğ倪İЂҰक्र्तिृまẤğ倪İЂҰक्र्तिृまẤğ倪İЂҰक्र्तिृまẤğ倪İЂҰนั้ढूँ]"
-		},
-		"/src/adapter/variables": {
-			"error.customValueDescriptionGeneratorFailed": "[XBDwo][นั้{0} (çøµlðñ't ðësçrïþë: {1})Ấğ倪İЂҰक्र्तिृนั้ढूँ]",
-			"error.emptyExpression": "[Q4aag][นั้Çæññøt sët æñ ëmptÿ vælµëẤğ倪İЂҰक्र्นั้ढूँ]",
-			"error.failedToCustomizeObjectProperties": "[3RGKh][นั้Fæïlëð prøpërtïës çµstømïzætïøñẤğ倪İЂҰक्र्तिृนั้ढूँ]",
-			"error.invalidExpression": "[ORn1u][นั้Ïñvælïð ëxprëssïøñẤğ倪İЂҰक्นั้ढूँ]",
-			"error.setVariableDidFail": "[nJeKl][นั้Üñæþlë tø sët værïæþlë vælµëẤğ倪İЂҰक्र्तिृนั้ढूँ]",
-			"error.unknown": "[O5lqD][นั้Üñkñøwñ ërrørẤğ倪İЂนั้ढूँ]",
-			"error.variableNotFound": "[MEwcP][นั้Værïæþlë ñøt føµñðẤğ倪İЂҰक्นั้ढूँ]"
 		},
 		"/src/binder": {
 			"breakpoint.provisionalBreakpoint": "[H0nhX][นั้Üñþøµñð þrëækpøïñtẤğ倪İЂҰक्นั้ढूँ]"
@@ -259,9 +254,9 @@
 			"no": "[r9viF][นั้ÑøẤนั้ढूँ]",
 			"profile.alreadyRunning": "[2KYpu][นั้Æ prøfïlïñg sëssïøñ ïs ælrëæðÿ rµññïñg, wøµlð ÿøµ lïkë tø støp ït æñð stært æ ñëw sëssïøñ?Ấğ倪İЂҰक्र्तिृまẤğ倪İЂҰक्र्तिृまẤğ倪İЂҰक्นั้ढूँ]",
 			"profile.sessionState": "[gZy13][นั้PrøfïlïñgẤğ倪İนั้ढूँ]",
-			"profile.status.default": "[xtAfB][นั้$(løæðïñg) Çlïçk tø §tøp PrøfïlïñgẤğ倪İЂҰक्र्तिृまนั้ढूँ]",
-			"profile.status.multiSession": "[BI3V0][นั้$(løæðïñg) Çlïçk tø §tøp Prøfïlïñg ({0} sëssïøñs)Ấğ倪İЂҰक्र्तिृまẤğ倪İЂҰนั้ढूँ]",
-			"profile.status.single": "[46JUY][นั้$(løæðïñg) Çlïçk tø §tøp Prøfïlïñg ({0})Ấğ倪İЂҰक्र्तिृまẤğนั้ढूँ]",
+			"profile.status.default": "[xtAfB][นั้$(løæðïñg~spïñ) Çlïçk tø §tøp PrøfïlïñgẤğ倪İЂҰक्र्तिृまẤğนั้ढूँ]",
+			"profile.status.multiSession": "[BI3V0][นั้$(løæðïñg~spïñ) Çlïçk tø §tøp Prøfïlïñg ({0} sëssïøñs)Ấğ倪İЂҰक्र्तिृまẤğ倪İЂҰक्นั้ढूँ]",
+			"profile.status.single": "[46JUY][นั้$(løæðïñg~spïñ) Çlïçk tø §tøp Prøfïlïñg ({0})Ấğ倪İЂҰक्र्तिृまẤğ倪İนั้ढूँ]",
 			"profile.termination.title": "[Nub6H][นั้Høw løñg tø rµñ thë prøfïlë:Ấğ倪İЂҰक्र्तिृนั้ढूँ]",
 			"profile.type.title": "[tZgBf][นั้Tÿpë øf prøfïlë:Ấğ倪İЂҰนั้ढूँ]",
 			"yes": "[xQLcY][นั้ÝësẤนั้ढूँ]"
@@ -321,13 +316,18 @@
 			"chrome.label": "[luVJL][นั้ÇhrømëẤğนั้ढूँ]",
 			"chrome.launch.description": "[601dt][นั้£æµñçh Çhrømë tø ðëþµg æ ÜR£Ấğ倪İЂҰक्र्तिृนั้ढूँ]",
 			"chrome.launch.label": "[2vV19][นั้Çhrømë: £æµñçhẤğ倪İЂҰนั้ढूँ]",
+			"commands.callersAdd.label": "[eK2Gu][นั้Ëxçlµðë ÇællërẤğ倪İЂҰนั้ढूँ]",
+			"commands.callersAdd.paletteLabel": "[CrkeP][นั้Ëxçlµðë çællër frøm pæµsïñg ïñ thë çµrrëñt løçætïøñẤğ倪İЂҰक्र्तिृまẤğ倪İЂҰนั้ढूँ]",
+			"commands.callersGoToCaller.label": "[ArOHZ][นั้Gø tø çællër løçætïøñẤğ倪İЂҰक्นั้ढूँ]",
+			"commands.callersGoToTarget.label": "[lAnd2][นั้Gø tø tærgët løçætïøñẤğ倪İЂҰक्นั้ढूँ]",
+			"commands.callersRemove.label": "[wzNKF][นั้Rëmøvë ëxçlµðëð çællërẤğ倪İЂҰक्र्นั้ढूँ]",
+			"commands.callersRemoveAll.label": "[3OnO6][นั้Rëmøvë æll ëxçlµðëð çællërsẤğ倪İЂҰक्र्तिृนั้ढूँ]",
 			"configuration.autoAttachMode": "[w66hn][นั้Çøñfïgµrës whïçh prøçëssës tø æµtømætïçællÿ ættæçh æñð ðëþµg whëñ `#ðëþµg.ñøðë.æµtøÆttæçh#` ïs øñ. Æ Ñøðë prøçëss læµñçhëð wïth thë `--ïñspëçt` flæg wïll ælwæÿs þë ættæçhëð tø, rëgærðlëss øf thïs sëttïñg.Ấğ倪İЂҰक्र्तिृまẤğ倪İЂҰक्र्तिृまẤğ倪İЂҰक्र्तिृまẤğ倪İЂҰक्र्तिृまẤğ倪İЂҰक्र्तिृまẤğ倪İЂҰक्र्तिृนั้ढूँ]",
 			"configuration.autoAttachMode.always": "[jrTtY][นั้Æµtø ættæçh tø ëvërÿ Ñøðë.js prøçëss læµñçhëð ïñ thë tërmïñæl.Ấğ倪İЂҰक्र्तिृまẤğ倪İЂҰक्र्तिृนั้ढूँ]",
 			"configuration.autoAttachMode.disabled": "[xX06R][นั้Æµtø ættæçh ïs ðïsæþlëð æñð ñøt shøwñ ïñ stætµs þær.Ấğ倪İЂҰक्र्तिृまẤğ倪İЂҰक्นั้ढूँ]",
 			"configuration.autoAttachMode.explicit": "[dMxr1][นั้Øñlÿ æµtø ættæçh whëñ thë `--ïñspëçt` ïs gïvëñ.Ấğ倪İЂҰक्र्तिृまẤğ倪İЂนั้ढूँ]",
 			"configuration.autoAttachMode.smart": "[FnMKL][นั้Æµtø ættæçh whëñ rµññïñg sçrïpts thæt ærëñ't ïñ æ ñøðë_møðµlës følðër.Ấğ倪İЂҰक्र्तिृまẤğ倪İЂҰक्र्तिृまนั้ढूँ]",
 			"configuration.autoAttachSmartPatterns": "[A3PX0][นั้Çøñfïgµrës gløþ pættërñs før ðëtërmïñïñg whëñ tø ættæçh ïñ \"smært\" `#ðëþµg.jævæsçrïpt.æµtøÆttæçhFïltër#` møðë. `$KÑØWÑ_TØØ£§$` ïs rëplæçëð wïth æ lïst øf ñæmës øf çømmøñ tëst æñð çøðë rµññërs. [Rëæð mørë øñ thë V§ Çøðë ðøçs](https://çøðë.vïsµælstµðïø.çøm/ðøçs/ñøðëjs/ñøðëjs-ðëþµggïñg#_æµtø-ættæçh-smært-pættërñs).Ấğ倪İЂҰक्र्तिृまẤğ倪İЂҰक्र्तिृまẤğ倪İЂҰक्र्तिृまẤğ倪İЂҰक्र्तिृまẤğ倪İЂҰक्र्तिृまẤğ倪İЂҰक्र्तिृまẤğ倪İЂҰक्र्तिृまẤğ倪İЂҰक्र्तिृまẤğ倪İЂҰक्र्तिृนั้ढूँ]",
-			"configuration.autoExpandGetters": "[dlj4l][นั้Çøñfïgµrës whëthër prøpërtÿ gëttërs wïll þë ëxpæñðëð æµtømætïçællÿ. Ïf thïs ïs fælsë, thë gëttër wïll æppëær æs `gët prøpërtÿÑæmë` æñð wïll øñlÿ þë ëvælµætëð whëñ ÿøµ çlïçk øñ ït.Ấğ倪İЂҰक्र्तिृまẤğ倪İЂҰक्र्तिृまẤğ倪İЂҰक्र्तिृまẤğ倪İЂҰक्र्तिृまẤğ倪İЂҰक्र्तिृまẤğนั้ढूँ]",
 			"configuration.automaticallyTunnelRemoteServer": "[I90wZ][นั้Whëñ ðëþµggïñg æ rëmøtë wëþ æpp, çøñfïgµrës whëthër tø æµtømætïçællÿ tµññël thë rëmøtë sërvër tø ÿøµr løçæl mæçhïñë.Ấğ倪İЂҰक्र्तिृまẤğ倪İЂҰक्र्तिृまẤğ倪İЂҰक्र्तिृまẤğ倪İนั้ढूँ]",
 			"configuration.breakOnConditionalError": "[RZGzI][นั้Whëthër tø støp whëñ çøñðïtïøñæl þrëækpøïñts thrøw æñ ërrør.Ấğ倪İЂҰक्र्तिृまẤğ倪İЂҰक्र्นั้ढूँ]",
 			"configuration.debugByLinkOptions": "[fHi81][นั้Øptïøñs µsëð whëñ ðëþµggïñg øpëñ lïñks çlïçkëð frøm ïñsïðë thë Jævæ§çrïpt Ðëþµg Tërmïñæl. Çæñ þë sët tø \"øff\" tø ðïsæþlë thïs þëhævïør, ør \"ælwæÿs\" tø ëñæþlë ðëþµggïñg ïñ æll tërmïñæls.Ấğ倪İЂҰक्र्तिृまẤğ倪İЂҰक्र्तिृまẤğ倪İЂҰक्र्तिृまẤğ倪İЂҰक्र्तिृまẤğ倪İЂҰक्र्तिृまẤğ倪İนั้ढूँ]",

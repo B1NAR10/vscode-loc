@@ -13,12 +13,10 @@
 			"troubleshooting": "Guida alla risoluzione dei problemi"
 		},
 		"dist/githubServer": {
-			"code.detail": "Il time code precedente è stato copiato negli Appunti. Per completare l'autenticazione, incollarla in GitHub.",
+			"code.detail": "Per completare l'autenticazione, passare a GitHub e incollare il time code precedente.",
 			"code.title": "Codice: {0}",
 			"progress": "Aprire [{0}]({0}) in una nuova scheda e incollare il time code: {1}",
-			"signingIn": "$(mark-github) Accesso a github.com...",
-			"status.git.signIn.name": "Accesso a GitHub",
-			"validUri": "Immettere un URI valido dalla pagina di accesso di GitHub."
+			"signingIn": " $(mark-github) Accesso a github.com..."
 		},
 		"package": {
 			"description": "Provider di autenticazione GitHub",

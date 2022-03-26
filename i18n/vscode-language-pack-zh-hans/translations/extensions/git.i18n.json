@@ -8,6 +8,14 @@
 	],
 	"version": "1.0.0",
 	"contents": {
+		"dist/actionButton": {
+			"scm button publish branch": "发布分支",
+			"scm button publish branch running": "正在发布分支...",
+			"scm button publish title": "$(cloud-upload) 发布分支",
+			"scm button sync description": "{0} 同步更改 {1}{2}",
+			"scm button sync title": "{0} {1}{2}",
+			"syncing changes": "正在同步更改..."
+		},
 		"dist/askpass-main": {
 			"missOrInvalid": "凭据丢失或无效。"
 		},
@@ -78,6 +86,7 @@
 			"force push not allowed": "不允许强制推送，请启用 \"git. allowForcePush\" 设置。",
 			"git error": "Git 错误",
 			"git error details": "Git: {0}",
+			"git.timeline.openDiffCommand": "Open Comparison",
 			"git.title.diff": "{0} ⟷ {1}",
 			"git.title.diffRefs": "{0} ({1}) ⟷ {0} ({2})",
 			"git.title.index": "{0} (索引)",
@@ -240,9 +249,6 @@
 			"pull push n": "在 {2}/{3} 之间拉取 {0} 个提交并推送 {1} 个提交",
 			"push n": "将 {0} 个提交推送到 {1}/{2}",
 			"push success": "已成功推送。",
-			"scm button publish title": "$(cloud-upload) 发布分支",
-			"scm button publish tooltip": "发布分支",
-			"scm button sync title": "$(sync) 同步更改{0}{1}",
 			"staged changes": "暂存的更改",
 			"sync changes": "同步更改",
 			"sync is unpredictable": "正在同步。取消可能会导致存储库出现严重损坏",
@@ -260,13 +266,11 @@
 			"syncing changes": "正在同步更改..."
 		},
 		"dist/timelineProvider": {
-			"git.index": "索引",
-			"git.timeline.detail": "{0} \\u2014 {1}\r\n{2}\r\n\r\n{3}",
+			"git.timeline.email": "电子邮件",
+			"git.timeline.openComparison": "打开比较",
 			"git.timeline.source": "Git 历史记录",
 			"git.timeline.stagedChanges": "暂存的更改",
-			"git.timeline.uncommitedChanges": "未提交的更改",
-			"git.timeline.you": "你",
-			"git.workingTree": "工作树"
+			"git.timeline.you": "你"
 		},
 		"package": {
 			"colors.added": "已添加资源的颜色。",
@@ -295,6 +299,7 @@
 			"command.clone": "克隆",
 			"command.cloneRecursive": "克隆(递归)",
 			"command.close": "关闭存储库",
+			"command.closeAllDiffEditors": "关闭所有差异编辑器",
 			"command.commit": "提交",
 			"command.commitAll": "全部提交",
 			"command.commitAllAmend": "全部提交(修改)",
@@ -394,6 +399,8 @@
 			"config.checkoutType.local": "本地分支",
 			"config.checkoutType.remote": "远程分支",
 			"config.checkoutType.tags": "标记",
+			"config.closeDiffOnOperation": "控制在储藏、提交、放弃、暂存或取消暂存更改时，是否应自动关闭差异编辑器。",
+			"config.commandsToLog": "GIT 命令列表 (例如: commit、push)，这些命令的 `stdout` 将被记录到 [git 输出](command:git.showOutput)。如果 GIT 命令配置了客户端挂钩，那么客户端挂钩的 `stdout` 也将被记录到 [git 输出](command:git.showOutput)。",
 			"config.confirmEmptyCommits": "始终确认为 \"Git: Commit Empty\" 命令创建空提交。",
 			"config.confirmForcePush": "控制在强制推送前是否进行确认。",
 			"config.confirmNoVerifyCommit": "控制是否在提交前要求确认而不进行验证。",
@@ -411,6 +418,7 @@
 			"config.enableSmartCommit": "在没有暂存的更改时提交所有更改。",
 			"config.enableStatusBarSync": "控制Git Sync命令是否出现在状态栏中。",
 			"config.enabled": "是否启用 Git。",
+			"config.experimental.installGuide": "Git 安装流程的实验性改进。",
 			"config.fetchOnPull": "启用后，在拉取时获取所有分支。否则，仅获取当前。",
 			"config.followTagsWhenSync": "遵循“运行同步命令时推送所有标记”。",
 			"config.ignoreLegacyWarning": "忽略“旧版 Git”警告。",
@@ -445,6 +453,7 @@
 			"config.pruneOnFetch": "提取时修剪。",
 			"config.pullTags": "拉取时提取所有标签。",
 			"config.rebaseWhenSync": "在运行“同步”命令时，强制 Git 使用“变基”。",
+			"config.repositoryScanIgnoredFolders": "当 `#git.autoRepositoryDetection#` 设置为 “true” 或 “subFolders” 时扫描 Git 存储库时忽略的文件夹列表。",
 			"config.repositoryScanMaxDepth": "在将 `#git.autoRepositoryDetection#` 设置为 `true` 或 `subFolders` 时，控制扫描工作区文件夹以查找 Git 存储库时使用的深度。如果不进行限制，可以设置为 `-1`。",
 			"config.requireGitUserConfig": "控制在是要求进行显式 Git 用户配置，还是允许 Git 在缺少配置时进行猜测。",
 			"config.scanRepositories": "在其中搜索 Git 存储库的路径的列表。",
@@ -473,6 +482,7 @@
 			"config.untrackedChanges.separate": "未跟踪的更改单独显示在“源代码管理”视图中。它们也被排除在几个操作之外。",
 			"config.useCommitInputAsStashMessage": "控制是否将提交输入框中的消息用作默认储藏消息。",
 			"config.useForcePushWithLease": "控制是否使用更安全的 force-with-lease 进行强制推送。",
+			"config.useIntegratedAskPass": "控制是否应覆盖 GIT_ASKPASS 以使用集成版本。",
 			"description": "Git 源代码管理集成",
 			"displayName": "Git",
 			"submenu.branch": "分支",
@@ -492,6 +502,10 @@
 			"view.workbench.scm.emptyWorkspace": "当前打开的工作区没有任何包含 git 存储库的文件夹。\r\n[将文件夹添加到工作区](command:workbench.action.addRootFolder)\r\n要详细了解如何在 VS Code 中使用 Git 和源代码管理，[请阅读我们的文档](https://aka.ms/vscode-scm)。",
 			"view.workbench.scm.folder": "当前打开的文件夹中没有 Git 存储库。可初始化一个存储库，它将实现 Git 提供支持的源代码管理功能。\r\n[初始化存储库](command:git.init?%5Btrue%5D)\r\n要详细了解如何在 VS Code 中使用 Git 和源代码管理，[请阅读我们的文档](https://aka.ms/vscode-scm)。",
 			"view.workbench.scm.missing": "未检测到有效的 git 安装，可在 [git 输出](command:git.showOutput)中找到更多详细信息。\r\n请[安装 git](https://git-scm.com/)，或在[我们的文档](https://aka.ms/vscode-scm)中详细了解如何在 VS Code中使用 Git 和源代码管理。\r\n如果您使用的是其他版本的控制系统，则可[搜索市场](command:workbench.extensions.search?%22%40category%3A%5C%22scm%20providers%5C%22%22)以获取其他扩展。",
+			"view.workbench.scm.missing.guide": "安装 Git (一种流行的源代码管理系统)，以跟踪代码更改并与他人协作。在我们的 [Git 指南](https://aka.ms/vscode-scm)中了解详细信息。",
+			"view.workbench.scm.missing.guide.linux": "源代码管理取决于安装的 Git。\r\n[下载适用于 Linux 的 Git](https://git-scm.com/download/mac)\r\n安装后，请[重新加载](command:workbench.action.reloadWindow) (或[执行故障排除](command:git.showOutput))。可以[从商城]安装其他源代码管理提供程序(command:workbench.extensions.search?%22%40category%3A%5C%22scm%20providers%5C%22%22)。",
+			"view.workbench.scm.missing.guide.mac": "[下载适用于 macOS 的 Git](https://git-scm.com/download/mac)\r\n安装后，请[重新加载](command:workbench.action.reloadWindow) (或[执行故障排除](command:git.showOutput))。可以[从商城]安装其他源代码管理提供程序(command:workbench.extensions.search?%22%40category%3A%5C%22scm%20providers%5C%22%22)。",
+			"view.workbench.scm.missing.guide.windows": "[下载适用于 Windows 的 Git](https://git-scm.com/download/win)\r\n安装后，请[重新加载](command:workbench.action.reloadWindow) (或[执行故障排除](command:git.showOutput))。可以[从商城]安装其他源代码管理提供程序(command:workbench.extensions.search?%22%40category%3A%5C%22scm%20providers%5C%22%22)。",
 			"view.workbench.scm.workspace": "当前打开的工作区中没有任何包含 Git 存储库的文件夹。可初始化某文件夹上的一个存储库，该存储库将实现 Git 提供支持的源代码管理功能。\r\n[初始化存储库](command:git.init)\r\n要详细了解如何在 VS Code 中使用 Git 和源代码管理，[请阅读我们的文档](https://aka.ms/vscode-scm)。"
 		}
 	}

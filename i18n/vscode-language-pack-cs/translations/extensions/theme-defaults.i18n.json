@@ -13,8 +13,9 @@
 			"darkPlusColorThemeLabel": "Tmavý+ (výchozí tmavý)",
 			"description": "Výchozí světlé a tmavé motivy sady Visual Studio",
 			"displayName": "Výchozí motivy",
-			"hcColorThemeLabel": "Vysoký kontrast",
+			"hcColorThemeLabel": "Tmavý vysoký kontrast",
 			"lightColorThemeLabel": "Světlý (Visual Studio)",
+			"lightHcColorThemeLabel": "Jemný vysoký kontrast (Experimentální)",
 			"lightPlusColorThemeLabel": "Světlý+ (výchozí světlý)",
 			"minimalIconThemeLabel": "Minimální (Visual Studio Code)"
 		}

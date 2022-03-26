@@ -55,6 +55,10 @@
 			"profile.cpu.description": "Chrome devtools에서 열 수 있는 .cpuprofile 파일을 생성합니다.",
 			"profile.cpu.label": "CPU 프로필"
 		},
+		"/src/adapter/profiling/basicHeapProfiler": {
+			"profile.heap.description": "Chrome devtools에서 열 수 있는 .heapprofile 파일을 생성합니다.",
+			"profile.heap.label": "힙 프로필"
+		},
 		"/src/adapter/profiling/heapDumpProfiler": {
 			"profile.heap.description": "Chrome 개발자 도구에서 열 수 있는 .heapsnapshot 파일을 생성합니다",
 			"profile.heap.label": "힙 스냅샷"
@@ -102,15 +106,6 @@
 			"pause.xhr": "XMLHttpRequest 또는 페치에서 일시 중지됨",
 			"reason.description.restart": "프레임 입력에서 일시 중지됨",
 			"warnings.handleSourceMapPause.didNotWait": "경고: {0}의 소스 맵을 처리하는 데 {1}밀리초보다 긴 시간이 걸려 스크립트에 대한 모든 중단점을 설정할 때까지 기다리지 않고 실행을 계속했습니다."
-		},
-		"/src/adapter/variables": {
-			"error.customValueDescriptionGeneratorFailed": "{0}(설명할 수 없음: {1})",
-			"error.emptyExpression": "빈 값을 설정할 수 없음",
-			"error.failedToCustomizeObjectProperties": "실패한 속성 사용자 지정",
-			"error.invalidExpression": "잘못된 식",
-			"error.setVariableDidFail": "변수 값을 설정할 수 없음",
-			"error.unknown": "알 수 없는 오류",
-			"error.variableNotFound": "변수를 찾을 수 없음"
 		},
 		"/src/binder": {
 			"breakpoint.provisionalBreakpoint": "바인딩되지 않은 중단점"
@@ -259,9 +254,9 @@
 			"no": "아니요",
 			"profile.alreadyRunning": "프로파일링 세션이 이미 실행 중입니다. 해당 세션을 중지하고 새 세션을 시작하시겠습니까?",
 			"profile.sessionState": "프로파일링",
-			"profile.status.default": "$(loading) 프로파일링을 중지하려면 클릭",
-			"profile.status.multiSession": "$(loading) 프로파일링을 중지하려면 클릭({0}개 세션)",
-			"profile.status.single": "$(loading) 프로파일링을 중지하려면 클릭({0})",
+			"profile.status.default": "$(loading~spin) 프로파일링을 중지하려면 클릭",
+			"profile.status.multiSession": "$(loading~spin) 프로파일링을 중지하려면 클릭하세요({0} 세션).",
+			"profile.status.single": "$(loading~spin) 프로파일링을 중지하려면 클릭하세요({0}).",
 			"profile.termination.title": "프로필 실행 시간:",
 			"profile.type.title": "프로필 형식:",
 			"yes": "예"
@@ -321,13 +316,18 @@
 			"chrome.label": "크롬",
 			"chrome.launch.description": "Chrome을 시작하여 URL 디버그",
 			"chrome.launch.label": "Chrome: 시작",
+			"commands.callersAdd.label": "호출자 제외",
+			"commands.callersAdd.paletteLabel": "현재 위치의 일시 중지에서 호출자 제외",
+			"commands.callersGoToCaller.label": "발신자 위치로 이동",
+			"commands.callersGoToTarget.label": "대상 위치로 이동",
+			"commands.callersRemove.label": "제외된 호출자 제거",
+			"commands.callersRemoveAll.label": "제외된 모든 호출자 제거",
 			"configuration.autoAttachMode": "`#debug.node.autoAttach#`이 설정되어 있는 경우 자동으로 연결 및 디버그할 프로세스를 구성합니다. 이 설정과 관계없이 `--inspect` 플래그로 시작한 노드 프로세스가 항상 연결됩니다.",
 			"configuration.autoAttachMode.always": "터미널에서 시작되는 모든 Node.js 프로세스에 자동으로 연결합니다.",
 			"configuration.autoAttachMode.disabled": "자동 연결이 사용하지 않도록 설정되어 있고 상태 표시줄에 표시되지 않습니다.",
 			"configuration.autoAttachMode.explicit": "'--inspect'가 지정된 경우에만 자동으로 연결합니다.",
 			"configuration.autoAttachMode.smart": "node_modules 폴더에 있지 않은 스크립트를 실행할 때 자동으로 연결합니다.",
 			"configuration.autoAttachSmartPatterns": "\"smart\" `#debug.javascript.autoAttachFilter#` 모드로 연결할 시간을 결정하는 GLOB 패턴을 구성합니다. `$KNOWN_TOOLS$`이(가) 공용 테스트 및 코드 실행기의 이름 목록으로 바뀝니다. [VS Code 문서에서 자세히 읽기](https://code.visualstudio.com/docs/nodejs/nodejs-debugging#_auto-attach-smart-patterns).",
-			"configuration.autoExpandGetters": "속성 getter가 자동으로 확장되는지 구성합니다. false인 경우 getter가 `get propertyName`으로 표시되고 클릭하는 경우에만 평가됩니다.",
 			"configuration.automaticallyTunnelRemoteServer": "원격 웹 앱을 디버깅할 때 원격 서버를 로컬 컴퓨터에 자동으로 터널링할지 여부를 구성합니다.",
 			"configuration.breakOnConditionalError": "조건부 중단점에서 오류가 발생하면 중지할지 여부입니다.",
 			"configuration.debugByLinkOptions": "디버그 터미널 내부에서 클릭한 열린 링크를 디버깅할 때 사용되는 옵션입니다. 이 동작을 사용하지 않도록 설정하려면 \"false\"로 설정할 수 있습니다.",

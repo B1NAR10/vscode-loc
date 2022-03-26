@@ -55,6 +55,10 @@
 			"profile.cpu.description": "Создает файл CPUPROFILE, который можно открыть в Chrome Devtools",
 			"profile.cpu.label": "Профиль ЦП"
 		},
+		"/src/adapter/profiling/basicHeapProfiler": {
+			"profile.heap.description": "Создает файл HEAPPROFILE, который можно открыть в Chrome DevTools",
+			"profile.heap.label": "Профиль кучи"
+		},
 		"/src/adapter/profiling/heapDumpProfiler": {
 			"profile.heap.description": "Создает файл HEAPSNAPSHOT, который можно открыть в Chrome DevTools",
 			"profile.heap.label": "Снимок кучи"
@@ -102,15 +106,6 @@
 			"pause.xhr": "Приостановлено в XMLHttpRequest или при получении.",
 			"reason.description.restart": "Приостановлено на записи кадра",
 			"warnings.handleSourceMapPause.didNotWait": "Предупреждение! Обработка сопоставителей с исходным кодом {0} заняла больше {1} мс, поэтому мы продолжили выполнение, не дожидаясь установки всех точек останова для скрипта."
-		},
-		"/src/adapter/variables": {
-			"error.customValueDescriptionGeneratorFailed": "{0} (не удалось описать: {1})",
-			"error.emptyExpression": "Не удается задать пустое значение",
-			"error.failedToCustomizeObjectProperties": "Не удалось настроить свойства.",
-			"error.invalidExpression": "Недопустимое выражение",
-			"error.setVariableDidFail": "Не удалось задать значение переменной.",
-			"error.unknown": "Неизвестная ошибка.",
-			"error.variableNotFound": "Переменная не найдена."
 		},
 		"/src/binder": {
 			"breakpoint.provisionalBreakpoint": "Неограниченная точка останова"
@@ -259,9 +254,9 @@
 			"no": "Нет",
 			"profile.alreadyRunning": "Сеанс профилирования уже выполняется. Вы хотите остановить его и начать новый сеанс?",
 			"profile.sessionState": "Профилирование",
-			"profile.status.default": "$(loading) Щелкните, чтобы остановить профилирование",
-			"profile.status.multiSession": "$(loading) Щелкните, чтобы остановить профилирование (сеансов: {0})",
-			"profile.status.single": "$(loading) Щелкните, чтобы остановить профилирование ({0})",
+			"profile.status.default": "$(loading~spin) Щелкните, чтобы остановить профилирование",
+			"profile.status.multiSession": "$(loading~spin) Щелкните, чтобы остановить профилирование (сеансов: {0})",
+			"profile.status.single": "$(loading~spin) Щелкните, чтобы остановить профилирование ({0})",
 			"profile.termination.title": "Время выполнения профиля:",
 			"profile.type.title": "Тип профиля:",
 			"yes": "Да"
@@ -321,13 +316,18 @@
 			"chrome.label": "Chrome",
 			"chrome.launch.description": "Запуск Chrome для отладки URL-адреса",
 			"chrome.launch.label": "Chrome: запуск",
+			"commands.callersAdd.label": "Исключить вызывающего",
+			"commands.callersAdd.paletteLabel": "Исключить для вызывающего приостановку в текущем расположении",
+			"commands.callersGoToCaller.label": "Перейти к расположению вызывающего",
+			"commands.callersGoToTarget.label": "Перейти к целевому расположению",
+			"commands.callersRemove.label": "Удалить исключенного вызывающего",
+			"commands.callersRemoveAll.label": "Удалить всех исключенных вызывающих",
 			"configuration.autoAttachMode": "Определяет, к каким процессам необходимо автоматически присоединяться для отладки, если установлен параметр \"#debug.node.autoAttach#\". Присоединение к процессам Node, запущенным с флагом \"--inspect\", будет осуществляться всегда, независимо от значения этого параметра.",
 			"configuration.autoAttachMode.always": "Автоматически присоединяться к каждому процессу Node.js, запущенному в терминале.",
 			"configuration.autoAttachMode.disabled": "Автоматическое подключение отключено и не отображается в строке состояния.",
 			"configuration.autoAttachMode.explicit": "Присоединяться только в том случае, если указан параметр \"--inspect\".",
 			"configuration.autoAttachMode.smart": "Автоматически присоединяться при запуске сценариев, не находящихся в папке node_modules.",
 			"configuration.autoAttachSmartPatterns": "Настраивает стандартные маски определения момента присоединения в интеллектуальном режиме \"#debug.javascript.autoAttachFilter#\". \"$KNOWN_TOOLS$\" заменяется списком имен распространенных средства запуска тестов и кода. [Дополнительные сведения см. в документации по VS Code](https://code.visualstudio.com/docs/nodejs/nodejs-debugging#_auto-attach-smart-patterns).",
-			"configuration.autoExpandGetters": "Определяет, будут ли автоматически разворачиваться методы получения свойств. Если для этого параметра задано значение false, метод получения свойства будет отображаться как get propertyName и будет оцениваться только при нажатии на него.",
 			"configuration.automaticallyTunnelRemoteServer": "При отладке удаленного веб-приложения определяет, следует ли автоматически туннелировать удаленный сервер на локальный компьютер.",
 			"configuration.breakOnConditionalError": "Следует ли останавливать выполнение, если в условной точке останова возникла ошибка.",
 			"configuration.debugByLinkOptions": "Параметры, используемые при отладке открытых ссылок, выбранных изнутри терминала отладки. Можно задать значение \"false\", чтобы отключить это поведение.",

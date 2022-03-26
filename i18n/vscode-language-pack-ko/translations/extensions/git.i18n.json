@@ -8,6 +8,14 @@
 	],
 	"version": "1.0.0",
 	"contents": {
+		"dist/actionButton": {
+			"scm button publish branch": "분기 게시",
+			"scm button publish branch running": "분기를 게시하는 중...",
+			"scm button publish title": "$(cloud-upload) 분기 게시",
+			"scm button sync description": "{0} 변경 내용 동기화 {1}{2}",
+			"scm button sync title": "{0} {1}{2}",
+			"syncing changes": "변경 내용을 동기화하는 중..."
+		},
 		"dist/askpass-main": {
 			"missOrInvalid": "자격 증명이 없거나 잘못되었습니다."
 		},
@@ -78,6 +86,7 @@
 			"force push not allowed": "강제 푸시가 허용되지 않습니다. 'git.allowForcePush' 설정으로 사용하도록 설정하세요.",
 			"git error": "Git 오류",
 			"git error details": "Git: {0}",
+			"git.timeline.openDiffCommand": "Open Comparison",
 			"git.title.diff": "{0} ⟷ {1}",
 			"git.title.diffRefs": "{0}({1}) ⟷ {0}({2})",
 			"git.title.index": "{0}(인덱스)",
@@ -240,9 +249,6 @@
 			"pull push n": "{2}/{3} 간에 {0}개 커밋 풀 및 {1}개 커밋 푸시",
 			"push n": "{1}/{2}(으)로 {0}개 커밋 푸시",
 			"push success": "성공적으로 푸시 되었습니다.",
-			"scm button publish title": "$(cloud-upload) 분기 게시",
-			"scm button publish tooltip": "분기 게시",
-			"scm button sync title": "$(sync) 동기화 변경 내용 {0} {1}",
 			"staged changes": "스테이징된 변경 사항",
 			"sync changes": "변경 내용 동기화",
 			"sync is unpredictable": "동기화 중입니다. 취소하면 리포지토리가 손상될 수 있습니다.",
@@ -260,13 +266,11 @@
 			"syncing changes": "변경 내용을 동기화하는 중..."
 		},
 		"dist/timelineProvider": {
-			"git.index": "인덱스",
-			"git.timeline.detail": "{0} \\u2014 {1}\r\n{2}\r\n\r\n{3}",
+			"git.timeline.email": "전자 메일",
+			"git.timeline.openComparison": "비교 열기",
 			"git.timeline.source": "Git 기록",
 			"git.timeline.stagedChanges": "스테이징된 변경 내용",
-			"git.timeline.uncommitedChanges": "커밋되지 않은 변경 내용",
-			"git.timeline.you": "사용자",
-			"git.workingTree": "작업 트리"
+			"git.timeline.you": "사용자"
 		},
 		"package": {
 			"colors.added": "추가된 리소스의 색입니다.",
@@ -295,6 +299,7 @@
 			"command.clone": "복제",
 			"command.cloneRecursive": "복제(재귀)",
 			"command.close": "리포지토리 닫기",
+			"command.closeAllDiffEditors": "모든 diff 편집기 닫기",
 			"command.commit": "커밋",
 			"command.commitAll": "모두 커밋",
 			"command.commitAllAmend": "모두 커밋 (수정)",
@@ -394,6 +399,8 @@
 			"config.checkoutType.local": "로컬 분기",
 			"config.checkoutType.remote": "원격 분기",
 			"config.checkoutType.tags": "태그",
+			"config.closeDiffOnOperation": "변경 내용을 스태시, 커밋, 삭제, 스테이징 또는 스테이징 해제할 때 diff 편집기를 자동으로 닫을지 여부를 제어합니다.",
+			"config.commandsToLog": "`stdout`를 [git output](command:git.showOutput)에 기록하는 git 명령(예: 커밋, 푸시) 목록입니다. git 명령에 클라이언트 측 후크가 구성된 경우 클라이언트 측 후크의 `stdout`도 [git output](command:git.showOutput)에 기록됩니다.",
 			"config.confirmEmptyCommits": "'Git: Commit Empty' 명령에 대한 빈 항목 생성 커밋을 항상 확인합니다.",
 			"config.confirmForcePush": "강제 푸시하기 전에 확인을 요청할지 여부를 제어합니다.",
 			"config.confirmNoVerifyCommit": "확인하지 않고 커밋하기 전에 확인을 요청할지를 제어합니다.",
@@ -411,6 +418,7 @@
 			"config.enableSmartCommit": "단계적 변경 사항이 없는 경우 모든 변경 사항을 저장합니다.",
 			"config.enableStatusBarSync": "Git Sync 명령이 상태 표시줄에 표시되는지 여부를 제어합니다.",
 			"config.enabled": "Git을 사용하도록 설정했는지 여부입니다.",
+			"config.experimental.installGuide": "Git 설정 흐름에 대한 실험적 개선 사항입니다.",
 			"config.fetchOnPull": "사용하도록 설정하면 풀할 때 모든 분기를 페치합니다. 그렇지 않으면 현재 분기만 페치합니다.",
 			"config.followTagsWhenSync": "동기화 명령을 실행할 때 모든 푸시 태그를 팔로우합니다.",
 			"config.ignoreLegacyWarning": "레거시 Git 경고를 무시합니다.",
@@ -445,6 +453,7 @@
 			"config.pruneOnFetch": "페치할 때 정리합니다.",
 			"config.pullTags": "풀할 때 모든 태그를 페치합니다.",
 			"config.rebaseWhenSync": "동기화 명령을 실행할 때 Git에서 다시 지정을 사용하게 합니다.",
+			"config.repositoryScanIgnoredFolders": "`#git.autoRepositoryDetection#`이 `true` 또는 `subFolders`로 설정된 경우 Git 리포지토리를 검색하는 동안 무시되는 폴더 목록입니다.",
 			"config.repositoryScanMaxDepth": "`#git.autoRepositoryDetection#`이 `true` 또는 `subFolders`로 설정된 경우 Git 리포지토리에 대한 작업 영역 간 폴더를 스캔할 때 사용되는 깊이를 제어합니다. 제한 없이 '-1'로 설정할 수 있습니다.",
 			"config.requireGitUserConfig": "명시적 Git 사용자 구성을 요구할지 또는 누락된 경우 Git에서 추측하도록 허용할지를 제어합니다.",
 			"config.scanRepositories": "Git 리포지토리를 검색할 경로의 목록입니다.",
@@ -473,6 +482,7 @@
 			"config.untrackedChanges.separate": "추적되지 않은 변경 내용은 소스 제어 보기에 별도로 표시됩니다. 또한 여러 작업에서 제외됩니다.",
 			"config.useCommitInputAsStashMessage": "커밋 입력 상자의 메시지를 기본 스태시 메시지로 사용할지 여부를 제어합니다.",
 			"config.useForcePushWithLease": "강제 푸시가 좀 더 안전한 force-with-lease 변형을 사용하는지 여부를 제어합니다.",
+			"config.useIntegratedAskPass": "통합 버전을 사용하기 위해 GIT_ASKPASS를 덮어써야 하는지 여부를 제어합니다.",
 			"description": "Git SCM 통합",
 			"displayName": "Git",
 			"submenu.branch": "분기",
@@ -492,6 +502,10 @@
 			"view.workbench.scm.emptyWorkspace": "현재 열려 있는 작업 영역에 Git 리포지토리를 포함하는 폴더가 없습니다.\r\n[작업 영역에 폴더 추가](command:workbench.action.addRootFolder)\r\nVS Code에서 Git 및 소스 제어를 사용하는 방법에 대해 자세히 알아보려면 [관련 문서를 참조](https://aka.ms/vscode-scm)하세요.",
 			"view.workbench.scm.folder": "현재 열린 폴더에 Git 리포지토리가 없습니다. Git에서 제공하는 소스 제어 기능을 사용하도록 설정할 리포지토리를 초기화할 수 있습니다.\r\n[리포지토리 초기화](command:git.init?%5Btrue%5D)\r\nVS Code에서 Git 및 소스 제어를 사용하는 방법에 대해 자세히 알아보려면 [Microsoft Docs](https://aka.ms/vscode-scm)를 읽어보세요.",
 			"view.workbench.scm.missing": "유효한 git 설치가 검색되지 않았습니다. [git 출력](command:git.showOutput)에서 자세한 내용을 확인할 수 있습니다.\r\n[git을 설치하거나](https://git-scm.com/) [Microsoft Docs](https://aka.ms/vscode-scm)에서 VS Code에서 Git 및 소스 제어를 사용하는 방법에 대해 자세히 알아보세요.\r\n다른 버전의 제어 시스템을 사용하는 경우 추가 확장에 대해 [Marketplace를 검색](command:workbench.extensions.search?%22%40category%3A%5C%22scm%20providers%5C%22%22)할 수 있습니다.",
+			"view.workbench.scm.missing.guide": "인기 있는 소스 제어 시스템인 Git을 설치하여 코드 변경 내용을 추적하고 다른 사용자와 공동 작업합니다. [Git 가이드](https://aka.ms/vscode-scm)에서 자세히 알아보세요.",
+			"view.workbench.scm.missing.guide.linux": "소스 제어는 설치 중인 Git에 따라 달라집니다.\r\n[Linux용 Git 다운로드](https://git-scm.com/download/mac)\r\n설치 후에는 [다시 로드하세요](command:workbench.action.reloadWindow)(또는 [문제를 해결하세요](command:git.showOutput)). 추가 원본 제어 공급자는 [Marketplace](command:workbench.extensions.search?%22%40category%3A%5C%22scm%20providers%5C%22%22)에서 설치할 수 있습니다.",
+			"view.workbench.scm.missing.guide.mac": "[macOS용 GIT 다운로드](https://git-scm.com/download/mac)\r\n설치 후에는 [다시 로드하세요](command:workbench.action.reloadWindow)(또는 [문제를 해결하세요](command:git.showOutput)). 추가 원본 제어 공급자는 [Marketplace](command:workbench.extensions.search?%22%40category%3A%5C%22scm%20providers%5C%22%22)에서 설치할 수 있습니다.",
+			"view.workbench.scm.missing.guide.windows": "[Windows용 GIT 다운로드](https://git-scm.com/download/win)\r\n설치 후에는 [다시 로드하세요](command:workbench.action.reloadWindow)(또는 [문제를 해결하세요](command:git.showOutput)). 추가 원본 제어 공급자는 [Marketplace](command:workbench.extensions.search?%22%40category%3A%5C%22scm%20providers%5C%22%22)에서 설치할 수 있습니다.",
 			"view.workbench.scm.workspace": "현재 열린 작업 영역에 Git 리포지토리가 포함된 폴더가 없습니다. Git에서 제공하는 소스 제어 기능을 사용하도록 설정할 폴더의 리포지토리를 초기화할 수 있습니다.\r\n[리포지토리 초기화](command:git.init)\r\nVS Code에서 Git 및 소스 제어를 사용하는 방법에 대해 자세히 알아보려면 [Microsoft Docs](https://aka.ms/vscode-scm)를 읽어보세요."
 		}
 	}

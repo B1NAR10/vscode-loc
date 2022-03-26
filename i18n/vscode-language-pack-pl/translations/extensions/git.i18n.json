@@ -8,6 +8,14 @@
 	],
 	"version": "1.0.0",
 	"contents": {
+		"dist/actionButton": {
+			"scm button publish branch": "Opublikuj gałąź",
+			"scm button publish branch running": "Trwa publikowanie gałęzi...",
+			"scm button publish title": "Opublikuj gałąź $(cloud-upload)",
+			"scm button sync description": "{0} Synchronizuj zmiany {1}{2}",
+			"scm button sync title": "{0} {1}{2}",
+			"syncing changes": "Trwa synchronizowanie zmian..."
+		},
 		"dist/askpass-main": {
 			"missOrInvalid": "Brak poświadczeń lub są one nieprawidłowe."
 		},
@@ -78,6 +86,7 @@
 			"force push not allowed": "Wymuszanie wypchnięcia jest niedozwolone. Włącz je przy użyciu ustawienia „git.allowForcePush”.",
 			"git error": "Błąd Git",
 			"git error details": "Git: {0}",
+			"git.timeline.openDiffCommand": "Open Comparison",
 			"git.title.diff": "{0} ⟷ {1}",
 			"git.title.diffRefs": "{0} ({1}) ⟷ {0} ({2})",
 			"git.title.index": "{0} (indeks)",
@@ -240,9 +249,6 @@
 			"pull push n": "Ściągnij zatwierdzenia: {0} i wypchnij zatwierdzenia: {1} między {2}/{3}",
 			"push n": "Wypchnij zatwierdzenia: {0} do {1}/{2}",
 			"push success": "Pomyślnie wypchnięto.",
-			"scm button publish title": "Opublikuj gałąź $(cloud-upload)",
-			"scm button publish tooltip": "Opublikuj gałąź",
-			"scm button sync title": "Synchronizuj zmiany $(sync){0}{1}",
 			"staged changes": "Przygotowane zmiany",
 			"sync changes": "Synchronizuj zmiany",
 			"sync is unpredictable": "Synchronizowanie. Anulowanie może spowodować poważne szkody w repozytorium",
@@ -260,13 +266,11 @@
 			"syncing changes": "Trwa synchronizowanie zmian..."
 		},
 		"dist/timelineProvider": {
-			"git.index": "Indeks",
-			"git.timeline.detail": "{0}  \\u2014 {1}\r\n{2}\r\n\r\n{3}",
+			"git.timeline.email": "E-mail",
+			"git.timeline.openComparison": "Otwórz porównanie",
 			"git.timeline.source": "Historia Git",
 			"git.timeline.stagedChanges": "Przygotowane zmiany",
-			"git.timeline.uncommitedChanges": "Niezatwierdzone zmiany",
-			"git.timeline.you": "Ty",
-			"git.workingTree": "Drzewo robocze"
+			"git.timeline.you": "Ty"
 		},
 		"package": {
 			"colors.added": "Kolor dodanych zasobów.",
@@ -295,6 +299,7 @@
 			"command.clone": "Sklonuj",
 			"command.cloneRecursive": "Klonuj (cyklicznie)",
 			"command.close": "Zamknij repozytorium",
+			"command.closeAllDiffEditors": "Zamknij wszystkie edytory różnic",
 			"command.commit": "Zatwierdź",
 			"command.commitAll": "Zatwierdź wszystko",
 			"command.commitAllAmend": "Zatwierdź wszystko (zmiany)",
@@ -394,6 +399,8 @@
 			"config.checkoutType.local": "Gałęzie lokalne",
 			"config.checkoutType.remote": "Gałęzie zdalne",
 			"config.checkoutType.tags": "Tagi",
+			"config.closeDiffOnOperation": "Określa, czy edytor różnic powinien być automatycznie zamykany, gdy zmiany zostaną umieszczone w przechowalni, zatwierdzone, odrzucone, przygotowane lub nieprzygotowane.",
+			"config.commandsToLog": "Lista poleceń git (np. zatwierdzanie, wypychanie), dla których ich element „stdout” zostałby zarejestrowany w [git output](command:git.showOutput). Jeśli polecenie git ma skonfigurowany punkt zaczepienia po stronie klienta, element „stdout” punktu zaczepienia po stronie klienta zostanie również zarejestrowany w [git output](command:git.showOutput).",
 			"config.confirmEmptyCommits": "Zawsze potwierdzaj tworzenie pustych zatwierdzeń dla polecenia „Git: Commit Empty”.",
 			"config.confirmForcePush": "Określa, czy zostanie wyświetlony monit o potwierdzenie przed wymuszeniem wypchnięcia.",
 			"config.confirmNoVerifyCommit": "Określa, czy prosić o potwierdzenie przed zatwierdzeniem bez weryfikacji.",
@@ -411,6 +418,7 @@
 			"config.enableSmartCommit": "Zatwierdź wszystkie zmiany, gdy nie ma żadnych przygotowanych zmian.",
 			"config.enableStatusBarSync": "Określa, czy na pasku stanu jest wyświetlane polecenie synchronizacji Git.",
 			"config.enabled": "Określa, czy repozytorium Git jest włączone.",
+			"config.experimental.installGuide": "Eksperymentalne ulepszenia przepływu konfiguracji usługi Git.",
 			"config.fetchOnPull": "Po włączeniu tej funkcji pobierz wszystkie gałęzie podczas ściągania. W przeciwnym razie pobierz tylko bieżącą.",
 			"config.followTagsWhenSync": "Po uruchomieniu polecenia synchronizacji wypchnij wszystkie tagi ze śledzeniem.",
 			"config.ignoreLegacyWarning": "Ignoruje starsze ostrzeżenia Git.",
@@ -445,6 +453,7 @@
 			"config.pruneOnFetch": "Oczyść podczas pobierania.",
 			"config.pullTags": "Pobierz wszystkie tagi podczas ściągania.",
 			"config.rebaseWhenSync": "Wymuś zmianę bazy przez repozytorium Git podczas wykonywania polecenia synchronizacji.",
+			"config.repositoryScanIgnoredFolders": "Lista folderów, które są ignorowane podczas skanowania w poszukiwaniu repozytoriów Git, gdy właściwość ‚#git.autoRepositoryDetection#” ma wartość „true” lub „subFolders”.",
 			"config.repositoryScanMaxDepth": "Określa głębokość używaną podczas skanowania folderów obszarów roboczych dla repozytoriów Git, gdy właściwość „#git.autoRepositoryDetection#” ma wartość „prawdziwą” lub „podfoldery”. Można ustawić wartość „-1” bez limitu.",
 			"config.requireGitUserConfig": "Określa, czy wymagać jawnej konfiguracji użytkownika usługi Git, czy zezwalać usłudze Git na jej odgadnięcie w przypadku jej braku.",
 			"config.scanRepositories": "Lista ścieżek do wyszukania repozytoriów Git.",
@@ -473,6 +482,7 @@
 			"config.untrackedChanges.separate": "Nieśledzone zmiany pojawiają się osobno w widoku kontroli źródła. Są one również wyłączone z kilku akcji.",
 			"config.useCommitInputAsStashMessage": "Określa, czy używać wiadomości z pola danych wejściowych zatwierdzania jako domyślnej wiadomości dotyczącej umieszczania w przechowalni.",
 			"config.useForcePushWithLease": "Określa, czy wymuszanie wypchnięcia używa bezpieczniejszego wariantu wymuszania z dzierżawą.",
+			"config.useIntegratedAskPass": "Controls whether GIT_ASKPASS should be overwritten to use the integrated version.",
 			"description": "Integracja SCM Git",
 			"displayName": "Git",
 			"submenu.branch": "Gałąź",
@@ -492,6 +502,10 @@
 			"view.workbench.scm.emptyWorkspace": "The workspace currently open doesn't have any folders containing git repositories.\r\n[Add Folder to Workspace](command:workbench.action.addRootFolder)\r\nTo learn more about how to use git and source control in VS Code [read our docs](https://aka.ms/vscode-scm).",
 			"view.workbench.scm.folder": "Aktualnie otwarty folder nie posiada repozytorium git. Możesz zainicjować repozytorium, które włączy funkcje kontroli źródła obsługiwane przez git.\r\n[Initialize Repository](command:git.init?%5Btrue%5D)\r\n Aby dowiedzieć się więcej o tym, jak używać git i kontroli źródła w VS Code [read our docs](https://aka.ms/vscode-scm).",
 			"view.workbench.scm.missing": "A valid git installation was not detected, more details can be found in the [git output](command:git.showOutput).\r\nPlease [install git](https://git-scm.com/), or learn more about how to use git and source control in VS Code in [our docs](https://aka.ms/vscode-scm).\r\nIf you're using a different version control system, you can [search the Marketplace](command:workbench.extensions.search?%22%40category%3A%5C%22scm%20providers%5C%22%22) for additional extensions.",
+			"view.workbench.scm.missing.guide": "Zainstaluj usługę Git, popularny system kontroli źródła, aby śledzić zmiany kodu i współpracować z innymi osobami. Dowiedz się więcej z naszych [przewodników Git](https://aka.ms/vscode-scm).",
+			"view.workbench.scm.missing.guide.linux": "Kontrola źródła zależy od instalacji usługi Git.\r\n[Pobierz usługę Git dla systemu Linux](https://git-scm.com/download/mac)\r\nPo zainstalowaniu [załaduj ponownie](command:workbench.action.reloadWindow) (lub [rozwiąż problem](command:git.showOutput)). Można zainstalować dodatkowych dostawców kontroli źródła [z witryny Marketplace](command:workbench.extensions.search?%22%40category%3A%5C%22scm%20providers%5C%22%22).",
+			"view.workbench.scm.missing.guide.mac": "[Pobierz usługę Git dla systemu macOS](https://git-scm.com/download/mac)\r\nPo zainstalowaniu [załaduj ponownie](command:workbench.action.reloadWindow) (lub [rozwiąż problem](command:git.showOutput)). Można zainstalować dodatkowych dostawców kontroli źródła [z witryny Marketplace](command:workbench.extensions.search?%22%40category%3A%5C%22scm%20providers%5C%22%22).",
+			"view.workbench.scm.missing.guide.windows": "[Pobierz usługę Git dla systemu Windows](https://git-scm.com/download/win)\r\nPo zainstalowaniu [załaduj ponownie](command:workbench.action.reloadWindow) (lub [rozwiąż problem](command:git.showOutput)). Można zainstalować dodatkowych dostawców kontroli źródła [z witryny Marketplace](command:workbench.extensions.search?%22%40category%3A%5C%22scm%20providers%5C%22%22).",
 			"view.workbench.scm.workspace": "Aktualnie otwarty obszar roboczy nie posiada żadnych folderów zawierających repozytoria git. Możesz zainicjować repozytorium na folderze, który włączy funkcje kontroli źródła obsługiwane przez git. \r\n[Initialize Repository](command:git.init)\r\n Aby dowiedzieć się więcej o tym, jak używać git i kontroli źródła w VS Code [read our docs](https://aka.ms/vscode-scm)."
 		}
 	}

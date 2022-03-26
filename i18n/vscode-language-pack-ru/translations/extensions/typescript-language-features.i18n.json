@@ -22,7 +22,6 @@
 		"dist/languageFeatures/completions": {
 			"acquiringTypingsDetail": "Получение определений typings для IntelliSense.",
 			"acquiringTypingsLabel": "Получение typings...",
-			"autoImportLabel": "Автоматический импорт из {0}",
 			"selectCodeAction": "Выберите применяемое действие кода"
 		},
 		"dist/languageFeatures/directiveCommentCompletions": {
@@ -63,6 +62,10 @@
 		},
 		"dist/languageFeatures/rename": {
 			"fileRenameFail": "Ошибка при переименовании файла"
+		},
+		"dist/languageFeatures/tsconfig": {
+			"documentLink.tooltip": "Перейти по ссылке",
+			"openTsconfigExtendsModuleFail": "Не удалось разрешить {0} в виде модуля"
 		},
 		"dist/languageFeatures/updatePathsOnRename": {
 			"accept.title": "Да",
@@ -163,8 +166,10 @@
 			"codeActions.source.organizeImports.title": "Организация импортов",
 			"configuration.implicitProjectConfig.checkJs": "Включение или отключение семантической проверки файлов JavaScript. Этот параметр переопределяется файлом \"jsconfig.json\" или \"tsconfig.json\".",
 			"configuration.implicitProjectConfig.experimentalDecorators": "Включение или отключение параметра \"experimentalDecorators\" в файлах JavaScript, которые не являются частью проекта. Этот параметр переопределяется файлом \"jsconfig.json\" или \"tsconfig.json\".",
+			"configuration.implicitProjectConfig.module": "Задает систему модуля для программы. Дополнительные сведения: https://www.typescriptlang.org/tsconfig#module.",
 			"configuration.implicitProjectConfig.strictFunctionTypes": "Включение или отключение [строгих типов функций](https://www.typescriptlang.org/tsconfig#strictFunctionTypes) в файлах JavaScript и TypeScript, которые не являются частью проекта. Этот параметр переопределяется файлом \"jsconfig.json\" или \"tsconfig.json\".",
 			"configuration.implicitProjectConfig.strictNullChecks": "Включение или отключение [строгих проверок значения NULL](https://www.typescriptlang.org/tsconfig#strictNullChecks) в файлах JavaScript и TypeScript, которые не являются частью проекта. Этот параметр переопределяется файлом \"jsconfig.json\" или \"tsconfig.json\".",
+			"configuration.implicitProjectConfig.target": "Задайте целевую версию языка JavaScript для выданного JavaScript и включите объявления библиотеки. Дополнительные сведения: https://www.typescriptlang.org/tsconfig#target.",
 			"configuration.inlayHints.enumMemberValues.enabled": "Включить или отключить указания-вкладки для значений элементов в объявлениях перечислений:\r\n```typescript\r\n\r\nenum MyValue {\r\n\tA /* = 0 */;\r\n\tB /* = 1 */;\r\n}\r\n \r\n```\r\nТребует использования TypeScript 4.4+ в рабочей области.",
 			"configuration.inlayHints.functionLikeReturnTypes.enabled": "Включить или отключить указания-вкладки для неявных типов возврата в сигнатурах функций:\r\n```typescript\r\n\r\nfunction foo() /* :number */ {\r\n\treturn Date.now();\r\n} \r\n \r\n```\r\nТребует использования TypeScript 4.4+ в рабочей области.",
 			"configuration.inlayHints.parameterNames.enabled": "Включить или отключить указания-вкладки для имен параметров:\r\n```typescript\r\n\r\nparseInt(/* str: */ '123', /* radix: */ 8)\r\n \r\n```\r\nТребует использования TypeScript 4.4+ в рабочей области.",
@@ -181,7 +186,7 @@
 			"configuration.suggest.includeAutomaticOptionalChainCompletions": "Включение/отключение отображения завершений для потенциально неопределенных значений, вставляющих необязательный вызов по цепочке. Требует наличие TS 3.7+ и включение строгих проверок на NULL.",
 			"configuration.suggest.includeCompletionsForImportStatements": "Включить или отключить завершения в стиле автоматического импорта для частично типизированных операторов импорта. В рабочей области требуется использовать TypeScript 4.3 и выше.",
 			"configuration.suggest.includeCompletionsWithSnippetText": "Включить или отключить завершение фрагментов на сервере TS. В рабочей области требуется использовать TypeScript 4.3 и выше.",
-			"configuration.suggest.jsdoc.generateReturns": "Включение или отключение создания аннотаций \"@return\" для шаблонов JSDoc. Требуется TypeScript 4.2 или более поздней версии в рабочей области.",
+			"configuration.suggest.jsdoc.generateReturns": "Включение или отключение создания аннотаций \\\"@returns\\\" для шаблонов JSDoc. Требуется TypeScript 4.2 или более поздней версии в рабочей области.",
 			"configuration.suggest.names": "Включение/отключение добавления уникальных имен из файла в предложения JavaScript. Обратите внимание, что предложения имен всегда отключены в коде JavaScript, семантика которого проверяется с помощью \"@ts-check\" или \"checkJs\".",
 			"configuration.suggest.paths": "Включить/отключить предложения для путей в выражениях импорта и в вызовах.",
 			"configuration.surveys.enabled": "Включить/отключить периодические опросы, которые помогают нам улучшить поддержку JavaScript и TypeScript в VS Code.",
@@ -239,6 +244,7 @@
 			"inlayHints.parameterNames.literals": "Включение указаний имен параметров только для литеральных аргументов.",
 			"inlayHints.parameterNames.none": "Отключение указаний имен параметров.",
 			"javascript.format.enable": "Включение или отключение модуля форматирования JavaScript по умолчанию.",
+			"javascript.preferences.jsxAttributeCompletionStyle.auto": "Вставить ={} или =\"\" после имен атрибутов на основе типа свойства. Сведения об управлении типов кавычек для строковых атрибутов см. в \\\"javascript.preferences.quoteStyle\\\".",
 			"javascript.referencesCodeLens.enabled": "Включить/отключить ссылки CodeLens для файлов JavaScript.",
 			"javascript.referencesCodeLens.showOnAllFunctions": "Включить/отключить ссылки CodeLens для всех функций в файлах JavaScript.",
 			"javascript.suggestionActions.enabled": "Включить или отключить предложения диагностики для файлов JavaScript в редакторе.",
@@ -270,10 +276,13 @@
 			"typescript.preferences.includePackageJsonAutoImports.off": "Никогда не искать зависимости.",
 			"typescript.preferences.includePackageJsonAutoImports.on": "Всегда искать зависимости.",
 			"typescript.preferences.jsxAttributeCompletionStyle": "Предпочитаемый стиль для завершения атрибута JSX.",
-			"typescript.preferences.jsxAttributeCompletionStyle.auto": "Вставьте \"={}\" или \"=\"\" после имен атрибутов на основе типа свойства.",
+			"typescript.preferences.jsxAttributeCompletionStyle.auto": "Вставить ={} или =\"\" после имен атрибутов на основе типа свойства. Сведения об управлении типов кавычек для строковых атрибутов см. в \\\"typescript.preferences.quoteStyle\\\".",
 			"typescript.preferences.jsxAttributeCompletionStyle.braces": "Вставить \"={}\" после имен атрибутов.",
 			"typescript.preferences.jsxAttributeCompletionStyle.none": "Вставлять только имена атрибутов.",
-			"typescript.preferences.quoteStyle": "Предпочтительный стиль кавычек для быстрых исправлений. Допустимые значения: \"single\" (одинарные кавычки), \"double\" (двойные кавычки) и \"auto\" (использовать тип кавычек из существующих операций импорта).",
+			"typescript.preferences.quoteStyle": "Предпочитаемый стиль кавычек для быстрых исправлений.",
+			"typescript.preferences.quoteStyle.auto": "Вывести тип кавычек из существующего кода",
+			"typescript.preferences.quoteStyle.double": "Всегда использовать двойные кавычки: \"",
+			"typescript.preferences.quoteStyle.single": "Всегда использовать одиночные кавычки: '",
 			"typescript.preferences.renameShorthandProperties.deprecationMessage": "Параметр typescript.preferences.renameShorthandProperties объявлен нерекомендуемым, вместо него следует использовать typescript.preferences.useAliasesForRenames",
 			"typescript.preferences.useAliasesForRenames": "Включение или отключение введения псевдонимов для собирательных свойств объекта во время переименований. Требуется использование TypeScript 3.4 или более поздней версии в рабочей области.",
 			"typescript.problemMatchers.tsc.label": "Проблемы TypeScript",

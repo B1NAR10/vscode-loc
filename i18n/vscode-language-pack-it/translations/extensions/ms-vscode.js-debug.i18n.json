@@ -55,6 +55,10 @@
 			"profile.cpu.description": "Genera un file con estensione cpuprofile che è possibile aprire in Chrome DevTools",
 			"profile.cpu.label": "Profilo CPU"
 		},
+		"/src/adapter/profiling/basicHeapProfiler": {
+			"profile.heap.description": "Genera un file con estensione heapprofile che è possibile aprire in Chrome DevTools",
+			"profile.heap.label": "Profilo heap"
+		},
 		"/src/adapter/profiling/heapDumpProfiler": {
 			"profile.heap.description": "Genera un file con estensione .heapsnapshot che è possibile aprire in Chrome DevTools",
 			"profile.heap.label": "Snapshot heap"
@@ -102,15 +106,6 @@
 			"pause.xhr": "Sospeso in corrispondenza di XMLHttpRequest o di fetch",
 			"reason.description.restart": "Sospeso in corrispondenza della voce del frame",
 			"warnings.handleSourceMapPause.didNotWait": "AVVISO: l'elaborazione dei source map di {0} ha richiesto più di {1} ms, di conseguenza l'esecuzione è continuata senza attendere l'impostazione di tutti i punti di interruzione per lo script."
-		},
-		"/src/adapter/variables": {
-			"error.customValueDescriptionGeneratorFailed": "{0} (non è stato possibile descrivere: {1})",
-			"error.emptyExpression": "Non è possibile impostare un valore vuoto",
-			"error.failedToCustomizeObjectProperties": "La personalizzazione delle proprietà non è riuscita",
-			"error.invalidExpression": "Espressione non valida",
-			"error.setVariableDidFail": "Non è possibile impostare il valore della variabile",
-			"error.unknown": "Errore sconosciuto",
-			"error.variableNotFound": "Variabile non trovata"
 		},
 		"/src/binder": {
 			"breakpoint.provisionalBreakpoint": "Punto di interruzione non associato"
@@ -259,9 +254,9 @@
 			"no": "No",
 			"profile.alreadyRunning": "Una sessione di profilatura è già in esecuzione. Arrestarla e avviarne una nuova?",
 			"profile.sessionState": "Profilatura",
-			"profile.status.default": "$(loading) Fare clic per arrestare la profilatura",
-			"profile.status.multiSession": "$(loading) Fare clic per arrestare la profilatura ({0} sessioni)",
-			"profile.status.single": "$(loading) Fare clic per arrestare la profilatura ({0})",
+			"profile.status.default": "$(loading~spin) Fare clic per arrestare la profilatura",
+			"profile.status.multiSession": "$(loading~spin) Fare clic per arrestare la profilatura ({0} sessioni)",
+			"profile.status.single": "$(loading~spin) Fare clic per arrestare la profilatura ({0})",
 			"profile.termination.title": "Tempo di esecuzione del profilo:",
 			"profile.type.title": "Tipo di profilo:",
 			"yes": "Sì"
@@ -321,13 +316,18 @@
 			"chrome.label": "Chrome",
 			"chrome.launch.description": "Avvia Chrome per eseguire il debug di un URL",
 			"chrome.launch.label": "Chrome: Avvia",
+			"commands.callersAdd.label": "Escludere chiamante",
+			"commands.callersAdd.paletteLabel": "Escludere il chiamante dalla sospensione nella posizione corrente",
+			"commands.callersGoToCaller.label": "Andare alla posizione del chiamante",
+			"commands.callersGoToTarget.label": "Andare alla posizione di destinazione",
+			"commands.callersRemove.label": "Rimuovere chiamante escluso",
+			"commands.callersRemoveAll.label": "Rimuovi tutti i chiamanti esclusi",
 			"configuration.autoAttachMode": "Consente di configurare i processi da collegare e di cui eseguire automaticamente il debug quando `#debug.node.autoAttach#` è impostato su on. Un processo Node avviato con il flag `--inspect` verrà sempre collegato indipendentemente da questa impostazione.",
 			"configuration.autoAttachMode.always": "Collega automaticamente a ogni processo Node.js avviato nel terminale.",
 			"configuration.autoAttachMode.disabled": "La funzionalità di collegamento automatico è disabilitata e non visualizzata nella barra di stato.",
 			"configuration.autoAttachMode.explicit": "Collega automaticamente solo quando è specificato `--inspect`.",
 			"configuration.autoAttachMode.smart": "Collega automaticamente durante l'esecuzione di script non presenti in una cartella node_modules.",
 			"configuration.autoAttachSmartPatterns": "Configures glob patterns for determining when to attach in \"smart\" `#debug.javascript.autoAttachFilter#` mode. `$KNOWN_TOOLS$` is replaced with a list of names of common test and code runners. [Read more on the VS Code docs](https://code.visualstudio.com/docs/nodejs/nodejs-debugging#_auto-attach-smart-patterns).",
-			"configuration.autoExpandGetters": "Consente di configurare l'espansione automatica dei getter di proprietà. Se è false, il getter verrà visualizzato come `get propertyName` e sarà necessario farvi clic sopra per valutarlo.",
 			"configuration.automaticallyTunnelRemoteServer": "Durante il debug di un'app Web remota, configura l'eventuale tunneling automatico del server remoto nel computer locale.",
 			"configuration.breakOnConditionalError": "Indica se arrestare l'esecuzione quando i punti di interruzione condizionali generano un errore.",
 			"configuration.debugByLinkOptions": "Opzioni usate durante il debug di collegamenti aperto su cui viene fatto clic all'interno del terminale di debug. Impostare su \"false\" per disabilitare questo comportamento.",

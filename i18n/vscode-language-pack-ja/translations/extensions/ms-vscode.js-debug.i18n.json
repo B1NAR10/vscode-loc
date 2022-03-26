@@ -55,6 +55,10 @@
 			"profile.cpu.description": "Chrome DevTools で開くことができる、.cpuprofile ファイルを生成します",
 			"profile.cpu.label": "CPU プロファイル"
 		},
+		"/src/adapter/profiling/basicHeapProfiler": {
+			"profile.heap.description": "Chrome DevTools で開くことができる .heapprofile ファイルを 1 つ生成します",
+			"profile.heap.label": "ヒープ プロファイル"
+		},
 		"/src/adapter/profiling/heapDumpProfiler": {
 			"profile.heap.description": "Chrome DevTools で開くことができる、.heapsnapshot ファイルを生成します",
 			"profile.heap.label": "ヒープのスナップショット"
@@ -102,15 +106,6 @@
 			"pause.xhr": "XMLHttpRequest またはフェッチで一時停止しました",
 			"reason.description.restart": "フレーム エントリで一時停止しました",
 			"warnings.handleSourceMapPause.didNotWait": "警告: {0} のソース マップの処理に {1} ミリ秒より長くかかったため、スクリプトのすべてのブレークポイントが設定されるのを待たずに実行を継続しました。"
-		},
-		"/src/adapter/variables": {
-			"error.customValueDescriptionGeneratorFailed": "{0} (説明できませんでした: {1})",
-			"error.emptyExpression": "空の値は設定できません",
-			"error.failedToCustomizeObjectProperties": "プロパティのカスタマイズに失敗しました",
-			"error.invalidExpression": "無効な式です",
-			"error.setVariableDidFail": "変数値を設定できません",
-			"error.unknown": "不明なエラー",
-			"error.variableNotFound": "変数が見つかりません"
 		},
 		"/src/binder": {
 			"breakpoint.provisionalBreakpoint": "バインドされていないブレークポイント"
@@ -259,9 +254,9 @@
 			"no": "いいえ",
 			"profile.alreadyRunning": "プロファイル セッションは既に実行中です。これを停止して、新しいセッションを開始しますか?",
 			"profile.sessionState": "プロファイル",
-			"profile.status.default": "$(loading) プロファイルを停止するにはクリックしてください",
-			"profile.status.multiSession": "$(loading) プロファイルを停止するにはクリックしてください ({0} 個のセッション)",
-			"profile.status.single": "$(loading) プロファイルを停止するにはクリックしてください ({0})",
+			"profile.status.default": "$(loading~spin) プロファイリングを停止するにはクリックしてください",
+			"profile.status.multiSession": "$(loading~spin) プロファイリングを停止するにはクリックしてください ({0} 個のセッション)",
+			"profile.status.single": "$(loading~spin) プロファイリングを停止するにはクリックしてください ({0})",
 			"profile.termination.title": "プロファイルの実行期間:",
 			"profile.type.title": "プロファイルの種類:",
 			"yes": "はい"
@@ -321,13 +316,18 @@
 			"chrome.label": "Chrome",
 			"chrome.launch.description": "Chrome を起動して URL をデバッグする",
 			"chrome.launch.label": "Chrome: 起動",
+			"commands.callersAdd.label": "呼び出し元を除外する",
+			"commands.callersAdd.paletteLabel": "現在の場所での呼び出し元が一時停止するのを除外する",
+			"commands.callersGoToCaller.label": "呼び出し元の場所に移動",
+			"commands.callersGoToTarget.label": "対象の場所に移動する",
+			"commands.callersRemove.label": "除外された呼び出し元を削除する",
+			"commands.callersRemoveAll.label": "除外されたすべての呼び出し元を削除する",
 			"configuration.autoAttachMode": "'#debug.node.autoAttach#' がオンの場合に、自動的にアタッチしてデバッグするプロセスを構成します。'--inspect' フラグで起動されるノード プロセスは、この設定に関係なく、常にアタッチされます。",
 			"configuration.autoAttachMode.always": "ターミナルで起動されるすべての Node.js プロセスに自動アタッチします。",
 			"configuration.autoAttachMode.disabled": "オート アタッチが無効で、ステータス バーに表示されません。",
 			"configuration.autoAttachMode.explicit": "`--inspect` が指定されている場合にのみ自動アタッチします。",
 			"configuration.autoAttachMode.smart": "node_modules フォルダーにないスクリプトを実行しているときに自動アタッチします。",
 			"configuration.autoAttachSmartPatterns": "\"スマート\" `#debug.javascript.autoAttachFilter#` モードでアタッチするタイミングを決定するために glob パターンを構成します。`$KNOWN_TOOLS$` は、共通テストとコード ランナーの名前の一覧で置き換えられます。[VS Code ドキュメントで詳細をご確認ください](https://code.visualstudio.com/docs/nodejs/nodejs-debugging#_auto-attach-smart-patterns)。",
-			"configuration.autoExpandGetters": "プロパティのゲッターを自動的に展開するかどうかを構成します。これを false にすると、ゲッターは 'get propertyName' と表示され、それをクリックした場合にのみ評価されます。",
 			"configuration.automaticallyTunnelRemoteServer": "リモート Web アプリをデバッグするときに、リモート サーバーを自動的にローカル マシンにトンネルするかどうかを構成します。",
 			"configuration.breakOnConditionalError": "条件付きブレークポイントでエラーが発生したときに停止するかどうかを指定します。",
 			"configuration.debugByLinkOptions": "デバッグ時に使用したオプションによって、デバッグ ターミナル内からクリックしたリンクが開きます。\"false\" に設定にすると、この動作を無効にできます。",

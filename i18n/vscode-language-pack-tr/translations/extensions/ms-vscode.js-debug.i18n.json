@@ -55,6 +55,10 @@
 			"profile.cpu.description": "Chrome DevTools'ta açabileceğiniz bir .cpuprofil dosyası oluşturur",
 			"profile.cpu.label": "CPU Profili"
 		},
+		"/src/adapter/profiling/basicHeapProfiler": {
+			"profile.heap.description": "Chrome DevTools'ta açabileceğiniz bir .heapprofile dosyası oluşturur",
+			"profile.heap.label": "Yığın Profili"
+		},
 		"/src/adapter/profiling/heapDumpProfiler": {
 			"profile.heap.description": "Chrome DevTools'ta açabileceğiniz bir .heapsnapshot dosyası oluşturur",
 			"profile.heap.label": "Yığın Anlık Görüntüsü"
@@ -102,15 +106,6 @@
 			"pause.xhr": "XMLHttpRequest veya fetch üzerinde duraklatıldı",
 			"reason.description.restart": "Çerçeve girişinde duraklatıldı",
 			"warnings.handleSourceMapPause.didNotWait": "UYARI: {0} kaynak eşlemelerinin işlenmesi {1} ms'den daha uzun sürdüğünden tüm kesme noktalarının betiği ayarlamasını beklemeden yürütmeye işlemine devam ettik."
-		},
-		"/src/adapter/variables": {
-			"error.customValueDescriptionGeneratorFailed": "{0} ({1} tanımlanamadı)",
-			"error.emptyExpression": "Boş değer ayarlanamıyor",
-			"error.failedToCustomizeObjectProperties": "Başarısız özellikler özelleştirmesi",
-			"error.invalidExpression": "Geçersiz ifade",
-			"error.setVariableDidFail": "Değişken değeri ayarlanamıyor",
-			"error.unknown": "Bilinmeyen hata",
-			"error.variableNotFound": "Değişken bulunamadı"
 		},
 		"/src/binder": {
 			"breakpoint.provisionalBreakpoint": "Bağlı olmayan kesme noktası"
@@ -259,9 +254,9 @@
 			"no": "Hayır",
 			"profile.alreadyRunning": "Zaten bir profil oluşturma oturumu çalışıyor. Bu oturumu durdurup yeni bir oturum başlatmak ister misiniz?",
 			"profile.sessionState": "Profil oluşturuluyor",
-			"profile.status.default": "$(yükleniyor) Profil Oluşturmayı Durdurmak İçin Tıklayın",
-			"profile.status.multiSession": "$(yükleniyor) Profil Oluşturmayı Durdurmak İçin Tıklayın ({0} oturum)",
-			"profile.status.single": "$(yükleniyor) Profil Oluşturmayı Durdurmak İçin Tıklayın ({0})",
+			"profile.status.default": "$(yükleniyor~döndür) Profil Oluşturmayı Durdurmak İçin Tıklayın",
+			"profile.status.multiSession": "$(yükleniyor~döndür) Profil Oluşturmayı Durdurmak İçin Tıklayın ({0} oturum)",
+			"profile.status.single": "$(yükleniyor~döndür) Profil Oluşturmayı Durdurmak İçin Tıklayın ({0})",
 			"profile.termination.title": "Profilin çalıştırılacağı süre:",
 			"profile.type.title": "Profil türü:",
 			"yes": "Evet"
@@ -321,13 +316,18 @@
 			"chrome.label": "Chrome",
 			"chrome.launch.description": "URL'de hata ayıklamak için Chrome'u başlatın",
 			"chrome.launch.label": "Chrome: Başlat",
+			"commands.callersAdd.label": "Çağıranı dışla",
+			"commands.callersAdd.paletteLabel": "Çağıranı geçerli konumda duraklatmanın dışında tut",
+			"commands.callersGoToCaller.label": "Çağıran konumuna git",
+			"commands.callersGoToTarget.label": "Hedef konuma git",
+			"commands.callersRemove.label": "Dışlanan çağıranı kaldır",
+			"commands.callersRemoveAll.label": "Dışlanan tüm çağıranları kaldır",
 			"configuration.autoAttachMode": "`#debug.node.autoAttach#` açık olduğunda hangi işlemlerin otomatik olarak ekleneceğini veya hatalarının ayıklanacağını yapılandırır. `--inspect` bayrağıyla başlatılan düğüm işlemi bu ayardan bağımsız olarak her zaman eklenir.",
 			"configuration.autoAttachMode.always": "Terminalde başlatılan her Node.js işlemine otomatik olarak ekleyin.",
 			"configuration.autoAttachMode.disabled": "Otomatik ekleme devre dışı bırakıldığından durum çubuğunda gösterilemiyor.",
 			"configuration.autoAttachMode.explicit": "Yalnızca `--inspect` verildiğinde otomatik ekleyin.",
 			"configuration.autoAttachMode.smart": "node_modules klasöründe olmayan betikleri çalıştırırken otomatik olarak ekleyin.",
 			"configuration.autoAttachSmartPatterns": "\"Akıllı\" `#debug.javascript.autoAttachFilter#` moduna iliştirilmeyi algılama için glob desenlerini yapılandırır. `$KNOWN_TOOLS$`, ortak test ve kod çalıştıranlar adları listesiyle değiştirilir. [VS Code belgelerinde daha fazla bilgi edinin](https://code.visualstudio.com/docs/nodejs/nodejs-debugging#_auto-attach-smart-patterns).",
-			"configuration.autoExpandGetters": "Özellik alıcılarının otomatik olarak genişletilip genişletilmeyeceğini yapılandırır. Bu false ise, alıcı `get propertyName` olarak görünür ve yalnızca üzerine tıkladığınızda değerlendirilir.",
 			"configuration.automaticallyTunnelRemoteServer": "Uzak bir web uygulamasında hata ayıklarken, uzak sunucuyu yerel makinenize otomatik olarak tünelleyip tünellemeyeceğinizi yapılandırın.",
 			"configuration.breakOnConditionalError": "Koşullu kesme noktaları hata oluşturduğunda durdurulup durdurulmayacağını belirtir.",
 			"configuration.debugByLinkOptions": "Options used when debugging open links clicked from inside the debug terminal. Can be set to \"false\" to disable this behavior.",

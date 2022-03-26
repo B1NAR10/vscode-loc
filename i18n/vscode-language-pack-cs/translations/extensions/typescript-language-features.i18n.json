@@ -22,7 +22,6 @@
 		"dist/languageFeatures/completions": {
 			"acquiringTypingsDetail": "Získávají se definice typings pro IntelliSense.",
 			"acquiringTypingsLabel": "Získávají se definice typings...",
-			"autoImportLabel": "Automaticky importovat z: {0}",
 			"selectCodeAction": "Vybrat akci kódu, která se má použít"
 		},
 		"dist/languageFeatures/directiveCommentCompletions": {
@@ -63,6 +62,10 @@
 		},
 		"dist/languageFeatures/rename": {
 			"fileRenameFail": "Při přejmenovávání souboru došlo k chybě."
+		},
+		"dist/languageFeatures/tsconfig": {
+			"documentLink.tooltip": "Přejít na odkaz",
+			"openTsconfigExtendsModuleFail": "{0} se nepovedlo vyřešit jako modul"
 		},
 		"dist/languageFeatures/updatePathsOnRename": {
 			"accept.title": "Ano",
@@ -163,8 +166,10 @@
 			"codeActions.source.organizeImports.title": "Uspořádat importy",
 			"configuration.implicitProjectConfig.checkJs": "Umožňuje povolit nebo zakázat sémantickou kontrolu souborů JavaScriptu. Existující soubory jsconfig.json nebo tsconfig.json toto nastavení přepíší.",
 			"configuration.implicitProjectConfig.experimentalDecorators": "Umožňuje povolit nebo zakázat možnost experimentalDecorators pro soubory JavaScriptu, které nejsou součástí projektu. Existující soubory jsconfig.json nebo tsconfig.json toto nastavení přepíší.",
+			"configuration.implicitProjectConfig.module": "Nastaví systém modulů pro program. Další informace: https://www.typescriptlang.org/tsconfig#module.",
 			"configuration.implicitProjectConfig.strictFunctionTypes": "Umožňuje povolit nebo zakázat [striktní typy funkcí](https://www.typescriptlang.org/tsconfig#strictFunctionTypes) pro soubory JavaScriptu a TypeScriptu, které nejsou součástí projektu. Existující soubory jsconfig.json nebo tsconfig.json toto nastavení přepíší.",
 			"configuration.implicitProjectConfig.strictNullChecks": "Umožňuje povolit nebo zakázat [striktní kontroly hodnoty null](https://www.typescriptlang.org/tsconfig#strictNullChecks) pro soubory JavaScriptu a TypeScriptu, které nejsou součástí projektu. Existující soubory jsconfig.json nebo tsconfig.json toto nastavení přepíší.",
+			"configuration.implicitProjectConfig.target": "Nastavte cílovou verzi jazyka JavaScript pro vydávaný JavaScript a zahrňte deklarace knihovny. Další informace: https://www.typescriptlang.org/tsconfig#target.",
 			"configuration.inlayHints.enumMemberValues.enabled": "Povolí nebo zakáže vložené tipy pro hodnoty členů ve výčtech deklarací:\r\n```typescript\r\n\r\nenum MyValue {\r\n\tA /* = 0 */;\r\n\tB /* = 1 */;\r\n}\r\n \r\n```\r\nVyžaduje, aby se v pracovním prostoru použil TypeScript 4.4+.",
 			"configuration.inlayHints.functionLikeReturnTypes.enabled": "Povolí nebo zakáže vložené tipy pro implicitní návratové typy v signaturách funkcí:\r\n```typescript\r\n\r\nfunction foo() /* :number */ {\r\n\treturn Date.now();\r\n} \r\n \r\n```\r\nVyžaduje, aby se v pracovním prostoru použil TypeScript 4.4+.",
 			"configuration.inlayHints.parameterNames.enabled": "Povolí nebo zakáže vložené tipy pro názvy parametrů:\r\n```typescript\r\n\r\nparseInt(/* str: */ '123', /* radix: */ 8)\r\n \r\n```\r\nVyžaduje, aby se v pracovním prostoru použil TypeScript 4.4+.",
@@ -181,7 +186,7 @@
 			"configuration.suggest.includeAutomaticOptionalChainCompletions": "Umožňuje povolit nebo zakázat zobrazování dokončování pro potenciálně nedefinované hodnoty, které vkládají volitelné volání řetězce. Vyžaduje TS 3.7+ a povolení striktních kontrol hodnot null.",
 			"configuration.suggest.includeCompletionsForImportStatements": "Umožňuje povolit nebo zakázat dokončení automatického importu stylů a příkazů částečně typového importu. Vyžaduje, aby se v pracovním prostoru používal TypeScript 4.3+.",
 			"configuration.suggest.includeCompletionsWithSnippetText": "Umožňuje povolit nebo zakázat dokončování fragmentů z TS Serveru. Vyžaduje, aby se v pracovním prostoru používal TypeScript 4.3+.",
-			"configuration.suggest.jsdoc.generateReturns": "Umožňuje povolit nebo zakázat generování poznámek @return pro šablony JSDoc. Vyžaduje, aby se v pracovním prostoru použil TypeScript 4.2+.",
+			"configuration.suggest.jsdoc.generateReturns": "Umožňuje povolit nebo zakázat generování poznámek @returns pro šablony JSDoc. Vyžaduje, aby se v pracovním prostoru použil TypeScript 4.2+.",
 			"configuration.suggest.names": "Umožňuje povolit nebo zakázat zahrnutí jedinečných názvů ze souboru do návrhů JavaScriptu. Poznámka: Návrhy názvů jsou vždy zakázány v kódu JavaScriptu, který je sémanticky kontrolován pomocí @ts-check nebo checkJs.",
 			"configuration.suggest.paths": "Umožňuje povolit nebo zakázat návrhy pro cesty v příkazech importu a vyžadovat volání.",
 			"configuration.surveys.enabled": "Umožňuje povolit nebo zakázat příležitostné průzkumy, které nám pomůžou vylepšit podporu JavaScriptu a TypeScriptu ve VS Code.",
@@ -239,6 +244,7 @@
 			"inlayHints.parameterNames.literals": "Tipy pro názvy parametrů povolte pouze pro argumenty literálu.",
 			"inlayHints.parameterNames.none": "Zakažte nápovědu k názvu parametru.",
 			"javascript.format.enable": "Umožňuje povolit nebo zakázat výchozí formátovací modul JavaScriptu.",
+			"javascript.preferences.jsxAttributeCompletionStyle.auto": "V závislosti na typu vlastnosti vložte za názvy atributů ={} nebo =\"\" . Pokud chcete řídit typy uvozovek používaných u atributů řetězců, podívejte se na javascript.preferences.quoteStyle.",
 			"javascript.referencesCodeLens.enabled": "Umožňuje povolit nebo zakázat odkazy CodeLens v souborech JavaScriptu.",
 			"javascript.referencesCodeLens.showOnAllFunctions": "Umožňuje povolit nebo zakázat odkazy CodeLens pro všechny funkce v souborech JavaScriptu.",
 			"javascript.suggestionActions.enabled": "Umožňuje povolit nebo zakázat diagnostiku návrhů pro soubory JavaScriptu v editoru.",
@@ -270,10 +276,13 @@
 			"typescript.preferences.includePackageJsonAutoImports.off": "Nikdy nehledat závislosti",
 			"typescript.preferences.includePackageJsonAutoImports.on": "Vždy hledat závislosti",
 			"typescript.preferences.jsxAttributeCompletionStyle": "Upřednostňovaný styl pro dokončování atributů JSX.",
-			"typescript.preferences.jsxAttributeCompletionStyle.auto": "Vložte „={}“ nebo „=\"\"“ za názvy atributů na základě typu vlastnosti.",
+			"typescript.preferences.jsxAttributeCompletionStyle.auto": "V závislosti na typu vlastnosti vložte za názvy atributů ={} nebo =\"\" . Pokud chcete řídit typy uvozovek používaných u atributů řetězců, podívejte se na typescript.preferences.quoteStyle.",
 			"typescript.preferences.jsxAttributeCompletionStyle.braces": "Vložte „={}“ za názvy atributů.",
 			"typescript.preferences.jsxAttributeCompletionStyle.none": "Vkládejte pouze názvy atributů.",
-			"typescript.preferences.quoteStyle": "Upřednostňovaný styl uvozovek pro rychlé opravy. Lze použít jednu z těchto hodnot: single (jednoduché uvozovky), double (dvojité uvozovky) a auto (použije se typ uvozovek z existujících importů).",
+			"typescript.preferences.quoteStyle": "Upřednostňovaný styl uvozovek, který se má použít pro rychlé opravy.",
+			"typescript.preferences.quoteStyle.auto": "Odvodit typ uvozovek z existujícího kódu",
+			"typescript.preferences.quoteStyle.double": "Vždy používat dvojité uvozovky „ \" “",
+			"typescript.preferences.quoteStyle.single": "Vždy používat dvojité uvozovky „ ' “",
 			"typescript.preferences.renameShorthandProperties.deprecationMessage": "Nastavení typescript.preferences.renameShorthandProperties je zastaralé. Místo něj se používá nastavení typescript.preferences.useAliasesForRenames.",
 			"typescript.preferences.useAliasesForRenames": "Umožňuje povolit nebo zakázat zavádění aliasů pro sdružené vlastnosti objektů při přejmenovávání. Vyžaduje, aby se v pracovním prostoru používal TypeScript 3.4 nebo novější.",
 			"typescript.problemMatchers.tsc.label": "Problémy s TypeScriptem",

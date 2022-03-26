@@ -8,6 +8,14 @@
 	],
 	"version": "1.0.0",
 	"contents": {
+		"dist/actionButton": {
+			"scm button publish branch": "Dalı Yayımla",
+			"scm button publish branch running": "Dal Yayımlanıyor...",
+			"scm button publish title": "$(cloud-upload) Publish Branch",
+			"scm button sync description": "{0}Değişiklikleri Eşitle {1}{2}",
+			"scm button sync title": "{0} {1}{2}",
+			"syncing changes": "Değişiklikler Eşitleniyor..."
+		},
 		"dist/askpass-main": {
 			"missOrInvalid": "Kimlik bilgileri eksik veya geçersiz."
 		},
@@ -78,6 +86,7 @@
 			"force push not allowed": "Gönderimi zorlamaya izin verilmiyor, lütfen 'git.allowForcePush' ayarıyla etkinleştirin.",
 			"git error": "Git hatası",
 			"git error details": "Git: {0}",
+			"git.timeline.openDiffCommand": "Open Comparison",
 			"git.title.diff": "{0} ⟷ {1}",
 			"git.title.diffRefs": "{0} ({1}) ⟷ {0} ({2})",
 			"git.title.index": "{0} (Dizin)",
@@ -240,9 +249,6 @@
 			"pull push n": "{2}/{3} arasında {0} commit çek ve {1} commit gönder",
 			"push n": "{1}/{2} deposuna {0} commit gönder",
 			"push success": "Başarıyla gönderildi.",
-			"scm button publish title": "$(cloud-upload) Publish Branch",
-			"scm button publish tooltip": "Dalı Yayımla",
-			"scm button sync title": "$(sync) Sync Changes {0}{1}",
 			"staged changes": "Hazırlanmış Değişiklikler",
 			"sync changes": "Değişiklikleri Eşitle",
 			"sync is unpredictable": "Eşitleniyor. İptal edilmesi, depoya ciddi zararlar verebilir",
@@ -260,13 +266,11 @@
 			"syncing changes": "Değişiklikler Eşitleniyor..."
 		},
 		"dist/timelineProvider": {
-			"git.index": "Dizin",
-			"git.timeline.detail": "{0}  \\u2014 {1}\r\n{2}\r\n\r\n{3}",
+			"git.timeline.email": "E-posta",
+			"git.timeline.openComparison": "Karşılaştırmayı Aç",
 			"git.timeline.source": "Git Geçmişi",
 			"git.timeline.stagedChanges": "Hazırlanmış Değişiklikler",
-			"git.timeline.uncommitedChanges": "Kaydedilmemiş Değişiklikler",
-			"git.timeline.you": "Siz",
-			"git.workingTree": "Çalışma Ağacı"
+			"git.timeline.you": "Siz"
 		},
 		"package": {
 			"colors.added": "Eklenen kaynakların rengi.",
@@ -295,6 +299,7 @@
 			"command.clone": "Klonla",
 			"command.cloneRecursive": "Klonla (Özyinelemeli)",
 			"command.close": "Depoyu Kapat",
+			"command.closeAllDiffEditors": "Tüm Fark Düzenleyicilerini Kapat",
 			"command.commit": "Commit işlemi uygula",
 			"command.commitAll": "Tümüne Commit İşlemi Uygula",
 			"command.commitAllAmend": "Tümüne Commit İşlemi Uygula (Düzelt)",
@@ -394,6 +399,8 @@
 			"config.checkoutType.local": "Yerel dallar",
 			"config.checkoutType.remote": "Uzak dallar",
 			"config.checkoutType.tags": "Etiketler",
+			"config.closeDiffOnOperation": "Değişiklikler geçici olarak kaydedildiğinde, işleme alındığında, atıldığında, hazırlandığında veya hazırlaması geri alındığında fark düzenleyicisinin otomatik olarak kapatılıp kapatılmayacağını denetler.",
+			"config.commandsToLog": "`stdout` komutunun [git output](command:git.showOutput) oturumu açık olacak git komutlarının (ör. işleme, gönderme) listesi. Git komutunda yapılandırılmış bir istemci tarafı kancası varsa, istemci tarafı kancası `stdout` da [git output](command:git.showOutput) oturumunda açılır.",
 			"config.confirmEmptyCommits": "'Git: Commit Empty' komutu için her zaman boş commit'lerin oluşturulmasını onaylayın.",
 			"config.confirmForcePush": "Zorla gönderimden önce onay istenip istenmeyeceğini denetler.",
 			"config.confirmNoVerifyCommit": "Doğrulama olmadan commit işlemi yapmadan önce onay istenip istenmeyeceğini denetler.",
@@ -411,6 +418,7 @@
 			"config.enableSmartCommit": "Hazırlanmış değişiklik olmadığında tüm değişikliklere commit işlemi uygulayın.",
 			"config.enableStatusBarSync": "Git Sync komutunun durum çubuğunda görünüp görünmeyeceğini denetler.",
 			"config.enabled": "Git'in etkinleştirilip etkinleştirilmediğini belirtir.",
+			"config.experimental.installGuide": "Git kurulumu akışına yönelik deneysel geliştirmeler.",
 			"config.fetchOnPull": "Etkin olduğunda, çekerken tüm dalları getirin. Aksi takdirde yalnızca geçerli dalı getirin.",
 			"config.followTagsWhenSync": "Eşitleme komutunu çalıştırırken tümünü gönderme etiketlerini izleyin.",
 			"config.ignoreLegacyWarning": "Eski Git uyarısını yoksayar.",
@@ -445,6 +453,7 @@
 			"config.pruneOnFetch": "Getirilirken ayıkla.",
 			"config.pullTags": "Çekerken tüm etiketleri getirin.",
 			"config.rebaseWhenSync": "Yeniden eşitleme komutu çalıştırılırken git'i yeniden temellendirmeyi kullanmaya zorlayın.",
+			"config.repositoryScanIgnoredFolders": "\"#git.autoRepositoryDetection#\", \"true\" veya \"subFolders\" olarak ayarlandığında Git depoları taranırken yok sayılan klasörlerin listesi.",
 			"config.repositoryScanMaxDepth": "`#git.autoRepositoryDetection#` değeri `true` veya '`subFolders` olarak ayarlandığında Git depoları için çalışma alanı klasörlerini tararken kullanılan derinliği kontrol eder. Sınır yok için `-1` olarak ayarlanamaz.",
 			"config.requireGitUserConfig": "Açık Git kullanıcı yapılandırmasının gerekip gerekmediğini denetler veya yapılandırma eksikse Git'in tahminde bulunmasına olanak tanır.",
 			"config.scanRepositories": "Git depolarının aranacağı yolların listesi.",
@@ -473,6 +482,7 @@
 			"config.untrackedChanges.separate": "İzlenmeyen değişiklikler Kaynak Denetimi görünümünde ayrı olarak gösterilir. Ayrıca birkaç eylemden dışlanır.",
 			"config.useCommitInputAsStashMessage": "Commit giriş kutusundan iletinin varsayılan geçici kayıt iletisi olarak kullanılıp kullanılmayacağını denetler.",
 			"config.useForcePushWithLease": "Zorla gönderimin daha güvenli bir force-with-lease değişkeni kullanıp kullanmadığını denetler.",
+			"config.useIntegratedAskPass": "Tümleşik sürümü kullanmak için GIT_ASKPASS öğesinin üzerine yazılması gerekip gerekmediğini denetler.",
 			"description": "Git SCM Tümleştirmesi",
 			"displayName": "Git",
 			"submenu.branch": "Dal",
@@ -492,6 +502,10 @@
 			"view.workbench.scm.emptyWorkspace": "The workspace currently open doesn't have any folders containing git repositories.\r\n[Add Folder to Workspace](command:workbench.action.addRootFolder)\r\nTo learn more about how to use git and source control in VS Code [read our docs](https://aka.ms/vscode-scm).",
 			"view.workbench.scm.folder": "Şu anda açık olan klasörde git deposu yok.\r\n[Depoyu Başlat](command:git.init?%5Btrue%5D)\r\nVS Code'da git ve kaynak denetimi kullanma hakkında daha fazla bilgi için [belgelerimizi okuyun](https://aka.ms/vscode-scm).",
 			"view.workbench.scm.missing": "A valid git installation was not detected, more details can be found in the [git output](command:git.showOutput).\r\nPlease [install git](https://git-scm.com/), or learn more about how to use git and source control in VS Code in [our docs](https://aka.ms/vscode-scm).\r\nIf you're using a different version control system, you can [search the Marketplace](command:workbench.extensions.search?%22%40category%3A%5C%22scm%20providers%5C%22%22) for additional extensions.",
+			"view.workbench.scm.missing.guide": "Kod değişikliklerini izlemek ve başkalarıyla işbirliği yapmak için popüler bir kaynak denetimi sistemi olan Git'i yükleyin. [Git kılavuzlarımızda](https://aka.ms/vscode-scm) daha fazla bilgi edinin.",
+			"view.workbench.scm.missing.guide.linux": "Kaynak denetimi, Git’in yüklü olmasına bağlıdır.\r\n[Linux için Git indirin](https://git-scm.com/download/mac)\r\nYükledikten sonra lütfen [yeniden yükleyin](command:workbench.action.reloadWindow) (veya [sorun giderin](command:git.showOutput)). Ek kaynak denetimi sağlayıcıları [Market’ten](command:workbench.extensions.search?%22%40category%3A%5C%22scm%20providers%5C%22%22) yüklenebilir.",
+			"view.workbench.scm.missing.guide.mac": "[macOS için Git indirin](https://git-scm.com/download/mac)\r\nYükledikten sonra lütfen [yeniden yükleyin](command:workbench.action.reloadWindow) (veya [sorun giderin](command:git.showOutput)). Ek kaynak denetimi sağlayıcıları [Market’ten](command:workbench.extensions.search?%22%40category%3A%5C%22scm%20providers%5C%22%22) yüklenebilir.",
+			"view.workbench.scm.missing.guide.windows": "[Windows için Git indirin](https://git-scm.com/download/win)\r\nYükledikten sonra lütfen [yeniden yükleyin](command:workbench.action.reloadWindow) (veya [sorun giderin](command:git.showOutput)). Ek kaynak denetimi sağlayıcıları [Market’ten](command:workbench.extensions.search?%22%40category%3A%5C%22scm%20providers%5C%22%22) yüklenebilir.",
 			"view.workbench.scm.workspace": "Şu anda açık olan çalışma alanında git deposu içeren klasör yok.\r\n[Depoyu Başlat](command:git.init)\r\nVS Code'da git veya kaynak denetimi kullanma hakkında daha fazla bilgi için [belgelerimizi okuyun](https://aka.ms/vscode-scm)."
 		}
 	}

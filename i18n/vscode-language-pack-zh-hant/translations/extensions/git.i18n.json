@@ -8,6 +8,14 @@
 	],
 	"version": "1.0.0",
 	"contents": {
+		"dist/actionButton": {
+			"scm button publish branch": "發佈分支",
+			"scm button publish branch running": "正在發行分支...",
+			"scm button publish title": "$(cloud-upload) 發佈分支",
+			"scm button sync description": "{0} 同步變更 {1}{2}",
+			"scm button sync title": "{0} {1}{2}",
+			"syncing changes": "正在同步處理變更..."
+		},
 		"dist/askpass-main": {
 			"missOrInvalid": "缺少認證或其無效。"
 		},
@@ -78,6 +86,7 @@
 			"force push not allowed": "不允許強制更新，請啟用 \"git.allowForcePush\" 設定。",
 			"git error": "Git 錯誤",
 			"git error details": "Git: {0}",
+			"git.timeline.openDiffCommand": "Open Comparison",
 			"git.title.diff": "{0} ⟷ {1}",
 			"git.title.diffRefs": "{0} ({1}) ⟷ {0} ({2})",
 			"git.title.index": "{0} (索引)",
@@ -240,9 +249,6 @@
 			"pull push n": "從 {2}/{3} 間提取 {0} 個認可，並推送 {1} 個認可",
 			"push n": "將 {0} 個認可推送到 {1}/{2}",
 			"push success": "推送成功。",
-			"scm button publish title": "$(cloud-upload) 發佈分支",
-			"scm button publish tooltip": "發佈分支",
-			"scm button sync title": "$(sync) 同步變更 {0}{1}",
 			"staged changes": "暫存的變更",
 			"sync changes": "同步處理變更",
 			"sync is unpredictable": "正在同步。取消可能會對存放庫造成嚴重的損害",
@@ -260,13 +266,11 @@
 			"syncing changes": "正在同步處理變更..."
 		},
 		"dist/timelineProvider": {
-			"git.index": "索引",
-			"git.timeline.detail": "{0}  \\u2014 {1}\r\n{2}\r\n\r\n{3}",
+			"git.timeline.email": "電子郵件",
+			"git.timeline.openComparison": "開啟比較",
 			"git.timeline.source": "Git 歷程記錄",
 			"git.timeline.stagedChanges": "暫存的變更",
-			"git.timeline.uncommitedChanges": "未認可的變更",
-			"git.timeline.you": "您",
-			"git.workingTree": "工作樹狀"
+			"git.timeline.you": "您"
 		},
 		"package": {
 			"colors.added": "已新增資源的顏色。",
@@ -295,6 +299,7 @@
 			"command.clone": "複製",
 			"command.cloneRecursive": "複製 (遞迴)",
 			"command.close": "關閉儲存庫",
+			"command.closeAllDiffEditors": "關閉所有 Diff 編輯器",
 			"command.commit": "認可",
 			"command.commitAll": "全部認可",
 			"command.commitAllAmend": "全部認可 (修改) ",
@@ -394,6 +399,8 @@
 			"config.checkoutType.local": "本機分支",
 			"config.checkoutType.remote": "遠端分支",
 			"config.checkoutType.tags": "標籤",
+			"config.closeDiffOnOperation": "控制在隱藏、認可、捨棄、暫存或取消暫存變更時，是否應自動關閉 Diff 編輯器。",
+			"config.commandsToLog": "GIT 命令列表 (例如: commit、push)，這些命令的 `stdout` 將被記錄到 [git 輸出](command:git.showOutput)。如果 GIT 命令設定了用戶端勾點，那麼用戶端勾點的 `stdout` 也將被記錄到 [git 輸出](command:git.showOutput)。",
 			"config.confirmEmptyCommits": "一律確認 'Git: Commit Empty' 命令的空白認可建立。",
 			"config.confirmForcePush": "控制強制更新前是否要求確認。",
 			"config.confirmNoVerifyCommit": "控制在認可但未經驗證之前是否要求確認。",
@@ -411,6 +418,7 @@
 			"config.enableSmartCommit": "無暫存變更時提交所有變更。",
 			"config.enableStatusBarSync": "控制是否在狀態列顯示 Git 同步命令。",
 			"config.enabled": "是否啟用 Git。",
+			"config.experimental.installGuide": "Git 安裝流程的實驗性改進。",
 			"config.fetchOnPull": "啟用時，會在提取時擷取所有分支。否則僅擷取目前的分支。",
 			"config.followTagsWhenSync": "執行 sync 命令時，追蹤推送所有標籤。",
 			"config.ignoreLegacyWarning": "略過舊的 Git 警告。",
@@ -445,6 +453,7 @@
 			"config.pruneOnFetch": "擷取時剪除。",
 			"config.pullTags": "於提取時擷取所有標籤。",
 			"config.rebaseWhenSync": "當執行同步命令時強制 git 使用 rebase。",
+			"config.repositoryScanIgnoredFolders": "若 `#git.autoRepositoryDetection#` 設為 `true` 或 `subFolders`，掃描 Git 儲存機制時忽略的資料夾清單。",
 			"config.repositoryScanMaxDepth": "控制當 '#git.autoRepositoryDetection#' 設定為 'true' 或 'subFolders' 時，掃描 Git 存放庫的工作區資料夾時所使用的深度。可以設為 '-1'，表示沒有限制。",
 			"config.requireGitUserConfig": "控制要在沒有組態時要求明確的 Git 使用者組態，還是允許 Git 進行猜測。",
 			"config.scanRepositories": "要在其中搜尋 git 存放庫的路徑清單。",
@@ -473,6 +482,7 @@
 			"config.untrackedChanges.separate": "未追蹤修訂個別出現在原始檔控制檢視中。這些修訂也會從數個動作中排除。",
 			"config.useCommitInputAsStashMessage": "控制是否使用認可輸入方塊中的訊息作為預設隱藏訊息。",
 			"config.useForcePushWithLease": "控制強制推送是否使用較安全的 force-with-lease 方法。",
+			"config.useIntegratedAskPass": "控制是否應覆寫 GIT_ASKPASS 以使用整合式版本。",
 			"description": "Git SCM 整合",
 			"displayName": "Git",
 			"submenu.branch": "分支",
@@ -492,6 +502,10 @@
 			"view.workbench.scm.emptyWorkspace": "目前開啟的工作區沒有任何資料夾包含 Git 存放庫。\r\n[新增資料夾至工作區](command:workbench.action.addRootFolder)\r\n如果要深入了解如何在 VS Code 中使用 Git 和原始檔控制，[請參閱我們的文件](https://aka.ms/vscode-scm)。",
 			"view.workbench.scm.folder": "目前開啟的資料夾沒有任何 git 存放庫。您可以將存放庫初始化，以啟用 git 支援的原始檔控制功能。\r\n[將存放庫初始化](command:git.init?%5Btrue%5D)\r\n若要深入了解如何在 VS Code 中使用 git 和原始檔控制，[請參閱我們的文件](https://aka.ms/vscode-scm)。",
 			"view.workbench.scm.missing": "未偵測到有效的 Git 安裝，您可以在 [Git 輸入](command:git.showOutput)中找到更多詳細資料。\r\n請[安裝 Git](https://git-scm.com/)，或參閱or learn more about how to use git and source control in VS Code in [我們的文件](https://aka.ms/vscode-scm) 深入了解如何在 VS Code 中使用 Git 和原始檔控制。\r\n如果您使用的是其他版本的控制系統，可以[搜尋市集](command:workbench.extensions.search?%22%40category%3A%5C%22scm%20providers%5C%22%22) 尋找其他擴充。",
+			"view.workbench.scm.missing.guide": "安裝 Git，這是熱門的原始檔控制系統，以追蹤程式碼變更並與其他人共同作業。在我們的[Git指南](https://aka.ms/vscode-scm)中深入了解。",
+			"view.workbench.scm.missing.guide.linux": "原始檔控制必須安裝 Git。\r\n[下載適用於 Linux 的 Git](https://git-scm.com/download/mac)\r\n安裝之後，請[重新載入](command:workbench.action.reloadWindow) (或[疑難排解](command:git.showOutput))。可[從 Marketplace] 安裝其他原始檔控制提供者(command:workbench.extensions.search?%22%40category%3A%5C%22scm%20providers%5C%22%22)。",
+			"view.workbench.scm.missing.guide.mac": "[下載適用於 macOS 的 Git](https://git-scm.com/download/mac)\r\n安裝之後，請[重新載入](command:workbench.action.reloadWindow) (或[疑難排解](command:git.showOutput))。可[從 Marketplace] 安裝其他原始檔控制提供者(command:workbench.extensions.search?%22%40category%3A%5C%22scm%20providers%5C%22%22)。",
+			"view.workbench.scm.missing.guide.windows": "[下載適用於 Windows 的 Git](https://git-scm.com/download/win)\r\n安裝之後，請[重新載入](command:workbench.action.reloadWindow) (或[疑難排解](command:git.showOutput))。可[從 Marketplace] 安裝其他原始檔控制提供者(command:workbench.extensions.search?%22%40category%3A%5C%22scm%20providers%5C%22%22)。",
 			"view.workbench.scm.workspace": "目前開啟的工作區，沒有任何包含 git 存放庫的資料夾。您可以在資料夾上將存放庫初始化，以啟用 git 支援的原始檔控制功能。\r\n[將存放庫初始化](command:git.init)\r\n若要深入了解如何在 VS Code 中使用 git 和原始檔控制，[請參閱我們的文件](https://aka.ms/vscode-scm)。"
 		}
 	}

@@ -22,7 +22,6 @@
 		"dist/languageFeatures/completions": {
 			"acquiringTypingsDetail": "[p5l0R][นั้Æçqµïrïñg tÿpïñgs ðëfïñïtïøñs før Ïñtëllï§ëñsë.Ấğ倪İЂҰक्र्तिृまẤğ倪İЂนั้ढूँ]",
 			"acquiringTypingsLabel": "[Wn1kT][นั้Æçqµïrïñg tÿpïñgs...Ấğ倪İЂҰक्นั้ढूँ]",
-			"autoImportLabel": "[YtgJF][นั้Æµtø ïmpørt frøm {0}Ấğ倪İЂҰक्นั้ढूँ]",
 			"selectCodeAction": "[a7drT][นั้§ëlëçt çøðë æçtïøñ tø æpplÿẤğ倪İЂҰक्र्तिृนั้ढूँ]"
 		},
 		"dist/languageFeatures/directiveCommentCompletions": {
@@ -63,6 +62,10 @@
 		},
 		"dist/languageFeatures/rename": {
 			"fileRenameFail": "[W7654][นั้Æñ ërrør øççµrrëð whïlë rëñæmïñg fïlëẤğ倪İЂҰक्र्तिृまẤนั้ढूँ]"
+		},
+		"dist/languageFeatures/tsconfig": {
+			"documentLink.tooltip": "[mq3Hd][นั้Følløw lïñkẤğ倪İนั้ढूँ]",
+			"openTsconfigExtendsModuleFail": "[Ze1pt][นั้Fæïlëð tø rësølvë {0} æs møðµlëẤğ倪İЂҰक्र्तिृนั้ढूँ]"
 		},
 		"dist/languageFeatures/updatePathsOnRename": {
 			"accept.title": "[k7ypX][นั้ÝësẤนั้ढूँ]",
@@ -163,8 +166,10 @@
 			"codeActions.source.organizeImports.title": "[QWzD1][นั้Ørgæñïzë ïmpørtsẤğ倪İЂҰนั้ढूँ]",
 			"configuration.implicitProjectConfig.checkJs": "[Azh71][นั้Ëñæþlë/ðïsæþlë sëmæñtïç çhëçkïñg øf Jævæ§çrïpt fïlës. Ëxïstïñg `jsçøñfïg.jsøñ` ør `tsçøñfïg.jsøñ` fïlës øvërrïðë thïs sëttïñg.Ấğ倪İЂҰक्र्तिृまẤğ倪İЂҰक्र्तिृまẤğ倪İЂҰक्र्तिृまẤğ倪İЂҰक्นั้ढूँ]",
 			"configuration.implicitProjectConfig.experimentalDecorators": "[UKvvq][นั้Ëñæþlë/ðïsæþlë `ëxpërïmëñtælÐëçørætørs` ïñ Jævæ§çrïpt fïlës thæt ærë ñøt pært øf æ prøjëçt. Ëxïstïñg `jsçøñfïg.jsøñ` ør `tsçøñfïg.jsøñ` fïlës øvërrïðë thïs sëttïñg.Ấğ倪İЂҰक्र्तिृまẤğ倪İЂҰक्र्तिृまẤğ倪İЂҰक्र्तिृまẤğ倪İЂҰक्र्तिृまẤğ倪İЂҰक्र्นั้ढूँ]",
+			"configuration.implicitProjectConfig.module": "[4hdXP][นั้§ëts thë møðµlë sÿstëm før thë prøgræm. §ëë mørë: https://www.tÿpësçrïptlæñg.ørg/tsçøñfïg#møðµlë.Ấğ倪İЂҰक्र्तिृまẤğ倪İЂҰक्र्तिृまẤğ倪İЂҰक्र्तिृนั้ढूँ]",
 			"configuration.implicitProjectConfig.strictFunctionTypes": "[TMXpb][นั้Ëñæþlë/ðïsæþlë [strïçt fµñçtïøñ tÿpës](https://www.tÿpësçrïptlæñg.ørg/tsçøñfïg#strïçtFµñçtïøñTÿpës) ïñ Jævæ§çrïpt æñð Tÿpë§çrïpt fïlës thæt ærë ñøt pært øf æ prøjëçt. Ëxïstïñg `jsçøñfïg.jsøñ` ør `tsçøñfïg.jsøñ` fïlës øvërrïðë thïs sëttïñg.Ấğ倪İЂҰक्र्तिृまẤğ倪İЂҰक्र्तिृまẤğ倪İЂҰक्र्तिृまẤğ倪İЂҰक्र्तिृまẤğ倪İЂҰक्र्तिृまẤğ倪İЂҰक्र्तिृまẤğ倪İЂҰक्र्तिृนั้ढूँ]",
 			"configuration.implicitProjectConfig.strictNullChecks": "[hcBP3][นั้Ëñæþlë/ðïsæþlë [strïçt ñµll çhëçks](https://www.tÿpësçrïptlæñg.ørg/tsçøñfïg#strïçtÑµllÇhëçks) ïñ Jævæ§çrïpt æñð Tÿpë§çrïpt fïlës thæt ærë ñøt pært øf æ prøjëçt. Ëxïstïñg `jsçøñfïg.jsøñ` ør `tsçøñfïg.jsøñ` fïlës øvërrïðë thïs sëttïñg.Ấğ倪İЂҰक्र्तिृまẤğ倪İЂҰक्र्तिृまẤğ倪İЂҰक्र्तिृまẤğ倪İЂҰक्र्तिृまẤğ倪İЂҰक्र्तिृまẤğ倪İЂҰक्र्तिृまẤğ倪İЂҰक्र्นั้ढूँ]",
+			"configuration.implicitProjectConfig.target": "[5klXm][นั้§ët tærgët Jævæ§çrïpt læñgµægë vërsïøñ før ëmïttëð Jævæ§çrïpt æñð ïñçlµðë lïþrærÿ ðëçlærætïøñs. §ëë mørë: https://www.tÿpësçrïptlæñg.ørg/tsçøñfïg#tærgët.Ấğ倪İЂҰक्र्तिृまẤğ倪İЂҰक्र्तिृまẤğ倪İЂҰक्र्तिृまẤğ倪İЂҰक्र्तिृまẤğ倪İЂนั้ढूँ]",
 			"configuration.inlayHints.enumMemberValues.enabled": "[ufKeO][นั้Ëñæþlë/ðïsæþlë ïñlæÿ hïñts før mëmþër vælµës ïñ ëñµm ðëçlærætïøñs:Ấğ倪İЂҰक्र्तिृまẤğ倪İЂҰक्र्तिृนั้ढूँ]\r\n[ufKeO][นั้```tÿpësçrïptẤğ倪İЂนั้ढूँ]\r\n\r\n[ufKeO][นั้ëñµm MÿVælµë {Ấğ倪İЂҰนั้ढूँ]\r\n[ufKeO][นั้\tÆ /* = 0 */;Ấğ倪İЂนั้ढूँ]\r\n[ufKeO][นั้\tß /* = 1 */;Ấğ倪İЂนั้ढूँ]\r\n[ufKeO][นั้}นั้ढूँ]\r\n[ufKeO][นั้ นั้ढूँ]\r\n[ufKeO][นั้```Ấนั้ढूँ]\r\n[ufKeO][นั้Rëqµïrës µsïñg Tÿpë§çrïpt 4.4+ ïñ thë wørkspæçë.Ấğ倪İЂҰक्र्तिृまẤğ倪İЂนั้ढूँ]",
 			"configuration.inlayHints.functionLikeReturnTypes.enabled": "[hJAZV][นั้Ëñæþlë/ðïsæþlë ïñlæÿ hïñts før ïmplïçït rëtµrñ tÿpës øñ fµñçtïøñ sïgñætµrës:Ấğ倪İЂҰक्र्तिृまẤğ倪İЂҰक्र्तिृまẤğนั้ढूँ]\r\n[hJAZV][นั้```tÿpësçrïptẤğ倪İЂนั้ढूँ]\r\n\r\n[hJAZV][นั้fµñçtïøñ føø() /* :ñµmþër */ {Ấğ倪İЂҰक्र्तिृนั้ढूँ]\r\n[hJAZV][นั้\trëtµrñ Ðætë.ñøw();Ấğ倪İЂҰक्นั้ढूँ]\r\n[hJAZV][นั้} Ấนั้ढूँ]\r\n[hJAZV][นั้ นั้ढूँ]\r\n[hJAZV][นั้```Ấนั้ढूँ]\r\n[hJAZV][นั้Rëqµïrës µsïñg Tÿpë§çrïpt 4.4+ ïñ thë wørkspæçë.Ấğ倪İЂҰक्र्तिृまẤğ倪İЂนั้ढूँ]",
 			"configuration.inlayHints.parameterNames.enabled": "[AalWj][นั้Ëñæþlë/ðïsæþlë ïñlæÿ hïñts før pæræmëtër ñæmës:Ấğ倪İЂҰक्र्तिृまẤğ倪İЂนั้ढूँ]\r\n[AalWj][นั้```tÿpësçrïptẤğ倪İЂนั้ढूँ]\r\n\r\n[AalWj][นั้pærsëÏñt(/* str: */ '123', /* ræðïx: */ 8)Ấğ倪İЂҰक्र्तिृまẤğ倪นั้ढूँ]\r\n[AalWj][นั้ นั้ढूँ]\r\n[AalWj][นั้```Ấนั้ढूँ]\r\n[AalWj][นั้Rëqµïrës µsïñg Tÿpë§çrïpt 4.4+ ïñ thë wørkspæçë.Ấğ倪İЂҰक्र्तिृまẤğ倪İЂนั้ढूँ]",
@@ -181,7 +186,7 @@
 			"configuration.suggest.includeAutomaticOptionalChainCompletions": "[O3oOX][นั้Ëñæþlë/ðïsæþlë shøwïñg çømplëtïøñs øñ pøtëñtïællÿ µñðëfïñëð vælµës thæt ïñsërt æñ øptïøñæl çhæïñ çæll. Rëqµïrës T§ 3.7+ æñð strïçt ñµll çhëçks tø þë ëñæþlëð.Ấğ倪İЂҰक्र्तिृまẤğ倪İЂҰक्र्तिृまẤğ倪İЂҰक्र्तिृまẤğ倪İЂҰक्र्तिृまẤğ倪İЂҰक्นั้ढूँ]",
 			"configuration.suggest.includeCompletionsForImportStatements": "[82xDD][นั้Ëñæþlë/ðïsæþlë æµtø-ïmpørt-stÿlë çømplëtïøñs øñ pærtïællÿ-tÿpëð ïmpørt stætëmëñts. Rëqµïrës µsïñg Tÿpë§çrïpt 4.3+ ïñ thë wørkspæçë.Ấğ倪İЂҰक्र्तिृまẤğ倪İЂҰक्र्तिृまẤğ倪İЂҰक्र्तिृまẤğ倪İЂҰक्र्นั้ढूँ]",
 			"configuration.suggest.includeCompletionsWithSnippetText": "[FOYZG][นั้Ëñæþlë/ðïsæþlë sñïppët çømplëtïøñs frøm T§ §ërvër. Rëqµïrës µsïñg Tÿpë§çrïpt 4.3+ ïñ thë wørkspæçë.Ấğ倪İЂҰक्र्तिृまẤğ倪İЂҰक्र्तिृまẤğ倪İЂҰक्र्तिृนั้ढूँ]",
-			"configuration.suggest.jsdoc.generateReturns": "[B0LtA][นั้Ëñæþlë/ðïsæþlë gëñërætïñg `@rëtµrñ` æññøtætïøñs før J§Ðøç tëmplætës. Rëqµïrës µsïñg Tÿpë§çrïpt 4.2+ ïñ thë wørkspæçë.Ấğ倪İЂҰक्र्तिृまẤğ倪İЂҰक्र्तिृまẤğ倪İЂҰक्र्तिृまẤğ倪İЂนั้ढूँ]",
+			"configuration.suggest.jsdoc.generateReturns": "[B0LtA][นั้Ëñæþlë/ðïsæþlë gëñërætïñg `@rëtµrñs` æññøtætïøñs før J§Ðøç tëmplætës. Rëqµïrës µsïñg Tÿpë§çrïpt 4.2+ ïñ thë wørkspæçë.Ấğ倪İЂҰक्र्तिृまẤğ倪İЂҰक्र्तिृまẤğ倪İЂҰक्र्तिृまẤğ倪İЂนั้ढूँ]",
 			"configuration.suggest.names": "[PqEgr][นั้Ëñæþlë/ðïsæþlë ïñçlµðïñg µñïqµë ñæmës frøm thë fïlë ïñ Jævæ§çrïpt sµggëstïøñs. Ñøtë thæt ñæmë sµggëstïøñs ærë ælwæÿs ðïsæþlëð ïñ Jævæ§çrïpt çøðë thæt ïs sëmæñtïçællÿ çhëçkëð µsïñg `@ts-çhëçk` ør `çhëçkJs`.Ấğ倪İЂҰक्र्तिृまẤğ倪İЂҰक्र्तिृまẤğ倪İЂҰक्र्तिृまẤğ倪İЂҰक्र्तिृまẤğ倪İЂҰक्र्तिृまẤğ倪İЂҰक्र्तिृนั้ढूँ]",
 			"configuration.suggest.paths": "[xpOKw][นั้Ëñæþlë/ðïsæþlë sµggëstïøñs før pæths ïñ ïmpørt stætëmëñts æñð rëqµïrë çælls.Ấğ倪İЂҰक्र्तिृまẤğ倪İЂҰक्र्तिृまẤğนั้ढूँ]",
 			"configuration.surveys.enabled": "[NZa8S][นั้Ëñæþlëð/ðïsæþlë øççæsïøñæl sµrvëÿs thæt hëlp µs ïmprøvë V§ Çøðë's Jævæ§çrïpt æñð Tÿpë§çrïpt sµppørt.Ấğ倪İЂҰक्र्तिृまẤğ倪İЂҰक्र्तिृまẤğ倪İЂҰक्र्तिृนั้ढूँ]",
@@ -239,6 +244,7 @@
 			"inlayHints.parameterNames.literals": "[fTPjf][นั้Ëñæþlë pæræmëtër ñæmë hïñts øñlÿ før lïtëræl ærgµmëñts.Ấğ倪İЂҰक्र्तिृまẤğ倪İЂҰक्นั้ढूँ]",
 			"inlayHints.parameterNames.none": "[ouEpN][นั้Ðïsæþlë pæræmëtër ñæmë hïñts.Ấğ倪İЂҰक्र्तिृนั้ढूँ]",
 			"javascript.format.enable": "[ujzaz][นั้Ëñæþlë/ðïsæþlë ðëfæµlt Jævæ§çrïpt førmættër.Ấğ倪İЂҰक्र्तिृまẤğ倪İนั้ढूँ]",
+			"javascript.preferences.jsxAttributeCompletionStyle.auto": "[wSSlF][นั้Ïñsërt `={}` ør `=\"\"` æftër ættrïþµtë ñæmës þæsëð øñ thë prøp tÿpë. §ëë `jævæsçrïpt.prëfërëñçës.qµøtë§tÿlë` tø çøñtrøl thë tÿpë øf qµøtës µsëð før strïñg ættrïþµtës.Ấğ倪İЂҰक्र्तिृまẤğ倪İЂҰक्र्तिृまẤğ倪İЂҰक्र्तिृまẤğ倪İЂҰक्र्तिृまẤğ倪İЂҰक्र्นั้ढूँ]",
 			"javascript.referencesCodeLens.enabled": "[Mg9bn][นั้Ëñæþlë/ðïsæþlë rëfërëñçës Çøðë£ëñs ïñ Jævæ§çrïpt fïlës.Ấğ倪İЂҰक्र्तिृまẤğ倪İЂҰक्นั้ढूँ]",
 			"javascript.referencesCodeLens.showOnAllFunctions": "[xLRv2][นั้Ëñæþlë/ðïsæþlë rëfërëñçës Çøðë£ëñs øñ æll fµñçtïøñs ïñ Jævæ§çrïpt fïlës.Ấğ倪İЂҰक्र्तिृまẤğ倪İЂҰक्र्तिृまẤนั้ढूँ]",
 			"javascript.suggestionActions.enabled": "[kt53x][นั้Ëñæþlë/ðïsæþlë sµggëstïøñ ðïægñøstïçs før Jævæ§çrïpt fïlës ïñ thë ëðïtør.Ấğ倪İЂҰक्र्तिृまẤğ倪İЂҰक्र्तिृまẤนั้ढूँ]",
@@ -270,10 +276,13 @@
 			"typescript.preferences.includePackageJsonAutoImports.off": "[8XOtt][นั้Ñëvër sëærçh ðëpëñðëñçïës.Ấğ倪İЂҰक्र्นั้ढूँ]",
 			"typescript.preferences.includePackageJsonAutoImports.on": "[RK2yZ][นั้Ælwæÿs sëærçh ðëpëñðëñçïës.Ấğ倪İЂҰक्र्तिृนั้ढूँ]",
 			"typescript.preferences.jsxAttributeCompletionStyle": "[NDoXW][นั้Prëfërrëð stÿlë før J§X ættrïþµtë çømplëtïøñs.Ấğ倪İЂҰक्र्तिृまẤğ倪İนั้ढूँ]",
-			"typescript.preferences.jsxAttributeCompletionStyle.auto": "[mRv9v][นั้Ïñsërt `={}` ør `=\"\"` æftër ættrïþµtë ñæmës þæsëð øñ thë prøp tÿpë.Ấğ倪İЂҰक्र्तिृまẤğ倪İЂҰक्र्तिृนั้ढूँ]",
+			"typescript.preferences.jsxAttributeCompletionStyle.auto": "[mRv9v][นั้Ïñsërt `={}` ør `=\"\"` æftër ættrïþµtë ñæmës þæsëð øñ thë prøp tÿpë. §ëë `tÿpësçrïpt.prëfërëñçës.qµøtë§tÿlë` tø çøñtrøl thë tÿpë øf qµøtës µsëð før strïñg ættrïþµtës.Ấğ倪İЂҰक्र्तिृまẤğ倪İЂҰक्र्तिृまẤğ倪İЂҰक्र्तिृまẤğ倪İЂҰक्र्तिृまẤğ倪İЂҰक्र्นั้ढूँ]",
 			"typescript.preferences.jsxAttributeCompletionStyle.braces": "[ztTX8][นั้Ïñsërt `={}` æftër ættrïþµtë ñæmës.Ấğ倪İЂҰक्र्तिृまนั้ढूँ]",
 			"typescript.preferences.jsxAttributeCompletionStyle.none": "[gXIj7][นั้Øñlÿ ïñsërt ættrïþµtë ñæmës.Ấğ倪İЂҰक्र्तिृนั้ढूँ]",
-			"typescript.preferences.quoteStyle": "[cXFv7][นั้Prëfërrëð qµøtë stÿlë tø µsë før qµïçk fïxës: `sïñglë` qµøtës, `ðøµþlë` qµøtës, ør `æµtø` ïñfër qµøtë tÿpë frøm ëxïstïñg ïmpørts.Ấğ倪İЂҰक्र्तिृまẤğ倪İЂҰक्र्तिृまẤğ倪İЂҰक्र्तिृまẤğ倪İЂҰक्र्นั้ढूँ]",
+			"typescript.preferences.quoteStyle": "[cXFv7][นั้Prëfërrëð qµøtë stÿlë tø µsë før qµïçk fïxës.Ấğ倪İЂҰक्र्तिृまẤğ倪İนั้ढूँ]",
+			"typescript.preferences.quoteStyle.auto": "[fVRil][นั้Ïñfër qµøtë tÿpë frøm ëxïstïñg çøðëẤğ倪İЂҰक्र्तिृまนั้ढूँ]",
+			"typescript.preferences.quoteStyle.double": "[5G00i][นั้Ælwæÿs µsë ðøµþlë qµøtës: `\"`Ấğ倪İЂҰक्र्तिृนั้ढूँ]",
+			"typescript.preferences.quoteStyle.single": "[KLxd1][นั้Ælwæÿs µsë sïñglë qµøtës: `'`Ấğ倪İЂҰक्र्तिृนั้ढूँ]",
 			"typescript.preferences.renameShorthandProperties.deprecationMessage": "[s4zkr][นั้Thë sëttïñg 'tÿpësçrïpt.prëfërëñçës.rëñæmë§hørthæñðPrøpërtïës' hæs þëëñ ðëprëçætëð ïñ fævør øf 'tÿpësçrïpt.prëfërëñçës.µsëÆlïæsësFørRëñæmës'Ấğ倪İЂҰक्र्तिृまẤğ倪İЂҰक्र्तिृまẤğ倪İЂҰक्र्तिृまẤğ倪İЂҰक्र्तिृまนั้ढूँ]",
 			"typescript.preferences.useAliasesForRenames": "[fPELs][นั้Ëñæþlë/ðïsæþlë ïñtrøðµçïñg ælïæsës før øþjëçt shørthæñð prøpërtïës ðµrïñg rëñæmës. Rëqµïrës µsïñg Tÿpë§çrïpt 3.4 ør ñëwër ïñ thë wørkspæçë.Ấğ倪İЂҰक्र्तिृまẤğ倪İЂҰक्र्तिृまẤğ倪İЂҰक्र्तिृまẤğ倪İЂҰक्र्तिृまนั้ढूँ]",
 			"typescript.problemMatchers.tsc.label": "[ohUod][นั้Tÿpë§çrïpt prøþlëmsẤğ倪İЂҰक्นั้ढूँ]",
