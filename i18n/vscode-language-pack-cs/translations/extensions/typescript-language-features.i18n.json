@@ -8,141 +8,6 @@
 	],
 	"version": "1.0.0",
 	"contents": {
-		"dist/languageFeatures/codeLens/baseCodeLensProvider": {
-			"referenceErrorLabel": "Nepovedlo se určit odkazy."
-		},
-		"dist/languageFeatures/codeLens/implementationsCodeLens": {
-			"manyImplementationLabel": "Počet implementací: {0}",
-			"oneImplementationLabel": "1 implementace"
-		},
-		"dist/languageFeatures/codeLens/referencesCodeLens": {
-			"manyReferenceLabel": "Odkazy: {0}",
-			"oneReferenceLabel": "1 odkaz"
-		},
-		"dist/languageFeatures/completions": {
-			"acquiringTypingsDetail": "Získávají se definice typings pro IntelliSense.",
-			"acquiringTypingsLabel": "Získávají se definice typings...",
-			"selectCodeAction": "Vybrat akci kódu, která se má použít"
-		},
-		"dist/languageFeatures/directiveCommentCompletions": {
-			"ts-check": "Povolí sémantickou kontrolu v souboru JavaScriptu. Musí být na začátku souboru.",
-			"ts-expect-error": "Potlačí chyby @ts-check na dalším řádku souboru. Očekává, že bude existovat minimálně jedna.",
-			"ts-ignore": "Potlačí chyby @ts-check na dalším řádku souboru.",
-			"ts-nocheck": "Zakáže sémantickou kontrolu v souboru JavaScriptu. Musí být na začátku souboru."
-		},
-		"dist/languageFeatures/fileReferences": {
-			"error.noResource": "Operace vyhledání odkazů na soubory neproběhla úspěšně. Neposkytl se žádný prostředek.",
-			"error.unknownFile": "Operace vyhledání odkazů na soubory neproběhla úspěšně. Neznámý typ souboru",
-			"error.unsupportedLanguage": "Operace vyhledání odkazů na soubory neproběhla úspěšně. Nepodporovaný typ souboru",
-			"error.unsupportedVersion": "Operace vyhledání odkazů na soubory neproběhla úspěšně. Vyžaduje TypeScript 4.2+.",
-			"progress.title": "Vyhledávají se odkazy na soubory"
-		},
-		"dist/languageFeatures/fixAll": {
-			"autoFix.label": "Opravit vše",
-			"autoFix.missingImports.label": "Přidat všechny chybějící importy",
-			"autoFix.unused.label": "Odebrat veškerý nepoužívaný kód"
-		},
-		"dist/languageFeatures/jsDocCompletions": {
-			"typescript.jsDocCompletionItem.documentation": "Komentář JSDoc"
-		},
-		"dist/languageFeatures/organizeImports": {
-			"organizeImportsAction.title": "Uspořádat importy",
-			"sortImportsAction.title": "Seřadit importy"
-		},
-		"dist/languageFeatures/quickFix": {
-			"fixAllInFileLabel": "{0} (Opravit vše v souboru)"
-		},
-		"dist/languageFeatures/refactor": {
-			"extractConstant.disabled.reason": "Aktuální výběr nelze extrahovat.",
-			"extractConstant.disabled.title": "Extrahovat do konstanty",
-			"extractFunction.disabled.reason": "Aktuální výběr nelze extrahovat.",
-			"extractFunction.disabled.title": "Extrahovat do funkce",
-			"refactor.documentation.title": "Další informace o refaktorování JS/TS",
-			"refactoringFailed": "Refaktorování se nepodařilo použít."
-		},
-		"dist/languageFeatures/rename": {
-			"fileRenameFail": "Při přejmenovávání souboru došlo k chybě."
-		},
-		"dist/languageFeatures/tsconfig": {
-			"documentLink.tooltip": "Přejít na odkaz",
-			"openTsconfigExtendsModuleFail": "{0} se nepovedlo vyřešit jako modul"
-		},
-		"dist/languageFeatures/updatePathsOnRename": {
-			"accept.title": "Ano",
-			"always.title": "Vždy automaticky aktualizovat importy",
-			"moreFile": "...nezobrazuje se 1 další soubor",
-			"moreFiles": "...{0} dalších souborů není zobrazeno",
-			"never.title": "Nikdy automaticky neaktualizovat importy",
-			"prompt": "Chcete aktualizovat importy pro: {0}?",
-			"promptMoreThanOne": "Chcete aktualizovat importy pro následující soubory ({0})?",
-			"reject.title": "Ne",
-			"renameProgress.title": "Kontroluje se aktualizace importů JS/TS"
-		},
-		"dist/task/taskProvider": {
-			"badTsConfig": "Úloha TypeScriptu v souboru tasks.json obsahuje čtyři zpětná lomítka (\\\\). V konfiguraci tsconfig úloh TypeScriptu se musí používat jedno dopředné lomítko (/).",
-			"buildAndWatchTscLabel": "kukátko – {0}",
-			"buildTscLabel": "sestavení – {0}"
-		},
-		"dist/tsServer/serverProcess.electron": {
-			"noServerFound": "Cesta {0} neodkazuje na platnou instalaci serveru tsserver. Místo toho se použije verze TypeScriptu v balíčku."
-		},
-		"dist/tsServer/versionManager": {
-			"allow": "Povolit",
-			"dismiss": "Zavřít",
-			"learnMore": "Další informace o správě verzí TypeScriptu",
-			"promptUseWorkspaceTsdk": "Tento pracovní prostor obsahuje verzi TypeScriptu. Chcete použít verzi TypeScriptu pracovního prostoru pro funkce jazyka TypeScript a JavaScript?",
-			"selectTsVersion": "Vyberte verzi TypeScriptu používanou pro funkce jazyka JavaScript a TypeScript.",
-			"suppress prompt": "Nikdy v tomto pracovním prostoru",
-			"useVSCodeVersionOption": "Použít verzi VS Code",
-			"useWorkspaceVersionOption": "Použít verzi pracovního prostoru"
-		},
-		"dist/typescriptServiceClient": {
-			"noServerFound": "Cesta {0} neodkazuje na platnou instalaci serveru tsserver. Místo toho se použije verze TypeScriptu v balíčku.",
-			"openTsServerLog.openFileFailedFailed": "Nepovedlo se otevřít soubor protokolu serveru TS.",
-			"serverDied": "Služba jazyka TypeScript se za posledních 5 minut pětkrát za sebou neočekávaně ukončila.",
-			"serverDiedAfterStart": "Služba jazyka TypeScript se ihned po spuštění pětkrát ukončila. Služba nebude restartována.",
-			"serverDiedOnce": "Služba jazyka TypeScript byla neočekávaně ukončena.",
-			"serverDiedReportIssue": "Nahlásit problém",
-			"serverExitedWithError": "Server jazyka TypeScript byl ukončen s chybou. Chybová zpráva: {0}",
-			"serverLoading.progress": "Inicializují se funkce jazyka JS/TS",
-			"typescript.openTsServerLog.enableAndReloadOption": "Povolit protokolování a restartovat server TS",
-			"typescript.openTsServerLog.loggingNotEnabled": "Protokolování serveru TS je vypnuté. Pokud chcete povolit protokolování, nastavte prosím typescript.tsserver.log a restartujte server TS.",
-			"typescript.openTsServerLog.noLogFile": "Server TS nezačal protokolovat.",
-			"usingOldTsVersion.detail": "Pracovní prostor používá starou verzi TypeScriptu ({0}).\r\n\r\nNež nahlásíte problém, aktualizujte prosím pracovní prostor tak, aby používal nejnovější stabilní verzi TypeScriptu, abyste měli jistotu, že chyba ještě nebyla neopravena.",
-			"usingOldTsVersion.title": "Aktualizujte si prosím verzi TypeScriptu"
-		},
-		"dist/ui/intellisenseStatus": {
-			"pending.detail": "Načítání stavu IntelliSense",
-			"resolved.command.title.createJsconfig": "Vytvořit jsconfig",
-			"resolved.command.title.createTsconfig": "Vytvořit tsconfig",
-			"resolved.command.title.open": "Otevřít konfigurační soubor",
-			"resolved.detail.noJsConfig": "Žádný jsconfig",
-			"resolved.detail.noTsConfig": "Žádný tsconfig",
-			"statusItem.name": "Stav IntelliSense JS/TS",
-			"syntaxOnly.command.title.learnMore": "Další informace",
-			"syntaxOnly.detail": "IntelliSense není k dispozici pro celý projekt",
-			"syntaxOnly.text": "Dílčí režim"
-		},
-		"dist/ui/versionStatus": {
-			"versionStatus.command": "Vyberte verzi",
-			"versionStatus.detail": "Verze TypeScriptu",
-			"versionStatus.name": "Verze TypeScriptu"
-		},
-		"dist/utils/api": {
-			"invalidVersion": "neplatná verze"
-		},
-		"dist/utils/logger": {
-			"channelName": "TypeScript"
-		},
-		"dist/utils/tsconfig": {
-			"typescript.configureJsconfigQuickPick": "Konfigurovat soubor jsconfig.js",
-			"typescript.configureTsconfigQuickPick": "Konfigurovat soubor tsconfig.js",
-			"typescript.noJavaScriptProjectConfig": "Soubor není součástí projektu JavaScript. Další informace najdete v [dokumentaci jsconfig.json]({0}).",
-			"typescript.noTypeScriptProjectConfig": "Soubor není součástí projektu TypeScript. Další informace najdete v [dokumentaci tsconfig.json]({0}).",
-			"typescript.projectConfigCouldNotGetInfo": "Nepovedlo se určit projekt TypeScriptu nebo JavaScriptu.",
-			"typescript.projectConfigNoWorkspace": "Pokud chcete použít projekt TypeScriptu nebo JavaScriptu, otevřete prosím složku ve VS Code.",
-			"typescript.projectConfigUnsupportedFile": "Nepovedlo se určit projekt TypeScriptu nebo JavaScriptu. Nepodporovaný typ souboru"
-		},
 		"package": {
 			"codeActions.refactor.extract.constant.description": "Extrahovat výraz do konstanty",
 			"codeActions.refactor.extract.constant.title": "Extrahovat konstantu",
@@ -177,6 +42,7 @@
 			"configuration.inlayHints.parameterTypes.enabled": "Povolí nebo zakáže vložené tipy pro implicitní typy parametrů:\r\n```typescript\r\n\r\nel.addEventListener('click', e /* :MouseEvent */ => ...)\r\n \r\n```\r\nVyžaduje, aby se v pracovním prostoru použil TypeScript 4.4+.",
 			"configuration.inlayHints.propertyDeclarationTypes.enabled": "Povolí nebo zakáže vložené tipy pro implicitní tipy v deklaracích vlastností:\r\n```typescript\r\n\r\nclass Foo {\r\n\tprop /* :number */ = Date.now();\r\n}\r\n \r\n```\r\nVyžaduje, aby se v pracovním prostoru použil TypeScript 4.4+.",
 			"configuration.inlayHints.variableTypes.enabled": "Povolí nebo zakáže vložené tipy pro implicitní typy proměnných:\r\n```typescript\r\n\r\nconst foo /* :number */ = Date.now();\r\n \r\n```\r\nVyžaduje, aby se v pracovním prostoru použil TypeScript 4.4+.",
+			"configuration.inlayHints.variableTypes.suppressWhenTypeMatchesName": "Potlačit typové nápovědy u proměnných, jejichž název je shodný s názvem typu. Vyžaduje použití TypeScriptu 4.8+ v pracovním prostoru.",
 			"configuration.javascript.checkJs.checkJs.deprecation": "Toto nastavení je zastaralé a místo něj se používá js/ts.implicitProjectConfig.checkJs.",
 			"configuration.javascript.checkJs.experimentalDecorators.deprecation": "Toto nastavení je zastaralé a místo něj se používá js/ts.implicitProjectConfig.experimentalDecorators.",
 			"configuration.suggest.autoImports": "Umožňuje povolit nebo zakázat návrhy automatického importu.",
@@ -188,7 +54,7 @@
 			"configuration.suggest.includeCompletionsWithSnippetText": "Umožňuje povolit nebo zakázat dokončování fragmentů z TS Serveru. Vyžaduje, aby se v pracovním prostoru používal TypeScript 4.3+.",
 			"configuration.suggest.jsdoc.generateReturns": "Umožňuje povolit nebo zakázat generování poznámek @returns pro šablony JSDoc. Vyžaduje, aby se v pracovním prostoru použil TypeScript 4.2+.",
 			"configuration.suggest.names": "Umožňuje povolit nebo zakázat zahrnutí jedinečných názvů ze souboru do návrhů JavaScriptu. Poznámka: Návrhy názvů jsou vždy zakázány v kódu JavaScriptu, který je sémanticky kontrolován pomocí @ts-check nebo checkJs.",
-			"configuration.suggest.objectLiteralMethodSnippets.enabled": "Enable/disable snippet completions for methods in object literals. Requires using TypeScript 4.7+ in the workspace",
+			"configuration.suggest.objectLiteralMethodSnippets.enabled": "Umožňuje povolit nebo zakázat dokončování pro metody v objektových literálech. Vyžaduje, aby se v pracovním prostoru používal TypeScript 4.7+.",
 			"configuration.suggest.paths": "Umožňuje povolit nebo zakázat návrhy pro cesty v příkazech importu a vyžadovat volání.",
 			"configuration.surveys.enabled": "Umožňuje povolit nebo zakázat příležitostné průzkumy, které nám pomůžou vylepšit podporu JavaScriptu a TypeScriptu ve VS Code.",
 			"configuration.tsserver.experimental.enableProjectDiagnostics": "(Experimentální) Povolí zasílání zpráv o chybách v rámci celého projektu.",
@@ -258,10 +124,12 @@
 			"typescript.enablePromptUseWorkspaceTsdk": "Umožňuje dotazovat se uživatelů na použití verze TypeScript nakonfigurované v pracovním prostoru pro Intellisense.",
 			"typescript.findAllFileReferences": "Vyhledat odkazy na soubory",
 			"typescript.format.enable": "Umožňuje povolit nebo zakázat výchozí formátovací modul TypeScriptu.",
+			"typescript.goToSourceDefinition": "Přejít na definici zdroje",
 			"typescript.implementationsCodeLens.enabled": "Umožňuje povolit nebo zakázat implementace CodeLens. Tato funkce CodeLens zobrazí implementátory rozhraní.",
 			"typescript.locale": "Nastaví národní prostředí, které se používá k hlášení chyb JavaScriptu a TypeScriptu. Ve výchozím nastavení se používá národní prostředí VS Code.",
 			"typescript.npm": "Specifies the path to the npm executable used for [Automatic Type Acquisition](https://code.visualstudio.com/docs/nodejs/working-with-javascript#_typings-and-automatic-type-acquisition).",
 			"typescript.openTsServerLog.title": "Otevřít protokol serveru TS",
+			"typescript.preferences.autoImportFileExcludePatterns": "Zadejte vzory glob souborů, které se mají vyloučit z automatických importů. Vyžaduje v pracovním prostoru použití TypeScriptu 4.8 nebo novějšího.",
 			"typescript.preferences.importModuleSpecifier": "Upřednostňovaný styl cesty pro automatické importy",
 			"typescript.preferences.importModuleSpecifier.nonRelative": "Upřednostňuje import, který není relativní, na základě hodnot baseUrl nebo paths nakonfigurovaných v souboru jsconfig.json/tsconfig.json.",
 			"typescript.preferences.importModuleSpecifier.projectRelative": "Upřednostňuje import, který není relativní, pouze v případě, že cesta relativního importu opustí adresář balíčku nebo projektu. Vyžaduje použití TypeScriptu 4.2 nebo vyšší verze v pracovním prostoru.",
@@ -290,9 +158,11 @@
 			"typescript.problemMatchers.tscWatch.label": "Problémy s TypeScriptem (režim sledování)",
 			"typescript.referencesCodeLens.enabled": "Umožňuje povolit nebo zakázat odkazy CodeLens v souborech TypeScriptu.",
 			"typescript.referencesCodeLens.showOnAllFunctions": "Umožňuje povolit nebo zakázat odkazy CodeLens pro všechny funkce v souborech TypeScriptu.",
+			"typescript.removeUnusedImports": "Odebrat nepoužívané importy",
 			"typescript.reportStyleChecksAsWarnings": "Hlásit kontroly stylu jako upozornění",
 			"typescript.restartTsServer": "Restartovat server TS",
 			"typescript.selectTypeScriptVersion.title": "Vybrat verzi TypeScriptu...",
+			"typescript.sortImports": "Seřadit importy",
 			"typescript.suggest.enabled": "Umožňuje povolit nebo zakázat návrhy automatického dokončování.",
 			"typescript.suggestionActions.enabled": "Umožňuje povolit nebo zakázat diagnostiku návrhů pro soubory TypeScriptu v editoru.",
 			"typescript.tsc.autoDetect": "Řídí automatické zjišťování úloh tsc.",
@@ -315,7 +185,192 @@
 			"typescript.workspaceSymbols.scope.allOpenProjects": "Hledat symboly ve všech otevřených projektech JavaScriptu nebo TypeScriptu. Vyžaduje, aby se v pracovním prostoru používal TypeScript 3.9 nebo novější.",
 			"typescript.workspaceSymbols.scope.currentProject": "Hledat symboly pouze v aktuálním projektu JavaScriptu nebo TypeScriptu",
 			"virtualWorkspaces": "Ve virtuálních pracovních prostorech se nepodporuje řešení a vyhledávání odkazů v souborech.",
+			"walkthroughs.nodejsWelcome.debugJsFile.altText": "Pomocí Visual Studio Code můžete ladit a spouštět kód JavaScriptu v Node.js.",
+			"walkthroughs.nodejsWelcome.debugJsFile.description": "Po instalaci Node.js můžete v terminálu spouštět javascriptové programy tak, že zadáte node your-file-name.js\r\nDalším snadným způsobem, jak spouštět programy Node.js, je použití ladicího programu VS Code, který umožňuje spouštět kód, pozastavit se v různých bodech a pomoct vám pochopit, co se děje krok za krokem.\r\n[Spustit ladění](command:javascript-walkthrough.commands.debugJsFile)",
+			"walkthroughs.nodejsWelcome.debugJsFile.title": "Spuštění a ladění JavaScriptu",
+			"walkthroughs.nodejsWelcome.description": "Využijte Visual Studio Code prvotřídního javascriptového prostředí na maximum.",
+			"walkthroughs.nodejsWelcome.downloadNode.forLinux.description": "Node.js je snadný způsob, jak spouštět javascriptový kód. Můžete ho použít k rychlému vytváření aplikací a serverů příkazového řádku. Součástí je také npm, správce balíčků, který usnadňuje opakované použití a sdílení javascriptového kódu.\r\n[Instalace Node.js](https://nodejs.org/en/download/package-manager/)",
+			"walkthroughs.nodejsWelcome.downloadNode.forLinux.title": "Nainstalovat Node.js",
+			"walkthroughs.nodejsWelcome.downloadNode.forMacOrWindows.description": "Node.js je snadný způsob, jak spouštět javascriptový kód. Můžete ho použít k rychlému vytváření aplikací a serverů příkazového řádku. Součástí je také npm, správce balíčků, který usnadňuje opakované použití a sdílení javascriptového kódu.\r\n[Nainstalovat Node.js](https://nodejs.org/en/download/)",
+			"walkthroughs.nodejsWelcome.downloadNode.forMacOrWindows.title": "Nainstalovat Node.js",
+			"walkthroughs.nodejsWelcome.learnMoreAboutJs.altText": "Další informace o JavaScriptu a Node.js najdete v Visual Studio Code.",
+			"walkthroughs.nodejsWelcome.learnMoreAboutJs.description": "Chcete se blíže seznámit s JavaScriptem, Node.js a VS Code? Určitě se podívejte na naše dokumenty!\r\nMáme spoustu prostředků pro učení [JavaScript](https://code.visualstudio.com/docs/nodejs/working-with-javascript) a [Node.js](https://code.visualstudio.com/docs/nodejs/nodejs-tutorial).\r\n\r\n[Další informace](https://code.visualstudio.com/docs/nodejs/nodejs-tutorial)",
+			"walkthroughs.nodejsWelcome.learnMoreAboutJs.title": "Prozkoumat více",
+			"walkthroughs.nodejsWelcome.makeJsFile.description": "Pojďme napsat náš první javascriptový soubor. Budeme muset vytvořit nový soubor a uložit ho s příponou „.js“ na konci názvu souboru.\r\n[Vytvoření javascriptového souboru](command:javascript-walkthrough.commands.createJsFile)",
+			"walkthroughs.nodejsWelcome.makeJsFile.title": "Vytvoření javascriptového souboru",
+			"walkthroughs.nodejsWelcome.title": "Začínáme s JavaScriptem a Node.js",
 			"workspaceTrust": "Pokud se používá verze pracovního prostoru, rozšíření vyžaduje vztah důvěryhodnosti pracovního prostoru, protože spouští kód určený pracovním prostorem."
+		},
+		"dist/tsServer/serverProcess.electron": {
+			"noServerFound": "Cesta {0} neodkazuje na platnou instalaci serveru tsserver. Místo toho se použije verze TypeScriptu v balíčku."
+		},
+		"dist/tsServer/versionProvider.electron": {
+			"noBundledServerFound": "VS Code's tsserver was deleted by another application such as a misbehaving virus detection tool. Please reinstall VS Code."
+		},
+		"dist/ui/jsNodeWalkthrough.electron": {
+			"noNodeInstallFound": "Na tomto počítači se nám nepovedlo najít Node.js. Pokud jste ji právě nainstalovali, možná budete muset znovu načíst VS Code.",
+			"nodeNotFoundDebugAnyway": "Přesto zkusit ladění",
+			"nodeNotFoundDismissDialog": "Zavřít",
+			"reloadWindowForNode": "Znovu načíst VS Code"
+		},
+		"dist/task/taskProvider": {
+			"badTsConfig": "Úloha TypeScriptu v souboru tasks.json obsahuje čtyři zpětná lomítka (\\\\). V konfiguraci tsconfig úloh TypeScriptu se musí používat jedno dopředné lomítko (/).",
+			"buildAndWatchTscLabel": "kukátko – {0}",
+			"buildTscLabel": "sestavení – {0}"
+		},
+		"dist/languageFeatures/tsconfig": {
+			"documentLink.tooltip": "Přejít na odkaz",
+			"openTsconfigExtendsModuleFail": "{0} se nepovedlo vyřešit jako modul"
+		},
+		"dist/utils/api": {
+			"invalidVersion": "neplatná verze"
+		},
+		"dist/tsServer/versionProvider": {
+			"couldNotLoadTsVersion": "Could not load the TypeScript version at this path"
+		},
+		"dist/utils/tsconfig": {
+			"typescript.configureJsconfigQuickPick": "Konfigurovat soubor jsconfig.js",
+			"typescript.configureTsconfigQuickPick": "Konfigurovat soubor tsconfig.js",
+			"typescript.noJavaScriptProjectConfig": "Soubor není součástí projektu JavaScript. Další informace najdete v [dokumentaci jsconfig.json]({0}).",
+			"typescript.noTypeScriptProjectConfig": "Soubor není součástí projektu TypeScript. Další informace najdete v [dokumentaci tsconfig.json]({0}).",
+			"typescript.projectConfigCouldNotGetInfo": "Nepovedlo se určit projekt TypeScriptu nebo JavaScriptu.",
+			"typescript.projectConfigNoWorkspace": "Pokud chcete použít projekt TypeScriptu nebo JavaScriptu, otevřete prosím složku ve VS Code.",
+			"typescript.projectConfigUnsupportedFile": "Nepovedlo se určit projekt TypeScriptu nebo JavaScriptu. Nepodporovaný typ souboru"
+		},
+		"dist/typescriptServiceClient": {
+			"noServerFound": "Cesta {0} neodkazuje na platnou instalaci serveru tsserver. Místo toho se použije verze TypeScriptu v balíčku.",
+			"openTsServerLog.openFileFailedFailed": "Nepovedlo se otevřít soubor protokolu serveru TS.",
+			"serverDiedFiveTimes": "Služba jazyka JS/TS selhala 5krát za posledních 5 minut.",
+			"serverDiedFiveTimesWithPlugins": "Služba jazyka JS/TS selhala 5krát za posledních 5 minut.\r\nPříčinou může být modul plug-in, kterým přispělo jedno z těchto rozšíření: {0}",
+			"serverDiedImmediately": "Služba jazyka JS/TS okamžitě 5krát selhala. Služba nebude restartována.",
+			"serverDiedImmediatelyWithPlugins": "Služba jazyka JS/TS okamžitě 5krát selhala. Služba nebude restartována.\r\nPříčinou může být modul plug-in, kterým přispělo jedno z těchto rozšíření: {0}",
+			"serverDiedOnce": "Došlo k chybě služby jazyka JS/TS.",
+			"serverDiedOnceWithPlugins": "Došlo k chybě služby jazyka JS/TS.\r\nPříčinou může být modul plug-in, kterým přispělo jedno z těchto rozšíření: {0}",
+			"serverDiedReportIssue": "Nahlásit problém",
+			"serverExitedWithError": "Server jazyka TypeScript byl ukončen s chybou. Chybová zpráva: {0}",
+			"serverLoading.progress": "Inicializují se funkce jazyka JS/TS",
+			"typescript.openTsServerLog.enableAndReloadOption": "Povolit protokolování a restartovat server TS",
+			"typescript.openTsServerLog.loggingNotEnabled": "Protokolování serveru TS je vypnuté. Pokud chcete povolit protokolování, nastavte prosím typescript.tsserver.log a restartujte server TS.",
+			"typescript.openTsServerLog.noLogFile": "Server TS nezačal protokolovat.",
+			"usingOldTsVersion.detail": "Pracovní prostor používá starou verzi TypeScriptu ({0}).\r\n\r\nNež nahlásíte problém, aktualizujte prosím pracovní prostor tak, aby používal nejnovější stabilní verzi TypeScriptu, abyste měli jistotu, že chyba ještě nebyla neopravena.",
+			"usingOldTsVersion.title": "Aktualizujte si prosím verzi TypeScriptu"
+		},
+		"dist/ui/intellisenseStatus": {
+			"pending.detail": "Načítání stavu IntelliSense",
+			"resolved.command.title.createJsconfig": "Vytvořit jsconfig",
+			"resolved.command.title.createTsconfig": "Vytvořit tsconfig",
+			"resolved.command.title.open": "Otevřít konfigurační soubor",
+			"resolved.detail.noJsConfig": "Žádný jsconfig",
+			"resolved.detail.noOpenedFolders": "Žádné otevřené složky",
+			"resolved.detail.noTsConfig": "Žádný tsconfig",
+			"resolved.detail.notInOpenedFolder": "Soubor není součástí otevřených složek.",
+			"statusItem.name": "Stav IntelliSense JS/TS",
+			"syntaxOnly.command.title.learnMore": "Další informace",
+			"syntaxOnly.detail": "IntelliSense není k dispozici pro celý projekt",
+			"syntaxOnly.text": "Dílčí režim"
+		},
+		"dist/ui/versionStatus": {
+			"versionStatus.command": "Vyberte verzi",
+			"versionStatus.detail": "Verze TypeScriptu",
+			"versionStatus.name": "Verze TypeScriptu"
+		},
+		"dist/utils/logLevelMonitor": {
+			"typescript.extendedLogging.disableLogging": "Zakázat protokolování",
+			"typescript.extendedLogging.doNotShowAgain": "Znovu nezobrazovat",
+			"typescript.extendedLogging.isEnabled": "Protokolování serveru TS je aktuálně povolené, což může mít vliv na výkon."
+		},
+		"dist/languageFeatures/updatePathsOnRename": {
+			"accept.title": "Ano",
+			"always.title": "Vždy automaticky aktualizovat importy",
+			"moreFile": "...nezobrazuje se 1 další soubor",
+			"moreFiles": "...{0} dalších souborů není zobrazeno",
+			"never.title": "Nikdy automaticky neaktualizovat importy",
+			"prompt": "Chcete aktualizovat importy pro: {0}?",
+			"promptMoreThanOne": "Chcete aktualizovat importy pro následující soubory ({0})?",
+			"reject.title": "Ne",
+			"renameProgress.title": "Kontroluje se aktualizace importů JS/TS"
+		},
+		"dist/languageFeatures/completions": {
+			"acquiringTypingsDetail": "Získávají se definice typings pro IntelliSense.",
+			"acquiringTypingsLabel": "Získávají se definice typings...",
+			"selectCodeAction": "Vybrat akci kódu, která se má použít"
+		},
+		"dist/languageFeatures/directiveCommentCompletions": {
+			"ts-check": "Povolí sémantickou kontrolu v souboru JavaScriptu. Musí být na začátku souboru.",
+			"ts-expect-error": "Potlačí chyby @ts-check na dalším řádku souboru. Očekává, že bude existovat minimálně jedna.",
+			"ts-ignore": "Potlačí chyby @ts-check na dalším řádku souboru.",
+			"ts-nocheck": "Zakáže sémantickou kontrolu v souboru JavaScriptu. Musí být na začátku souboru."
+		},
+		"dist/languageFeatures/fileReferences": {
+			"error.noResource": "Operace vyhledání odkazů na soubory neproběhla úspěšně. Neposkytl se žádný prostředek.",
+			"error.unknownFile": "Operace vyhledání odkazů na soubory neproběhla úspěšně. Neznámý typ souboru",
+			"error.unsupportedLanguage": "Operace vyhledání odkazů na soubory neproběhla úspěšně. Nepodporovaný typ souboru",
+			"error.unsupportedVersion": "Operace vyhledání odkazů na soubory neproběhla úspěšně. Vyžaduje TypeScript 4.2+.",
+			"progress.title": "Vyhledávají se odkazy na soubory"
+		},
+		"dist/languageFeatures/fixAll": {
+			"autoFix.label": "Opravit všechny opravitelné problémy JS/TS",
+			"autoFix.missingImports.label": "Přidat všechny chybějící importy",
+			"autoFix.unused.label": "Odebrat veškerý nepoužívaný kód"
+		},
+		"dist/languageFeatures/hover": {
+			"loadingPrefix": "(načítání...)"
+		},
+		"dist/languageFeatures/jsDocCompletions": {
+			"typescript.jsDocCompletionItem.documentation": "Komentář JSDoc"
+		},
+		"dist/languageFeatures/organizeImports": {
+			"error.organizeImports.noResource": "Importy se nepodařilo uspořádat. Nebyl poskytnut žádný prostředek.",
+			"error.organizeImports.unknownFile": "Importy se nepodařilo uspořádat. Neznámý typ souboru.",
+			"organizeImportsAction.title": "Uspořádat importy",
+			"removeUnusedImportsAction.title": "Odebrat nepoužívané importy",
+			"sortImportsAction.title": "Seřadit importy"
+		},
+		"dist/languageFeatures/quickFix": {
+			"fixAllInFileLabel": "{0} (Opravit vše v souboru)"
+		},
+		"dist/languageFeatures/refactor": {
+			"extractConstant.disabled.reason": "Aktuální výběr nelze extrahovat.",
+			"extractConstant.disabled.title": "Extrahovat do konstanty",
+			"extractFunction.disabled.reason": "Aktuální výběr nelze extrahovat.",
+			"extractFunction.disabled.title": "Extrahovat do funkce",
+			"refactor.documentation.title": "Další informace o refaktorování JS/TS",
+			"refactoringFailed": "Refaktorování se nepodařilo použít."
+		},
+		"dist/languageFeatures/rename": {
+			"fileRenameFail": "Při přejmenovávání souboru došlo k chybě."
+		},
+		"dist/languageFeatures/sourceDefinition": {
+			"error.noReferences": "Nenašly se žádné definice.",
+			"error.noResource": "Nepovedlo se přejít na definici zdroje. Neposkytl se žádný prostředek.",
+			"error.unknownFile": "Nepovedlo se přejít na definici zdroje. Neznámý typ souboru.",
+			"error.unsupportedLanguage": "Nepovedlo se přejít na definici zdroje. Nepodporovaný typ souboru.",
+			"error.unsupportedVersion": "Nepovedlo se přejít na definici zdroje. Vyžaduje se TypeScript 4.7+.",
+			"progress.title": "Hledání definic zdrojů"
+		},
+		"dist/languageFeatures/codeLens/implementationsCodeLens": {
+			"manyImplementationLabel": "Počet implementací: {0}",
+			"oneImplementationLabel": "1 implementace"
+		},
+		"dist/languageFeatures/codeLens/referencesCodeLens": {
+			"manyReferenceLabel": "Odkazy: {0}",
+			"oneReferenceLabel": "1 odkaz"
+		},
+		"dist/tsServer/versionManager": {
+			"allow": "Povolit",
+			"dismiss": "Zavřít",
+			"learnMore": "Další informace o správě verzí TypeScriptu",
+			"promptUseWorkspaceTsdk": "Tento pracovní prostor obsahuje verzi TypeScriptu. Chcete použít verzi TypeScriptu pracovního prostoru pro funkce jazyka TypeScript a JavaScript?",
+			"selectTsVersion": "Vyberte verzi TypeScriptu používanou pro funkce jazyka JavaScript a TypeScript.",
+			"suppress prompt": "Nikdy v tomto pracovním prostoru",
+			"useVSCodeVersionOption": "Použít verzi VS Code",
+			"useWorkspaceVersionOption": "Použít verzi pracovního prostoru"
+		},
+		"dist/utils/logger": {
+			"channelName": "TypeScript"
+		},
+		"dist/languageFeatures/codeLens/baseCodeLensProvider": {
+			"referenceErrorLabel": "Nepovedlo se určit odkazy."
 		}
 	}
 }

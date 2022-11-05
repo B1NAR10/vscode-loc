@@ -8,9 +8,6 @@
 	],
 	"version": "1.0.0",
 	"contents": {
-		"dist\\node/abbreviationActions": {
-			"wrapWithAbbreviationPrompt": "Entrer une abréviation"
-		},
 		"package": {
 			"command.balanceIn": "Equilibrer (vers l'intérieur)",
 			"command.balanceOut": "Equilibrer (vers l'extérieur)",
@@ -71,8 +68,12 @@
 			"emmetShowExpandedAbbreviation": "Affiche les abréviations Emmet développées en tant que suggestions.\r\nL'option \"inMarkupAndStylesheetFilesOnly\" s'applique aux syntaxes html, haml, jade, slim, xml, xsl, css, scss, sass, less et stylus.\r\nL'option \"always\" s'applique à toutes les parties du fichier indépendamment de la balise/du css.",
 			"emmetShowSuggestionsAsSnippets": "Si la valeur est 'true', les suggestions Emmet s'affichent sous forme d'extraits, ce qui vous permet de les ordonner conformément au paramètre '#editor.snippetSuggestions#'.",
 			"emmetSyntaxProfiles": "Définissez le profil pour la syntaxe spécifiée ou utilisez votre propre profil avec des règles spécifiques.",
-			"emmetTriggerExpansionOnTab": "Lorsqu’activé, les abréviations Emmet sont développées lorsque vous appuyez sur TAB.",
+			"emmetTriggerExpansionOnTab": "Quand cette option est activée, les abréviations Emmet sont développées quand vous appuyez sur TAB, même lorsque les complétions ne s’affichent pas. Si cette option est désactivée, les complétions qui s’affichent peuvent toujours être acceptées en appuyant sur TAB.",
+			"emmetUseInlineCompletions": "Si `true`, Emmet utilisera les complétions en ligne pour suggérer des extensions. Pour éviter que le fournisseur d'éléments de complétion non en ligne s'affiche aussi souvent lorsque ce paramètre est `true`, réglez `#editor.quickSuggestions#` sur `inline` ou `off` pour l'élément `autre`.",
 			"emmetVariables": "Variables à utiliser dans les extraits de code Emmet."
+		},
+		"dist\\node/abbreviationActions": {
+			"wrapWithAbbreviationPrompt": "Entrer une abréviation"
 		}
 	}
 }

@@ -8,9 +8,14 @@
 	],
 	"version": "1.0.0",
 	"contents": {
+		"package": {
+			"description": "Poskytuje funkce (pokročilá funkce IntelliSense, automatické opravy) v konfiguračních souborech, jako jsou například soubory nastavení, soubory spuštění a soubory doporučení rozšíření.",
+			"displayName": "Úpravy konfigurace"
+		},
 		"dist/configurationEditingMain": {
 			"cwd": "Aktuální pracovní adresář spouštěče úloh při spuštění",
 			"defaultBuildTask": "Název výchozí úlohy sestavení. Pokud neexistuje žádná výchozí úloha sestavení, zobrazí se nabídka rychlého výběru pro zvolení úlohy sestavení.",
+			"extensionInstallFolder": "Cesta, kde je nainstalováno rozšíření.",
 			"file": "Aktuálně otevřený soubor",
 			"fileBasename": "Základní název aktuálně otevřeného souboru",
 			"fileBasenameNoExtension": "Základní název aktuálně otevřeného souboru bez přípony souboru",
@@ -23,9 +28,6 @@
 			"selectedText": "Aktuálně vybraný text v aktivním souboru",
 			"workspaceFolder": "Cesta ke složce otevřené ve VS Code",
 			"workspaceFolderBasename": "Název složky otevřené ve VS Code bez lomítek (/)"
-		},
-		"dist/extensionsProposals": {
-			"exampleExtension": "Příklad"
 		},
 		"dist/settingsDocumentHelper": {
 			"activeEditor": "Použít jazyk aktuálně aktivního textového editoru, pokud existuje",
@@ -43,7 +45,6 @@
 			"derivedDescription": "Umožňuje vyhledat soubory, které mají položky na stejné úrovni se stejným názvem, ale jiným rozšířením",
 			"derivedLabel": "Soubory s položkami na stejné úrovni podle názvu",
 			"dirty": "indikuje, jestli aktivní editor obsahuje neuložené změny",
-			"falseDescription": "Zakáže vzor.",
 			"fileDescription": "Umožňuje vyhledat všechny soubory s konkrétní příponou.",
 			"fileLabel": "Soubory podle přípony",
 			"filesDescription": "Umožňuje vyhledat všechny soubory s kteroukoli z uvedených přípon.",
@@ -60,12 +61,10 @@
 			"topFolderDescription": "Umožňuje vyhledat složku nejvyšší úrovně s určitým názvem.",
 			"topFolderLabel": "Složka podle názvu (nejvyšší úroveň)",
 			"topFoldersDescription": "Umožňuje vyhledat více složek nejvyšší úrovně.",
-			"topFoldersLabel": "Složky s více názvy (nejvyšší úroveň)",
-			"trueDescription": "Povolit vzor"
+			"topFoldersLabel": "Složky s více názvy (nejvyšší úroveň)"
 		},
-		"package": {
-			"description": "Poskytuje funkce (pokročilá funkce IntelliSense, automatické opravy) v konfiguračních souborech, jako jsou například soubory nastavení, soubory spuštění a soubory doporučení rozšíření.",
-			"displayName": "Úpravy konfigurace"
+		"dist/extensionsProposals": {
+			"exampleExtension": "Příklad"
 		}
 	}
 }

@@ -8,32 +8,6 @@
 	],
 	"version": "1.0.0",
 	"contents": {
-		"client\\dist\\node/jsonClient": {
-			"configureLimit": "Użyj ustawienia „{0}”, aby skonfigurować limit.",
-			"goToSetting": "Otwórz ustawienia",
-			"json.clearCache.completed": "Wyczyszczono pamięć podręczną schematu JSON.",
-			"json.resolveError": "JSON: błąd rozpoznawania schematu",
-			"json.schemaResolutionDisabledMessage": "Pobieranie schematów jest wyłączone. Kliknij, aby skonfigurować.",
-			"json.schemaResolutionErrorMessage": "Nie można rozpoznać schematu. Kliknij, aby ponowić próbę.",
-			"jsonserver.name": "Serwer języka JSON",
-			"ok": "OK",
-			"schemaDownloadDisabled": "Pobieranie schematów zostało wyłączone za pomocą ustawienia „{0}”",
-			"untitled.schema": "Nie można załadować {0}",
-			"yes never again": "Nie pokazuj ponownie"
-		},
-		"client\\dist\\node/languageStatus": {
-			"pending.detail": "Ładowanie informacji JSON",
-			"schemaPicker.placeholder": "Wybierz schemat do otwarcia",
-			"schemaPicker.title": "Schematy JSON używane do {0}",
-			"status.error": "Nie można obliczyć używanych schematów",
-			"status.multipleSchema": "Sprawdzono poprawność przy użyciu wielu schematów JSON",
-			"status.noSchema": "Sprawdzono poprawność bez schematu JSON",
-			"status.notJSON": "To nie jest edytor JSON",
-			"status.openSchemaLink": "Otwórz schemat",
-			"status.openSchemasLink": "Pokaż schemat",
-			"status.singleSchema": "Sprawdzono poprawność przy użyciu schematu JSON",
-			"statusItem.name": "Stan weryfikacji JSON"
-		},
 		"package": {
 			"description": "Udostępnia zaawansowaną obsługę języka dla plików JSON.",
 			"displayName": "Funkcje języka JSON",
@@ -43,6 +17,7 @@
 			"json.command.clearCache": "Wyczyść pamięć podręczną schematu",
 			"json.enableSchemaDownload.desc": "Po włączeniu schematy JSON mogą być pobierane z lokalizacji http i https.",
 			"json.format.enable.desc": "Włącz/wyłącz domyślny program formatujący JSON",
+			"json.format.keepLines.desc": "Zachowaj wszystkie istniejące nowe wiersze podczas formatowania.",
 			"json.maxItemsComputed.desc": "Maksymalna liczba symboli konspektu i obliczonych regionów składania (ograniczenie ze względu na wydajność).",
 			"json.maxItemsExceededInformation.desc": "Pokaż powiadomienie po przekroczeniu maksymalnej liczby symboli konspektu i regionów zwijania.",
 			"json.schemaResolutionErrorMessage": "Nie można rozpoznać schematu.",
@@ -51,7 +26,48 @@
 			"json.schemas.fileMatch.item.desc": "Wzorzec pliku, który może zawierać znak „*”, na potrzeby dopasowania podczas rozpoznawania plików JSON do schematów.",
 			"json.schemas.schema.desc": "Definicja schematu dla danego adresu URL. Należy podać tylko schemat, aby uniknąć dostępu do adresu URL schematu.",
 			"json.schemas.url.desc": "Adres URL schematu lub ścieżka względna do schematu w bieżącym katalogu",
-			"json.tracing.desc": "Śledzi komunikację między programem VS Code i serwerem języka JSON."
+			"json.tracing.desc": "Śledzi komunikację między programem VS Code i serwerem języka JSON.",
+			"json.validate.enable.desc": "Włącz/wyłącz walidację kodu JSON."
+		},
+		"client\\dist\\node/jsonClient": {
+			"json.clearCache.completed": "Wyczyszczono pamięć podręczną schematu JSON.",
+			"json.resolveError": "JSON: błąd rozpoznawania schematu",
+			"json.schemaResolutionDisabledMessage": "Pobieranie schematów jest wyłączone. Kliknij, aby skonfigurować.",
+			"json.schemaResolutionErrorMessage": "Nie można rozpoznać schematu. Kliknij, aby ponowić próbę.",
+			"jsonserver.name": "Serwer języka JSON",
+			"schemaDownloadDisabled": "Pobieranie schematów zostało wyłączone za pomocą ustawienia „{0}”",
+			"untitled.schema": "Nie można załadować {0}"
+		},
+		"client\\dist\\node/languageStatus": {
+			"documentColorsStatusItem.name": "Stan symbolu koloru JSON",
+			"documentSymbolsStatusItem.name": "Stan konspektu JSON",
+			"foldingRangesStatusItem.name": "Stan składania JSON",
+			"openExtension": "Otwórz rozszerzenie",
+			"openSettings": "Otwórz ustawienia",
+			"pending.detail": "Ładowanie informacji JSON",
+			"schema.noSchema": "Nie skonfigurowano schematu dla tego pliku",
+			"schema.showdocs": "Dowiedz się więcej o konfiguracji schematu JSON...",
+			"schemaFromFolderSettings": "Skonfigurowane w ustawieniach obszaru roboczego",
+			"schemaFromUserSettings": "Skonfigurowane w ustawieniach użytkownika",
+			"schemaFromextension": "Skonfigurowane przez rozszerzenie: {0}",
+			"schemaPicker.title": "Schematy JSON używane do {0}",
+			"status.button.configure": "Konfiguruj",
+			"status.error1": "Nie można obliczyć używanych schematów: {0}",
+			"status.error2": "Nie można obliczyć używanych schematów: brak dokumentu",
+			"status.limitedDocumentColors.details": "wyświetlane są tylko {0} dekoratory kolorów",
+			"status.limitedDocumentColors.short": "Ograniczone symbole kolorów",
+			"status.limitedDocumentSymbols.details": "wyświetlane są tylko {0} symbole dokumentu",
+			"status.limitedDocumentSymbols.short": "Konspekt ograniczony",
+			"status.limitedFoldingRanges.details": "wyświetlane są tylko {0} zakresy składania",
+			"status.limitedFoldingRanges.short": "Zakresy składania ograniczone",
+			"status.multipleSchema": "Skonfigurowano wiele schematów JSON",
+			"status.noSchema": "Nie skonfigurowano schematu JSON",
+			"status.noSchema.short": "Brak walidacji schematu",
+			"status.openSchemasLink": "Pokaż schemat",
+			"status.singleSchema": "Skonfigurowano schemat JSON",
+			"status.withSchema.short": "Zwalidowano schemat",
+			"status.withSchemas.short": "Zwalidowano schemat",
+			"statusItem.name": "Stan weryfikacji JSON"
 		}
 	}
 }

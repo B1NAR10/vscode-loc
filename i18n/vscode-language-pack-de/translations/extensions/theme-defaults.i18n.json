@@ -15,7 +15,7 @@
 			"displayName": "Standarddesigns",
 			"hcColorThemeLabel": "Dunkle hoher Kontrast",
 			"lightColorThemeLabel": "Hell (Visual Studio)",
-			"lightHcColorThemeLabel": "Hell hoher Kontrast (experimentell)",
+			"lightHcColorThemeLabel": "Hell hoher Kontrast",
 			"lightPlusColorThemeLabel": "Hell+ (helles Standarddesign)",
 			"minimalIconThemeLabel": "Minimal (Visual Studio Code)"
 		}

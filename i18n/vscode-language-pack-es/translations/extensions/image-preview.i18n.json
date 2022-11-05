@@ -8,6 +8,10 @@
 	],
 	"version": "1.0.0",
 	"contents": {
+		"dist/audioPreview": {
+			"preview.audioLoadError": "Se ha producido un error al cargar el archivo.",
+			"preview.audioLoadErrorLink": "¿Abrir archivo con el editor de texto/binario estándar de VS Code?"
+		},
 		"dist/binarySizeStatusBarEntry": {
 			"sizeB": "{0} B",
 			"sizeGB": "{0} GB",
@@ -16,22 +20,28 @@
 			"sizeStatusBar.name": "Tamaño binario de la imagen",
 			"sizeTB": "{0} TB"
 		},
-		"dist/preview": {
+		"dist/imagePreview/index": {
 			"preview.imageLoadError": "Se ha producido un error al cargar la imagen.",
 			"preview.imageLoadErrorLink": "¿Abrir archivo con el editor de texto/binario estándar de VS Code?"
 		},
-		"dist/sizeStatusBarEntry": {
+		"dist/imagePreview/sizeStatusBarEntry": {
 			"sizeStatusBar.name": "Tamaño de la imagen"
 		},
-		"dist/zoomStatusBarEntry": {
+		"dist/imagePreview/zoomStatusBarEntry": {
 			"zoomStatusBar.name": "Zoom de imagen",
 			"zoomStatusBar.placeholder": "Seleccionar nivel de zoom",
 			"zoomStatusBar.wholeImageLabel": "Imagen completa"
 		},
+		"dist/videoPreview": {
+			"preview.videoLoadError": "Se ha producido un error al cargar el archivo de video.",
+			"preview.videoLoadErrorLink": "¿Abrir archivo con el editor de texto/binario estándar de VS Code?"
+		},
 		"package": {
 			"command.zoomIn": "Acercar",
 			"command.zoomOut": "Alejar",
-			"customEditors.displayName": "Vista previa de la imagen",
+			"customEditor.audioPreview.displayName": "Vista previa de audio",
+			"customEditor.imagePreview.displayName": "Vista previa de la imagen",
+			"customEditor.videoPreview.displayName": "Vista previa del vídeo",
 			"description": "Proporciona la vista previa de imagen integrada de VS Code",
 			"displayName": "Vista previa de la imagen"
 		}

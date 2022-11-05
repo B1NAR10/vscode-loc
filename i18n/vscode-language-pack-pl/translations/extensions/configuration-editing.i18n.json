@@ -8,9 +8,14 @@
 	],
 	"version": "1.0.0",
 	"contents": {
+		"package": {
+			"description": "Udostępnia możliwości (zaawansowana funkcja IntelliSense, automatyczne naprawianie) w plikach konfiguracyjnych, takie jak ustawienia, uruchamianie i zalecenia dotyczące rozszerzeń.",
+			"displayName": "Edytowanie konfiguracji"
+		},
 		"dist/configurationEditingMain": {
 			"cwd": "Bieżący katalog roboczy modułu uruchamiającego zadania podczas uruchamiania",
 			"defaultBuildTask": "Nazwa domyślnego zadania kompilacji. Jeśli nie istnieje żadne domyślne zadanie kompilacji, zostanie wyświetlone menu szybkiego wyboru zadania kompilacji.",
+			"extensionInstallFolder": "Ścieżka, w której zainstalowano rozszerzenie.",
 			"file": "Aktualnie otwarty plik",
 			"fileBasename": "Nazwa podstawowa aktualnie otwartego pliku",
 			"fileBasenameNoExtension": "Nazwa podstawowa aktualnie otwartego pliku bez rozszerzenia pliku",
@@ -23,9 +28,6 @@
 			"selectedText": "Aktualnie zaznaczony tekst w aktywnym pliku",
 			"workspaceFolder": "Ścieżka folderu otwartego w programie VS Code",
 			"workspaceFolderBasename": "Nazwa folderu otwartego w programie VS Code bez ukośników (/)"
-		},
-		"dist/extensionsProposals": {
-			"exampleExtension": "Przykład"
 		},
 		"dist/settingsDocumentHelper": {
 			"activeEditor": "Użyj języka aktualnie aktywnego edytora tekstu, jeśli istnieje",
@@ -43,7 +45,6 @@
 			"derivedDescription": "Dopasuj pliki z elementami równorzędnymi o tej samej nazwie, ale innym rozszerzeniu.",
 			"derivedLabel": "Pliki z elementami równorzędnymi według nazwy",
 			"dirty": "wskaźnik informujący o tym, kiedy aktywny edytor zawiera niezapisane zmiany",
-			"falseDescription": "Wyłącz wzorzec.",
 			"fileDescription": "Dopasuj wszystkie pliki konkretnego rozszerzenia pliku.",
 			"fileLabel": "Pliki według rozszerzenia",
 			"filesDescription": "Dopasuj wszystkie pliki z dowolnymi rozszerzeniami plików.",
@@ -60,12 +61,10 @@
 			"topFolderDescription": "Dopasuj folder najwyższego poziomu o określonej nazwie.",
 			"topFolderLabel": "Folder według nazwy (najwyższy poziom)",
 			"topFoldersDescription": "Dopasuj wiele folderów najwyższego poziomu.",
-			"topFoldersLabel": "Foldery z wieloma nazwami (najwyższy poziom)",
-			"trueDescription": "Włącz wzorzec."
+			"topFoldersLabel": "Foldery z wieloma nazwami (najwyższy poziom)"
 		},
-		"package": {
-			"description": "Udostępnia możliwości (zaawansowana funkcja IntelliSense, automatyczne naprawianie) w plikach konfiguracyjnych, takie jak ustawienia, uruchamianie i zalecenia dotyczące rozszerzeń.",
-			"displayName": "Edytowanie konfiguracji"
+		"dist/extensionsProposals": {
+			"exampleExtension": "Przykład"
 		}
 	}
 }

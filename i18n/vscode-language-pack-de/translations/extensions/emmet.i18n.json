@@ -8,9 +8,6 @@
 	],
 	"version": "1.0.0",
 	"contents": {
-		"dist\\node/abbreviationActions": {
-			"wrapWithAbbreviationPrompt": "Abkürzung eingeben"
-		},
 		"package": {
 			"command.balanceIn": "Ausgleichen (einwärts)",
 			"command.balanceOut": "Ausgleichen (auswärts)",
@@ -71,8 +68,12 @@
 			"emmetShowExpandedAbbreviation": "Zeigt erweiterte Emmet-Abkürzungen als Vorschläge an.\r\nDie Option \"inMarkupAndStylesheetFilesOnly\" gilt für: html, haml, jade, slim, xml, xsl, css, scss, sass, less, stylus.\r\nDie Option \"always\" gilt unabhängig von Markup/CSS für alle Teile der Datei.",
 			"emmetShowSuggestionsAsSnippets": "Bei TRUE werden die Emmet-Vorschläge als Schnipsel angezeigt. Dadurch können Sie die Vorschläge entsprechend der `#editor.snippetSuggestions#`-Einstellung anordnen.",
 			"emmetSyntaxProfiles": "Definieren Sie das Profil für die angegebene Syntax, oder verwenden Sie Ihr eigenes Profil mit bestimmten Regeln.",
-			"emmetTriggerExpansionOnTab": "Wenn aktiviert, werden Emmet-Abkürzungen beim Drücken der TAB-Taste erweitert.",
+			"emmetTriggerExpansionOnTab": "Wenn diese Option aktiviert ist, werden Emmet-Abkürzungen beim Drücken der TAB-TASTE erweitert, auch wenn keine Vervollständigungen angezeigt werden. Wenn diese Option deaktiviert ist, können Vervollständigungen, die angezeigt werden, weiterhin durch Drücken der TAB-TASTE akzeptiert werden.",
+			"emmetUseInlineCompletions": "Wenn \"true\", verwendet Emmet Inline-Vervollständigungen, um Erweiterungen vorzuschlagen. Um zu verhindern, dass der Nicht-Inline-Vervollständigungselementanbieter so oft angezeigt wird, während diese Einstellung auf „true“ gesetzt ist, schalten Sie „#editor.quickSuggestions#“ für das „andere“ Element auf „inline“ oder „off“.",
 			"emmetVariables": "In Emmet-Schnipseln zu verwendende Codeschnipsel."
+		},
+		"dist\\node/abbreviationActions": {
+			"wrapWithAbbreviationPrompt": "Abkürzung eingeben"
 		}
 	}
 }

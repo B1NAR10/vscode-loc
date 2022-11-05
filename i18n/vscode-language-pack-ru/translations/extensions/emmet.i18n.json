@@ -8,9 +8,6 @@
 	],
 	"version": "1.0.0",
 	"contents": {
-		"dist\\node/abbreviationActions": {
-			"wrapWithAbbreviationPrompt": "Введите сокращение"
-		},
 		"package": {
 			"command.balanceIn": "Баланс (входящий)",
 			"command.balanceOut": "Баланс (исходящий)",
@@ -71,8 +68,12 @@
 			"emmetShowExpandedAbbreviation": "Показывает развернутые сокращения Emmet в виде предложений.\r\nПараметр inMarkupAndStylesheetFilesOnly применяется к html, haml, jade, slim, xml, xsl, css, scss, sass, less и stylus.\r\nПараметр always применяется ко всем частям файла, независимо от разметки или CSS.",
 			"emmetShowSuggestionsAsSnippets": "Если этот параметр имеет значение true, предложения Emmet будут отображаться в виде фрагментов, которые можно упорядочить с помощью параметра \"#editor.snippetSuggestions#\".",
 			"emmetSyntaxProfiles": "Задайте профиль для указанного синтаксиса или используйте свой собственный профиль с определенными правилами.",
-			"emmetTriggerExpansionOnTab": "Если этот параметр установлен, сокращения Emmet разворачиваются при нажатии клавиши TAB.",
+			"emmetTriggerExpansionOnTab": "Если этот параметр включен, сокращения Emmet развертываются при нажатии клавиши TAB, даже если завершения не отображаются. Если этот параметр отключен, то можно принимать отображаемые завершения, нажимая клавишу TAB.",
+			"emmetUseInlineCompletions": "Если значение равно \"true\", Emmet будет использовать встроенные завершения для предложения расширений. Чтобы поставщик элементов завершения, отличных от встроенного, отображался так часто, как этот параметр имеет значение \"true\", включите \"#editor.quickSuggestions#\" в \"inline\" или \"off\" для элемента \"other\".",
 			"emmetVariables": "Переменные, которые будут использоваться во фрагментах Emmet."
+		},
+		"dist\\node/abbreviationActions": {
+			"wrapWithAbbreviationPrompt": "Введите сокращение"
 		}
 	}
 }

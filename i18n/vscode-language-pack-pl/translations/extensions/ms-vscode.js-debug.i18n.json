@@ -8,271 +8,6 @@
 	],
 	"version": "1.0.0",
 	"contents": {
-		"/src/adapter/breakpoints/userDefinedBreakpoint": {
-			"breakpoint.provisionalBreakpoint": "Niewiązany punkt przerwania"
-		},
-		"/src/adapter/console/queryObjectsMessage": {
-			"queryObject.couldNotQuery": "Nie można wykonać zapytania dotyczącego podanego obiektu",
-			"queryObject.errorPreview": "Może wygenerować podgląd: {0}",
-			"queryObject.invalidObject": "Zapytania można wysyłać tylko do obiektów"
-		},
-		"/src/adapter/console/textualMessage": {
-			"console.assert": "Asercja nie powiodła się"
-		},
-		"/src/adapter/customBreakpoints": {
-			"breakpoint.animationFrameFired": "Wywołano ramkę animacji",
-			"breakpoint.cancelAnimationFrame": "Anuluj ramkę animacji",
-			"breakpoint.closeAudioContext": "Zamknij element AudioContext",
-			"breakpoint.createAudioContext": "Utwórz element AudioContext",
-			"breakpoint.createCanvasContext": "Utwórz kontekst kanwy",
-			"breakpoint.cspViolation": "Skrypt zablokowany przez zasady zabezpieczeń zawartości",
-			"breakpoint.cspViolationNamed": "Naruszenie CSP „{0}”",
-			"breakpoint.cspViolationNamedDetails": "Wstrzymane w punkcie przerwania instrumentacji naruszenia zasad zabezpieczeń zawartości, dyrektywa „{0}”",
-			"breakpoint.eventListenerNamed": "Wstrzymane w punkcie przerwania detektora zdarzeń „{0}”, wyzwolono na „{1}”",
-			"breakpoint.instrumentationNamed": "Wstrzymane w punkcie przerwania Instrumentacji „{0}”",
-			"breakpoint.requestAnimationFrame": "Zażądaj ramki animacji",
-			"breakpoint.resumeAudioContext": "Wznów element AudioContext",
-			"breakpoint.scriptFirstStatement": "Pierwsza instrukcja skryptu",
-			"breakpoint.setInnerHtml": "Ustaw parametr innerHTML",
-			"breakpoint.setIntervalFired": "Wywołano funkcję setInterval",
-			"breakpoint.setTimeoutFired": "Wywołano funkcję setTimeout",
-			"breakpoint.suspendAudioContext": "Wstrzymaj element AudioContext",
-			"breakpoint.webglErrorFired": "Wyzwolono błąd WebGL",
-			"breakpoint.webglErrorNamed": "Błąd WebGL „{0}”",
-			"breakpoint.webglErrorNamedDetails": "Wstrzymane w punkcie przerwania Instrumentacji błędów WebGL, błąd „{0}”",
-			"breakpoint.webglWarningFired": "Wyzwolono ostrzeżenie WebGL"
-		},
-		"/src/adapter/debugAdapter": {
-			"breakpoint.caughtExceptions": "Przechwycone wyjątki",
-			"breakpoint.caughtExceptions.description": "Przerywa w przypadku każdego błędu zgłaszania, nawet jeśli zostaną przechwycone później.",
-			"breakpoint.uncaughtExceptions": "Nieprzechwycone wyjątki",
-			"error.cannotPrettyPrint": "Nie można wyświetlić widoku strukturalnego",
-			"error.sourceContentDidFail": "Nie można pobrać zawartości źródłowej",
-			"error.sourceNotFound": "Nie znaleziono źródła",
-			"error.variableNotFound": "Nie znaleziono zmiennej"
-		},
-		"/src/adapter/profiling/basicCpuProfiler": {
-			"profile.cpu.description": "Generuje plik .cpuprofile, który można otworzyć w narzędziu devtools przeglądarki Chrome",
-			"profile.cpu.label": "Profil procesora CPU"
-		},
-		"/src/adapter/profiling/basicHeapProfiler": {
-			"profile.heap.description": "Generuje plik .heapprofile, który można otworzyć w narzędziach devtools przeglądarki Chrome",
-			"profile.heap.label": "Profil sterty"
-		},
-		"/src/adapter/profiling/heapDumpProfiler": {
-			"profile.heap.description": "Generuje plik .heapsnapshot, który można otworzyć w narzędziu devtools przeglądarki Chrome",
-			"profile.heap.label": "Migawka sterty"
-		},
-		"/src/adapter/sources": {
-			"source.skipFiles": "Pominięte przez skipFiles"
-		},
-		"/src/adapter/stackTrace": {
-			"scope.block": "Blokuj",
-			"scope.catch": "Blok Catch",
-			"scope.closure": "Zamknięcie",
-			"scope.closureNamed": "Zamknięcie ({0})",
-			"scope.eval": "Obliczanie",
-			"scope.global": "Globalny",
-			"scope.local": "Lokalny",
-			"scope.module": "Moduł",
-			"scope.returnValue": "Wartość zwracana",
-			"scope.script": "Skrypt",
-			"scope.with": "Z blokiem",
-			"smartStepSkipLabel": "Pominięte przez smartStep",
-			"source.skipFiles": "Pominięte przez skipFiles"
-		},
-		"/src/adapter/threads": {
-			"error.evaluateDidFail": "Nie można obliczyć",
-			"error.evaluateOnAsyncStackFrame": "Nie można obliczyć w asynchronicznej ramce stosu",
-			"error.pauseDidFail": "Nie można wstrzymać",
-			"error.restartFrameAsync": "Nie można ponownie uruchomić ramki asynchronicznej",
-			"error.resumeDidFail": "Nie można wznowić",
-			"error.stackFrameNotFound": "Nie znaleziono ramki stosu",
-			"error.stepInDidFail": "Nie można wkroczyć",
-			"error.stepOutDidFail": "Nie można wyjść",
-			"error.stepOverDidFail": "Nie można przygotować kolejnego elementu",
-			"error.threadNotPaused": "Wątek nie został wstrzymany",
-			"error.threadNotPausedOnException": "Wątek nie został wstrzymany w przypadku wyjątku",
-			"pause.DomBreakpoint": "Wstrzymane w punkcie przerwania DOM",
-			"pause.assert": "Wstrzymane przy asercji",
-			"pause.breakpoint": "Wstrzymane w punkcie przerwania",
-			"pause.debugCommand": "Wstrzymane przy wywołaniu metody debug()",
-			"pause.default": "Wstrzymane",
-			"pause.eventListener": "Wstrzymane na odbiorniku zdarzeń",
-			"pause.exception": "Wstrzymane na wyjątku",
-			"pause.instrumentation": "Wstrzymane w punkcie przerwania instrumentacji",
-			"pause.oom": "Wstrzymane przed wyjątkiem braku pamięci",
-			"pause.promiseRejection": "Wstrzymane z powodu odrzucenia obietnicy",
-			"pause.xhr": "Wstrzymane przy żądaniu XMLHttpRequest lub pobieraniu",
-			"reason.description.restart": "Wstrzymane przy zapisie ramki",
-			"warnings.handleSourceMapPause.didNotWait": "OSTRZEŻENIE: Przetwarzanie map źródeł elementu {0} trwało dłużej niż {1} ms, więc kontynuowaliśmy wykonywanie bez oczekiwania na ustawienie wszystkich punktów przerwania dla skryptu."
-		},
-		"/src/binder": {
-			"breakpoint.provisionalBreakpoint": "Niewiązany punkt przerwania"
-		},
-		"/src/dap/errors": {
-			"NVM_HOME.not.found.message": "Atrybut „runtimeVersion” wymaga menedżera wersji Node.js „nvm-windows” lub „nvs”.",
-			"NVS_HOME.not.found.message": "Atrybut „runtimeVersion” wymaga zainstalowania menedżera wersji Node.js „nvs” lub „nvm”.",
-			"VSND2011": "Nie można uruchomić elementu docelowego debugowania w terminalu ({0}).",
-			"VSND2029": "Nie można załadować zmiennych środowiskowych z pliku ({0}).",
-			"asyncScopesNotAvailable": "Zmienne niedostępne w stosach asynchronicznych",
-			"breakpointSyntaxError": "Błąd składniowy ustawiania punktu przerwania z warunkiem {0} w wierszu {1}: {2}",
-			"browserVersionNotFound": "Nie można znaleźć elementu {0} w wersji {1}. Dostępne automatycznie wykrywane wersje to: {2}. Możesz ustawić wartość „runtimeExecutable” w pliku launch.json na jedną z nich lub podać bezwzględną ścieżkę do pliku wykonywalnego przeglądarki.",
-			"error.browserAttachError": "Nie można dołączyć do przeglądarki",
-			"error.browserLaunchError": "Nie można uruchomić przeglądarki: „{0}”",
-			"error.threadNotFound": "Nie znaleziono strony docelowej. W celu dopasowania do strony, która ma być debugowana, może być konieczna aktualizacja parametru „urlFilter”.",
-			"invalidHitCondition": "Nieprawidłowy stan trafienia „{0}”. Oczekiwano wyrażenia, takiego jak „> 42” lub „== 2”.",
-			"noBrowserInstallFound": "Nie można odnaleźć instalacji przeglądarki w systemie. Spróbuj ją zainstalować lub podać ścieżkę bezwzględną do przeglądarki w parametrze „runtimeExecutable” w pliku launch.json.",
-			"profile.error.concurrent": "Zatrzymaj uruchomiony profil przed rozpoczęciem nowego.",
-			"profile.error.generic": "Wystąpił błąd podczas pobierania profilu z elementu docelowego.",
-			"runtime.node.notfound": "Nie można odnaleźć pliku binarnego Node.js „{0}”: {1}. Upewnij się, że oprogramowanie Node.js jest zainstalowane i znajduje się w ścieżce lub ustaw parametr „runtimeExecutable” w pliku launch.json",
-			"runtime.node.outdated": "Wersja oprogramowania Node w „{0}” jest nieaktualna (wersja {1}), wymagamy co najmniej wersji oprogramowania Node 8.x.",
-			"runtime.version.not.found.message": "Wersja Node.js „{0}” nie została zainstalowana przy użyciu menedżera wersji {1}.",
-			"sourcemapParseError": "Nie można odczytać mapy źródła dla elementu {0}: {1}"
-		},
-		"/src/debugServer": {
-			"breakpoint.provisionalBreakpoint": "Niewiązany punkt przerwania"
-		},
-		"/src/targets/browser/browserAttacher": {
-			"attach.cannotConnect": "Nie można nawiązać połączenia z obiektem docelowym pod adresem {0}: {1}",
-			"chrome.targets.placeholder": "Wybierz kartę"
-		},
-		"/src/targets/node/nodeAttacher": {
-			"node.attach.restart.message": "Utracono połączenie z obiektem debugowanym; ponowne nawiązywanie połączenia za {0} ms\r\n"
-		},
-		"/src/targets/node/nodeBinaryProvider": {
-			"outOfDate": "{0} Czy mimo to chcesz spróbować przeprowadzić debugowanie?",
-			"runtime.node.notfound.enoent": "ścieżka nie istnieje",
-			"runtime.node.notfound.spawnErr": "błąd podczas pobierania wersji: {0}",
-			"warning.16bpIssue": "Niektóre punkty przerwania mogą nie działać w twojej wersji środowiska Node.js. Zalecamy uaktualnienie w celu uzyskania najnowszych poprawek błędów, wydajności i zabezpieczeń. Szczegóły: https://aka.ms/AAcsvqm",
-			"warning.8outdated": "Używasz nieaktualnej wersji Node.js. Zalecamy uaktualnienie na potrzeby najnowszych poprawek dotyczących usterek, wydajności i zabezpieczeń.",
-			"yes": "Tak"
-		},
-		"/src/ui/autoAttach": {
-			"details": "Szczegóły"
-		},
-		"/src/ui/companionBrowserLaunch": {
-			"cannotDebugInBrowser": "Z tego miejsca nie można uruchomić przeglądarki w trybie debugowania. Otwórz ten obszar roboczy w programie VS Code na pulpicie, aby włączyć debugowanie."
-		},
-		"/src/ui/configuration/chromiumDebugConfigurationProvider": {
-			"chrome.launch.name": "Uruchom przeglądarkę Chrome względem hosta lokalnego",
-			"existingBrowser.alert": "Wygląda na to, że przeglądarka już działa z {0}. Zamknij ją przed podjęciem próby debugowania, w przeciwnym razie program VS Code może nie być w stanie nawiązać z nią połączenia.",
-			"existingBrowser.debugAnyway": "Debuguj mimo to",
-			"existingBrowser.location.default": "stara sesja debugowania",
-			"existingBrowser.location.userDataDir": "skonfigurowano userDataDir"
-		},
-		"/src/ui/configuration/edgeDebugConfigurationProvider": {
-			"chrome.launch.name": "Uruchom przeglądarkę Microsoft Edge względem hosta lokalnego"
-		},
-		"/src/ui/configuration/nodeDebugConfigurationProvider": {
-			"debug.terminal.label": "JavaScript Debug Terminal",
-			"node.launch.currentFile": "Uruchom bieżący plik",
-			"node.launch.script": "Uruchom skrypt: {0}"
-		},
-		"/src/ui/configuration/nodeDebugConfigurationResolver": {
-			"cwd.notFound": "Skonfigurowany katalog „cwd” {0} nie istnieje.",
-			"mern.starter.explanation": "Uruchom konfigurację dla utworzonego projektu '{0}'.",
-			"node.launch.config.name": "Uruchom program",
-			"outFiles.explanation": "Dostosuj wzorce globalne w atrybucie „outFiles”, aby obejmowały wygenerowany kod JavaScript.",
-			"program.guessed.from.package.json.explanation": "Uruchom konfigurację utworzoną na podstawie pliku „package.json”.",
-			"program.not.found.message": "Nie można odnaleźć programu do debugowania"
-		},
-		"/src/ui/debugLinkUI": {
-			"debugLink.invalidUrl": "Podany adres URL jest nieprawidłowy",
-			"debugLink.savePrompt": "Czy chcesz zapisać konfigurację w pliku launch.json, aby ułatwić dostęp w przyszłości?",
-			"never": "Nigdy",
-			"no": "Nie",
-			"yes": "Tak"
-		},
-		"/src/ui/debugNpmScript": {
-			"debug.npm.noScripts": "Nie znaleziono skryptów menedżera npm w pliku package.json",
-			"debug.npm.noWorkspaceFolder": "Musisz otworzyć folder obszaru roboczego, aby debugować skrypty menedżera npm.",
-			"debug.npm.notFound.open": "Edytuj plik package.json",
-			"debug.npm.parseError": "Nie można było odczytać elementu {0}: {1}"
-		},
-		"/src/ui/debugTerminalUI": {
-			"terminal.cwdpick": "Wybierz bieżący katalog roboczy dla nowego terminalu"
-		},
-		"/src/ui/diagnosticsUI": {
-			"inspectSessionEnded": "Wygląda na to, że Twoja sesja debugowania została już zakończona. Spróbuj ponownie debugować, a następnie uruchom polecenie „Debuguj: diagnozowanie problemów z punktem przerwania”.",
-			"never": "Nigdy",
-			"notNow": "Nie teraz",
-			"selectInspectSession": "Wybierz sesję, którą chcesz sprawdzić:",
-			"yes": "Tak"
-		},
-		"/src/ui/disableSourceMapUI": {
-			"always": "Zawsze",
-			"disableSourceMapUi.msg": "To jest brakująca ścieżka do pliku przywoływana przez mapę źródła. Czy zamiast tego chcesz debugować skompilowaną wersję?",
-			"no": "Nie",
-			"yes": "Tak"
-		},
-		"/src/ui/edgeDevToolOpener": {
-			"selectEdgeToolSession": "Wybierz stronę, na której chcesz otworzyć program Dev Tools"
-		},
-		"/src/ui/linkedBreakpointLocationUI": {
-			"ignore": "Ignoruj",
-			"readMore": "Przeczytaj więcej"
-		},
-		"/src/ui/longPredictionUI": {
-			"longPredictionWarning.disable": "Nie pokazuj ponownie",
-			"longPredictionWarning.message": "Konfigurowanie punktów przerwania zajmuje trochę czasu. Możesz to przyspieszyć, aktualizując parametr „outFiles” w pliku launch.json.",
-			"longPredictionWarning.noFolder": "Brak otwartego folderu obszaru roboczego.",
-			"longPredictionWarning.open": "Otwórz plik launch.json"
-		},
-		"/src/ui/prettyPrint": {
-			"never": "Nigdy",
-			"no": "Nie",
-			"yes": "Tak"
-		},
-		"/src/ui/processPicker": {
-			"cannot.enable.debug.mode.error": "Dołącz do procesu: nie można włączyć trybu debugowania dla procesu „{0}” ({1}).",
-			"pickNodeProcess": "Wybierz proces node.js, do którego ma nastąpić dołączenie",
-			"process.id.error": "Dołącz do procesu: „{0}” nie wygląda jak identyfikator procesu.",
-			"process.id.port.signal": "identyfikator procesu: {0}, port debugowania: {1} ({2})",
-			"process.id.signal": "identyfikator procesu: {0} ({1})",
-			"process.picker.error": "Niepowodzenie selektora procesu ({0})"
-		},
-		"/src/ui/profiling/breakpointTerminationCondition": {
-			"breakpointTerminationWarnConfirm": "Rozumiem!",
-			"breakpointTerminationWarnSlow": "Profilowanie z włączonymi punktami przerwania może zmienić wydajność kodu. Może to być przydatne, aby zweryfikować swoje ustalenia za pomocą warunków zakończenia „duration” lub „manual”.",
-			"profile.termination.breakpoint.description": "Uruchom do momentu trafienia określonego punktu przerwania",
-			"profile.termination.breakpoint.label": "Wybierz punkt przerwania"
-		},
-		"/src/ui/profiling/durationTerminationCondition": {
-			"profile.termination.duration.description": "Uruchom przez określony czas",
-			"profile.termination.duration.inputTitle": "Czas trwania profilu",
-			"profile.termination.duration.invalidFormat": "Wprowadź liczbę",
-			"profile.termination.duration.invalidLength": "Wprowadź liczbę większą niż 1",
-			"profile.termination.duration.label": "Czas trwania",
-			"profile.termination.duration.placeholder": "Czas trwania profilu w sekundach, na przykład „5”"
-		},
-		"/src/ui/profiling/manualTerminationCondition": {
-			"profile.termination.duration.description": "Uruchom do ręcznego zatrzymania",
-			"profile.termination.duration.label": "Ręczne"
-		},
-		"/src/ui/profiling/uiProfileManager": {
-			"no": "Nie",
-			"profile.alreadyRunning": "Sesja profilowania jest już uruchomiona. Chcesz ją zatrzymać i rozpocząć nową sesję?",
-			"profile.sessionState": "Profilowanie",
-			"profile.status.default": "$(loading~spin) Kliknij, aby zatrzymać profilowanie",
-			"profile.status.multiSession": "$(loading~spin) Kliknij, aby zatrzymać profilowanie (sesje {0})",
-			"profile.status.single": "$(loading~spin) Kliknij, aby zatrzymać profilowanie ({0})",
-			"profile.termination.title": "Jak długo ma być uruchamiany profil:",
-			"profile.type.title": "Typ profilu:",
-			"yes": "Tak"
-		},
-		"/src/ui/profiling/uiProfileSession": {
-			"profile.saving": "Zapisywanie",
-			"progress.profile.start": "Trwa uruchamianie profilu...",
-			"progress.profile.stop": "Trwa zatrzymywanie profilu..."
-		},
-		"/src/ui/terminalLinkHandler": {
-			"cantOpenChromeOnWeb": "Z tego miejsca nie możemy uruchomić przeglądarki w trybie debugowania. Jeśli chcesz debugować tę stronę internetową, otwórz ten obszar roboczy z programu VS Code na pulpicie.",
-			"terminalLinkHover.debug": "Adres URL debugowania"
-		},
-		"/src/vsDebugServer": {
-			"session.rootSessionName": "Adapter debugowania języka JavaScript"
-		},
 		"package": {
 			"add.browser.breakpoint": "Dodaj punkt przerwania przeglądarki",
 			"attach.node.process": "Dołącz do procesu węzła",
@@ -313,7 +48,7 @@
 			"browser.webRoot.description": "Określa ścieżkę bezwzględną obszaru roboczego do katalogu głównego serwera internetowego. Służy do znajdowania plików na dysku dla ścieżek takich jak „/app.js”. Skrócona forma opcji pathMapping dla „/”",
 			"chrome.attach.description": "Dołącz do wystąpienia przeglądarki Chrome już w trybie debugowania",
 			"chrome.attach.label": "Chrome: Dołącz",
-			"chrome.label": "Chrome",
+			"chrome.label": "Aplikacja internetowa (Chrome)",
 			"chrome.launch.description": "Uruchom przeglądarkę Chrome w celu debugowania adresu URL",
 			"chrome.launch.label": "Chrome: Uruchom",
 			"commands.callersAdd.label": "Wyklucz funkcję wywołującą",
@@ -322,6 +57,8 @@
 			"commands.callersGoToTarget.label": "Przejdź do lokalizacji docelowej",
 			"commands.callersRemove.label": "Usuń wykluczoną funkcję wywołującą",
 			"commands.callersRemoveAll.label": "Usuń wszystkie wykluczone funkcje wywołujące",
+			"commands.disableSourceMapStepping.label": "Wyłącz krokowe mapowanie źródła",
+			"commands.enableSourceMapStepping.label": "Włącz krokowe mapowanie źródła",
 			"configuration.autoAttachMode": "Konfiguruje procesy, które mają być automatycznie dołączane i debugowane, gdy element „#debug.node.autoAttach#” jest włączony. Proces węzła uruchomiony przy użyciu flagi „--inspect” zawsze będzie dołączany niezależnie od tego ustawienia.",
 			"configuration.autoAttachMode.always": "Automatycznie dołączaj do każdego procesu Node.js uruchomionego w terminalu.",
 			"configuration.autoAttachMode.disabled": "Automatyczne dołączanie jest wyłączone i nie jest wyświetlane na pasku stanu.",
@@ -335,7 +72,6 @@
 			"configuration.npmScriptLensLocation": "Gdzie wskaźniki CodeLens „Run” i „Debug” powinny być wyświetlane w skryptach menedżera npm. Dopuszczalne wartości: wszystkie skrypty („all”), na górze sekcji skryptu („top”) lub nigdy („never”).",
 			"configuration.pickAndAttachOptions": "Opcje domyślne używane podczas debugowania procesu za pomocą polecenia „Debuguj: dołącz do procesu Node.js”",
 			"configuration.resourceRequestOptions": "Opcje żądania do użycia podczas ładowania zasobów, takich jak ładowania map źródeł i ładowania w debugerze. Ich skonfigurowanie może być konieczne na przykład wtedy, gdy mapy źródeł wymagają uwierzytelniania lub używają certyfikatu z podpisem własnym. Opcje służą do tworzenia żądania przy użyciu biblioteki [\"got\"](https://github.com/sindresorhus/got).\r\n\r\nTypowy przypadek wyłączenia weryfikacji certyfikatu może być wykonany poprzez przekazanie \"{ \"https\": { \"rejectUnauthorized\": false } }`.",
-			"configuration.suggestPrettyPrinting": "Określa, czy zaproponować widok strukturalny kodu JavaScript, który będzie zminimalizowany po wkroczeniu do niego.",
 			"configuration.terminalOptions": "Domyślne opcje uruchamiania dla terminali debugowania JavaScript i skryptów npm.",
 			"configuration.unmapMissingSources": "Określa, czy mapowanie pliku, w przypadku którego przeprowadzono mapowanie źródła, zostanie automatycznie usunięte, gdy nie można odczytać oryginalnego pliku. Jeśli zostanie podana wartość false (domyślna), będzie wyświetlany monit.",
 			"createDiagnostics.label": "Diagnozuj problemy z punktem przerwania",
@@ -353,15 +89,17 @@
 			"debug.terminal.toggleAuto": "Przełącz automatyczne dołączanie terminala Node.js",
 			"debug.terminal.welcome": "[JavaScript Debug Terminal](command:extension.js-debug.createDebuggerTerminal)\r\n\r\n Możesz użyć JavaScript Debug Terminal do debugowania procesów Node.js uruchamianych z linii poleceń.",
 			"debug.terminal.welcomeWithLink": "[JavaScript Debug Terminal](command:extension.js-debug.createDebuggerTerminal)\r\n\r\nZa pomocą terminala debugowania języka JavaScript możesz debugować procesy Node.js uruchomione w wierszu polecenia.\r\n\r\n[Debug URL](command:extension.js-debug.debugLink)",
+			"debug.unverifiedBreakpoints": "Nie można ustawić niektórych punktów przerwania. Jeśli występuje problem, możesz [rozwiązać problem z konfiguracją uruchamiania](command:extension.js-debug.createDiagnostics).",
 			"debugLink.label": "Otwórz link",
 			"edge.address.description": "Podczas debugowania aplikacji WebView adres IP lub nazwa hosta, na którym nasłuchuje aplikacja WebView. Zostanie automatycznie wykryte, jeśli nie zostanie ustawione.",
 			"edge.attach.description": "Dołącz do wystąpienia przeglądarki Edge już w trybie debugowania",
 			"edge.attach.label": "Edge: dołącz",
-			"edge.label": "Edge",
+			"edge.label": "Aplikacja internetowa (Edge)",
 			"edge.launch.description": "Uruchom przeglądarkę Edge w celu debugowania adresu URL",
 			"edge.launch.label": "Edge: uruchom",
 			"edge.port.description": "Podczas debugowania aplikacji WebView port, na którym nasłuchuje aplikacja WebView. Zostanie automatycznie wykryty, jeśli nie zostanie ustawiony.",
-			"edge.useWebView.description": "(Tylko przeglądarka Microsoft Edge (Chromium)) Gdy ma wartość „true”, debuger będzie traktować plik wykonywalny środowiska uruchomieniowego jako aplikację hosta, który zawiera komponent WebView, umożliwiając debugowanie zawartości skryptu WebView.",
+			"edge.useWebView.attach.description": "Obiekt zawierający element `pipeName` potoku debugowania dla elementu WebView2 hostowanego przez platformę UWP. To jest element „MyTestSharedMemory” podczas tworzenia potoku „\\\\.\\pipe\\LOCAL\\MyTestSharedMemory”",
+			"edge.useWebView.launch.description": "W przypadku wartości „True” debuger będzie traktować plik wykonywalny środowiska uruchomieniowego jako aplikację hosta zawierającą element WebView, co umożliwia debugowanie zawartości skryptu WebView.",
 			"enableContentValidation.description": "Przełącza, czy sprawdzamy zawartość plików na dysku pod kątem zgodności z zawartością załadowaną w czasie wykonywania. Jest to przydatne w różnych scenariuszach i wymagane w niektórych, ale może powodować problemy, jeśli na przykład masz transformację skryptów po stronie serwera.",
 			"errors.timeout": "{0}: przekroczenie limitu czasu po {1} ms",
 			"extension.description": "Rozszerzenie do debugowania programów Node.js i przeglądarki Chrome.",
@@ -375,6 +113,7 @@
 			"extensionHost.launch.stopOnEntry.description": "Automatyczne zatrzymywanie hosta rozszerzenia po uruchomieniu.",
 			"extensionHost.snippet.launch.description": "Uruchom rozszerzenie programu VS Code w trybie debugowania",
 			"extensionHost.snippet.launch.label": "Opracowywanie rozszerzenia programu VS Code",
+			"getDiagnosticLogs.label": "Zapisz diagnostyczne dzienniki debugowania JS",
 			"longPredictionWarning.disable": "Nie pokazuj ponownie",
 			"longPredictionWarning.message": "Konfigurowanie punktów przerwania zajmuje trochę czasu. Możesz to przyspieszyć, aktualizując parametr „outFiles” w pliku launch.json.",
 			"longPredictionWarning.noFolder": "Brak otwartego folderu obszaru roboczego.",
@@ -391,7 +130,7 @@
 			"node.disableOptimisticBPs.description": "Nie ustawiaj punktów przerwania w żadnym pliku, dopóki nie zostanie załadowana mapa źródła dla danego pliku.",
 			"node.killBehavior.description": "Konfiguruje sposób zabijania procesów debugowania podczas zatrzymywania sesji. Dostępne opcje:\r\n\r\n— forceful (domyślnie): wymusza zamknięcie drzewa procesów. Powoduje wysyłanie polecenia SIGKILL w interfejsie POSIX lub \"taskkill.exe /F\" w systemie Windows.\r\n— polite: bezpiecznie zamyka drzewo procesów. Po zamknięciu w ten sposób nieprawidłowo działające procesy mogą pozostać uruchomione. Powoduje wysyłanie polecenia SIGTERM w interfejsie POSIX lub \"taskkill.exe\" bez flagi `/F` (force) w systemie Windows.\r\n— none: zakończenie nie nastąpi.",
 			"node.label": "Node.js",
-			"node.launch.args.description": "Argumenty wiersza polecenia przekazywane do programu.",
+			"node.launch.args.description": "Argumenty wiersza polecenia przekazane do programu.\r\n\r\nMoże być tablicą ciągów lub pojedynczym ciągiem. Po uruchomieniu programu w terminalu ustawienie tej właściwości na jeden ciąg spowoduje, że argumenty nie zostaną zmienione dla powłoki.",
 			"node.launch.autoAttachChildProcesses.description": "Automatycznie dołącz debuger do nowych procesów podrzędnych.",
 			"node.launch.config.name": "Uruchom",
 			"node.launch.console.description": "Gdzie uruchomić miejsce docelowe debugowania.",
@@ -461,18 +200,287 @@
 			"startWithStopOnEntry.label": "Rozpocznij debugowanie i zatrzymaj przy wejściu",
 			"timeouts.generalDescription": "Limity czasu dla kilku operacji debugera.",
 			"timeouts.generalDescription.markdown": "Limity czasu dla kilku operacji debugera.",
+			"timeouts.hoverEvaluation.description": "Czas do momentu przerwania oceny wartości dla aktywowanych symboli. Jeśli ustawiono wartość 0, ocena aktywowania nigdy nie przekracza limitu czasu.",
 			"timeouts.sourceMaps.description": "Limity czasu związane z operacjami map źródeł.",
 			"timeouts.sourceMaps.sourceMapCumulativePause.description": "Dodatkowy czas w milisekundach dozwolony na sesję, który można poświęcić na oczekiwanie na przetworzenie map źródeł po wyczerpaniu minimalnego czasu (sourceMapMinPause)",
 			"timeouts.sourceMaps.sourceMapMinPause.description": "Minimalny czas w milisekundach spędzony na oczekiwaniu na przetworzenie każdej mapy źródła podczas analizowania skryptu",
 			"toggle.skipping.this.file": "Przełącz pomijanie tego pliku",
 			"trace.boolean.description": "Śledzenie może być ustawione na wartość „true” w celu zapisu dzienników diagnostycznych na dysku.",
-			"trace.console.description": "Konfiguruje, czy dzienniki są również zwracane do konsoli debugowania.",
 			"trace.description": "Konfiguruje, jakie diagnostyczne dane wyjściowe są produkowane.",
-			"trace.level.description": "Konfiguruje poziom rejestrowanych dzienników.",
 			"trace.logFile.description": "Konfiguruje, gdzie na dysku są zapisywane dzienniki.",
 			"trace.stdio.description": "Czy zwracać dane śledzenia z uruchomionej aplikacji lub przeglądarki.",
-			"trace.tags.description": "Konfiguruje, jakie typy dzienników są rejestrowane.",
 			"workspaceTrust.description": "Aby debugować kod w tym obszarze roboczym, wymagane jest zaufanie."
+		},
+		"/src/binder": {
+			"breakpoint.provisionalBreakpoint": "Niewiązany punkt przerwania"
+		},
+		"/src/debugServer": {
+			"breakpoint.provisionalBreakpoint": "Niewiązany punkt przerwania"
+		},
+		"/src/vsDebugServer": {
+			"session.rootSessionName": "Adapter debugowania języka JavaScript"
+		},
+		"/src/adapter/customBreakpoints": {
+			"breakpoint.animationFrameFired": "Wywołano ramkę animacji",
+			"breakpoint.cancelAnimationFrame": "Anuluj ramkę animacji",
+			"breakpoint.closeAudioContext": "Zamknij element AudioContext",
+			"breakpoint.createAudioContext": "Utwórz element AudioContext",
+			"breakpoint.createCanvasContext": "Utwórz kontekst kanwy",
+			"breakpoint.cspViolation": "Skrypt zablokowany przez zasady zabezpieczeń zawartości",
+			"breakpoint.cspViolationNamed": "Naruszenie CSP „{0}”",
+			"breakpoint.cspViolationNamedDetails": "Wstrzymane w punkcie przerwania instrumentacji naruszenia zasad zabezpieczeń zawartości, dyrektywa „{0}”",
+			"breakpoint.eventListenerNamed": "Wstrzymane w punkcie przerwania detektora zdarzeń „{0}”, wyzwolono na „{1}”",
+			"breakpoint.instrumentationNamed": "Wstrzymane w punkcie przerwania Instrumentacji „{0}”",
+			"breakpoint.requestAnimationFrame": "Zażądaj ramki animacji",
+			"breakpoint.resumeAudioContext": "Wznów element AudioContext",
+			"breakpoint.scriptFirstStatement": "Pierwsza instrukcja skryptu",
+			"breakpoint.setInnerHtml": "Ustaw parametr innerHTML",
+			"breakpoint.setIntervalFired": "Wywołano funkcję setInterval",
+			"breakpoint.setTimeoutFired": "Wywołano funkcję setTimeout",
+			"breakpoint.suspendAudioContext": "Wstrzymaj element AudioContext",
+			"breakpoint.webglErrorFired": "Wyzwolono błąd WebGL",
+			"breakpoint.webglErrorNamed": "Błąd WebGL „{0}”",
+			"breakpoint.webglErrorNamedDetails": "Wstrzymane w punkcie przerwania Instrumentacji błędów WebGL, błąd „{0}”",
+			"breakpoint.webglWarningFired": "Wyzwolono ostrzeżenie WebGL"
+		},
+		"/src/adapter/debugAdapter": {
+			"breakpoint.caughtExceptions": "Przechwycone wyjątki",
+			"breakpoint.caughtExceptions.description": "Przerwy tylko w przypadku błędów lub odrzucenia obietnicy, które nie są obsługiwane.",
+			"breakpoint.uncaughtExceptions": "Nieprzechwycone wyjątki",
+			"error.cannotPrettyPrint": "Nie można wyświetlić widoku strukturalnego",
+			"error.sourceContentDidFail": "Nie można pobrać zawartości źródłowej",
+			"error.sourceNotFound": "Nie znaleziono źródła",
+			"error.variableNotFound": "Nie znaleziono zmiennej"
+		},
+		"/src/adapter/sources": {
+			"source.skipFiles": "Pominięte przez skipFiles"
+		},
+		"/src/adapter/stackTrace": {
+			"scope.block": "Blokuj",
+			"scope.catch": "Blok Catch",
+			"scope.closure": "Zamknięcie",
+			"scope.closureNamed": "Zamknięcie ({0})",
+			"scope.eval": "Obliczanie",
+			"scope.global": "Globalny",
+			"scope.local": "Lokalny",
+			"scope.module": "Moduł",
+			"scope.returnValue": "Wartość zwracana",
+			"scope.script": "Skrypt",
+			"scope.with": "Z blokiem",
+			"smartStepSkipLabel": "Pominięte przez smartStep",
+			"source.skipFiles": "Pominięte przez skipFiles"
+		},
+		"/src/adapter/threads": {
+			"error.evaluateDidFail": "Nie można obliczyć",
+			"error.evaluateOnAsyncStackFrame": "Nie można obliczyć w asynchronicznej ramce stosu",
+			"error.pauseDidFail": "Nie można wstrzymać",
+			"error.restartFrameAsync": "Nie można ponownie uruchomić ramki asynchronicznej",
+			"error.resumeDidFail": "Nie można wznowić",
+			"error.stackFrameNotFound": "Nie znaleziono ramki stosu",
+			"error.stepInDidFail": "Nie można wkroczyć",
+			"error.stepOutDidFail": "Nie można wyjść",
+			"error.stepOverDidFail": "Nie można przygotować kolejnego elementu",
+			"error.threadNotPaused": "Wątek nie został wstrzymany",
+			"error.threadNotPausedOnException": "Wątek nie został wstrzymany w przypadku wyjątku",
+			"error.unknownRestartError": "Nie można ponownie uruchomić ramki",
+			"pause.DomBreakpoint": "Wstrzymane w punkcie przerwania DOM",
+			"pause.assert": "Wstrzymane przy asercji",
+			"pause.breakpoint": "Wstrzymane w punkcie przerwania",
+			"pause.debugCommand": "Wstrzymane przy wywołaniu metody debug()",
+			"pause.default": "Wstrzymane z powodu instrukcji debugera",
+			"pause.eventListener": "Wstrzymane na odbiorniku zdarzeń",
+			"pause.exception": "Wstrzymane na wyjątku",
+			"pause.instrumentation": "Wstrzymane w punkcie przerwania instrumentacji",
+			"pause.oom": "Wstrzymane przed wyjątkiem braku pamięci",
+			"pause.promiseRejection": "Wstrzymane z powodu odrzucenia obietnicy",
+			"pause.xhr": "Wstrzymane przy żądaniu XMLHttpRequest lub pobieraniu",
+			"reason.description.restart": "Wstrzymane przy zapisie ramki",
+			"warnings.handleSourceMapPause.didNotWait": "OSTRZEŻENIE: Przetwarzanie map źródeł elementu {0} trwało dłużej niż {1} ms, więc kontynuowaliśmy wykonywanie bez oczekiwania na ustawienie wszystkich punktów przerwania dla skryptu."
+		},
+		"/src/adapter/variableStore": {
+			"error.customValueDescriptionGeneratorFailed": "{0} (nie można było opisać: {1})",
+			"error.emptyExpression": "Nie można ustawić pustej wartości",
+			"error.invalidExpression": "Nieprawidłowe wyrażenie",
+			"error.setVariableDidFail": "Nie można ustawić wartości zmiennej",
+			"error.unknown": "Nieznany błąd",
+			"error.variableNotFound": "Nie znaleziono zmiennej"
+		},
+		"/src/dap/errors": {
+			"NVM_HOME.not.found.message": "Atrybut „runtimeVersion” wymaga menedżera wersji Node.js „nvm-windows” lub „nvs”.",
+			"NVS_HOME.not.found.message": "Atrybut „runtimeVersion” z wariantem/architekturą wymaga zainstalowania elementu „nvs”.",
+			"VSND2011": "Nie można uruchomić elementu docelowego debugowania w terminalu ({0}).",
+			"VSND2029": "Nie można załadować zmiennych środowiskowych z pliku ({0}).",
+			"asyncScopesNotAvailable": "Zmienne niedostępne w stosach asynchronicznych",
+			"breakpointSyntaxError": "Błąd składniowy ustawiania punktu przerwania z warunkiem {0} w wierszu {1}: {2}",
+			"browserVersionNotFound": "Nie można znaleźć elementu {0} w wersji {1}. Dostępne automatycznie wykrywane wersje to: {2}. Możesz ustawić wartość „runtimeExecutable” w pliku launch.json na jedną z nich lub podać bezwzględną ścieżkę do pliku wykonywalnego przeglądarki.",
+			"error.browserAttachError": "Nie można dołączyć do przeglądarki",
+			"error.browserLaunchError": "Nie można uruchomić przeglądarki: „{0}”",
+			"error.threadNotFound": "Nie znaleziono wątku",
+			"invalidHitCondition": "Nieprawidłowy stan trafienia „{0}”. Oczekiwano wyrażenia, takiego jak „> 42” lub „== 2”.",
+			"noBrowserInstallFound": "Nie można odnaleźć instalacji przeglądarki w systemie. Spróbuj ją zainstalować lub podać ścieżkę bezwzględną do przeglądarki w parametrze „runtimeExecutable” w pliku launch.json.",
+			"noUwpPipeFound": "Nie można nawiązać połączenia z żadnym potokiem widoku internetowego platformy UWP. Upewnij się, że widok internetowy jest hostowany w trybie debugowania i że element „pipeName” w pliku „launch.json” jest poprawny.",
+			"profile.error.concurrent": "Zatrzymaj uruchomiony profil przed rozpoczęciem nowego.",
+			"profile.error.generic": "Wystąpił błąd podczas pobierania profilu z elementu docelowego.",
+			"runtime.node.notfound": "Nie można odnaleźć pliku binarnego Node.js „{0}”: {1}. Upewnij się, że oprogramowanie Node.js jest zainstalowane i znajduje się w ścieżce lub ustaw parametr „runtimeExecutable” w pliku launch.json",
+			"runtime.node.outdated": "Wersja oprogramowania Node w „{0}” jest nieaktualna (wersja {1}), wymagamy co najmniej wersji oprogramowania Node 8.x.",
+			"runtime.version.not.found.message": "Wersja Node.js „{0}” nie została zainstalowana przy użyciu menedżera wersji {1}.",
+			"sourcemapParseError": "Nie można odczytać mapy źródła dla elementu {0}: {1}",
+			"uwpPipeNotAvailable": "Debugowanie widoku internetowego platformy UWP nie jest dostępne na Twojej platformie."
+		},
+		"/src/ui/autoAttach": {
+			"details": "Szczegóły"
+		},
+		"/src/ui/companionBrowserLaunch": {
+			"cannotDebugInBrowser": "Z tego miejsca nie można uruchomić przeglądarki w trybie debugowania. Otwórz ten obszar roboczy w programie VS Code na pulpicie, aby włączyć debugowanie."
+		},
+		"/src/ui/debugLinkUI": {
+			"debugLink.invalidUrl": "Podany adres URL jest nieprawidłowy",
+			"debugLink.savePrompt": "Czy chcesz zapisać konfigurację w pliku launch.json, aby ułatwić dostęp w przyszłości?",
+			"never": "Nigdy",
+			"no": "Nie",
+			"yes": "Tak"
+		},
+		"/src/ui/debugNpmScript": {
+			"debug.npm.noScripts": "Nie znaleziono skryptów menedżera npm w pliku package.json",
+			"debug.npm.noWorkspaceFolder": "Musisz otworzyć folder obszaru roboczego, aby debugować skrypty menedżera npm.",
+			"debug.npm.notFound.open": "Edytuj plik package.json",
+			"debug.npm.parseError": "Nie można było odczytać elementu {0}: {1}"
+		},
+		"/src/ui/debugTerminalUI": {
+			"terminal.cwdpick": "Wybierz bieżący katalog roboczy dla nowego terminalu"
+		},
+		"/src/ui/diagnosticsUI": {
+			"inspectSessionEnded": "Wygląda na to, że Twoja sesja debugowania została już zakończona. Spróbuj ponownie debugować, a następnie uruchom polecenie „Debuguj: diagnozowanie problemów z punktem przerwania”.",
+			"never": "Nigdy",
+			"notNow": "Nie teraz",
+			"selectInspectSession": "Wybierz sesję, którą chcesz sprawdzić:",
+			"yes": "Tak"
+		},
+		"/src/ui/disableSourceMapUI": {
+			"always": "Zawsze w tym obszarze roboczym",
+			"disableSourceMapUi.msg": "To jest brakująca ścieżka do pliku przywoływana przez mapę źródła. Czy zamiast tego chcesz debugować skompilowaną wersję?",
+			"no": "Nie",
+			"yes": "Tak"
+		},
+		"/src/ui/edgeDevToolOpener": {
+			"selectEdgeToolSession": "Wybierz stronę, na której chcesz otworzyć program Dev Tools"
+		},
+		"/src/ui/linkedBreakpointLocationUI": {
+			"ignore": "Ignoruj",
+			"readMore": "Przeczytaj więcej"
+		},
+		"/src/ui/longPredictionUI": {
+			"longPredictionWarning.disable": "Nie pokazuj ponownie",
+			"longPredictionWarning.message": "Konfigurowanie punktów przerwania zajmuje trochę czasu. Możesz to przyspieszyć, aktualizując parametr „outFiles” w pliku launch.json.",
+			"longPredictionWarning.noFolder": "Brak otwartego folderu obszaru roboczego.",
+			"longPredictionWarning.open": "Otwórz plik launch.json"
+		},
+		"/src/ui/processPicker": {
+			"cannot.enable.debug.mode.error": "Dołącz do procesu: nie można włączyć trybu debugowania dla procesu „{0}” ({1}).",
+			"pickNodeProcess": "Wybierz proces node.js, do którego ma nastąpić dołączenie",
+			"process.id.error": "Dołącz do procesu: „{0}” nie wygląda jak identyfikator procesu.",
+			"process.id.port.signal": "identyfikator procesu: {0}, port debugowania: {1} ({2})",
+			"process.id.signal": "identyfikator procesu: {0} ({1})",
+			"process.picker.error": "Niepowodzenie selektora procesu ({0})"
+		},
+		"/src/ui/terminalLinkHandler": {
+			"cantOpenChromeOnWeb": "Z tego miejsca nie możemy uruchomić przeglądarki w trybie debugowania. Jeśli chcesz debugować tę stronę internetową, otwórz ten obszar roboczy z programu VS Code na pulpicie.",
+			"terminalLinkHover.debug": "Adres URL debugowania"
+		},
+		"/src/adapter/breakpoints/userDefinedBreakpoint": {
+			"breakpoint.provisionalBreakpoint": "Niewiązany punkt przerwania"
+		},
+		"/src/adapter/console/queryObjectsMessage": {
+			"queryObject.couldNotQuery": "Nie można wykonać zapytania dotyczącego podanego obiektu",
+			"queryObject.errorPreview": "Może wygenerować podgląd: {0}",
+			"queryObject.invalidObject": "Zapytania można wysyłać tylko do obiektów"
+		},
+		"/src/adapter/console/textualMessage": {
+			"console.assert": "Asercja nie powiodła się"
+		},
+		"/src/adapter/profiling/basicCpuProfiler": {
+			"profile.cpu.description": "Generuje plik .cpuprofile, który można otworzyć w narzędziu devtools przeglądarki Chrome",
+			"profile.cpu.label": "Profil procesora CPU"
+		},
+		"/src/adapter/profiling/basicHeapProfiler": {
+			"profile.heap.description": "Generuje plik .heapprofile, który można otworzyć w narzędziach devtools przeglądarki Chrome",
+			"profile.heap.label": "Profil sterty"
+		},
+		"/src/adapter/profiling/heapDumpProfiler": {
+			"profile.heap.description": "Generuje plik .heapsnapshot, który można otworzyć w narzędziu devtools przeglądarki Chrome",
+			"profile.heap.label": "Migawka sterty"
+		},
+		"/src/targets/browser/browserAttacher": {
+			"attach.cannotConnect": "Nie można nawiązać połączenia z obiektem docelowym pod adresem {0}: {1}",
+			"chrome.targets.placeholder": "Wybierz kartę"
+		},
+		"/src/targets/node/nodeAttacher": {
+			"node.attach.restart.message": "Utracono połączenie z obiektem debugowanym; ponowne nawiązywanie połączenia za {0} ms\r\n"
+		},
+		"/src/targets/node/nodeBinaryProvider": {
+			"outOfDate": "{0} Czy mimo to chcesz spróbować przeprowadzić debugowanie?",
+			"runtime.node.notfound.enoent": "ścieżka nie istnieje",
+			"runtime.node.notfound.spawnErr": "błąd podczas pobierania wersji: {0}",
+			"warning.16bpIssue": "Niektóre punkty przerwania mogą nie działać w twojej wersji środowiska Node.js. Zalecamy uaktualnienie w celu uzyskania najnowszych poprawek błędów, wydajności i zabezpieczeń. Szczegóły: https://aka.ms/AAcsvqm",
+			"warning.8outdated": "Używasz nieaktualnej wersji Node.js. Zalecamy uaktualnienie na potrzeby najnowszych poprawek dotyczących usterek, wydajności i zabezpieczeń.",
+			"yes": "Tak"
+		},
+		"/src/ui/configuration/chromiumDebugConfigurationProvider": {
+			"chrome.launch.name": "Uruchom przeglądarkę Chrome względem hosta lokalnego",
+			"existingBrowser.alert": "Wygląda na to, że przeglądarka już działa z {0}. Zamknij ją przed podjęciem próby debugowania, w przeciwnym razie program VS Code może nie być w stanie nawiązać z nią połączenia.",
+			"existingBrowser.debugAnyway": "Debuguj mimo to",
+			"existingBrowser.location.default": "stara sesja debugowania",
+			"existingBrowser.location.userDataDir": "skonfigurowano userDataDir"
+		},
+		"/src/ui/configuration/edgeDebugConfigurationProvider": {
+			"chrome.launch.name": "Uruchom przeglądarkę Microsoft Edge względem hosta lokalnego"
+		},
+		"/src/ui/configuration/nodeDebugConfigurationProvider": {
+			"debug.terminal.label": "JavaScript Debug Terminal",
+			"node.launch.currentFile": "Uruchom bieżący plik",
+			"node.launch.script": "Uruchom skrypt: {0}"
+		},
+		"/src/ui/configuration/nodeDebugConfigurationResolver": {
+			"cwd.notFound": "Skonfigurowany element „cwd” {0} nie jest folderem.",
+			"mern.starter.explanation": "Uruchom konfigurację dla utworzonego projektu '{0}'.",
+			"node.launch.config.name": "Uruchom program",
+			"outFiles.explanation": "Dostosuj wzorce globalne w atrybucie „outFiles”, aby obejmowały wygenerowany kod JavaScript.",
+			"program.guessed.from.package.json.explanation": "Uruchom konfigurację utworzoną na podstawie pliku „package.json”.",
+			"program.not.found.message": "Nie można odnaleźć programu do debugowania"
+		},
+		"/src/ui/profiling/breakpointTerminationCondition": {
+			"breakpointTerminationWarnConfirm": "Rozumiem!",
+			"breakpointTerminationWarnSlow": "Profilowanie z włączonymi punktami przerwania może zmienić wydajność kodu. Może to być przydatne, aby zweryfikować swoje ustalenia za pomocą warunków zakończenia „duration” lub „manual”.",
+			"profile.termination.breakpoint.description": "Uruchom do momentu trafienia określonego punktu przerwania",
+			"profile.termination.breakpoint.label": "Wybierz punkt przerwania"
+		},
+		"/src/ui/profiling/durationTerminationCondition": {
+			"profile.termination.duration.description": "Uruchom przez określony czas",
+			"profile.termination.duration.inputTitle": "Czas trwania profilu",
+			"profile.termination.duration.invalidFormat": "Wprowadź liczbę",
+			"profile.termination.duration.invalidLength": "Wprowadź liczbę większą niż 1",
+			"profile.termination.duration.label": "Czas trwania",
+			"profile.termination.duration.placeholder": "Czas trwania profilu w sekundach, na przykład „5”"
+		},
+		"/src/ui/profiling/manualTerminationCondition": {
+			"profile.termination.duration.description": "Uruchom do ręcznego zatrzymania",
+			"profile.termination.duration.label": "Ręczne"
+		},
+		"/src/ui/profiling/uiProfileManager": {
+			"no": "Nie",
+			"profile.alreadyRunning": "Sesja profilowania jest już uruchomiona. Chcesz ją zatrzymać i rozpocząć nową sesję?",
+			"profile.sessionState": "Profilowanie",
+			"profile.status.default": "$(loading~spin) Kliknij, aby zatrzymać profilowanie",
+			"profile.status.multiSession": "$(loading~spin) Kliknij, aby zatrzymać profilowanie (sesje {0})",
+			"profile.status.single": "$(loading~spin) Kliknij, aby zatrzymać profilowanie ({0})",
+			"profile.termination.title": "Jak długo ma być uruchamiany profil:",
+			"profile.type.title": "Typ profilu:",
+			"yes": "Tak"
+		},
+		"/src/ui/profiling/uiProfileSession": {
+			"profile.saving": "Zapisywanie",
+			"progress.profile.start": "Trwa uruchamianie profilu...",
+			"progress.profile.stop": "Trwa zatrzymywanie profilu..."
 		}
 	}
 }

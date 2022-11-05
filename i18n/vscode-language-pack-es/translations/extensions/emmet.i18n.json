@@ -8,9 +8,6 @@
 	],
 	"version": "1.0.0",
 	"contents": {
-		"dist\\node/abbreviationActions": {
-			"wrapWithAbbreviationPrompt": "Escribir abreviatura"
-		},
 		"package": {
 			"command.balanceIn": "Equilibrio (entrante)",
 			"command.balanceOut": "Equilibrio (saliente)",
@@ -71,8 +68,12 @@
 			"emmetShowExpandedAbbreviation": "Muestra las abreviaciones Emmet expandidas como sugerencias.\r\nLa opción \"inMarkupAndStylesheetFilesOnly\" se aplica a html, haml, jade, slim, xml, xsl, css, scss, sass, less y stylus.\r\nLa opción \"always\" se aplica a todas las partes del archivo, independientemente del marcado o CSS.",
 			"emmetShowSuggestionsAsSnippets": "Si es \"true\", las sugerencias Emmet se muestran como fragmentos de código, de modo que puede ordenarlas por el valor \"#editor.snippetSuggestions#\". ",
 			"emmetSyntaxProfiles": "Defina el perfil de la sintaxis especificada o use su propio perfil con reglas específicas.",
-			"emmetTriggerExpansionOnTab": "Cuando se habilita, se expande la abreviación Emmet al presionar la tecla TAB. ",
+			"emmetTriggerExpansionOnTab": "Cuando se habilita, las abreviaciones Emmet se expanden al presionar TAB, incluso cuando las finalizaciones no se muestran. Cuando está deshabilitada, las finalizaciones que se muestran se pueden aceptar presionando TAB.",
+			"emmetUseInlineCompletions": "Si es \"true\", Emmet usará finalizaciones insertadas para sugerir expansiones. Para evitar que el proveedor de elementos de finalización no insertados aparezca con la frecuencia con la que esta configuración es \"true\", active \"#editor.quickSuggestions#\" en \"inline\" o \"off\" para el elemento \"other\".",
 			"emmetVariables": "Variables para ser utilizadas en fragmentos de código de Emmet"
+		},
+		"dist\\node/abbreviationActions": {
+			"wrapWithAbbreviationPrompt": "Escribir abreviatura"
 		}
 	}
 }

@@ -8,6 +8,10 @@
 	],
 	"version": "1.0.0",
 	"contents": {
+		"dist/audioPreview": {
+			"preview.audioLoadError": "Při načítání zvukového souboru došlo k chybě.",
+			"preview.audioLoadErrorLink": "Chcete soubor otevřít pomocí standardního textového/binárního editoru VS Code?"
+		},
 		"dist/binarySizeStatusBarEntry": {
 			"sizeB": "{0} B",
 			"sizeGB": "{0} GB",
@@ -16,22 +20,28 @@
 			"sizeStatusBar.name": "Velikost binárního souboru obrázku",
 			"sizeTB": "{0} TB"
 		},
-		"dist/preview": {
+		"dist/imagePreview/index": {
 			"preview.imageLoadError": "Při načítání obrázku došlo k chybě.",
 			"preview.imageLoadErrorLink": "Chcete soubor otevřít pomocí standardního textového/binárního editoru VS Code?"
 		},
-		"dist/sizeStatusBarEntry": {
+		"dist/imagePreview/sizeStatusBarEntry": {
 			"sizeStatusBar.name": "Velikost obrázku"
 		},
-		"dist/zoomStatusBarEntry": {
+		"dist/imagePreview/zoomStatusBarEntry": {
 			"zoomStatusBar.name": "Přiblížení obrázku",
 			"zoomStatusBar.placeholder": "Vybrat úroveň přiblížení",
 			"zoomStatusBar.wholeImageLabel": "Celý obrázek"
 		},
+		"dist/videoPreview": {
+			"preview.videoLoadError": "Při načítání videosouboru došlo k chybě.",
+			"preview.videoLoadErrorLink": "Chcete soubor otevřít pomocí standardního textového/binárního editoru VS Code?"
+		},
 		"package": {
 			"command.zoomIn": "Přiblížit",
 			"command.zoomOut": "Oddálit",
-			"customEditors.displayName": "Náhled obrázku",
+			"customEditor.audioPreview.displayName": "Ukázka zvuku",
+			"customEditor.imagePreview.displayName": "Náhled obrázku",
+			"customEditor.videoPreview.displayName": "Náhled videa",
 			"description": "Poskytuje integrovaný náhled obrázku VS Code",
 			"displayName": "Náhled obrázku"
 		}

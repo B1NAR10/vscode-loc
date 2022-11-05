@@ -8,6 +8,10 @@
 	],
 	"version": "1.0.0",
 	"contents": {
+		"dist/audioPreview": {
+			"preview.audioLoadError": "При загрузке аудиофайла произошла ошибка.",
+			"preview.audioLoadErrorLink": "Открыть файл, используя стандартный редактор текста/двоичного кода VS Code?"
+		},
 		"dist/binarySizeStatusBarEntry": {
 			"sizeB": "{0} Б",
 			"sizeGB": "{0} ГБ",
@@ -16,22 +20,28 @@
 			"sizeStatusBar.name": "Размер двоичного файла образа",
 			"sizeTB": "{0} ТБ"
 		},
-		"dist/preview": {
+		"dist/imagePreview/index": {
 			"preview.imageLoadError": "При загрузке изображения произошла ошибка.",
 			"preview.imageLoadErrorLink": "Открыть файл, используя стандартный редактор текста/двоичного кода VS Code?"
 		},
-		"dist/sizeStatusBarEntry": {
+		"dist/imagePreview/sizeStatusBarEntry": {
 			"sizeStatusBar.name": "Размер образа"
 		},
-		"dist/zoomStatusBarEntry": {
+		"dist/imagePreview/zoomStatusBarEntry": {
 			"zoomStatusBar.name": "Масштаб изображения",
 			"zoomStatusBar.placeholder": "Выберите уровень масштабирования",
 			"zoomStatusBar.wholeImageLabel": "Все изображение"
 		},
+		"dist/videoPreview": {
+			"preview.videoLoadError": "При загрузке видеофайла произошла ошибка.",
+			"preview.videoLoadErrorLink": "Открыть файл, используя стандартный редактор текста/двоичного кода VS Code?"
+		},
 		"package": {
 			"command.zoomIn": "Увеличить",
 			"command.zoomOut": "Уменьшить",
-			"customEditors.displayName": "Предварительный просмотр изображения",
+			"customEditor.audioPreview.displayName": "Предварительное прослушивание звука",
+			"customEditor.imagePreview.displayName": "Предварительный просмотр изображения",
+			"customEditor.videoPreview.displayName": "Предварительный просмотр видео",
 			"description": "Предоставляет встроенный предварительный просмотр изображений VS Code",
 			"displayName": "Предварительный просмотр изображения"
 		}

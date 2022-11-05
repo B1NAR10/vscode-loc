@@ -8,271 +8,6 @@
 	],
 	"version": "1.0.0",
 	"contents": {
-		"/src/adapter/breakpoints/userDefinedBreakpoint": {
-			"breakpoint.provisionalBreakpoint": "未繫結的中斷點"
-		},
-		"/src/adapter/console/queryObjectsMessage": {
-			"queryObject.couldNotQuery": "無法查詢提供的物件",
-			"queryObject.errorPreview": "可產生預覽: {0}",
-			"queryObject.invalidObject": "只能查詢物件"
-		},
-		"/src/adapter/console/textualMessage": {
-			"console.assert": "判斷提示失敗"
-		},
-		"/src/adapter/customBreakpoints": {
-			"breakpoint.animationFrameFired": "已引發動畫畫面格",
-			"breakpoint.cancelAnimationFrame": "取消動畫畫面格",
-			"breakpoint.closeAudioContext": "關閉 AudioContext",
-			"breakpoint.createAudioContext": "建立 AudioContext",
-			"breakpoint.createCanvasContext": "建立畫布內容",
-			"breakpoint.cspViolation": "內容安全性原則禁止的指令碼",
-			"breakpoint.cspViolationNamed": "CSP 違規 \"{0}\"",
-			"breakpoint.cspViolationNamedDetails": "已在內容安全性原則違規檢測中斷點時暫停，指示詞 \"{0}\"",
-			"breakpoint.eventListenerNamed": "已在 \"{1}\" 觸發的事件接聽程式中斷點 \"{0}\" 時暫停",
-			"breakpoint.instrumentationNamed": "已在檢測中斷點 \"{0}\" 時暫停",
-			"breakpoint.requestAnimationFrame": "要求動畫畫面格",
-			"breakpoint.resumeAudioContext": "繼續 AudioContext",
-			"breakpoint.scriptFirstStatement": "指令碼中的第一個陳述式",
-			"breakpoint.setInnerHtml": "設定 innerHTML",
-			"breakpoint.setIntervalFired": "已引發 setInterval",
-			"breakpoint.setTimeoutFired": "已引發 setTimeout",
-			"breakpoint.suspendAudioContext": "暫停 AudioContext",
-			"breakpoint.webglErrorFired": "已引發 WebGL 錯誤",
-			"breakpoint.webglErrorNamed": "WebGL 錯誤 \"{0}\"",
-			"breakpoint.webglErrorNamedDetails": "已在 WebGL 錯誤檢測中斷點時暫停，錯誤 \"{0}\"",
-			"breakpoint.webglWarningFired": "已引發 WebGL 警告"
-		},
-		"/src/adapter/debugAdapter": {
-			"breakpoint.caughtExceptions": "攔截到的例外狀況",
-			"breakpoint.caughtExceptions.description": "中斷所有擲回錯誤，即使是之後攔截的也一樣。",
-			"breakpoint.uncaughtExceptions": "未攔截到的例外狀況",
-			"error.cannotPrettyPrint": "無法美化圖片",
-			"error.sourceContentDidFail": "無法擷取原始檔內容",
-			"error.sourceNotFound": "找不到原始檔",
-			"error.variableNotFound": "找不到變數"
-		},
-		"/src/adapter/profiling/basicCpuProfiler": {
-			"profile.cpu.description": "產生可以在 Chrome DevTools 中開啟的 .cpuprofile 檔案",
-			"profile.cpu.label": "CPU 設定檔"
-		},
-		"/src/adapter/profiling/basicHeapProfiler": {
-			"profile.heap.description": "產生可以在 Chrome DevTools 中開啟的 .heapprofile 檔案",
-			"profile.heap.label": "堆積設定檔"
-		},
-		"/src/adapter/profiling/heapDumpProfiler": {
-			"profile.heap.description": "產生可以在 Chrome DevTools 中開啟的 .heapsnapshot 檔案",
-			"profile.heap.label": "堆積快照"
-		},
-		"/src/adapter/sources": {
-			"source.skipFiles": "skipFiles 已跳過"
-		},
-		"/src/adapter/stackTrace": {
-			"scope.block": "區塊",
-			"scope.catch": "Catch 區塊",
-			"scope.closure": "關閉",
-			"scope.closureNamed": "關閉 ({0})",
-			"scope.eval": "Eval",
-			"scope.global": "全域",
-			"scope.local": "區域",
-			"scope.module": "模組",
-			"scope.returnValue": "傳回值",
-			"scope.script": "指令碼",
-			"scope.with": "With 區塊",
-			"smartStepSkipLabel": "smartStep 已跳過",
-			"source.skipFiles": "skipFiles 已跳過"
-		},
-		"/src/adapter/threads": {
-			"error.evaluateDidFail": "無法評估",
-			"error.evaluateOnAsyncStackFrame": "無法評估非同步堆疊框架",
-			"error.pauseDidFail": "無法暫停",
-			"error.restartFrameAsync": "無法重新啟動非同步框架",
-			"error.resumeDidFail": "無法繼續",
-			"error.stackFrameNotFound": "找不到堆疊框架",
-			"error.stepInDidFail": "無法逐步執行",
-			"error.stepOutDidFail": "無法跳離",
-			"error.stepOverDidFail": "無法繼續下一行",
-			"error.threadNotPaused": "執行緒未暫停",
-			"error.threadNotPausedOnException": "執行緒未在發生例外狀況時暫停",
-			"pause.DomBreakpoint": "已在 DOM 中斷點時暫停",
-			"pause.assert": "已在判斷提示時暫停",
-			"pause.breakpoint": "已在中斷點時暫停",
-			"pause.debugCommand": "已在呼叫 debug() 時暫停",
-			"pause.default": "已暫停",
-			"pause.eventListener": "已在事件接聽程式時暫停",
-			"pause.exception": "已在發生例外狀況時暫停",
-			"pause.instrumentation": "已在檢測中斷點時暫停",
-			"pause.oom": "已在發生記憶體不足例外狀況之前暫停",
-			"pause.promiseRejection": "已因拒絕承諾而暫停",
-			"pause.xhr": "已在 XMLHttpRequest 或擷取時暫停",
-			"reason.description.restart": "已於框架項目暫停",
-			"warnings.handleSourceMapPause.didNotWait": "警告: 處理 {0} 來源對應的時間超過 {1} 毫秒，因此繼續執行，但不會等候指令碼的所有中斷點完成設定。"
-		},
-		"/src/binder": {
-			"breakpoint.provisionalBreakpoint": "未繫結的中斷點"
-		},
-		"/src/dap/errors": {
-			"NVM_HOME.not.found.message": "屬性 'runtimeVersion' 需要 Node.js 版本管理員 'nvm-windows' 或 'nvs'。",
-			"NVS_HOME.not.found.message": "屬性 'runtimeVersion' 需要安裝 Node.js 版本管理員 'nvs' 或 'nvm'。",
-			"VSND2011": "在終端機 ({0}) 中無法啟動偵錯目標。",
-			"VSND2029": "無法從檔案 ({0}) 載入環境變數。",
-			"asyncScopesNotAvailable": "變數在非同步堆疊中無法使用",
-			"breakpointSyntaxError": "使用條件 {0} 在第 {1}: {2} 行設定中斷點時發生語法錯誤",
-			"browserVersionNotFound": "找不到 {0} {1} 版。提供之自動探索到的版本: {2}。您可以將您 launch.json 中的 \"runtimeExecutable\" 設定為其中之一，或是提供瀏覽器可執行檔的絕對路徑。",
-			"error.browserAttachError": "無法連結到瀏覽器",
-			"error.browserLaunchError": "無法啟動瀏覽器: \"{0}\"",
-			"error.threadNotFound": "找不到目標頁面。您必須更新 \"urlFilter\"，才能找到您要偵錯的頁面。",
-			"invalidHitCondition": "到達條件 \"{0}\" 無效。需要 \"> 42\" 或 \"== 2\" 之類的運算式。",
-			"noBrowserInstallFound": "在您的系統上找不到瀏覽器的安裝。請嘗試安裝該項目，或在您 launch.json 的 \"runtimeExecutable\" 中提供瀏覽器的絕對路徑。",
-			"profile.error.concurrent": "請先停止正在執行的設定檔，然後再啟動新的設定檔。",
-			"profile.error.generic": "從目標擷取設定檔時發生錯誤。",
-			"runtime.node.notfound": "找不到 Node.js 二進位檔 \"{0}\": {1}。請確認 Node.js 已安裝，且位於您的 PATH 中，或在您的 launch.json 中設定 \"runtimeExecutable\"",
-			"runtime.node.outdated": "\"{0}\" 中的 Node 版本已過期 ({1} 版)。最低需要 Node 8.x。",
-			"runtime.version.not.found.message": "未使用版本管理員 {1} 安裝 Node.js '{0}' 版。",
-			"sourcemapParseError": "無法讀取 {0} 的原始檔對應: {1}"
-		},
-		"/src/debugServer": {
-			"breakpoint.provisionalBreakpoint": "未繫結的中斷點"
-		},
-		"/src/targets/browser/browserAttacher": {
-			"attach.cannotConnect": "無法連線到位於 {0} 的目標: {1}",
-			"chrome.targets.placeholder": "選取索引標籤"
-		},
-		"/src/targets/node/nodeAttacher": {
-			"node.attach.restart.message": "與偵錯項目的連線已中斷。將於 {0} 毫秒內重新連線\r\n"
-		},
-		"/src/targets/node/nodeBinaryProvider": {
-			"outOfDate": "{0} 仍然要嘗試偵錯嗎?",
-			"runtime.node.notfound.enoent": "路徑不存在",
-			"runtime.node.notfound.spawnErr": "取得版本時發生錯誤: {0}",
-			"warning.16bpIssue": "某些中斷點在您的 Node.js 版本中可能無法運作。建議您升級，以取得最新的錯誤、效能及安全性修正。詳細資料: https://aka.ms/AAcsvqm",
-			"warning.8outdated": "您執行的 Node.js 版本已過期。我們建議升級以修正最新的錯誤、效能和安全性問題。",
-			"yes": "是"
-		},
-		"/src/ui/autoAttach": {
-			"details": "詳細資料"
-		},
-		"/src/ui/companionBrowserLaunch": {
-			"cannotDebugInBrowser": "在偵錯模式中時，無法由此啟動瀏覽器。請從您桌面的 VS Code 中開啟此工作區，以啟用偵錯。"
-		},
-		"/src/ui/configuration/chromiumDebugConfigurationProvider": {
-			"chrome.launch.name": "對 localhost 啟動 Chrome",
-			"existingBrowser.alert": "瀏覽器似乎已從 {0} 執行。請先將其關閉再嘗試進行偵錯，否則 VS Code 可能無法與其連線。",
-			"existingBrowser.debugAnyway": "仍要偵錯",
-			"existingBrowser.location.default": "舊的偵錯工作階段",
-			"existingBrowser.location.userDataDir": "設定的 userDataDir"
-		},
-		"/src/ui/configuration/edgeDebugConfigurationProvider": {
-			"chrome.launch.name": "對 localhost 啟動 Microsoft Edge"
-		},
-		"/src/ui/configuration/nodeDebugConfigurationProvider": {
-			"debug.terminal.label": "JavaScript 偵錯終端機",
-			"node.launch.currentFile": "執行目前的檔案",
-			"node.launch.script": "執行指令碼: {0}"
-		},
-		"/src/ui/configuration/nodeDebugConfigurationResolver": {
-			"cwd.notFound": "設定的 'cwd' {0} 不存在。",
-			"mern.starter.explanation": "為建立的 '{0}' 專案啟動組態。",
-			"node.launch.config.name": "啟動程式",
-			"outFiles.explanation": "調整 'outFiles' 屬性中的 Glob 模式，讓模式涵蓋所產生的 JavaScript。",
-			"program.guessed.from.package.json.explanation": "根據 'package.json' 啟動建立的組態。",
-			"program.not.found.message": "找不到要偵錯的程式"
-		},
-		"/src/ui/debugLinkUI": {
-			"debugLink.invalidUrl": "提供的 URL 無效",
-			"debugLink.savePrompt": "您要將設定儲存在您的 launch.json 中，以便日後存取嗎?",
-			"never": "一律不要",
-			"no": "否",
-			"yes": "是"
-		},
-		"/src/ui/debugNpmScript": {
-			"debug.npm.noScripts": "未在您的 package.json 找到 npm 指令碼",
-			"debug.npm.noWorkspaceFolder": "您需要開啟工作區資料夾，才能偵錯 npm 指令碼。",
-			"debug.npm.notFound.open": "編輯 package.json",
-			"debug.npm.parseError": "無法讀取 {0}: {1}"
-		},
-		"/src/ui/debugTerminalUI": {
-			"terminal.cwdpick": "為新的終端機選擇目前的工作目錄"
-		},
-		"/src/ui/diagnosticsUI": {
-			"inspectSessionEnded": "您的偵錯工作階段似乎已結束。再次嘗試進行偵錯工具，然後執行 \"Debug: Diagnose Breakpoint Problems\" 命令。",
-			"never": "永不",
-			"notNow": "現在不要",
-			"selectInspectSession": "選取您想要檢查的工作階段:",
-			"yes": "是"
-		},
-		"/src/ui/disableSourceMapUI": {
-			"always": "永遠",
-			"disableSourceMapUi.msg": "此為 sourcemap 所參考的遺失檔案路徑。您要改為對已編譯的版本進行偵錯嗎?",
-			"no": "否",
-			"yes": "是"
-		},
-		"/src/ui/edgeDevToolOpener": {
-			"selectEdgeToolSession": "選取要開啟 Devtools 的頁面"
-		},
-		"/src/ui/linkedBreakpointLocationUI": {
-			"ignore": "忽略",
-			"readMore": "閱讀更多"
-		},
-		"/src/ui/longPredictionUI": {
-			"longPredictionWarning.disable": "不要再顯示",
-			"longPredictionWarning.message": "設定中斷點需要一段時間。您可以透過更新 launch.json 中的 'outFiles' 來加快速度。",
-			"longPredictionWarning.noFolder": "未開啟工作區資料夾。",
-			"longPredictionWarning.open": "開啟 launch.json"
-		},
-		"/src/ui/prettyPrint": {
-			"never": "一律不要",
-			"no": "否",
-			"yes": "是"
-		},
-		"/src/ui/processPicker": {
-			"cannot.enable.debug.mode.error": "附加至處理序: 無法啟用處理序 '{0}' ({1}) 的偵錯模式。",
-			"pickNodeProcess": "挑選附加目標 node.js 處理序",
-			"process.id.error": "附加至處理序: '{0}' 看起來不像處理序識別碼。",
-			"process.id.port.signal": "處理序 id: {0}, 偵錯埠: {1} ({2})",
-			"process.id.signal": "處理序 id: {0} ({1})",
-			"process.picker.error": "處理序選擇器失敗 ({0})"
-		},
-		"/src/ui/profiling/breakpointTerminationCondition": {
-			"breakpointTerminationWarnConfirm": "了解!",
-			"breakpointTerminationWarnSlow": "分析如有啟用中斷點，可能會造成程式碼的效能變更。您可以使用「持續時間」或「手動」終止條件來驗證您的觀察。",
-			"profile.termination.breakpoint.description": "執行到到達特定中斷點時",
-			"profile.termination.breakpoint.label": "挑選中斷點"
-		},
-		"/src/ui/profiling/durationTerminationCondition": {
-			"profile.termination.duration.description": "執行特定的時間長度",
-			"profile.termination.duration.inputTitle": "設定檔持續時間",
-			"profile.termination.duration.invalidFormat": "請輸入數字",
-			"profile.termination.duration.invalidLength": "請輸入大於 1 的數字",
-			"profile.termination.duration.label": "持續時間",
-			"profile.termination.duration.placeholder": "設定檔持續時間 (秒)，例如 \"5\""
-		},
-		"/src/ui/profiling/manualTerminationCondition": {
-			"profile.termination.duration.description": "執行到手動停止時",
-			"profile.termination.duration.label": "手動"
-		},
-		"/src/ui/profiling/uiProfileManager": {
-			"no": "否",
-			"profile.alreadyRunning": "分析工作階段已在執行。要停止該工作階段，然後再啟動新的工作階段嗎?",
-			"profile.sessionState": "分析",
-			"profile.status.default": "$(loading~spin) 按一下以停止分析",
-			"profile.status.multiSession": "$(loading~spin) 按一下以停止分析 ({0} 個工作階段)",
-			"profile.status.single": "$(loading~spin) 按一下以停止分析 ({0})",
-			"profile.termination.title": "設定檔的執行時間長度:",
-			"profile.type.title": "設定檔類型:",
-			"yes": "是"
-		},
-		"/src/ui/profiling/uiProfileSession": {
-			"profile.saving": "正在儲存",
-			"progress.profile.start": "正在啟動設定檔...",
-			"progress.profile.stop": "正在停止設定檔..."
-		},
-		"/src/ui/terminalLinkHandler": {
-			"cantOpenChromeOnWeb": "在偵錯模式中時，無法由此啟動瀏覽器。若要對此網頁執行偵錯，請從您桌面的 VS Code 中開啟此工作區。",
-			"terminalLinkHover.debug": "對 URL 偵錯"
-		},
-		"/src/vsDebugServer": {
-			"session.rootSessionName": "JavaScript 偵錯配接器"
-		},
 		"package": {
 			"add.browser.breakpoint": "新增瀏覽器中斷點",
 			"attach.node.process": "連結到節點處理序",
@@ -313,7 +48,7 @@
 			"browser.webRoot.description": "這會指定網頁伺服器根目錄的工作區絕對路徑。可用來將 `/app.js` 這類路徑解析成磁碟上的檔案。亦為 pathMapping 的 \"/\" 速記法",
 			"chrome.attach.description": "附加至已經進入偵錯模式的 Chrome 執行個體",
 			"chrome.attach.label": "Chrome: 連結",
-			"chrome.label": "Chrome",
+			"chrome.label": "Web 應用程式 (Chrome)",
 			"chrome.launch.description": "啟動 Chrome 以偵錯 URL",
 			"chrome.launch.label": "Chrome: 啟動",
 			"commands.callersAdd.label": "排除呼叫者",
@@ -322,6 +57,8 @@
 			"commands.callersGoToTarget.label": "前往目標位置",
 			"commands.callersRemove.label": "移除排除的呼叫者",
 			"commands.callersRemoveAll.label": "移除所有排除的呼叫者",
+			"commands.disableSourceMapStepping.label": "停用來源對應逐步執行",
+			"commands.enableSourceMapStepping.label": "啟用來源對應逐步執行",
 			"configuration.autoAttachMode": "Configures which processes to automatically attach and debug when `#debug.node.autoAttach#` is on. A Node process launched with the `--inspect` flag will always be attached to, regardless of this setting.",
 			"configuration.autoAttachMode.always": "自動附加至在終端機中啟動的每個 Node.js 處理序。",
 			"configuration.autoAttachMode.disabled": "自動附加已停用且不顯示於狀態列。",
@@ -335,7 +72,6 @@
 			"configuration.npmScriptLensLocation": "\"Run\" 與 \"Debug\" 程式碼濾鏡應在您 npm 指令碼中顯示的位置。可以是「全部」、指令碼、指令碼區段的「頂端」或「永不」。",
 			"configuration.pickAndAttachOptions": "透過 `Debug: Attach to Node.js Process` 命令偵錯處理序時所用的預設選項",
 			"configuration.resourceRequestOptions": "在偵錯工具中載入資源 (例如來源對應) 時所使用的要求選項。舉例來說，若您的來源對應需要驗證或使用自我簽署憑證，就可能需要設定此項。選項可用於使用 [`got`](https://github.com/sindresorhus/got) 程式庫來建立要求。\r\n\r\n停用憑證驗證是一種常見案例，可透過傳遞 `{ \"https\": { \"rejectUnauthorized\": false } }` 來完成。",
-			"configuration.suggestPrettyPrinting": "是否要在您進入時建議看起來已縮小的美化顯示 JavaScript 程式碼。",
 			"configuration.terminalOptions": "JavaScript 偵錯終端機和 npm 指令碼的預設啟動選項。",
 			"configuration.unmapMissingSources": "設定無法讀取原始檔案的 sourcemap 檔案是否將自動取消對應。如果為 false (預設)，系統會顯示提示。",
 			"createDiagnostics.label": "診斷中斷點問題",
@@ -353,15 +89,17 @@
 			"debug.terminal.toggleAuto": "切換終端 Node.js 自動附加",
 			"debug.terminal.welcome": "[JavaScript 偵錯終端機](command:extension.js-debug.createDebuggerTerminal)\r\n\r\n您可以使用 JavaScript 偵錯終端機為命令列上執行的 Node.js 處理序進行偵錯。",
 			"debug.terminal.welcomeWithLink": "[JavaScript 偵錯終端機](command:extension.js-debug.createDebuggerTerminal)\r\n\r\n您可以使用 JavaScript 偵錯終端機為命令列上執行的 Node.js 處理序進行偵錯。\r\n\r\n[偵錯 URL](command:extension.js-debug.debugLink)",
+			"debug.unverifiedBreakpoints": "無法設定部分中斷點。如果您遇到問題，您可以 [疑難排解啟動設定](command:extension.js-debug.createDiagnostics)。",
 			"debugLink.label": "開啟連結",
 			"edge.address.description": "對 Web 檢視進行偵錯時，該 Web 檢視所接聽的 IP 位址或主機名稱。如果未設定，則會自動探索。",
 			"edge.attach.description": "附加至已經進入偵錯模式的 Microsoft Edge 執行個體",
 			"edge.attach.label": "Edge: 連結",
-			"edge.label": "邊緣",
+			"edge.label": "Web 應用程式 (Edge)",
 			"edge.launch.description": "啟動 Microsoft Edge 來偵錯 URL",
 			"edge.launch.label": "Edge: 啟動",
 			"edge.port.description": "對 Web 檢視進行偵錯時，該 Web 檢視偵錯工具所接聽的連接埠。如果未設定，則會自動探索。",
-			"edge.useWebView.description": "(Microsoft Edge (Chromium) 專用) 為 'true' 時，偵錯工具會將執行階段可執行檔視為包含 WebView 的主機應用程式，以便您偵錯 WebView 指令碼內容。",
+			"edge.useWebView.attach.description": "物件，包含 UWP 代管 Webview2 之偵錯管道的 'pipeName'。這是建立管道 \"\\\\.\\pipe\\LOCAL\\MyTestSharedMemory\" 時的 \"MyTestSharedMemory\"",
+			"edge.useWebView.launch.description": "為 'true' 時，偵錯工具會將執行階段可執行檔視為包含 WebView 的主機應用程式，以便您偵錯 WebView 指令碼內容。",
 			"enableContentValidation.description": "切換是否要驗證磁碟上的檔案內容符合執行時間中載入的內容。這適用於多種情況，而且在某些情況下是必要的，但舉例來說，如果您有指令碼的伺服器端轉換，就可能會造成問題。",
 			"errors.timeout": "{0}: 經過 {1} 毫秒後逾時",
 			"extension.description": "用於偵錯 Node.js 程式和 Chrome 的延伸模組。",
@@ -375,6 +113,7 @@
 			"extensionHost.launch.stopOnEntry.description": "啟動後自動停止延伸模組主機。",
 			"extensionHost.snippet.launch.description": "在偵錯模式下啟動 VS 程式碼延伸模組",
 			"extensionHost.snippet.launch.label": "VS Code 延伸模組開發",
+			"getDiagnosticLogs.label": "儲存診斷 JS 偵錯記錄",
 			"longPredictionWarning.disable": "不要再顯示",
 			"longPredictionWarning.message": "設定中斷點需要一段時間。您可以透過更新 launch.json 中的 'outFiles' 來加快速度。",
 			"longPredictionWarning.noFolder": "未開啟工作區資料夾。",
@@ -391,7 +130,7 @@
 			"node.disableOptimisticBPs.description": "在為該檔案載入 sourcemap 之前，請勿在任何檔案中設定中斷點。",
 			"node.killBehavior.description": "設定當工作階段停止時，如何終止偵錯處理序。可設定為:\r\n\r\n- 強制 (預設): 強制卸除處理序樹狀結構。在 posix 上請傳送 SIGKILL，在 Windows 上請傳送 `taskkill.exe /F`。\r\n- 正常: 適當地卸除處理序樹狀結構。以此方式關機之後，行為不當的處理序有可能仍會持續執行。在 posix 上請傳送 SIGTERM，在 Windows 上則請傳送不指定 `/F` (強制) 旗標的 `taskkill.exe`。\r\n- 無: 不發生任何終止。",
 			"node.label": "Node.js",
-			"node.launch.args.description": "傳遞至程式的命令列引數。",
+			"node.launch.args.description": "傳遞至程式的命令列引數。\r\n\r\n可以是字串陣列或單一字串。當程式在終端機中啟動時，將此屬性設定為單一字串將導致命令介面的引數不會逸出。",
 			"node.launch.autoAttachChildProcesses.description": "自動附加偵錯工具至新的子處理序。",
 			"node.launch.config.name": "啟動",
 			"node.launch.console.description": "啟動偵錯目標的位置。",
@@ -461,18 +200,287 @@
 			"startWithStopOnEntry.label": "啟動偵錯並停止在進入點",
 			"timeouts.generalDescription": "幾個偵錯工具作業的逾時。",
 			"timeouts.generalDescription.markdown": "幾個偵錯工具作業的逾時。",
+			"timeouts.hoverEvaluation.description": "中止暫留符號之值評估前的時間。如果設為 0，暫留評估永遠不會逾時。",
 			"timeouts.sourceMaps.description": "與來源對應作業相關的逾時。",
 			"timeouts.sourceMaps.sourceMapCumulativePause.description": "每個工作階段在基本時間 (sourceMapMinPause) 用盡之後，可額外用於等候來源對應處理的時間 (毫秒)",
 			"timeouts.sourceMaps.sourceMapMinPause.description": "剖析指令碼時，花費在等候每個來源對應處理的基本時間 (毫秒)",
 			"toggle.skipping.this.file": "切換跳過此檔案",
 			"trace.boolean.description": "追蹤可設為 'true' 來將診斷記錄寫入磁碟。",
-			"trace.console.description": "設定記錄是否會一併傳回偵錯主控台。",
 			"trace.description": "設定產生的診斷輸出。",
-			"trace.level.description": "設定記錄的記錄層級。",
 			"trace.logFile.description": "設定要寫入磁碟記錄的位置。",
 			"trace.stdio.description": "是否從啟動的應用程式或是瀏覽器傳回追蹤資料。",
-			"trace.tags.description": "設定要記錄的記錄類型。",
 			"workspaceTrust.description": "需要信任才能在此工作區中對程式碼進行偵錯。"
+		},
+		"/src/binder": {
+			"breakpoint.provisionalBreakpoint": "未繫結的中斷點"
+		},
+		"/src/debugServer": {
+			"breakpoint.provisionalBreakpoint": "未繫結的中斷點"
+		},
+		"/src/vsDebugServer": {
+			"session.rootSessionName": "JavaScript 偵錯配接器"
+		},
+		"/src/adapter/customBreakpoints": {
+			"breakpoint.animationFrameFired": "已引發動畫畫面格",
+			"breakpoint.cancelAnimationFrame": "取消動畫畫面格",
+			"breakpoint.closeAudioContext": "關閉 AudioContext",
+			"breakpoint.createAudioContext": "建立 AudioContext",
+			"breakpoint.createCanvasContext": "建立畫布內容",
+			"breakpoint.cspViolation": "內容安全性原則禁止的指令碼",
+			"breakpoint.cspViolationNamed": "CSP 違規 \"{0}\"",
+			"breakpoint.cspViolationNamedDetails": "已在內容安全性原則違規檢測中斷點時暫停，指示詞 \"{0}\"",
+			"breakpoint.eventListenerNamed": "已在 \"{1}\" 觸發的事件接聽程式中斷點 \"{0}\" 時暫停",
+			"breakpoint.instrumentationNamed": "已在檢測中斷點 \"{0}\" 時暫停",
+			"breakpoint.requestAnimationFrame": "要求動畫畫面格",
+			"breakpoint.resumeAudioContext": "繼續 AudioContext",
+			"breakpoint.scriptFirstStatement": "指令碼中的第一個陳述式",
+			"breakpoint.setInnerHtml": "設定 innerHTML",
+			"breakpoint.setIntervalFired": "已引發 setInterval",
+			"breakpoint.setTimeoutFired": "已引發 setTimeout",
+			"breakpoint.suspendAudioContext": "暫停 AudioContext",
+			"breakpoint.webglErrorFired": "已引發 WebGL 錯誤",
+			"breakpoint.webglErrorNamed": "WebGL 錯誤 \"{0}\"",
+			"breakpoint.webglErrorNamedDetails": "已在 WebGL 錯誤檢測中斷點時暫停，錯誤 \"{0}\"",
+			"breakpoint.webglWarningFired": "已引發 WebGL 警告"
+		},
+		"/src/adapter/debugAdapter": {
+			"breakpoint.caughtExceptions": "攔截到的例外狀況",
+			"breakpoint.caughtExceptions.description": "只在未處理的錯誤或承諾拒絕時中斷。",
+			"breakpoint.uncaughtExceptions": "未攔截到的例外狀況",
+			"error.cannotPrettyPrint": "無法美化圖片",
+			"error.sourceContentDidFail": "無法擷取原始檔內容",
+			"error.sourceNotFound": "找不到原始檔",
+			"error.variableNotFound": "找不到變數"
+		},
+		"/src/adapter/sources": {
+			"source.skipFiles": "skipFiles 已跳過"
+		},
+		"/src/adapter/stackTrace": {
+			"scope.block": "區塊",
+			"scope.catch": "Catch 區塊",
+			"scope.closure": "關閉",
+			"scope.closureNamed": "關閉 ({0})",
+			"scope.eval": "Eval",
+			"scope.global": "全域",
+			"scope.local": "區域",
+			"scope.module": "模組",
+			"scope.returnValue": "傳回值",
+			"scope.script": "指令碼",
+			"scope.with": "With 區塊",
+			"smartStepSkipLabel": "smartStep 已跳過",
+			"source.skipFiles": "skipFiles 已跳過"
+		},
+		"/src/adapter/threads": {
+			"error.evaluateDidFail": "無法評估",
+			"error.evaluateOnAsyncStackFrame": "無法評估非同步堆疊框架",
+			"error.pauseDidFail": "無法暫停",
+			"error.restartFrameAsync": "無法重新啟動非同步框架",
+			"error.resumeDidFail": "無法繼續",
+			"error.stackFrameNotFound": "找不到堆疊框架",
+			"error.stepInDidFail": "無法逐步執行",
+			"error.stepOutDidFail": "無法跳離",
+			"error.stepOverDidFail": "無法繼續下一行",
+			"error.threadNotPaused": "執行緒未暫停",
+			"error.threadNotPausedOnException": "執行緒未在發生例外狀況時暫停",
+			"error.unknownRestartError": "無法重新啟動框架",
+			"pause.DomBreakpoint": "已在 DOM 中斷點時暫停",
+			"pause.assert": "已在判斷提示時暫停",
+			"pause.breakpoint": "已在中斷點時暫停",
+			"pause.debugCommand": "已在呼叫 debug() 時暫停",
+			"pause.default": "已於偵錯工具陳述式暫停",
+			"pause.eventListener": "已在事件接聽程式時暫停",
+			"pause.exception": "已在發生例外狀況時暫停",
+			"pause.instrumentation": "已在檢測中斷點時暫停",
+			"pause.oom": "已在發生記憶體不足例外狀況之前暫停",
+			"pause.promiseRejection": "已因拒絕承諾而暫停",
+			"pause.xhr": "已在 XMLHttpRequest 或擷取時暫停",
+			"reason.description.restart": "已於框架項目暫停",
+			"warnings.handleSourceMapPause.didNotWait": "警告: 處理 {0} 來源對應的時間超過 {1} 毫秒，因此繼續執行，但不會等候指令碼的所有中斷點完成設定。"
+		},
+		"/src/adapter/variableStore": {
+			"error.customValueDescriptionGeneratorFailed": "{0} (無法描述: {1})",
+			"error.emptyExpression": "無法設定空白值",
+			"error.invalidExpression": "運算式無效",
+			"error.setVariableDidFail": "無法設定變數值",
+			"error.unknown": "未知的錯誤",
+			"error.variableNotFound": "找不到變數"
+		},
+		"/src/dap/errors": {
+			"NVM_HOME.not.found.message": "屬性 'runtimeVersion' 需要 Node.js 版本管理員 'nvm-windows' 或 'nvs'。",
+			"NVS_HOME.not.found.message": "具有變體/結構的屬性 'runtimeVersion' 需要安裝 'nvs'。",
+			"VSND2011": "在終端機 ({0}) 中無法啟動偵錯目標。",
+			"VSND2029": "無法從檔案 ({0}) 載入環境變數。",
+			"asyncScopesNotAvailable": "變數在非同步堆疊中無法使用",
+			"breakpointSyntaxError": "使用條件 {0} 在第 {1}: {2} 行設定中斷點時發生語法錯誤",
+			"browserVersionNotFound": "找不到 {0} {1} 版。提供之自動探索到的版本: {2}。您可以將您 launch.json 中的 \"runtimeExecutable\" 設定為其中之一，或是提供瀏覽器可執行檔的絕對路徑。",
+			"error.browserAttachError": "無法連結到瀏覽器",
+			"error.browserLaunchError": "無法啟動瀏覽器: \"{0}\"",
+			"error.threadNotFound": "找不到執行緒",
+			"invalidHitCondition": "到達條件 \"{0}\" 無效。需要 \"> 42\" 或 \"== 2\" 之類的運算式。",
+			"noBrowserInstallFound": "在您的系統上找不到瀏覽器的安裝。請嘗試安裝該項目，或在您 launch.json 的 \"runtimeExecutable\" 中提供瀏覽器的絕對路徑。",
+			"noUwpPipeFound": "無法連線到任何 UWP Web 檢視管道。請確定您的 Web 檢視是以偵錯模式託管，且 'launch.json' 中的 'pipeName' 正確無誤。",
+			"profile.error.concurrent": "請先停止正在執行的設定檔，然後再啟動新的設定檔。",
+			"profile.error.generic": "從目標擷取設定檔時發生錯誤。",
+			"runtime.node.notfound": "找不到 Node.js 二進位檔 \"{0}\": {1}。請確認 Node.js 已安裝，且位於您的 PATH 中，或在您的 launch.json 中設定 \"runtimeExecutable\"",
+			"runtime.node.outdated": "\"{0}\" 中的 Node 版本已過期 ({1} 版)。最低需要 Node 8.x。",
+			"runtime.version.not.found.message": "未使用版本管理員 {1} 安裝 Node.js '{0}' 版。",
+			"sourcemapParseError": "無法讀取 {0} 的原始檔對應: {1}",
+			"uwpPipeNotAvailable": "您的平台無法使用 UWP Web 檢視偵錯。"
+		},
+		"/src/ui/autoAttach": {
+			"details": "詳細資料"
+		},
+		"/src/ui/companionBrowserLaunch": {
+			"cannotDebugInBrowser": "在偵錯模式中時，無法由此啟動瀏覽器。請從您桌面的 VS Code 中開啟此工作區，以啟用偵錯。"
+		},
+		"/src/ui/debugLinkUI": {
+			"debugLink.invalidUrl": "提供的 URL 無效",
+			"debugLink.savePrompt": "您要將設定儲存在您的 launch.json 中，以便日後存取嗎?",
+			"never": "一律不要",
+			"no": "否",
+			"yes": "是"
+		},
+		"/src/ui/debugNpmScript": {
+			"debug.npm.noScripts": "未在您的 package.json 找到 npm 指令碼",
+			"debug.npm.noWorkspaceFolder": "您需要開啟工作區資料夾，才能偵錯 npm 指令碼。",
+			"debug.npm.notFound.open": "編輯 package.json",
+			"debug.npm.parseError": "無法讀取 {0}: {1}"
+		},
+		"/src/ui/debugTerminalUI": {
+			"terminal.cwdpick": "為新的終端機選擇目前的工作目錄"
+		},
+		"/src/ui/diagnosticsUI": {
+			"inspectSessionEnded": "您的偵錯工作階段似乎已結束。再次嘗試進行偵錯工具，然後執行 \"Debug: Diagnose Breakpoint Problems\" 命令。",
+			"never": "永不",
+			"notNow": "現在不要",
+			"selectInspectSession": "選取您想要檢查的工作階段:",
+			"yes": "是"
+		},
+		"/src/ui/disableSourceMapUI": {
+			"always": "一律在此工作區中",
+			"disableSourceMapUi.msg": "此為 sourcemap 所參考的遺失檔案路徑。您要改為對已編譯的版本進行偵錯嗎?",
+			"no": "否",
+			"yes": "是"
+		},
+		"/src/ui/edgeDevToolOpener": {
+			"selectEdgeToolSession": "選取要開啟 Devtools 的頁面"
+		},
+		"/src/ui/linkedBreakpointLocationUI": {
+			"ignore": "忽略",
+			"readMore": "閱讀更多"
+		},
+		"/src/ui/longPredictionUI": {
+			"longPredictionWarning.disable": "不要再顯示",
+			"longPredictionWarning.message": "設定中斷點需要一段時間。您可以透過更新 launch.json 中的 'outFiles' 來加快速度。",
+			"longPredictionWarning.noFolder": "未開啟工作區資料夾。",
+			"longPredictionWarning.open": "開啟 launch.json"
+		},
+		"/src/ui/processPicker": {
+			"cannot.enable.debug.mode.error": "附加至處理序: 無法啟用處理序 '{0}' ({1}) 的偵錯模式。",
+			"pickNodeProcess": "挑選附加目標 node.js 處理序",
+			"process.id.error": "附加至處理序: '{0}' 看起來不像處理序識別碼。",
+			"process.id.port.signal": "處理序 id: {0}, 偵錯埠: {1} ({2})",
+			"process.id.signal": "處理序 id: {0} ({1})",
+			"process.picker.error": "處理序選擇器失敗 ({0})"
+		},
+		"/src/ui/terminalLinkHandler": {
+			"cantOpenChromeOnWeb": "在偵錯模式中時，無法由此啟動瀏覽器。若要對此網頁執行偵錯，請從您桌面的 VS Code 中開啟此工作區。",
+			"terminalLinkHover.debug": "對 URL 偵錯"
+		},
+		"/src/adapter/breakpoints/userDefinedBreakpoint": {
+			"breakpoint.provisionalBreakpoint": "未繫結的中斷點"
+		},
+		"/src/adapter/console/queryObjectsMessage": {
+			"queryObject.couldNotQuery": "無法查詢提供的物件",
+			"queryObject.errorPreview": "可產生預覽: {0}",
+			"queryObject.invalidObject": "只能查詢物件"
+		},
+		"/src/adapter/console/textualMessage": {
+			"console.assert": "判斷提示失敗"
+		},
+		"/src/adapter/profiling/basicCpuProfiler": {
+			"profile.cpu.description": "產生可以在 Chrome DevTools 中開啟的 .cpuprofile 檔案",
+			"profile.cpu.label": "CPU 設定檔"
+		},
+		"/src/adapter/profiling/basicHeapProfiler": {
+			"profile.heap.description": "產生可以在 Chrome DevTools 中開啟的 .heapprofile 檔案",
+			"profile.heap.label": "堆積設定檔"
+		},
+		"/src/adapter/profiling/heapDumpProfiler": {
+			"profile.heap.description": "產生可以在 Chrome DevTools 中開啟的 .heapsnapshot 檔案",
+			"profile.heap.label": "堆積快照"
+		},
+		"/src/targets/browser/browserAttacher": {
+			"attach.cannotConnect": "無法連線到位於 {0} 的目標: {1}",
+			"chrome.targets.placeholder": "選取索引標籤"
+		},
+		"/src/targets/node/nodeAttacher": {
+			"node.attach.restart.message": "與偵錯項目的連線已中斷。將於 {0} 毫秒內重新連線\r\n"
+		},
+		"/src/targets/node/nodeBinaryProvider": {
+			"outOfDate": "{0} 仍然要嘗試偵錯嗎?",
+			"runtime.node.notfound.enoent": "路徑不存在",
+			"runtime.node.notfound.spawnErr": "取得版本時發生錯誤: {0}",
+			"warning.16bpIssue": "某些中斷點在您的 Node.js 版本中可能無法運作。建議您升級，以取得最新的錯誤、效能及安全性修正。詳細資料: https://aka.ms/AAcsvqm",
+			"warning.8outdated": "您執行的 Node.js 版本已過期。我們建議升級以修正最新的錯誤、效能和安全性問題。",
+			"yes": "是"
+		},
+		"/src/ui/configuration/chromiumDebugConfigurationProvider": {
+			"chrome.launch.name": "對 localhost 啟動 Chrome",
+			"existingBrowser.alert": "瀏覽器似乎已從 {0} 執行。請先將其關閉再嘗試進行偵錯，否則 VS Code 可能無法與其連線。",
+			"existingBrowser.debugAnyway": "仍要偵錯",
+			"existingBrowser.location.default": "舊的偵錯工作階段",
+			"existingBrowser.location.userDataDir": "設定的 userDataDir"
+		},
+		"/src/ui/configuration/edgeDebugConfigurationProvider": {
+			"chrome.launch.name": "對 localhost 啟動 Microsoft Edge"
+		},
+		"/src/ui/configuration/nodeDebugConfigurationProvider": {
+			"debug.terminal.label": "JavaScript 偵錯終端機",
+			"node.launch.currentFile": "執行目前的檔案",
+			"node.launch.script": "執行指令碼: {0}"
+		},
+		"/src/ui/configuration/nodeDebugConfigurationResolver": {
+			"cwd.notFound": "設定的 'cwd' {0} 不是資料夾。",
+			"mern.starter.explanation": "為建立的 '{0}' 專案啟動組態。",
+			"node.launch.config.name": "啟動程式",
+			"outFiles.explanation": "調整 'outFiles' 屬性中的 Glob 模式，讓模式涵蓋所產生的 JavaScript。",
+			"program.guessed.from.package.json.explanation": "根據 'package.json' 啟動建立的組態。",
+			"program.not.found.message": "找不到要偵錯的程式"
+		},
+		"/src/ui/profiling/breakpointTerminationCondition": {
+			"breakpointTerminationWarnConfirm": "了解!",
+			"breakpointTerminationWarnSlow": "分析如有啟用中斷點，可能會造成程式碼的效能變更。您可以使用「持續時間」或「手動」終止條件來驗證您的觀察。",
+			"profile.termination.breakpoint.description": "執行到到達特定中斷點時",
+			"profile.termination.breakpoint.label": "挑選中斷點"
+		},
+		"/src/ui/profiling/durationTerminationCondition": {
+			"profile.termination.duration.description": "執行特定的時間長度",
+			"profile.termination.duration.inputTitle": "設定檔持續時間",
+			"profile.termination.duration.invalidFormat": "請輸入數字",
+			"profile.termination.duration.invalidLength": "請輸入大於 1 的數字",
+			"profile.termination.duration.label": "持續時間",
+			"profile.termination.duration.placeholder": "設定檔持續時間 (秒)，例如 \"5\""
+		},
+		"/src/ui/profiling/manualTerminationCondition": {
+			"profile.termination.duration.description": "執行到手動停止時",
+			"profile.termination.duration.label": "手動"
+		},
+		"/src/ui/profiling/uiProfileManager": {
+			"no": "否",
+			"profile.alreadyRunning": "分析工作階段已在執行。要停止該工作階段，然後再啟動新的工作階段嗎?",
+			"profile.sessionState": "分析",
+			"profile.status.default": "$(loading~spin) 按一下以停止分析",
+			"profile.status.multiSession": "$(loading~spin) 按一下以停止分析 ({0} 個工作階段)",
+			"profile.status.single": "$(loading~spin) 按一下以停止分析 ({0})",
+			"profile.termination.title": "設定檔的執行時間長度:",
+			"profile.type.title": "設定檔類型:",
+			"yes": "是"
+		},
+		"/src/ui/profiling/uiProfileSession": {
+			"profile.saving": "正在儲存",
+			"progress.profile.start": "正在啟動設定檔...",
+			"progress.profile.stop": "正在停止設定檔..."
 		}
 	}
 }

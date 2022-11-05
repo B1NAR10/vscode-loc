@@ -8,18 +8,17 @@
 	],
 	"version": "1.0.0",
 	"contents": {
-		"dist/AADHelper": {
-			"signOut": "Nastąpiło wylogowanie z powodu niepowodzenia odczytu przechowywanych informacji uwierzytelniania."
-		},
-		"dist/keychain": {
-			"keychainWriteError": "Nie można zapisać informacji o logowaniu do łańcucha kluczy z powodu błędu „{0}”.",
-			"troubleshooting": "Przewodnik rozwiązywania problemów"
-		},
 		"package": {
 			"description": "Dostawca uwierzytelniania firmy Microsoft",
 			"displayName": "Konto Microsoft",
 			"signIn": "Zaloguj się",
 			"signOut": "Wyloguj się"
+		},
+		"bundle": {
+			"Microsoft Authentication": "Uwierzytelnianie firmy Microsoft",
+			"Paste authorization code here...": "Wklej tutaj kod autoryzacji...",
+			"Provide the authorization code to complete the sign in flow.": "Podaj kod autoryzacji, aby ukończyć przepływ logowania.",
+			"You have been signed out because reading stored authentication information failed.": "Nastąpiło wylogowanie z powodu niepowodzenia odczytu przechowywanych informacji uwierzytelniania."
 		}
 	}
 }

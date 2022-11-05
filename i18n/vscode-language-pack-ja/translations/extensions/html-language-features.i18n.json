@@ -8,14 +8,6 @@
 	],
 	"version": "1.0.0",
 	"contents": {
-		"client\\dist\\node/htmlClient": {
-			"configureButton": "構成",
-			"folding.end": "折りたたみ領域の終了",
-			"folding.html": "簡単な HTML5 の出発点",
-			"folding.start": "折りたたみ領域の開始",
-			"htmlserver.name": "HTML 言語サーバー",
-			"linkedEditingQuestion": "VS Code に、自動名前変更タグの組み込みサポートが追加されました。これを有効にしますか?"
-		},
 		"package": {
 			"description": "HTML と Handlebar ファイルに豊富な言語サポートを提供します",
 			"displayName": "HTML 言語機能",
@@ -28,7 +20,6 @@
 			"html.customData.desc": "[カスタム データ形式](https://github.com/microsoft/vscode-html-languageservice/blob/master/docs/customData.md) に従って JSON ファイルを指す相対ファイル パスの一覧。\r\n\r\nVS Code では、起動時にカスタム データを読み込んで、ユーザーが JSON ファイルに指定するカスタム HTML タグ、属性、属性値の HTML サポートを強化します。\r\n\r\nファイル パスはワークスペースを基準とした相対パスであり、ワークスペース フォルダーの設定のみが考慮されます。",
 			"html.format.contentUnformatted.desc": "コンテンツを再フォーマットしてはならないタグの、コンマ区切りの一覧。`null` は、既定値の `pre` タグを表します。",
 			"html.format.enable.desc": "既定の HTML フォーマッタを有効/無効にします。",
-			"html.format.endWithNewline.desc": "末尾に改行を入れます。",
 			"html.format.extraLiners.desc": "直前に改行を 1 つ入れるタグの、コンマで区切られたリストです。`null` は、既定値の `head, body, /html` を表します。",
 			"html.format.indentHandlebars.desc": "{{#foo}}` から `{{/foo}}` をフォーマットしてインデントします。",
 			"html.format.indentInnerHtml.desc": "'<head>' および '<body>' セクションをインデントします。",
@@ -55,6 +46,14 @@
 			"html.trace.server.desc": "VS Code と HTML 言語サーバー間の通信をトレースします。",
 			"html.validate.scripts": "ビルトイン HTML 言語サポートが埋め込みスクリプトを検証するかどうかを制御します。",
 			"html.validate.styles": "ビルトイン HTML 言語サポートが埋め込みスタイルを検証するかどうかを制御します。"
+		},
+		"client\\dist\\node/htmlClient": {
+			"configureButton": "構成",
+			"folding.end": "折りたたみ領域の終了",
+			"folding.html": "簡単な HTML5 の出発点",
+			"folding.start": "折りたたみ領域の開始",
+			"htmlserver.name": "HTML 言語サーバー",
+			"linkedEditingQuestion": "VS Code に、自動名前変更タグの組み込みサポートが追加されました。これを有効にしますか?"
 		}
 	}
 }

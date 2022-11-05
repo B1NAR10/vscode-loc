@@ -8,19 +8,11 @@
 	],
 	"version": "1.0.0",
 	"contents": {
-		"client\\dist\\node/htmlClient": {
-			"configureButton": "Konfigurieren",
-			"folding.end": "Regionsende wird gefaltet",
-			"folding.html": "Einfacher HTML5-Ausgangspunkt",
-			"folding.start": "Regionsanfang wird gefaltet",
-			"htmlserver.name": "HTML-Sprachserver",
-			"linkedEditingQuestion": "VS Code bietet jetzt integrierte Unterstützung für das automatische Umbenennen von Tags. Möchten Sie dieses Feature aktivieren?"
-		},
 		"package": {
 			"description": "Umfangreiche Sprachunterstützung für HTML- und HANDLEBAR-Dateien",
 			"displayName": "HTML-Sprachfeatures",
 			"html.autoClosingTags": "Automatisches Schließen von HTML-Tags aktivieren/deaktivieren.",
-			"html.autoCreateQuotes": "Aktivieren/Deaktivieren der automatischen Erstellung von Anführungszeichen für die HTML-Attributzuweisung. Der Typ von Anführungszeichen kann durch \\\"#html.completion.attributeDefaultValue#\\\" konfiguriert werden.",
+			"html.autoCreateQuotes": "Aktivieren/Deaktivieren der automatischen Erstellung von Anführungszeichen für die HTML-Attributzuweisung. Der Typ von Anführungszeichen kann durch `#html.completion.attributeDefaultValue#` konfiguriert werden.",
 			"html.completion.attributeDefaultValue": "Steuert den Standardwert für Attribute, wenn der Abschluss akzeptiert wird.",
 			"html.completion.attributeDefaultValue.doublequotes": "Der Attributwert ist auf „“ festgelegt.",
 			"html.completion.attributeDefaultValue.empty": "Der Attributwert ist nicht festgelegt.",
@@ -28,7 +20,6 @@
 			"html.customData.desc": "Eine Liste relativer Dateipfade, die auf JSON-Dateien im [benutzerdefinierten Datenformat](https://github.com/microsoft/vscode-html-languageservice/blob/master/docs/customData.md) verweisen.\r\n\r\nVS Code lädt benutzerdefinierte Daten beim Start, um die HTML-Unterstützung für die benutzerdefinierten HTML-Tags, -Attribute und -Attributwerte, die Sie in den JSON-Dateien angeben, zu verbessern.\r\n\r\nDie Dateipfade werden relativ zum Arbeitsbereich angegeben, und es werden nur Einstellungen für den Arbeitsbereichsordner berücksichtigt.",
 			"html.format.contentUnformatted.desc": "Liste der Tags (durch Trennzeichen getrennt), in der der Inhalt nicht neu formatiert werden muss. `null` entspricht standardmäßig dem Tag `pre`.",
 			"html.format.enable.desc": "HTML-Standardformatierer aktivieren/deaktivieren.",
-			"html.format.endWithNewline.desc": "Endet mit einer neuen Zeile.",
 			"html.format.extraLiners.desc": "Die Liste der Tags (durch Kommas getrennt), vor denen eine zusätzliche neue Zeile eingefügt werden soll. `null` verwendet standardmäßig `\"head, body, /HTML\"`.",
 			"html.format.indentHandlebars.desc": "Formatiert `{{#foo}}` und `{{/foo}}` und nimmt einen Einzug vor.",
 			"html.format.indentInnerHtml.desc": "Hiermit werden `<head>`- und `<body>`-Abschnitte eingerückt.",
@@ -55,6 +46,14 @@
 			"html.trace.server.desc": "Verfolgt die Kommunikation zwischen VS Code und dem HTML-Sprachserver.",
 			"html.validate.scripts": "Legt fest, ob die integrierte HTML-Sprachunterstützung eingebettete Skripts überprüft.",
 			"html.validate.styles": "Legt fest, ob die integrierte HTML-Sprachunterstützung eingebettete Stile überprüft."
+		},
+		"client\\dist\\node/htmlClient": {
+			"configureButton": "Konfigurieren",
+			"folding.end": "Regionsende wird gefaltet",
+			"folding.html": "Einfacher HTML5-Ausgangspunkt",
+			"folding.start": "Regionsanfang wird gefaltet",
+			"htmlserver.name": "HTML-Sprachserver",
+			"linkedEditingQuestion": "VS Code bietet jetzt integrierte Unterstützung für das automatische Umbenennen von Tags. Möchten Sie dieses Feature aktivieren?"
 		}
 	}
 }

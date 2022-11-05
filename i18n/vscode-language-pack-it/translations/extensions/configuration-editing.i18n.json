@@ -8,9 +8,14 @@
 	],
 	"version": "1.0.0",
 	"contents": {
+		"package": {
+			"description": "Offre funzionalità (IntelliSense avanzato, correzione automatica) nei file di configurazione come quelli degli elementi consigliati per impostazioni, avvio ed estensioni.",
+			"displayName": "Modifica della configurazione"
+		},
 		"dist/configurationEditingMain": {
 			"cwd": "Directory di lavoro corrente dello strumento di esecuzione attività all'avvio",
 			"defaultBuildTask": "Nome dell'attività di compilazione predefinita. Se non è presente un'unica attività di compilazione predefinita, viene mostrata una selezione rapida per consentire la selezione dell'attività di compilazione.",
+			"extensionInstallFolder": "Percorso in cui è installata un'estensione.",
 			"file": "File attualmente aperto",
 			"fileBasename": "Nome di base del file attualmente aperto",
 			"fileBasenameNoExtension": "Nome di base del file attualmente aperto senza estensione",
@@ -23,9 +28,6 @@
 			"selectedText": "Testo selezionato nel file attivo",
 			"workspaceFolder": "Percorso della cartella aperta in VS Code",
 			"workspaceFolderBasename": "Nome della cartella aperta In VS Code senza barre di separazione (/)"
-		},
-		"dist/extensionsProposals": {
-			"exampleExtension": "esempio"
 		},
 		"dist/settingsDocumentHelper": {
 			"activeEditor": "Usa la lingua dell'editor di testo attualmente attivo se presente",
@@ -43,7 +45,6 @@
 			"derivedDescription": "Trova file con elementi di pari livello e nome identico ma estensione diversa.",
 			"derivedLabel": "File con elementi di pari livello in base al nome",
 			"dirty": "un indicatore per il momento in cui l'editor attivo contiene modifiche non salvate",
-			"falseDescription": "Disabilita il criterio.",
 			"fileDescription": "Trova tutti i file di un'estensione di file specifica.",
 			"fileLabel": "File in base all'estensione",
 			"filesDescription": "Trova tutti i file con qualsiasi estensione di file.",
@@ -60,12 +61,10 @@
 			"topFolderDescription": "Trova una cartella di primo livello con un nome specifico.",
 			"topFolderLabel": "Cartella in base al nome (primo livello)",
 			"topFoldersDescription": "Trova più cartelle di primo livello.",
-			"topFoldersLabel": "Cartella con più nomi (primo livello)",
-			"trueDescription": "Abilita il criterio."
+			"topFoldersLabel": "Cartella con più nomi (primo livello)"
 		},
-		"package": {
-			"description": "Offre funzionalità (IntelliSense avanzato, correzione automatica) nei file di configurazione come quelli degli elementi consigliati per impostazioni, avvio ed estensioni.",
-			"displayName": "Modifica della configurazione"
+		"dist/extensionsProposals": {
+			"exampleExtension": "esempio"
 		}
 	}
 }

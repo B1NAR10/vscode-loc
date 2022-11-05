@@ -8,9 +8,14 @@
 	],
 	"version": "1.0.0",
 	"contents": {
+		"package": {
+			"description": "설정, 시작 및 확장 추천 파일과 같은 구성 파일에서 기능(고급 IntelliSense, 자동 수정)을 제공합니다.",
+			"displayName": "구성 편집"
+		},
 		"dist/configurationEditingMain": {
 			"cwd": "시작 시 작업 실행기의 현재 작업 디렉터리",
 			"defaultBuildTask": "기본 빌드 작업의 이름입니다. 단일 기본 빌드 작업이 없는 경우 빠른 선택이 표시되어 빌드 작업을 선택할 수 있습니다.",
+			"extensionInstallFolder": "확장이 설치된 경로입니다.",
 			"file": "현재 열린 파일",
 			"fileBasename": "현재 열려 있는 파일의 기본 이름",
 			"fileBasenameNoExtension": "현재 열려 있는 파일의 기본 이름(파일 확장명 제외)",
@@ -23,9 +28,6 @@
 			"selectedText": "활성 파일에서 현재 선택된 텍스트",
 			"workspaceFolder": "VS Code에서 연 폴더의 경로",
 			"workspaceFolderBasename": "VS Code에서 연 폴더의 이름(슬래시(/) 제외)"
-		},
-		"dist/extensionsProposals": {
-			"exampleExtension": "예제"
 		},
 		"dist/settingsDocumentHelper": {
 			"activeEditor": "현재 활성 텍스트 편집기(있는 경우)의 언어 사용",
@@ -43,7 +45,6 @@
 			"derivedDescription": "동일한 이름의 형제가 있지만 확장명이 다른 파일을 일치시킵니다.",
 			"derivedLabel": "이름별 형제가 있는 파일",
 			"dirty": "활성 편집기에 저장되지 않은 변경 내용이 있는 경우에 대한 표시기",
-			"falseDescription": "패턴을 사용하지 않도록 설정합니다.",
 			"fileDescription": "특정 파일 확장명이 있는 모든 파일을 일치시킵니다.",
 			"fileLabel": "확장명별 파일",
 			"filesDescription": "파일 확장명이 있는 모든 파일을 일치시킵니다.",
@@ -60,12 +61,10 @@
 			"topFolderDescription": "특정 이름의 최상위 폴더를 일치시킵니다.",
 			"topFolderLabel": "이름별 폴더(최상위)",
 			"topFoldersDescription": "여러 최상위 폴더를 일치시킵니다.",
-			"topFoldersLabel": "이름이 여러 개 있는 폴더(최상위)",
-			"trueDescription": "패턴을 사용하도록 설정합니다."
+			"topFoldersLabel": "이름이 여러 개 있는 폴더(최상위)"
 		},
-		"package": {
-			"description": "설정, 시작 및 확장 추천 파일과 같은 구성 파일에서 기능(고급 IntelliSense, 자동 수정)을 제공합니다.",
-			"displayName": "구성 편집"
+		"dist/extensionsProposals": {
+			"exampleExtension": "예제"
 		}
 	}
 }

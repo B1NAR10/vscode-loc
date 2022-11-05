@@ -8,141 +8,6 @@
 	],
 	"version": "1.0.0",
 	"contents": {
-		"dist/languageFeatures/codeLens/baseCodeLensProvider": {
-			"referenceErrorLabel": "Verweise konnten nicht bestimmt werden"
-		},
-		"dist/languageFeatures/codeLens/implementationsCodeLens": {
-			"manyImplementationLabel": "{0} Implementierungen",
-			"oneImplementationLabel": "1 Implementierung"
-		},
-		"dist/languageFeatures/codeLens/referencesCodeLens": {
-			"manyReferenceLabel": "{0} Verweise",
-			"oneReferenceLabel": "1 Verweis"
-		},
-		"dist/languageFeatures/completions": {
-			"acquiringTypingsDetail": "Eingabedefinitionen für IntelliSense werden abgerufen.",
-			"acquiringTypingsLabel": "Eingaben werden abgerufen...",
-			"selectCodeAction": "Anzuwendende Codeaktion auswählen"
-		},
-		"dist/languageFeatures/directiveCommentCompletions": {
-			"ts-check": "Aktiviert die Semantiküberprüfung in einer JavaScript-Datei. Muss sich oben in einer Datei befinden.",
-			"ts-expect-error": "Unterdrückt @ts-check-Fehler in der nächsten Zeile einer Datei und erwartet, dass mindestens einer vorhanden ist.",
-			"ts-ignore": "Unterdrückt @ts-check-Fehler in der nächsten Zeile einer Datei.",
-			"ts-nocheck": "Deaktiviert die Semantiküberprüfung in einer JavaScript-Datei. Muss sich oben in einer Datei befinden."
-		},
-		"dist/languageFeatures/fileReferences": {
-			"error.noResource": "Fehler beim Suchen nach Dateiverweisen. Es wurde keine Ressource angegeben.",
-			"error.unknownFile": "Fehler beim Suchen nach Dateiverweisen. Unbekannter Dateityp.",
-			"error.unsupportedLanguage": "Fehler beim Suchen nach Dateiverweisen. Nicht unterstützter Dateityp.",
-			"error.unsupportedVersion": "Fehler beim Suchen nach Dateiverweisen. Erfordert TypeScript 4.2+.",
-			"progress.title": "Dateiverweise werden gesucht"
-		},
-		"dist/languageFeatures/fixAll": {
-			"autoFix.label": "Alle korrigieren",
-			"autoFix.missingImports.label": "Alle fehlenden Importe hinzufügen",
-			"autoFix.unused.label": "Gesamten nicht verwendeten Code entfernen"
-		},
-		"dist/languageFeatures/jsDocCompletions": {
-			"typescript.jsDocCompletionItem.documentation": "JSDoc-Kommentar"
-		},
-		"dist/languageFeatures/organizeImports": {
-			"organizeImportsAction.title": "Importe organisieren",
-			"sortImportsAction.title": "Importe sortieren"
-		},
-		"dist/languageFeatures/quickFix": {
-			"fixAllInFileLabel": "{0} (Behebe alle in Datei)"
-		},
-		"dist/languageFeatures/refactor": {
-			"extractConstant.disabled.reason": "Die aktuelle Auswahl kann nicht extrahiert werden.",
-			"extractConstant.disabled.title": "In Konstante extrahieren",
-			"extractFunction.disabled.reason": "Die aktuelle Auswahl kann nicht extrahiert werden.",
-			"extractFunction.disabled.title": "In Funktion extrahieren",
-			"refactor.documentation.title": "Weitere Informationen zu JS/TS-Refactorings",
-			"refactoringFailed": "Umgestaltung nicht möglich"
-		},
-		"dist/languageFeatures/rename": {
-			"fileRenameFail": "Beim Umbenennen der Datei ist ein Fehler aufgetreten."
-		},
-		"dist/languageFeatures/tsconfig": {
-			"documentLink.tooltip": "Link folgen",
-			"openTsconfigExtendsModuleFail": "Fehler beim Auflösen von {0} als Modul"
-		},
-		"dist/languageFeatures/updatePathsOnRename": {
-			"accept.title": "Ja",
-			"always.title": "Importe immer automatisch aktualisieren",
-			"moreFile": "...1 weitere Datei wird nicht angezeigt",
-			"moreFiles": "...{0} weitere Dateien werden nicht angezeigt",
-			"never.title": "Importe nie automatisch aktualisieren",
-			"prompt": "Importe für \"{0}\" aktualisieren?",
-			"promptMoreThanOne": "Importe für die folgenden {0}-Dateien aktualisieren?",
-			"reject.title": "Nein",
-			"renameProgress.title": "Überprüfung der Aktualisierung der JS/TS-Importe"
-		},
-		"dist/task/taskProvider": {
-			"badTsConfig": "Die Typescript-Aufgabe in \"tasks.json\" enthält \"\\\\\". In \"tsconfig\" für Typescript-Aufgaben muss \"/\" verwendet werden.",
-			"buildAndWatchTscLabel": "Überwachen – {0}",
-			"buildTscLabel": "Erstellen – {0}"
-		},
-		"dist/tsServer/serverProcess.electron": {
-			"noServerFound": "Der Pfad \"{0}\" zeigt nicht auf eine gültige tsserver-Installation. Fallback auf gebündelte TypeScript-Version wird durchgeführt."
-		},
-		"dist/tsServer/versionManager": {
-			"allow": "Zulassen",
-			"dismiss": "Schließen",
-			"learnMore": "Weitere Informationen zum Verwalten von TypeScript-Versionen",
-			"promptUseWorkspaceTsdk": "Dieser Arbeitsbereich enthält eine TypeScript-Version. Möchten Sie die TypeScript-Version des Arbeitsbereichs für TypeScript- und JavaScript-Sprachfeatures verwenden?",
-			"selectTsVersion": "Wählen Sie die für die JavaScript- und TypeScript-Sprachfunktionen verwendete TypeScript-Version aus.",
-			"suppress prompt": "Nie in diesem Arbeitsbereich",
-			"useVSCodeVersionOption": "Version von VS Code verwenden",
-			"useWorkspaceVersionOption": "Arbeitsbereichsversion verwenden"
-		},
-		"dist/typescriptServiceClient": {
-			"noServerFound": "Der Pfad \"{0}\" zeigt nicht auf eine gültige tsserver-Installation. Fallback auf gebündelte TypeScript-Version wird durchgeführt.",
-			"openTsServerLog.openFileFailedFailed": "Die TS-Server-Protokolldatei konnte nicht geöffnet werden.",
-			"serverDied": "Der TypeScript-Sprachdienst wurde während der letzten fünf Minuten fünfmal unerwartet beendet.",
-			"serverDiedAfterStart": "Der TypeScript-Sprachdienst wurde direkt nach seinem Start fünfmal beendet. Der Dienst wird nicht neu gestartet.",
-			"serverDiedOnce": "Der TypeScript-Sprachdienst ist unerwartet abgestürzt.",
-			"serverDiedReportIssue": "Problem melden",
-			"serverExitedWithError": "Der TypeScript-Sprachserver wurde durch einen Fehler beendet. Fehlermeldung: {0}",
-			"serverLoading.progress": "Sprachfeatures von JavaScript bzw. TypeScript werden initialisiert",
-			"typescript.openTsServerLog.enableAndReloadOption": "Aktiviert die Protokollierung und startet den TS-Server neu.",
-			"typescript.openTsServerLog.loggingNotEnabled": "Die TS Server-Protokollierung ist deaktiviert. Legen Sie \"typescript.tsserver.log\" fest, und laden Sie VS Code erneut, um die Protokollierung zu aktivieren.",
-			"typescript.openTsServerLog.noLogFile": "TS Server hat noch nicht mit der Protokollierung begonnen.",
-			"usingOldTsVersion.detail": "Der Arbeitsbereich verwendet eine alte Version von TypeScript ({0}).\r\n\r\nBevor Sie ein Problem melden, aktualisieren Sie den Arbeitsbereich, sodass die neueste stabile Version verwendet und sichergestellt wird, dass der Fehler nicht bereits behoben wurde.",
-			"usingOldTsVersion.title": "Bitte aktualisieren Sie Ihre TypeScript-Version."
-		},
-		"dist/ui/intellisenseStatus": {
-			"pending.detail": "IntelliSense-Status wird geladen",
-			"resolved.command.title.createJsconfig": "Erstellen von jsconfig",
-			"resolved.command.title.createTsconfig": "tsconfig erstellen",
-			"resolved.command.title.open": "Konfigurationsdatei öffnen",
-			"resolved.detail.noJsConfig": "Keine jsconfig",
-			"resolved.detail.noTsConfig": "Keine tsconfig",
-			"statusItem.name": "JS/TS IntelliSense-Status",
-			"syntaxOnly.command.title.learnMore": "Weitere Informationen",
-			"syntaxOnly.detail": "Projektweites IntelliSense nicht verfügbar",
-			"syntaxOnly.text": "Teilmodus"
-		},
-		"dist/ui/versionStatus": {
-			"versionStatus.command": "Version auswählen",
-			"versionStatus.detail": "TypeScript-Version",
-			"versionStatus.name": "TypeScript-Version"
-		},
-		"dist/utils/api": {
-			"invalidVersion": "Ungültige Version"
-		},
-		"dist/utils/logger": {
-			"channelName": "TypeScript"
-		},
-		"dist/utils/tsconfig": {
-			"typescript.configureJsconfigQuickPick": "jsconfig.json konfigurieren",
-			"typescript.configureTsconfigQuickPick": "tsconfig.json konfigurieren",
-			"typescript.noJavaScriptProjectConfig": "Die Datei ist nicht Teil eines JavaScript-Projekts. Weitere Informationen finden Sie in der [jsconfig.json-Dokumentation]({0}).",
-			"typescript.noTypeScriptProjectConfig": "Die Datei ist nicht Teil eines TypeScript-Projekts. Weitere Informationen finden Sie in der [tsconfig.json-Dokumentation]({0}).",
-			"typescript.projectConfigCouldNotGetInfo": "TypeScript- oder JavaScript-Projekt konnte nicht ermittelt werden.",
-			"typescript.projectConfigNoWorkspace": "Öffnen Sie einen Ordner in VS Code, um ein TypeScript- oder JavaScript-Projekt zu verwenden.",
-			"typescript.projectConfigUnsupportedFile": "TypeScript- oder JavaScript-Projekt konnte nicht ermittelt werden. Nicht unterstützter Dateityp."
-		},
 		"package": {
 			"codeActions.refactor.extract.constant.description": "Ausdruck in Konstante extrahieren",
 			"codeActions.refactor.extract.constant.title": "Konstante extrahieren",
@@ -177,6 +42,7 @@
 			"configuration.inlayHints.parameterTypes.enabled": "Aktivieren/Deaktivieren von Inlayhinweisen für implizite Parametertypen:\r\n```typescript\r\n\r\nel.addEventListener('click', e /* :MouseEvent */ => ...)\r\n\r\n```\r\nErfordert die Verwendung von TypeScript 4.4+ im Arbeitsbereich.",
 			"configuration.inlayHints.propertyDeclarationTypes.enabled": "Aktivieren/Deaktivieren von Inlayhinweisen für implizite Typen in Eigenschaftsdeklarationen:\r\n```typescript\r\n\r\nclass Foo {\r\n\tprop /* :number */ = Date.now();\r\n}\r\n \r\n```\r\nErfordert die Verwendung von TypeScript 4.4+ im Arbeitsbereich.",
 			"configuration.inlayHints.variableTypes.enabled": "Aktivieren/Deaktivieren von Inlayhinweisen für implizite Variablentypen:\r\n```typescript\r\n\r\nconst foo /* :number */ = Date.now();\r\n\r\n```\r\nerfordert die Verwendung von TypeScript 4.4 und höher im Arbeitsbereich.",
+			"configuration.inlayHints.variableTypes.suppressWhenTypeMatchesName": "Unterdrücken Sie Typhinweise für Variablen, deren Name mit dem Typnamen identisch ist. Erfordert die Verwendung von TypeScript 4.8 und höher im Arbeitsbereich.",
 			"configuration.javascript.checkJs.checkJs.deprecation": "Diese Einstellung ist veraltet. Verwenden Sie stattdessen \"js/ts.implicitProjectConfig.checkJs\".",
 			"configuration.javascript.checkJs.experimentalDecorators.deprecation": "Diese Einstellung ist veraltet. Verwenden Sie stattdessen \"js/ts.implicitProjectConfig.experimentalDecorators\".",
 			"configuration.suggest.autoImports": "Aktiviert/deaktiviert automatische Importvorschläge.",
@@ -186,9 +52,9 @@
 			"configuration.suggest.includeAutomaticOptionalChainCompletions": "Aktiviert/deaktiviert Vervollständigungen für möglicherweise nicht definierte Werte, die eine optionale Aufrufkette einfügen. Hierfür muss TS 3.7+ vorhanden sein, und strikte NULL-Überprüfungen müssen aktiviert sein.",
 			"configuration.suggest.includeCompletionsForImportStatements": "Hiermit aktivieren/deaktivieren Sie Vervollständigungen für teilweise eingegebene Importanweisungen für den automatischen Import. Erfordert die Verwendung von TypeScript 4.3 und höher im Arbeitsbereich.",
 			"configuration.suggest.includeCompletionsWithSnippetText": "Hiermit aktivieren/deaktivieren Sie Schnipselvervollständigungen über TS Server. Erfordert die Verwendung von TypeScript 4.3 und höher im Arbeitsbereich.",
-			"configuration.suggest.jsdoc.generateReturns": "Aktivieren/deaktivieren Sie das Generieren von \\\"@returns\\\"-Anmerkungen für JSDoc-Vorlagen. Erfordert die Verwendung von TypeScript 4.2 und höher im Arbeitsbereich.",
+			"configuration.suggest.jsdoc.generateReturns": "Aktivieren/deaktivieren Sie das Generieren von `@returns`-Anmerkungen für JSDoc-Vorlagen. Erfordert die Verwendung von TypeScript 4.2 und höher im Arbeitsbereich.",
 			"configuration.suggest.names": "Aktivieren/Deaktivieren, dass eindeutige Namen aus der Datei in JavaScript-Vorschläge eingeschlossen werden. Beachten Sie, dass Namensvorschläge in JavaScript-Code, dessen Semantik mit \"@ts-check\" oder \"checkJs\" überprüft wird, immer deaktiviert sind.",
-			"configuration.suggest.objectLiteralMethodSnippets.enabled": "Enable/disable snippet completions for methods in object literals. Requires using TypeScript 4.7+ in the workspace",
+			"configuration.suggest.objectLiteralMethodSnippets.enabled": "Aktivieren/Deaktivieren Sie Vervollständigungen von Codeausschnitten für Methoden in Objektliteralen. Erfordert die Verwendung von TypeScript 4.7 und höher im Arbeitsbereich",
 			"configuration.suggest.paths": "Vorschläge für Pfade in Importanweisungen und require-Aufrufen aktivieren bzw. deaktivieren.",
 			"configuration.surveys.enabled": "Gelegentliche Umfragen zur Verbesserung der Unterstützung von JavaScript und TypeScript in Visual Studio Code aktivieren bzw. deaktivieren.",
 			"configuration.tsserver.experimental.enableProjectDiagnostics": "(Experimentell) Ermöglicht eine projektweite Fehlerberichterstattung.",
@@ -258,10 +124,12 @@
 			"typescript.enablePromptUseWorkspaceTsdk": "Aktiviert eine Benutzeraufforderung zur Verwendung der im Arbeitsbereich konfigurierten TypeScript-Version für IntelliSense.",
 			"typescript.findAllFileReferences": "Dateiverweise suchen",
 			"typescript.format.enable": "Standardmäßigen TypeScript-Formatierer aktivieren/deaktivieren.",
+			"typescript.goToSourceDefinition": "Gehen Sie zu Quelldefinition",
 			"typescript.implementationsCodeLens.enabled": "Aktiviert oder deaktiviert CodeLens-Implementierungen. Dieses CodeLens-Element zeigt an, wer eine Schnittstelle implementiert hat.",
 			"typescript.locale": "Legt das zum Melden von JavaScript- und TypeScript-Fehlern verwendete Gebietsschema fest. Standardmäßig wird das Gebietsschema von VS Code verwendet.",
 			"typescript.npm": "Specifies the path to the npm executable used for [Automatic Type Acquisition](https://code.visualstudio.com/docs/nodejs/working-with-javascript#_typings-and-automatic-type-acquisition).",
 			"typescript.openTsServerLog.title": "TS Server-Protokolldatei öffnen",
+			"typescript.preferences.autoImportFileExcludePatterns": "Globale Muster von Dateien angeben, die von automatischen Importen ausgeschlossen werden sollen. Erfordert die Verwendung von TypeScript 4.8 oder höher im Arbeitsbereich.",
 			"typescript.preferences.importModuleSpecifier": "Bevorzugter Pfadstil für automatische Importe.",
 			"typescript.preferences.importModuleSpecifier.nonRelative": "Hiermit wird ein nicht relativer Import basierend auf den Werten von \"baseUrl\" oder \"paths\" vorgezogen, die in \"jsconfig.json\"/\"tsconfig.json\" konfiguriert sind.",
 			"typescript.preferences.importModuleSpecifier.projectRelative": "Hiermit wird ein nicht relativer Import nur dann vorgezogen, wenn der relative Importpfad das Paket oder das Projektverzeichnis verlassen würde. Hierfür ist die Verwendung von TypeScript 4.2+ im Arbeitsbereich erforderlich.",
@@ -290,9 +158,11 @@
 			"typescript.problemMatchers.tscWatch.label": "TypeScript-Probleme (Überwachungsmodus)",
 			"typescript.referencesCodeLens.enabled": "Aktiviert oder deaktiviert CodeLens-Verweise in TypeScript-Dateien.",
 			"typescript.referencesCodeLens.showOnAllFunctions": "Verweise auf CodeLens für alle Funktionen in TypeScript-Dateien aktivieren/deaktivieren",
+			"typescript.removeUnusedImports": "Nicht verwendete Importe entfernen",
 			"typescript.reportStyleChecksAsWarnings": "Stilüberprüfungen als Warnungen melden.",
 			"typescript.restartTsServer": "TS Server neu starten",
 			"typescript.selectTypeScriptVersion.title": "TypeScript-Version auswählen ...",
+			"typescript.sortImports": "Importe sortieren",
 			"typescript.suggest.enabled": "Vorschläge für die automatische Vervollständigung aktivieren bzw. deaktivieren.",
 			"typescript.suggestionActions.enabled": "Aktiviert oder deaktiviert Vorschlagsdiagnosen für TypeScript-Dateien im Editor.",
 			"typescript.tsc.autoDetect": "Legt fest, ob tsc-Tasks automatisch erkannt werden.",
@@ -315,7 +185,192 @@
 			"typescript.workspaceSymbols.scope.allOpenProjects": "Hiermit werden alle geöffneten JavaScript- oder TypeScript-Projekte nach Symbolen durchsucht. Erfordert die Verwendung von TypeScript 3.9 oder höher im Arbeitsbereich.",
 			"typescript.workspaceSymbols.scope.currentProject": "Hiermit wird nur im aktuellen JavaScript- oder TypeScript-Projekt nach Symbolen gesucht.",
 			"virtualWorkspaces": "In virtuellen Arbeitsbereichen wird das Auflösen und Suchen von Verweisen in Dateien nicht unterstützt.",
+			"walkthroughs.nodejsWelcome.debugJsFile.altText": "Debuggen Sie Ihren JavaScript-Code in Node.js, und führen Sie ihn mit Visual Studio Code aus.",
+			"walkthroughs.nodejsWelcome.debugJsFile.description": "Nachdem Sie Node.js installiert haben, können Sie JavaScript-Programme in einem Terminal ausführen, indem Sie \"node your-file-name.js\" eingeben\r\nEine weitere einfache Möglichkeit zum Ausführen von Node.js-Programmen ist die Verwendung des Debuggers von VS Code, mit dem Sie Ihren Code ausführen, an verschiedenen Stellen anhalten und Ihnen helfen, schrittweise zu verstehen, was vor sich geht.\r\n[Debuggen starten](command:javascript-walkthrough.commands.debugJsFile)",
+			"walkthroughs.nodejsWelcome.debugJsFile.title": "JavaScript ausführen und debuggen",
+			"walkthroughs.nodejsWelcome.description": "Nutzen Sie die erstklassige JavaScript-Erfahrung von Visual Studio Code.",
+			"walkthroughs.nodejsWelcome.downloadNode.forLinux.description": "Node.js ist eine einfache Möglichkeit zum Ausführen von JavaScript-Code. Sie können damit schnell Befehlszeilen-Apps und -Server erstellen. Außerdem ist npm enthalten, ein Paket-Manager, der das Wiederverwenden und Freigeben von JavaScript-Code vereinfacht.\r\n[Node.js installieren](https://nodejs.org/en/download/package-manager/)",
+			"walkthroughs.nodejsWelcome.downloadNode.forLinux.title": "Node.js installieren",
+			"walkthroughs.nodejsWelcome.downloadNode.forMacOrWindows.description": "Node.js ist eine einfache Möglichkeit zum Ausführen von JavaScript-Code. Sie können damit schnell Befehlszeilen-Apps und -Server erstellen. Außerdem ist npm enthalten, ein Paket-Manager, der das Wiederverwenden und Freigeben von JavaScript-Code vereinfacht.\r\n[Node.js installieren](https://nodejs.org/en/download/)",
+			"walkthroughs.nodejsWelcome.downloadNode.forMacOrWindows.title": "Node.js installieren",
+			"walkthroughs.nodejsWelcome.learnMoreAboutJs.altText": "Erfahren Sie mehr über JavaScript und Node.js in Visual Studio Code.",
+			"walkthroughs.nodejsWelcome.learnMoreAboutJs.description": "Möchten Sie sich mit JavaScript, Node.js und VS Code vertrauter machen? Sehen Sie sich unbedingt unsere Dokumentation an!\r\nWir haben viele Ressourcen zum Lernen [JavaScript](https://code.visualstudio.com/docs/nodejs/working-with-javascript) und [Node.js](https://code.visualstudio.com/docs/nodejs/nodejs-tutorial).\r\n\r\n[Weitere Informationen](https://code.visualstudio.com/docs/nodejs/nodejs-Tutorial)",
+			"walkthroughs.nodejsWelcome.learnMoreAboutJs.title": "Mehr entdecken",
+			"walkthroughs.nodejsWelcome.makeJsFile.description": "Schreiben wir unsere erste JavaScript-Datei. Wir müssen eine neue Datei erstellen und sie mit der Erweiterung \".js\" am Ende des Dateinamens speichern.\r\n[Erstellen einer JavaScript-Datei](command:javascript-walkthrough.commands.createJsFile)",
+			"walkthroughs.nodejsWelcome.makeJsFile.title": "JavaScript-Datei erstellen",
+			"walkthroughs.nodejsWelcome.title": "Erste Schritte mit JavaScript und Node.js",
 			"workspaceTrust": "Für die Erweiterung ist die Arbeitsbereichsvertrauensstellung erforderlich, wenn die Arbeitsbereichsversion verwendet wird, da sie vom Arbeitsbereich angegebene Code ausführt."
+		},
+		"dist/tsServer/serverProcess.electron": {
+			"noServerFound": "Der Pfad \"{0}\" zeigt nicht auf eine gültige tsserver-Installation. Fallback auf gebündelte TypeScript-Version wird durchgeführt."
+		},
+		"dist/tsServer/versionProvider.electron": {
+			"noBundledServerFound": "Der tsserver von VS Code wurde von einer anderen Anwendung wie etwa einem fehlerhaften Tool zur Viruserkennung gelöscht. Führen Sie eine Neuinstallation von VS Code durch."
+		},
+		"dist/ui/jsNodeWalkthrough.electron": {
+			"noNodeInstallFound": "Node.js wurde auf diesem Computer nicht gefunden. Wenn Sie es gerade installiert haben, müssen Sie möglicherweise VS Code neu laden.",
+			"nodeNotFoundDebugAnyway": "Debuggen trotzdem versuchen",
+			"nodeNotFoundDismissDialog": "Verwerfen",
+			"reloadWindowForNode": "VS Code neu laden"
+		},
+		"dist/task/taskProvider": {
+			"badTsConfig": "Die TypeScript-Task in tasks.json enthält \"\\\\\". Für TypeScript-Tasks in tsconfig muss \"/\" verwendet werden.",
+			"buildAndWatchTscLabel": "Überwachen – {0}",
+			"buildTscLabel": "Erstellen – {0}"
+		},
+		"dist/languageFeatures/tsconfig": {
+			"documentLink.tooltip": "Link folgen",
+			"openTsconfigExtendsModuleFail": "Fehler beim Auflösen von {0} als Modul"
+		},
+		"dist/utils/api": {
+			"invalidVersion": "Ungültige Version"
+		},
+		"dist/tsServer/versionProvider": {
+			"couldNotLoadTsVersion": "Die TypeScript-Version konnte unter diesem Pfad nicht geladen werden."
+		},
+		"dist/utils/tsconfig": {
+			"typescript.configureJsconfigQuickPick": "jsconfig.json konfigurieren",
+			"typescript.configureTsconfigQuickPick": "tsconfig.json konfigurieren",
+			"typescript.noJavaScriptProjectConfig": "Die Datei ist nicht Teil eines JavaScript-Projekts. Weitere Informationen finden Sie in der [jsconfig.json-Dokumentation]({0}).",
+			"typescript.noTypeScriptProjectConfig": "Die Datei ist nicht Teil eines TypeScript-Projekts. Weitere Informationen finden Sie in der [tsconfig.json-Dokumentation]({0}).",
+			"typescript.projectConfigCouldNotGetInfo": "TypeScript- oder JavaScript-Projekt konnte nicht ermittelt werden.",
+			"typescript.projectConfigNoWorkspace": "Öffnen Sie einen Ordner in VS Code, um ein TypeScript- oder JavaScript-Projekt zu verwenden.",
+			"typescript.projectConfigUnsupportedFile": "TypeScript- oder JavaScript-Projekt konnte nicht ermittelt werden. Nicht unterstützter Dateityp."
+		},
+		"dist/typescriptServiceClient": {
+			"noServerFound": "Der Pfad \"{0}\" zeigt nicht auf eine gültige tsserver-Installation. Fallback auf gebündelte TypeScript-Version wird durchgeführt.",
+			"openTsServerLog.openFileFailedFailed": "Die TS-Server-Protokolldatei konnte nicht geöffnet werden.",
+			"serverDiedFiveTimes": "Der JS/TS-Sprachdienst ist in den letzten fünf Minuten fünfmal abgestürzt.",
+			"serverDiedFiveTimesWithPlugins": "Der JS/TS-Sprachdienst ist in den letzten fünf Minuten fünfmal abgestürzt.\r\nDies kann durch ein Plug-In von einer dieser Erweiterungen verursacht werden: {0}",
+			"serverDiedImmediately": "Der JS/TS-Sprachdienst ist sofort fünfmal abgestürzt. Der Dienst wird nicht neu gestartet.",
+			"serverDiedImmediatelyWithPlugins": "Der JS/TS-Sprachdienst ist sofort fünfmal abgestürzt. Der Dienst wird nicht neu gestartet.\r\nDies kann durch ein Plug-In von einer dieser Erweiterungen verursacht werden: {0}",
+			"serverDiedOnce": "Der JS/TS-Sprachdienst ist abgestürzt.",
+			"serverDiedOnceWithPlugins": "Der JS/TS-Sprachdienst ist abgestürzt.\r\nDies kann durch ein Plug-In von einer dieser Erweiterungen verursacht werden: {0}",
+			"serverDiedReportIssue": "Problem melden",
+			"serverExitedWithError": "Der TypeScript-Sprachserver wurde durch einen Fehler beendet. Fehlermeldung: {0}",
+			"serverLoading.progress": "Sprachfeatures von JavaScript bzw. TypeScript werden initialisiert",
+			"typescript.openTsServerLog.enableAndReloadOption": "Aktiviert die Protokollierung und startet den TS-Server neu.",
+			"typescript.openTsServerLog.loggingNotEnabled": "Die TS Server-Protokollierung ist deaktiviert. Legen Sie \"typescript.tsserver.log\" fest, und laden Sie VS Code erneut, um die Protokollierung zu aktivieren.",
+			"typescript.openTsServerLog.noLogFile": "TS Server hat noch nicht mit der Protokollierung begonnen.",
+			"usingOldTsVersion.detail": "Der Arbeitsbereich verwendet eine alte Version von TypeScript ({0}).\r\n\r\nBevor Sie ein Problem melden, aktualisieren Sie den Arbeitsbereich, sodass die neueste stabile Version verwendet und sichergestellt wird, dass der Fehler nicht bereits behoben wurde.",
+			"usingOldTsVersion.title": "Bitte aktualisieren Sie Ihre TypeScript-Version."
+		},
+		"dist/ui/intellisenseStatus": {
+			"pending.detail": "IntelliSense-Status wird geladen",
+			"resolved.command.title.createJsconfig": "Erstellen von jsconfig",
+			"resolved.command.title.createTsconfig": "tsconfig erstellen",
+			"resolved.command.title.open": "Konfigurationsdatei öffnen",
+			"resolved.detail.noJsConfig": "Keine jsconfig",
+			"resolved.detail.noOpenedFolders": "Keine geöffneten Ordner",
+			"resolved.detail.noTsConfig": "Keine tsconfig",
+			"resolved.detail.notInOpenedFolder": "Datei ist kein Teil geöffneter Ordner",
+			"statusItem.name": "JS/TS IntelliSense-Status",
+			"syntaxOnly.command.title.learnMore": "Weitere Informationen",
+			"syntaxOnly.detail": "Projektweites IntelliSense nicht verfügbar",
+			"syntaxOnly.text": "Teilmodus"
+		},
+		"dist/ui/versionStatus": {
+			"versionStatus.command": "Version auswählen",
+			"versionStatus.detail": "TypeScript-Version",
+			"versionStatus.name": "TypeScript-Version"
+		},
+		"dist/utils/logLevelMonitor": {
+			"typescript.extendedLogging.disableLogging": "Protokollierung deaktivieren",
+			"typescript.extendedLogging.doNotShowAgain": "Nicht mehr anzeigen",
+			"typescript.extendedLogging.isEnabled": "Die TS Server-Protokollierung ist derzeit aktiviert. Das kann Auswirkungen auf die Leistung haben."
+		},
+		"dist/languageFeatures/updatePathsOnRename": {
+			"accept.title": "Ja",
+			"always.title": "Importe immer automatisch aktualisieren",
+			"moreFile": "...1 weitere Datei wird nicht angezeigt",
+			"moreFiles": "...{0} weitere Dateien werden nicht angezeigt",
+			"never.title": "Importe nie automatisch aktualisieren",
+			"prompt": "Importe für \"{0}\" aktualisieren?",
+			"promptMoreThanOne": "Importe für die folgenden {0}-Dateien aktualisieren?",
+			"reject.title": "Nein",
+			"renameProgress.title": "Überprüfung der Aktualisierung der JS/TS-Importe"
+		},
+		"dist/languageFeatures/completions": {
+			"acquiringTypingsDetail": "Eingabedefinitionen für IntelliSense werden abgerufen.",
+			"acquiringTypingsLabel": "Eingaben werden abgerufen...",
+			"selectCodeAction": "Anzuwendende Codeaktion auswählen"
+		},
+		"dist/languageFeatures/directiveCommentCompletions": {
+			"ts-check": "Aktiviert die Semantiküberprüfung in einer JavaScript-Datei. Muss sich oben in einer Datei befinden.",
+			"ts-expect-error": "Unterdrückt @ts-check-Fehler in der nächsten Zeile einer Datei und erwartet, dass mindestens einer vorhanden ist.",
+			"ts-ignore": "Unterdrückt @ts-check-Fehler in der nächsten Zeile einer Datei.",
+			"ts-nocheck": "Deaktiviert die Semantiküberprüfung in einer JavaScript-Datei. Muss sich oben in einer Datei befinden."
+		},
+		"dist/languageFeatures/fileReferences": {
+			"error.noResource": "Fehler beim Suchen nach Dateiverweisen. Es wurde keine Ressource angegeben.",
+			"error.unknownFile": "Fehler beim Suchen nach Dateiverweisen. Unbekannter Dateityp.",
+			"error.unsupportedLanguage": "Fehler beim Suchen nach Dateiverweisen. Nicht unterstützter Dateityp.",
+			"error.unsupportedVersion": "Fehler beim Suchen nach Dateiverweisen. Erfordert TypeScript 4.2+.",
+			"progress.title": "Dateiverweise werden gesucht"
+		},
+		"dist/languageFeatures/fixAll": {
+			"autoFix.label": "Alle behebbaren JS/TS-Probleme beheben",
+			"autoFix.missingImports.label": "Alle fehlenden Importe hinzufügen",
+			"autoFix.unused.label": "Gesamten nicht verwendeten Code entfernen"
+		},
+		"dist/languageFeatures/hover": {
+			"loadingPrefix": "(wird geladen...)"
+		},
+		"dist/languageFeatures/jsDocCompletions": {
+			"typescript.jsDocCompletionItem.documentation": "JSDoc-Kommentar"
+		},
+		"dist/languageFeatures/organizeImports": {
+			"error.organizeImports.noResource": "Fehler beim Organisieren von Importen. Es wurde keine Ressource bereitgestellt.",
+			"error.organizeImports.unknownFile": "Fehler beim Organisieren von Importen. Unbekannter Dateityp.",
+			"organizeImportsAction.title": "Importe organisieren",
+			"removeUnusedImportsAction.title": "Nicht verwendete Importe entfernen",
+			"sortImportsAction.title": "Importe sortieren"
+		},
+		"dist/languageFeatures/quickFix": {
+			"fixAllInFileLabel": "{0} (Behebe alle in Datei)"
+		},
+		"dist/languageFeatures/refactor": {
+			"extractConstant.disabled.reason": "Die aktuelle Auswahl kann nicht extrahiert werden.",
+			"extractConstant.disabled.title": "In Konstante extrahieren",
+			"extractFunction.disabled.reason": "Die aktuelle Auswahl kann nicht extrahiert werden.",
+			"extractFunction.disabled.title": "In Funktion extrahieren",
+			"refactor.documentation.title": "Weitere Informationen zu JS/TS-Refactorings",
+			"refactoringFailed": "Umgestaltung nicht möglich"
+		},
+		"dist/languageFeatures/rename": {
+			"fileRenameFail": "Beim Umbenennen der Datei ist ein Fehler aufgetreten."
+		},
+		"dist/languageFeatures/sourceDefinition": {
+			"error.noReferences": "Keine Definitionen gefunden.",
+			"error.noResource": "Gehe zu Quelldefinition fehlgeschlagen. Keine Ressource bereitgestellt.",
+			"error.unknownFile": "Gehe zu Quelldefinition fehlgeschlagen. Unbekannter Dateityp.",
+			"error.unsupportedLanguage": "Gehe zu Quelldefinition fehlgeschlagen. Nicht unterstütztes Dateiformat.",
+			"error.unsupportedVersion": "Gehe zu Quelldefinition fehlgeschlagen. Erfordert TypeScript 4.7+.",
+			"progress.title": "Quellendefinitionen finden"
+		},
+		"dist/languageFeatures/codeLens/implementationsCodeLens": {
+			"manyImplementationLabel": "{0} Implementierungen",
+			"oneImplementationLabel": "1 Implementierung"
+		},
+		"dist/languageFeatures/codeLens/referencesCodeLens": {
+			"manyReferenceLabel": "{0} Verweise",
+			"oneReferenceLabel": "1 Verweis"
+		},
+		"dist/tsServer/versionManager": {
+			"allow": "Zulassen",
+			"dismiss": "Schließen",
+			"learnMore": "Weitere Informationen zum Verwalten von TypeScript-Versionen",
+			"promptUseWorkspaceTsdk": "Dieser Arbeitsbereich enthält eine TypeScript-Version. Möchten Sie die TypeScript-Version des Arbeitsbereichs für TypeScript- und JavaScript-Sprachfeatures verwenden?",
+			"selectTsVersion": "Wählen Sie die für die JavaScript- und TypeScript-Sprachfunktionen verwendete TypeScript-Version aus.",
+			"suppress prompt": "Nie in diesem Arbeitsbereich",
+			"useVSCodeVersionOption": "Version von VS Code verwenden",
+			"useWorkspaceVersionOption": "Arbeitsbereichsversion verwenden"
+		},
+		"dist/utils/logger": {
+			"channelName": "TypeScript"
+		},
+		"dist/languageFeatures/codeLens/baseCodeLensProvider": {
+			"referenceErrorLabel": "Verweise konnten nicht bestimmt werden"
 		}
 	}
 }

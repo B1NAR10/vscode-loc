@@ -8,141 +8,6 @@
 	],
 	"version": "1.0.0",
 	"contents": {
-		"dist/languageFeatures/codeLens/baseCodeLensProvider": {
-			"referenceErrorLabel": "Не удалось определить ссылки."
-		},
-		"dist/languageFeatures/codeLens/implementationsCodeLens": {
-			"manyImplementationLabel": "Реализаций: {0}",
-			"oneImplementationLabel": "1 реализация"
-		},
-		"dist/languageFeatures/codeLens/referencesCodeLens": {
-			"manyReferenceLabel": "Ссылок: {0}",
-			"oneReferenceLabel": "1 ссылка"
-		},
-		"dist/languageFeatures/completions": {
-			"acquiringTypingsDetail": "Получение определений typings для IntelliSense.",
-			"acquiringTypingsLabel": "Получение typings...",
-			"selectCodeAction": "Выберите применяемое действие кода"
-		},
-		"dist/languageFeatures/directiveCommentCompletions": {
-			"ts-check": "Включает семантическую проверку в JavaScript файле. Необходимо расположить в самом начале файла.",
-			"ts-expect-error": "Подавляет ошибки @ts-check на следующей строке файла, ожидая, что по меньшей мере одна из них будет существовать.",
-			"ts-ignore": "Отключает вывод ошибок @ts-check для следующей строки файла.",
-			"ts-nocheck": "Отключает семантическую проверку в JavaScript файле. Необходимо расположить в самом начале файла."
-		},
-		"dist/languageFeatures/fileReferences": {
-			"error.noResource": "Не удалось найти ссылки на файлы. Не указаны ресурсы.",
-			"error.unknownFile": "Не удалось найти ссылки на файлы. Неизвестный тип файла.",
-			"error.unsupportedLanguage": "Не удалось найти ссылки на файлы. Неподдерживаемый тип файла.",
-			"error.unsupportedVersion": "Не удалось найти ссылки на файлы. Требуется TypeScript версии 4.2 или более поздних версий.",
-			"progress.title": "Поиск ссылок на файлы"
-		},
-		"dist/languageFeatures/fixAll": {
-			"autoFix.label": "Исправить все",
-			"autoFix.missingImports.label": "Добавить все недостающие импорты",
-			"autoFix.unused.label": "Удалить весь неиспользуемый код"
-		},
-		"dist/languageFeatures/jsDocCompletions": {
-			"typescript.jsDocCompletionItem.documentation": "Комментарий JSDoc"
-		},
-		"dist/languageFeatures/organizeImports": {
-			"organizeImportsAction.title": "Упорядочение импорта",
-			"sortImportsAction.title": "Сортировать импорты"
-		},
-		"dist/languageFeatures/quickFix": {
-			"fixAllInFileLabel": "{0} (Исправить все в файле)"
-		},
-		"dist/languageFeatures/refactor": {
-			"extractConstant.disabled.reason": "Невозможно извлечь выбранные параметры",
-			"extractConstant.disabled.title": "Извлечение в константу",
-			"extractFunction.disabled.reason": "Невозможно извлечь выбранные параметры",
-			"extractFunction.disabled.title": "Извлечение в функцию",
-			"refactor.documentation.title": "Дополнительные сведения о рефакторингах JS/TS",
-			"refactoringFailed": "Не удалось применить рефакторинг"
-		},
-		"dist/languageFeatures/rename": {
-			"fileRenameFail": "Ошибка при переименовании файла"
-		},
-		"dist/languageFeatures/tsconfig": {
-			"documentLink.tooltip": "Перейти по ссылке",
-			"openTsconfigExtendsModuleFail": "Не удалось разрешить {0} в виде модуля"
-		},
-		"dist/languageFeatures/updatePathsOnRename": {
-			"accept.title": "Да",
-			"always.title": "Всегда обновлять импорты автоматически",
-			"moreFile": "...1 дополнительный файл не показан",
-			"moreFiles": "...не показано дополнительных файлов: {0}",
-			"never.title": "Никогда не обновлять импорты автоматически",
-			"prompt": "Обновить импорты для \"{0}\"?",
-			"promptMoreThanOne": "Обновить импорты для следующих файлов ({0})?",
-			"reject.title": "Нет",
-			"renameProgress.title": "Проверка обновления для импортируемых данных JS/TS"
-		},
-		"dist/task/taskProvider": {
-			"badTsConfig": "Задача TypeScript в файле tasks.json содержит \"\\\\\". В конфигурации tsconfig задач TypeScript необходимо использовать \"/\"",
-			"buildAndWatchTscLabel": "отслеживание — {0}",
-			"buildTscLabel": "сборка — {0}"
-		},
-		"dist/tsServer/serverProcess.electron": {
-			"noServerFound": "Путь {0} не указывает на допустимый файл программы установки tsserver. Выполняется откат до пакетной версии TypeScript."
-		},
-		"dist/tsServer/versionManager": {
-			"allow": "Разрешить",
-			"dismiss": "Закрыть",
-			"learnMore": "Дополнительные сведения об управлении версиями TypeScript",
-			"promptUseWorkspaceTsdk": "Эта рабочая область содержит версию TypeScript. Вы хотите использовать версию TypeScript рабочей области для функций языка TypeScript и JavaScript?",
-			"selectTsVersion": "Выберите версию TypeScript, используемую для языковых функций JavaScript и TypeScript.",
-			"suppress prompt": "Никогда в этой рабочей области",
-			"useVSCodeVersionOption": "Использовать версию VS Code",
-			"useWorkspaceVersionOption": "Использовать версию рабочей области"
-		},
-		"dist/typescriptServiceClient": {
-			"noServerFound": "Путь {0} не указывает на допустимый файл программы установки tsserver. Выполняется откат до пакетной версии TypeScript.",
-			"openTsServerLog.openFileFailedFailed": "Не удалось открыть файл журнала сервера TS",
-			"serverDied": "Языковая служба TypeScript пять раз непредвиденно завершила работу за последние пять минут.",
-			"serverDiedAfterStart": "Языковая служба TypeScript пять раз завершила работу сразу после запуска. Служба не будет перезапущена.",
-			"serverDiedOnce": "Языковая служба TypeScript неожиданно завершила работу.",
-			"serverDiedReportIssue": "Сообщить об ошибке",
-			"serverExitedWithError": "Языковой сервер TypeScript завершил работу с ошибкой. Сообщение об ошибке: \"{0}\".",
-			"serverLoading.progress": "Инициализация компонентов языка JS/TS",
-			"typescript.openTsServerLog.enableAndReloadOption": "Войдите и перезагрузите TS server",
-			"typescript.openTsServerLog.loggingNotEnabled": "Вход в TS Server отключен. Задайте \"typescript.tsserver.log\" и перезагрузите VS Code, чтобы включить ведение журнала",
-			"typescript.openTsServerLog.noLogFile": "Сервер TS не начал ведение журнала.",
-			"usingOldTsVersion.detail": "В рабочей области используется старая версия TypeScript ({0}).\r\n\r\nПеред тем как сообщить о проблеме, обновите рабочую область для применения последнего стабильного выпуска TypeScript, чтобы убедиться, что ошибка еще не исправлена.",
-			"usingOldTsVersion.title": "Обновите версию TypeScript"
-		},
-		"dist/ui/intellisenseStatus": {
-			"pending.detail": "Загрузка состояния IntelliSense",
-			"resolved.command.title.createJsconfig": "Создать jsconfig",
-			"resolved.command.title.createTsconfig": "Создать tsconfig",
-			"resolved.command.title.open": "Открыть файл конфигурации",
-			"resolved.detail.noJsConfig": "Нет jsconfig",
-			"resolved.detail.noTsConfig": "Нет tsconfig",
-			"statusItem.name": "Состояние IntelliSense JS/TS",
-			"syntaxOnly.command.title.learnMore": "Дополнительные сведения",
-			"syntaxOnly.detail": "IntelliSense для всего проекта недоступен",
-			"syntaxOnly.text": "Частичный режим"
-		},
-		"dist/ui/versionStatus": {
-			"versionStatus.command": "Выбор версии",
-			"versionStatus.detail": "Версия TypeScript",
-			"versionStatus.name": "Версия TypeScript"
-		},
-		"dist/utils/api": {
-			"invalidVersion": "Недопустимая версия"
-		},
-		"dist/utils/logger": {
-			"channelName": "TypeScript"
-		},
-		"dist/utils/tsconfig": {
-			"typescript.configureJsconfigQuickPick": "Настроить jsconfig.json",
-			"typescript.configureTsconfigQuickPick": "Настроить tsconfig.json",
-			"typescript.noJavaScriptProjectConfig": "Файл не является частью проекта JavaScript. Просмотрите [документацию tsconfig.json] ({0}), чтобы получить дополнительные сведения.",
-			"typescript.noTypeScriptProjectConfig": "Файл не является частью проекта TypeScript. Просмотрите [документацию tsconfig.json] ({0}), чтобы получить дополнительные сведения.",
-			"typescript.projectConfigCouldNotGetInfo": "Не удалось определить проект TypeScript или JavaScript.",
-			"typescript.projectConfigNoWorkspace": "Откройте папку в VS Code, чтобы использовать проект JavaScript или TypeScript.",
-			"typescript.projectConfigUnsupportedFile": "Не удалось определить проект TypeScript или JavaScript. Неподдерживаемый тип файла"
-		},
 		"package": {
 			"codeActions.refactor.extract.constant.description": "Извлечь выражение в константу.",
 			"codeActions.refactor.extract.constant.title": "Извлечь константу",
@@ -163,7 +28,7 @@
 			"codeActions.refactor.rewrite.parameters.toDestructured.title": "Преобразовать параметры в деструктурированный объект",
 			"codeActions.refactor.rewrite.property.generateAccessors.description": "Создать методы доступа get и set",
 			"codeActions.refactor.rewrite.property.generateAccessors.title": "Создать методы доступа",
-			"codeActions.source.organizeImports.title": "Организация импортов",
+			"codeActions.source.organizeImports.title": "Упорядочение импортированных данных",
 			"configuration.implicitProjectConfig.checkJs": "Включение или отключение семантической проверки файлов JavaScript. Этот параметр переопределяется файлом \"jsconfig.json\" или \"tsconfig.json\".",
 			"configuration.implicitProjectConfig.experimentalDecorators": "Включение или отключение параметра \"experimentalDecorators\" в файлах JavaScript, которые не являются частью проекта. Этот параметр переопределяется файлом \"jsconfig.json\" или \"tsconfig.json\".",
 			"configuration.implicitProjectConfig.module": "Задает систему модуля для программы. Дополнительные сведения: https://www.typescriptlang.org/tsconfig#module.",
@@ -177,6 +42,7 @@
 			"configuration.inlayHints.parameterTypes.enabled": "Включить или отключить указания-вкладки для неявных типов параметров:\r\n```typescript\r\n\r\nel.addEventListener('click', e /* :MouseEvent */ => ...)\r\n \r\n```\r\nТребует использования TypeScript 4.4+ в рабочей области.",
 			"configuration.inlayHints.propertyDeclarationTypes.enabled": "Включить или отключить вложенные указания для неявных типов в объявлениях свойств:\r\n```typescript\r\n\r\nclass Foo {\r\n\tprop /* :number */ = Date.now;\r\n}\r\n \r\n```\r\nТребует использования TypeScript 4.4+ в рабочей области.",
 			"configuration.inlayHints.variableTypes.enabled": "Включить или отключить указания-вкладки для неявных типов переменных:\r\n```typescript\r\n\r\nconst foo /* :number */ = Date.now();\r\n \r\n```\r\nТребует использования TypeScript 4.4+ в рабочей области.",
+			"configuration.inlayHints.variableTypes.suppressWhenTypeMatchesName": "Скрывайте подсказки о типе для переменных, имена которых совпадают с именем типа. Требуется использование TypeScript 4.8 и более поздних версий в рабочей области.",
 			"configuration.javascript.checkJs.checkJs.deprecation": "Этот параметр устарел. Вместо него следует использовать \"js/ts.implicitProjectConfig.checkJs\".",
 			"configuration.javascript.checkJs.experimentalDecorators.deprecation": "Этот параметр устарел. Вместо него следует использовать \"js/ts.implicitProjectConfig.experimentalDecorators\".",
 			"configuration.suggest.autoImports": "Включить или отключить предложения автоимпорта.",
@@ -186,9 +52,9 @@
 			"configuration.suggest.includeAutomaticOptionalChainCompletions": "Включение/отключение отображения завершений для потенциально неопределенных значений, вставляющих необязательный вызов по цепочке. Требует наличие TS 3.7+ и включение строгих проверок на NULL.",
 			"configuration.suggest.includeCompletionsForImportStatements": "Включить или отключить завершения в стиле автоматического импорта для частично типизированных операторов импорта. В рабочей области требуется использовать TypeScript 4.3 и выше.",
 			"configuration.suggest.includeCompletionsWithSnippetText": "Включить или отключить завершение фрагментов на сервере TS. В рабочей области требуется использовать TypeScript 4.3 и выше.",
-			"configuration.suggest.jsdoc.generateReturns": "Включение или отключение создания аннотаций \\\"@returns\\\" для шаблонов JSDoc. Требуется TypeScript 4.2 или более поздней версии в рабочей области.",
+			"configuration.suggest.jsdoc.generateReturns": "Включение или отключение создания аннотаций `@returns` для шаблонов JSDoc. Требуется TypeScript 4.2 или более поздней версии в рабочей области.",
 			"configuration.suggest.names": "Включение/отключение добавления уникальных имен из файла в предложения JavaScript. Обратите внимание, что предложения имен всегда отключены в коде JavaScript, семантика которого проверяется с помощью \"@ts-check\" или \"checkJs\".",
-			"configuration.suggest.objectLiteralMethodSnippets.enabled": "Enable/disable snippet completions for methods in object literals. Requires using TypeScript 4.7+ in the workspace",
+			"configuration.suggest.objectLiteralMethodSnippets.enabled": "Включить/выключить завершение фрагментов кода для методов в объектных литералах. Требуется использование TypeScript 4.7+ в рабочей области",
 			"configuration.suggest.paths": "Включить/отключить предложения для путей в выражениях импорта и в вызовах.",
 			"configuration.surveys.enabled": "Включить/отключить периодические опросы, которые помогают нам улучшить поддержку JavaScript и TypeScript в VS Code.",
 			"configuration.tsserver.experimental.enableProjectDiagnostics": "(Экспериментальная функция) Включает ведение отчетов об ошибках в масштабе всего проекта.",
@@ -245,7 +111,7 @@
 			"inlayHints.parameterNames.literals": "Включение указаний имен параметров только для литеральных аргументов.",
 			"inlayHints.parameterNames.none": "Отключение указаний имен параметров.",
 			"javascript.format.enable": "Включение или отключение модуля форматирования JavaScript по умолчанию.",
-			"javascript.preferences.jsxAttributeCompletionStyle.auto": "Вставить ={} или =\"\" после имен атрибутов на основе типа свойства. Сведения об управлении типов кавычек для строковых атрибутов см. в \\\"javascript.preferences.quoteStyle\\\".",
+			"javascript.preferences.jsxAttributeCompletionStyle.auto": "Вставить `={}` или `=\"\"` после имен атрибутов на основе типа свойства. Сведения об управлении типов кавычек для строковых атрибутов см. в `javascript.preferences.quoteStyle`.",
 			"javascript.referencesCodeLens.enabled": "Включить/отключить ссылки CodeLens для файлов JavaScript.",
 			"javascript.referencesCodeLens.showOnAllFunctions": "Включить/отключить ссылки CodeLens для всех функций в файлах JavaScript.",
 			"javascript.suggestionActions.enabled": "Включить или отключить предложения диагностики для файлов JavaScript в редакторе.",
@@ -258,10 +124,12 @@
 			"typescript.enablePromptUseWorkspaceTsdk": "Включает вывод пользователям запросов на использование версии TypeScript, настроенной в рабочей области для IntelliSense.",
 			"typescript.findAllFileReferences": "Найти ссылки на файлы",
 			"typescript.format.enable": "Включение или отключение модуля форматирования TypeScript по умолчанию.",
+			"typescript.goToSourceDefinition": "Перейти к определению источника",
 			"typescript.implementationsCodeLens.enabled": "Включить или отключить CodeLens для реализаций. В этом CodeLens отображаются реализации интерфейса.",
 			"typescript.locale": "Устанавливает языковой стандарт, используемый для сообщений об ошибках JavaScript и TypeScript. По умолчанию используется языковой стандарт VS Code.",
 			"typescript.npm": "Указывает путь к исполняемому npm для [Автоматического получения типов](https://code.visualstudio.com/docs/nodejs/working-with-javascript#_typings-and-automatic-type-acquisition).",
 			"typescript.openTsServerLog.title": "Открыть журнал сервера TS",
+			"typescript.preferences.autoImportFileExcludePatterns": "Укажите стандартные маски файлов для исключения из автоматического импорта. Требует использования TypeScript 4.8 или более поздней версии в рабочей области.",
 			"typescript.preferences.importModuleSpecifier": "Предпочтительный стиль пути для автоматического импорта.",
 			"typescript.preferences.importModuleSpecifier.nonRelative": "Предпочитать неотносительный импорт на основе \"baseUrl\" или \"paths\", заданных в файле jsconfig.json/tsconfig.json.",
 			"typescript.preferences.importModuleSpecifier.projectRelative": "Предпочитать неотносительный импорт, только если путь относительного импорта выходит за пределы каталога пакета или проекта. Требуется использование TypeScript 4.2 или более поздней версии в рабочей области.",
@@ -277,7 +145,7 @@
 			"typescript.preferences.includePackageJsonAutoImports.off": "Никогда не искать зависимости.",
 			"typescript.preferences.includePackageJsonAutoImports.on": "Всегда искать зависимости.",
 			"typescript.preferences.jsxAttributeCompletionStyle": "Предпочитаемый стиль для завершения атрибута JSX.",
-			"typescript.preferences.jsxAttributeCompletionStyle.auto": "Вставить ={} или =\"\" после имен атрибутов на основе типа свойства. Сведения об управлении типов кавычек для строковых атрибутов см. в \\\"typescript.preferences.quoteStyle\\\".",
+			"typescript.preferences.jsxAttributeCompletionStyle.auto": "Вставить `={}` или `=\"\"` после имен атрибутов на основе типа свойства. Сведения об управлении типов кавычек для строковых атрибутов см. в `typescript.preferences.quoteStyle`.",
 			"typescript.preferences.jsxAttributeCompletionStyle.braces": "Вставить \"={}\" после имен атрибутов.",
 			"typescript.preferences.jsxAttributeCompletionStyle.none": "Вставлять только имена атрибутов.",
 			"typescript.preferences.quoteStyle": "Предпочитаемый стиль кавычек для быстрых исправлений.",
@@ -290,9 +158,11 @@
 			"typescript.problemMatchers.tscWatch.label": "Проблемы TypeScript (режим наблюдения)",
 			"typescript.referencesCodeLens.enabled": "Включить/отключить ссылки CodeLens для файлов TypeScript.",
 			"typescript.referencesCodeLens.showOnAllFunctions": "Включить/отключить ссылки CodeLens для всех функций в файлах TypeScript.",
+			"typescript.removeUnusedImports": "Удалить неиспользованные импортированные данные",
 			"typescript.reportStyleChecksAsWarnings": "Отображать ошибки при проверке стиля в виде предупреждений.",
 			"typescript.restartTsServer": "Перезапустить сервер TS",
 			"typescript.selectTypeScriptVersion.title": "Выберите версию TypeScript...",
+			"typescript.sortImports": "Сортировать импортированные данные",
 			"typescript.suggest.enabled": "Включить/отключить предложения автозаполнения.",
 			"typescript.suggestionActions.enabled": "Включить или отключить предложения диагностики для файлов TypeScript в редакторе.",
 			"typescript.tsc.autoDetect": "Управляет автоматическим обнаружением заданий tsc.",
@@ -315,7 +185,192 @@
 			"typescript.workspaceSymbols.scope.allOpenProjects": "Поиск символов во всех открытых проектах JavaScript и TypeScript. Требуется использовать TypeScript 3.9 или более поздней версии в рабочей области.",
 			"typescript.workspaceSymbols.scope.currentProject": "Поиск символов только в текущем проекте JavaScript или TypeScript.",
 			"virtualWorkspaces": "В виртуальных рабочих областях разрешение и поиск ссылок в файлах не поддерживается.",
+			"walkthroughs.nodejsWelcome.debugJsFile.altText": "Выполняйте отладку и запуск кода JavaScript в Node.js с помощью Visual Studio Code.",
+			"walkthroughs.nodejsWelcome.debugJsFile.description": "После установки Node.js вы можете запустить программы JavaScript в терминале путем ввода \"node your-file-name.js\"\r\nЕще один простой способ запуска программ Node.js — использовать отладчик VS Code, который позволяет запускать код, приостанавливать работу в разных точках и предоставляет пошаговые инструкции для упрощения понимания происходящего.\r\n[Начать отладку](command:javascript-walkthrough.commands.debugJsFile)",
+			"walkthroughs.nodejsWelcome.debugJsFile.title": "Запуск и отладка JavaScript",
+			"walkthroughs.nodejsWelcome.description": "Используйте все отличные возможности JavaScript в Visual Studio Code.",
+			"walkthroughs.nodejsWelcome.downloadNode.forLinux.description": "Node.js — это простой способ запуска кода JavaScript. С его помощью можно быстро создавать приложения командной строки и серверы. Он также содержит диспетчер пакетов npm, который упрощает повторное использование и совместное применение кода JavaScript.\r\n[Установить Node.js](https://nodejs.org/en/download/package-manager/)",
+			"walkthroughs.nodejsWelcome.downloadNode.forLinux.title": "Установить Node.js",
+			"walkthroughs.nodejsWelcome.downloadNode.forMacOrWindows.description": "Node.js — это простой способ запуска кода JavaScript. С его помощью можно быстро создавать приложения командной строки и серверы. Он также содержит диспетчер пакетов npm, который упрощает повторное использование и совместное применение кода JavaScript.\r\n[Установить Node.js](https://nodejs.org/en/download/)",
+			"walkthroughs.nodejsWelcome.downloadNode.forMacOrWindows.title": "Установить Node.js",
+			"walkthroughs.nodejsWelcome.learnMoreAboutJs.altText": "Дополнительные сведения о JavaScript и Node.js в Visual Studio Code.",
+			"walkthroughs.nodejsWelcome.learnMoreAboutJs.description": "Хотите подробнее изучить JavaScript, Node.js и VS Code? Ознакомьтесь с нашими документами!\r\nУ нас много ресурсов для изучения [JavaScript](https://code.visualstudio.com/docs/nodejs/working-with-javascript) и [Node.js](https://code.visualstudio.com/docs/nodejs/nodejs-tutorial).\r\n\r\n[Подробнее](https://code.visualstudio.com/docs/nodejs/nodejs-tutorial)",
+			"walkthroughs.nodejsWelcome.learnMoreAboutJs.title": "Другие возможности",
+			"walkthroughs.nodejsWelcome.makeJsFile.description": "Давайте создадим первый файл JavaScript. Необходимо создать новый файл и сохранить его с расширением \".js\" в конце имени файла.\r\n[Создать файл JavaScript](command:javascript-walkthrough.commands.createJsFile)",
+			"walkthroughs.nodejsWelcome.makeJsFile.title": "Создать файл JavaScript",
+			"walkthroughs.nodejsWelcome.title": "Начало работы с JavaScript и Node.js",
 			"workspaceTrust": "Расширение требует доверия рабочей области, когда используется версия рабочей области, так как она выполняет код, указанный рабочей областью."
+		},
+		"dist/tsServer/serverProcess.electron": {
+			"noServerFound": "Путь {0} не указывает на допустимый файл программы установки tsserver. Выполняется откат до пакетной версии TypeScript."
+		},
+		"dist/tsServer/versionProvider.electron": {
+			"noBundledServerFound": "Файл tsserver VSCode был удален другим приложением, например, в результате ошибочного срабатывания средства обнаружения вирусов. Переустановите VSCode."
+		},
+		"dist/ui/jsNodeWalkthrough.electron": {
+			"noNodeInstallFound": "Не удалось найти Node.js этом компьютере. Если вы только что установили его, возможно, потребуется перезагрузить VS Code.",
+			"nodeNotFoundDebugAnyway": "Все равно попробовать отладку",
+			"nodeNotFoundDismissDialog": "Закрыть",
+			"reloadWindowForNode": "Перезагрузить VS Code"
+		},
+		"dist/task/taskProvider": {
+			"badTsConfig": "Задача TypeScript в файле tasks.json содержит \"\\\\\". В конфигурации tsconfig задач TypeScript необходимо использовать \"/\"",
+			"buildAndWatchTscLabel": "отслеживание — {0}",
+			"buildTscLabel": "сборка — {0}"
+		},
+		"dist/languageFeatures/tsconfig": {
+			"documentLink.tooltip": "Перейти по ссылке",
+			"openTsconfigExtendsModuleFail": "Не удалось разрешить {0} в виде модуля"
+		},
+		"dist/utils/api": {
+			"invalidVersion": "Недопустимая версия"
+		},
+		"dist/tsServer/versionProvider": {
+			"couldNotLoadTsVersion": "Не удалось загрузить версию TypeScript по этому пути"
+		},
+		"dist/utils/tsconfig": {
+			"typescript.configureJsconfigQuickPick": "Настроить jsconfig.json",
+			"typescript.configureTsconfigQuickPick": "Настроить tsconfig.json",
+			"typescript.noJavaScriptProjectConfig": "Файл не является частью проекта JavaScript. Просмотрите [документацию tsconfig.json] ({0}), чтобы получить дополнительные сведения.",
+			"typescript.noTypeScriptProjectConfig": "Файл не является частью проекта TypeScript. Просмотрите [документацию tsconfig.json] ({0}), чтобы получить дополнительные сведения.",
+			"typescript.projectConfigCouldNotGetInfo": "Не удалось определить проект TypeScript или JavaScript.",
+			"typescript.projectConfigNoWorkspace": "Откройте папку в VS Code, чтобы использовать проект JavaScript или TypeScript.",
+			"typescript.projectConfigUnsupportedFile": "Не удалось определить проект TypeScript или JavaScript. Неподдерживаемый тип файла"
+		},
+		"dist/typescriptServiceClient": {
+			"noServerFound": "Путь {0} не указывает на допустимый файл программы установки tsserver. Выполняется откат до пакетной версии TypeScript.",
+			"openTsServerLog.openFileFailedFailed": "Не удалось открыть файл журнала сервера TS",
+			"serverDiedFiveTimes": "Языковая служба JS/TS аварийно завершала работу 5 раз за последние 5 минут.",
+			"serverDiedFiveTimesWithPlugins": "Языковая служба JS/TS аварийно завершала работу 5 раз за последние 5 минут.\r\nЭто может быть вызвано подключаемым модулем, предоставленным одним из следующих расширений: {0}",
+			"serverDiedImmediately": "Служба языка JS/TS 5 раз немедленно аварийно завершила работу. Служба не будет перезапущена.",
+			"serverDiedImmediatelyWithPlugins": "Служба языка JS/TS 5 раз немедленно аварийно завершила работу. Служба не будет перезапущена.\r\nЭто может быть вызвано подключаемым модулем, предоставленным одним из следующих расширений: {0}",
+			"serverDiedOnce": "Языковая служба JS/TS аварийно завершила работу.",
+			"serverDiedOnceWithPlugins": "Языковая служба JS/TS аварийно завершила работу.\r\nЭто может быть вызвано подключаемым модулем, предоставленным одним из следующих расширений: {0}",
+			"serverDiedReportIssue": "Сообщить об ошибке",
+			"serverExitedWithError": "Языковой сервер TypeScript завершил работу с ошибкой. Сообщение об ошибке: \"{0}\".",
+			"serverLoading.progress": "Инициализация компонентов языка JS/TS",
+			"typescript.openTsServerLog.enableAndReloadOption": "Войдите и перезагрузите TS server",
+			"typescript.openTsServerLog.loggingNotEnabled": "Вход в TS Server отключен. Задайте \"typescript.tsserver.log\" и перезагрузите VS Code, чтобы включить ведение журнала",
+			"typescript.openTsServerLog.noLogFile": "Сервер TS не начал ведение журнала.",
+			"usingOldTsVersion.detail": "В рабочей области используется старая версия TypeScript ({0}).\r\n\r\nПеред тем как сообщить о проблеме, обновите рабочую область для применения последнего стабильного выпуска TypeScript, чтобы убедиться, что ошибка еще не исправлена.",
+			"usingOldTsVersion.title": "Обновите версию TypeScript"
+		},
+		"dist/ui/intellisenseStatus": {
+			"pending.detail": "Загрузка состояния IntelliSense",
+			"resolved.command.title.createJsconfig": "Создать jsconfig",
+			"resolved.command.title.createTsconfig": "Создать tsconfig",
+			"resolved.command.title.open": "Открыть файл конфигурации",
+			"resolved.detail.noJsConfig": "Нет jsconfig",
+			"resolved.detail.noOpenedFolders": "Нет открытых папок",
+			"resolved.detail.noTsConfig": "Нет tsconfig",
+			"resolved.detail.notInOpenedFolder": "Файл не является частью открытых папок",
+			"statusItem.name": "Состояние IntelliSense JS/TS",
+			"syntaxOnly.command.title.learnMore": "Дополнительные сведения",
+			"syntaxOnly.detail": "IntelliSense для всего проекта недоступен",
+			"syntaxOnly.text": "Частичный режим"
+		},
+		"dist/ui/versionStatus": {
+			"versionStatus.command": "Выбор версии",
+			"versionStatus.detail": "Версия TypeScript",
+			"versionStatus.name": "Версия TypeScript"
+		},
+		"dist/utils/logLevelMonitor": {
+			"typescript.extendedLogging.disableLogging": "Отключить ведение журнала",
+			"typescript.extendedLogging.doNotShowAgain": "Больше не показывать",
+			"typescript.extendedLogging.isEnabled": "В настоящее время включено ведение журнала сервера службы TS, что может повлиять на производительность."
+		},
+		"dist/languageFeatures/updatePathsOnRename": {
+			"accept.title": "Да",
+			"always.title": "Всегда обновлять импорты автоматически",
+			"moreFile": "...1 дополнительный файл не показан",
+			"moreFiles": "...не показано дополнительных файлов: {0}",
+			"never.title": "Никогда не обновлять импорты автоматически",
+			"prompt": "Обновить импорты для \"{0}\"?",
+			"promptMoreThanOne": "Обновить импорты для следующих файлов ({0})?",
+			"reject.title": "Нет",
+			"renameProgress.title": "Проверка обновления для импортируемых данных JS/TS"
+		},
+		"dist/languageFeatures/completions": {
+			"acquiringTypingsDetail": "Получение определений typings для IntelliSense.",
+			"acquiringTypingsLabel": "Получение typings...",
+			"selectCodeAction": "Выберите применяемое действие кода"
+		},
+		"dist/languageFeatures/directiveCommentCompletions": {
+			"ts-check": "Включает семантическую проверку в JavaScript файле. Необходимо расположить в самом начале файла.",
+			"ts-expect-error": "Подавляет ошибки @ts-check на следующей строке файла, ожидая, что по меньшей мере одна из них будет существовать.",
+			"ts-ignore": "Отключает вывод ошибок @ts-check для следующей строки файла.",
+			"ts-nocheck": "Отключает семантическую проверку в JavaScript файле. Необходимо расположить в самом начале файла."
+		},
+		"dist/languageFeatures/fileReferences": {
+			"error.noResource": "Не удалось найти ссылки на файлы. Не указаны ресурсы.",
+			"error.unknownFile": "Не удалось найти ссылки на файлы. Неизвестный тип файла.",
+			"error.unsupportedLanguage": "Не удалось найти ссылки на файлы. Неподдерживаемый тип файла.",
+			"error.unsupportedVersion": "Не удалось найти ссылки на файлы. Требуется TypeScript версии 4.2 или более поздних версий.",
+			"progress.title": "Поиск ссылок на файлы"
+		},
+		"dist/languageFeatures/fixAll": {
+			"autoFix.label": "Устранить все устранимые проблемы JS/TS",
+			"autoFix.missingImports.label": "Добавить все недостающие импорты",
+			"autoFix.unused.label": "Удалить весь неиспользуемый код"
+		},
+		"dist/languageFeatures/hover": {
+			"loadingPrefix": "(загрузка...)"
+		},
+		"dist/languageFeatures/jsDocCompletions": {
+			"typescript.jsDocCompletionItem.documentation": "Комментарий JSDoc"
+		},
+		"dist/languageFeatures/organizeImports": {
+			"error.organizeImports.noResource": "Не удалось упорядочить импортированные данные. Ресурс не предоставлен.",
+			"error.organizeImports.unknownFile": "Не удалось упорядочить импортированные данные. Неизвестный тип файла.",
+			"organizeImportsAction.title": "Упорядочение импорта",
+			"removeUnusedImportsAction.title": "Удаление неиспользованных импортированных данных",
+			"sortImportsAction.title": "Сортировать импорты"
+		},
+		"dist/languageFeatures/quickFix": {
+			"fixAllInFileLabel": "{0} (Исправить все в файле)"
+		},
+		"dist/languageFeatures/refactor": {
+			"extractConstant.disabled.reason": "Невозможно извлечь выбранные параметры",
+			"extractConstant.disabled.title": "Извлечение в константу",
+			"extractFunction.disabled.reason": "Невозможно извлечь выбранные параметры",
+			"extractFunction.disabled.title": "Извлечение в функцию",
+			"refactor.documentation.title": "Дополнительные сведения о рефакторингах JS/TS",
+			"refactoringFailed": "Не удалось применить рефакторинг"
+		},
+		"dist/languageFeatures/rename": {
+			"fileRenameFail": "Ошибка при переименовании файла"
+		},
+		"dist/languageFeatures/sourceDefinition": {
+			"error.noReferences": "Определения источников не найдены.",
+			"error.noResource": "Не удалось перейти к определению источника. Не предоставлен ресурсы.",
+			"error.unknownFile": "Не удалось перейти к определению источника. Неизвестный тип файла.",
+			"error.unsupportedLanguage": "Не удалось перейти к определению источника. Тип файла не поддерживается.",
+			"error.unsupportedVersion": "Не удалось перейти к определению источника. Требуется TypeScript 4.7 или более поздней версии.",
+			"progress.title": "Поиск определений источников"
+		},
+		"dist/languageFeatures/codeLens/implementationsCodeLens": {
+			"manyImplementationLabel": "Реализаций: {0}",
+			"oneImplementationLabel": "1 реализация"
+		},
+		"dist/languageFeatures/codeLens/referencesCodeLens": {
+			"manyReferenceLabel": "Ссылок: {0}",
+			"oneReferenceLabel": "1 ссылка"
+		},
+		"dist/tsServer/versionManager": {
+			"allow": "Разрешить",
+			"dismiss": "Закрыть",
+			"learnMore": "Дополнительные сведения об управлении версиями TypeScript",
+			"promptUseWorkspaceTsdk": "Эта рабочая область содержит версию TypeScript. Вы хотите использовать версию TypeScript рабочей области для функций языка TypeScript и JavaScript?",
+			"selectTsVersion": "Выберите версию TypeScript, используемую для языковых функций JavaScript и TypeScript.",
+			"suppress prompt": "Никогда в этой рабочей области",
+			"useVSCodeVersionOption": "Использовать версию VS Code",
+			"useWorkspaceVersionOption": "Использовать версию рабочей области"
+		},
+		"dist/utils/logger": {
+			"channelName": "TypeScript"
+		},
+		"dist/languageFeatures/codeLens/baseCodeLensProvider": {
+			"referenceErrorLabel": "Не удалось определить ссылки."
 		}
 	}
 }
