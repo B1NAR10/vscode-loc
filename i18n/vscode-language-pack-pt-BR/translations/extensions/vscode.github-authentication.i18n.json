@@ -26,9 +26,12 @@
 			"Your Code: {0}/The {0} will be a code, e.g. 123-456": "Seu Código: {0}",
 			"device code": "código do dispositivo",
 			"local server": "servidor local",
-			"personal access token": "token de acesso pessoal"
+			"personal access token": "token de acesso pessoal",
+			"url handler": "manipulador de urls"
 		},
 		"package": {
+			"config.github-enterprise.title": "GHE.com e autenticação do GitHub Enterprise Server",
+			"config.github-enterprise.uri.description": "O URI da instância do GHE.com ou GitHub Enterprise Server.\r\n\r\nExemplos:\r\n* GHE.com: 'https://octocat.ghe.com`\r\n* GitHub Enterprise Server: 'https://github.octocat.com`\r\n\r\n> **Observação:** Isso deve _não_ ser definido como um GitHub.com URI. Se sua conta existir no GitHub.com ou for um GitHub Enterprise Usuário Gerenciado, você não precisará de nenhuma configuração adicional e poderá simplesmente fazer logon no GitHub.",
 			"description": "Provedor de Autenticação do GitHub",
 			"displayName": "Autenticação do GitHub"
 		}

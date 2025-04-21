@@ -26,9 +26,12 @@
 			"Your Code: {0}/The {0} will be a code, e.g. 123-456": "Váš kód: {0}",
 			"device code": "kód zařízení",
 			"local server": "místní server",
-			"personal access token": "token PAT"
+			"personal access token": "token PAT",
+			"url handler": "obslužná rutina adresy URL"
 		},
 		"package": {
+			"config.github-enterprise.title": "ověřování serveru GHE.com & GitHub Enterprise",
+			"config.github-enterprise.uri.description": "Identifikátor URI pro instanci GHE.com nebo GitHub Enterprise Serveru\r\n\r\nPříklady:\r\n* GHE.com: 'https://octocat.ghe.com`\r\n* GitHub Enterprise Server: 'https://github.octocat.com`\r\n\r\n> **Poznámka:** Tato hodnota by _neměla_ být nastavena na identifikátor URI GitHub.com. Pokud váš účet existuje na GitHub.com nebo je GitHub Enterprise spravovaný uživatel, nepotřebujete žádnou další konfiguraci a můžete se jednoduše přihlásit ke GitHubu.",
 			"description": "Zprostředkovatel ověřování GitHubu",
 			"displayName": "Ověřování GitHubu"
 		}

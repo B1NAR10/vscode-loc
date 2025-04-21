@@ -26,9 +26,12 @@
 			"Your Code: {0}/The {0} will be a code, e.g. 123-456": "코드: {0}",
 			"device code": "디바이스 코드",
 			"local server": "로컬 서버",
-			"personal access token": "개인용 액세스 토큰"
+			"personal access token": "개인용 액세스 토큰",
+			"url handler": "URL 처리기"
 		},
 		"package": {
+			"config.github-enterprise.title": "GHE.com 및 GitHub Enterprise 서버 인증",
+			"config.github-enterprise.uri.description": "GHE.com 또는 GitHub Enterprise Server instance URI입니다.\r\n\r\n예제:\r\n* GHE.com: 'https://octocat.ghe.com`\r\n* GitHub Enterprise Server: 'https://github.octocat.com`\r\n\r\n> **참고:** 이 값은 _not_이(가) GitHub.com URI로 설정되어야 합니다. 계정이 GitHub.com 있거나 GitHub Enterprise 관리되는 사용자인 경우 추가 구성이 필요하지 않으며 GitHub에 로그인할 수 있습니다.",
 			"description": "GitHub 인증 공급자",
 			"displayName": "GitHub 인증"
 		}
